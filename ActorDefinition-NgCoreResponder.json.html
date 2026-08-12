@@ -1,0 +1,404 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG Responder - JSON Representation - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.4"}
+    h3,h4,h5,h6{--heading-prefix:"32.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NG Responder</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ActorDefinition-NgCoreResponder.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ActorDefinition-NgCoreResponder.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ActorDefinition-NgCoreResponder.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NG Responder - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2026-08-12
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ActorDefinition-NgCoreResponder.json" no-download="true">Raw json</a> | <a href="ActorDefinition-NgCoreResponder.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition">resourceType</a>" : "ActorDefinition",
+  "<a href="http://hl7.org/fhir/R4/resource.html#ActorDefinition.id">id</a>" : "NgCoreResponder",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#ActorDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ActorDefinition NgCoreResponder&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;NgCoreResponder\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNgCoreResponder\&quot;&gt; &lt;/a&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Actor: NgCoreResponder &lt;/b&gt;&lt;/td&gt;&lt;td&gt;Nigeria Core Responder&lt;/td&gt;&lt;td&gt;Type: system &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;div&gt;&lt;h3&gt;Role&lt;/h3&gt;\n&lt;p&gt;The &lt;strong&gt;Nigeria Core Responder&lt;/strong&gt; is an authorised FHIR-enabled service that\nreceives and processes requests.&lt;/p&gt;\n&lt;p&gt;Examples include FHIR servers, EMR/EHR back ends, HIEs, registries,\nlaboratory, pharmacy and imaging services, program platforms, gateways,\nterminology services, and sandbox services.&lt;/p&gt;\n&lt;h3&gt;Responsibilities&lt;/h3&gt;\n&lt;p&gt;A Responder may:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;receive REST requests, operations, Bundles, documents, or other supported\nexchanges;&lt;/li&gt;\n&lt;li&gt;validate resources against applicable profiles and terminology;&lt;/li&gt;\n&lt;li&gt;retrieve, create, update, or persist resources where supported;&lt;/li&gt;\n&lt;li&gt;execute declared FHIR operations;&lt;/li&gt;\n&lt;li&gt;apply applicable business and access-control rules; and&lt;/li&gt;\n&lt;li&gt;return FHIR resources, Bundles, operation results, or &lt;code&gt;OperationOutcome&lt;/code&gt;.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;Conformance expectations&lt;/h3&gt;\n&lt;p&gt;A Responder &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;process supported requests according to applicable Nigeria Core requirements;&lt;/li&gt;\n&lt;li&gt;enforce applicable cardinalities, invariants, terminology bindings, required\nreferences, and &lt;strong&gt;Must Support&lt;/strong&gt; expectations;&lt;/li&gt;\n&lt;li&gt;use governed identifiers and terminology where specified;&lt;/li&gt;\n&lt;li&gt;publish or make available an accurate &lt;code&gt;CapabilityStatement&lt;/code&gt;;&lt;/li&gt;\n&lt;li&gt;advertise only capabilities it can reliably support;&lt;/li&gt;\n&lt;li&gt;return FHIR-conformant responses; and&lt;/li&gt;\n&lt;li&gt;return an appropriate &lt;code&gt;OperationOutcome&lt;/code&gt; when a request cannot be processed.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;The Responder &lt;strong&gt;SHOULD&lt;/strong&gt; provide sufficient error information for correction\nwithout exposing sensitive implementation details.&lt;/p&gt;\n&lt;p&gt;Access to technically available information &lt;strong&gt;SHALL&lt;/strong&gt; remain subject to\napplicable authentication, authorisation, privacy, consent, and security rules.&lt;/p&gt;\n&lt;h3&gt;Capability discovery&lt;/h3&gt;\n&lt;p&gt;The Responder's &lt;code&gt;CapabilityStatement&lt;/code&gt; &lt;strong&gt;SHOULD&lt;/strong&gt; identify supported FHIR\nversion, profiles, resources, interactions, operations, search parameters,\nformats, security requirements, and relevant limitations.&lt;/p&gt;\n&lt;h3&gt;Relationships&lt;/h3&gt;\n&lt;p&gt;The Responder commonly interacts with the &lt;strong&gt;Nigeria Core Requestor, Registry\nService, Terminology Service,&lt;/strong&gt; and &lt;strong&gt;Conformance and Sandbox Service&lt;/strong&gt;.&lt;/p&gt;\n&lt;p&gt;A system may act as both Requestor and Responder.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.url">url</a>" : "https://fhir-ig.digitalhealth.gov.ng/ActorDefinition/NgCoreResponder",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:oid:2.16.840.1.113884.3.9944.1.12.4"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.version">version</a>" : "0.0.0",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.name">name</a>" : "NgCoreResponder",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.title">title</a>" : "Nigeria Core Responder",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.date">date</a>" : "2026-08-12T13:22:49+01:00",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.publisher">publisher</a>" : "NDHI",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "NDHI",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://digitalhealth.gov.ng"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "emeka2015@gmail.com"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nigeria Digital in Health Initiative.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "lekeojewale@gmail.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nigeria Digital in Health Initiative.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "emeka2015@gmail.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.description">description</a>" : "A **server, repository, gateway, or service** that processes FHIR requests and\nreturns responses conforming to the Nigeria Core specifications.",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NG",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Nigeria"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.purpose">purpose</a>" : "Defines the service-side role responsible for receiving and processing requests\nfrom a [Nigeria Core Requestor](ActorDefinition-NgCoreRequestor.html) using\ndeclared resources, interactions, searches, operations, and exchange patterns.",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.type">type</a>" : "system",
+  "<a href="http://hl7.org/fhir/R5/actordefinition.html#XActorDefinition.documentation">documentation</a>" : "\n### Role\n\nThe **Nigeria Core Responder** is an authorised FHIR-enabled service that\nreceives and processes requests.\n\nExamples include FHIR servers, EMR/EHR back ends, HIEs, registries,\nlaboratory, pharmacy and imaging services, program platforms, gateways,\nterminology services, and sandbox services.\n\n### Responsibilities\n\nA Responder may:\n\n* receive REST requests, operations, Bundles, documents, or other supported\n  exchanges;\n* validate resources against applicable profiles and terminology;\n* retrieve, create, update, or persist resources where supported;\n* execute declared FHIR operations;\n* apply applicable business and access-control rules; and\n* return FHIR resources, Bundles, operation results, or `OperationOutcome`.\n\n### Conformance expectations\n\nA Responder **SHALL**:\n\n* process supported requests according to applicable Nigeria Core requirements;\n* enforce applicable cardinalities, invariants, terminology bindings, required\n  references, and **Must Support** expectations;\n* use governed identifiers and terminology where specified;\n* publish or make available an accurate `CapabilityStatement`;\n* advertise only capabilities it can reliably support;\n* return FHIR-conformant responses; and\n* return an appropriate `OperationOutcome` when a request cannot be processed.\n\nThe Responder **SHOULD** provide sufficient error information for correction\nwithout exposing sensitive implementation details.\n\nAccess to technically available information **SHALL** remain subject to\napplicable authentication, authorisation, privacy, consent, and security rules.\n\n### Capability discovery\n\nThe Responder's `CapabilityStatement` **SHOULD** identify supported FHIR\nversion, profiles, resources, interactions, operations, search parameters,\nformats, security requirements, and relevant limitations.\n\n### Relationships\n\nThe Responder commonly interacts with the **Nigeria Core Requestor, Registry\nService, Terminology Service,** and **Conformance and Sandbox Service**.\n\nA system may act as both Requestor and Responder."
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

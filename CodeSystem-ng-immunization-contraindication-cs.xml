@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-immunization-contraindication-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-immunization-contraindication-cs</b></p><a name="ng-immunization-contraindication-cs"> </a><a name="hcng-immunization-contraindication-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-contraindication-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">immuno<a name="ng-immunization-contraindication-cs-immuno"> </a></td><td>Immunocompromised</td><td>The individual has a weakened immune system due to a medical condition (e.g., cancer, organ transplant, or immunosuppressive therapy), which contraindicates certain live vaccines.</td></tr><tr><td style="white-space:nowrap">severe-aefi<a name="ng-immunization-contraindication-cs-severe-aefi"> </a></td><td>severe AEFI</td><td>The individual is currently experiencing a severe febrile or respiratory illness (REFI), which may necessitate deferral of immunization until recovery.</td></tr><tr><td style="white-space:nowrap">anaphylactic<a name="ng-immunization-contraindication-cs-anaphylactic"> </a></td><td>Anaphylactic reactions</td><td>The individual has a documented history of a severe allergic (anaphylactic) reaction to a previous dose of a vaccine or any of its components, making re-administration contraindicated.</td></tr><tr><td style="white-space:nowrap">hiv<a name="ng-immunization-contraindication-cs-hiv"> </a></td><td>HIV positive</td><td>The individual has symptomatic HIV infection, which may contraindicate live vaccines or require specific vaccine schedules based on immunological status.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-contraindication-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.86"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgImmunizationContraindicationCS"/>
+  <title value="NG Vaccine contraindications CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="immuno"/>
+    <display value="Immunocompromised"/>
+    <definition value="The individual has a weakened immune system due to a medical condition (e.g., cancer, organ transplant, or immunosuppressive therapy), which contraindicates certain live vaccines."/>
+  </concept>
+  <concept>
+    <code value="severe-aefi"/>
+    <display value="severe AEFI"/>
+    <definition value="The individual is currently experiencing a severe febrile or respiratory illness (REFI), which may necessitate deferral of immunization until recovery."/>
+  </concept>
+  <concept>
+    <code value="anaphylactic"/>
+    <display value="Anaphylactic reactions"/>
+    <definition value="The individual has a documented history of a severe allergic (anaphylactic) reaction to a previous dose of a vaccine or any of its components, making re-administration contraindicated."/>
+  </concept>
+  <concept>
+    <code value="hiv"/>
+    <display value="HIV positive"/>
+    <definition value="The individual has symptomatic HIV infection, which may contraindicate live vaccines or require specific vaccine schedules based on immunological status."/>
+  </concept>
+</CodeSystem>

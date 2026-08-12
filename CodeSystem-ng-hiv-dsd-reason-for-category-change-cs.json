@@ -1,0 +1,86 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-dsd-reason-for-category-change-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-dsd-reason-for-category-change-cs</b></p><a name=\"ng-hiv-dsd-reason-for-category-change-cs\"> </a><a name=\"hcng-hiv-dsd-reason-for-category-change-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Returned<a name=\"ng-hiv-dsd-reason-for-category-change-cs-Returned\"> </a></td><td>Returned to Conventional Care</td></tr><tr><td style=\"white-space:nowrap\">Moved<a name=\"ng-hiv-dsd-reason-for-category-change-cs-Moved\"> </a></td><td>Moved to Other DSD Model</td></tr><tr><td style=\"white-space:nowrap\">TO<a name=\"ng-hiv-dsd-reason-for-category-change-cs-TO\"> </a></td><td>TO</td></tr><tr><td style=\"white-space:nowrap\">Dead<a name=\"ng-hiv-dsd-reason-for-category-change-cs-Dead\"> </a></td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\">Lost<a name=\"ng-hiv-dsd-reason-for-category-change-cs-Lost\"> </a></td><td>Lost</td></tr><tr><td style=\"white-space:nowrap\">Unknown<a name=\"ng-hiv-dsd-reason-for-category-change-cs-Unknown\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"ng-hiv-dsd-reason-for-category-change-cs-Other\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.43"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivDSDReasonForCategoryChangeCS",
+  "title" : "HIV DSD - Reason For Category Change CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Code used for indicating the reason for the category change for the DSD assessment.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "Returned",
+    "display" : "Returned to Conventional Care"
+  },
+  {
+    "code" : "Moved",
+    "display" : "Moved to Other DSD Model"
+  },
+  {
+    "code" : "TO",
+    "display" : "TO"
+  },
+  {
+    "code" : "Dead",
+    "display" : "Dead"
+  },
+  {
+    "code" : "Lost",
+    "display" : "Lost"
+  },
+  {
+    "code" : "Unknown",
+    "display" : "Unknown"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  }]
+}

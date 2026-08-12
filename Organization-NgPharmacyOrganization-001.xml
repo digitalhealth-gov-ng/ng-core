@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="NgPharmacyOrganization-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-pharmacy-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization NgPharmacyOrganization-001</b></p><a name="NgPharmacyOrganization-001"> </a><a name="hcNgPharmacyOrganization-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-pharmacy-organization.html">NG Pharmacy Organization</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type cg}">Community Group</span></p><p><b>name</b>: Sunrise Community Group</p><p><b>telecom</b>: <a href="tel:+2348030000000">+2348030000000</a>, <a href="mailto:info@sunrisepharmacy.example">info@sunrisepharmacy.example</a></p><p><b>address</b>: 15 Hospital Road Akure South ON Nigeria </p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="cg"/>
+      <display value="Community Group"/>
+    </coding>
+  </type>
+  <name value="Sunrise Community Group"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+2348030000000"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="info@sunrisepharmacy.example"/>
+  </telecom>
+  <address>
+    <type value="physical"/>
+    <line value="15 Hospital Road"/>
+    <city value="Akure South"/>
+    <district value="on-akure-south"/>
+    <state value="ON"/>
+    <country value="Nigeria"/>
+  </address>
+</Organization>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-int-lab-form-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-int-lab-form-cs</b></p><a name="ng-hiv-int-lab-form-cs"> </a><a name="hcng-hiv-int-lab-form-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">test-type-viral-load<a name="ng-hiv-int-lab-form-cs-test-type-viral-load"> </a></td><td>Viral load</td><td>A viral-load test is requested.</td></tr><tr><td style="white-space:nowrap">test-type-eid<a name="ng-hiv-int-lab-form-cs-test-type-eid"> </a></td><td>Early infant diagnosis</td><td>An early-infant-diagnosis test is requested.</td></tr><tr><td style="white-space:nowrap">test-type-other<a name="ng-hiv-int-lab-form-cs-test-type-other"> </a></td><td>Other laboratory test</td><td>One or more other laboratory investigations are requested.</td></tr><tr><td style="white-space:nowrap">eid-age-less-than-or-equal-72-hours<a name="ng-hiv-int-lab-form-cs-eid-age-less-than-or-equal-72-hours"> </a></td><td>72 hours or younger</td><td>Infant age is 72 hours or younger at specimen collection.</td></tr><tr><td style="white-space:nowrap">eid-age-over-72-hours-under-2-months<a name="ng-hiv-int-lab-form-cs-eid-age-over-72-hours-under-2-months"> </a></td><td>Older than 72 hours and younger than 2 months</td><td>Infant age is greater than 72 hours and less than 2 months.</td></tr><tr><td style="white-space:nowrap">eid-age-2-to-12-months<a name="ng-hiv-int-lab-form-cs-eid-age-2-to-12-months"> </a></td><td>2 to 12 months</td><td>Infant age is at least 2 months and not more than 12 months.</td></tr><tr><td style="white-space:nowrap">eid-age-over-12-months<a name="ng-hiv-int-lab-form-cs-eid-age-over-12-months"> </a></td><td>Older than 12 months</td><td>Infant age is greater than 12 months.</td></tr><tr><td style="white-space:nowrap">arv-prophylaxis-azt-nvp<a name="ng-hiv-int-lab-form-cs-arv-prophylaxis-azt-nvp"> </a></td><td>AZT + NVP</td><td>Zidovudine and nevirapine prophylaxis.</td></tr><tr><td style="white-space:nowrap">arv-prophylaxis-nvp<a name="ng-hiv-int-lab-form-cs-arv-prophylaxis-nvp"> </a></td><td>NVP</td><td>Nevirapine prophylaxis.</td></tr><tr><td style="white-space:nowrap">arv-prophylaxis-azt-3tc-nvp-ral<a name="ng-hiv-int-lab-form-cs-arv-prophylaxis-azt-3tc-nvp-ral"> </a></td><td>AZT + 3TC + NVP/RAL</td><td>Zidovudine, lamivudine and nevirapine or raltegravir prophylaxis as printed on the source form.</td></tr><tr><td style="white-space:nowrap">arv-prophylaxis-other<a name="ng-hiv-int-lab-form-cs-arv-prophylaxis-other"> </a></td><td>Other ARV prophylaxis</td><td>An ARV-prophylaxis regimen not represented by another code; specify separately.</td></tr><tr><td style="white-space:nowrap">arv-prophylaxis-none<a name="ng-hiv-int-lab-form-cs-arv-prophylaxis-none"> </a></td><td>No ARV prophylaxis</td><td>No ARV prophylaxis was received.</td></tr><tr><td style="white-space:nowrap">regimen-line-first<a name="ng-hiv-int-lab-form-cs-regimen-line-first"> </a></td><td>First-line regimen</td><td>The client is receiving a first-line ART regimen.</td></tr><tr><td style="white-space:nowrap">regimen-line-second<a name="ng-hiv-int-lab-form-cs-regimen-line-second"> </a></td><td>Second-line regimen</td><td>The client is receiving a second-line ART regimen.</td></tr><tr><td style="white-space:nowrap">regimen-line-third<a name="ng-hiv-int-lab-form-cs-regimen-line-third"> </a></td><td>Third-line regimen</td><td>The client is receiving a third-line ART regimen.</td></tr><tr><td style="white-space:nowrap">vl-indication-baseline-six-months<a name="ng-hiv-int-lab-form-cs-vl-indication-baseline-six-months"> </a></td><td>Baseline: six months after ART initiation</td><td>Baseline viral-load testing six months after ART initiation.</td></tr><tr><td style="white-space:nowrap">vl-indication-routine-annual<a name="ng-hiv-int-lab-form-cs-vl-indication-routine-annual"> </a></td><td>Routine: every 12 months</td><td>Routine annual viral-load monitoring.</td></tr><tr><td style="white-space:nowrap">vl-indication-clinical-immunologic-failure<a name="ng-hiv-int-lab-form-cs-vl-indication-clinical-immunologic-failure"> </a></td><td>Clinical or immunologic failure</td><td>Viral-load testing requested because of suspected clinical or immunologic treatment failure.</td></tr><tr><td style="white-space:nowrap">vl-indication-gestation-32-36-weeks<a name="ng-hiv-int-lab-form-cs-vl-indication-gestation-32-36-weeks"> </a></td><td>32–36 weeks of gestation</td><td>Viral-load testing requested at 32–36 weeks of gestation.</td></tr><tr><td style="white-space:nowrap">vl-indication-confirmation-after-eac<a name="ng-hiv-int-lab-form-cs-vl-indication-confirmation-after-eac"> </a></td><td>Confirmation: three to six months after EAC</td><td>Confirmatory viral-load testing three to six months after enhanced adherence counselling.</td></tr><tr><td style="white-space:nowrap">vl-indication-recent-infection<a name="ng-hiv-int-lab-form-cs-vl-indication-recent-infection"> </a></td><td>Recent infection</td><td>Viral-load testing requested in the context of recent HIV infection.</td></tr><tr><td style="white-space:nowrap">vl-indication-early-hiv-detection<a name="ng-hiv-int-lab-form-cs-vl-indication-early-hiv-detection"> </a></td><td>Early HIV detection</td><td>Viral-load testing requested for early HIV detection.</td></tr><tr><td style="white-space:nowrap">eid-indication-at-birth<a name="ng-hiv-int-lab-form-cs-eid-indication-at-birth"> </a></td><td>EID at birth</td><td>Early infant diagnosis requested at birth.</td></tr><tr><td style="white-space:nowrap">eid-indication-six-eight-weeks<a name="ng-hiv-int-lab-form-cs-eid-indication-six-eight-weeks"> </a></td><td>EID at 6–8 weeks</td><td>Early infant diagnosis requested at six to eight weeks.</td></tr><tr><td style="white-space:nowrap">eid-indication-two-twelve-months<a name="ng-hiv-int-lab-form-cs-eid-indication-two-twelve-months"> </a></td><td>EID at 2–12 months</td><td>Early infant diagnosis requested between two and twelve months.</td></tr><tr><td style="white-space:nowrap">eid-indication-repeat-invalid<a name="ng-hiv-int-lab-form-cs-eid-indication-repeat-invalid"> </a></td><td>Repeat because of invalid test</td><td>The EID test is repeated because a previous result was invalid.</td></tr><tr><td style="white-space:nowrap">eid-indication-after-breastfeeding<a name="ng-hiv-int-lab-form-cs-eid-indication-after-breastfeeding"> </a></td><td>Repeat after cessation of breastfeeding</td><td>Repeat EID at least six weeks after the last exposure to breast milk.</td></tr><tr><td style="white-space:nowrap">specimen-whole-blood<a name="ng-hiv-int-lab-form-cs-specimen-whole-blood"> </a></td><td>Whole blood</td><td>Whole-blood specimen.</td></tr><tr><td style="white-space:nowrap">specimen-plasma<a name="ng-hiv-int-lab-form-cs-specimen-plasma"> </a></td><td>Plasma</td><td>Plasma specimen.</td></tr><tr><td style="white-space:nowrap">specimen-dbs<a name="ng-hiv-int-lab-form-cs-specimen-dbs"> </a></td><td>DBS</td><td>Dried blood spot specimen.</td></tr><tr><td style="white-space:nowrap">specimen-pbs<a name="ng-hiv-int-lab-form-cs-specimen-pbs"> </a></td><td>PBS</td><td>PBS as printed on the source form; the expansion is not specified by the source workbook.</td></tr><tr><td style="white-space:nowrap">other-test-cd4-count<a name="ng-hiv-int-lab-form-cs-other-test-cd4-count"> </a></td><td>CD4+ cell count</td><td>Absolute CD4+ cell count.</td></tr><tr><td style="white-space:nowrap">other-test-cd4-percentage<a name="ng-hiv-int-lab-form-cs-other-test-cd4-percentage"> </a></td><td>CD4 percentage</td><td>CD4 percentage.</td></tr><tr><td style="white-space:nowrap">other-test-cd4-lfa<a name="ng-hiv-int-lab-form-cs-other-test-cd4-lfa"> </a></td><td>CD4 LFA</td><td>CD4 lateral-flow assay.</td></tr><tr><td style="white-space:nowrap">other-test-tb-lf-lam<a name="ng-hiv-int-lab-form-cs-other-test-tb-lf-lam"> </a></td><td>TB LF-LAM</td><td>Tuberculosis lateral-flow urine lipoarabinomannan test.</td></tr><tr><td style="white-space:nowrap">other-test-serum-crag<a name="ng-hiv-int-lab-form-cs-other-test-serum-crag"> </a></td><td>Serum CrAg</td><td>Serum cryptococcal antigen test.</td></tr><tr><td style="white-space:nowrap">other-test-csf-crag<a name="ng-hiv-int-lab-form-cs-other-test-csf-crag"> </a></td><td>CSF CrAg</td><td>Cerebrospinal-fluid cryptococcal antigen test.</td></tr><tr><td style="white-space:nowrap">other-test-csf-mcs<a name="ng-hiv-int-lab-form-cs-other-test-csf-mcs"> </a></td><td>CSF M/C/S</td><td>Cerebrospinal-fluid microscopy, culture and sensitivity.</td></tr><tr><td style="white-space:nowrap">other-test-hbsag<a name="ng-hiv-int-lab-form-cs-other-test-hbsag"> </a></td><td>HBsAg</td><td>Hepatitis B surface antigen test.</td></tr><tr><td style="white-space:nowrap">other-test-hcv-antibody<a name="ng-hiv-int-lab-form-cs-other-test-hcv-antibody"> </a></td><td>HCV antibody</td><td>Hepatitis C virus antibody test.</td></tr><tr><td style="white-space:nowrap">other-test-hbv-viral-load<a name="ng-hiv-int-lab-form-cs-other-test-hbv-viral-load"> </a></td><td>HBV viral load</td><td>Hepatitis B virus viral-load test.</td></tr><tr><td style="white-space:nowrap">other-test-hcv-viral-load<a name="ng-hiv-int-lab-form-cs-other-test-hcv-viral-load"> </a></td><td>HCV viral load</td><td>Hepatitis C virus viral-load test.</td></tr><tr><td style="white-space:nowrap">other-test-syphilis<a name="ng-hiv-int-lab-form-cs-other-test-syphilis"> </a></td><td>Syphilis</td><td>Syphilis serology.</td></tr><tr><td style="white-space:nowrap">other-test-hpv<a name="ng-hiv-int-lab-form-cs-other-test-hpv"> </a></td><td>HPV</td><td>Human papillomavirus test.</td></tr><tr><td style="white-space:nowrap">other-test-cytology<a name="ng-hiv-int-lab-form-cs-other-test-cytology"> </a></td><td>Cytology</td><td>Cytology or cervical-screening test, including VIA or Pap smear as printed on the source form.</td></tr><tr><td style="white-space:nowrap">other-test-random-glucose<a name="ng-hiv-int-lab-form-cs-other-test-random-glucose"> </a></td><td>Random glucose</td><td>Random blood-glucose test.</td></tr><tr><td style="white-space:nowrap">other-test-naat<a name="ng-hiv-int-lab-form-cs-other-test-naat"> </a></td><td>NAAT</td><td>Nucleic-acid amplification test; the target organism is not specified on the source form.</td></tr><tr><td style="white-space:nowrap">other-test-urinalysis<a name="ng-hiv-int-lab-form-cs-other-test-urinalysis"> </a></td><td>Urinalysis</td><td>Urinalysis.</td></tr><tr><td style="white-space:nowrap">result-negative<a name="ng-hiv-int-lab-form-cs-result-negative"> </a></td><td>Negative</td><td>The qualitative laboratory result is negative.</td></tr><tr><td style="white-space:nowrap">result-positive<a name="ng-hiv-int-lab-form-cs-result-positive"> </a></td><td>Positive</td><td>The qualitative laboratory result is positive.</td></tr><tr><td style="white-space:nowrap">result-invalid<a name="ng-hiv-int-lab-form-cs-result-invalid"> </a></td><td>Invalid</td><td>The test result is invalid.</td></tr><tr><td style="white-space:nowrap">result-non-reactive<a name="ng-hiv-int-lab-form-cs-result-non-reactive"> </a></td><td>Non-reactive</td><td>The serology result is non-reactive.</td></tr><tr><td style="white-space:nowrap">result-reactive<a name="ng-hiv-int-lab-form-cs-result-reactive"> </a></td><td>Reactive</td><td>The serology result is reactive.</td></tr><tr><td style="white-space:nowrap">cytology-method-via<a name="ng-hiv-int-lab-form-cs-cytology-method-via"> </a></td><td>VIA</td><td>Visual inspection with acetic acid.</td></tr><tr><td style="white-space:nowrap">cytology-method-pap-smear<a name="ng-hiv-int-lab-form-cs-cytology-method-pap-smear"> </a></td><td>Pap smear</td><td>Papanicolaou cervical cytology.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.54"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivIntLabFormCS"/>
+  <title value="NG HIV Integrated Laboratory Form Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local coded answer concepts transcribed or inferred from the Nigeria HIV&#xA;Integrated Laboratory Order and Result Form revised November 2025."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="55"/>
+  <concept>
+    <code value="test-type-viral-load"/>
+    <display value="Viral load"/>
+    <definition value="A viral-load test is requested."/>
+  </concept>
+  <concept>
+    <code value="test-type-eid"/>
+    <display value="Early infant diagnosis"/>
+    <definition value="An early-infant-diagnosis test is requested."/>
+  </concept>
+  <concept>
+    <code value="test-type-other"/>
+    <display value="Other laboratory test"/>
+    <definition value="One or more other laboratory investigations are requested."/>
+  </concept>
+  <concept>
+    <code value="eid-age-less-than-or-equal-72-hours"/>
+    <display value="72 hours or younger"/>
+    <definition value="Infant age is 72 hours or younger at specimen collection."/>
+  </concept>
+  <concept>
+    <code value="eid-age-over-72-hours-under-2-months"/>
+    <display value="Older than 72 hours and younger than 2 months"/>
+    <definition value="Infant age is greater than 72 hours and less than 2 months."/>
+  </concept>
+  <concept>
+    <code value="eid-age-2-to-12-months"/>
+    <display value="2 to 12 months"/>
+    <definition value="Infant age is at least 2 months and not more than 12 months."/>
+  </concept>
+  <concept>
+    <code value="eid-age-over-12-months"/>
+    <display value="Older than 12 months"/>
+    <definition value="Infant age is greater than 12 months."/>
+  </concept>
+  <concept>
+    <code value="arv-prophylaxis-azt-nvp"/>
+    <display value="AZT + NVP"/>
+    <definition value="Zidovudine and nevirapine prophylaxis."/>
+  </concept>
+  <concept>
+    <code value="arv-prophylaxis-nvp"/>
+    <display value="NVP"/>
+    <definition value="Nevirapine prophylaxis."/>
+  </concept>
+  <concept>
+    <code value="arv-prophylaxis-azt-3tc-nvp-ral"/>
+    <display value="AZT + 3TC + NVP/RAL"/>
+    <definition value="Zidovudine, lamivudine and nevirapine or raltegravir prophylaxis as printed on the source form."/>
+  </concept>
+  <concept>
+    <code value="arv-prophylaxis-other"/>
+    <display value="Other ARV prophylaxis"/>
+    <definition value="An ARV-prophylaxis regimen not represented by another code; specify separately."/>
+  </concept>
+  <concept>
+    <code value="arv-prophylaxis-none"/>
+    <display value="No ARV prophylaxis"/>
+    <definition value="No ARV prophylaxis was received."/>
+  </concept>
+  <concept>
+    <code value="regimen-line-first"/>
+    <display value="First-line regimen"/>
+    <definition value="The client is receiving a first-line ART regimen."/>
+  </concept>
+  <concept>
+    <code value="regimen-line-second"/>
+    <display value="Second-line regimen"/>
+    <definition value="The client is receiving a second-line ART regimen."/>
+  </concept>
+  <concept>
+    <code value="regimen-line-third"/>
+    <display value="Third-line regimen"/>
+    <definition value="The client is receiving a third-line ART regimen."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-baseline-six-months"/>
+    <display value="Baseline: six months after ART initiation"/>
+    <definition value="Baseline viral-load testing six months after ART initiation."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-routine-annual"/>
+    <display value="Routine: every 12 months"/>
+    <definition value="Routine annual viral-load monitoring."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-clinical-immunologic-failure"/>
+    <display value="Clinical or immunologic failure"/>
+    <definition value="Viral-load testing requested because of suspected clinical or immunologic treatment failure."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-gestation-32-36-weeks"/>
+    <display value="32–36 weeks of gestation"/>
+    <definition value="Viral-load testing requested at 32–36 weeks of gestation."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-confirmation-after-eac"/>
+    <display value="Confirmation: three to six months after EAC"/>
+    <definition value="Confirmatory viral-load testing three to six months after enhanced adherence counselling."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-recent-infection"/>
+    <display value="Recent infection"/>
+    <definition value="Viral-load testing requested in the context of recent HIV infection."/>
+  </concept>
+  <concept>
+    <code value="vl-indication-early-hiv-detection"/>
+    <display value="Early HIV detection"/>
+    <definition value="Viral-load testing requested for early HIV detection."/>
+  </concept>
+  <concept>
+    <code value="eid-indication-at-birth"/>
+    <display value="EID at birth"/>
+    <definition value="Early infant diagnosis requested at birth."/>
+  </concept>
+  <concept>
+    <code value="eid-indication-six-eight-weeks"/>
+    <display value="EID at 6–8 weeks"/>
+    <definition value="Early infant diagnosis requested at six to eight weeks."/>
+  </concept>
+  <concept>
+    <code value="eid-indication-two-twelve-months"/>
+    <display value="EID at 2–12 months"/>
+    <definition value="Early infant diagnosis requested between two and twelve months."/>
+  </concept>
+  <concept>
+    <code value="eid-indication-repeat-invalid"/>
+    <display value="Repeat because of invalid test"/>
+    <definition value="The EID test is repeated because a previous result was invalid."/>
+  </concept>
+  <concept>
+    <code value="eid-indication-after-breastfeeding"/>
+    <display value="Repeat after cessation of breastfeeding"/>
+    <definition value="Repeat EID at least six weeks after the last exposure to breast milk."/>
+  </concept>
+  <concept>
+    <code value="specimen-whole-blood"/>
+    <display value="Whole blood"/>
+    <definition value="Whole-blood specimen."/>
+  </concept>
+  <concept>
+    <code value="specimen-plasma"/>
+    <display value="Plasma"/>
+    <definition value="Plasma specimen."/>
+  </concept>
+  <concept>
+    <code value="specimen-dbs"/>
+    <display value="DBS"/>
+    <definition value="Dried blood spot specimen."/>
+  </concept>
+  <concept>
+    <code value="specimen-pbs"/>
+    <display value="PBS"/>
+    <definition value="PBS as printed on the source form; the expansion is not specified by the source workbook."/>
+  </concept>
+  <concept>
+    <code value="other-test-cd4-count"/>
+    <display value="CD4+ cell count"/>
+    <definition value="Absolute CD4+ cell count."/>
+  </concept>
+  <concept>
+    <code value="other-test-cd4-percentage"/>
+    <display value="CD4 percentage"/>
+    <definition value="CD4 percentage."/>
+  </concept>
+  <concept>
+    <code value="other-test-cd4-lfa"/>
+    <display value="CD4 LFA"/>
+    <definition value="CD4 lateral-flow assay."/>
+  </concept>
+  <concept>
+    <code value="other-test-tb-lf-lam"/>
+    <display value="TB LF-LAM"/>
+    <definition value="Tuberculosis lateral-flow urine lipoarabinomannan test."/>
+  </concept>
+  <concept>
+    <code value="other-test-serum-crag"/>
+    <display value="Serum CrAg"/>
+    <definition value="Serum cryptococcal antigen test."/>
+  </concept>
+  <concept>
+    <code value="other-test-csf-crag"/>
+    <display value="CSF CrAg"/>
+    <definition value="Cerebrospinal-fluid cryptococcal antigen test."/>
+  </concept>
+  <concept>
+    <code value="other-test-csf-mcs"/>
+    <display value="CSF M/C/S"/>
+    <definition value="Cerebrospinal-fluid microscopy, culture and sensitivity."/>
+  </concept>
+  <concept>
+    <code value="other-test-hbsag"/>
+    <display value="HBsAg"/>
+    <definition value="Hepatitis B surface antigen test."/>
+  </concept>
+  <concept>
+    <code value="other-test-hcv-antibody"/>
+    <display value="HCV antibody"/>
+    <definition value="Hepatitis C virus antibody test."/>
+  </concept>
+  <concept>
+    <code value="other-test-hbv-viral-load"/>
+    <display value="HBV viral load"/>
+    <definition value="Hepatitis B virus viral-load test."/>
+  </concept>
+  <concept>
+    <code value="other-test-hcv-viral-load"/>
+    <display value="HCV viral load"/>
+    <definition value="Hepatitis C virus viral-load test."/>
+  </concept>
+  <concept>
+    <code value="other-test-syphilis"/>
+    <display value="Syphilis"/>
+    <definition value="Syphilis serology."/>
+  </concept>
+  <concept>
+    <code value="other-test-hpv"/>
+    <display value="HPV"/>
+    <definition value="Human papillomavirus test."/>
+  </concept>
+  <concept>
+    <code value="other-test-cytology"/>
+    <display value="Cytology"/>
+    <definition value="Cytology or cervical-screening test, including VIA or Pap smear as printed on the source form."/>
+  </concept>
+  <concept>
+    <code value="other-test-random-glucose"/>
+    <display value="Random glucose"/>
+    <definition value="Random blood-glucose test."/>
+  </concept>
+  <concept>
+    <code value="other-test-naat"/>
+    <display value="NAAT"/>
+    <definition value="Nucleic-acid amplification test; the target organism is not specified on the source form."/>
+  </concept>
+  <concept>
+    <code value="other-test-urinalysis"/>
+    <display value="Urinalysis"/>
+    <definition value="Urinalysis."/>
+  </concept>
+  <concept>
+    <code value="result-negative"/>
+    <display value="Negative"/>
+    <definition value="The qualitative laboratory result is negative."/>
+  </concept>
+  <concept>
+    <code value="result-positive"/>
+    <display value="Positive"/>
+    <definition value="The qualitative laboratory result is positive."/>
+  </concept>
+  <concept>
+    <code value="result-invalid"/>
+    <display value="Invalid"/>
+    <definition value="The test result is invalid."/>
+  </concept>
+  <concept>
+    <code value="result-non-reactive"/>
+    <display value="Non-reactive"/>
+    <definition value="The serology result is non-reactive."/>
+  </concept>
+  <concept>
+    <code value="result-reactive"/>
+    <display value="Reactive"/>
+    <definition value="The serology result is reactive."/>
+  </concept>
+  <concept>
+    <code value="cytology-method-via"/>
+    <display value="VIA"/>
+    <definition value="Visual inspection with acetic acid."/>
+  </concept>
+  <concept>
+    <code value="cytology-method-pap-smear"/>
+    <display value="Pap smear"/>
+    <definition value="Papanicolaou cervical cytology."/>
+  </concept>
+</CodeSystem>

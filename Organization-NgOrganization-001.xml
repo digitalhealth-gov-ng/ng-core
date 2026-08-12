@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="NgOrganization-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization NgOrganization-001</b></p><a name="NgOrganization-001"> </a><a name="hcNgOrganization-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-organization.html">NG Organization</a></p></div><p><b>NG Owner of Facility</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs public}">Public Health Institution Location</span></p><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code>/HOSPITAL1234</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs hospital}">Secondary Hospital</span></p><p><b>name</b>: Asokoro District Hospital</p><p><b>telecom</b>: <a href="tel:+234-800-111-2222">+234-800-111-2222</a>, <a href="mailto:info@asokorodh.example.ng">info@asokorodh.example.ng</a></p><p><b>address</b>: Plot 12, Yakubu Gowon Crescent, Asokoro Abuja FC </p></div>
+  </text>
+  <extension url="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs"/>
+        <code value="public"/>
+        <display value="Public Health Institution Location"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+    <value value="HOSPITAL1234"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+      <code value="hospital"/>
+      <display value="Secondary Hospital"/>
+    </coding>
+    <text value="Secondary Hospital"/>
+  </type>
+  <name value="Asokoro District Hospital"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+234-800-111-2222"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="info@asokorodh.example.ng"/>
+  </telecom>
+  <address>
+    <line value="Plot 12, Yakubu Gowon Crescent, Asokoro"/>
+    <city value="Abuja"/>
+    <district value="fc-municipal"/>
+    <state value="FC"/>
+  </address>
+</Organization>

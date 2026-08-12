@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-tb-month-ordinals-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-tb-month-ordinals-vs</b></p><a name=\"ng-tb-month-ordinals-vs\"> </a><a name=\"hcng-tb-month-ordinals-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/255216001\">255216001</a></td><td>First</td></tr><tr><td><a href=\"http://snomed.info/id/81170007\">81170007</a></td><td>Second</td></tr><tr><td><a href=\"http://snomed.info/id/70905002\">70905002</a></td><td>Third</td></tr><tr><td><a href=\"http://snomed.info/id/29970001\">29970001</a></td><td>Fourth</td></tr><tr><td><a href=\"http://snomed.info/id/32088001\">32088001</a></td><td>Fifth</td></tr><tr><td><a href=\"http://snomed.info/id/53046009\">53046009</a></td><td>Sixth</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-tb-month-ordinals-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.193"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgTbMonthOrdinalsVS",
+  "title" : "TB Month Ordinal Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of codes indicating the month ordinals.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "255216001",
+        "display" : "First"
+      },
+      {
+        "code" : "81170007",
+        "display" : "Second"
+      },
+      {
+        "code" : "70905002",
+        "display" : "Third"
+      },
+      {
+        "code" : "29970001",
+        "display" : "Fourth"
+      },
+      {
+        "code" : "32088001",
+        "display" : "Fifth"
+      },
+      {
+        "code" : "53046009",
+        "display" : "Sixth"
+      }]
+    }]
+  }
+}

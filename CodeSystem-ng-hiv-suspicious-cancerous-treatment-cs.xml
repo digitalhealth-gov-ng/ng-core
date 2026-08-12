@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-suspicious-cancerous-treatment-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-suspicious-cancerous-treatment-cs</b></p><a name="ng-hiv-suspicious-cancerous-treatment-cs"> </a><a name="hcng-hiv-suspicious-cancerous-treatment-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">treated-at-facility<a name="ng-hiv-suspicious-cancerous-treatment-cs-treated-at-facility"> </a></td><td>Treated at the facility</td></tr><tr><td style="white-space:nowrap">referred-to-another-facility<a name="ng-hiv-suspicious-cancerous-treatment-cs-referred-to-another-facility"> </a></td><td>Referred to another facility</td></tr><tr><td style="white-space:nowrap">arrival-in-receiving-facility-confirmed<a name="ng-hiv-suspicious-cancerous-treatment-cs-arrival-in-receiving-facility-confirmed"> </a></td><td>Arrival in receiving facility confirmed</td></tr><tr><td style="white-space:nowrap">feedback-received-by-referring-hf<a name="ng-hiv-suspicious-cancerous-treatment-cs-feedback-received-by-referring-hf"> </a></td><td>Feedback received by referring HF</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.73"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivSuspiciousCancerousTreatmentCS"/>
+  <title value="HIV-Suspicious Cancerous Treatment CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the suspicious Cancerous treatment"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="treated-at-facility"/>
+    <display value="Treated at the facility"/>
+  </concept>
+  <concept>
+    <code value="referred-to-another-facility"/>
+    <display value="Referred to another facility"/>
+  </concept>
+  <concept>
+    <code value="arrival-in-receiving-facility-confirmed"/>
+    <display value="Arrival in receiving facility confirmed"/>
+  </concept>
+  <concept>
+    <code value="feedback-received-by-referring-hf"/>
+    <display value="Feedback received by referring HF"/>
+  </concept>
+</CodeSystem>

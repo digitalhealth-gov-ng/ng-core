@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Organization/NgPharmacyOrganization-001> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgPharmacyOrganization-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-pharmacy-organization" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-pharmacy-organization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization NgPharmacyOrganization-001</b></p><a name=\"NgPharmacyOrganization-001\"> </a><a name=\"hcNgPharmacyOrganization-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-pharmacy-organization.html\">NG Pharmacy Organization</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type cg}\">Community Group</span></p><p><b>name</b>: Sunrise Community Group</p><p><b>telecom</b>: <a href=\"tel:+2348030000000\">+2348030000000</a>, <a href=\"mailto:info@sunrisepharmacy.example\">info@sunrisepharmacy.example</a></p><p><b>address</b>: 15 Hospital Road Akure South ON Nigeria </p></div>"
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ] ;
+       fhir:Coding.code [ fhir:value "cg" ] ;
+       fhir:Coding.display [ fhir:value "Community Group" ]
+     ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Sunrise Community Group"] ;
+  fhir:Organization.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+2348030000000" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "info@sunrisepharmacy.example" ]
+  ] ;
+  fhir:Organization.address [
+     fhir:index 0 ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.line [
+       fhir:value "15 Hospital Road" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Akure South" ] ;
+     fhir:Address.district [ fhir:value "on-akure-south" ] ;
+     fhir:Address.state [ fhir:value "ON" ] ;
+     fhir:Address.country [ fhir:value "Nigeria" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Organization/NgPharmacyOrganization-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

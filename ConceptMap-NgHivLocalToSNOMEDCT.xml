@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="NgHivLocalToSNOMEDCT"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap NgHivLocalToSNOMEDCT</b></p><a name="NgHivLocalToSNOMEDCT"> </a><a name="hcNgHivLocalToSNOMEDCT"> </a><p>Mapping from <a href="ValueSet-ng-hiv-local-concepts.html">Nigeria HIV Local Concepts</a> to <a href="ValueSet-ng-hiv-snomed-ct-concepts.html">Nigeria HIV SNOMED CT Concepts</a></p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html">HIV Follow Up Status CodeSystem</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>alive-on-art</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>129019007 (Taking medication)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="CodeSystem-ng-hiv-positive-tracking-cs.html">HIV Positive Tracking</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Not-Started (ART Not Started)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>410524007 (Was not started)</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href="CodeSystem-ng-hiv-service-provider-cs.html">HIV Service Providers CodeSystem</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Health-Center</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>257622000 (Healthcare facility)</td></tr><tr><td>Public-Hospital</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>276052003 (Public facilities)</td></tr><tr><td>Private-Hospital</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>309895006 (Private hospital)</td></tr><tr><td>NBO-FBO-Hospital (NBO/FBO hospital)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>394794000 (Health clinic managed by voluntary or private agents)</td></tr><tr><td>Private-Clinic</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>185483006 (Outreach clinic)</td></tr><tr><td>Self-referred</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1991000124105 (Referred by self)</td></tr><tr><td>Community-Referred</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>310391008 (Community clinic)</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <a href="CodeSystem-ng-hiv-target-population-category-cs.html">Target Population Category Codes</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MSM</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>76102007 (Male homosexual)</td></tr><tr><td>Female-Commercial-Sex-Workers</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>159799000 (Female prostitute)</td></tr><tr><td>TG</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>407375002 (Surgically transgendered transsexual)</td></tr><tr><td>Mobile-Daily-Laborers (Mobile or Daily Laborers)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>106540006 (Laborer)</td></tr><tr><td>Distance-Drivers</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>87447002 (Lorry and van driver (long-distance transport))</td></tr><tr><td>Refugee</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>446654005 (Refugee)</td></tr><tr><td>People-Who-Inject-Drug</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>226034001 (Injecting drug user)</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <a href="CodeSystem-ng-hiv-enhanced-adherence-counselling-status-cs.html">Enhanced Adherence Counselling</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>eac (Enhanced Adherence Counselling)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>410265008 (Medication administration education, guidance, and counseling)</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLocalToSNOMEDCT"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.18.3"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivLocalToSNOMEDCT"/>
+  <title value="Nigeria HIV Local Concepts → SNOMED CT"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-24"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts"/>
+  <targetCanonical value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-snomed-ct-concepts"/>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="alive-on-art"/>
+      <target>
+        <code value="129019007"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="Not-Started"/>
+      <target>
+        <code value="410524007"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="Health-Center"/>
+      <target>
+        <code value="257622000"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Public-Hospital"/>
+      <target>
+        <code value="276052003"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Private-Hospital"/>
+      <target>
+        <code value="309895006"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NBO-FBO-Hospital"/>
+      <target>
+        <code value="394794000"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Private-Clinic"/>
+      <target>
+        <code value="185483006"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Self-referred"/>
+      <target>
+        <code value="1991000124105"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Community-Referred"/>
+      <target>
+        <code value="310391008"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="MSM"/>
+      <target>
+        <code value="76102007"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Female-Commercial-Sex-Workers"/>
+      <target>
+        <code value="159799000"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="TG"/>
+      <target>
+        <code value="407375002"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Mobile-Daily-Laborers"/>
+      <target>
+        <code value="106540006"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Distance-Drivers"/>
+      <target>
+        <code value="87447002"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Refugee"/>
+      <target>
+        <code value="446654005"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="People-Who-Inject-Drug"/>
+      <target>
+        <code value="226034001"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="eac"/>
+      <target>
+        <code value="410265008"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

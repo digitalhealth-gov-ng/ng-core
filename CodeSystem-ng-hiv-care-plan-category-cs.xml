@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-care-plan-category-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-care-plan-category-cs</b></p><a name="ng-hiv-care-plan-category-cs"> </a><a name="hcng-hiv-care-plan-category-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-plan-category-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">cervical-cancer-care-plan<a name="ng-hiv-care-plan-category-cs-cervical-cancer-care-plan"> </a></td><td>Cervical Cancer Care Plan</td></tr><tr><td style="white-space:nowrap">art-follow-up-care-plan<a name="ng-hiv-care-plan-category-cs-art-follow-up-care-plan"> </a></td><td>ART Follow-up Care Plan</td></tr><tr><td style="white-space:nowrap">cotrimoxazole-care-plan<a name="ng-hiv-care-plan-category-cs-cotrimoxazole-care-plan"> </a></td><td>Cotrimoxazole Preventive Therapy Care Plan</td></tr><tr><td style="white-space:nowrap">tb-treatment-care-plan<a name="ng-hiv-care-plan-category-cs-tb-treatment-care-plan"> </a></td><td>TB Treatment Care Plan</td></tr><tr><td style="white-space:nowrap">tb-preventive-therapy-care-plan<a name="ng-hiv-care-plan-category-cs-tb-preventive-therapy-care-plan"> </a></td><td>TB Preventive Therapy Care Plan</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-plan-category-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.34"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivCarePlanCategoryCS"/>
+  <title value="HIV-Care Plan Categories CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing Care Plan categories."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="cervical-cancer-care-plan"/>
+    <display value="Cervical Cancer Care Plan"/>
+  </concept>
+  <concept>
+    <code value="art-follow-up-care-plan"/>
+    <display value="ART Follow-up Care Plan"/>
+  </concept>
+  <concept>
+    <code value="cotrimoxazole-care-plan"/>
+    <display value="Cotrimoxazole Preventive Therapy Care Plan"/>
+  </concept>
+  <concept>
+    <code value="tb-treatment-care-plan"/>
+    <display value="TB Treatment Care Plan"/>
+  </concept>
+  <concept>
+    <code value="tb-preventive-therapy-care-plan"/>
+    <display value="TB Preventive Therapy Care Plan"/>
+  </concept>
+</CodeSystem>

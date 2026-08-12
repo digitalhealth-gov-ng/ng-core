@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-clinical-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-clinical-status-cs</b></p><a name="ng-clinical-status-cs"> </a><a name="hcng-clinical-status-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-clinical-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">active<a name="ng-clinical-status-cs-active"> </a></td><td>Active</td><td>The clinical condition is currently present, ongoing, or requires active management or monitoring.</td></tr><tr><td style="white-space:nowrap">inactive<a name="ng-clinical-status-cs-inactive"> </a></td><td>Inactive</td><td>The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment.</td></tr><tr><td style="white-space:nowrap">resolved<a name="ng-clinical-status-cs-resolved"> </a></td><td>Resolved</td><td>The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management.</td></tr><tr><td style="white-space:nowrap">recovered<a name="ng-clinical-status-cs-recovered"> </a></td><td>Recovered</td><td>The individual has recovered fully from the adverse event without any long-term effects or sequelae.</td></tr><tr><td style="white-space:nowrap">recovered-with-sequelae<a name="ng-clinical-status-cs-recovered-with-sequelae"> </a></td><td>Recovered with sequelae</td><td>The individual has recovered from the adverse event but with lasting effects, complications, or disabilities.</td></tr><tr><td style="white-space:nowrap">death<a name="ng-clinical-status-cs-death"> </a></td><td>Death</td><td>The adverse event resulted in the death of the individual.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-clinical-status-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.10"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgClinicalStatusCS"/>
+  <title value="NG Adverse Event CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="active"/>
+    <display value="Active"/>
+    <definition value="The clinical condition is currently present, ongoing, or requires active management or monitoring."/>
+  </concept>
+  <concept>
+    <code value="inactive"/>
+    <display value="Inactive"/>
+    <definition value="The clinical condition is no longer present but is not considered resolved; it may recur or requires no current treatment."/>
+  </concept>
+  <concept>
+    <code value="resolved"/>
+    <display value="Resolved"/>
+    <definition value="The clinical condition has completely resolved and is no longer impacting the patient's health or requiring further management."/>
+  </concept>
+  <concept>
+    <code value="recovered"/>
+    <display value="Recovered"/>
+    <definition value="The individual has recovered fully from the adverse event without any long-term effects or sequelae."/>
+  </concept>
+  <concept>
+    <code value="recovered-with-sequelae"/>
+    <display value="Recovered with sequelae"/>
+    <definition value="The individual has recovered from the adverse event but with lasting effects, complications, or disabilities."/>
+  </concept>
+  <concept>
+    <code value="death"/>
+    <display value="Death"/>
+    <definition value="The adverse event resulted in the death of the individual."/>
+  </concept>
+</CodeSystem>

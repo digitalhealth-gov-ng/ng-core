@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-hiv-int-lab-viral-load-indication-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-int-lab-viral-load-indication-vs</b></p><a name=\"ng-hiv-int-lab-viral-load-indication-vs\"> </a><a name=\"hcng-hiv-int-lab-viral-load-indication-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-baseline-six-months\">vl-indication-baseline-six-months</a></td><td style=\"color: #cccccc\">Baseline: six months after ART initiation</td><td>Baseline viral-load testing six months after ART initiation.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-routine-annual\">vl-indication-routine-annual</a></td><td style=\"color: #cccccc\">Routine: every 12 months</td><td>Routine annual viral-load monitoring.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-clinical-immunologic-failure\">vl-indication-clinical-immunologic-failure</a></td><td style=\"color: #cccccc\">Clinical or immunologic failure</td><td>Viral-load testing requested because of suspected clinical or immunologic treatment failure.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-gestation-32-36-weeks\">vl-indication-gestation-32-36-weeks</a></td><td style=\"color: #cccccc\">32–36 weeks of gestation</td><td>Viral-load testing requested at 32–36 weeks of gestation.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-confirmation-after-eac\">vl-indication-confirmation-after-eac</a></td><td style=\"color: #cccccc\">Confirmation: three to six months after EAC</td><td>Confirmatory viral-load testing three to six months after enhanced adherence counselling.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-recent-infection\">vl-indication-recent-infection</a></td><td style=\"color: #cccccc\">Recent infection</td><td>Viral-load testing requested in the context of recent HIV infection.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-vl-indication-early-hiv-detection\">vl-indication-early-hiv-detection</a></td><td style=\"color: #cccccc\">Early HIV detection</td><td>Viral-load testing requested for early HIV detection.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-viral-load-indication-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.97"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivIntLabViralLoadIndicationVS",
+  "title" : "NG HIV Integrated Laboratory Viral-Load Indication",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-28",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Viral-load indications printed on the integrated laboratory form.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs",
+      "concept" : [{
+        "code" : "vl-indication-baseline-six-months"
+      },
+      {
+        "code" : "vl-indication-routine-annual"
+      },
+      {
+        "code" : "vl-indication-clinical-immunologic-failure"
+      },
+      {
+        "code" : "vl-indication-gestation-32-36-weeks"
+      },
+      {
+        "code" : "vl-indication-confirmation-after-eac"
+      },
+      {
+        "code" : "vl-indication-recent-infection"
+      },
+      {
+        "code" : "vl-indication-early-hiv-detection"
+      }]
+    }]
+  }
+}

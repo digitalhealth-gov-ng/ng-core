@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-routine-indication-viral-load-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-routine-indication-viral-load-cs</b></p><a name="ng-hiv-routine-indication-viral-load-cs"> </a><a name="hcng-hiv-routine-indication-viral-load-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-routine-indication-viral-load-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1st-VL-Test-3-months-Post-ART<a name="ng-hiv-routine-indication-viral-load-cs-1st-VL-Test-3-months-Post-ART"> </a></td><td>First viral load test at 3 months or longer post ART</td></tr><tr><td style="white-space:nowrap">2nd-VL-Test-6-months-Post-ART<a name="ng-hiv-routine-indication-viral-load-cs-2nd-VL-Test-6-months-Post-ART"> </a></td><td>First viral load test at 6 months or longer post ART</td></tr><tr><td style="white-space:nowrap">2nd-VL-Test-12-months-Post-ART<a name="ng-hiv-routine-indication-viral-load-cs-2nd-VL-Test-12-months-Post-ART"> </a></td><td>2nd VL at 12 month post ART</td></tr><tr><td style="white-space:nowrap">Annual-VL-Test<a name="ng-hiv-routine-indication-viral-load-cs-Annual-VL-Test"> </a></td><td>Annual VL Test</td></tr><tr><td style="white-space:nowrap">First-ANC-visit<a name="ng-hiv-routine-indication-viral-load-cs-First-ANC-visit"> </a></td><td>At the first ANC visit</td></tr><tr><td style="white-space:nowrap">34-36-weeks-of-gestation<a name="ng-hiv-routine-indication-viral-load-cs-34-36-weeks-of-gestation"> </a></td><td>At 34-36 weeks of gestation</td></tr><tr><td style="white-space:nowrap">3-months-after-delivery<a name="ng-hiv-routine-indication-viral-load-cs-3-months-after-delivery"> </a></td><td>Three months after delivery</td></tr><tr><td style="white-space:nowrap">6-months-after-first-VL-at-postnatal-period<a name="ng-hiv-routine-indication-viral-load-cs-6-months-after-first-VL-at-postnatal-period"> </a></td><td>Six months after the first VL at postnatal period</td></tr><tr><td style="white-space:nowrap">Every-6-months-until-MTCT-ends<a name="ng-hiv-routine-indication-viral-load-cs-Every-6-months-until-MTCT-ends"> </a></td><td>Every six months until MTCT ends</td></tr><tr><td style="white-space:nowrap">VL-after-EAC-Repeat-VL-50-to-1000<a name="ng-hiv-routine-indication-viral-load-cs-VL-after-EAC-Repeat-VL-50-to-1000"> </a></td><td>VL after EAC: Repeat VL &gt; 50 to &lt;= 1000 copies/ml</td></tr><tr><td style="white-space:nowrap">VL-after-EAC-Confirmatory-VL-Initial-50-to-1000<a name="ng-hiv-routine-indication-viral-load-cs-VL-after-EAC-Confirmatory-VL-Initial-50-to-1000"> </a></td><td>VL after EAC: Confirmatory VL: Initial &gt; 50 to &lt;= 1000 copies/ml</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-routine-indication-viral-load-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.70"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivRoutineIndicationViralLoadCS"/>
+  <title value="HIV Routine Indication Viral Load"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for representing routine indication for viral load."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="1st-VL-Test-3-months-Post-ART"/>
+    <display value="First viral load test at 3 months or longer post ART"/>
+  </concept>
+  <concept>
+    <code value="2nd-VL-Test-6-months-Post-ART"/>
+    <display value="First viral load test at 6 months or longer post ART"/>
+  </concept>
+  <concept>
+    <code value="2nd-VL-Test-12-months-Post-ART"/>
+    <display value="2nd VL at 12 month post ART"/>
+  </concept>
+  <concept>
+    <code value="Annual-VL-Test"/>
+    <display value="Annual VL Test"/>
+  </concept>
+  <concept>
+    <code value="First-ANC-visit"/>
+    <display value="At the first ANC visit"/>
+  </concept>
+  <concept>
+    <code value="34-36-weeks-of-gestation"/>
+    <display value="At 34-36 weeks of gestation"/>
+  </concept>
+  <concept>
+    <code value="3-months-after-delivery"/>
+    <display value="Three months after delivery"/>
+  </concept>
+  <concept>
+    <code value="6-months-after-first-VL-at-postnatal-period"/>
+    <display value="Six months after the first VL at postnatal period"/>
+  </concept>
+  <concept>
+    <code value="Every-6-months-until-MTCT-ends"/>
+    <display value="Every six months until MTCT ends"/>
+  </concept>
+  <concept>
+    <code value="VL-after-EAC-Repeat-VL-50-to-1000"/>
+    <display value="VL after EAC: Repeat VL &gt; 50 to &lt;= 1000 copies/ml"/>
+  </concept>
+  <concept>
+    <code value="VL-after-EAC-Confirmatory-VL-Initial-50-to-1000"/>
+    <display value="VL after EAC: Confirmatory VL: Initial &gt; 50 to &lt;= 1000 copies/ml"/>
+  </concept>
+</CodeSystem>

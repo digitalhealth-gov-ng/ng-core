@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="NgSpecimen-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-specimen"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen NgSpecimen-001</b></p><a name="NgSpecimen-001"> </a><a name="hcNgSpecimen-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-specimen.html">Specimen profile</a></p></div><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:">Venous blood specimen</span></p><p><b>subject</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>receivedTime</b>: 2026-08-03 09:20:00+0100</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collector</b></td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></td><td>2026-08-03 09:10:00+0100</td><td>5 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span></td><td><span title="Codes:">Venipuncture</span></td><td><span title="Codes:">Left antecubital fossa</span></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Specimen received in good condition and accepted for testing.</p>
+</div></blockquote></div>
+  </text>
+  <status value="available"/>
+  <type>
+    <text value="Venous blood specimen"/>
+  </type>
+  <subject>
+    <reference value="Patient/NgPatient-002"/>
+  </subject>
+  <receivedTime value="2026-08-03T09:20:00+01:00"/>
+  <collection>
+    <collector>
+      <reference value="Practitioner/NgPractitioner-002"/>
+    </collector>
+    <collectedDateTime value="2026-08-03T09:10:00+01:00"/>
+    <quantity>
+      <value value="5"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </quantity>
+    <method>
+      <text value="Venipuncture"/>
+    </method>
+    <bodySite>
+      <text value="Left antecubital fossa"/>
+    </bodySite>
+  </collection>
+  <note>
+    <text value="Specimen received in good condition and accepted for testing."/>
+  </note>
+</Specimen>

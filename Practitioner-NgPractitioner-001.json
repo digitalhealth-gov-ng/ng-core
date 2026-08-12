@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "NgPractitioner-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner NgPractitioner-001</b></p><a name=\"NgPractitioner-001\"> </a><a name=\"hcNgPractitioner-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-practitioner.html\">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs</code>/MDCN-45231</p><p><b>active</b>: true</p><p><b>name</b>: Kehinde Adebayo </p><p><b>telecom</b>: <a href=\"tel:+2348030001122\">+2348030001122</a>, <a href=\"mailto:kehinde.adebayo@example.org\">kehinde.adebayo@example.org</a></p><p><b>birthDate</b>: 1982-01-15</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Obstetrics &amp; Gynaecology</span></td><td>2016-01-01 --&gt; (ongoing)</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs",
+    "value" : "MDCN-45231"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Adebayo",
+    "given" : ["Kehinde"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+2348030001122"
+  },
+  {
+    "system" : "email",
+    "value" : "kehinde.adebayo@example.org"
+  }],
+  "birthDate" : "1982-01-15",
+  "qualification" : [{
+    "code" : {
+      "text" : "Obstetrics & Gynaecology"
+    },
+    "period" : {
+      "start" : "2016-01-01"
+    }
+  }]
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Coverage",
+  "id" : "Coverage-Chika-TruthHMO",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage Coverage-Chika-TruthHMO</b></p><a name=\"Coverage-Chika-TruthHMO\"> </a><a name=\"hcCoverage-Chika-TruthHMO\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-coverage.html\">NG Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode EHCPOL}\">extended healthcare</span></p><p><b>policyHolder</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>subscriber</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>subscriberId</b>: TRUTH-HMO-CHIKA-2025</p><p><b>beneficiary</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>dependent</b>: 00</p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>payor</b>: <a href=\"Organization-Organization-Truth-HMO.html\">Truth HMO</a></p><h3>Classes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/coverage-class plan}\">Plan</span></td><td>Standard Corporate Plan</td><td>Truth HMO Corporate Coverage - Employer Sponsored</td></tr></table><p><b>order</b>: 1</p></div>"
+  },
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "EHCPOL",
+      "display" : "extended healthcare"
+    }]
+  },
+  "policyHolder" : {
+    "reference" : "Patient/Patient-Chika-Okafor",
+    "display" : "Chika Okafor"
+  },
+  "subscriber" : {
+    "reference" : "Patient/Patient-Chika-Okafor",
+    "display" : "Chika Okafor"
+  },
+  "subscriberId" : "TRUTH-HMO-CHIKA-2025",
+  "beneficiary" : {
+    "reference" : "Patient/Patient-Chika-Okafor",
+    "display" : "Chika Okafor"
+  },
+  "dependent" : "00",
+  "relationship" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+      "code" : "self",
+      "display" : "Self"
+    }]
+  },
+  "period" : {
+    "start" : "2025-01-01",
+    "end" : "2025-12-31"
+  },
+  "payor" : [{
+    "reference" : "Organization/Organization-Truth-HMO",
+    "display" : "Truth HMO"
+  }],
+  "class" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/coverage-class",
+        "code" : "plan",
+        "display" : "Plan"
+      }]
+    },
+    "value" : "Standard Corporate Plan",
+    "name" : "Truth HMO Corporate Coverage - Employer Sponsored"
+  }],
+  "order" : 1
+}

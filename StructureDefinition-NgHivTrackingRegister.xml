@@ -1,0 +1,1900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NgHivTrackingRegister"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition NgHivTrackingRegister</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister" title="Logical model for the Nigeria HIV Tracking Register. One instance represents
+one facility monthly tracking page and contains repeatable client entries for
+current ART clients who missed a scheduled clinic appointment. The printed
+register instructs facilities to enter eligible clients within 24 hours of
+default.">NgHivTrackingRegister</a><a name="NgHivTrackingRegister"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">NG HIV Tracking Register</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.identifier" title="Identifier assigned to the monthly HIV Tracking Register page or its electronic equivalent.">identifier</a><a name="NgHivTrackingRegister.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Register identifier</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.facility" title="Reference to the facility maintaining the tracking register, when available.">facility</a><a name="NgHivTrackingRegister.facility"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-organization.html">NG Organization</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Facility reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.state" title="State where the facility is located.">state</a><a name="NgHivTrackingRegister.state"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T1 State<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-states-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs" class="binding">NG States VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.lga" title="Local Government Area where the facility is located.">lga</a><a name="NgHivTrackingRegister.lga"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T2 LGA<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-lgas-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs" class="binding">NG LGAs VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.facilityName" title="Official name of the facility maintaining the register.">facilityName</a><a name="NgHivTrackingRegister.facilityName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T3 Facility name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.reportingPeriod" title="Month and year in which clients missed their appointments. Each month begins on a new register page.">reportingPeriod</a><a name="NgHivTrackingRegister.reportingPeriod"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T4–T5 Month and year</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry" title="One patient-level row in the monthly HIV Tracking Register.">entry</a><a name="NgHivTrackingRegister.entry"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tracking-register entry<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.subject" title="Reference to the corresponding Nigeria Core Patient resource, when available.">subject</a><a name="NgHivTrackingRegister.entry.subject"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-patient.html">NG Patient</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.serialNumber" title="Monthly serial number beginning from one for each new register page.">serialNumber</a><a name="NgHivTrackingRegister.entry.serialNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T6 Serial number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.hospitalNumber" title="Facility-specific hospital number.">hospitalNumber</a><a name="NgHivTrackingRegister.entry.hospitalNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T7 Hospital number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.uniqueId" title="Client unique ART program identifier. The printed register records hospital number and unique ID separated by a forward slash.">uniqueId</a><a name="NgHivTrackingRegister.entry.uniqueId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T7 Unique ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.clientName" title="Client full name, including aliases documented in the clinical folder.">clientName</a><a name="NgHivTrackingRegister.entry.clientName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T8 Client name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.sex" title="Client sex represented by the printed male and female boxes.">sex</a><a name="NgHivTrackingRegister.entry.sex"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T9 Sex<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-gender-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs" class="binding">NG Gender or Sex VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.ageYears" title="Age in completed years at the time of tracking-register entry.">ageYears</a><a name="NgHivTrackingRegister.entry.ageYears"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T10 Age</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.address" title="Descriptive address sufficient to support tracing when necessary.">address</a><a name="NgHivTrackingRegister.entry.address"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T11 Descriptive address</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.phoneNumber" title="One or more client telephone numbers documented in the folder.">phoneNumber</a><a name="NgHivTrackingRegister.entry.phoneNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T12 Phone number<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.artStartDate" title="Date the client commenced antiretroviral therapy.">artStartDate</a><a name="NgHivTrackingRegister.entry.artStartDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T13 ART start date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.currentArtRegimen" title="Current ART regimen using the adult or paediatric regimen code printed in the register legend.">currentArtRegimen</a><a name="NgHivTrackingRegister.entry.currentArtRegimen"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T14 Current ART regimen<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-art-register-regimen-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs" class="binding">NG HIV ART Register Regimens</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.currentArtRegimenText" title="Regimen description retained when the source does not contain a valid register code.">currentArtRegimenText</a><a name="NgHivTrackingRegister.entry.currentArtRegimenText"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T14 Current ART regimen source text</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.pregnant" title="True when P was appended to the ART regimen code.">pregnant</a><a name="NgHivTrackingRegister.entry.pregnant"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T14 Pregnancy modifier</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.breastfeeding" title="True when BF was appended to the ART regimen code.">breastfeeding</a><a name="NgHivTrackingRegister.entry.breastfeeding"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T14 Breastfeeding modifier</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.dsdStatus" title="Devolved, non-devolved or not eligible.">dsdStatus</a><a name="NgHivTrackingRegister.entry.dsdStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T15 DSD status<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-dsd-status-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-status-vs" class="binding">NG HIV Tracking Register DSD Status</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.dsdModel" title="Facility-based or community-based model, recorded with the DSD status and separated by a slash.">dsdModel</a><a name="NgHivTrackingRegister.entry.dsdModel"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T15 DSD model<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-dsd-model-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-model-vs" class="binding">NG HIV Tracking Register DSD Model</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.reasonForTracking" title="Reason the client was entered into the tracking register.">reasonForTracking</a><a name="NgHivTrackingRegister.entry.reasonForTracking"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T16 Reason for tracking<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-reason-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-reason-vs" class="binding">NG HIV Tracking Register Reason for Tracking</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.reasonForTrackingOther" title="Narrative description when T16 code 11e is used.">reasonForTrackingOther</a><a name="NgHivTrackingRegister.entry.reasonForTrackingOther"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T16 Other tracking reason</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.lastActualContactDate" title="Date the client last attended or had actual contact with the facility.">lastActualContactDate</a><a name="NgHivTrackingRegister.entry.lastActualContactDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T17 Date of last actual contact or appointment</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.missedAppointmentDate" title="Date the client missed the scheduled follow-up appointment.">missedAppointmentDate</a><a name="NgHivTrackingRegister.entry.missedAppointmentDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T18 Date of missed appointment</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.trackingAttempt" title="A tracking attempt made by phone call or home visit. Each stage should occur no more than once per entry.">trackingAttempt</a><a name="NgHivTrackingRegister.entry.trackingAttempt"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..5</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T19–T23 Tracking attempt</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.trackingAttempt.stage" title="First, second, third, fourth or final attempt at the end of the tracking period.">stage</a><a name="NgHivTrackingRegister.entry.trackingAttempt.stage"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tracking-attempt stage<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-attempt-stage-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-attempt-stage-vs" class="binding">NG HIV Tracking Register Attempt Stage</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.trackingAttempt.mode" title="Mode used for the attempt.">mode</a><a name="NgHivTrackingRegister.entry.trackingAttempt.mode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tracking mode<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-mode-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-mode-vs" class="binding">NG HIV Tracking Register Tracking Mode</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.trackingAttempt.personContacted" title="Guardian, client, treatment partner or not contacted.">personContacted</a><a name="NgHivTrackingRegister.entry.trackingAttempt.personContacted"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Person contacted<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-person-contacted-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-person-contacted-vs" class="binding">NG HIV Tracking Register Person Contacted</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting" title="Reason the client missed the appointment when successful contact established the cause.">reasonForDefaulting</a><a name="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for defaulting<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-default-reason-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-default-reason-vs" class="binding">NG HIV Tracking Register Reason for Defaulting</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther" title="Narrative description when reason-for-defaulting code 11 is selected.">reasonForDefaultingOther</a><a name="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other reason for defaulting</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.careDiscontinued" title="True when the client no longer receives HIV care at the facility.">careDiscontinued</a><a name="NgHivTrackingRegister.entry.careDiscontinued"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T24 Care in facility discontinued</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.discontinuationDate" title="Date care at the facility was discontinued when T24 is true.">discontinuationDate</a><a name="NgHivTrackingRegister.entry.discontinuationDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T25 Date of discontinuation</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.discontinuationReason" title="Major reason the client stopped receiving care at the facility.">discontinuationReason</a><a name="NgHivTrackingRegister.entry.discontinuationReason"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T26 Reason for discontinuation<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-tracking-discontinuation-reason-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-discontinuation-reason-vs" class="binding">NG HIV Tracking Register Reason for Discontinuation</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.nextAgreedAppointmentDate" title="Date the contacted client agreed to return. The SOP states that this should be before 28 days after the missed appointment.">nextAgreedAppointmentDate</a><a name="NgHivTrackingRegister.entry.nextAgreedAppointmentDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T27 Next agreed clinic appointment date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.returnDate" title="Date the client returned to the facility for any health service.">returnDate</a><a name="NgHivTrackingRegister.entry.returnDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T28 Date client returned</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.entry.referredService" title="One or more services to which the returning client was referred.">referredService</a><a name="NgHivTrackingRegister.entry.referredService"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T29 Service referred for<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.totalClientsThisPage" title="Total number of client rows on the page. Other printed column totals should be derived from entry data.">totalClientsThisPage</a><a name="NgHivTrackingRegister.totalClientsThisPage"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Total this page</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.completedByName" title="Name of the contact-tracking focal person or representative who completed the register.">completedByName</a><a name="NgHivTrackingRegister.completedByName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T30 Completed by</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.completedByDesignation" title="Designation of the person who completed the register.">completedByDesignation</a><a name="NgHivTrackingRegister.completedByDesignation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T31 Designation</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.completedDate" title="Date the register page was completed.">completedDate</a><a name="NgHivTrackingRegister.completedDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T32 Completion date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivTrackingRegister-definitions.html#NgHivTrackingRegister.completedSignature" title="Signature or an electronic signature reference for the person completing the register.">completedSignature</a><a name="NgHivTrackingRegister.completedSignature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">T32 Signature or signature reference</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivTrackingRegister"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.42.7"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivTrackingRegister"/>
+  <title value="NG HIV Tracking Register"/>
+  <status value="draft"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Logical model for the Nigeria HIV Tracking Register. One instance represents&#xA;one facility monthly tracking page and contains repeatable client entries for&#xA;current ART clients who missed a scheduled clinic appointment. The printed&#xA;register instructs facilities to enter eligible clients within 24 hours of&#xA;default."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="ng-hiv-tracking-register-columns"/>
+    <uri value="urn:ng:hiv-tracking-register:2025"/>
+    <name value="NG HIV Tracking Register Column Mapping"/>
+    <comment value="Maps logical-model elements to the printed T1–T32 HIV Tracking Register fields."/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivTrackingRegister"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="NgHivTrackingRegister">
+      <path value="NgHivTrackingRegister"/>
+      <short value="NG HIV Tracking Register"/>
+      <definition value="Logical model for the Nigeria HIV Tracking Register. One instance represents&#xA;one facility monthly tracking page and contains repeatable client entries for&#xA;current ART clients who missed a scheduled clinic appointment. The printed&#xA;register instructs facilities to enter eligible clients within 24 hours of&#xA;default."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="NgHivTrackingRegister.identifier">
+      <path value="NgHivTrackingRegister.identifier"/>
+      <short value="Register identifier"/>
+      <definition value="Identifier assigned to the monthly HIV Tracking Register page or its electronic equivalent."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.identifier"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.facility">
+      <path value="NgHivTrackingRegister.facility"/>
+      <short value="Facility reference"/>
+      <definition value="Reference to the facility maintaining the tracking register, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.facility"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.state">
+      <path value="NgHivTrackingRegister.state"/>
+      <short value="T1 State"/>
+      <definition value="State where the facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.state"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T1"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.lga">
+      <path value="NgHivTrackingRegister.lga"/>
+      <short value="T2 LGA"/>
+      <definition value="Local Government Area where the facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.lga"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T2"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.facilityName">
+      <path value="NgHivTrackingRegister.facilityName"/>
+      <short value="T3 Facility name"/>
+      <definition value="Official name of the facility maintaining the register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.facilityName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T3"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.reportingPeriod">
+      <path value="NgHivTrackingRegister.reportingPeriod"/>
+      <short value="T4–T5 Month and year"/>
+      <definition value="Month and year in which clients missed their appointments. Each month begins on a new register page."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.reportingPeriod"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T4 Month / T5 Year"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry">
+      <path value="NgHivTrackingRegister.entry"/>
+      <short value="Tracking-register entry"/>
+      <definition value="One patient-level row in the monthly HIV Tracking Register."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgHivTrackingRegister.entry.id">
+      <path value="NgHivTrackingRegister.entry.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.extension">
+      <path value="NgHivTrackingRegister.entry.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.modifierExtension">
+      <path value="NgHivTrackingRegister.entry.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.subject">
+      <path value="NgHivTrackingRegister.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.subject"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.entry.serialNumber">
+      <path value="NgHivTrackingRegister.entry.serialNumber"/>
+      <short value="T6 Serial number"/>
+      <definition value="Monthly serial number beginning from one for each new register page."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.serialNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T6"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.hospitalNumber">
+      <path value="NgHivTrackingRegister.entry.hospitalNumber"/>
+      <short value="T7 Hospital number"/>
+      <definition value="Facility-specific hospital number."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.hospitalNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T7 Hospital number before slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.uniqueId">
+      <path value="NgHivTrackingRegister.entry.uniqueId"/>
+      <short value="T7 Unique ID"/>
+      <definition value="Client unique ART program identifier. The printed register records hospital number and unique ID separated by a forward slash."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.uniqueId"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T7 Unique ART ID after slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.clientName">
+      <path value="NgHivTrackingRegister.entry.clientName"/>
+      <short value="T8 Client name"/>
+      <definition value="Client full name, including aliases documented in the clinical folder."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.clientName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T8"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.sex">
+      <path value="NgHivTrackingRegister.entry.sex"/>
+      <short value="T9 Sex"/>
+      <definition value="Client sex represented by the printed male and female boxes."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.sex"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T9 Male / Female"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.ageYears">
+      <path value="NgHivTrackingRegister.entry.ageYears"/>
+      <short value="T10 Age"/>
+      <definition value="Age in completed years at the time of tracking-register entry."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.ageYears"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T10"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.address">
+      <path value="NgHivTrackingRegister.entry.address"/>
+      <short value="T11 Descriptive address"/>
+      <definition value="Descriptive address sufficient to support tracing when necessary."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.address"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T11"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.phoneNumber">
+      <path value="NgHivTrackingRegister.entry.phoneNumber"/>
+      <short value="T12 Phone number"/>
+      <definition value="One or more client telephone numbers documented in the folder."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.phoneNumber"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T12"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.artStartDate">
+      <path value="NgHivTrackingRegister.entry.artStartDate"/>
+      <short value="T13 ART start date"/>
+      <definition value="Date the client commenced antiretroviral therapy."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.artStartDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T13"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.currentArtRegimen">
+      <path value="NgHivTrackingRegister.entry.currentArtRegimen"/>
+      <short value="T14 Current ART regimen"/>
+      <definition value="Current ART regimen using the adult or paediatric regimen code printed in the register legend."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.currentArtRegimen"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 regimen code"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.currentArtRegimenText">
+      <path value="NgHivTrackingRegister.entry.currentArtRegimenText"/>
+      <short value="T14 Current ART regimen source text"/>
+      <definition value="Regimen description retained when the source does not contain a valid register code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.currentArtRegimenText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 uncoded regimen text"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.pregnant">
+      <path value="NgHivTrackingRegister.entry.pregnant"/>
+      <short value="T14 Pregnancy modifier"/>
+      <definition value="True when P was appended to the ART regimen code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.pregnant"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 suffix P"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.breastfeeding">
+      <path value="NgHivTrackingRegister.entry.breastfeeding"/>
+      <short value="T14 Breastfeeding modifier"/>
+      <definition value="True when BF was appended to the ART regimen code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.breastfeeding"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 suffix BF"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.dsdStatus">
+      <path value="NgHivTrackingRegister.entry.dsdStatus"/>
+      <short value="T15 DSD status"/>
+      <definition value="Devolved, non-devolved or not eligible."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.dsdStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-status-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T15 value before slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.dsdModel">
+      <path value="NgHivTrackingRegister.entry.dsdModel"/>
+      <short value="T15 DSD model"/>
+      <definition value="Facility-based or community-based model, recorded with the DSD status and separated by a slash."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.dsdModel"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-model-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T15 value after slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.reasonForTracking">
+      <path value="NgHivTrackingRegister.entry.reasonForTracking"/>
+      <short value="T16 Reason for tracking"/>
+      <definition value="Reason the client was entered into the tracking register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.reasonForTracking"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-reason-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T16"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.reasonForTrackingOther">
+      <path value="NgHivTrackingRegister.entry.reasonForTrackingOther"/>
+      <short value="T16 Other tracking reason"/>
+      <definition value="Narrative description when T16 code 11e is used."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.reasonForTrackingOther"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T16 code 11e narrative"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.lastActualContactDate">
+      <path value="NgHivTrackingRegister.entry.lastActualContactDate"/>
+      <short value="T17 Date of last actual contact or appointment"/>
+      <definition value="Date the client last attended or had actual contact with the facility."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.lastActualContactDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T17"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.missedAppointmentDate">
+      <path value="NgHivTrackingRegister.entry.missedAppointmentDate"/>
+      <short value="T18 Date of missed appointment"/>
+      <definition value="Date the client missed the scheduled follow-up appointment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.missedAppointmentDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T18"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt"/>
+      <short value="T19–T23 Tracking attempt"/>
+      <definition value="A tracking attempt made by phone call or home visit. Each stage should occur no more than once per entry."/>
+      <min value="0"/>
+      <max value="5"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.trackingAttempt"/>
+        <min value="0"/>
+        <max value="5"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.id">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.extension">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.modifierExtension">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.stage">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.stage"/>
+      <short value="Tracking-attempt stage"/>
+      <definition value="First, second, third, fourth or final attempt at the end of the tracking period."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.trackingAttempt.stage"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-attempt-stage-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19 attempt 1 / T20 attempt 2 / T21 attempt 3 / T22 attempt 4 / T23 final attempt"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.mode">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.mode"/>
+      <short value="Tracking mode"/>
+      <definition value="Mode used for the attempt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.trackingAttempt.mode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-mode-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 Tracking mode"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.personContacted">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.personContacted"/>
+      <short value="Person contacted"/>
+      <definition value="Guardian, client, treatment partner or not contacted."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.trackingAttempt.personContacted"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-person-contacted-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 Person contacted"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting"/>
+      <short value="Reason for defaulting"/>
+      <definition value="Reason the client missed the appointment when successful contact established the cause."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-default-reason-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 Reason for defaulting"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther"/>
+      <short value="Other reason for defaulting"/>
+      <definition value="Narrative description when reason-for-defaulting code 11 is selected."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 code 11 narrative"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.careDiscontinued">
+      <path value="NgHivTrackingRegister.entry.careDiscontinued"/>
+      <short value="T24 Care in facility discontinued"/>
+      <definition value="True when the client no longer receives HIV care at the facility."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.careDiscontinued"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T24 Yes / No"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.discontinuationDate">
+      <path value="NgHivTrackingRegister.entry.discontinuationDate"/>
+      <short value="T25 Date of discontinuation"/>
+      <definition value="Date care at the facility was discontinued when T24 is true."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.discontinuationDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T25"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.discontinuationReason">
+      <path value="NgHivTrackingRegister.entry.discontinuationReason"/>
+      <short value="T26 Reason for discontinuation"/>
+      <definition value="Major reason the client stopped receiving care at the facility."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.discontinuationReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-discontinuation-reason-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T26"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.nextAgreedAppointmentDate">
+      <path value="NgHivTrackingRegister.entry.nextAgreedAppointmentDate"/>
+      <short value="T27 Next agreed clinic appointment date"/>
+      <definition value="Date the contacted client agreed to return. The SOP states that this should be before 28 days after the missed appointment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.nextAgreedAppointmentDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T27"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.returnDate">
+      <path value="NgHivTrackingRegister.entry.returnDate"/>
+      <short value="T28 Date client returned"/>
+      <definition value="Date the client returned to the facility for any health service."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.returnDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T28"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.referredService">
+      <path value="NgHivTrackingRegister.entry.referredService"/>
+      <short value="T29 Service referred for"/>
+      <definition value="One or more services to which the returning client was referred."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivTrackingRegister.entry.referredService"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T29"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.totalClientsThisPage">
+      <path value="NgHivTrackingRegister.totalClientsThisPage"/>
+      <short value="Total this page"/>
+      <definition value="Total number of client rows on the page. Other printed column totals should be derived from entry data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.totalClientsThisPage"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="TOTAL THIS PAGE"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedByName">
+      <path value="NgHivTrackingRegister.completedByName"/>
+      <short value="T30 Completed by"/>
+      <definition value="Name of the contact-tracking focal person or representative who completed the register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.completedByName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T30"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedByDesignation">
+      <path value="NgHivTrackingRegister.completedByDesignation"/>
+      <short value="T31 Designation"/>
+      <definition value="Designation of the person who completed the register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.completedByDesignation"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T31"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedDate">
+      <path value="NgHivTrackingRegister.completedDate"/>
+      <short value="T32 Completion date"/>
+      <definition value="Date the register page was completed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.completedDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T32 date"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedSignature">
+      <path value="NgHivTrackingRegister.completedSignature"/>
+      <short value="T32 Signature or signature reference"/>
+      <definition value="Signature or an electronic signature reference for the person completing the register."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivTrackingRegister.completedSignature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T32 signature"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="NgHivTrackingRegister">
+      <path value="NgHivTrackingRegister"/>
+      <short value="NG HIV Tracking Register"/>
+      <definition value="Logical model for the Nigeria HIV Tracking Register. One instance represents&#xA;one facility monthly tracking page and contains repeatable client entries for&#xA;current ART clients who missed a scheduled clinic appointment. The printed&#xA;register instructs facilities to enter eligible clients within 24 hours of&#xA;default."/>
+    </element>
+    <element id="NgHivTrackingRegister.identifier">
+      <path value="NgHivTrackingRegister.identifier"/>
+      <short value="Register identifier"/>
+      <definition value="Identifier assigned to the monthly HIV Tracking Register page or its electronic equivalent."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.facility">
+      <path value="NgHivTrackingRegister.facility"/>
+      <short value="Facility reference"/>
+      <definition value="Reference to the facility maintaining the tracking register, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.state">
+      <path value="NgHivTrackingRegister.state"/>
+      <short value="T1 State"/>
+      <definition value="State where the facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T1"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.lga">
+      <path value="NgHivTrackingRegister.lga"/>
+      <short value="T2 LGA"/>
+      <definition value="Local Government Area where the facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T2"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.facilityName">
+      <path value="NgHivTrackingRegister.facilityName"/>
+      <short value="T3 Facility name"/>
+      <definition value="Official name of the facility maintaining the register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T3"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.reportingPeriod">
+      <path value="NgHivTrackingRegister.reportingPeriod"/>
+      <short value="T4–T5 Month and year"/>
+      <definition value="Month and year in which clients missed their appointments. Each month begins on a new register page."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Period"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T4 Month / T5 Year"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry">
+      <path value="NgHivTrackingRegister.entry"/>
+      <short value="Tracking-register entry"/>
+      <definition value="One patient-level row in the monthly HIV Tracking Register."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.entry.subject">
+      <path value="NgHivTrackingRegister.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.entry.serialNumber">
+      <path value="NgHivTrackingRegister.entry.serialNumber"/>
+      <short value="T6 Serial number"/>
+      <definition value="Monthly serial number beginning from one for each new register page."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T6"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.hospitalNumber">
+      <path value="NgHivTrackingRegister.entry.hospitalNumber"/>
+      <short value="T7 Hospital number"/>
+      <definition value="Facility-specific hospital number."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T7 Hospital number before slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.uniqueId">
+      <path value="NgHivTrackingRegister.entry.uniqueId"/>
+      <short value="T7 Unique ID"/>
+      <definition value="Client unique ART program identifier. The printed register records hospital number and unique ID separated by a forward slash."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T7 Unique ART ID after slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.clientName">
+      <path value="NgHivTrackingRegister.entry.clientName"/>
+      <short value="T8 Client name"/>
+      <definition value="Client full name, including aliases documented in the clinical folder."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T8"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.sex">
+      <path value="NgHivTrackingRegister.entry.sex"/>
+      <short value="T9 Sex"/>
+      <definition value="Client sex represented by the printed male and female boxes."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T9 Male / Female"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.ageYears">
+      <path value="NgHivTrackingRegister.entry.ageYears"/>
+      <short value="T10 Age"/>
+      <definition value="Age in completed years at the time of tracking-register entry."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T10"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.address">
+      <path value="NgHivTrackingRegister.entry.address"/>
+      <short value="T11 Descriptive address"/>
+      <definition value="Descriptive address sufficient to support tracing when necessary."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T11"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.phoneNumber">
+      <path value="NgHivTrackingRegister.entry.phoneNumber"/>
+      <short value="T12 Phone number"/>
+      <definition value="One or more client telephone numbers documented in the folder."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T12"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.artStartDate">
+      <path value="NgHivTrackingRegister.entry.artStartDate"/>
+      <short value="T13 ART start date"/>
+      <definition value="Date the client commenced antiretroviral therapy."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T13"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.currentArtRegimen">
+      <path value="NgHivTrackingRegister.entry.currentArtRegimen"/>
+      <short value="T14 Current ART regimen"/>
+      <definition value="Current ART regimen using the adult or paediatric regimen code printed in the register legend."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 regimen code"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.currentArtRegimenText">
+      <path value="NgHivTrackingRegister.entry.currentArtRegimenText"/>
+      <short value="T14 Current ART regimen source text"/>
+      <definition value="Regimen description retained when the source does not contain a valid register code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 uncoded regimen text"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.pregnant">
+      <path value="NgHivTrackingRegister.entry.pregnant"/>
+      <short value="T14 Pregnancy modifier"/>
+      <definition value="True when P was appended to the ART regimen code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 suffix P"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.breastfeeding">
+      <path value="NgHivTrackingRegister.entry.breastfeeding"/>
+      <short value="T14 Breastfeeding modifier"/>
+      <definition value="True when BF was appended to the ART regimen code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T14 suffix BF"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.dsdStatus">
+      <path value="NgHivTrackingRegister.entry.dsdStatus"/>
+      <short value="T15 DSD status"/>
+      <definition value="Devolved, non-devolved or not eligible."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-status-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T15 value before slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.dsdModel">
+      <path value="NgHivTrackingRegister.entry.dsdModel"/>
+      <short value="T15 DSD model"/>
+      <definition value="Facility-based or community-based model, recorded with the DSD status and separated by a slash."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-model-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T15 value after slash"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.reasonForTracking">
+      <path value="NgHivTrackingRegister.entry.reasonForTracking"/>
+      <short value="T16 Reason for tracking"/>
+      <definition value="Reason the client was entered into the tracking register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-reason-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T16"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.reasonForTrackingOther">
+      <path value="NgHivTrackingRegister.entry.reasonForTrackingOther"/>
+      <short value="T16 Other tracking reason"/>
+      <definition value="Narrative description when T16 code 11e is used."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T16 code 11e narrative"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.lastActualContactDate">
+      <path value="NgHivTrackingRegister.entry.lastActualContactDate"/>
+      <short value="T17 Date of last actual contact or appointment"/>
+      <definition value="Date the client last attended or had actual contact with the facility."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T17"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.missedAppointmentDate">
+      <path value="NgHivTrackingRegister.entry.missedAppointmentDate"/>
+      <short value="T18 Date of missed appointment"/>
+      <definition value="Date the client missed the scheduled follow-up appointment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T18"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt"/>
+      <short value="T19–T23 Tracking attempt"/>
+      <definition value="A tracking attempt made by phone call or home visit. Each stage should occur no more than once per entry."/>
+      <min value="0"/>
+      <max value="5"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.stage">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.stage"/>
+      <short value="Tracking-attempt stage"/>
+      <definition value="First, second, third, fourth or final attempt at the end of the tracking period."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-attempt-stage-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19 attempt 1 / T20 attempt 2 / T21 attempt 3 / T22 attempt 4 / T23 final attempt"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.mode">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.mode"/>
+      <short value="Tracking mode"/>
+      <definition value="Mode used for the attempt."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-mode-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 Tracking mode"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.personContacted">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.personContacted"/>
+      <short value="Person contacted"/>
+      <definition value="Guardian, client, treatment partner or not contacted."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-person-contacted-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 Person contacted"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting"/>
+      <short value="Reason for defaulting"/>
+      <definition value="Reason the client missed the appointment when successful contact established the cause."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-default-reason-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 Reason for defaulting"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther">
+      <path value="NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther"/>
+      <short value="Other reason for defaulting"/>
+      <definition value="Narrative description when reason-for-defaulting code 11 is selected."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T19–T23 code 11 narrative"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.careDiscontinued">
+      <path value="NgHivTrackingRegister.entry.careDiscontinued"/>
+      <short value="T24 Care in facility discontinued"/>
+      <definition value="True when the client no longer receives HIV care at the facility."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T24 Yes / No"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.discontinuationDate">
+      <path value="NgHivTrackingRegister.entry.discontinuationDate"/>
+      <short value="T25 Date of discontinuation"/>
+      <definition value="Date care at the facility was discontinued when T24 is true."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T25"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.discontinuationReason">
+      <path value="NgHivTrackingRegister.entry.discontinuationReason"/>
+      <short value="T26 Reason for discontinuation"/>
+      <definition value="Major reason the client stopped receiving care at the facility."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-discontinuation-reason-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T26"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.nextAgreedAppointmentDate">
+      <path value="NgHivTrackingRegister.entry.nextAgreedAppointmentDate"/>
+      <short value="T27 Next agreed clinic appointment date"/>
+      <definition value="Date the contacted client agreed to return. The SOP states that this should be before 28 days after the missed appointment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T27"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.returnDate">
+      <path value="NgHivTrackingRegister.entry.returnDate"/>
+      <short value="T28 Date client returned"/>
+      <definition value="Date the client returned to the facility for any health service."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T28"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.entry.referredService">
+      <path value="NgHivTrackingRegister.entry.referredService"/>
+      <short value="T29 Service referred for"/>
+      <definition value="One or more services to which the returning client was referred."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T29"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.totalClientsThisPage">
+      <path value="NgHivTrackingRegister.totalClientsThisPage"/>
+      <short value="Total this page"/>
+      <definition value="Total number of client rows on the page. Other printed column totals should be derived from entry data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="TOTAL THIS PAGE"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedByName">
+      <path value="NgHivTrackingRegister.completedByName"/>
+      <short value="T30 Completed by"/>
+      <definition value="Name of the contact-tracking focal person or representative who completed the register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T30"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedByDesignation">
+      <path value="NgHivTrackingRegister.completedByDesignation"/>
+      <short value="T31 Designation"/>
+      <definition value="Designation of the person who completed the register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T31"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedDate">
+      <path value="NgHivTrackingRegister.completedDate"/>
+      <short value="T32 Completion date"/>
+      <definition value="Date the register page was completed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T32 date"/>
+      </mapping>
+    </element>
+    <element id="NgHivTrackingRegister.completedSignature">
+      <path value="NgHivTrackingRegister.completedSignature"/>
+      <short value="T32 Signature or signature reference"/>
+      <definition value="Signature or an electronic signature reference for the person completing the register."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-tracking-register-columns"/>
+        <map value="T32 signature"/>
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

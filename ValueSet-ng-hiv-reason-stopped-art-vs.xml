@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-reason-stopped-art-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-reason-stopped-art-vs</b></p><a name="ng-hiv-reason-stopped-art-vs"> </a><a name="hcng-hiv-reason-stopped-art-vs"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA6529-7/">LA6529-7</a></td><td>Toxicity/Side Effects</td></tr><tr><td><a href="https://loinc.org/LA6530-5/">LA6530-5</a></td><td>Pregnancy</td></tr><tr><td><a href="https://loinc.org/18733-6/">18733-6</a></td><td>Attending Progress note</td></tr><tr><td><a href="https://loinc.org/LA31432-0/">LA31432-0</a></td><td>Not adherent to treatment</td></tr><tr><td><a href="https://loinc.org/LP56812-8/">LP56812-8</a></td><td>Medication Regimen Status</td></tr><tr><td><a href="https://loinc.org/LA28316-0/">LA28316-0</a></td><td>Financial concerns</td></tr><tr><td><a href="https://loinc.org/51855-5/">51855-5</a></td><td>Patient Note</td></tr><tr><td><a href="https://loinc.org/34130-5/">34130-5</a></td><td>Hospital Progress note</td></tr><tr><td><a href="https://loinc.org/LA6534-7/">LA6534-7</a></td><td>Drug Out of Stock</td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-stopped-art-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.131"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivReasonARTStoppedVS"/>
+  <title value="HIV Reason For Stopping ART"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for representing the reasons for stopping ART."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6529-7"/>
+        <display value="Toxicity/Side Effects"/>
+      </concept>
+      <concept>
+        <code value="LA6530-5"/>
+        <display value="Pregnancy"/>
+      </concept>
+      <concept>
+        <code value="18733-6"/>
+        <display value="Attending Progress note"/>
+      </concept>
+      <concept>
+        <code value="LA31432-0"/>
+        <display value="Not adherent to treatment"/>
+      </concept>
+      <concept>
+        <code value="LP56812-8"/>
+        <display value="Medication Regimen Status"/>
+      </concept>
+      <concept>
+        <code value="LA28316-0"/>
+        <display value="Financial concerns"/>
+      </concept>
+      <concept>
+        <code value="51855-5"/>
+        <display value="Patient Note"/>
+      </concept>
+      <concept>
+        <code value="34130-5"/>
+        <display value="Hospital Progress note"/>
+      </concept>
+      <concept>
+        <code value="LA6534-7"/>
+        <display value="Drug Out of Stock"/>
+      </concept>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="NgCoreConformanceSandboxService"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition NgCoreConformanceSandboxService</b></p><a name="NgCoreConformanceSandboxService"> </a><a name="hcNgCoreConformanceSandboxService"> </a><table class="grid"><tr><td><b>Actor: NgCoreConformanceSandboxService </b></td><td>Nigeria Core Conformance and Sandbox Service</td><td>Type: system </td></tr><tr><td colspan="3"><div><h3>Role</h3>
+<p>The <strong>Nigeria Core Conformance and Sandbox Service</strong> provides a non-production
+environment for developers, vendors, facilities, programs, government teams,
+and conformance testers to exercise Nigeria Core implementations.</p>
+<p>It supports implementation learning and testing and <strong>does not replace
+production clinical systems, registries, or health information exchanges</strong>.</p>
+<h3>Testing capabilities</h3>
+<p>The Sandbox may support:</p>
+<ul>
+<li>FHIR resource and profile validation;</li>
+<li>terminology validation;</li>
+<li>REST interaction and search testing;</li>
+<li>FHIR operation testing;</li>
+<li>reference and Bundle validation;</li>
+<li>terminology operations;</li>
+<li><code>CapabilityStatement</code> testing;</li>
+<li>synthetic test data;</li>
+<li>reference implementations;</li>
+<li>interoperability testing between systems;</li>
+<li><code>TestScript</code> execution;</li>
+<li>vendor onboarding; and</li>
+<li>certification-readiness assessment.</li>
+</ul>
+<p>Validation may evaluate:</p>
+<ul>
+<li>cardinalities and <strong>Must Support</strong> expectations;</li>
+<li>invariants, fixed/pattern values, slicing, and references;</li>
+<li>terminology bindings;</li>
+<li>supported searches and operations; and</li>
+<li>program-specific constraints.</li>
+</ul>
+<p>Validation results <strong>SHOULD</strong> use <code>OperationOutcome</code> or another documented test
+format and identify relevant errors, warnings, and informational findings.</p>
+<p>Successful syntactic validation alone <strong>SHALL NOT</strong> be considered proof of
+complete implementation conformance.</p>
+<h3>Conformance expectations</h3>
+<p>The Sandbox <strong>SHALL</strong>:</p>
+<ul>
+<li>test against the applicable published Nigeria Core specification;</li>
+<li>identify relevant profiles or artefacts used during validation;</li>
+<li>return meaningful FHIR-conformant test responses;</li>
+<li>publish an accurate <code>CapabilityStatement</code>;</li>
+<li>advertise only reliably supported testing capabilities;</li>
+<li>distinguish test results from formal certification; and</li>
+<li>clearly identify limitations of the testing environment.</li>
+</ul>
+<p>Successful Sandbox testing <strong>SHALL NOT</strong> constitute certification, regulatory
+approval, or production authorisation unless explicitly defined by an
+authorised national process.</p>
+<h3>Test data and security</h3>
+<p>Synthetic, anonymised, or otherwise approved test data <strong>SHOULD</strong> be used.
+Production patient information <strong>SHOULD NOT</strong> be submitted, and the Sandbox
+<strong>SHALL NOT</strong> be treated as an authoritative clinical repository.</p>
+<p>The Sandbox <strong>SHALL</strong> use HTTPS and simple authentication for protected testing
+functions. Authentication may use username/password, API key, access token, or
+another approved lightweight mechanism.</p>
+<p>Sandbox authentication <strong>SHALL NOT</strong> be assumed sufficient for production
+clinical systems.</p>
+<h3>Version and environment management</h3>
+<p>The Sandbox <strong>SHOULD</strong> identify the Nigeria Core IG version used for each
+relevant test. Implementers <strong>SHOULD</strong> repeat testing following substantive
+changes to profiles, terminology, operations, search parameters, or conformance
+requirements.</p>
+<p>Sandbox resources may be reset or replaced and <strong>SHOULD NOT</strong> be relied upon
+for production persistence or availability.</p>
+<h3>Relationships</h3>
+<p>The Sandbox commonly interacts with the <strong>Nigeria Core Requestor, Responder,
+Registry Service,</strong> and <strong>Terminology Service</strong> and may act as a reference
+Requestor or Responder during interoperability testing.</p>
+<p>Its intended outcome is to identify interoperability and conformance problems
+before production deployment and improve implementation consistency and vendor
+readiness.</p>
+</div></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="https://fhir-ig.digitalhealth.gov.ng/ActorDefinition/NgCoreConformanceSandboxService"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="0.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="NgCoreConformanceSandboxService"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Nigeria Core Conformance and Sandbox Service"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-08-12T13:22:49+01:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="NDHI"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="NDHI"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://digitalhealth.gov.ng"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="emeka2015@gmail.com"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="Nigeria Digital in Health Initiative."/>
+      <telecom>
+        <system value="email"/>
+        <value value="lekeojewale@gmail.com"/>
+        <use value="work"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="Nigeria Digital in Health Initiative."/>
+      <telecom>
+        <system value="email"/>
+        <value value="emeka2015@gmail.com"/>
+        <use value="work"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="A **testing and validation service** providing a controlled environment for&#xA;implementing and testing systems against the Nigeria Core specifications."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="NG"/>
+        <display value="Nigeria"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose">
+    <valueMarkdown value="Defines the role responsible for supporting implementation, interoperability&#xA;testing, validation, vendor onboarding, and certification readiness before&#xA;production deployment."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="system"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation">
+    <valueMarkdown value="&#xA;### Role&#xA;&#xA;The **Nigeria Core Conformance and Sandbox Service** provides a non-production&#xA;environment for developers, vendors, facilities, programs, government teams,&#xA;and conformance testers to exercise Nigeria Core implementations.&#xA;&#xA;It supports implementation learning and testing and **does not replace&#xA;production clinical systems, registries, or health information exchanges**.&#xA;&#xA;### Testing capabilities&#xA;&#xA;The Sandbox may support:&#xA;&#xA;* FHIR resource and profile validation;&#xA;* terminology validation;&#xA;* REST interaction and search testing;&#xA;* FHIR operation testing;&#xA;* reference and Bundle validation;&#xA;* terminology operations;&#xA;* `CapabilityStatement` testing;&#xA;* synthetic test data;&#xA;* reference implementations;&#xA;* interoperability testing between systems;&#xA;* `TestScript` execution;&#xA;* vendor onboarding; and&#xA;* certification-readiness assessment.&#xA;&#xA;Validation may evaluate:&#xA;&#xA;* cardinalities and **Must Support** expectations;&#xA;* invariants, fixed/pattern values, slicing, and references;&#xA;* terminology bindings;&#xA;* supported searches and operations; and&#xA;* program-specific constraints.&#xA;&#xA;Validation results **SHOULD** use `OperationOutcome` or another documented test&#xA;format and identify relevant errors, warnings, and informational findings.&#xA;&#xA;Successful syntactic validation alone **SHALL NOT** be considered proof of&#xA;complete implementation conformance.&#xA;&#xA;### Conformance expectations&#xA;&#xA;The Sandbox **SHALL**:&#xA;&#xA;* test against the applicable published Nigeria Core specification;&#xA;* identify relevant profiles or artefacts used during validation;&#xA;* return meaningful FHIR-conformant test responses;&#xA;* publish an accurate `CapabilityStatement`;&#xA;* advertise only reliably supported testing capabilities;&#xA;* distinguish test results from formal certification; and&#xA;* clearly identify limitations of the testing environment.&#xA;&#xA;Successful Sandbox testing **SHALL NOT** constitute certification, regulatory&#xA;approval, or production authorisation unless explicitly defined by an&#xA;authorised national process.&#xA;&#xA;### Test data and security&#xA;&#xA;Synthetic, anonymised, or otherwise approved test data **SHOULD** be used.&#xA;Production patient information **SHOULD NOT** be submitted, and the Sandbox&#xA;**SHALL NOT** be treated as an authoritative clinical repository.&#xA;&#xA;The Sandbox **SHALL** use HTTPS and simple authentication for protected testing&#xA;functions. Authentication may use username/password, API key, access token, or&#xA;another approved lightweight mechanism.&#xA;&#xA;Sandbox authentication **SHALL NOT** be assumed sufficient for production&#xA;clinical systems.&#xA;&#xA;### Version and environment management&#xA;&#xA;The Sandbox **SHOULD** identify the Nigeria Core IG version used for each&#xA;relevant test. Implementers **SHOULD** repeat testing following substantive&#xA;changes to profiles, terminology, operations, search parameters, or conformance&#xA;requirements.&#xA;&#xA;Sandbox resources may be reset or replaced and **SHOULD NOT** be relied upon&#xA;for production persistence or availability.&#xA;&#xA;### Relationships&#xA;&#xA;The Sandbox commonly interacts with the **Nigeria Core Requestor, Responder,&#xA;Registry Service,** and **Terminology Service** and may act as a reference&#xA;Requestor or Responder during interoperability testing.&#xA;&#xA;Its intended outcome is to identify interoperability and conformance problems&#xA;before production deployment and improve implementation consistency and vendor&#xA;readiness."/>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.12.1"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

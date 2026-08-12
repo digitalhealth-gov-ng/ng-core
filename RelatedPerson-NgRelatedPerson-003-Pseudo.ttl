@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/RelatedPerson/NgRelatedPerson-003-Pseudo> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgRelatedPerson-003-Pseudo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson NgRelatedPerson-003-Pseudo</b></p><a name=\"NgRelatedPerson-003-Pseudo\"> </a><a name=\"hcNgRelatedPerson-003-Pseudo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-related-person.html\">NG RelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-NgPatient-001-Pseudo.html\">Female-01 Client  Female, DoB: 1995-02-01 ( Pseudonymized Identifier: PSN-8A7F-2C19-KE95)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode BRO}\">brother</span></p><p><b>name</b>: Alias-01 Relative </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1990-01-01</p></div>"
+  ] ;
+  fhir:RelatedPerson.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001-Pseudo> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001-Pseudo" ]
+  ] ;
+  fhir:RelatedPerson.relationship [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ] ;
+       fhir:Coding.code [ fhir:value "BRO" ] ;
+       fhir:Coding.display [ fhir:value "brother" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Relative" ] ;
+     fhir:HumanName.given [
+       fhir:value "Alias-01" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:RelatedPerson.gender [ fhir:value "male"] ;
+  fhir:RelatedPerson.birthDate [ fhir:value "1990-01-01"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/RelatedPerson/NgRelatedPerson-003-Pseudo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Coverage/NgCoverage-002> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgCoverage-002"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage NgCoverage-002</b></p><a name=\"NgCoverage-002\"> </a><a name=\"hcNgCoverage-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-coverage.html\">NG Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>subscriber</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>beneficiary</b>: <a href=\"Patient-NgPatient-003.html\">Suleiman Bala  Male, DoB: 2019-09-05 ( birthcert)</a></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>payor</b>: <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></p></div>"
+  ] ;
+  fhir:Coverage.status [ fhir:value "active"] ;
+  fhir:Coverage.subscriber [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:Coverage.beneficiary [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-003> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-003" ]
+  ] ;
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2025-01-01"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2025-12-31"^^xsd:date ]
+  ] ;
+  fhir:Coverage.payor [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-002> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-002" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Coverage/NgCoverage-002.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="age-component-codes-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem age-component-codes-cs</b></p><a name="age-component-codes-cs"> </a><a name="hcage-component-codes-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/age-component-codes-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">a<a name="age-component-codes-cs-a"> </a></td><td>Age in years</td><td>Age measured in years.</td></tr><tr><td style="white-space:nowrap">mo<a name="age-component-codes-cs-mo"> </a></td><td>Age in months</td><td>Age measured in months.</td></tr><tr><td style="white-space:nowrap">wk<a name="age-component-codes-cs-wk"> </a></td><td>Age in weeks</td><td>Age measured in weeks.</td></tr><tr><td style="white-space:nowrap">d<a name="age-component-codes-cs-d"> </a></td><td>Age in days</td><td>Age measured in days.</td></tr><tr><td style="white-space:nowrap">h<a name="age-component-codes-cs-h"> </a></td><td>Hours (h)</td><td>Age measured in hours (e.g., immediate neonatal).</td></tr><tr><td style="white-space:nowrap">op-lt<a name="age-component-codes-cs-op-lt"> </a></td><td>&lt; (less than)</td><td>Comparator for age threshold: less than.</td></tr><tr><td style="white-space:nowrap">op-le<a name="age-component-codes-cs-op-le"> </a></td><td>≤ (less than or equal)</td><td>Comparator for age threshold: less than or equal.</td></tr><tr><td style="white-space:nowrap">op-eq<a name="age-component-codes-cs-op-eq"> </a></td><td>= (equal)</td><td>Comparator for age equality checks.</td></tr><tr><td style="white-space:nowrap">op-ge<a name="age-component-codes-cs-op-ge"> </a></td><td>≥ (greater than or equal)</td><td>Comparator for age threshold: greater than or equal.</td></tr><tr><td style="white-space:nowrap">op-gt<a name="age-component-codes-cs-op-gt"> </a></td><td>&gt; (greater than)</td><td>Comparator for age threshold: greater than.</td></tr><tr><td style="white-space:nowrap">band-neonate<a name="age-component-codes-cs-band-neonate"> </a></td><td>Neonate (0–28 days)</td><td>0–28 days inclusive.</td></tr><tr><td style="white-space:nowrap">band-early-neonate<a name="age-component-codes-cs-band-early-neonate"> </a></td><td>Early neonate (0–6 days)</td><td>0–6 days inclusive.</td></tr><tr><td style="white-space:nowrap">band-late-neonate<a name="age-component-codes-cs-band-late-neonate"> </a></td><td>Late neonate (7–28 days)</td><td>7–28 days inclusive.</td></tr><tr><td style="white-space:nowrap">band-under1<a name="age-component-codes-cs-band-under1"> </a></td><td>Under 1 year (0–11 months)</td><td>0–11 months inclusive.</td></tr><tr><td style="white-space:nowrap">band-infant<a name="age-component-codes-cs-band-infant"> </a></td><td>Infant (1–11 months)</td><td>1–11 months inclusive.</td></tr><tr><td style="white-space:nowrap">band-u5<a name="age-component-codes-cs-band-u5"> </a></td><td>Under 5 years (0–59 months)</td><td>0–59 months inclusive.</td></tr><tr><td style="white-space:nowrap">band-1to4y<a name="age-component-codes-cs-band-1to4y"> </a></td><td>1–4 years</td><td>1 year up to 4 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-5to9y<a name="age-component-codes-cs-band-5to9y"> </a></td><td>5–9 years</td><td>5 years up to 9 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-10to14y<a name="age-component-codes-cs-band-10to14y"> </a></td><td>10–14 years</td><td>10 years up to 14 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-15to19y<a name="age-component-codes-cs-band-15to19y"> </a></td><td>Adolescent (15–19 years)</td><td>15 years up to 19 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-20to24y<a name="age-component-codes-cs-band-20to24y"> </a></td><td>Young adult (20–24 years)</td><td>20 years up to 24 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-25to49y<a name="age-component-codes-cs-band-25to49y"> </a></td><td>Adult (25–49 years)</td><td>25 years up to 49 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-50to64y<a name="age-component-codes-cs-band-50to64y"> </a></td><td>Older adult (50–64 years)</td><td>50 years up to 64 years 11 months.</td></tr><tr><td style="white-space:nowrap">band-65plus<a name="age-component-codes-cs-band-65plus"> </a></td><td>Senior (≥65 years)</td><td>65 years and above.</td></tr><tr><td style="white-space:nowrap">epi-birth<a name="age-component-codes-cs-epi-birth"> </a></td><td>At birth</td><td>EPI schedule label for birth dose.</td></tr><tr><td style="white-space:nowrap">epi-6w<a name="age-component-codes-cs-epi-6w"> </a></td><td>6 weeks</td><td>EPI schedule label for doses due at 6 weeks.</td></tr><tr><td style="white-space:nowrap">epi-10w<a name="age-component-codes-cs-epi-10w"> </a></td><td>10 weeks</td><td>EPI schedule label for doses due at 10 weeks.</td></tr><tr><td style="white-space:nowrap">epi-14w<a name="age-component-codes-cs-epi-14w"> </a></td><td>14 weeks</td><td>EPI schedule label for doses due at 14 weeks.</td></tr><tr><td style="white-space:nowrap">epi-9m<a name="age-component-codes-cs-epi-9m"> </a></td><td>9 months</td><td>EPI schedule label for doses due at 9 months.</td></tr><tr><td style="white-space:nowrap">epi-15m<a name="age-component-codes-cs-epi-15m"> </a></td><td>15 months</td><td>EPI schedule label for doses due at 15 months.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/age-component-codes-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.1"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgAgeComponentCodesCS"/>
+  <title value="NG Age Component Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local CodeSystem for age components: units, comparison operators, and common MNCH/EPI age bands for use in measures, decision logic, and stratification."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="30"/>
+  <concept>
+    <code value="a"/>
+    <display value="Age in years"/>
+    <definition value="Age measured in years."/>
+  </concept>
+  <concept>
+    <code value="mo"/>
+    <display value="Age in months"/>
+    <definition value="Age measured in months."/>
+  </concept>
+  <concept>
+    <code value="wk"/>
+    <display value="Age in weeks"/>
+    <definition value="Age measured in weeks."/>
+  </concept>
+  <concept>
+    <code value="d"/>
+    <display value="Age in days"/>
+    <definition value="Age measured in days."/>
+  </concept>
+  <concept>
+    <code value="h"/>
+    <display value="Hours (h)"/>
+    <definition value="Age measured in hours (e.g., immediate neonatal)."/>
+  </concept>
+  <concept>
+    <code value="op-lt"/>
+    <display value="&lt; (less than)"/>
+    <definition value="Comparator for age threshold: less than."/>
+  </concept>
+  <concept>
+    <code value="op-le"/>
+    <display value="≤ (less than or equal)"/>
+    <definition value="Comparator for age threshold: less than or equal."/>
+  </concept>
+  <concept>
+    <code value="op-eq"/>
+    <display value="= (equal)"/>
+    <definition value="Comparator for age equality checks."/>
+  </concept>
+  <concept>
+    <code value="op-ge"/>
+    <display value="≥ (greater than or equal)"/>
+    <definition value="Comparator for age threshold: greater than or equal."/>
+  </concept>
+  <concept>
+    <code value="op-gt"/>
+    <display value="&gt; (greater than)"/>
+    <definition value="Comparator for age threshold: greater than."/>
+  </concept>
+  <concept>
+    <code value="band-neonate"/>
+    <display value="Neonate (0–28 days)"/>
+    <definition value="0–28 days inclusive."/>
+  </concept>
+  <concept>
+    <code value="band-early-neonate"/>
+    <display value="Early neonate (0–6 days)"/>
+    <definition value="0–6 days inclusive."/>
+  </concept>
+  <concept>
+    <code value="band-late-neonate"/>
+    <display value="Late neonate (7–28 days)"/>
+    <definition value="7–28 days inclusive."/>
+  </concept>
+  <concept>
+    <code value="band-under1"/>
+    <display value="Under 1 year (0–11 months)"/>
+    <definition value="0–11 months inclusive."/>
+  </concept>
+  <concept>
+    <code value="band-infant"/>
+    <display value="Infant (1–11 months)"/>
+    <definition value="1–11 months inclusive."/>
+  </concept>
+  <concept>
+    <code value="band-u5"/>
+    <display value="Under 5 years (0–59 months)"/>
+    <definition value="0–59 months inclusive."/>
+  </concept>
+  <concept>
+    <code value="band-1to4y"/>
+    <display value="1–4 years"/>
+    <definition value="1 year up to 4 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-5to9y"/>
+    <display value="5–9 years"/>
+    <definition value="5 years up to 9 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-10to14y"/>
+    <display value="10–14 years"/>
+    <definition value="10 years up to 14 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-15to19y"/>
+    <display value="Adolescent (15–19 years)"/>
+    <definition value="15 years up to 19 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-20to24y"/>
+    <display value="Young adult (20–24 years)"/>
+    <definition value="20 years up to 24 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-25to49y"/>
+    <display value="Adult (25–49 years)"/>
+    <definition value="25 years up to 49 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-50to64y"/>
+    <display value="Older adult (50–64 years)"/>
+    <definition value="50 years up to 64 years 11 months."/>
+  </concept>
+  <concept>
+    <code value="band-65plus"/>
+    <display value="Senior (≥65 years)"/>
+    <definition value="65 years and above."/>
+  </concept>
+  <concept>
+    <code value="epi-birth"/>
+    <display value="At birth"/>
+    <definition value="EPI schedule label for birth dose."/>
+  </concept>
+  <concept>
+    <code value="epi-6w"/>
+    <display value="6 weeks"/>
+    <definition value="EPI schedule label for doses due at 6 weeks."/>
+  </concept>
+  <concept>
+    <code value="epi-10w"/>
+    <display value="10 weeks"/>
+    <definition value="EPI schedule label for doses due at 10 weeks."/>
+  </concept>
+  <concept>
+    <code value="epi-14w"/>
+    <display value="14 weeks"/>
+    <definition value="EPI schedule label for doses due at 14 weeks."/>
+  </concept>
+  <concept>
+    <code value="epi-9m"/>
+    <display value="9 months"/>
+    <definition value="EPI schedule label for doses due at 9 months."/>
+  </concept>
+  <concept>
+    <code value="epi-15m"/>
+    <display value="15 months"/>
+    <definition value="EPI schedule label for doses due at 15 months."/>
+  </concept>
+</CodeSystem>

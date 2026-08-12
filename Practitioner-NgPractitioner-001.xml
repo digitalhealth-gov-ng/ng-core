@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="NgPractitioner-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner NgPractitioner-001</b></p><a name="NgPractitioner-001"> </a><a name="hcNgPractitioner-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-practitioner.html">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs</code>/MDCN-45231</p><p><b>active</b>: true</p><p><b>name</b>: Kehinde Adebayo </p><p><b>telecom</b>: <a href="tel:+2348030001122">+2348030001122</a>, <a href="mailto:kehinde.adebayo@example.org">kehinde.adebayo@example.org</a></p><p><b>birthDate</b>: 1982-01-15</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Obstetrics &amp; Gynaecology</span></td><td>2016-01-01 --&gt; (ongoing)</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs"/>
+    <value value="MDCN-45231"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Adebayo"/>
+    <given value="Kehinde"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+2348030001122"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="kehinde.adebayo@example.org"/>
+  </telecom>
+  <birthDate value="1982-01-15"/>
+  <qualification>
+    <code>
+      <text value="Obstetrics &amp; Gynaecology"/>
+    </code>
+    <period>
+      <start value="2016-01-01"/>
+    </period>
+  </qualification>
+</Practitioner>

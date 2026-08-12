@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-eac-intervention-tools-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-eac-intervention-tools-vs</b></p><a name="ng-hiv-eac-intervention-tools-vs"> </a><a name="hcng-hiv-eac-intervention-tools-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-eac-form-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-pill-box">tool-pill-box</a></td><td style="color: #cccccc">Pill box</td><td>A pill box was provided or recommended as an adherence aid.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-calendar">tool-calendar</a></td><td style="color: #cccccc">Calendar</td><td>A calendar was provided or recommended as an adherence aid.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-incentive-calendar-paediatric">tool-incentive-calendar-paediatric</a></td><td style="color: #cccccc">Incentive calendar (paediatric)</td><td>A paediatric incentive calendar was provided or recommended.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-arv-swallowing-instruction">tool-arv-swallowing-instruction</a></td><td style="color: #cccccc">ARV swallowing instruction</td><td>Instruction on swallowing or administering ARV medicines was provided.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-written-instructions">tool-written-instructions</a></td><td style="color: #cccccc">Written instructions</td><td>Written medication or adherence instructions were provided.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-phone-call-sms">tool-phone-call-sms</a></td><td style="color: #cccccc">Phone calls or SMS</td><td>Phone calls or SMS messages were used or planned as adherence reminders.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-alarms">tool-alarms</a></td><td style="color: #cccccc">Alarms</td><td>An alarm or electronic reminder was used or recommended.</td></tr><tr><td><a href="CodeSystem-ng-hiv-eac-form-cs.html#ng-hiv-eac-form-cs-tool-other">tool-other</a></td><td style="color: #cccccc">Other intervention tool</td><td>An adherence tool not represented by another code; specify separately.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-eac-intervention-tools-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.71"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivEacInterventionToolsVS"/>
+  <title value="NG HIV EAC Intervention Tools"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Tools used to support ART adherence during Enhanced Adherence Counselling."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs"/>
+      <concept>
+        <code value="tool-pill-box"/>
+      </concept>
+      <concept>
+        <code value="tool-calendar"/>
+      </concept>
+      <concept>
+        <code value="tool-incentive-calendar-paediatric"/>
+      </concept>
+      <concept>
+        <code value="tool-arv-swallowing-instruction"/>
+      </concept>
+      <concept>
+        <code value="tool-written-instructions"/>
+      </concept>
+      <concept>
+        <code value="tool-phone-call-sms"/>
+      </concept>
+      <concept>
+        <code value="tool-alarms"/>
+      </concept>
+      <concept>
+        <code value="tool-other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

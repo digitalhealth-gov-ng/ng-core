@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-tracking-default-reason-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-tracking-default-reason-cs</b></p><a name="ng-hiv-tracking-default-reason-cs"> </a><a name="hcng-hiv-tracking-default-reason-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-default-reason-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ng-hiv-tracking-default-reason-cs-1"> </a></td><td>Was sick</td></tr><tr><td style="white-space:nowrap">2<a name="ng-hiv-tracking-default-reason-cs-2"> </a></td><td>No transport fare</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-tracking-default-reason-cs-3"> </a></td><td>Transferred to a new site</td></tr><tr><td style="white-space:nowrap">4<a name="ng-hiv-tracking-default-reason-cs-4"> </a></td><td>Forgot</td></tr><tr><td style="white-space:nowrap">5<a name="ng-hiv-tracking-default-reason-cs-5"> </a></td><td>Felt better</td></tr><tr><td style="white-space:nowrap">6<a name="ng-hiv-tracking-default-reason-cs-6"> </a></td><td>Not permitted to leave work</td></tr><tr><td style="white-space:nowrap">7<a name="ng-hiv-tracking-default-reason-cs-7"> </a></td><td>Lost appointment card</td></tr><tr><td style="white-space:nowrap">8<a name="ng-hiv-tracking-default-reason-cs-8"> </a></td><td>Still had medicines</td></tr><tr><td style="white-space:nowrap">9<a name="ng-hiv-tracking-default-reason-cs-9"> </a></td><td>Taking herbal treatment</td></tr><tr><td style="white-space:nowrap">10<a name="ng-hiv-tracking-default-reason-cs-10"> </a></td><td>Intensive follow-up</td></tr><tr><td style="white-space:nowrap">11<a name="ng-hiv-tracking-default-reason-cs-11"> </a></td><td>Other reason</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-default-reason-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.77"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivTrackingDefaultReasonCS"/>
+  <title value="NG HIV Tracking Register Reasons for Defaulting"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons recorded when successful contact establishes why the client missed the appointment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="1"/>
+    <display value="Was sick"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="No transport fare"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Transferred to a new site"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Forgot"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Felt better"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Not permitted to leave work"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Lost appointment card"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Still had medicines"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Taking herbal treatment"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Intensive follow-up"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Other reason"/>
+  </concept>
+</CodeSystem>

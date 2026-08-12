@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CoverageEligibilityRequest/NgCoverageEligibilityRequest-ChikaEmergency> a fhir:CoverageEligibilityRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgCoverageEligibilityRequest-ChikaEmergency"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-request" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-request>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CoverageEligibilityRequest NgCoverageEligibilityRequest-ChikaEmergency</b></p><a name=\"NgCoverageEligibilityRequest-ChikaEmergency\"> </a><a name=\"hcNgCoverageEligibilityRequest-ChikaEmergency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-coverage-eligibility-request.html\">NG Claim Coverage Eligibility Request</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs</code>/ELAPPROVE01</p><p><b>status</b>: Active</p><p><b>purpose</b>: Coverage Validation</p><p><b>patient</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>created</b>: 2025-11-06 23:47:00+0100</p><p><b>provider</b>: <a href=\"Organization-Organization-PortHarcourt-Hospital.html\">Port Harcourt Emergency Hospital</a></p><p><b>insurer</b>: <a href=\"Organization-Organization-Truth-HMO.html\">Truth HMO</a></p></div>"
+  ] ;
+  fhir:CoverageEligibilityRequest.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs" ] ;
+     fhir:Identifier.value [ fhir:value "ELAPPROVE01" ]
+  ] ;
+  fhir:CoverageEligibilityRequest.status [ fhir:value "active"] ;
+  fhir:CoverageEligibilityRequest.purpose [
+     fhir:value "validation" ;
+     fhir:index 0
+  ] ;
+  fhir:CoverageEligibilityRequest.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/Patient-Chika-Okafor> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-Chika-Okafor" ] ;
+     fhir:Reference.display [ fhir:value "Chika Okafor" ]
+  ] ;
+  fhir:CoverageEligibilityRequest.created [ fhir:value "2025-11-06T23:47:00+01:00"^^xsd:dateTime] ;
+  fhir:CoverageEligibilityRequest.provider [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-PortHarcourt-Hospital> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-PortHarcourt-Hospital" ] ;
+     fhir:Reference.display [ fhir:value "Port Harcourt Emergency Hospital" ]
+  ] ;
+  fhir:CoverageEligibilityRequest.insurer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-Truth-HMO> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Truth-HMO" ] ;
+     fhir:Reference.display [ fhir:value "Truth HMO" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CoverageEligibilityRequest/NgCoverageEligibilityRequest-ChikaEmergency.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,30 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "NgCarePlan-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-care-plan"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan NgCarePlan-001</b></p><a name=\"NgCarePlan-001\"> </a><a name=\"hcNgCarePlan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-care-plan.html\">NG CarePlan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs mnch}\">MNCH</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>period</b>: 2025-11-11 --&gt; 2025-12-31</p><p><b>goal</b>: <a href=\"Goal-NgGoal-001.html\">Goal: lifecycleStatus = active; achievementStatus = Improving; category = ; priority = High Priority; description = ; start[x] = 2025-11-11</a></p></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs",
+      "code" : "mnch",
+      "display" : "MNCH"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "period" : {
+    "start" : "2025-11-11",
+    "end" : "2025-12-31"
+  },
+  "goal" : [{
+    "reference" : "Goal/NgGoal-001"
+  }]
+}

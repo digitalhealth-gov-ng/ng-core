@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-eac-form-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-eac-form-cs</b></p><a name="ng-hiv-eac-form-cs"> </a><a name="hcng-hiv-eac-form-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">adherence-good<a name="ng-hiv-eac-form-cs-adherence-good"> </a></td><td>Good</td><td>The client demonstrates good adherence to the prescribed ART regimen.</td></tr><tr><td style="white-space:nowrap">adherence-fair<a name="ng-hiv-eac-form-cs-adherence-fair"> </a></td><td>Fair</td><td>The client demonstrates fair adherence to the prescribed ART regimen.</td></tr><tr><td style="white-space:nowrap">adherence-poor<a name="ng-hiv-eac-form-cs-adherence-poor"> </a></td><td>Poor</td><td>The client demonstrates poor adherence to the prescribed ART regimen.</td></tr><tr><td style="white-space:nowrap">barrier-forgot<a name="ng-hiv-eac-form-cs-barrier-forgot"> </a></td><td>Forgot</td><td>The client forgot to take one or more prescribed ART doses.</td></tr><tr><td style="white-space:nowrap">barrier-knowledge-beliefs<a name="ng-hiv-eac-form-cs-barrier-knowledge-beliefs"> </a></td><td>Knowledge or beliefs</td><td>Knowledge, understanding or beliefs affect the client's adherence.</td></tr><tr><td style="white-space:nowrap">barrier-side-effects<a name="ng-hiv-eac-form-cs-barrier-side-effects"> </a></td><td>Side effects</td><td>Actual or anticipated medication side effects affect adherence.</td></tr><tr><td style="white-space:nowrap">barrier-physical-illness<a name="ng-hiv-eac-form-cs-barrier-physical-illness"> </a></td><td>Physical illness</td><td>Physical illness affects the client's ability or willingness to take ART.</td></tr><tr><td style="white-space:nowrap">barrier-substance-use<a name="ng-hiv-eac-form-cs-barrier-substance-use"> </a></td><td>Substance use</td><td>Alcohol or other substance use affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-depression<a name="ng-hiv-eac-form-cs-barrier-depression"> </a></td><td>Depression</td><td>Depression or depressive symptoms affect adherence.</td></tr><tr><td style="white-space:nowrap">barrier-pill-burden<a name="ng-hiv-eac-form-cs-barrier-pill-burden"> </a></td><td>Pill burden</td><td>The number, size or frequency of medicines affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-lost-ran-out-of-drugs<a name="ng-hiv-eac-form-cs-barrier-lost-ran-out-of-drugs"> </a></td><td>Lost or ran out of drugs</td><td>The client lost the medicines or exhausted the supply before the next refill.</td></tr><tr><td style="white-space:nowrap">barrier-transport<a name="ng-hiv-eac-form-cs-barrier-transport"> </a></td><td>Transport</td><td>Transport availability or cost affects access to ART services or medicines.</td></tr><tr><td style="white-space:nowrap">barrier-child-refusing<a name="ng-hiv-eac-form-cs-barrier-child-refusing"> </a></td><td>Child refusing</td><td>A child refuses to take the prescribed ART medicines.</td></tr><tr><td style="white-space:nowrap">barrier-scheduling<a name="ng-hiv-eac-form-cs-barrier-scheduling"> </a></td><td>Scheduling</td><td>The client's daily schedule or medication schedule affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-fear-of-disclosure<a name="ng-hiv-eac-form-cs-barrier-fear-of-disclosure"> </a></td><td>Fear of disclosure</td><td>Fear that the client's HIV status may be disclosed affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-family-partner<a name="ng-hiv-eac-form-cs-barrier-family-partner"> </a></td><td>Family or partner</td><td>A family or partner-related issue affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-food-insecurity<a name="ng-hiv-eac-form-cs-barrier-food-insecurity"> </a></td><td>Food insecurity</td><td>Lack of reliable access to adequate food affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-drug-stock-out<a name="ng-hiv-eac-form-cs-barrier-drug-stock-out"> </a></td><td>Drug stock-out</td><td>The medicine was unavailable because of a facility or supply-chain stock-out.</td></tr><tr><td style="white-space:nowrap">barrier-long-waiting-time<a name="ng-hiv-eac-form-cs-barrier-long-waiting-time"> </a></td><td>Long waiting time</td><td>Long waiting time at the service-delivery point affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-stigma<a name="ng-hiv-eac-form-cs-barrier-stigma"> </a></td><td>Stigma</td><td>Experienced or anticipated HIV-related stigma affects adherence.</td></tr><tr><td style="white-space:nowrap">barrier-other<a name="ng-hiv-eac-form-cs-barrier-other"> </a></td><td>Other barrier</td><td>An adherence barrier not represented by another code; specify separately.</td></tr><tr><td style="white-space:nowrap">service-education<a name="ng-hiv-eac-form-cs-service-education"> </a></td><td>Education</td><td>Education was provided to address adherence needs.</td></tr><tr><td style="white-space:nowrap">service-individual-counselling<a name="ng-hiv-eac-form-cs-service-individual-counselling"> </a></td><td>Individual counselling</td><td>Individual adherence counselling was provided.</td></tr><tr><td style="white-space:nowrap">service-group-counselling<a name="ng-hiv-eac-form-cs-service-group-counselling"> </a></td><td>Group counselling</td><td>Group adherence counselling was provided.</td></tr><tr><td style="white-space:nowrap">service-peer-support<a name="ng-hiv-eac-form-cs-service-peer-support"> </a></td><td>Peer support</td><td>Peer-based adherence support was provided.</td></tr><tr><td style="white-space:nowrap">service-treatment-buddy<a name="ng-hiv-eac-form-cs-service-treatment-buddy"> </a></td><td>Treatment buddy</td><td>A treatment buddy was established or supported.</td></tr><tr><td style="white-space:nowrap">service-extended-drug-pick-up<a name="ng-hiv-eac-form-cs-service-extended-drug-pick-up"> </a></td><td>Extended drug pick-up</td><td>An extended medicine pick-up arrangement was provided.</td></tr><tr><td style="white-space:nowrap">service-community-art-group<a name="ng-hiv-eac-form-cs-service-community-art-group"> </a></td><td>Community ART group</td><td>The client was linked to or supported through a community ART group.</td></tr><tr><td style="white-space:nowrap">service-directly-observed-therapy<a name="ng-hiv-eac-form-cs-service-directly-observed-therapy"> </a></td><td>Directly observed therapy</td><td>Direct observation of treatment was provided or arranged.</td></tr><tr><td style="white-space:nowrap">service-other<a name="ng-hiv-eac-form-cs-service-other"> </a></td><td>Other service intervention</td><td>A service intervention not represented by another code; specify separately.</td></tr><tr><td style="white-space:nowrap">tool-pill-box<a name="ng-hiv-eac-form-cs-tool-pill-box"> </a></td><td>Pill box</td><td>A pill box was provided or recommended as an adherence aid.</td></tr><tr><td style="white-space:nowrap">tool-calendar<a name="ng-hiv-eac-form-cs-tool-calendar"> </a></td><td>Calendar</td><td>A calendar was provided or recommended as an adherence aid.</td></tr><tr><td style="white-space:nowrap">tool-incentive-calendar-paediatric<a name="ng-hiv-eac-form-cs-tool-incentive-calendar-paediatric"> </a></td><td>Incentive calendar (paediatric)</td><td>A paediatric incentive calendar was provided or recommended.</td></tr><tr><td style="white-space:nowrap">tool-arv-swallowing-instruction<a name="ng-hiv-eac-form-cs-tool-arv-swallowing-instruction"> </a></td><td>ARV swallowing instruction</td><td>Instruction on swallowing or administering ARV medicines was provided.</td></tr><tr><td style="white-space:nowrap">tool-written-instructions<a name="ng-hiv-eac-form-cs-tool-written-instructions"> </a></td><td>Written instructions</td><td>Written medication or adherence instructions were provided.</td></tr><tr><td style="white-space:nowrap">tool-phone-call-sms<a name="ng-hiv-eac-form-cs-tool-phone-call-sms"> </a></td><td>Phone calls or SMS</td><td>Phone calls or SMS messages were used or planned as adherence reminders.</td></tr><tr><td style="white-space:nowrap">tool-alarms<a name="ng-hiv-eac-form-cs-tool-alarms"> </a></td><td>Alarms</td><td>An alarm or electronic reminder was used or recommended.</td></tr><tr><td style="white-space:nowrap">tool-other<a name="ng-hiv-eac-form-cs-tool-other"> </a></td><td>Other intervention tool</td><td>An adherence tool not represented by another code; specify separately.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.44"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivEacFormCS"/>
+  <title value="NG HIV Enhanced Adherence Counselling Form Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local coded answers transcribed from the Nigeria Enhanced Adherence&#xA;Counselling Form for adherence assessment, adherence barriers, service&#xA;interventions and intervention tools."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="38"/>
+  <concept>
+    <code value="adherence-good"/>
+    <display value="Good"/>
+    <definition value="The client demonstrates good adherence to the prescribed ART regimen."/>
+  </concept>
+  <concept>
+    <code value="adherence-fair"/>
+    <display value="Fair"/>
+    <definition value="The client demonstrates fair adherence to the prescribed ART regimen."/>
+  </concept>
+  <concept>
+    <code value="adherence-poor"/>
+    <display value="Poor"/>
+    <definition value="The client demonstrates poor adherence to the prescribed ART regimen."/>
+  </concept>
+  <concept>
+    <code value="barrier-forgot"/>
+    <display value="Forgot"/>
+    <definition value="The client forgot to take one or more prescribed ART doses."/>
+  </concept>
+  <concept>
+    <code value="barrier-knowledge-beliefs"/>
+    <display value="Knowledge or beliefs"/>
+    <definition value="Knowledge, understanding or beliefs affect the client's adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-side-effects"/>
+    <display value="Side effects"/>
+    <definition value="Actual or anticipated medication side effects affect adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-physical-illness"/>
+    <display value="Physical illness"/>
+    <definition value="Physical illness affects the client's ability or willingness to take ART."/>
+  </concept>
+  <concept>
+    <code value="barrier-substance-use"/>
+    <display value="Substance use"/>
+    <definition value="Alcohol or other substance use affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-depression"/>
+    <display value="Depression"/>
+    <definition value="Depression or depressive symptoms affect adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-pill-burden"/>
+    <display value="Pill burden"/>
+    <definition value="The number, size or frequency of medicines affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-lost-ran-out-of-drugs"/>
+    <display value="Lost or ran out of drugs"/>
+    <definition value="The client lost the medicines or exhausted the supply before the next refill."/>
+  </concept>
+  <concept>
+    <code value="barrier-transport"/>
+    <display value="Transport"/>
+    <definition value="Transport availability or cost affects access to ART services or medicines."/>
+  </concept>
+  <concept>
+    <code value="barrier-child-refusing"/>
+    <display value="Child refusing"/>
+    <definition value="A child refuses to take the prescribed ART medicines."/>
+  </concept>
+  <concept>
+    <code value="barrier-scheduling"/>
+    <display value="Scheduling"/>
+    <definition value="The client's daily schedule or medication schedule affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-fear-of-disclosure"/>
+    <display value="Fear of disclosure"/>
+    <definition value="Fear that the client's HIV status may be disclosed affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-family-partner"/>
+    <display value="Family or partner"/>
+    <definition value="A family or partner-related issue affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-food-insecurity"/>
+    <display value="Food insecurity"/>
+    <definition value="Lack of reliable access to adequate food affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-drug-stock-out"/>
+    <display value="Drug stock-out"/>
+    <definition value="The medicine was unavailable because of a facility or supply-chain stock-out."/>
+  </concept>
+  <concept>
+    <code value="barrier-long-waiting-time"/>
+    <display value="Long waiting time"/>
+    <definition value="Long waiting time at the service-delivery point affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-stigma"/>
+    <display value="Stigma"/>
+    <definition value="Experienced or anticipated HIV-related stigma affects adherence."/>
+  </concept>
+  <concept>
+    <code value="barrier-other"/>
+    <display value="Other barrier"/>
+    <definition value="An adherence barrier not represented by another code; specify separately."/>
+  </concept>
+  <concept>
+    <code value="service-education"/>
+    <display value="Education"/>
+    <definition value="Education was provided to address adherence needs."/>
+  </concept>
+  <concept>
+    <code value="service-individual-counselling"/>
+    <display value="Individual counselling"/>
+    <definition value="Individual adherence counselling was provided."/>
+  </concept>
+  <concept>
+    <code value="service-group-counselling"/>
+    <display value="Group counselling"/>
+    <definition value="Group adherence counselling was provided."/>
+  </concept>
+  <concept>
+    <code value="service-peer-support"/>
+    <display value="Peer support"/>
+    <definition value="Peer-based adherence support was provided."/>
+  </concept>
+  <concept>
+    <code value="service-treatment-buddy"/>
+    <display value="Treatment buddy"/>
+    <definition value="A treatment buddy was established or supported."/>
+  </concept>
+  <concept>
+    <code value="service-extended-drug-pick-up"/>
+    <display value="Extended drug pick-up"/>
+    <definition value="An extended medicine pick-up arrangement was provided."/>
+  </concept>
+  <concept>
+    <code value="service-community-art-group"/>
+    <display value="Community ART group"/>
+    <definition value="The client was linked to or supported through a community ART group."/>
+  </concept>
+  <concept>
+    <code value="service-directly-observed-therapy"/>
+    <display value="Directly observed therapy"/>
+    <definition value="Direct observation of treatment was provided or arranged."/>
+  </concept>
+  <concept>
+    <code value="service-other"/>
+    <display value="Other service intervention"/>
+    <definition value="A service intervention not represented by another code; specify separately."/>
+  </concept>
+  <concept>
+    <code value="tool-pill-box"/>
+    <display value="Pill box"/>
+    <definition value="A pill box was provided or recommended as an adherence aid."/>
+  </concept>
+  <concept>
+    <code value="tool-calendar"/>
+    <display value="Calendar"/>
+    <definition value="A calendar was provided or recommended as an adherence aid."/>
+  </concept>
+  <concept>
+    <code value="tool-incentive-calendar-paediatric"/>
+    <display value="Incentive calendar (paediatric)"/>
+    <definition value="A paediatric incentive calendar was provided or recommended."/>
+  </concept>
+  <concept>
+    <code value="tool-arv-swallowing-instruction"/>
+    <display value="ARV swallowing instruction"/>
+    <definition value="Instruction on swallowing or administering ARV medicines was provided."/>
+  </concept>
+  <concept>
+    <code value="tool-written-instructions"/>
+    <display value="Written instructions"/>
+    <definition value="Written medication or adherence instructions were provided."/>
+  </concept>
+  <concept>
+    <code value="tool-phone-call-sms"/>
+    <display value="Phone calls or SMS"/>
+    <definition value="Phone calls or SMS messages were used or planned as adherence reminders."/>
+  </concept>
+  <concept>
+    <code value="tool-alarms"/>
+    <display value="Alarms"/>
+    <definition value="An alarm or electronic reminder was used or recommended."/>
+  </concept>
+  <concept>
+    <code value="tool-other"/>
+    <display value="Other intervention tool"/>
+    <definition value="An adherence tool not represented by another code; specify separately."/>
+  </concept>
+</CodeSystem>

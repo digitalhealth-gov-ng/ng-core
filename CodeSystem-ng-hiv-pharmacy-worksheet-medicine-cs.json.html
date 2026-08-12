@@ -1,0 +1,647 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG HIV Pharmacy Daily Worksheet Medicine Columns - JSON Representation - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.392"}
+    h3,h4,h5,h6{--heading-prefix:"32.392"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NG HIV Pharmacy Daily Worksheet Medicine Columns</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NG HIV Pharmacy Daily Worksheet Medicine Columns - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-07-29
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "ng-hiv-pharmacy-worksheet-medicine-cs",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ng-hiv-pharmacy-worksheet-medicine-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcng-hiv-pharmacy-worksheet-medicine-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W24&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W24\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abacavir/Lamivudine 600/300 mg&lt;/td&gt;&lt;td&gt;W24; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W25&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W25\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zidovudine/Lamivudine 300/150 mg&lt;/td&gt;&lt;td&gt;W25; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W26&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W26\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenofovir/Lamivudine 300/300 mg&lt;/td&gt;&lt;td&gt;W26; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W27&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W27\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenofovir/Lamivudine/Efavirenz 300/300/400 mg&lt;/td&gt;&lt;td&gt;W27; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W28&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W28\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 30 tablets&lt;/td&gt;&lt;td&gt;W28; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 30-tablet presentation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W29&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W29\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 90 tablets&lt;/td&gt;&lt;td&gt;W29; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 90-tablet presentation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W30&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W30\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg&lt;/td&gt;&lt;td&gt;W30; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W31&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W31\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg&lt;/td&gt;&lt;td&gt;W31; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W32&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W32\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atazanavir/Ritonavir 300/100 mg&lt;/td&gt;&lt;td&gt;W32; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W33&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W33\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dolutegravir 50 mg&lt;/td&gt;&lt;td&gt;W33; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W34&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W34\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ritonavir 100 mg&lt;/td&gt;&lt;td&gt;W34; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W35&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W35\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Darunavir 600 mg&lt;/td&gt;&lt;td&gt;W35; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W36&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W36\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Darunavir/Ritonavir 400/50 mg&lt;/td&gt;&lt;td&gt;W36; category adult-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W37&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W37\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cabotegravir 200 mg/mL, 3 mL vial&lt;/td&gt;&lt;td&gt;W37; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W38&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W38\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lenacapavir 600 mg tablet&lt;/td&gt;&lt;td&gt;W38; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W39&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W39\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lenacapavir 927 mg/3 mL injection&lt;/td&gt;&lt;td&gt;W39; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W40&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W40\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abacavir/Lamivudine/Dolutegravir 60/30/5 mg&lt;/td&gt;&lt;td&gt;W40; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W41&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W41\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abacavir/Lamivudine 120/60 mg&lt;/td&gt;&lt;td&gt;W41; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W42&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W42\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zidovudine/Lamivudine 60/30 mg&lt;/td&gt;&lt;td&gt;W42; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W43&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W43\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dolutegravir 10 mg&lt;/td&gt;&lt;td&gt;W43; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W44&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W44\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nevirapine 50 mg/5 mL&lt;/td&gt;&lt;td&gt;W44; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W45&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W45\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lopinavir/Ritonavir 100/25 mg&lt;/td&gt;&lt;td&gt;W45; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W46&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W46\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Darunavir/Ritonavir 120/20 mg&lt;/td&gt;&lt;td&gt;W46; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W47&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W47\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zidovudine 10 mg/mL&lt;/td&gt;&lt;td&gt;W47; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W48&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W48\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Darunavir 75 mg&lt;/td&gt;&lt;td&gt;W48; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W49&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W49\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ritonavir 25 mg&lt;/td&gt;&lt;td&gt;W49; category paediatric-art. Report in packs, bottles or vials.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W50&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W50\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Co-trimoxazole 960 mg&lt;/td&gt;&lt;td&gt;W50; category ctx-prophylaxis. Report in tablets.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W51&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W51\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Co-trimoxazole 120 mg&lt;/td&gt;&lt;td&gt;W51; category ctx-prophylaxis. Report in tablets.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W52&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W52\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Isoniazid 100 mg&lt;/td&gt;&lt;td&gt;W52; category tb-preventive-therapy. Report in kits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W53&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W53\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Isoniazid 300 mg&lt;/td&gt;&lt;td&gt;W53; category tb-preventive-therapy. Report in kits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W54&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W54\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Isoniazid/Rifapentine 300/300 mg&lt;/td&gt;&lt;td&gt;W54; category tb-preventive-therapy. Report in kits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W55&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W55\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rifapentine 150 mg&lt;/td&gt;&lt;td&gt;W55; category tb-preventive-therapy. Report in kits.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W56&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W56\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acyclovir 200 mg tablet&lt;/td&gt;&lt;td&gt;W56; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W57&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W57\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clotrimazole 100 mg vaginal tablet&lt;/td&gt;&lt;td&gt;W57; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W58&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W58\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fluconazole 100 mg&lt;/td&gt;&lt;td&gt;W58; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W59&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W59\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fluconazole 200 mg&lt;/td&gt;&lt;td&gt;W59; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W60&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W60\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fluconazole 50 mg/5 mL suspension, 35 mL&lt;/td&gt;&lt;td&gt;W60; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W61&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W61\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nystatin 100,000 IU/mL suspension&lt;/td&gt;&lt;td&gt;W61; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W62&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W62\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Azithromycin 500 mg capsule&lt;/td&gt;&lt;td&gt;W62; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W63&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W63\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Benzathine penicillin 1 g injection&lt;/td&gt;&lt;td&gt;W63; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W64&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W64\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ceftriaxone 1 g injection&lt;/td&gt;&lt;td&gt;W64; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W65&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W65\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ciprofloxacin 500 mg tablet&lt;/td&gt;&lt;td&gt;W65; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W66&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W66\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Doxycycline 100 mg capsule&lt;/td&gt;&lt;td&gt;W66; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W67&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W67\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythromycin 500 mg tablet&lt;/td&gt;&lt;td&gt;W67; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W68&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W68\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metronidazole 400 mg tablet&lt;/td&gt;&lt;td&gt;W68; category anti-infective. The revised worksheet does not state a common reporting unit for this section.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W69&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W69\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Podophyllotoxin 0.5% solution&lt;/td&gt;&lt;td&gt;W69; category anti-infective. The workbook prints 'Podophyllon toxin'; this display uses the likely intended medicine name while preserving W69 as the source code.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W70&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W70\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amphotericin B 50 mg vial&lt;/td&gt;&lt;td&gt;W70; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W71&lt;a name=\&quot;ng-hiv-pharmacy-worksheet-medicine-cs-W71\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flucytosine 500 mg tablet&lt;/td&gt;&lt;td&gt;W71; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:oid:2.16.840.1.113884.3.9944.1.16.64"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.0.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "NgHivPharmacyWorksheetMedicineCS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "NG HIV Pharmacy Daily Worksheet Medicine Columns",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-07-29",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "NDHI",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "NDHI",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://digitalhealth.gov.ng"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "emeka2015@gmail.com"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nigeria Digital in Health Initiative.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "lekeojewale@gmail.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nigeria Digital in Health Initiative.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "emeka2015@gmail.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Local codes for the fixed medicine columns W24–W71 on the revised November\n2025 Pharmacy Daily Worksheet. The code is the printed worksheet column\nidentifier, allowing exact reconstruction of the paper worksheet.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NG",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Nigeria"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 48,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W24",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Abacavir/Lamivudine 600/300 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W24; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W25",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zidovudine/Lamivudine 300/150 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W25; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W26",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenofovir/Lamivudine 300/300 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W26; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W27",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenofovir/Lamivudine/Efavirenz 300/300/400 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W27; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W28",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 30 tablets",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W28; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 30-tablet presentation."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W29",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 90 tablets",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W29; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 90-tablet presentation."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W30",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W30; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W31",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W31; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W32",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Atazanavir/Ritonavir 300/100 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W32; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W33",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dolutegravir 50 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W33; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W34",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ritonavir 100 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W34; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W35",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Darunavir 600 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W35; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W36",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Darunavir/Ritonavir 400/50 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W36; category adult-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W37",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cabotegravir 200 mg/mL, 3 mL vial",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W37; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W38",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lenacapavir 600 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W38; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W39",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lenacapavir 927 mg/3 mL injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W39; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W40",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Abacavir/Lamivudine/Dolutegravir 60/30/5 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W40; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W41",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Abacavir/Lamivudine 120/60 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W41; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W42",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zidovudine/Lamivudine 60/30 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W42; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W43",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dolutegravir 10 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W43; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W44",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nevirapine 50 mg/5 mL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W44; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W45",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lopinavir/Ritonavir 100/25 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W45; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W46",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Darunavir/Ritonavir 120/20 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W46; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W47",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zidovudine 10 mg/mL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W47; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W48",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Darunavir 75 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W48; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W49",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ritonavir 25 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W49; category paediatric-art. Report in packs, bottles or vials."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W50",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Co-trimoxazole 960 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W50; category ctx-prophylaxis. Report in tablets."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W51",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Co-trimoxazole 120 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W51; category ctx-prophylaxis. Report in tablets."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W52",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Isoniazid 100 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W52; category tb-preventive-therapy. Report in kits."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W53",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Isoniazid 300 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W53; category tb-preventive-therapy. Report in kits."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W54",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Isoniazid/Rifapentine 300/300 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W54; category tb-preventive-therapy. Report in kits."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W55",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rifapentine 150 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W55; category tb-preventive-therapy. Report in kits."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W56",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Acyclovir 200 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W56; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W57",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Clotrimazole 100 mg vaginal tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W57; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W58",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fluconazole 100 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W58; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W59",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fluconazole 200 mg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W59; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W60",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fluconazole 50 mg/5 mL suspension, 35 mL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W60; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W61",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nystatin 100,000 IU/mL suspension",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W61; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W62",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Azithromycin 500 mg capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W62; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W63",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Benzathine penicillin 1 g injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W63; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W64",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ceftriaxone 1 g injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W64; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W65",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ciprofloxacin 500 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W65; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W66",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Doxycycline 100 mg capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W66; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W67",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Erythromycin 500 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W67; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W68",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Metronidazole 400 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W68; category anti-infective. The revised worksheet does not state a common reporting unit for this section."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W69",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Podophyllotoxin 0.5% solution",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W69; category anti-infective. The workbook prints 'Podophyllon toxin'; this display uses the likely intended medicine name while preserving W69 as the source code."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W70",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Amphotericin B 50 mg vial",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W70; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W71",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Flucytosine 500 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "W71; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product."
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Goal",
+  "id" : "NgGoal-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-goal"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal NgGoal-001</b></p><a name=\"NgGoal-001\"> </a><a name=\"hcNgGoal-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-goal.html\">NG Goal</a></p></div><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement improving}\">Improving</span></p><p><b>category</b>: <span title=\"Codes:\">Chronic disease management</span></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-priority high-priority}\">High Priority</span></p><p><b>description</b>: <span title=\"Codes:\">Control systolic blood pressure</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>start</b>: 2025-11-11</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 10889-4}\">Bisacodyl [Mass/mass] in Stool</span></td><td>120 mmHg</td><td>2025-12-23</td></tr></table></div>"
+  },
+  "lifecycleStatus" : "active",
+  "achievementStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/goal-achievement",
+      "code" : "improving"
+    }]
+  },
+  "category" : [{
+    "text" : "Chronic disease management"
+  }],
+  "priority" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+      "code" : "high-priority"
+    }]
+  },
+  "description" : {
+    "text" : "Control systolic blood pressure"
+  },
+  "subject" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "startDate" : "2025-11-11",
+  "target" : [{
+    "measure" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "10889-4",
+        "display" : "Bisacodyl [Mass/mass] in Stool"
+      }]
+    },
+    "detailQuantity" : {
+      "value" : 120,
+      "unit" : "mmHg"
+    },
+    "dueDate" : "2025-12-23"
+  }]
+}

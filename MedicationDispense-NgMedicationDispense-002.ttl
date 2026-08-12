@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/MedicationDispense/NgMedicationDispense-002> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgMedicationDispense-002"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense NgMedicationDispense-002</b></p><a name=\"NgMedicationDispense-002\"> </a><a name=\"hcNgMedicationDispense-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-medication-dispense.html\">NG MedicationDispense</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href=\"Medication-NgMedication-002.html\">Medication </a></p><p><b>subject</b>: <a href=\"Patient-NgPatient-003.html\">Suleiman Bala  Male, DoB: 2019-09-05 ( birthcert)</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-003.html\">Practitioner Hauwa Garba </a></td></tr></table><p><b>quantity</b>: 100 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><p><b>whenHandedOver</b>: 2025-11-04 12:25:00+0100</p><p><b>note</b>: </p><blockquote><div><p>Shake well before use.</p>\n</div></blockquote><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>5 mL orally every 6 hours as needed for fever.</td></tr></table></div>"
+  ] ;
+  fhir:MedicationDispense.status [ fhir:value "completed"] ;
+  fhir:MedicationDispense.medicationReference [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Medication/NgMedication-002> ;
+     fhir:Reference.reference [ fhir:value "Medication/NgMedication-002" ]
+  ] ;
+  fhir:MedicationDispense.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-003> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-003" ]
+  ] ;
+  fhir:MedicationDispense.performer [
+     fhir:index 0 ;
+     fhir:MedicationDispense.performer.actor [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-003> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-003" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "mL" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "mL" ]
+  ] ;
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2025-11-04T12:25:00+01:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Shake well before use." ]
+  ] ;
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "5 mL orally every 6 hours as needed for fever." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/MedicationDispense/NgMedicationDispense-002.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

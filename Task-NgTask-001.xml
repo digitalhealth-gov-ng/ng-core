@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="NgTask-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task NgTask-001</b></p><a name="NgTask-001"> </a><a name="hcNgTask-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-task.html">NG Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>priority</b>: Urgent</p><p><b>code</b>: <span title="Codes:">Process antenatal referral</span></p><p><b>focus</b>: <a href="ServiceRequest-NgServiceRequest-001.html">ServiceRequest </a></p><p><b>for</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>authoredOn</b>: 2026-08-03 09:35:00+0100</p><p><b>lastModified</b>: 2026-08-03 09:40:00+0100</p><p><b>requester</b>: <a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></p><p><b>owner</b>: <a href="Organization-NgProviderOrganization-001.html">Organization Akure Central Hospital</a></p><p><b>reasonCode</b>: <span title="Codes:">Urgent specialist assessment requested for elevated blood pressure</span></p><p><b>note</b>: </p><blockquote><div><p>Review the referral request, confirm acceptance, and arrange specialist
+obstetric assessment for the patient.</p>
+</div></blockquote><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Referral document</span></td><td><a href="DocumentReference-NgDocuments-001.html">DocumentReference: status = current; docStatus = final; type = Appends; category = ; date = 2026-08-03 07:30:00+0100</a></td></tr></table></div>
+  </text>
+  <status value="requested"/>
+  <intent value="order"/>
+  <priority value="urgent"/>
+  <code>
+    <text value="Process antenatal referral"/>
+  </code>
+  <focus>
+    <reference value="ServiceRequest/NgServiceRequest-001"/>
+  </focus>
+  <for>
+    <reference value="Patient/NgPatient-002"/>
+  </for>
+  <authoredOn value="2026-08-03T09:35:00+01:00"/>
+  <lastModified value="2026-08-03T09:40:00+01:00"/>
+  <requester>
+    <reference value="Practitioner/NgPractitioner-002"/>
+  </requester>
+  <owner>
+    <reference value="Organization/NgProviderOrganization-001"/>
+  </owner>
+  <reasonCode>
+    <text value="Urgent specialist assessment requested for elevated blood pressure"/>
+  </reasonCode>
+  <note>
+    <text value="Review the referral request, confirm acceptance, and arrange specialist&#xA;obstetric assessment for the patient."/>
+  </note>
+  <input>
+    <type>
+      <text value="Referral document"/>
+    </type>
+    <valueReference>
+      <reference value="DocumentReference/NgDocuments-001"/>
+    </valueReference>
+  </input>
+</Task>

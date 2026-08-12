@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-service-provider-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-service-provider-cs</b></p><a name="ng-hiv-service-provider-cs"> </a><a name="hcng-hiv-service-provider-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Health-Center<a name="ng-hiv-service-provider-cs-Health-Center"> </a></td><td>Health Center</td></tr><tr><td style="white-space:nowrap">Public-Hospital<a name="ng-hiv-service-provider-cs-Public-Hospital"> </a></td><td>Public hospital</td></tr><tr><td style="white-space:nowrap">Private-Hospital<a name="ng-hiv-service-provider-cs-Private-Hospital"> </a></td><td>Private hospital</td></tr><tr><td style="white-space:nowrap">NBO-FBO-Hospital<a name="ng-hiv-service-provider-cs-NBO-FBO-Hospital"> </a></td><td>NBO/FBO hospital</td></tr><tr><td style="white-space:nowrap">Private-Clinic<a name="ng-hiv-service-provider-cs-Private-Clinic"> </a></td><td>Private clinic</td></tr><tr><td style="white-space:nowrap">Self-referred<a name="ng-hiv-service-provider-cs-Self-referred"> </a></td><td>Self-referred</td></tr><tr><td style="white-space:nowrap">Community-Referred<a name="ng-hiv-service-provider-cs-Community-Referred"> </a></td><td>Community referred</td></tr><tr><td style="white-space:nowrap">Other<a name="ng-hiv-service-provider-cs-Other"> </a></td><td>Other (Specify)</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.71"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivServiceProviderTypeCS"/>
+  <title value="HIV Service Providers CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code used for representing the classification of organizations providing health services."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="Health-Center"/>
+    <display value="Health Center"/>
+  </concept>
+  <concept>
+    <code value="Public-Hospital"/>
+    <display value="Public hospital"/>
+  </concept>
+  <concept>
+    <code value="Private-Hospital"/>
+    <display value="Private hospital"/>
+  </concept>
+  <concept>
+    <code value="NBO-FBO-Hospital"/>
+    <display value="NBO/FBO hospital"/>
+  </concept>
+  <concept>
+    <code value="Private-Clinic"/>
+    <display value="Private clinic"/>
+  </concept>
+  <concept>
+    <code value="Self-referred"/>
+    <display value="Self-referred"/>
+  </concept>
+  <concept>
+    <code value="Community-Referred"/>
+    <display value="Community referred"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other (Specify)"/>
+  </concept>
+</CodeSystem>

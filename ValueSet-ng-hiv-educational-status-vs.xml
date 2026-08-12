@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-educational-status-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-educational-status-vs</b></p><a name="ng-hiv-educational-status-vs"> </a><a name="hcng-hiv-educational-status-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-care-art-codes-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-educational-status-1">educational-status-1</a></td><td style="color: #cccccc">No education</td><td>Source form code 1: No education.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-educational-status-2">educational-status-2</a></td><td style="color: #cccccc">Primary Education</td><td>Source form code 2: Primary Education.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-educational-status-3">educational-status-3</a></td><td style="color: #cccccc">Secondary Education</td><td>Source form code 3: Secondary Education.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-educational-status-4">educational-status-4</a></td><td style="color: #cccccc">Tertiary Education</td><td>Source form code 4: Tertiary Education.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-educational-status-5">educational-status-5</a></td><td style="color: #cccccc">Others</td><td>Source form code 5: Others (specify).</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-educational-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.74"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivEducationalStatusVS"/>
+  <title value="NG HIV Educational Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-27"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Educational-status codes used on the Nigeria HIV Care/ART Card."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"/>
+      <concept>
+        <code value="educational-status-1"/>
+      </concept>
+      <concept>
+        <code value="educational-status-2"/>
+      </concept>
+      <concept>
+        <code value="educational-status-3"/>
+      </concept>
+      <concept>
+        <code value="educational-status-4"/>
+      </concept>
+      <concept>
+        <code value="educational-status-5"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

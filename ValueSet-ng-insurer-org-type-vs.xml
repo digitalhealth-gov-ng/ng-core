@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-insurer-org-type-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-insurer-org-type-vs</b></p><a name="ng-insurer-org-type-vs"> </a><a name="hcng-insurer-org-type-vs"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/7.3.0/CodeSystem-organization-type.html"><code>http://terminology.hl7.org/CodeSystem/organization-type</code></a><span title="Version is explicitly stated to be 2.0.1"> version &#x1F4CD;2.0.1</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/7.3.0/CodeSystem-organization-type.html#organization-type-ins">ins</a></td><td>Insurance Company</td><td>A company that provides insurance to its subscribers that may include healthcare related policies.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-insurer-org-type-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.162"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgInsurerOrgTypeVS"/>
+  <title value="NG Insurer Organization Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Organization types for insurance payers/HMOs"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <version value="2.0.1"/>
+      <concept>
+        <code value="ins"/>
+        <display value="Insurance Company"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

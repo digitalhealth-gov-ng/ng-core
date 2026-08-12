@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-sibling-health-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-sibling-health-status-vs</b></p><a name="ng-sibling-health-status-vs"> </a><a name="hcng-sibling-health-status-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ng-sibling-health-status-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-sibling-health-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.187"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgSiblingHealthStatusVS"/>
+  <title value="NG Sibling Health Status VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem defines the health of the client's sibling"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,169 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/nigeria-languages> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "nigeria-languages"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nigeria-languages</b></p><a name=\"nigeria-languages\"> </a><a name=\"hcnigeria-languages\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/nigeria-languages</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">English<a name=\"nigeria-languages-English\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">Pidgin<a name=\"nigeria-languages-Pidgin\"> </a></td><td>Nigerian Pidgin</td></tr><tr><td style=\"white-space:nowrap\">Hausa<a name=\"nigeria-languages-Hausa\"> </a></td><td>Hausa</td></tr><tr><td style=\"white-space:nowrap\">Yoruba<a name=\"nigeria-languages-Yoruba\"> </a></td><td>Yoruba</td></tr><tr><td style=\"white-space:nowrap\">Igbo<a name=\"nigeria-languages-Igbo\"> </a></td><td>Igbo</td></tr><tr><td style=\"white-space:nowrap\">Fulfulde<a name=\"nigeria-languages-Fulfulde\"> </a></td><td>Fulfulde</td></tr><tr><td style=\"white-space:nowrap\">Ibibio<a name=\"nigeria-languages-Ibibio\"> </a></td><td>Ibibio</td></tr><tr><td style=\"white-space:nowrap\">Kanuri<a name=\"nigeria-languages-Kanuri\"> </a></td><td>Kanuri</td></tr><tr><td style=\"white-space:nowrap\">Tiv<a name=\"nigeria-languages-Tiv\"> </a></td><td>Tiv</td></tr><tr><td style=\"white-space:nowrap\">Nupe<a name=\"nigeria-languages-Nupe\"> </a></td><td>Nupe</td></tr><tr><td style=\"white-space:nowrap\">Igala<a name=\"nigeria-languages-Igala\"> </a></td><td>Igala</td></tr><tr><td style=\"white-space:nowrap\">Efik<a name=\"nigeria-languages-Efik\"> </a></td><td>Efik</td></tr><tr><td style=\"white-space:nowrap\">Ijaw<a name=\"nigeria-languages-Ijaw\"> </a></td><td>Ijaw</td></tr><tr><td style=\"white-space:nowrap\">Urhobo<a name=\"nigeria-languages-Urhobo\"> </a></td><td>Urhobo</td></tr><tr><td style=\"white-space:nowrap\">Itsekiri<a name=\"nigeria-languages-Itsekiri\"> </a></td><td>Itsekiri</td></tr><tr><td style=\"white-space:nowrap\">Bini-Edo<a name=\"nigeria-languages-Bini-Edo\"> </a></td><td>Bini (Edo)</td></tr><tr><td style=\"white-space:nowrap\">Ogoni<a name=\"nigeria-languages-Ogoni\"> </a></td><td>Ogoni</td></tr><tr><td style=\"white-space:nowrap\">Esan<a name=\"nigeria-languages-Esan\"> </a></td><td>Esan</td></tr><tr><td style=\"white-space:nowrap\">Ikwerre<a name=\"nigeria-languages-Ikwerre\"> </a></td><td>Ikwerre</td></tr><tr><td style=\"white-space:nowrap\">Idoma<a name=\"nigeria-languages-Idoma\"> </a></td><td>Idoma</td></tr><tr><td style=\"white-space:nowrap\">Ebira<a name=\"nigeria-languages-Ebira\"> </a></td><td>Ebira</td></tr><tr><td style=\"white-space:nowrap\">Hausa-Fulani<a name=\"nigeria-languages-Hausa-Fulani\"> </a></td><td>Hausa-Fulani</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/nigeria-languages"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.112" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NGLanguagesCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG Languages in Nigeria CS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "This CodeSystem defines codes for major languages spoken across Nigeria."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "grouped-by"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "22"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "English" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "English" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Pidgin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nigerian Pidgin" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Hausa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hausa" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Yoruba" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yoruba" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Igbo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Igbo" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Fulfulde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fulfulde" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ibibio" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ibibio" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Kanuri" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kanuri" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Tiv" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tiv" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Nupe" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nupe" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Igala" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Igala" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Efik" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Efik" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ijaw" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ijaw" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Urhobo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urhobo" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Itsekiri" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Itsekiri" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Bini-Edo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bini (Edo)" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ogoni" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ogoni" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Esan" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Esan" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ikwerre" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ikwerre" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Idoma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Idoma" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Ebira" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ebira" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Hausa-Fulani" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hausa-Fulani" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/nigeria-languages.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

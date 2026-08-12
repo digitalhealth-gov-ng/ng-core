@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-cervical-cancer-screening-hpv-result-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-cervical-cancer-screening-hpv-result-cs</b></p><a name="ng-hiv-cervical-cancer-screening-hpv-result-cs"> </a><a name="hcng-hiv-cervical-cancer-screening-hpv-result-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">hpv-positive<a name="ng-hiv-cervical-cancer-screening-hpv-result-cs-hpv-positive"> </a></td><td>VIA positive</td></tr><tr><td style="white-space:nowrap">hpv-negative<a name="ng-hiv-cervical-cancer-screening-hpv-result-cs-hpv-negative"> </a></td><td>VIA negative</td></tr><tr><td style="white-space:nowrap">hpv-screening-result-unknown<a name="ng-hiv-cervical-cancer-screening-hpv-result-cs-hpv-screening-result-unknown"> </a></td><td>Screening result unknown</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.36"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivCervicalCancerScreeningHPVResultsCS"/>
+  <title value="HIV-Cervical Cancer Screening Results CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the Cervical Cancer Screening Results"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="hpv-positive"/>
+    <display value="VIA positive"/>
+  </concept>
+  <concept>
+    <code value="hpv-negative"/>
+    <display value="VIA negative"/>
+  </concept>
+  <concept>
+    <code value="hpv-screening-result-unknown"/>
+    <display value="Screening result unknown"/>
+  </concept>
+</CodeSystem>

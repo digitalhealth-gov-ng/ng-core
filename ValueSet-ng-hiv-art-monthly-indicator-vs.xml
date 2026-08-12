@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-monthly-indicator-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-art-monthly-indicator-vs</b></p><a name="ng-hiv-art-monthly-indicator-vs"> </a><a name="hcng-hiv-art-monthly-indicator-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART1">ART1</a></td><td style="color: #cccccc">ART1 (TX_NEW)</td><td>Number of people living with HIV newly started on ART during the month, excluding ART transfer-in.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART2">ART2</a></td><td style="color: #cccccc">ART2 (TX_CURR)</td><td>Number of people living with HIV currently receiving ART during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART3">ART3</a></td><td style="color: #cccccc">ART3 (TX_PVLS_D)</td><td>Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART4">ART4</a></td><td style="color: #cccccc">ART4 (TX_PVLS_N)</td><td>Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART5">ART5</a></td><td style="color: #cccccc">ART5 (TX_ATRR)</td><td>Number of people living with HIV on ART who had treatment interruption during the reporting month, disaggregated by tracking outcome.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART6">ART6</a></td><td style="color: #cccccc">ART6 (TX_RTT)</td><td>Number of people living with HIV who restarted ART during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART7">ART7</a></td><td style="color: #cccccc">ART7 (TX_TO)</td><td>Number of people living with HIV who transferred out during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART8">ART8</a></td><td style="color: #cccccc">ART8 (TX_TI)</td><td>Number of people living with HIV who transferred in during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART9">ART9</a></td><td style="color: #cccccc">ART9 (ART_INSURANCE)</td><td>Number of people living with HIV on ART with current health-insurance cover.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART10">ART10</a></td><td style="color: #cccccc">ART10 (TX_TB_SCRN)</td><td>Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART11">ART11</a></td><td style="color: #cccccc">ART11 (TX_TB_SCRN_POS)</td><td>Number of people living with HIV on ART with presumptive TB during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART12">ART12</a></td><td style="color: #cccccc">ART12 (TX_TB_TST)</td><td>Number of people living with HIV on ART with presumptive TB who were tested for TB during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART13">ART13</a></td><td style="color: #cccccc">ART13 (TX_TB_TST_POS)</td><td>Number of people living with HIV on ART who had active TB disease.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART14">ART14</a></td><td style="color: #cccccc">ART14 (TX_TB)</td><td>Number of people living with HIV on ART with active TB disease who initiated TB treatment.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART15">ART15</a></td><td style="color: #cccccc">ART15 (TB_PREV_D)</td><td>Number of people living with HIV on ART who initiated TB preventive treatment.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART16">ART16</a></td><td style="color: #cccccc">ART16 (TB_PREV_N)</td><td>Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART17">ART17</a></td><td style="color: #cccccc">ART17 (TB_PREV_EVR)</td><td>Number of people living with HIV currently on ART who had ever received TB preventive treatment.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART18">ART18</a></td><td style="color: #cccccc">ART18 (CARE_NEW)</td><td>Number of people living with HIV newly enrolled in care during the month.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART19">ART19</a></td><td style="color: #cccccc">ART19 (AHD_SCRN)</td><td>Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART20">ART20</a></td><td style="color: #cccccc">ART20 (AHD_SCRN_CRAG)</td><td>Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART21">ART21</a></td><td style="color: #cccccc">ART21 (AHD_SCRN_CSF)</td><td>Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART22">ART22</a></td><td style="color: #cccccc">ART22 (AHD_MEN_TX)</td><td>Number of people living with HIV started on treatment for cryptococcal meningitis.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART23">ART23</a></td><td style="color: #cccccc">ART23 (CER_SCRN)</td><td>Number of women living with HIV on ART screened for cervical cancer.</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-ART24">ART24</a></td><td style="color: #cccccc">ART24 (CER_TX)</td><td>Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-monthly-indicator-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.35"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtMonthlyIndicatorVS"/>
+  <title value="NG HIV ART Monthly Summary Indicators"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The 24 ART monthly summary indicators."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs"/>
+      <concept>
+        <code value="ART1"/>
+      </concept>
+      <concept>
+        <code value="ART2"/>
+      </concept>
+      <concept>
+        <code value="ART3"/>
+      </concept>
+      <concept>
+        <code value="ART4"/>
+      </concept>
+      <concept>
+        <code value="ART5"/>
+      </concept>
+      <concept>
+        <code value="ART6"/>
+      </concept>
+      <concept>
+        <code value="ART7"/>
+      </concept>
+      <concept>
+        <code value="ART8"/>
+      </concept>
+      <concept>
+        <code value="ART9"/>
+      </concept>
+      <concept>
+        <code value="ART10"/>
+      </concept>
+      <concept>
+        <code value="ART11"/>
+      </concept>
+      <concept>
+        <code value="ART12"/>
+      </concept>
+      <concept>
+        <code value="ART13"/>
+      </concept>
+      <concept>
+        <code value="ART14"/>
+      </concept>
+      <concept>
+        <code value="ART15"/>
+      </concept>
+      <concept>
+        <code value="ART16"/>
+      </concept>
+      <concept>
+        <code value="ART17"/>
+      </concept>
+      <concept>
+        <code value="ART18"/>
+      </concept>
+      <concept>
+        <code value="ART19"/>
+      </concept>
+      <concept>
+        <code value="ART20"/>
+      </concept>
+      <concept>
+        <code value="ART21"/>
+      </concept>
+      <concept>
+        <code value="ART22"/>
+      </concept>
+      <concept>
+        <code value="ART23"/>
+      </concept>
+      <concept>
+        <code value="ART24"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

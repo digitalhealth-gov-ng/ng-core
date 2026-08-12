@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="NgMedicationDispense-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationDispense NgMedicationDispense-001</b></p><a name="NgMedicationDispense-001"> </a><a name="hcNgMedicationDispense-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-medication-dispense.html">NG MedicationDispense</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <a href="Medication-NgMedication-001.html">Medication </a></p><p><b>subject</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></td></tr></table><p><b>quantity</b>: 30 1<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p><p><b>whenHandedOver</b>: 2025-11-04 12:20:00+0100</p><p><b>note</b>: </p><blockquote><div><p>Dispensed after coverage verification.</p>
+</div></blockquote><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Take 1 capsule orally every 8 hours for 10 days.</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medicationReference>
+    <reference value="Medication/NgMedication-001"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/NgPatient-002"/>
+  </subject>
+  <performer>
+    <actor>
+      <reference value="Practitioner/NgPractitioner-002"/>
+    </actor>
+  </performer>
+  <quantity>
+    <value value="30"/>
+    <unit value="1"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="1"/>
+  </quantity>
+  <whenHandedOver value="2025-11-04T12:20:00+01:00"/>
+  <note>
+    <text value="Dispensed after coverage verification."/>
+  </note>
+  <dosageInstruction>
+    <text value="Take 1 capsule orally every 8 hours for 10 days."/>
+  </dosageInstruction>
+</MedicationDispense>

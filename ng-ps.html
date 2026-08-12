@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG Patient Summary - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"24"}
+    h3,h4,h5,h6{--heading-prefix:"24"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>NG Patient Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>NG Patient Summary</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#relationship-to-ips-and-nis-iso-27269" id="markdown-toc-relationship-to-ips-and-nis-iso-27269">Relationship to IPS and NIS ISO 27269</a></li>
+  <li><a href="#relationship-to-hl7-fhir-ips" id="markdown-toc-relationship-to-hl7-fhir-ips">Relationship to HL7 FHIR IPS</a></li>
+  <li><a href="#scope-of-the-ng-patient-summary" id="markdown-toc-scope-of-the-ng-patient-summary">Scope of the NG Patient Summary</a></li>
+  <li><a href="#ng-patient-summary-data-blocks" id="markdown-toc-ng-patient-summary-data-blocks">NG Patient Summary Data Blocks</a></li>
+  <li><a href="#minimum-mandatory-data-blocks" id="markdown-toc-minimum-mandatory-data-blocks">Minimum Mandatory Data Blocks</a></li>
+  <li><a href="#patient-attributes" id="markdown-toc-patient-attributes">Patient Attributes</a></li>
+  <li><a href="#allergies-and-intolerances" id="markdown-toc-allergies-and-intolerances">Allergies and Intolerances</a></li>
+  <li><a href="#problems-including-diagnosis" id="markdown-toc-problems-including-diagnosis">Problems Including Diagnosis</a></li>
+  <li><a href="#medication-summary" id="markdown-toc-medication-summary">Medication Summary</a></li>
+  <li><a href="#cross-organization" id="markdown-toc-cross-organization">Cross Organization</a></li>
+  <li><a href="#required-if-known-data-blocks" id="markdown-toc-required-if-known-data-blocks">Required if Known Data Blocks</a></li>
+  <li><a href="#optional-data-blocks" id="markdown-toc-optional-data-blocks">Optional Data Blocks</a></li>
+  <li><a href="#requirement-descriptors" id="markdown-toc-requirement-descriptors">Requirement Descriptors</a></li>
+  <li><a href="#conformance-models" id="markdown-toc-conformance-models">Conformance Models</a>    <ul>
+      <li><a href="#full-ng-patient-summary-conformance" id="markdown-toc-full-ng-patient-summary-conformance">Full NG Patient Summary Conformance</a></li>
+      <li><a href="#ng-patient-summary-document-conformance" id="markdown-toc-ng-patient-summary-document-conformance">NG Patient Summary Document Conformance</a></li>
+      <li><a href="#data-block-conformance" id="markdown-toc-data-block-conformance">Data Block Conformance</a></li>
+      <li><a href="#programme-extension-conformance" id="markdown-toc-programme-extension-conformance">Programme Extension Conformance</a></li>
+    </ul>
+  </li>
+  <li><a href="#intentional-permissiveness" id="markdown-toc-intentional-permissiveness">Intentional Permissiveness</a></li>
+  <li><a href="#programme-and-specialty-extensions" id="markdown-toc-programme-and-specialty-extensions">Programme and Specialty Extensions</a></li>
+  <li><a href="#fhir-representation" id="markdown-toc-fhir-representation">FHIR Representation</a>    <ul>
+      <li><a href="#fhir-document-bundle" id="markdown-toc-fhir-document-bundle">FHIR Document Bundle</a></li>
+      <li><a href="#composition" id="markdown-toc-composition">Composition</a></li>
+      <li><a href="#documentreference" id="markdown-toc-documentreference">DocumentReference</a></li>
+      <li><a href="#operations" id="markdown-toc-operations">Operations</a></li>
+    </ul>
+  </li>
+  <li><a href="#use-at-phc-level" id="markdown-toc-use-at-phc-level">Use at PHC Level</a></li>
+  <li><a href="#use-at-secondary-level" id="markdown-toc-use-at-secondary-level">Use at Secondary Level</a></li>
+  <li><a href="#use-at-tertiary-level" id="markdown-toc-use-at-tertiary-level">Use at Tertiary Level</a></li>
+  <li><a href="#portable-certificates" id="markdown-toc-portable-certificates">Portable Certificates</a></li>
+  <li><a href="#candidate-and-additional-ng-shr-data" id="markdown-toc-candidate-and-additional-ng-shr-data">Candidate and Additional NG SHR Data</a></li>
+  <li><a href="#missing-data-and-known-absence" id="markdown-toc-missing-data-and-known-absence">Missing Data and Known Absence</a></li>
+  <li><a href="#currency-and-timeliness" id="markdown-toc-currency-and-timeliness">Currency and Timeliness</a></li>
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#provenance-and-trust" id="markdown-toc-provenance-and-trust">Provenance and Trust</a></li>
+  <li><a href="#privacy-and-security" id="markdown-toc-privacy-and-security">Privacy and Security</a></li>
+  <li><a href="#relationship-to-programme-pages" id="markdown-toc-relationship-to-programme-pages">Relationship to Programme Pages</a></li>
+  <li><a href="#conformance-expectations" id="markdown-toc-conformance-expectations">Conformance Expectations</a></li>
+  <li><a href="#example-summary-exchange-scenarios" id="markdown-toc-example-summary-exchange-scenarios">Example Summary Exchange Scenarios</a>    <ul>
+      <li><a href="#phc-to-general-hospital-referral" id="markdown-toc-phc-to-general-hospital-referral">PHC to General Hospital Referral</a></li>
+      <li><a href="#general-hospital-to-tertiary-hospital-referral" id="markdown-toc-general-hospital-to-tertiary-hospital-referral">General Hospital to Tertiary Hospital Referral</a></li>
+      <li><a href="#tertiary-hospital-discharge-back-to-phc" id="markdown-toc-tertiary-hospital-discharge-back-to-phc">Tertiary Hospital Discharge Back to PHC</a></li>
+      <li><a href="#patient-held-portable-summary" id="markdown-toc-patient-held-portable-summary">Patient-Held Portable Summary</a></li>
+      <li><a href="#portable-immunization-certificate" id="markdown-toc-portable-immunization-certificate">Portable Immunization Certificate</a></li>
+    </ul>
+  </li>
+  <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+</ul>
+
+</div>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>The <strong>Nigeria Patient Summary</strong> defines the Nigeria Core guidance for portable health information sharing across Nigeria. It provides the national basis for a concise, reusable, and interoperable patient summary that can support care at the Primary Health Care (PHC), secondary, and tertiary levels.</p>
+
+<p>Within this guide, the Nigeria Patient Summary is also referred to as the <strong>NG Patient Summary</strong> or as a core expression of the <strong>Nigeria Shared Health Record (NG-SHR)</strong>.</p>
+
+<p>The purpose of the NG Patient Summary is to provide a patient-centred, clinically useful, and standards-based summary that can be shared across organisations, care settings, programmes, facilities, states, and authorised digital health systems in Nigeria.</p>
+
+<p>The NG Patient Summary is intended to support:</p>
+
+<ul>
+  <li>Planned care.</li>
+  <li>Scheduled care.</li>
+  <li>Unplanned care.</li>
+  <li>Emergency care.</li>
+  <li>Referrals and counter-referrals.</li>
+  <li>Patient movement between PHC, general hospitals, specialist hospitals, and tertiary hospitals.</li>
+  <li>Care continuity across public, private, faith-based, and programme-supported facilities.</li>
+  <li>Portable patient-held or patient-accessible records.</li>
+  <li>Authorised contribution to and retrieval from the Nigeria Shared Health Record.</li>
+  <li>Programme-specific summaries that build on the same national baseline.</li>
+</ul>
+
+<h3 id="relationship-to-ips-and-nis-iso-27269">Relationship to IPS and NIS ISO 27269</h3>
+
+<p>The NG Patient Summary is based on the International Patient Summary (IPS) approach and is aligned with Nigeria’s adoption of the relevant patient summary standard through the Standards Organisation of Nigeria, referenced in this guide as <strong>NIS ISO 27269:2026</strong>.</p>
+
+<p>The International Patient Summary defines a concise patient summary intended to support clinical decision-making at the point of care. It is designed for planned and unplanned care across organisational boundaries and is intentionally minimal, non-exhaustive, specialty-agnostic, and condition-independent.</p>
+
+<p>Nigeria Core adopts these principles for national use and applies them to Nigeria’s decentralised and hybrid digital health architecture. This means that the NG Patient Summary:</p>
+
+<ul>
+  <li>Is <strong>programme-agnostic</strong>.</li>
+  <li>Is <strong>specialty-agnostic</strong>.</li>
+  <li>Is <strong>condition-independent</strong>.</li>
+  <li>Is suitable for <strong>planned, scheduled, unplanned, and emergency care</strong>.</li>
+  <li>Is suitable for <strong>cross-organisation exchange within Nigeria</strong>.</li>
+  <li>Can be extended by health programmes, specialties, states, and implementers without breaking the core summary.</li>
+  <li>Can be used as a portable patient summary, Shared Health Record contribution, or reusable summary data block.</li>
+</ul>
+
+<p>The NG Patient Summary is not intended to be a complete electronic health record. It is a concise, clinically relevant summary that should contain enough information to support safe care when a patient is seen by a new provider, referred to another facility, or reviewed in a different setting.</p>
+
+<h3 id="relationship-to-hl7-fhir-ips">Relationship to HL7 FHIR IPS</h3>
+
+<p>The HL7 FHIR IPS Implementation Guide specifies how to represent the International Patient Summary using FHIR. Nigeria Core reuses this design pattern and adapts it to Nigerian identifiers, registries, terminology, programmes, privacy rules, and service delivery realities.</p>
+
+<p>Implementers <strong>SHOULD</strong> align NG Patient Summary FHIR artefacts with the HL7 FHIR IPS profiles where applicable, while also applying Nigeria Core constraints.</p>
+
+<p>In particular:</p>
+
+<ul>
+  <li>The NG Patient Summary <strong>SHOULD</strong> be represented as a FHIR document Bundle where a complete portable document is exchanged.</li>
+  <li>The first entry in the document Bundle <strong>SHOULD</strong> be a <code class="language-plaintext highlighter-rouge">Composition</code>.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Composition.section</code> elements <strong>SHOULD</strong> organise the summary into reusable data blocks.</li>
+  <li>The Bundle <strong>SHOULD</strong> contain or reference the resources needed to interpret the summary.</li>
+  <li>The summary <strong>SHOULD</strong> include Provenance, author, custodian, originating organisation, and creation date metadata.</li>
+  <li>Programme-specific summaries <strong>SHOULD</strong> derive from, profile, or extend the NG Patient Summary rather than redefine a separate unrelated summary.</li>
+</ul>
+
+<h3 id="scope-of-the-ng-patient-summary">Scope of the NG Patient Summary</h3>
+
+<p>The NG Patient Summary applies to any setting where concise patient information needs to move with the patient or be retrieved by an authorised provider.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>A PHC referring a pregnant woman to a general hospital.</li>
+  <li>A general hospital referring a patient to a tertiary hospital.</li>
+  <li>A tertiary hospital sending a discharge summary back to a PHC or general hospital.</li>
+  <li>A patient moving from one state to another.</li>
+  <li>A patient attending a private facility after receiving care in a public facility.</li>
+  <li>A child receiving immunization services from different service delivery points.</li>
+  <li>A person enrolled in a disease programme requiring follow-up at another facility.</li>
+  <li>A patient needing emergency care where the provider does not have access to the full originating record.</li>
+  <li>A patient requesting a portable summary for travel, employment, school, insurance, or continuity of care.</li>
+</ul>
+
+<p>The NG Patient Summary is not limited to a particular disease, programme, specialty, age group, care level, or facility type.</p>
+
+<h3 id="ng-patient-summary-data-blocks">NG Patient Summary Data Blocks</h3>
+
+<p>The NG Patient Summary is organised as reusable data blocks. A data block may correspond to a FHIR <code class="language-plaintext highlighter-rouge">Composition.section</code>, a group of related FHIR resources, or a reusable section in a programme-specific profile.</p>
+
+<p><img src="ng-patient-summary-data-blocks.png" alt="IPS and NIS ISO 27269" caption="Figure 1: NG Patient Summary Data Blocks adapted from IPS/NIS ISO 27269 and aligned to [IPS](https://build.fhir.org/ig/HL7/fhir-ips/en/index.html)" /></p>
+
+<p>The NG Patient Summary uses the following high-level data block categories.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Data Block</th>
+      <th>NG Conformance</th>
+      <th>Main FHIR Resources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient Attributes</td>
+      <td>Mandatory</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">RelatedPerson</code>, <code class="language-plaintext highlighter-rouge">Coverage</code></td>
+    </tr>
+    <tr>
+      <td>Allergies and Intolerances</td>
+      <td>Mandatory</td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+    </tr>
+    <tr>
+      <td>Problems including diagnosis</td>
+      <td>Mandatory</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+    </tr>
+    <tr>
+      <td>Medication Summary</td>
+      <td>Mandatory</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">MedicationStatement</code>, <code class="language-plaintext highlighter-rouge">Medication</code>, <code class="language-plaintext highlighter-rouge">MedicationDispense</code></td>
+    </tr>
+    <tr>
+      <td>Cross Organization</td>
+      <td>Mandatory</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition</code>, <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Practitioner</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Provenance</code></td>
+    </tr>
+    <tr>
+      <td>Healthcare Provider</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+    <tr>
+      <td>Patient Address-book</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">RelatedPerson</code>, <code class="language-plaintext highlighter-rouge">Practitioner</code>, <code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+    <tr>
+      <td>History of Procedures</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure</code></td>
+    </tr>
+    <tr>
+      <td>Immunization including vaccinations</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Immunization</code>, <code class="language-plaintext highlighter-rouge">Medication</code>, <code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+    <tr>
+      <td>Medical Devices including implants</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Device</code>, <code class="language-plaintext highlighter-rouge">DeviceUseStatement</code>, <code class="language-plaintext highlighter-rouge">Observation</code></td>
+    </tr>
+    <tr>
+      <td>Results</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>, <code class="language-plaintext highlighter-rouge">Specimen</code></td>
+    </tr>
+    <tr>
+      <td>Alerts</td>
+      <td>Required if known</td>
+      <td><code class="language-plaintext highlighter-rouge">Flag</code>, <code class="language-plaintext highlighter-rouge">DetectedIssue</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+    </tr>
+    <tr>
+      <td>History of Past Problems</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+    </tr>
+    <tr>
+      <td>Advance Directives</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Consent</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code>, <code class="language-plaintext highlighter-rouge">Composition</code></td>
+    </tr>
+    <tr>
+      <td>Care Plan</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">CarePlan</code>, <code class="language-plaintext highlighter-rouge">Goal</code>, <code class="language-plaintext highlighter-rouge">ServiceRequest</code></td>
+    </tr>
+    <tr>
+      <td>History of Pregnancy</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">Procedure</code></td>
+    </tr>
+    <tr>
+      <td>Vital Signs</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+    </tr>
+    <tr>
+      <td>Functional Status</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">ClinicalImpression</code></td>
+    </tr>
+    <tr>
+      <td>Patient Story</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition.section</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code>, <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></td>
+    </tr>
+    <tr>
+      <td>Social History</td>
+      <td>Optional</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="minimum-mandatory-data-blocks">Minimum Mandatory Data Blocks</h3>
+
+<p>A conformant NG Patient Summary <strong>SHALL</strong> contain the following mandatory data blocks:</p>
+
+<ol>
+  <li><strong>Patient Attributes</strong></li>
+  <li><strong>Allergies and Intolerances</strong></li>
+  <li><strong>Problems including diagnosis</strong></li>
+  <li><strong>Medication Summary</strong></li>
+  <li><strong>Cross Organization</strong></li>
+</ol>
+
+<p>Where clinical data for allergies, problems, or medications are not known, the section <strong>SHALL</strong> still be represented using an appropriate explicit statement such as:</p>
+
+<ul>
+  <li>No known allergies.</li>
+  <li>No allergy information available.</li>
+  <li>No known current problems.</li>
+  <li>Problem information not available.</li>
+  <li>No known current medications.</li>
+  <li>Medication information not available.</li>
+</ul>
+
+<p>This is important because absence of a section is not the same as known absence of information.</p>
+
+<h3 id="patient-attributes">Patient Attributes</h3>
+
+<p>The Patient Attributes data block identifies the patient and provides enough demographic information to support safe matching and continuity of care.</p>
+
+<p>It <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>Patient name.</li>
+  <li>Date of birth.</li>
+  <li>Administrative gender where used.</li>
+  <li>Patient identifiers.</li>
+  <li>Contact details where available.</li>
+  <li>Address or location where available.</li>
+  <li>Preferred language where available.</li>
+  <li>Insurance or coverage information where applicable.</li>
+</ul>
+
+<p>Nigeria Core implementations <strong>SHOULD</strong> preserve local facility identifiers while also supporting national, state, programme, payer, or Shared Health Record identifiers where available.</p>
+
+<h3 id="allergies-and-intolerances">Allergies and Intolerances</h3>
+
+<p>The Allergies and Intolerances data block communicates allergy and intolerance information that may affect treatment, prescribing, feeding, referral, procedure planning, or emergency care.</p>
+
+<p>It <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>Allergy or intolerance agent.</li>
+  <li>Clinical status.</li>
+  <li>Reaction or manifestation.</li>
+  <li>Severity or criticality where known.</li>
+  <li>Onset or end date where known.</li>
+  <li>Known absence or unknown status where no allergy information is available.</li>
+</ul>
+
+<h3 id="problems-including-diagnosis">Problems Including Diagnosis</h3>
+
+<p>The Problems data block communicates active, current, unresolved, or clinically relevant problems and diagnoses.</p>
+
+<p>It <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>Problem or diagnosis.</li>
+  <li>Problem description.</li>
+  <li>Clinical status.</li>
+  <li>Severity where known.</li>
+  <li>Onset date where known.</li>
+  <li>Specialist contact where useful.</li>
+  <li>Known absence or unknown status where no problem information is available.</li>
+</ul>
+
+<p>Resolved problems that remain clinically important may be included either in the Problems data block or in the History of Past Problems data block depending on implementation guidance.</p>
+
+<h3 id="medication-summary">Medication Summary</h3>
+
+<p>The Medication Summary data block communicates medications relevant to the patient’s current care.</p>
+
+<p>It <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>Current medications.</li>
+  <li>Relevant recent medications.</li>
+  <li>Prescribed medication.</li>
+  <li>Patient-reported medication where clinically relevant.</li>
+  <li>Dispensed medication where available.</li>
+  <li>Medication status.</li>
+  <li>Dose, route, frequency, and duration where available.</li>
+  <li>Reason for medication where available.</li>
+  <li>Product name, strength, dose form, brand, or active ingredient where available.</li>
+  <li>Known absence or unknown status where medication information is not available.</li>
+</ul>
+
+<p>Medication data may come from prescriptions, dispensing systems, facility records, pharmacy systems, programme systems, claims systems, or patient report. Implementations <strong>SHOULD</strong> preserve Provenance and clearly distinguish original orders from reported medication information.</p>
+
+<h3 id="cross-organization">Cross Organization</h3>
+
+<p>The Cross Organization data block supports trusted sharing across organisational boundaries. In Nigeria, this includes exchange across PHCs, general hospitals, tertiary hospitals, states, programmes, regulators, private providers, pharmacies, laboratories, payers, and Shared Health Record services.</p>
+
+<p>The Cross Organization data block <strong>SHALL</strong> include:</p>
+
+<ul>
+  <li>Originating organisation.</li>
+  <li>Date of NG Patient Summary creation.</li>
+</ul>
+
+<p>It <strong>SHOULD</strong> also include:</p>
+
+<ul>
+  <li>Authoring healthcare provider.</li>
+  <li>Custodian organisation.</li>
+  <li>Legal authenticator where applicable.</li>
+  <li>Date of last update to the summary content.</li>
+  <li>Language of the summary.</li>
+  <li>Nature of the summary, such as human-curated, automatically generated, or automatically generated and reviewed.</li>
+  <li>Provenance and source information.</li>
+  <li>Organisation identifiers, including facility registry identifiers where available.</li>
+</ul>
+
+<h3 id="required-if-known-data-blocks">Required if Known Data Blocks</h3>
+
+<p>The following data blocks are <strong>Required if Known</strong>. They should be included when the data are known, available, and relevant to the summary:</p>
+
+<ul>
+  <li>Healthcare Provider</li>
+  <li>Patient Address-book</li>
+  <li>History of Procedures</li>
+  <li>Immunization including vaccinations</li>
+  <li>Medical Devices including implants</li>
+  <li>Results</li>
+  <li>Alerts</li>
+</ul>
+
+<p>These blocks may be absent where the data are not available or not relevant, but implementations <strong>SHOULD</strong> provide an explicit absence statement where the absence is clinically important.</p>
+
+<h3 id="optional-data-blocks">Optional Data Blocks</h3>
+
+<p>The following data blocks are optional but may be valuable in particular care contexts:</p>
+
+<ul>
+  <li>History of Past Problems</li>
+  <li>Advance Directives</li>
+  <li>Care Plan</li>
+  <li>History of Pregnancy</li>
+  <li>Vital Signs</li>
+  <li>Functional Status</li>
+  <li>Patient Story</li>
+  <li>Social History</li>
+</ul>
+
+<p>Optional data blocks <strong>MAY</strong> be required by a derived programme guide, specialty guide, state implementation, facility policy, or Shared Health Record exchange pattern.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>A maternal health programme may require History of Pregnancy.</li>
+  <li>A chronic disease programme may require Care Plan and Vital Signs.</li>
+  <li>A disability-focused workflow may require Functional Status and Patient Story.</li>
+  <li>A referral workflow may require Healthcare Provider, Results, Care Plan, and Alerts.</li>
+  <li>An immunization workflow may require Immunization and portable certificate data.</li>
+</ul>
+
+<h3 id="requirement-descriptors">Requirement Descriptors</h3>
+
+<p>Nigeria Core uses the following requirement descriptors for NG Patient Summary data blocks and data elements.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Descriptor</th>
+      <th>Meaning</th>
+      <th>Implementation Expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>M - Mandatory</strong></td>
+      <td>The element or data block shall always be present.</td>
+      <td>Missing mandatory data means the instance is not conformant. Where the block is mandatory but clinical content is not available, an explicit absence or unknown statement shall be provided where allowed.</td>
+    </tr>
+    <tr>
+      <td><strong>R - Required</strong></td>
+      <td>The element or data block shall be present, but exceptions or explicit data absence may be allowed depending on the element.</td>
+      <td>The receiving system shall be able to understand and process the element.</td>
+    </tr>
+    <tr>
+      <td><strong>RK - Required if Known</strong></td>
+      <td>The element or data block shall be provided when the information is known or available.</td>
+      <td>If the information is available, it shall be included. If unavailable, it may be omitted or represented with an appropriate data absent reason depending on the profile.</td>
+    </tr>
+    <tr>
+      <td><strong>O - Optional</strong></td>
+      <td>The element or data block may be included.</td>
+      <td>A receiving system may ignore the element, but where included it should follow the applicable Nigeria Core or programme profile.</td>
+    </tr>
+    <tr>
+      <td><strong>C - Conditional</strong></td>
+      <td>The requirement depends on a stated condition.</td>
+      <td>If the condition is met, the element shall follow the resulting requirement strength.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="conformance-models">Conformance Models</h3>
+
+<p>Nigeria Core allows multiple levels of conformance for the NG Patient Summary. This is intentional. The NG Patient Summary is designed to be permissive enough for adoption by low-resource systems, while allowing stronger constraints by programmes, states, specialties, and national services over time.</p>
+
+<h4 id="full-ng-patient-summary-conformance">Full NG Patient Summary Conformance</h4>
+
+<p>A system claiming full NG Patient Summary conformance <strong>SHALL</strong> be able to generate or consume a complete NG Patient Summary document that includes the mandatory data blocks and the applicable required, required-if-known, optional, and conditional data blocks.</p>
+
+<p>Full conformance generally applies to:</p>
+
+<ul>
+  <li>Shared Health Record services.</li>
+  <li>HIE platforms.</li>
+  <li>Tertiary hospital systems.</li>
+  <li>Advanced EMRs.</li>
+  <li>National or state repositories.</li>
+  <li>Referral platforms.</li>
+  <li>Systems participating in conformance testing for complete summary exchange.</li>
+</ul>
+
+<h4 id="ng-patient-summary-document-conformance">NG Patient Summary Document Conformance</h4>
+
+<p>A system may claim conformance to the NG Patient Summary document structure if it can produce or consume a FHIR document Bundle with a valid <code class="language-plaintext highlighter-rouge">Composition</code>, mandatory data blocks, and the necessary referenced resources.</p>
+
+<p>This level focuses on the integrity of the document as a portable package.</p>
+
+<h4 id="data-block-conformance">Data Block Conformance</h4>
+
+<p>A system may claim conformance to one or more NG Patient Summary data blocks.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>An immunization system may conform to the Immunization data block.</li>
+  <li>A laboratory system may conform to the Results data block.</li>
+  <li>A pharmacy system may conform to the Medication Summary data block.</li>
+  <li>A device platform may conform to the Medical Devices data block.</li>
+  <li>A referral system may conform to Healthcare Provider, Alerts, Results, and Care Plan data blocks.</li>
+</ul>
+
+<p>Data block conformance allows incremental adoption while preserving alignment with the full NG Patient Summary.</p>
+
+<h4 id="programme-extension-conformance">Programme Extension Conformance</h4>
+
+<p>Health programme leads may define programme-specific extensions, derived profiles, examples, and Bundle or Composition patterns based on the NG Patient Summary.</p>
+
+<p>Programme extensions <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Preserve the core NG Patient Summary structure.</li>
+  <li>Reuse Nigeria Core profiles where applicable.</li>
+  <li>Add programme-specific data only where needed.</li>
+  <li>Declare which data blocks are mandatory, required, required if known, optional, or conditional for the programme.</li>
+  <li>Provide examples and test cases.</li>
+  <li>Document whether the programme summary is a full NG Patient Summary, a constrained NG Patient Summary, or a data block-level summary.</li>
+</ul>
+
+<h3 id="intentional-permissiveness">Intentional Permissiveness</h3>
+
+<p>The NG Patient Summary is intentionally permissive. It is designed to support adoption across diverse systems, including low-resource PHC systems, paper-to-digital transition systems, state platforms, programme applications, advanced hospital EMRs, and national Shared Health Record services.</p>
+
+<p>This permissive approach allows:</p>
+
+<ul>
+  <li>Minimal summaries to be exchanged safely.</li>
+  <li>Programmes to add constraints gradually.</li>
+  <li>Systems to adopt data blocks incrementally.</li>
+  <li>Existing EMRs and eCHIS platforms to contribute useful data without waiting for full maturity.</li>
+  <li>Vendor testing and conformance to mature through the sandbox.</li>
+  <li>Future programme and specialty guides to extend the model without fragmenting national interoperability.</li>
+</ul>
+
+<h3 id="programme-and-specialty-extensions">Programme and Specialty Extensions</h3>
+
+<p>The NG Patient Summary is programme and specialty agnostic. However, programme and specialty teams may define more specific summaries based on the NG Patient Summary.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>Immunization Summary.</li>
+  <li>Maternal and Newborn Summary.</li>
+  <li>HIV Continuity of Care Summary.</li>
+  <li>TB Treatment Summary.</li>
+  <li>Malaria Case Management Summary.</li>
+  <li>Nutrition Treatment Summary.</li>
+  <li>Non-Communicable Disease Summary.</li>
+  <li>Surgical Referral Summary.</li>
+  <li>Emergency Care Summary.</li>
+  <li>Pharmacy Medication Summary.</li>
+  <li>Laboratory Results Summary.</li>
+  <li>Medical Device Summary.</li>
+</ul>
+
+<p>Such extensions <strong>SHOULD</strong> appear on the relevant programme or domain page of this Implementation Guide. Each programme page <strong>SHOULD</strong> document the specific <code class="language-plaintext highlighter-rouge">Composition</code>, <code class="language-plaintext highlighter-rouge">Bundle</code>, profiles, extensions, terminology, examples, and conformance expectations used for that programme.</p>
+
+<p>Programme-specific summaries may add data, but they <strong>SHOULD NOT</strong> redefine the core NG Patient Summary data blocks in a way that prevents safe processing by a generic NG Patient Summary consumer.</p>
+
+<h3 id="fhir-representation">FHIR Representation</h3>
+
+<p>The NG Patient Summary may be represented using several FHIR patterns depending on the use case.</p>
+
+<h4 id="fhir-document-bundle">FHIR Document Bundle</h4>
+
+<p>A complete portable NG Patient Summary <strong>SHOULD</strong> be represented as a FHIR document Bundle.</p>
+
+<p>The Bundle <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Bundle.type = document</code></li>
+  <li>A <code class="language-plaintext highlighter-rouge">Composition</code> as the first entry.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">Patient</code> resource.</li>
+  <li>Author and custodian resources.</li>
+  <li>Resources referenced by the Composition sections.</li>
+  <li>Provenance where applicable.</li>
+  <li>A timestamp and identifier.</li>
+  <li>Security labels or confidentiality metadata where needed.</li>
+</ul>
+
+<h4 id="composition">Composition</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">Composition</code> resource defines the structure of the NG Patient Summary. Each major data block <strong>SHOULD</strong> be represented as a <code class="language-plaintext highlighter-rouge">Composition.section</code>.</p>
+
+<p>Composition metadata <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>Subject.</li>
+  <li>Author.</li>
+  <li>Custodian.</li>
+  <li>Date.</li>
+  <li>Type.</li>
+  <li>Title.</li>
+  <li>Confidentiality where applicable.</li>
+  <li>Attester where applicable.</li>
+  <li>Section entries for each data block.</li>
+</ul>
+
+<h4 id="documentreference">DocumentReference</h4>
+
+<p>A <code class="language-plaintext highlighter-rouge">DocumentReference</code> may be used to index, discover, retrieve, or share an NG Patient Summary document.</p>
+
+<p>Example query:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/DocumentReference?patient=[id]&amp;type=[ng-patient-summary-code]
+</code></pre></div></div>
+
+<p>A <code class="language-plaintext highlighter-rouge">DocumentReference</code> may point to:</p>
+
+<ul>
+  <li>A FHIR document Bundle.</li>
+  <li>A PDF rendering.</li>
+  <li>A CDA document.</li>
+  <li>A signed portable certificate.</li>
+  <li>A patient-held document.</li>
+  <li>A Shared Health Record summary.</li>
+</ul>
+
+<h4 id="operations">Operations</h4>
+
+<p>Implementations <strong>MAY</strong> define operations for generating, validating, submitting, or retrieving NG Patient Summaries.</p>
+
+<p>Examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/Patient/[id]/$generate-ng-patient-summary
+POST [base]/Bundle/$validate-ng-patient-summary
+POST [base]/Bundle/$submit-ng-patient-summary
+GET  [base]/DocumentReference?patient=[id]&amp;type=[ng-patient-summary-code]
+</code></pre></div></div>
+
+<p>Any such operation <strong>SHOULD</strong> be formally documented using an <code class="language-plaintext highlighter-rouge">OperationDefinition</code>.</p>
+
+<h3 id="use-at-phc-level">Use at PHC Level</h3>
+
+<p>At PHC level, the NG Patient Summary should support safe referral, continuity of care, and return of information from higher levels.</p>
+
+<p>PHC systems <strong>SHOULD</strong> be able to generate or contribute:</p>
+
+<ul>
+  <li>Patient attributes.</li>
+  <li>Current problems.</li>
+  <li>Allergies and intolerances.</li>
+  <li>Current medications.</li>
+  <li>Immunization history.</li>
+  <li>Pregnancy status where applicable.</li>
+  <li>Recent vital signs.</li>
+  <li>Referral note or care plan.</li>
+  <li>Relevant observations and test results.</li>
+  <li>Originating facility and provider information.</li>
+</ul>
+
+<p>Where PHC systems are offline-first or paper-based, the NG Patient Summary may be generated by a local server, state system, LGA-supported platform, eCHIS system, or referral platform.</p>
+
+<h3 id="use-at-secondary-level">Use at Secondary Level</h3>
+
+<p>At secondary level, the NG Patient Summary should support referral triage, specialist review, admission, discharge, and continuity back to PHC or onward to tertiary care.</p>
+
+<p>Secondary facilities <strong>SHOULD</strong> be able to generate or consume:</p>
+
+<ul>
+  <li>Full mandatory NG Patient Summary data blocks.</li>
+  <li>Referral context.</li>
+  <li>Diagnostic results.</li>
+  <li>Medication changes.</li>
+  <li>Procedures.</li>
+  <li>Discharge information.</li>
+  <li>Care plan.</li>
+  <li>Follow-up instructions.</li>
+  <li>Specialist contact.</li>
+  <li>Alerts.</li>
+  <li>Facility and provider provenance.</li>
+</ul>
+
+<h3 id="use-at-tertiary-level">Use at Tertiary Level</h3>
+
+<p>At tertiary level, the NG Patient Summary should support advanced care, specialist consultation, inter-facility referral, discharge planning, and longitudinal Shared Health Record updates.</p>
+
+<p>Tertiary systems <strong>SHOULD</strong> support:</p>
+
+<ul>
+  <li>Full NG Patient Summary conformance where feasible.</li>
+  <li>Complex diagnostic results.</li>
+  <li>Procedure history.</li>
+  <li>Specialist care plans.</li>
+  <li>Medication reconciliation.</li>
+  <li>Device and implant information.</li>
+  <li>Clinical notes and discharge summaries.</li>
+  <li>Shared Health Record contribution.</li>
+  <li>Programme-specific extensions.</li>
+  <li>Provenance, audit, and authorisation metadata.</li>
+</ul>
+
+<h3 id="portable-certificates">Portable Certificates</h3>
+
+<p>The NG Patient Summary framework may also support portable certificates. A portable certificate is a focused, verifiable, patient-held or patient-accessible health document that communicates a specific health status, service, event, or entitlement.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>COVID-19 vaccination certificate.</li>
+  <li>Routine immunization certificate.</li>
+  <li>Yellow fever vaccination certificate.</li>
+  <li>School health certificate.</li>
+  <li>Fit-to-travel or fit-to-work health certificate.</li>
+  <li>Laboratory result certificate.</li>
+  <li>Programme enrolment certificate.</li>
+  <li>Treatment completion certificate.</li>
+  <li>Disability or functional assessment certificate where authorised.</li>
+</ul>
+
+<p>Portable certificates may be represented as:</p>
+
+<ul>
+  <li>A constrained NG Patient Summary.</li>
+  <li>A programme-specific FHIR document Bundle.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">Composition</code> with focused sections.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">DocumentReference</code> pointing to a signed document.</li>
+  <li>A PDF or printable certificate with a QR code.</li>
+  <li>A digitally signed FHIR Bundle.</li>
+  <li>A verifiable credential or other approved certificate format where supported.</li>
+</ul>
+
+<p>Portable certificates <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>Patient identity.</li>
+  <li>Issuing organisation.</li>
+  <li>Issuing provider or authority.</li>
+  <li>Certificate type.</li>
+  <li>Date of issue.</li>
+  <li>Relevant clinical event or status.</li>
+  <li>Validity period where applicable.</li>
+  <li>Verification information.</li>
+  <li>Signature or tamper-evidence where required.</li>
+  <li>Link to authoritative verification service where applicable.</li>
+</ul>
+
+<p>For immunization certificates, the certificate <strong>SHOULD</strong> reference or include <code class="language-plaintext highlighter-rouge">Immunization</code> resources and should align with the Immunization section of this Implementation Guide. The Immunization guidance page may define more specific examples and constraints for COVID-19, routine immunization, travel vaccination, and other vaccination certificates.</p>
+
+<p>Portable certificates <strong>SHOULD NOT</strong> expose more patient information than needed for the certificate purpose.</p>
+
+<h3 id="candidate-and-additional-ng-shr-data">Candidate and Additional NG SHR Data</h3>
+
+<p>The NG Patient Summary is minimal and non-exhaustive. Additional data may be useful for specific programmes, specialties, states, or care settings.</p>
+
+<p>Such additional data may be included as <strong>Candidate NG SHR Data</strong> when:</p>
+
+<ul>
+  <li>It is clinically useful for the care event.</li>
+  <li>It does not change the meaning of the core NG Patient Summary.</li>
+  <li>It is clearly identified as programme-specific, specialty-specific, or implementation-specific.</li>
+  <li>It follows Nigeria Core privacy, security, terminology, and Provenance requirements.</li>
+  <li>It is documented by the programme or implementation guide where conformance testing is expected.</li>
+</ul>
+
+<p>Candidate NG SHR Data may not be testable for generic NG Patient Summary conformance unless it is formally defined by Nigeria Core or a derived programme guide.</p>
+
+<h3 id="missing-data-and-known-absence">Missing Data and Known Absence</h3>
+
+<p>The NG Patient Summary <strong>SHOULD</strong> distinguish between:</p>
+
+<ul>
+  <li>Data not captured.</li>
+  <li>Data not available to the source system.</li>
+  <li>Data suppressed due to consent or privacy rules.</li>
+  <li>Data intentionally omitted to keep the summary concise.</li>
+  <li>Known absence of a condition, allergy, medication, or event.</li>
+  <li>Unknown status.</li>
+</ul>
+
+<p>Mandatory clinical sections should not simply disappear because no data are present. Where the section is mandatory and the content is absent, the summary <strong>SHOULD</strong> include a clear coded or narrative statement indicating known absence or unknown status.</p>
+
+<h3 id="currency-and-timeliness">Currency and Timeliness</h3>
+
+<p>The NG Patient Summary is a snapshot in time. The summary <strong>SHOULD</strong> clearly state:</p>
+
+<ul>
+  <li>Date of creation.</li>
+  <li>Date of last update to content.</li>
+  <li>Source organisation.</li>
+  <li>Author or generating system.</li>
+  <li>Whether it was automatically generated, human-curated, or reviewed.</li>
+  <li>Relevant event dates within each section.</li>
+</ul>
+
+<p>Systems <strong>SHOULD</strong> avoid presenting old information as current. Where data are old but clinically relevant, the relevant dates and Provenance <strong>SHOULD</strong> be preserved.</p>
+
+<h3 id="terminology">Terminology</h3>
+
+<p>The NG Patient Summary <strong>SHOULD</strong> use Nigeria Core terminology and mappings where available.</p>
+
+<p>Terminology may include:</p>
+
+<ul>
+  <li>Nigeria Core CodeSystems and ValueSets.</li>
+  <li>Programme-specific ValueSets.</li>
+  <li>ICD-11.</li>
+  <li>SNOMED CT.</li>
+  <li>LOINC.</li>
+  <li>ATC.</li>
+  <li>UCUM.</li>
+  <li>IDMP-aligned medication identifiers where available.</li>
+  <li>Local facility, programme, or regulator codes with ConceptMaps to national or international standards.</li>
+</ul>
+
+<p>Where local codes are used, systems <strong>SHOULD</strong> include clear system URIs and display text. Where possible, systems <strong>SHOULD</strong> also include mapped national or international codes.</p>
+
+<h3 id="provenance-and-trust">Provenance and Trust</h3>
+
+<p>Trust is essential for portable patient summaries. The NG Patient Summary <strong>SHOULD</strong> include Provenance sufficient for the receiver to understand:</p>
+
+<ul>
+  <li>Who authored the summary.</li>
+  <li>Which organisation generated it.</li>
+  <li>When it was created.</li>
+  <li>When the content was last updated.</li>
+  <li>Whether it was generated automatically or curated by a human.</li>
+  <li>What source systems contributed to it.</li>
+  <li>Whether any data were transformed, reconciled, or imported.</li>
+  <li>Which organisation is accountable for the summary.</li>
+</ul>
+
+<p>Cross-organisation exchange <strong>SHOULD</strong> reference trusted facility, provider, regulator, and registry identifiers where available.</p>
+
+<h3 id="privacy-and-security">Privacy and Security</h3>
+
+<p>The NG Patient Summary may contain sensitive health information. Systems <strong>SHALL</strong> protect it using the privacy, consent, access control, audit, and security requirements defined in the [Security] page.</p>
+
+<p>Implementations <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Apply role-based and organisation-based access control.</li>
+  <li>Respect consent and purpose-of-use restrictions.</li>
+  <li>Apply security labels where special handling is needed.</li>
+  <li>Avoid exposing sensitive information in public dashboards, logs, QR codes, or notifications.</li>
+  <li>Use synthetic summaries in sandbox and public testing environments.</li>
+  <li>Minimise data in portable certificates.</li>
+  <li>Audit summary generation, access, export, and sharing.</li>
+  <li>Protect attachments and Binary resources.</li>
+  <li>Apply Nigerian data protection, institutional, programme, and regulatory requirements.</li>
+</ul>
+
+<h3 id="relationship-to-programme-pages">Relationship to Programme Pages</h3>
+
+<p>Programme pages in this Implementation Guide may define examples and specific extensions of NG Patient Summary <code class="language-plaintext highlighter-rouge">Composition</code> and <code class="language-plaintext highlighter-rouge">Bundle</code> structures.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>The Immunization page may define vaccination summary and portable vaccination certificate examples.</li>
+  <li>The MNCH page may define pregnancy and newborn summary examples.</li>
+  <li>The HIV page may define HIV continuity of care summaries with additional consent controls.</li>
+  <li>The TB page may define treatment and laboratory monitoring summaries.</li>
+  <li>The Malaria page may define case management and diagnostic result summaries.</li>
+  <li>The Nutrition page may define nutrition enrolment and follow-up summaries.</li>
+  <li>The Pharmacy page may define medication summary and ePrescription-linked summaries.</li>
+  <li>The Claims page may define payer-facing summaries with strict data minimisation.</li>
+</ul>
+
+<p>Each programme page <strong>SHOULD</strong> state whether its summary is:</p>
+
+<ul>
+  <li>A full NG Patient Summary.</li>
+  <li>A constrained NG Patient Summary.</li>
+  <li>A data-block-level summary.</li>
+  <li>A portable certificate.</li>
+  <li>A programme-specific extension of the NG SHR.</li>
+</ul>
+
+<h3 id="conformance-expectations">Conformance Expectations</h3>
+
+<p>Systems claiming conformance to this page <strong>SHOULD</strong> declare one or more of the following:</p>
+
+<ul>
+  <li>Full NG Patient Summary producer.</li>
+  <li>Full NG Patient Summary consumer.</li>
+  <li>NG Patient Summary document producer.</li>
+  <li>NG Patient Summary document consumer.</li>
+  <li>Data block producer.</li>
+  <li>Data block consumer.</li>
+  <li>Portable certificate producer.</li>
+  <li>Portable certificate verifier.</li>
+  <li>Programme extension producer or consumer.</li>
+  <li>Shared Health Record contributor.</li>
+  <li>Shared Health Record responder.</li>
+</ul>
+
+<p>Conformance claims <strong>SHOULD</strong> be documented in CapabilityStatements and tested in the Nigeria Core sandbox where available.</p>
+
+<h3 id="example-summary-exchange-scenarios">Example Summary Exchange Scenarios</h3>
+
+<h4 id="phc-to-general-hospital-referral">PHC to General Hospital Referral</h4>
+
+<p>A PHC generates an NG Patient Summary containing patient attributes, current problems, allergies, medications, pregnancy status, recent vital signs, immunizations, referral note, and originating organisation metadata. The receiving general hospital uses the summary for triage and continuity of care.</p>
+
+<h4 id="general-hospital-to-tertiary-hospital-referral">General Hospital to Tertiary Hospital Referral</h4>
+
+<p>A general hospital generates a richer NG Patient Summary containing diagnostic reports, procedures, medication changes, allergies, active problems, alerts, care plan, and specialist contact information. The tertiary hospital consumes the summary and updates it after specialist review.</p>
+
+<h4 id="tertiary-hospital-discharge-back-to-phc">Tertiary Hospital Discharge Back to PHC</h4>
+
+<p>A tertiary hospital generates a discharge-oriented NG Patient Summary containing diagnoses, procedures, medication summary, follow-up care plan, pending results, alerts, and referral-back instructions. The PHC uses the summary for follow-up care.</p>
+
+<h4 id="patient-held-portable-summary">Patient-Held Portable Summary</h4>
+
+<p>A patient accesses a portable NG Patient Summary through a patient-facing application, QR code, secure document link, or printed document. The summary contains only the minimum authorised information needed for care continuity.</p>
+
+<h4 id="portable-immunization-certificate">Portable Immunization Certificate</h4>
+
+<p>An immunization system generates a focused certificate using NG Patient Summary principles. The certificate includes patient identity, vaccine information, dates, issuer, verification link, and digital signature where required. More detailed guidance is provided in the Immunization page.</p>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<p>Implementers should consider the following:</p>
+
+<ul>
+  <li>The NG Patient Summary should be implemented as a reusable core of the Nigeria Shared Health Record.</li>
+  <li>The summary is not a replacement for full EMRs, clinical notes, or programme systems.</li>
+  <li>Mandatory data blocks should be present even when the content indicates known absence or unknown status.</li>
+  <li>Programme-specific extensions should preserve the NG Patient Summary structure.</li>
+  <li>The summary should be concise and clinically relevant.</li>
+  <li>The summary should support both human-readable narrative and computable FHIR resources.</li>
+  <li>Summary generation may be manual, automated, or hybrid.</li>
+  <li>Summary consumers should be able to safely process unknown, absent, optional, and additional data.</li>
+  <li>Portable certificates should be minimal, verifiable, and purpose-specific.</li>
+  <li>Sandbox testing should include PHC, secondary, tertiary, Shared Health Record, referral, and portable certificate scenarios.</li>
+</ul>
+
+<p>Footnotes</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

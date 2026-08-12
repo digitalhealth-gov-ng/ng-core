@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Relationship with NHMIS-DHIS2 - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Relationship with NHMIS-DHIS2</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Relationship with NHMIS-DHIS2</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#scope-and-context" id="markdown-toc-scope-and-context">Scope and Context</a></li>
+  <li><a href="#relationship-between-nigeria-core-and-nhmisdhis2" id="markdown-toc-relationship-between-nigeria-core-and-nhmisdhis2">Relationship Between Nigeria Core and NHMIS/DHIS2</a></li>
+  <li><a href="#implementation-principle" id="markdown-toc-implementation-principle">Implementation Principle</a></li>
+  <li><a href="#data-flow-patterns" id="markdown-toc-data-flow-patterns">Data Flow Patterns</a>    <ul>
+      <li><a href="#pattern-1-facility-system-to-dhis2-aggregate-reporting" id="markdown-toc-pattern-1-facility-system-to-dhis2-aggregate-reporting">Pattern 1: Facility System to DHIS2 Aggregate Reporting</a></li>
+      <li><a href="#pattern-2-paper-to-lga-reporting-with-future-digital-alignment" id="markdown-toc-pattern-2-paper-to-lga-reporting-with-future-digital-alignment">Pattern 2: Paper-to-LGA Reporting With Future Digital Alignment</a></li>
+      <li><a href="#pattern-3-general-hospital-and-tertiary-system-direct-reporting" id="markdown-toc-pattern-3-general-hospital-and-tertiary-system-direct-reporting">Pattern 3: General Hospital and Tertiary System Direct Reporting</a></li>
+      <li><a href="#pattern-4-program-repository-to-dhis2" id="markdown-toc-pattern-4-program-repository-to-dhis2">Pattern 4: program Repository to DHIS2</a></li>
+      <li><a href="#pattern-5-registry-assisted-reporting" id="markdown-toc-pattern-5-registry-assisted-reporting">Pattern 5: Registry-Assisted Reporting</a></li>
+    </ul>
+  </li>
+  <li><a href="#mapping-nigeria-core-resources-to-nhmisdhis2" id="markdown-toc-mapping-nigeria-core-resources-to-nhmisdhis2">Mapping Nigeria Core Resources to NHMIS/DHIS2</a></li>
+  <li><a href="#mapping-to-dhis2-metadata" id="markdown-toc-mapping-to-dhis2-metadata">Mapping to DHIS2 Metadata</a></li>
+  <li><a href="#organisation-unit-and-facility-alignment" id="markdown-toc-organisation-unit-and-facility-alignment">Organisation Unit and Facility Alignment</a></li>
+  <li><a href="#workforce-and-provider-alignment" id="markdown-toc-workforce-and-provider-alignment">Workforce and Provider Alignment</a></li>
+  <li><a href="#aggregate-reporting-rules" id="markdown-toc-aggregate-reporting-rules">Aggregate Reporting Rules</a></li>
+  <li><a href="#data-quality-and-validation" id="markdown-toc-data-quality-and-validation">Data Quality and Validation</a></li>
+  <li><a href="#privacy-and-data-protection" id="markdown-toc-privacy-and-data-protection">Privacy and Data Protection</a></li>
+  <li><a href="#governance" id="markdown-toc-governance">Governance</a></li>
+  <li><a href="#recommended-api-architecture" id="markdown-toc-recommended-api-architecture">Recommended API Architecture</a></li>
+  <li><a href="#example-fhir-to-dhis2-submission-flow" id="markdown-toc-example-fhir-to-dhis2-submission-flow">Example FHIR-to-DHIS2 Submission Flow</a></li>
+  <li><a href="#relationship-with-ward-lga-state-and-national-data-use" id="markdown-toc-relationship-with-ward-lga-state-and-national-data-use">Relationship With Ward, LGA, State, and National Data Use</a></li>
+  <li><a href="#conformance-expectations" id="markdown-toc-conformance-expectations">Conformance Expectations</a></li>
+  <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+</ul>
+
+</div>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>This page describes the relationship between the Nigeria Core FHIR Implementation Guide and Nigeria’s National Health Management Information System (NHMIS), including the national DHIS2 platform used for routine health data reporting, review, validation, and use.</p>
+
+<p>Nigeria Core and NHMIS/DHIS2 serve complementary purposes:</p>
+
+<ul>
+  <li><strong>Nigeria Core</strong> defines a FHIR-based interoperability foundation for exchanging patient-level, provider-level, facility-level, program, registry, referral, medication, diagnostic, claims, and shared health record data.</li>
+  <li><strong>NHMIS/DHIS2</strong> supports routine health information management, aggregate reporting, program monitoring, data validation, performance review, dashboards, and decision-making across facility, LGA, state, and national levels.</li>
+</ul>
+
+<p>Nigeria Core is <strong>NOT</strong> intended to replace <strong>NHMIS/DHIS2</strong>. Instead, it provides a standards-based way for EMRs, eCHIS platforms, registries, laboratory systems, pharmacy systems, logistics systems, insurance systems, and program platforms to generate, validate, and exchange data that can contribute to NHMIS reporting and data use.</p>
+
+<h3 id="scope-and-context">Scope and Context</h3>
+
+<p>Nigeria’s health information ecosystem includes multiple service delivery, reporting, and registry systems. These include facility-based EMRs, community health systems, program databases, laboratory systems, pharmacy systems, health workforce and facility registries, payer systems, and DHIS2-based national and program reporting platforms.</p>
+
+<p>NHMIS/DHIS2 is primarily used for:</p>
+
+<ul>
+  <li>Routine monthly facility reporting.</li>
+  <li>program indicator reporting.</li>
+  <li>LGA, state, and national review.</li>
+  <li>Completeness, timeliness, and quality checks.</li>
+  <li>Dashboards and performance monitoring.</li>
+  <li>Aggregate health sector reporting.</li>
+  <li>Data use by program managers, M&amp;E officers, Ward Development Officers, state teams, and national DPRS/HMIS teams.</li>
+</ul>
+
+<p>Nigeria Core supports NHMIS/DHIS2 by providing a consistent FHIR-based data model for source systems and exchange workflows that may feed into aggregate reporting, validation, analytics, and program monitoring.</p>
+
+<h3 id="relationship-between-nigeria-core-and-nhmisdhis2">Relationship Between Nigeria Core and NHMIS/DHIS2</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Nigeria Core</th>
+      <th>NHMIS/DHIS2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primary purpose</td>
+      <td>Interoperable exchange of health data using FHIR</td>
+      <td>Routine health information reporting, analytics, and dashboards</td>
+    </tr>
+    <tr>
+      <td>Main data level</td>
+      <td>Patient-level, encounter-level, provider-level, facility-level, transaction-level, and registry-level data</td>
+      <td>Mostly aggregate reporting, with possible event or tracker use where configured</td>
+    </tr>
+    <tr>
+      <td>Main users</td>
+      <td>EMR vendors, program systems, HIEs, registries, pharmacies, laboratories, payers, shared health records, developers</td>
+      <td>Facility records officers, M&amp;E officers, LGA/state/national HMIS teams, program managers, DPRS</td>
+    </tr>
+    <tr>
+      <td>Standards focus</td>
+      <td>FHIR profiles, terminology, identifiers, REST APIs, CapabilityStatements, examples</td>
+      <td>DHIS2 metadata, data elements, indicators, organisation units, reporting periods, datasets, validation rules</td>
+    </tr>
+    <tr>
+      <td>Governance focus</td>
+      <td>National interoperability standards, conformance, sandbox testing, program IG alignment</td>
+      <td>National HMIS reporting governance, data quality, reporting cycles, dashboard use</td>
+    </tr>
+    <tr>
+      <td>Typical exchange</td>
+      <td>FHIR REST APIs, Bundles, operations, registry lookups, shared health record transactions</td>
+      <td>DHIS2 Web API, aggregate data values, datasets, events, tracker data, analytics</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="implementation-principle">Implementation Principle</h3>
+
+<p>Systems <strong>SHOULD</strong> capture health data once at the point of service and reuse the data for multiple authorised purposes, including patient care, referral, program monitoring, claims, public health reporting, registry updates, surveillance and NHMIS reporting.</p>
+
+<p>Where feasible, source systems should generate NHMIS/DHIS2 reporting outputs from structured clinical and administrative data rather than requiring duplicate manual entry.</p>
+
+<h3 id="data-flow-patterns">Data Flow Patterns</h3>
+
+<p>Nigeria Core captures and supports several implementation patterns for interaction with NHMIS/DHIS2.</p>
+
+<h4 id="pattern-1-facility-system-to-dhis2-aggregate-reporting">Pattern 1: Facility System to DHIS2 Aggregate Reporting</h4>
+
+<p>In this pattern, a facility EMR, eCHIS, laboratory system, pharmacy system, surveillance system, or program system captures structured service data using Nigeria Core-aligned profiles. A reporting adapter then aggregates the data into NHMIS/DHIS2 data elements and submits the results through the DHIS2 Web API.</p>
+
+<p>Example flow:</p>
+
+<ol>
+  <li>Facility system captures patient-level service data.</li>
+  <li>Data are represented internally or externally using Nigeria Core FHIR profiles.</li>
+  <li>A reporting adapter maps FHIR resources to NHMIS/DHIS2 data elements.</li>
+  <li>Aggregate monthly values are generated for the appropriate organisation unit and reporting period.</li>
+  <li>Values are validated against NHMIS/DHIS2 rules.</li>
+  <li>Aggregate data are submitted to DHIS2.</li>
+  <li>Aggregate data are submitted to SORMAS.</li>
+  <li>LGA, state, and national teams review the data.</li>
+</ol>
+
+<p>This pattern is suitable for EMRs, eCHIS platforms, program systems, and private-sector systems that need to submit routine reports without exposing patient-level data to DHIS2.</p>
+
+<h4 id="pattern-2-paper-to-lga-reporting-with-future-digital-alignment">Pattern 2: Paper-to-LGA Reporting With Future Digital Alignment</h4>
+
+<p>In many PHC settings, service data may still be recorded on paper and submitted to LGA M&amp;E officers for entry or review in DHIS2. Nigeria Core does not remove this workflow immediately, but provides a future-ready standard for digitising source data and aligning forms, data elements, and reporting logic.</p>
+
+<p>Example flow:</p>
+
+<ol>
+  <li>PHC records service delivery on paper registers or summary forms.</li>
+  <li>Facility submits reports to LGA M&amp;E.</li>
+  <li>LGA M&amp;E reviews and enters or validates data in DHIS2.</li>
+  <li>State and national teams review completeness, quality, and trends.</li>
+  <li>As facilities digitise, Nigeria Core profiles support structured source data capture and automated reporting.</li>
+</ol>
+
+<p>This pattern allows gradual transition from paper-based reporting to standards-based digital reporting.</p>
+
+<h4 id="pattern-3-general-hospital-and-tertiary-system-direct-reporting">Pattern 3: General Hospital and Tertiary System Direct Reporting</h4>
+
+<p>General hospitals, tertiary hospitals, specialist hospitals, and high-volume facilities may use EMRs, laboratory systems, pharmacy systems, and other digital tools. These systems can produce Nigeria Core-aligned data and submit aggregate reports directly to DHIS2.</p>
+
+<p>Example flow:</p>
+
+<ol>
+  <li>Hospital systems capture service data during care delivery.</li>
+  <li>Data are mapped to Nigeria Core Profiles.</li>
+  <li>Facility reporting services generate DHIS2 aggregate values.</li>
+  <li>Facility records or M&amp;E teams review generated reports.</li>
+  <li>Approved reports are submitted to DHIS2.</li>
+  <li>DHPRS, state HMIS, and program teams monitor data quality and performance.</li>
+</ol>
+
+<h4 id="pattern-4-program-repository-to-dhis2">Pattern 4: program Repository to DHIS2</h4>
+
+<p>Some national programs may operate dedicated repositories for immunization, HIV, TB, malaria, MNCH, nutrition, logistics, or other services. These repositories may use Nigeria Core-derived program IGs and submit approved aggregate or event-level reporting outputs to DHIS2.</p>
+
+<p>program systems <strong>SHOULD</strong> reuse Nigeria Core profiles and map program data elements to NHMIS/DHIS2 indicators where applicable.</p>
+
+<h4 id="pattern-5-registry-assisted-reporting">Pattern 5: Registry-Assisted Reporting</h4>
+
+<p>Nigeria Core supports authoritative registry references that can improve NHMIS/DHIS2 reporting quality.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>Health Facility Registry identifiers can be used to align FHIR <code class="language-plaintext highlighter-rouge">Organization</code> and <code class="language-plaintext highlighter-rouge">Location</code> resources with DHIS2 organisation units.</li>
+  <li>Health Workforce Registry identifiers can support workforce denominator reporting, productivity analysis, and provider attribution.</li>
+  <li>Regulator registries can support verification of facilities, practitioners, pharmacies, laboratories, and service providers.</li>
+  <li>Terminology services can support consistent mapping of local codes to national and international standards.</li>
+</ul>
+
+<h3 id="mapping-nigeria-core-resources-to-nhmisdhis2">Mapping Nigeria Core Resources to NHMIS/DHIS2</h3>
+
+<p>The table below gives an illustrative mapping between Nigeria Core FHIR resources and common NHMIS/DHIS2 concepts.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Nigeria Core FHIR Resource</th>
+      <th>NHMIS/DHIS2 Concept</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Organization</code></td>
+      <td>Organisation unit, facility, owner, managing authority</td>
+      <td>Should align with Health Facility Registry and DHIS2 orgUnit identifiers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Location</code></td>
+      <td>Facility location, service delivery point, ward, unit</td>
+      <td>Useful for facility hierarchy and service delivery location.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code></td>
+      <td>Person-level source data, denominator input where authorised</td>
+      <td>Patient-level data should generally be aggregated before NHMIS submission unless a governed tracker/event workflow exists.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code></td>
+      <td>Health worker, provider</td>
+      <td>May support workforce-linked reporting where authorised.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+      <td>Provider role, cadre, facility assignment</td>
+      <td>Useful for HRH and productivity analysis.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Encounter</code></td>
+      <td>Visit, attendance, service contact</td>
+      <td>Common source for attendance and service utilisation indicators.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td>Data element value, vital sign, test result, assessment result</td>
+      <td>Can feed aggregate indicators or event/tracker data.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td>Diagnosis, disease classification</td>
+      <td>Can feed morbidity, disease surveillance, and program indicators.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Procedure</code></td>
+      <td>Service, intervention, operation, procedure</td>
+      <td>Can feed service delivery indicators.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Immunization</code></td>
+      <td>Immunization service data</td>
+      <td>Can feed immunization indicators and child health reporting.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code></td>
+      <td>Prescription or planned medication</td>
+      <td>Useful for clinical and program monitoring.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MedicationDispense</code></td>
+      <td>Medicine dispensed, pharmacy fulfilment</td>
+      <td>Can feed pharmacy, program, and claims indicators.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></td>
+      <td>Laboratory, pathology, imaging report</td>
+      <td>Can feed diagnostic service reporting and program indicators.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest</code></td>
+      <td>Referral, laboratory request, procedure request</td>
+      <td>Can support referral and service request monitoring.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Task</code></td>
+      <td>Workflow status, referral tracking, fulfilment status</td>
+      <td>Useful for operational workflows and status monitoring.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></td>
+      <td>Digital form submission</td>
+      <td>Can support program forms, surveys, assessments, and DAK-derived tools.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MeasureReport</code></td>
+      <td>Indicator output or report</td>
+      <td>Can be used as a FHIR representation of computed indicator results before DHIS2 submission.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+      <td>Submission package</td>
+      <td>Can package multiple related resources for validation, transformation, or reporting.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mapping-to-dhis2-metadata">Mapping to DHIS2 Metadata</h3>
+
+<p>FHIR-to-DHIS2 mappings <strong>SHOULD</strong> define how Nigeria Core data elements are transformed into DHIS2 metadata.</p>
+
+<p>A complete mapping <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li>FHIR resource.</li>
+  <li>FHIR profile.</li>
+  <li>FHIR element path.</li>
+  <li>Terminology or value set used.</li>
+  <li>DHIS2 data element.</li>
+  <li>DHIS2 category option combination.</li>
+  <li>DHIS2 organisation unit.</li>
+  <li>Reporting period.</li>
+  <li>Aggregation rule.</li>
+  <li>Disaggregation rule.</li>
+  <li>Validation rule.</li>
+  <li>Indicator formula, where applicable.</li>
+  <li>Source program or reporting form.</li>
+  <li>Data quality notes.</li>
+  <li>Governance owner.</li>
+</ul>
+
+<p>Example mapping structure:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>FHIR Source</th>
+      <th>FHIR Element</th>
+      <th>DHIS2 Target</th>
+      <th>Transformation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Encounter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.serviceType</code></td>
+      <td>OPD attendance data element</td>
+      <td>Count encounters by service type, facility, month, age group, and sex.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Immunization</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Immunization.vaccineCode</code></td>
+      <td>Vaccine dose data element</td>
+      <td>Count administered vaccine doses by antigen, dose, facility, period, age group, and sex.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> + <code class="language-plaintext highlighter-rouge">Observation.value[x]</code></td>
+      <td>Laboratory test result data element</td>
+      <td>Count test results by test type, result category, facility, and period.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.code</code></td>
+      <td>Morbidity data element</td>
+      <td>Count diagnoses by condition group, facility, period, age group, and sex.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MedicationDispense</code></td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationDispense.medication[x]</code></td>
+      <td>Medicine dispensed data element</td>
+      <td>Count or sum dispensed quantity by product, facility, and period.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="organisation-unit-and-facility-alignment">Organisation Unit and Facility Alignment</h3>
+
+<p>Facility alignment is critical for the relationship between Nigeria Core and NHMIS/DHIS2.</p>
+
+<p>Systems <strong>SHOULD</strong> use the Health Facility Registry as the authoritative source for facility identity where available. FHIR <code class="language-plaintext highlighter-rouge">Organization.identifier</code> and <code class="language-plaintext highlighter-rouge">Location.identifier</code> should carry nationally recognised facility identifiers and, where needed, DHIS2 organisation unit identifiers.</p>
+
+<p>Implementations <strong>SHOULD</strong> maintain mappings between:</p>
+
+<ul>
+  <li>Health Facility Registry identifier.</li>
+  <li>DHIS2 organisation unit UID.</li>
+  <li>State facility code.</li>
+  <li>program facility code.</li>
+  <li>Facility license or regulator identifier.</li>
+  <li>Local EMR facility identifier.</li>
+</ul>
+
+<p>Where facility identifiers do not match, reporting systems <strong>SHOULD</strong> use an approved mapping table and document the source, version, and date of the mapping.</p>
+
+<h3 id="workforce-and-provider-alignment">Workforce and Provider Alignment</h3>
+
+<p>Nigeria Core can support workforce-linked reporting by aligning FHIR <code class="language-plaintext highlighter-rouge">Practitioner</code> and <code class="language-plaintext highlighter-rouge">PractitionerRole</code> resources with health workforce registries and regulator registers.</p>
+
+<p>This may support:</p>
+
+<ul>
+  <li>Service delivery attribution.</li>
+  <li>Workforce productivity analysis.</li>
+  <li>Facility staffing denominators.</li>
+  <li>program supervision.</li>
+  <li>Licensing and verification.</li>
+  <li>Linkage between attendance and service output.</li>
+  <li>Workforce registry strengthening.</li>
+</ul>
+
+<p>Provider-level data <strong>SHALL</strong> be governed carefully and should only be used for authorised reporting, performance management, quality improvement, or regulatory functions.</p>
+
+<h3 id="aggregate-reporting-rules">Aggregate Reporting Rules</h3>
+
+<p>When patient-level or encounter-level data are transformed into DHIS2 aggregate data values, implementations <strong>SHOULD</strong> define clear aggregation rules.</p>
+
+<p>Aggregation rules <strong>SHOULD</strong> specify:</p>
+
+<ul>
+  <li>Inclusion criteria.</li>
+  <li>Exclusion criteria.</li>
+  <li>Reporting period.</li>
+  <li>Facility attribution.</li>
+  <li>Age and sex disaggregation.</li>
+  <li>program disaggregation.</li>
+  <li>Handling of duplicates.</li>
+  <li>Handling of referrals.</li>
+  <li>Handling of repeat visits.</li>
+  <li>Handling of cancelled or entered-in-error records.</li>
+  <li>Handling of missing or suppressed data.</li>
+  <li>Validation rules.</li>
+  <li>Approval workflow before submission.</li>
+</ul>
+
+<p>Systems <strong>SHOULD</strong> preserve a traceable path from aggregate DHIS2 values back to source system counts, without exposing patient-level data unless authorised.</p>
+
+<h3 id="data-quality-and-validation">Data Quality and Validation</h3>
+
+<p>Nigeria Core can improve NHMIS/DHIS2 data quality by supporting validation before submission.</p>
+
+<p>Validation may include:</p>
+
+<ul>
+  <li>Required FHIR profile conformance.</li>
+  <li>Valid facility identifiers.</li>
+  <li>Valid health worker identifiers where required.</li>
+  <li>Valid terminology codes.</li>
+  <li>Valid dates and reporting periods.</li>
+  <li>Duplicate detection.</li>
+  <li>Logical consistency checks.</li>
+  <li>program rule validation.</li>
+  <li>Completeness and timeliness checks.</li>
+  <li>Cross-checks between service registers, EMRs, laboratory systems, pharmacy systems, and DHIS2 reports.</li>
+</ul>
+
+<p>Where a system submits aggregate data to DHIS2, it <strong>SHOULD</strong> return or store an [OperationOutcome] or equivalent validation report for failed submissions.</p>
+
+<h3 id="privacy-and-data-protection">Privacy and Data Protection</h3>
+
+<p>NHMIS/DHIS2 reporting is typically aggregate. Patient-level data <strong>SHOULD NOT</strong> be submitted to aggregate NHMIS datasets unless the DHIS2 implementation is explicitly configured and governed for event or tracker data and all required privacy, consent, and security safeguards are in place.</p>
+
+<p>FHIR-to-DHIS2 pipelines <strong>SHALL</strong> apply:</p>
+
+<ul>
+  <li>Data minimisation.</li>
+  <li>Role-based access control.</li>
+  <li>Organisation-based access control.</li>
+  <li>Audit logging.</li>
+  <li>Secure transport.</li>
+  <li>De-identification or aggregation where appropriate.</li>
+  <li>Purpose limitation.</li>
+  <li>Protection of sensitive program data.</li>
+</ul>
+
+<p>Sensitive data such as HIV, reproductive health, mental health, claims, or identifiable patient information <strong>SHALL</strong> be handled according to applicable privacy, consent, legal, institutional, and program rules.</p>
+
+<h3 id="governance">Governance</h3>
+
+<p>The relationship between Nigeria Core and NHMIS/DHIS2 requires coordination between digital health, HMIS, program, registry, standards, and data governance actors.</p>
+
+<p>Governance responsibilities may include:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FMoHSW / NDHI</td>
+      <td>Overall digital health architecture, interoperability governance, and alignment with national digital health priorities.</td>
+    </tr>
+    <tr>
+      <td>DPRS / National HMIS</td>
+      <td>Stewardship of NHMIS reporting requirements, routine data standards, reporting cycles, dashboards, and DHIS2 governance.</td>
+    </tr>
+    <tr>
+      <td>State Ministries of Health</td>
+      <td>State-level implementation, reporting quality, facility supervision, and data use.</td>
+    </tr>
+    <tr>
+      <td>LGA M&amp;E Teams</td>
+      <td>PHC reporting support, review, validation, feedback, and facility engagement.</td>
+    </tr>
+    <tr>
+      <td>program Teams</td>
+      <td>program-specific data elements, indicators, reporting requirements, and data use.</td>
+    </tr>
+    <tr>
+      <td>Registries and Regulators</td>
+      <td>Authoritative facility, workforce, provider, pharmacy, and related registry data.</td>
+    </tr>
+    <tr>
+      <td>Vendors and Implementers</td>
+      <td>System implementation, FHIR conformance, DHIS2 mapping, validation, and reporting integration.</td>
+    </tr>
+    <tr>
+      <td>Facilities</td>
+      <td>Source data capture, report review, correction, submission, and use.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="recommended-api-architecture">Recommended API Architecture</h3>
+
+<p>A recommended architecture for Nigeria Core and NHMIS/DHIS2 integration includes:</p>
+
+<ol>
+  <li><strong>Source systems</strong> such as EMRs, eCHIS, LIS, pharmacy systems, logistics systems, claims systems, and program platforms.</li>
+  <li><strong>Nigeria Core FHIR API layer</strong> exposing standards-based resources, Bundles, profiles, and operations.</li>
+  <li><strong>Registry services</strong> for facility, workforce, provider, terminology, and program reference data.</li>
+  <li><strong>FHIR-to-NHMIS mapping service</strong> that transforms FHIR resources into DHIS2 aggregate, event, tracker, or analytics payloads.</li>
+  <li><strong>Validation service</strong> that checks FHIR conformance, metadata mapping, reporting rules, and DHIS2 payload validity.</li>
+  <li><strong>Approval workflow</strong> allowing facility, LGA, state, or program M&amp;E officers to review generated reports.</li>
+  <li><strong>DHIS2 Web API submission</strong> to the national or program DHIS2 instance.</li>
+  <li><strong>Feedback and analytics</strong> from DHIS2 to facilities, LGAs, states, programs, Ward Development Officers, and national teams.</li>
+</ol>
+
+<h3 id="example-fhir-to-dhis2-submission-flow">Example FHIR-to-DHIS2 Submission Flow</h3>
+
+<ol>
+  <li>A facility EMR captures outpatient encounters using Nigeria Core Profiles.</li>
+  <li>At the end of the reporting period, the reporting service queries relevant FHIR resources.</li>
+  <li>The service aggregates counts by facility, reporting period, age, sex, service area, and program category.</li>
+  <li>The service maps counts to DHIS2 data elements and category option combinations.</li>
+  <li>The facility records or M&amp;E officer reviews the generated report.</li>
+  <li>The report is submitted to DHIS2 using the DHIS2 Web API.</li>
+  <li>DHIS2 validation rules check completeness, consistency, and outliers.</li>
+  <li>LGA and state M&amp;E teams review, approve, and provide feedback.</li>
+  <li>Dashboards and analytics are used by programs, DPRS, states, LGAs, facilities, and Ward Development Officers.</li>
+</ol>
+
+<h3 id="relationship-with-ward-lga-state-and-national-data-use">Relationship With Ward, LGA, State, and National Data Use</h3>
+
+<p>Nigeria Core can strengthen data use by making routine reports traceable to structured source data.</p>
+
+<p>Data use may occur at multiple levels:</p>
+
+<ul>
+  <li><strong>Ward level:</strong> Ward Development Officers and community teams use aggregate service and outreach data for local planning.</li>
+  <li><strong>Facility level:</strong> Facility managers review service volumes, quality gaps, stock-related issues, referral patterns, and reporting completeness.</li>
+  <li><strong>LGA level:</strong> M&amp;E officers review PHC reporting, completeness, validation, and supervision needs.</li>
+  <li><strong>State level:</strong> State HMIS and program teams review performance, equity, data quality, and program priorities.</li>
+  <li><strong>National level:</strong> DPRS, national programs, and policy teams review national dashboards, reporting trends, and health system performance.</li>
+</ul>
+
+<h3 id="conformance-expectations">Conformance Expectations</h3>
+
+<p>Systems claiming alignment with this page <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Use Nigeria Core Profiles for source data representation where applicable.</li>
+  <li>Maintain clear mappings between FHIR elements and DHIS2 metadata.</li>
+  <li>Use Health Facility Registry identifiers where available.</li>
+  <li>Preserve local and program identifiers where needed.</li>
+  <li>Validate data before DHIS2 submission.</li>
+  <li>Support audit and traceability of generated reports.</li>
+  <li>Protect patient-level data and submit aggregate data unless event/tracker reporting is explicitly governed.</li>
+  <li>Document supported workflows in CapabilityStatements or implementation documentation.</li>
+  <li>Participate in sandbox or conformance testing where available.</li>
+</ul>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<p>Implementers should consider the following:</p>
+
+<ul>
+  <li>Nigeria Core provides the interoperability layer; DHIS2 remains the primary platform for routine NHMIS reporting and dashboards.</li>
+  <li>FHIR resources should be mapped to DHIS2 data elements through governed data dictionaries and ConceptMaps.</li>
+  <li>Facility and workforce identifiers are essential for reliable reporting.</li>
+  <li>program-specific IGs should define reporting logic for their own indicators while reusing Nigeria Core profiles.</li>
+  <li>Reporting adapters should be testable in the Nigeria Core sandbox before production deployment.</li>
+  <li>Aggregate reporting should avoid duplicate manual entry where source systems already capture structured data.</li>
+  <li>Patient-level data should remain in clinical, program, registry, or Shared Health Record systems unless a DHIS2 event/tracker use case is explicitly approved.</li>
+  <li>Feedback loops from DHIS2 to facilities and frontline managers should be part of implementation design.</li>
+</ul>
+
+<p>Footnotes</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

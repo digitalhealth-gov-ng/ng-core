@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-bundle-identifier-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-bundle-identifier-cs</b></p><a name="ng-bundle-identifier-cs"> </a><a name="hcng-bundle-identifier-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-bundle-identifier-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">BND-0001<a name="ng-bundle-identifier-cs-BND-0001"> </a></td><td>Immunization Submission Bundle</td><td>Bundle containing patient, encounter, and immunization resources for reporting vaccination events.</td></tr><tr><td style="white-space:nowrap">BND-0002<a name="ng-bundle-identifier-cs-BND-0002"> </a></td><td>MNCH Referral Bundle</td><td>Bundle for maternal and child health referral workflows between facilities.</td></tr><tr><td style="white-space:nowrap">BND-0003<a name="ng-bundle-identifier-cs-BND-0003"> </a></td><td>Claims Transaction Bundle</td><td>Bundle for HMO–hospital claims submission containing Coverage and Claim entries.</td></tr><tr><td style="white-space:nowrap">BND-0004<a name="ng-bundle-identifier-cs-BND-0004"> </a></td><td>Pharmacy Dispense Bundle</td><td>Bundle for dispensing medication under ePharmacy workflows.</td></tr><tr><td style="white-space:nowrap">BND-0005<a name="ng-bundle-identifier-cs-BND-0005"> </a></td><td>Lab Result Bundle</td><td>Bundle containing DiagnosticReport and Observation results transmitted from analyzer or LIMS.</td></tr><tr><td style="white-space:nowrap">BND-0006<a name="ng-bundle-identifier-cs-BND-0006"> </a></td><td>Device Task Execution Bundle</td><td>Bundle used for recording medical device metrics and related task execution details.</td></tr><tr><td style="white-space:nowrap">BND-0007<a name="ng-bundle-identifier-cs-BND-0007"> </a></td><td>AEFI Reporting Bundle</td><td>Bundle for Adverse Event Following Immunization (AEFI) reports with patient, encounter, and observation details.</td></tr><tr><td style="white-space:nowrap">BND-0008<a name="ng-bundle-identifier-cs-BND-0008"> </a></td><td>Defaulter Tracing Bundle</td><td>Bundle for tracking and updating missed immunization or follow-up cases.</td></tr><tr><td style="white-space:nowrap">BND-0009<a name="ng-bundle-identifier-cs-BND-0009"> </a></td><td>CarePlan Synchronization Bundle</td><td>Bundle for synchronizing patient care plans across connected systems.</td></tr><tr><td style="white-space:nowrap">BND-0010<a name="ng-bundle-identifier-cs-BND-0010"> </a></td><td>Document Exchange Bundle</td><td>Bundle representing a signed clinical document or summary shared between organizations.</td></tr><tr><td style="white-space:nowrap">IPS-BND-0001<a name="ng-bundle-identifier-cs-IPS-BND-0001"> </a></td><td>Document Exchange for IPS bundle</td><td>Bundle representing an IPS composition an its referenced resources</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-bundle-identifier-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.5"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgBundleIdentifierCS"/>
+  <title value="NG Bundle Identifier Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local CodeSystem defining standard bundle identifiers."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="BND-0001"/>
+    <display value="Immunization Submission Bundle"/>
+    <definition value="Bundle containing patient, encounter, and immunization resources for reporting vaccination events."/>
+  </concept>
+  <concept>
+    <code value="BND-0002"/>
+    <display value="MNCH Referral Bundle"/>
+    <definition value="Bundle for maternal and child health referral workflows between facilities."/>
+  </concept>
+  <concept>
+    <code value="BND-0003"/>
+    <display value="Claims Transaction Bundle"/>
+    <definition value="Bundle for HMO–hospital claims submission containing Coverage and Claim entries."/>
+  </concept>
+  <concept>
+    <code value="BND-0004"/>
+    <display value="Pharmacy Dispense Bundle"/>
+    <definition value="Bundle for dispensing medication under ePharmacy workflows."/>
+  </concept>
+  <concept>
+    <code value="BND-0005"/>
+    <display value="Lab Result Bundle"/>
+    <definition value="Bundle containing DiagnosticReport and Observation results transmitted from analyzer or LIMS."/>
+  </concept>
+  <concept>
+    <code value="BND-0006"/>
+    <display value="Device Task Execution Bundle"/>
+    <definition value="Bundle used for recording medical device metrics and related task execution details."/>
+  </concept>
+  <concept>
+    <code value="BND-0007"/>
+    <display value="AEFI Reporting Bundle"/>
+    <definition value="Bundle for Adverse Event Following Immunization (AEFI) reports with patient, encounter, and observation details."/>
+  </concept>
+  <concept>
+    <code value="BND-0008"/>
+    <display value="Defaulter Tracing Bundle"/>
+    <definition value="Bundle for tracking and updating missed immunization or follow-up cases."/>
+  </concept>
+  <concept>
+    <code value="BND-0009"/>
+    <display value="CarePlan Synchronization Bundle"/>
+    <definition value="Bundle for synchronizing patient care plans across connected systems."/>
+  </concept>
+  <concept>
+    <code value="BND-0010"/>
+    <display value="Document Exchange Bundle"/>
+    <definition value="Bundle representing a signed clinical document or summary shared between organizations."/>
+  </concept>
+  <concept>
+    <code value="IPS-BND-0001"/>
+    <display value="Document Exchange for IPS bundle"/>
+    <definition value="Bundle representing an IPS composition an its referenced resources"/>
+  </concept>
+</CodeSystem>

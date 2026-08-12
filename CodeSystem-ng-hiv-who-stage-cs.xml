@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-who-stage-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-who-stage-cs</b></p><a name="ng-hiv-who-stage-cs"> </a><a name="hcng-hiv-who-stage-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-who-stage-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Stage-One<a name="ng-hiv-who-stage-cs-Stage-One"> </a></td><td>Stage One</td></tr><tr><td style="white-space:nowrap">Stage-Two<a name="ng-hiv-who-stage-cs-Stage-Two"> </a></td><td>Stage Two</td></tr><tr><td style="white-space:nowrap">Stage-Three<a name="ng-hiv-who-stage-cs-Stage-Three"> </a></td><td>Stage Three</td></tr><tr><td style="white-space:nowrap">Stage-Four<a name="ng-hiv-who-stage-cs-Stage-Four"> </a></td><td>Stage Four</td></tr><tr><td style="white-space:nowrap">T1<a name="ng-hiv-who-stage-cs-T1"> </a></td><td>T1</td></tr><tr><td style="white-space:nowrap">T2<a name="ng-hiv-who-stage-cs-T2"> </a></td><td>T2</td></tr><tr><td style="white-space:nowrap">T3<a name="ng-hiv-who-stage-cs-T3"> </a></td><td>T3</td></tr><tr><td style="white-space:nowrap">T4<a name="ng-hiv-who-stage-cs-T4"> </a></td><td>T4</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-who-stage-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.85"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivWHOStageCS"/>
+  <title value="WHO Stage Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code used for representing the patient's WHO stage."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="Stage-One"/>
+    <display value="Stage One"/>
+  </concept>
+  <concept>
+    <code value="Stage-Two"/>
+    <display value="Stage Two"/>
+  </concept>
+  <concept>
+    <code value="Stage-Three"/>
+    <display value="Stage Three"/>
+  </concept>
+  <concept>
+    <code value="Stage-Four"/>
+    <display value="Stage Four"/>
+  </concept>
+  <concept>
+    <code value="T1"/>
+    <display value="T1"/>
+  </concept>
+  <concept>
+    <code value="T2"/>
+    <display value="T2"/>
+  </concept>
+  <concept>
+    <code value="T3"/>
+    <display value="T3"/>
+  </concept>
+  <concept>
+    <code value="T4"/>
+    <display value="T4"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-arv-treatment-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-arv-treatment-vs</b></p><a name="ng-hiv-arv-treatment-vs"> </a><a name="hcng-hiv-arv-treatment-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/874950001">874950001</a></td><td>Product containing only efavirenz and lamivudine and tenofovir (medicinal product)</td></tr><tr><td><a href="http://snomed.info/id/324859007">324859007</a></td><td>Lamivudine- and zidovudine-containing product</td></tr><tr><td><a href="http://snomed.info/id/776467001">776467001</a></td><td>Lamivudine and nevirapine and zidovudine only product</td></tr><tr><td><a href="http://snomed.info/id/787163007">787163007</a></td><td>Dolutegravir- and lamivudine-containing product</td></tr><tr><td><a href="http://snomed.info/id/413381000">413381000</a></td><td>Abacavir- and lamivudine-containing product</td></tr><tr><td><a href="http://snomed.info/id/387472004">387472004</a></td><td>Isoniazid</td></tr><tr><td><a href="http://snomed.info/id/387174006">387174006</a></td><td>Fluconazole</td></tr><tr><td><a href="http://snomed.info/id/772196006">772196006</a></td><td>Abacavir and dolutegravir and lamivudine only product</td></tr><tr><td><a href="http://snomed.info/id/714769003">714769003</a></td><td>Abacavir- and dolutegravir- and lamivudine-containing product</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-ng-hiv-arv-treatment-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-treatment-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-treatment-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.52"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivARVTreatmentVS"/>
+  <title value="HIV - ARV Drugs ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the ARV Drugs."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="874950001"/>
+        <display value="Product containing only efavirenz and lamivudine and tenofovir (medicinal product)"/>
+      </concept>
+      <concept>
+        <code value="324859007"/>
+        <display value="Lamivudine- and zidovudine-containing product"/>
+      </concept>
+      <concept>
+        <code value="776467001"/>
+        <display value="Lamivudine and nevirapine and zidovudine only product"/>
+      </concept>
+      <concept>
+        <code value="787163007"/>
+        <display value="Dolutegravir- and lamivudine-containing product"/>
+      </concept>
+      <concept>
+        <code value="413381000"/>
+        <display value="Abacavir- and lamivudine-containing product"/>
+      </concept>
+      <concept>
+        <code value="387472004"/>
+        <display value="Isoniazid"/>
+      </concept>
+      <concept>
+        <code value="387174006"/>
+        <display value="Fluconazole"/>
+      </concept>
+      <concept>
+        <code value="772196006"/>
+        <display value="Abacavir and dolutegravir and lamivudine only product"/>
+      </concept>
+      <concept>
+        <code value="714769003"/>
+        <display value="Abacavir- and dolutegravir- and lamivudine-containing product"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-treatment-cs"/>
+    </include>
+  </compose>
+</ValueSet>

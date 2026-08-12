@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-yes-no-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-yes-no-vs</b></p><a name=\"ng-yes-no-vs\"> </a><a name=\"hcng-yes-no-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-absent-unknown-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-absent-unknown-cs.html#ng-hiv-absent-unknown-cs-Not-Applicable\">Not-Applicable</a></td><td style=\"color: #cccccc\">Not Applicable</td><td>The value is not applicable for one or more reasons that are captured by the clinician</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-ng-yes-no-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.0</span></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-yes-no-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.210"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgYesNoVS",
+  "title" : "NG Yes/No Codes VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Yes/No Codes Represented as Boolean.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs",
+      "concept" : [{
+        "code" : "Not-Applicable"
+      }]
+    },
+    {
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs"
+    }]
+  }
+}

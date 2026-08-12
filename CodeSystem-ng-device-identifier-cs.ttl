@@ -1,0 +1,280 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-device-identifier-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-device-identifier-cs</b></p><a name=\"ng-device-identifier-cs\"> </a><a name=\"hcng-device-identifier-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VS-001<a name=\"ng-device-identifier-cs-VS-001\"> </a></td><td>Automated Blood Pressure Monitor</td></tr><tr><td style=\"white-space:nowrap\">VS-002<a name=\"ng-device-identifier-cs-VS-002\"> </a></td><td>Pulse Oximeter (SpO2)</td></tr><tr><td style=\"white-space:nowrap\">VS-003<a name=\"ng-device-identifier-cs-VS-003\"> </a></td><td>Digital Thermometer</td></tr><tr><td style=\"white-space:nowrap\">VS-004<a name=\"ng-device-identifier-cs-VS-004\"> </a></td><td>ECG Monitor (12-lead)</td></tr><tr><td style=\"white-space:nowrap\">VS-005<a name=\"ng-device-identifier-cs-VS-005\"> </a></td><td>Capnograph (EtCO2)</td></tr><tr><td style=\"white-space:nowrap\">VS-006<a name=\"ng-device-identifier-cs-VS-006\"> </a></td><td>Multiparameter Patient Monitor</td></tr><tr><td style=\"white-space:nowrap\">VS-007<a name=\"ng-device-identifier-cs-VS-007\"> </a></td><td>Spirometer</td></tr><tr><td style=\"white-space:nowrap\">VS-008<a name=\"ng-device-identifier-cs-VS-008\"> </a></td><td>Non-invasive Cardiac Output Monitor</td></tr><tr><td style=\"white-space:nowrap\">AN-001<a name=\"ng-device-identifier-cs-AN-001\"> </a></td><td>Chemistry Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-002<a name=\"ng-device-identifier-cs-AN-002\"> </a></td><td>Hematology Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-003<a name=\"ng-device-identifier-cs-AN-003\"> </a></td><td>Immunoassay Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-004<a name=\"ng-device-identifier-cs-AN-004\"> </a></td><td>Blood Gas Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-005<a name=\"ng-device-identifier-cs-AN-005\"> </a></td><td>Coagulation Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-006<a name=\"ng-device-identifier-cs-AN-006\"> </a></td><td>PCR Analyzer (qPCR)</td></tr><tr><td style=\"white-space:nowrap\">US-001<a name=\"ng-device-identifier-cs-US-001\"> </a></td><td>Cart Ultrasound System</td></tr><tr><td style=\"white-space:nowrap\">US-002<a name=\"ng-device-identifier-cs-US-002\"> </a></td><td>Portable Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">US-003<a name=\"ng-device-identifier-cs-US-003\"> </a></td><td>Point-of-Care Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">US-004<a name=\"ng-device-identifier-cs-US-004\"> </a></td><td>Handheld Ultrasound Probe</td></tr><tr><td style=\"white-space:nowrap\">US-005<a name=\"ng-device-identifier-cs-US-005\"> </a></td><td>Obstetric Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">US-006<a name=\"ng-device-identifier-cs-US-006\"> </a></td><td>Vascular Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">XR-001<a name=\"ng-device-identifier-cs-XR-001\"> </a></td><td>Mobile X-ray (DX)</td></tr><tr><td style=\"white-space:nowrap\">XR-002<a name=\"ng-device-identifier-cs-XR-002\"> </a></td><td>Fixed X-ray Room (CR)</td></tr><tr><td style=\"white-space:nowrap\">XR-003<a name=\"ng-device-identifier-cs-XR-003\"> </a></td><td>Digital Radiography Panel (DR)</td></tr><tr><td style=\"white-space:nowrap\">XR-004<a name=\"ng-device-identifier-cs-XR-004\"> </a></td><td>PACS Workstation</td></tr><tr><td style=\"white-space:nowrap\">XR-005<a name=\"ng-device-identifier-cs-XR-005\"> </a></td><td>Fluoroscopy System</td></tr><tr><td style=\"white-space:nowrap\">XR-006<a name=\"ng-device-identifier-cs-XR-006\"> </a></td><td>Mammography System (MG)</td></tr><tr><td style=\"white-space:nowrap\">XR-007<a name=\"ng-device-identifier-cs-XR-007\"> </a></td><td>Dental X-ray (Intraoral)</td></tr><tr><td style=\"white-space:nowrap\">CT-001<a name=\"ng-device-identifier-cs-CT-001\"> </a></td><td>CT Scanner 16-slice</td></tr><tr><td style=\"white-space:nowrap\">CT-002<a name=\"ng-device-identifier-cs-CT-002\"> </a></td><td>CT Scanner 64-slice</td></tr><tr><td style=\"white-space:nowrap\">CT-003<a name=\"ng-device-identifier-cs-CT-003\"> </a></td><td>CT Injector (Contrast)</td></tr><tr><td style=\"white-space:nowrap\">CT-004<a name=\"ng-device-identifier-cs-CT-004\"> </a></td><td>CT Workstation (Reconstruction)</td></tr><tr><td style=\"white-space:nowrap\">MR-001<a name=\"ng-device-identifier-cs-MR-001\"> </a></td><td>MRI 1.5T Scanner</td></tr><tr><td style=\"white-space:nowrap\">MR-002<a name=\"ng-device-identifier-cs-MR-002\"> </a></td><td>MRI 3.0T Scanner</td></tr><tr><td style=\"white-space:nowrap\">MR-003<a name=\"ng-device-identifier-cs-MR-003\"> </a></td><td>MRI Patient Monitor (MR-Conditional)</td></tr><tr><td style=\"white-space:nowrap\">BED-001<a name=\"ng-device-identifier-cs-BED-001\"> </a></td><td>Infusion Pump</td></tr><tr><td style=\"white-space:nowrap\">BED-002<a name=\"ng-device-identifier-cs-BED-002\"> </a></td><td>Syringe Pump</td></tr><tr><td style=\"white-space:nowrap\">BED-003<a name=\"ng-device-identifier-cs-BED-003\"> </a></td><td>Ventilator</td></tr><tr><td style=\"white-space:nowrap\">BED-004<a name=\"ng-device-identifier-cs-BED-004\"> </a></td><td>Anesthesia Machine</td></tr><tr><td style=\"white-space:nowrap\">BED-005<a name=\"ng-device-identifier-cs-BED-005\"> </a></td><td>Defibrillator (AED/Manual)</td></tr><tr><td style=\"white-space:nowrap\">HH-001<a name=\"ng-device-identifier-cs-HH-001\"> </a></td><td>Handheld ECG Recorder</td></tr><tr><td style=\"white-space:nowrap\">HH-002<a name=\"ng-device-identifier-cs-HH-002\"> </a></td><td>Handheld Capnograph</td></tr><tr><td style=\"white-space:nowrap\">HH-003<a name=\"ng-device-identifier-cs-HH-003\"> </a></td><td>Handheld Vital Signs Monitor (NIBP/SpO2)</td></tr><tr><td style=\"white-space:nowrap\">HH-004<a name=\"ng-device-identifier-cs-HH-004\"> </a></td><td>Glucometer (POC)</td></tr><tr><td style=\"white-space:nowrap\">HH-005<a name=\"ng-device-identifier-cs-HH-005\"> </a></td><td>Fetal Doppler (Handheld)</td></tr><tr><td style=\"white-space:nowrap\">HH-006<a name=\"ng-device-identifier-cs-HH-006\"> </a></td><td>Handheld Ultrasound (Probe)</td></tr><tr><td style=\"white-space:nowrap\">IOT-001<a name=\"ng-device-identifier-cs-IOT-001\"> </a></td><td>Cold Chain Temperature Logger</td></tr><tr><td style=\"white-space:nowrap\">IOT-002<a name=\"ng-device-identifier-cs-IOT-002\"> </a></td><td>Room Air Quality Monitor (PM/CO2)</td></tr><tr><td style=\"white-space:nowrap\">IOT-003<a name=\"ng-device-identifier-cs-IOT-003\"> </a></td><td>Smart Medical Scale (Bed/Chair)</td></tr><tr><td style=\"white-space:nowrap\">IOT-004<a name=\"ng-device-identifier-cs-IOT-004\"> </a></td><td>Asset Tracker (BLE/GPS)</td></tr><tr><td style=\"white-space:nowrap\">IOT-005<a name=\"ng-device-identifier-cs-IOT-005\"> </a></td><td>Refrigerator Door/Temperature Sensor</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.11" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgDeviceIdentifierCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG Electromechanical Medical Device Identifier CS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Simplified CodeSystem of 50 placeholder identifiers for electromechanical medical devices (vital signs, analyzers, imaging/DICOM, bedside, handheld, IoT)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "50"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Automated Blood Pressure Monitor" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pulse Oximeter (SpO2)" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Digital Thermometer" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ECG Monitor (12-lead)" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Capnograph (EtCO2)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Multiparameter Patient Monitor" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Spirometer" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VS-008" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-invasive Cardiac Output Monitor" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chemistry Analyzer" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hematology Analyzer" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Immunoassay Analyzer" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Blood Gas Analyzer" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Coagulation Analyzer" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN-006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PCR Analyzer (qPCR)" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "US-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cart Ultrasound System" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "US-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Portable Ultrasound" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "US-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Point-of-Care Ultrasound" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "US-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Handheld Ultrasound Probe" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "US-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Obstetric Ultrasound" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "US-006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vascular Ultrasound" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mobile X-ray (DX)" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fixed X-ray Room (CR)" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Digital Radiography Panel (DR)" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PACS Workstation" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluoroscopy System" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mammography System (MG)" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "XR-007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dental X-ray (Intraoral)" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CT-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CT Scanner 16-slice" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CT-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CT Scanner 64-slice" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CT-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CT Injector (Contrast)" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CT-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CT Workstation (Reconstruction)" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MR-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MRI 1.5T Scanner" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MR-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MRI 3.0T Scanner" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MR-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MRI Patient Monitor (MR-Conditional)" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infusion Pump" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Syringe Pump" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventilator" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anesthesia Machine" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Defibrillator (AED/Manual)" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HH-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Handheld ECG Recorder" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HH-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Handheld Capnograph" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HH-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Handheld Vital Signs Monitor (NIBP/SpO2)" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HH-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Glucometer (POC)" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HH-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fetal Doppler (Handheld)" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HH-006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Handheld Ultrasound (Probe)" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IOT-001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cold Chain Temperature Logger" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IOT-002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Room Air Quality Monitor (PM/CO2)" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IOT-003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Smart Medical Scale (Bed/Chair)" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IOT-004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Asset Tracker (BLE/GPS)" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IOT-005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Refrigerator Door/Temperature Sensor" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

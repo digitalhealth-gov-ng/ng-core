@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Task/NgTask-001> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgTask-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task NgTask-001</b></p><a name=\"NgTask-001\"> </a><a name=\"hcNgTask-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-task.html\">NG Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>priority</b>: Urgent</p><p><b>code</b>: <span title=\"Codes:\">Process antenatal referral</span></p><p><b>focus</b>: <a href=\"ServiceRequest-NgServiceRequest-001.html\">ServiceRequest </a></p><p><b>for</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>authoredOn</b>: 2026-08-03 09:35:00+0100</p><p><b>lastModified</b>: 2026-08-03 09:40:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></p><p><b>owner</b>: <a href=\"Organization-NgProviderOrganization-001.html\">Organization Akure Central Hospital</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">Urgent specialist assessment requested for elevated blood pressure</span></p><p><b>note</b>: </p><blockquote><div><p>Review the referral request, confirm acceptance, and arrange specialist\nobstetric assessment for the patient.</p>\n</div></blockquote><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Referral document</span></td><td><a href=\"DocumentReference-NgDocuments-001.html\">DocumentReference: status = current; docStatus = final; type = Appends; category = ; date = 2026-08-03 07:30:00+0100</a></td></tr></table></div>"
+  ] ;
+  fhir:Task.status [ fhir:value "requested"] ;
+  fhir:Task.intent [ fhir:value "order"] ;
+  fhir:Task.priority [ fhir:value "urgent"] ;
+  fhir:Task.code [
+     fhir:CodeableConcept.text [ fhir:value "Process antenatal referral" ]
+  ] ;
+  fhir:Task.focus [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/ServiceRequest/NgServiceRequest-001> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/NgServiceRequest-001" ]
+  ] ;
+  fhir:Task.for [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:Task.authoredOn [ fhir:value "2026-08-03T09:35:00+01:00"^^xsd:dateTime] ;
+  fhir:Task.lastModified [ fhir:value "2026-08-03T09:40:00+01:00"^^xsd:dateTime] ;
+  fhir:Task.requester [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+  ] ;
+  fhir:Task.owner [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgProviderOrganization-001> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgProviderOrganization-001" ]
+  ] ;
+  fhir:Task.reasonCode [
+     fhir:CodeableConcept.text [ fhir:value "Urgent specialist assessment requested for elevated blood pressure" ]
+  ] ;
+  fhir:Task.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Review the referral request, confirm acceptance, and arrange specialist\nobstetric assessment for the patient." ]
+  ] ;
+  fhir:Task.input [
+     fhir:index 0 ;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.text [ fhir:value "Referral document" ]
+     ] ;
+     fhir:Task.input.valueReference [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/DocumentReference/NgDocuments-001> ;
+       fhir:Reference.reference [ fhir:value "DocumentReference/NgDocuments-001" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Task/NgTask-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

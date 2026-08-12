@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-reason-not-started-art-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-reason-not-started-art-cs</b></p><a name="ng-hiv-reason-not-started-art-cs"> </a><a name="hcng-hiv-reason-not-started-art-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">referred-tx-not-initiated<a name="ng-hiv-reason-not-started-art-cs-referred-tx-not-initiated"> </a></td><td>Referred TX not initiated</td></tr><tr><td style="white-space:nowrap">declined<a name="ng-hiv-reason-not-started-art-cs-declined"> </a></td><td>Declined</td></tr><tr><td style="white-space:nowrap">died<a name="ng-hiv-reason-not-started-art-cs-died"> </a></td><td>Died</td></tr><tr><td style="white-space:nowrap">known-positive-on-art<a name="ng-hiv-reason-not-started-art-cs-known-positive-on-art"> </a></td><td>Known +ve on ART</td></tr><tr><td style="white-space:nowrap">on-adherence-preparation<a name="ng-hiv-reason-not-started-art-cs-on-adherence-preparation"> </a></td><td>On adherence preparation</td></tr><tr><td style="white-space:nowrap">on-oi-management<a name="ng-hiv-reason-not-started-art-cs-on-oi-management"> </a></td><td>On OI management</td></tr><tr><td style="white-space:nowrap">other<a name="ng-hiv-reason-not-started-art-cs-other"> </a></td><td>Other Specify here</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.69"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivReasonNotStartedARTCS"/>
+  <title value="HIV - Reason Not Started ART CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reason Not Started ART"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="referred-tx-not-initiated"/>
+    <display value="Referred TX not initiated"/>
+  </concept>
+  <concept>
+    <code value="declined"/>
+    <display value="Declined"/>
+  </concept>
+  <concept>
+    <code value="died"/>
+    <display value="Died"/>
+  </concept>
+  <concept>
+    <code value="known-positive-on-art"/>
+    <display value="Known +ve on ART"/>
+  </concept>
+  <concept>
+    <code value="on-adherence-preparation"/>
+    <display value="On adherence preparation"/>
+  </concept>
+  <concept>
+    <code value="on-oi-management"/>
+    <display value="On OI management"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other Specify here"/>
+  </concept>
+</CodeSystem>

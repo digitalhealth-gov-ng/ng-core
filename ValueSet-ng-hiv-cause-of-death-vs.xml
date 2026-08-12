@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-cause-of-death-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-cause-of-death-vs</b></p><a name="ng-hiv-cause-of-death-vs"> </a><a name="hcng-hiv-cause-of-death-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-care-art-codes-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-1">cause-of-death-1</a></td><td style="color: #cccccc">HIV related</td><td>Source form code 1.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-2">cause-of-death-2</a></td><td style="color: #cccccc">TB</td><td>Source form code 2.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-3">cause-of-death-3</a></td><td style="color: #cccccc">Road accident</td><td>Source form code 3.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-4">cause-of-death-4</a></td><td style="color: #cccccc">Malaria</td><td>Source form code 4.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-5">cause-of-death-5</a></td><td style="color: #cccccc">COPD</td><td>Source form code 5.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-6">cause-of-death-6</a></td><td style="color: #cccccc">Hypertension</td><td>Source form code 6.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-7">cause-of-death-7</a></td><td style="color: #cccccc">Diabetes</td><td>Source form code 7.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-cause-of-death-8">cause-of-death-8</a></td><td style="color: #cccccc">Others</td><td>Source form code 8: Others (specify).</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cause-of-death-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.54"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivCauseOfDeathVS"/>
+  <title value="NG HIV Cause of Death"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-27"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Cause-of-death categories used on the Nigeria HIV Care/ART Card."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"/>
+      <concept>
+        <code value="cause-of-death-1"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-2"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-3"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-4"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-5"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-6"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-7"/>
+      </concept>
+      <concept>
+        <code value="cause-of-death-8"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

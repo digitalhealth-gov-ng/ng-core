@@ -1,0 +1,653 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgTertiarySandboxCapability> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgTertiarySandboxCapability"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Nigeria Core Tertiary Referral Conformance and Sandbox Capability</h2><p>This narrative is a developer-facing summary of the computable Nigeria Core capability requirements for this actor and facility level. The computable <code>CapabilityStatement</code> remains authoritative.</p><h3>Common resource interactions and outcomes</h3><p>Unless this CapabilityStatement narrows a resource capability, each listed resource follows the R4 interaction outcomes below. Failed interactions SHALL return a FHIR <code>OperationOutcome</code> with an appropriate HTTP 4xx or 5xx status.</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Interaction</th><th>Successful outcome</th><th>Failure outcome</th></tr></thead><tbody><tr><td><code>read</code></td><td>HTTP 200 + requested resource</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>vread</code></td><td>HTTP 200 + requested historical version</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>create</code></td><td>HTTP 201 Created; representation or minimal response as negotiated</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>update</code></td><td>HTTP 200; or HTTP 201 for update-as-create</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>patch</code></td><td>HTTP 200; representation or minimal response as negotiated</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>delete</code></td><td>HTTP 200 or 204 when deletion is permitted</td><td>Rejected/protected deletion: HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>history-instance</code></td><td>HTTP 200 + <code>Bundle.type=history</code></td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>history-type</code></td><td>HTTP 200 + <code>Bundle.type=history</code></td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>search-type</code></td><td>HTTP 200 + <code>Bundle.type=searchset</code>, with paging where required</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr></tbody></table><h3>Server-level Bundle interactions</h3><p>Where declared by the computable CapabilityStatement, the following server-level Bundle interactions apply.</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Interaction</th><th>Successful outcome</th><th>Failure behaviour</th></tr></thead><tbody><tr><td><code>transaction</code></td><td>HTTP 200 with <code>Bundle.type=transaction-response</code></td><td>Transaction failure: HTTP 4xx/5xx with <code>OperationOutcome</code>; processing is atomic.</td></tr><tr><td><code>batch</code></td><td>HTTP 200 with <code>Bundle.type=batch-response</code></td><td>Each entry carries its own result and may carry an entry-level <code>OperationOutcome</code>.</td></tr></tbody></table><h3>Resource capability matrix</h3><p><b>Common searches:</b> <code>_id (token)</code>, <code>_lastUpdated (date)</code>, and <code>_profile (uri)</code>. Resource-specific searches are listed below. Unless narrowed by the computable statement, failed operations SHALL return an appropriate HTTP 4xx/5xx response with <code>OperationOutcome</code>.</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\"><thead><tr><th>Resource</th><th>Supported Nigeria Core Profile</th><th>Resource-specific search</th><th>Operations and successful outcome</th></tr></thead><tbody><tr><td><code>StructureDefinition</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>name (string)</code><br/><code>type (token)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>ValueSet</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>name (string)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result<br/><code>$expand</code> — HTTP 200 with the expanded <code>ValueSet</code><br/><code>$validate-code</code> — HTTP 200 with <code>Parameters</code> containing the code-validation result</td></tr><tr><td><code>CodeSystem</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>name (string)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result<br/><code>$lookup</code> — HTTP 200 with <code>Parameters</code> containing concept details</td></tr><tr><td><code>ConceptMap</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>name (string)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result<br/><code>$translate</code> — HTTP 200 with <code>Parameters</code> containing the translation result</td></tr><tr><td><code>CapabilityStatement</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>name (string)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result<br/><code>$implements</code> — HTTP 200 with <code>OperationOutcome</code> containing no issue of severity <code>error</code> or <code>fatal</code> when requested capabilities are implemented</td></tr><tr><td><code>OperationDefinition</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>code (token)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>SearchParameter</code></td><td>Base FHIR resource</td><td><code>url (uri)</code><br/><code>code (token)</code><br/><code>base (token)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>TestScript</code></td><td>Base FHIR resource</td><td><i>None beyond common searches</i></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>ImplementationGuide</code></td><td>Base FHIR resource</td><td><i>None beyond common searches</i></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr></tbody></table></div>"
+  ] ;
+  fhir:CapabilityStatement.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgTertiarySandboxCapability"] ;
+  fhir:CapabilityStatement.version [ fhir:value "0.0.0"] ;
+  fhir:CapabilityStatement.name [ fhir:value "NgTertiarySandboxCapability"] ;
+  fhir:CapabilityStatement.title [ fhir:value "Nigeria Core Tertiary Referral Conformance and Sandbox Capability"] ;
+  fhir:CapabilityStatement.status [ fhir:value "active"] ;
+  fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CapabilityStatement.date [ fhir:value "2026-08-09"^^xsd:date] ;
+  fhir:CapabilityStatement.publisher [ fhir:value "NDHI"] ;
+  fhir:CapabilityStatement.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Conformance and Sandbox Service role in tertiary referral facilities."] ;
+  fhir:CapabilityStatement.useContext [
+     fhir:index 0 ;
+     fhir:UsageContext.code [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type" ] ;
+       fhir:Coding.code [ fhir:value "venue" ]
+     ] ;
+     fhir:UsageContext.valueCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Tertiary referral facilities" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.purpose [ fhir:value "Defines the computable Nigeria Core requirements for the Nigeria Core Conformance and Sandbox Service\nrole in tertiary referral facilities. Supports comprehensive artefact discovery terminology validation operation inspection search testing and IG inspection.\n\nThis CapabilityStatement supports implementation, procurement, vendor onboarding,\nSANDBOX FHIR configuration, interoperability testing, and automated conformance\nassessment. A deployed server SHALL expose only capabilities actually implemented\nby the deployment in its runtime /metadata response."] ;
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"] ;
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:CapabilityStatement.format [
+     fhir:value "json" ;
+     fhir:index 0
+  ], [
+     fhir:value "xml" ;
+     fhir:index 1
+  ] ;
+  fhir:CapabilityStatement.patchFormat [
+     fhir:value "application/json-patch+json" ;
+     fhir:index 0
+  ], [
+     fhir:value "application/xml-patch+xml" ;
+     fhir:index 1
+  ] ;
+  fhir:CapabilityStatement.rest [
+     fhir:index 0 ;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ] ;
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "Nigeria Core Nigeria Core Conformance and Sandbox Service requirements for tertiary referral facilities. Provides advanced conformance artefact terminology validation SearchParameter TestScript and ImplementationGuide endpoints.\n\nReference Policy: systems SHALL support literal FHIR references and logical\nidentifier-based references. Same-server and same-Bundle relationships SHOULD\nuse Reference.reference. Cross-platform relationships MAY additionally use\nReference.identifier with stable national, programme, regulator-issued, or local\nidentifiers. External absolute references are not assumed to be resolvable unless\nrequired by an exchange agreement or a more specific CapabilityStatement.\n\nSearch Policy: supported searches SHALL follow FHIR R4 semantics. Search success\nreturns HTTP 200 with Bundle.type = searchset. Search failures SHALL return an\nappropriate HTTP 4xx/5xx response with OperationOutcome. Servers SHALL document\nrequired filters and SHALL NOT apply undocumented hidden filters.\n\nOperation Policy: the referenced OperationDefinition is authoritative for scope,\nparameters, input types, output types, and cardinalities. Failed operations SHALL\nreturn an appropriate HTTP 4xx/5xx response with OperationOutcome." ] ;
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "The Nigeria Core conformance and sandbox environment MAY use simplified\nauthentication suitable for implementation testing. Synthetic, anonymised,\npseudonymised, or otherwise authorised test data SHALL be used." ]
+     ] ;
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "StructureDefinition" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core StructureDefinition read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with StructureDefinition; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested StructureDefinition. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical StructureDefinition version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required type search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ValueSet" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core ValueSet read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with ValueSet; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested ValueSet. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical ValueSet version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "expand" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/ValueSet-expand" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/ValueSet-expand>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with the expanded ValueSet. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced OperationDefinition." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate-code" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with Parameters containing the validation result. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced OperationDefinition." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "CodeSystem" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core CodeSystem read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with CodeSystem; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested CodeSystem. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical CodeSystem version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "lookup" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with Parameters containing concept details. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced OperationDefinition." ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "CapabilityStatement" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core CapabilityStatement read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with CapabilityStatement; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested CapabilityStatement. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical CapabilityStatement version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "implements" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/CapabilityStatement-implements" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/CapabilityStatement-implements>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome indicating whether the requested capabilities are implemented. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced OperationDefinition." ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ConceptMap" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core ConceptMap read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with ConceptMap; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested ConceptMap. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical ConceptMap version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "translate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/ConceptMap-translate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with Parameters containing the translation result. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced OperationDefinition." ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "OperationDefinition" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core OperationDefinition read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with OperationDefinition; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested OperationDefinition. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical OperationDefinition version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "TestScript" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core TestScript read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with TestScript; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested TestScript. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical TestScript version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "SearchParameter" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core SearchParameter read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with SearchParameter; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested SearchParameter. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical SearchParameter version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "base" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required base search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ImplementationGuide" ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Nigeria Core ImplementationGuide read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with ImplementationGuide; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested ImplementationGuide. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with the requested historical ImplementationGuide version. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalRead [ fhir:value "full-support" ] ;
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal" ;
+         fhir:index 0
+       ], [
+         fhir:value "logical" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required url search using FHIR R4 uri search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome." ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome." ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "validate" ] ;
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Resource-validate" ;
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Resource-validate>
+         ] ;
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome." ]
+       ]
+     ] ;
+     fhir:CapabilityStatement.rest.searchParam [
+       fhir:index 0 ;
+       fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.definition [
+         fhir:value "http://hl7.org/fhir/SearchParameter/Resource-id" ;
+         fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search by logical resource id." ]
+     ], [
+       fhir:index 1 ;
+       fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.definition [
+         fhir:value "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated" ;
+         fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Supports incremental synchronisation using Resource.meta.lastUpdated." ]
+     ], [
+       fhir:index 2 ;
+       fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_profile" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.definition [
+         fhir:value "http://hl7.org/fhir/SearchParameter/Resource-profile" ;
+         fhir:link <http://hl7.org/fhir/SearchParameter/Resource-profile>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Search by profile assertion in Resource.meta.profile." ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgTertiarySandboxCapability.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

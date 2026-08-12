@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-other-test-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-int-lab-other-test-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-int-lab-other-test-vs</b></p><a name=\"ng-hiv-int-lab-other-test-vs\"> </a><a name=\"hcng-hiv-int-lab-other-test-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-cd4-count\">other-test-cd4-count</a></td><td style=\"color: #cccccc\">CD4+ cell count</td><td>Absolute CD4+ cell count.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-cd4-percentage\">other-test-cd4-percentage</a></td><td style=\"color: #cccccc\">CD4 percentage</td><td>CD4 percentage.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-cd4-lfa\">other-test-cd4-lfa</a></td><td style=\"color: #cccccc\">CD4 LFA</td><td>CD4 lateral-flow assay.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-tb-lf-lam\">other-test-tb-lf-lam</a></td><td style=\"color: #cccccc\">TB LF-LAM</td><td>Tuberculosis lateral-flow urine lipoarabinomannan test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-serum-crag\">other-test-serum-crag</a></td><td style=\"color: #cccccc\">Serum CrAg</td><td>Serum cryptococcal antigen test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-csf-crag\">other-test-csf-crag</a></td><td style=\"color: #cccccc\">CSF CrAg</td><td>Cerebrospinal-fluid cryptococcal antigen test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-csf-mcs\">other-test-csf-mcs</a></td><td style=\"color: #cccccc\">CSF M/C/S</td><td>Cerebrospinal-fluid microscopy, culture and sensitivity.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-hbsag\">other-test-hbsag</a></td><td style=\"color: #cccccc\">HBsAg</td><td>Hepatitis B surface antigen test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-hcv-antibody\">other-test-hcv-antibody</a></td><td style=\"color: #cccccc\">HCV antibody</td><td>Hepatitis C virus antibody test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-hbv-viral-load\">other-test-hbv-viral-load</a></td><td style=\"color: #cccccc\">HBV viral load</td><td>Hepatitis B virus viral-load test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-hcv-viral-load\">other-test-hcv-viral-load</a></td><td style=\"color: #cccccc\">HCV viral load</td><td>Hepatitis C virus viral-load test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-syphilis\">other-test-syphilis</a></td><td style=\"color: #cccccc\">Syphilis</td><td>Syphilis serology.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-hpv\">other-test-hpv</a></td><td style=\"color: #cccccc\">HPV</td><td>Human papillomavirus test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-cytology\">other-test-cytology</a></td><td style=\"color: #cccccc\">Cytology</td><td>Cytology or cervical-screening test, including VIA or Pap smear as printed on the source form.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-random-glucose\">other-test-random-glucose</a></td><td style=\"color: #cccccc\">Random glucose</td><td>Random blood-glucose test.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-naat\">other-test-naat</a></td><td style=\"color: #cccccc\">NAAT</td><td>Nucleic-acid amplification test; the target organism is not specified on the source form.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-other-test-urinalysis\">other-test-urinalysis</a></td><td style=\"color: #cccccc\">Urinalysis</td><td>Urinalysis.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-other-test-vs"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.48.85" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "NgHivIntLabOtherTestVS"] ;
+  fhir:ValueSet.title [ fhir:value "NG HIV Integrated Laboratory Other Test"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Other fixed laboratory investigations printed on the integrated laboratory form."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-cd4-count" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-cd4-percentage" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-cd4-lfa" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-tb-lf-lam" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-serum-crag" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-csf-crag" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-csf-mcs" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-hbsag" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-hcv-antibody" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-hbv-viral-load" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-hcv-viral-load" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-syphilis" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-hpv" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-cytology" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-random-glucose" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-naat" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other-test-urinalysis" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-other-test-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

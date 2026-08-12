@@ -1,0 +1,82 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-pharmacy-worksheet-medicine-category-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-pharmacy-worksheet-medicine-category-cs</b></p><a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs\"> </a><a name=\"hcng-hiv-pharmacy-worksheet-medicine-category-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-category-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">adult-art<a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs-adult-art\"> </a></td><td>Adult ART</td></tr><tr><td style=\"white-space:nowrap\">paediatric-art<a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs-paediatric-art\"> </a></td><td>Paediatric ART</td></tr><tr><td style=\"white-space:nowrap\">ctx-prophylaxis<a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs-ctx-prophylaxis\"> </a></td><td>Co-trimoxazole prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">tb-preventive-therapy<a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs-tb-preventive-therapy\"> </a></td><td>TB preventive therapy</td></tr><tr><td style=\"white-space:nowrap\">anti-infective<a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs-anti-infective\"> </a></td><td>Anti-infective, including STI treatment</td></tr><tr><td style=\"white-space:nowrap\">advanced-hiv-disease<a name=\"ng-hiv-pharmacy-worksheet-medicine-category-cs-advanced-hiv-disease\"> </a></td><td>Advanced HIV disease treatment</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-category-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.63"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivPharmacyWorksheetMedicineCategoryCS",
+  "title" : "NG HIV Pharmacy Worksheet Medicine Categories",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-29",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medicine-section categories printed on the revised Pharmacy Daily Worksheet.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "adult-art",
+    "display" : "Adult ART"
+  },
+  {
+    "code" : "paediatric-art",
+    "display" : "Paediatric ART"
+  },
+  {
+    "code" : "ctx-prophylaxis",
+    "display" : "Co-trimoxazole prophylaxis"
+  },
+  {
+    "code" : "tb-preventive-therapy",
+    "display" : "TB preventive therapy"
+  },
+  {
+    "code" : "anti-infective",
+    "display" : "Anti-infective, including STI treatment"
+  },
+  {
+    "code" : "advanced-hiv-disease",
+    "display" : "Advanced HIV disease treatment"
+  }]
+}

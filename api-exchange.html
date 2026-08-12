@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>API &amp; Swagger - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"29"}
+    h3,h4,h5,h6{--heading-prefix:"29"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>API &amp; Swagger</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>API &amp; Swagger</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+  <li><a href="#swagger-endpoints" id="markdown-toc-swagger-endpoints">Visible Swagger Endpoint Summary [DRAFT]</a></li>
+  <li><a href="#key-testing-scenarios" id="markdown-toc-key-testing-scenarios">Key Testing Scenarios</a></li>
+  <li><a href="#ng-patient-summary-and-ips-testing-draft" id="markdown-toc-ng-patient-summary-and-ips-testing-draft">NG Patient Summary and IPS Testing [DRAFT]</a></li>
+  <li><a href="#certificate-testing-draft" id="markdown-toc-certificate-testing-draft">Certificate Testing [DRAFT]</a></li>
+  <li><a href="#openapi-yaml" id="markdown-toc-openapi-yaml">Visible OpenAPI YAML Specification</a></li>
+  <li><a href="#connectathon-and-sandbox-notes" id="markdown-toc-connectathon-and-sandbox-notes">Connectathon and Sandbox Notes</a></li>
+  <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+</ul>
+
+</div>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>This page provides a developer-facing Swagger/OpenAPI reference for the Nigeria Core FHIR sandbox. It is intended for vendors, programme teams, implementers, testers, and Connectathon participants who need a quick way to understand and test the major API patterns in this Implementation Guide.</p>
+
+<p>The OpenAPI specification remains inside this Markdown file as both embedded JSON and visible YAML, so the page remains useful even where JavaScript is blocked.</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>The Swagger reference covers FHIR capability discovery, patient lookup and matching, NG Patient Summary and IPS-aligned Bundle exchange, portable certificates, Bundle validation and submission, registries, terminology, clinical exchange, and FHIR-to-NHMIS/DHIS2 reporting adapter testing.</p>
+
+<h3 id="swagger-endpoints">Visible Swagger Endpoint Summary [DRAFT]</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Area</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/metadata</code></td>
+      <td>Capability</td>
+      <td>Get FHIR CapabilityStatement</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Patient</code></td>
+      <td>Patient</td>
+      <td>Search patients</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Patient</code></td>
+      <td>Patient</td>
+      <td>Create patient</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Patient/{id}</code></td>
+      <td>Patient</td>
+      <td>Read patient</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Patient/$match</code></td>
+      <td>Patient</td>
+      <td>Match patient</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Patient/{id}/$generate-ng-patient-summary</code></td>
+      <td>NG Patient Summary / IPS</td>
+      <td>Generate NG Patient Summary</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/DocumentReference</code></td>
+      <td>NG Patient Summary / IPS, Certificates</td>
+      <td>Search summaries and certificates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Patient/{id}/$generate-certificate</code></td>
+      <td>Certificates</td>
+      <td>Generate portable certificate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/DocumentReference/{id}/$verify-certificate</code></td>
+      <td>Certificates</td>
+      <td>Verify portable certificate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Bundle/$validate-ng-bundle</code></td>
+      <td>Bundles</td>
+      <td>Validate Nigeria Core Bundle</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Bundle/$submit-ng-bundle</code></td>
+      <td>Bundles</td>
+      <td>Submit Nigeria Core Bundle</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Bundle/$resolve-conflicts</code></td>
+      <td>Bundles</td>
+      <td>Resolve Bundle conflicts</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Bundle/$export-ng-bundle</code></td>
+      <td>Bundles</td>
+      <td>Export Nigeria Core Bundle</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Bundle/$remove-obsolete-bundles</code></td>
+      <td>Bundles</td>
+      <td>Remove obsolete test Bundles</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Organization</code></td>
+      <td>Registries</td>
+      <td>Search facilities and organisations</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Organization/$verify</code></td>
+      <td>Registries</td>
+      <td>Verify facility or organisation</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Practitioner</code></td>
+      <td>Registries</td>
+      <td>Search practitioners and health workers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Practitioner/$verify</code></td>
+      <td>Registries</td>
+      <td>Verify practitioner</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Immunization</code></td>
+      <td>Clinical, Certificates</td>
+      <td>Search immunizations</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Observation</code></td>
+      <td>Clinical</td>
+      <td>Search observations</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/MedicationRequest</code></td>
+      <td>Clinical</td>
+      <td>Search medication requests</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/ValueSet/$expand</code></td>
+      <td>Terminology</td>
+      <td>Expand ValueSet</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/ValueSet/$validate-code</code></td>
+      <td>Terminology</td>
+      <td>Validate code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/ConceptMap/$translate</code></td>
+      <td>Terminology</td>
+      <td>Translate code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/Measure/$submit-ng-report</code></td>
+      <td>Reporting</td>
+      <td>Submit FHIR-derived NHMIS/DHIS2 report</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="key-testing-scenarios">Key Testing Scenarios</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>API Areas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Capability discovery</td>
+      <td><code class="language-plaintext highlighter-rouge">GET /metadata</code></td>
+    </tr>
+    <tr>
+      <td>Patient lookup and matching</td>
+      <td><code class="language-plaintext highlighter-rouge">GET /Patient</code>, <code class="language-plaintext highlighter-rouge">POST /Patient/$match</code></td>
+    </tr>
+    <tr>
+      <td>NG Patient Summary generation</td>
+      <td><code class="language-plaintext highlighter-rouge">POST /Patient/{id}/$generate-ng-patient-summary</code></td>
+    </tr>
+    <tr>
+      <td>Summary and certificate discovery</td>
+      <td><code class="language-plaintext highlighter-rouge">GET /DocumentReference</code></td>
+    </tr>
+    <tr>
+      <td>Bundle validation and submission</td>
+      <td><code class="language-plaintext highlighter-rouge">POST /Bundle/$validate-ng-bundle</code>, <code class="language-plaintext highlighter-rouge">POST /Bundle/$submit-ng-bundle</code></td>
+    </tr>
+    <tr>
+      <td>Bundle export and conflict resolution</td>
+      <td><code class="language-plaintext highlighter-rouge">POST /Bundle/$export-ng-bundle</code>, <code class="language-plaintext highlighter-rouge">POST /Bundle/$resolve-conflicts</code></td>
+    </tr>
+    <tr>
+      <td>Facility and provider verification</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization/$verify</code>, <code class="language-plaintext highlighter-rouge">Practitioner/$verify</code></td>
+    </tr>
+    <tr>
+      <td>Terminology testing</td>
+      <td><code class="language-plaintext highlighter-rouge">ValueSet/$expand</code>, <code class="language-plaintext highlighter-rouge">ValueSet/$validate-code</code>, <code class="language-plaintext highlighter-rouge">ConceptMap/$translate</code></td>
+    </tr>
+    <tr>
+      <td>Certificate testing</td>
+      <td><code class="language-plaintext highlighter-rouge">$generate-certificate</code>, <code class="language-plaintext highlighter-rouge">$verify-certificate</code>, <code class="language-plaintext highlighter-rouge">GET /Immunization</code></td>
+    </tr>
+    <tr>
+      <td>FHIR-to-NHMIS/DHIS2 reporting</td>
+      <td><code class="language-plaintext highlighter-rouge">POST /Measure/$submit-ng-report</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ng-patient-summary-and-ips-testing-draft">NG Patient Summary and IPS Testing [DRAFT]</h3>
+
+<p>Because the NG Patient Summary is central to this IG, sandbox testing <strong>SHOULD</strong> include generation, validation, and consumption of a FHIR document Bundle that contains a <code class="language-plaintext highlighter-rouge">Composition</code> and the required data blocks.</p>
+
+<p>Minimum expectations include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Bundle.type = document</code>.</li>
+  <li>The first Bundle entry is a <code class="language-plaintext highlighter-rouge">Composition</code>.</li>
+  <li>The patient resource is present.</li>
+  <li>Mandatory NG Patient Summary data blocks are represented.</li>
+  <li>Known absence or unknown status is represented where required.</li>
+  <li>Originating organisation and creation date are present.</li>
+  <li>Author, custodian, and Provenance are included where applicable.</li>
+  <li>Programme-specific extensions do not break generic NG Patient Summary consumption.</li>
+  <li>Resources validate against Nigeria Core and applicable IPS-aligned profiles.</li>
+</ul>
+
+<h3 id="certificate-testing-draft">Certificate Testing [DRAFT]</h3>
+
+<p>Portable certificates are focused, verifiable documents derived from Nigeria Core and programme-specific profiles. Certificate sandbox testing <strong>SHOULD</strong> include certificate generation, retrieval using <code class="language-plaintext highlighter-rouge">DocumentReference</code>, QR code or verification payload testing, issuer verification, patient identity minimisation, verification of vaccine, laboratory, programme, or service events, validity period handling, and privacy review.</p>
+
+<h3 id="openapi-yaml">Visible OpenAPI YAML Specification</h3>
+
+<p>Coming soon</p>
+
+<h3 id="connectathon-and-sandbox-notes">Connectathon and Sandbox Notes</h3>
+
+<p>Nigeria Core sandbox testing should follow the practical testing style environments:</p>
+
+<ul>
+  <li>Use synthetic patients, facilities, providers, and programme records.</li>
+  <li>Publish clear test tracks.</li>
+  <li>Provide reference examples.</li>
+  <li>Provide validation feedback using <code class="language-plaintext highlighter-rouge">OperationOutcome</code>.</li>
+  <li>Test both successful and failing submissions.</li>
+  <li>Test PHC, secondary, tertiary, registry, programme, and Shared Health Record workflows.</li>
+  <li>Record conformance results and implementation feedback.</li>
+  <li>Use the findings to improve profiles, operations, terminology, examples, and guidance.</li>
+</ul>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<p>Systems implementing this Swagger view <strong>SHOULD</strong> also publish a FHIR <code class="language-plaintext highlighter-rouge">CapabilityStatement</code> and, where custom operations are used, corresponding <code class="language-plaintext highlighter-rouge">OperationDefinition</code> resources.</p>
+
+<p>The Swagger/OpenAPI representation is provided to help developers test the sandbox. It does not replace the computable IG package or formal FHIR conformance artefacts.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

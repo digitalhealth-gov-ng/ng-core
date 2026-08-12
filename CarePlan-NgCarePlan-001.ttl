@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CarePlan/NgCarePlan-001> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgCarePlan-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-care-plan" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-care-plan>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan NgCarePlan-001</b></p><a name=\"NgCarePlan-001\"> </a><a name=\"hcNgCarePlan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-care-plan.html\">NG CarePlan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs mnch}\">MNCH</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>period</b>: 2025-11-11 --&gt; 2025-12-31</p><p><b>goal</b>: <a href=\"Goal-NgGoal-001.html\">Goal: lifecycleStatus = active; achievementStatus = Improving; category = ; priority = High Priority; description = ; start[x] = 2025-11-11</a></p></div>"
+  ] ;
+  fhir:CarePlan.status [ fhir:value "active"] ;
+  fhir:CarePlan.intent [ fhir:value "plan"] ;
+  fhir:CarePlan.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs" ] ;
+       fhir:Coding.code [ fhir:value "mnch" ] ;
+       fhir:Coding.display [ fhir:value "MNCH" ]
+     ]
+  ] ;
+  fhir:CarePlan.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] ;
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2025-11-11"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2025-12-31"^^xsd:date ]
+  ] ;
+  fhir:CarePlan.goal [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Goal/NgGoal-001> ;
+     fhir:Reference.reference [ fhir:value "Goal/NgGoal-001" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CarePlan/NgCarePlan-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

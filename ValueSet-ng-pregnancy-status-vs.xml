@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-pregnancy-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-pregnancy-status-vs</b></p><a name="ng-pregnancy-status-vs"> </a><a name="hcng-pregnancy-status-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-ng-pregnancy-status-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pregnancy-status-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/77386006">77386006</a></td><td>Pregnant</td></tr><tr><td><a href="http://snomed.info/id/60001007">60001007</a></td><td>Not pregnant</td></tr><tr><td><a href="http://snomed.info/id/152231000119106">152231000119106</a></td><td>Pregnancy not yet confirmed</td></tr><tr><td><a href="http://snomed.info/id/146799005">146799005</a></td><td>Possible pregnancy</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancy-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.176"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgPregnancyStatusVS"/>
+  <title value="NG Clinical Status VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The outcome of the Pregnancy. Pregnancy status codes value set. "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pregnancy-status-cs"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="77386006"/>
+        <display value="Pregnant"/>
+      </concept>
+      <concept>
+        <code value="60001007"/>
+        <display value="Not pregnant"/>
+      </concept>
+      <concept>
+        <code value="152231000119106"/>
+        <display value="Pregnancy not yet confirmed"/>
+      </concept>
+      <concept>
+        <code value="146799005"/>
+        <display value="Possible pregnancy"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

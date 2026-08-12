@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-encounter-location-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-encounter-location-vs</b></p><a name="ng-hiv-encounter-location-vs"> </a><a name="hcng-hiv-encounter-location-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA6511-5/">LA6511-5</a></td><td>Inpatient</td></tr><tr><td><a href="https://loinc.org/LA10053-9/">LA10053-9</a></td><td>Outpatient Services</td></tr><tr><td><a href="https://loinc.org/LA6508-1/">LA6508-1</a></td><td>STI Outpatient</td></tr><tr><td><a href="https://loinc.org/LA6509-9/">LA6509-9</a></td><td>TB Outpatient</td></tr><tr><td><a href="https://loinc.org/LA7171-7/">LA7171-7</a></td><td>Dermatology</td></tr><tr><td><a href="https://loinc.org/LA7197-2/">LA7197-2</a></td><td>Pediatrics</td></tr><tr><td><a href="https://loinc.org/LP172899-9/">LP172899-9</a></td><td>Nutrition and dietetics</td></tr><tr><td><a href="https://loinc.org/LA6515-6/">LA6515-6</a></td><td>Self-referred (via VCT)</td></tr><tr><td><a href="https://loinc.org/LA6516-4/">LA6516-4</a></td><td>CBO referred (referred from a community-based organization via VCT)</td></tr><tr><td><a href="https://loinc.org/LP96947-4/">LP96947-4</a></td><td>Antenatal testing and surveillance</td></tr><tr><td><a href="https://loinc.org/LA20786-2/">LA20786-2</a></td><td>Labor and delivery</td></tr><tr><td><a href="https://loinc.org/LA6505-7/">LA6505-7</a></td><td>PMTCT</td></tr><tr><td><a href="https://loinc.org/LA31960-0/">LA31960-0</a></td><td>Health center - STD/HIV clinic</td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr><tr><td><a href="https://loinc.org/LP76338-0/">LP76338-0</a></td><td>Index case</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/133906008">133906008</a></td><td>Postpartum care</td></tr><tr><td><a href="http://snomed.info/id/309944008">309944008</a></td><td>Obstetrics department</td></tr><tr><td><a href="http://snomed.info/id/309945009">309945009</a></td><td>Pediatric department</td></tr><tr><td><a href="http://snomed.info/id/309912009">309912009</a></td><td>Medical department</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-encounter-location-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.75"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivEncounterLocationVS"/>
+  <title value="HIV Encounter Locations"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code used for representing the location where the patient is receiving health services."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6511-5"/>
+        <display value="Inpatient"/>
+      </concept>
+      <concept>
+        <code value="LA10053-9"/>
+        <display value="Outpatient Services"/>
+      </concept>
+      <concept>
+        <code value="LA6508-1"/>
+        <display value="STI Outpatient"/>
+      </concept>
+      <concept>
+        <code value="LA6509-9"/>
+        <display value="TB Outpatient"/>
+      </concept>
+      <concept>
+        <code value="LA7171-7"/>
+        <display value="Dermatology"/>
+      </concept>
+      <concept>
+        <code value="LA7197-2"/>
+        <display value="Pediatrics"/>
+      </concept>
+      <concept>
+        <code value="LP172899-9"/>
+        <display value="Nutrition and dietetics"/>
+      </concept>
+      <concept>
+        <code value="LA6515-6"/>
+        <display value="Self-referred (via VCT)"/>
+      </concept>
+      <concept>
+        <code value="LA6516-4"/>
+        <display value="CBO referred (referred from a community-based organization via VCT)"/>
+      </concept>
+      <concept>
+        <code value="LP96947-4"/>
+        <display value="Antenatal testing and surveillance"/>
+      </concept>
+      <concept>
+        <code value="LA20786-2"/>
+        <display value="Labor and delivery"/>
+      </concept>
+      <concept>
+        <code value="LA6505-7"/>
+        <display value="PMTCT"/>
+      </concept>
+      <concept>
+        <code value="LA31960-0"/>
+        <display value="Health center - STD/HIV clinic"/>
+      </concept>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="LP76338-0"/>
+        <display value="Index case"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="133906008"/>
+        <display value="Postpartum care"/>
+      </concept>
+      <concept>
+        <code value="309944008"/>
+        <display value="Obstetrics department"/>
+      </concept>
+      <concept>
+        <code value="309945009"/>
+        <display value="Pediatric department"/>
+      </concept>
+      <concept>
+        <code value="309912009"/>
+        <display value="Medical department"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

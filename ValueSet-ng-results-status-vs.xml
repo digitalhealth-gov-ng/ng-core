@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-results-status-vs"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-results-status-vs</b></p><a name="ng-results-status-vs"> </a><a name="hcng-results-status-vs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/codesystem-observation-status.html"><code>http://hl7.org/fhir/observation-status</code></a><span title="Version is explicitly stated to be 4.0.1"> version &#x1F4CD;4.0.1</span></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude codes from<a href="http://hl7.org/fhir/R4/codesystem-observation-status.html"><code>http://hl7.org/fhir/observation-status</code></a><span title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references"> version &#x1F4E6;4.0.1</span> where concept  is-a <a href="http://hl7.org/fhir/R4/codesystem-observation-status.html#observation-status-entered-in-error">entered-in-error</a></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.186"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgResultsStatusVS"/>
+  <title value="Results Status Codes - IPS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="IPS Observation status codes allowable for results.  This value set includes all observation status codes except \&quot;entered-in-error\&quot; from http://hl7.org/fhir/observation-status."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="Produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/observation-status"/>
+      <version value="4.0.1"/>
+    </include>
+    <exclude>
+      <system value="http://hl7.org/fhir/observation-status"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="entered-in-error"/>
+      </filter>
+    </exclude>
+  </compose>
+</ValueSet>

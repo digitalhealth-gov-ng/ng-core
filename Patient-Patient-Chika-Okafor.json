@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Patient-Chika-Okafor",
+  "meta" : {
+    "lastUpdated" : "2025-11-06T23:47:00+01:00",
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient-Chika-Okafor</b></p><a name=\"Patient-Chika-Okafor\"> </a><a name=\"hcPatient-Chika-Okafor\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-11-06 23:47:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-patient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Chika Okafor  Male, DoB: 1985-06-15 ( mobile: 08045678901)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Industrial Area Port Harcourt RI </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "MOBILE",
+        "display" : "mobile"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "08045678901"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Okafor",
+    "given" : ["Chika"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1985-06-15",
+  "address" : [{
+    "line" : ["Industrial Area"],
+    "city" : "Port Harcourt",
+    "district" : "ri-emohua",
+    "state" : "RI"
+  }]
+}

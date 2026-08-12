@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Coverage/Coverage-Chika-TruthHMO> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Coverage-Chika-TruthHMO"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage Coverage-Chika-TruthHMO</b></p><a name=\"Coverage-Chika-TruthHMO\"> </a><a name=\"hcCoverage-Chika-TruthHMO\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-coverage.html\">NG Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode EHCPOL}\">extended healthcare</span></p><p><b>policyHolder</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>subscriber</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>subscriberId</b>: TRUTH-HMO-CHIKA-2025</p><p><b>beneficiary</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>dependent</b>: 00</p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/subscriber-relationship self}\">Self</span></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>payor</b>: <a href=\"Organization-Organization-Truth-HMO.html\">Truth HMO</a></p><h3>Classes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/coverage-class plan}\">Plan</span></td><td>Standard Corporate Plan</td><td>Truth HMO Corporate Coverage - Employer Sponsored</td></tr></table><p><b>order</b>: 1</p></div>"
+  ] ;
+  fhir:Coverage.status [ fhir:value "active"] ;
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+       fhir:Coding.code [ fhir:value "EHCPOL" ] ;
+       fhir:Coding.display [ fhir:value "extended healthcare" ]
+     ]
+  ] ;
+  fhir:Coverage.policyHolder [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/Patient-Chika-Okafor> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-Chika-Okafor" ] ;
+     fhir:Reference.display [ fhir:value "Chika Okafor" ]
+  ] ;
+  fhir:Coverage.subscriber [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/Patient-Chika-Okafor> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-Chika-Okafor" ] ;
+     fhir:Reference.display [ fhir:value "Chika Okafor" ]
+  ] ;
+  fhir:Coverage.subscriberId [ fhir:value "TRUTH-HMO-CHIKA-2025"] ;
+  fhir:Coverage.beneficiary [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/Patient-Chika-Okafor> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-Chika-Okafor" ] ;
+     fhir:Reference.display [ fhir:value "Chika Okafor" ]
+  ] ;
+  fhir:Coverage.dependent [ fhir:value "00"] ;
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/subscriber-relationship" ] ;
+       fhir:Coding.code [ fhir:value "self" ] ;
+       fhir:Coding.display [ fhir:value "Self" ]
+     ]
+  ] ;
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2025-01-01"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2025-12-31"^^xsd:date ]
+  ] ;
+  fhir:Coverage.payor [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-Truth-HMO> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Truth-HMO" ] ;
+     fhir:Reference.display [ fhir:value "Truth HMO" ]
+  ] ;
+  fhir:Coverage.class [
+     fhir:index 0 ;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ] ;
+         fhir:Coding.code [ fhir:value "plan" ] ;
+         fhir:Coding.display [ fhir:value "Plan" ]
+       ]
+     ] ;
+     fhir:Coverage.class.value [ fhir:value "Standard Corporate Plan" ] ;
+     fhir:Coverage.class.name [ fhir:value "Truth HMO Corporate Coverage - Employer Sponsored" ]
+  ] ;
+  fhir:Coverage.order [ fhir:value "1"^^xsd:positiveInteger] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Coverage/Coverage-Chika-TruthHMO.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

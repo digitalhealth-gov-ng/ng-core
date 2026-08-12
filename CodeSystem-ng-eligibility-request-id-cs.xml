@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-eligibility-request-id-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-eligibility-request-id-cs</b></p><a name="ng-eligibility-request-id-cs"> </a><a name="hcng-eligibility-request-id-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ELAPPROVE01<a name="ng-eligibility-request-id-cs-ELAPPROVE01"> </a></td><td>Eligibility Approved</td></tr><tr><td style="white-space:nowrap">ELAPPROVE02<a name="ng-eligibility-request-id-cs-ELAPPROVE02"> </a></td><td>Eligibility Response ID</td></tr><tr><td style="white-space:nowrap">PA-2025-8847<a name="ng-eligibility-request-id-cs-PA-2025-8847"> </a></td><td>Preauthorization Approved</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.14"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgEligibilityRequestIdCS"/>
+  <title value="Eligibility Request ID CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local codes to identify the type used for an Eligibility Request identifier.&#xA;Intended for use in CoverageEligibilityRequest.identifier.type."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="ELAPPROVE01"/>
+    <display value="Eligibility Approved"/>
+  </concept>
+  <concept>
+    <code value="ELAPPROVE02"/>
+    <display value="Eligibility Response ID"/>
+  </concept>
+  <concept>
+    <code value="PA-2025-8847"/>
+    <display value="Preauthorization Approved"/>
+  </concept>
+</CodeSystem>

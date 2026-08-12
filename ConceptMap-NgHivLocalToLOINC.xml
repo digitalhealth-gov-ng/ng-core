@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="NgHivLocalToLOINC"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap NgHivLocalToLOINC</b></p><a name="NgHivLocalToLOINC"> </a><a name="hcNgHivLocalToLOINC"> </a><p>Mapping from <a href="ValueSet-ng-hiv-local-concepts.html">Nigeria HIV Local Concepts</a> to <a href="ValueSet-ng-hiv-loinc-concepts.html">Nigeria HIV LOINC Concepts</a></p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html">HIV Follow Up Status CodeSystem</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>to (Transfer out)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45256-5 (HIV treatment clinic transferred to)</td></tr><tr><td>dead</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>77978-5 (Patient died from illness of interest)</td></tr><tr><td>drop</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45257-3 (Date dropped from HIV treatment)</td></tr><tr><td>restart</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>63936-9 (Start date of treatment or therapy)</td></tr><tr><td>lost (Lost to follow-up)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45237-5 (Date lost to HIV treatment follow-up)</td></tr><tr><td>stop (Stopped treatment)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>91382-2 (Date medication stopped - Reported)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="CodeSystem-ng-hiv-arv-adherence-cs.html">HIV-ARV Adherence CodeSystem</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Stopped</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>91382-2 (Date medication stopped - Reported)</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href="CodeSystem-ng-yes-no-cs.html">Yes/No Codes</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>true (Yes)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA29252-6 (Currently breastfeeding)</td></tr><tr><td>false (No)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA29253-4 (Not currently breastfeeding)</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <a href="CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html">HIV DSD - Reason For Category Change CodeSystem</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Dead</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>77978-5 (Patient died from illness of interest)</td></tr><tr><td>Lost</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45237-5 (Date lost to HIV treatment follow-up)</td></tr><tr><td>TO</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45256-5 (HIV treatment clinic transferred to)</td></tr><tr><td>Unknown</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA29947-1 (Carrier status unknown)</td></tr><tr><td>Other</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA46-8 (Other)</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <a href="CodeSystem-ng-patient-education-level-cs.html">HIV Patient Education Level Codes</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>No-Education</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA35-1 (No schooling)</td></tr><tr><td>Primary</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA32466-7 (Primary school education)</td></tr><tr><td>Secondary</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA32467-5 (High school education)</td></tr><tr><td>Tertiary</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA15568-1 (Graduated from a college or university)</td></tr><tr><td>TVET</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA39-3 (Technical or trade school)</td></tr><tr><td>Other (Other, specify)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA46-8 (Other)</td></tr></table><hr/><p><b>Group 6 </b>Mapping from <a href="CodeSystem-ng-hiv-positive-tracking-cs.html">HIV Positive Tracking</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Started-ART</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>63936-9 (Start date of treatment or therapy)</td></tr><tr><td>Final-Outcome</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>63939-3 (End date of treatment or therapy)</td></tr><tr><td>Linked-To-Care (Linked to care and treatment)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>67723-7 (Date of health-related event)</td></tr></table><hr/><p><b>Group 7 </b>Mapping from <a href="CodeSystem-ng-yes-no-cs.html">Yes/No Codes</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>true (Yes)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA26438-4 (Yes, I want to become pregnant)</td></tr><tr><td>false (No)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA26440-0 (No, I don't want to become pregnant)</td></tr></table><hr/><p><b>Group 8 </b>Mapping from <a href="CodeSystem-ng-yes-no-cs.html">Yes/No Codes</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>true (Yes)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA15173-0 (Pregnant)</td></tr><tr><td>false (No)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA26683-5 (Not pregnant)</td></tr></table><hr/><p><b>Group 9 </b>Mapping from <a href="CodeSystem-ng-hiv-service-provider-cs.html">HIV Service Providers CodeSystem</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Other (Other (Specify))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA46-8 (Other)</td></tr></table><hr/><p><b>Group 10 </b>Mapping from <a href="CodeSystem-ng-hiv-final-outcome-cs.html">HIV - Final Outcome CodeSystem</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>started-art</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>63936-9 (Start date of treatment or therapy)</td></tr><tr><td>died</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>81954-0 (Date of death [Date])</td></tr><tr><td>confirmed-referral</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>39266-2 (Follow-up (referred to) provider /specialist Set CPHS)</td></tr><tr><td>started-art-in-other-hf</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45235-9 (Date original clinic HIV treatment start)</td></tr><tr><td>lost-to-follow-up</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45237-5 (Date lost to HIV treatment follow-up)</td></tr><tr><td>other</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA46-8 (Other)</td></tr></table><hr/><p><b>Group 11 </b>Mapping from <a href="CodeSystem-ng-tb-tpt-prophylaxis-type-cs.html">TB TPT Prophylaxis Type Codes</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>inh</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>18934-0 (Isoniazid [Susceptibility])</td></tr></table><hr/><p><b>Group 12 </b>Mapping from <a href="CodeSystem-ng-hiv-reason-not-started-art-cs.html">HIV - Reason Not Started ART CodeSystem</a> to <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>referred-tx-not-initiated</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LP73973-7 (Date patient referred for treatment)</td></tr><tr><td>died</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA4645-3 (Patient Died Before Therapy)</td></tr><tr><td>known-positive-on-art (Known +ve on ART)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>45231-8 (HIV treatment prior to enrollment)</td></tr><tr><td>on-oi-management</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>47244-9 (Symptom, diagnosis, or opportunistic infection related to HIV treatment)</td></tr><tr><td>other (Other Specify here)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA46-8 (Other)</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLocalToLOINC"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.18.2"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivLocalToLOINC"/>
+  <title value="Nigeria HIV Local Concepts to LOINC"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-24"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts"/>
+  <targetCanonical value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-loinc-concepts"/>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="to"/>
+      <target>
+        <code value="45256-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="dead"/>
+      <target>
+        <code value="77978-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="drop"/>
+      <target>
+        <code value="45257-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="restart"/>
+      <target>
+        <code value="63936-9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="lost"/>
+      <target>
+        <code value="45237-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="stop"/>
+      <target>
+        <code value="91382-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="Stopped"/>
+      <target>
+        <code value="91382-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="true"/>
+      <target>
+        <code value="LA29252-6"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="false"/>
+      <target>
+        <code value="LA29253-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="Dead"/>
+      <target>
+        <code value="77978-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Lost"/>
+      <target>
+        <code value="45237-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="TO"/>
+      <target>
+        <code value="45256-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Unknown"/>
+      <target>
+        <code value="LA29947-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Other"/>
+      <target>
+        <code value="LA46-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="No-Education"/>
+      <target>
+        <code value="LA35-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Primary"/>
+      <target>
+        <code value="LA32466-7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Secondary"/>
+      <target>
+        <code value="LA32467-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Tertiary"/>
+      <target>
+        <code value="LA15568-1"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="TVET"/>
+      <target>
+        <code value="LA39-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Other"/>
+      <target>
+        <code value="LA46-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="Started-ART"/>
+      <target>
+        <code value="63936-9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Final-Outcome"/>
+      <target>
+        <code value="63939-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Linked-To-Care"/>
+      <target>
+        <code value="67723-7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="true"/>
+      <target>
+        <code value="LA26438-4"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="false"/>
+      <target>
+        <code value="LA26440-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="true"/>
+      <target>
+        <code value="LA15173-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="false"/>
+      <target>
+        <code value="LA26683-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="Other"/>
+      <target>
+        <code value="LA46-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="started-art"/>
+      <target>
+        <code value="63936-9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="died"/>
+      <target>
+        <code value="81954-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="confirmed-referral"/>
+      <target>
+        <code value="39266-2"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="started-art-in-other-hf"/>
+      <target>
+        <code value="45235-9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="lost-to-follow-up"/>
+      <target>
+        <code value="45237-5"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="other"/>
+      <target>
+        <code value="LA46-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="inh"/>
+      <target>
+        <code value="18934-0"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="referred-tx-not-initiated"/>
+      <target>
+        <code value="LP73973-7"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="died"/>
+      <target>
+        <code value="LA4645-3"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="known-positive-on-art"/>
+      <target>
+        <code value="45231-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="on-oi-management"/>
+      <target>
+        <code value="47244-9"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="other"/>
+      <target>
+        <code value="LA46-8"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

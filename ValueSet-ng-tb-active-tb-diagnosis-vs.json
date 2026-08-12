@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-tb-active-tb-diagnosis-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-tb-active-tb-diagnosis-vs</b></p><a name=\"ng-tb-active-tb-diagnosis-vs\"> </a><a name=\"hcng-tb-active-tb-diagnosis-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/427099000\">427099000</a></td><td>Active tuberculosis</td></tr><tr><td><a href=\"http://snomed.info/id/11999007\">11999007</a></td><td>Inactive tuberculosis</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-tb-active-tb-diagnosis-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.191"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgTBActiveTBDiagnosisVS",
+  "title" : "TB Active TB Diagnosis Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of codes describing whether the patient is infected with active TB.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "427099000",
+        "display" : "Active tuberculosis"
+      },
+      {
+        "code" : "11999007",
+        "display" : "Inactive tuberculosis"
+      }]
+    }]
+  }
+}

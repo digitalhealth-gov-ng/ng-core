@@ -1,0 +1,325 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-atc-medication-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-atc-medication-cs</b></p><a name=\"ng-atc-medication-cs\"> </a><a name=\"hcng-atc-medication-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A11-IFA<a name=\"ng-atc-medication-cs-A11-IFA\"> </a></td><td>Iron–Folic Acid tablets (30/0.4 mg)</td><td>Daily antenatal iron–folate for anemia prevention.</td></tr><tr><td style=\"white-space:nowrap\">A11-FA-5<a name=\"ng-atc-medication-cs-A11-FA-5\"> </a></td><td>Folic acid 5 mg tablet</td><td>High-dose folate per protocol.</td></tr><tr><td style=\"white-space:nowrap\">A12-CALC<a name=\"ng-atc-medication-cs-A12-CALC\"> </a></td><td>Calcium carbonate 500 mg tablet</td><td>Calcium supplementation to reduce pre-eclampsia risk.</td></tr><tr><td style=\"white-space:nowrap\">B03-FE-SULF<a name=\"ng-atc-medication-cs-B03-FE-SULF\"> </a></td><td>Ferrous sulfate 200 mg (65 mg elemental) tablet</td><td>Treatment of iron-deficiency anemia.</td></tr><tr><td style=\"white-space:nowrap\">A11-MV-PREN<a name=\"ng-atc-medication-cs-A11-MV-PREN\"> </a></td><td>Prenatal multivitamin</td><td>Combined antenatal vitamin/mineral tablet.</td></tr><tr><td style=\"white-space:nowrap\">A11-VITA-100<a name=\"ng-atc-medication-cs-A11-VITA-100\"> </a></td><td>Vitamin A 100,000 IU capsule</td><td>For post-partum/child dosing per guideline.</td></tr><tr><td style=\"white-space:nowrap\">A11-VITA-200<a name=\"ng-atc-medication-cs-A11-VITA-200\"> </a></td><td>Vitamin A 200,000 IU capsule</td><td>For post-partum/child dosing per guideline.</td></tr><tr><td style=\"white-space:nowrap\">G02-OXY<a name=\"ng-atc-medication-cs-G02-OXY\"> </a></td><td>Oxytocin 10 IU/mL injection</td><td>Active management of third stage, PPH prevention/treatment.</td></tr><tr><td style=\"white-space:nowrap\">G02-MISO<a name=\"ng-atc-medication-cs-G02-MISO\"> </a></td><td>Misoprostol 200 mcg tablet</td><td>PPH prevention/treatment where oxytocin unavailable.</td></tr><tr><td style=\"white-space:nowrap\">A12-MGSO4<a name=\"ng-atc-medication-cs-A12-MGSO4\"> </a></td><td>Magnesium sulfate injection</td><td>Severe pre-eclampsia/eclampsia management (loading/maintenance).</td></tr><tr><td style=\"white-space:nowrap\">C02-METHYLDOPA<a name=\"ng-atc-medication-cs-C02-METHYLDOPA\"> </a></td><td>Methyldopa 250 mg tablet</td><td>Antihypertensive in pregnancy per protocol.</td></tr><tr><td style=\"white-space:nowrap\">C08-NIFEDIPINE<a name=\"ng-atc-medication-cs-C08-NIFEDIPINE\"> </a></td><td>Nifedipine 10 mg capsule</td><td>Acute BP control in severe hypertension (per protocol).</td></tr><tr><td style=\"white-space:nowrap\">J01-AMX-DT<a name=\"ng-atc-medication-cs-J01-AMX-DT\"> </a></td><td>Amoxicillin 250 mg dispersible tablet</td><td>Child pneumonia/OTIT treatment; community case mgmt.</td></tr><tr><td style=\"white-space:nowrap\">J01-AMOX-CAP<a name=\"ng-atc-medication-cs-J01-AMOX-CAP\"> </a></td><td>Amoxicillin 500 mg capsule</td><td>Adult/maternal infections per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J01-AMP<a name=\"ng-atc-medication-cs-J01-AMP\"> </a></td><td>Ampicillin injection</td><td>Neonatal sepsis first-line (with gentamicin).</td></tr><tr><td style=\"white-space:nowrap\">J01-GENTA<a name=\"ng-atc-medication-cs-J01-GENTA\"> </a></td><td>Gentamicin injection</td><td>Neonatal sepsis first-line (with ampicillin).</td></tr><tr><td style=\"white-space:nowrap\">J01-CEFTRI<a name=\"ng-atc-medication-cs-J01-CEFTRI\"> </a></td><td>Ceftriaxone injection</td><td>Severe infections; inpatient use per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J01-CLX<a name=\"ng-atc-medication-cs-J01-CLX\"> </a></td><td>Cloxacillin 500 mg capsule</td><td>Skin/soft tissue and mastitis per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J01-METRO<a name=\"ng-atc-medication-cs-J01-METRO\"> </a></td><td>Metronidazole 400 mg tablet</td><td>Anaerobic/obstetric infections per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J06-ANTI-D-IG<a name=\"ng-atc-medication-cs-J06-ANTI-D-IG\"> </a></td><td>Anti-D immunoglobulin</td><td>Rh-D negative prophylaxis for sensitizing events.</td></tr><tr><td style=\"white-space:nowrap\">J01-ERYTHRO<a name=\"ng-atc-medication-cs-J01-ERYTHRO\"> </a></td><td>Erythromycin 250 mg tablet</td><td>Alternative macrolide; PPROM/GBS contexts per protocol.</td></tr><tr><td style=\"white-space:nowrap\">A07-ORS<a name=\"ng-atc-medication-cs-A07-ORS\"> </a></td><td>Oral rehydration salts (sachet)</td><td>Acute diarrhea rehydration.</td></tr><tr><td style=\"white-space:nowrap\">A07-ZINC20<a name=\"ng-atc-medication-cs-A07-ZINC20\"> </a></td><td>Zinc sulfate 20 mg tablet</td><td>Adjunct for pediatric diarrhea (10–14 days).</td></tr><tr><td style=\"white-space:nowrap\">N02-PARA-SYR<a name=\"ng-atc-medication-cs-N02-PARA-SYR\"> </a></td><td>Paracetamol 125 mg/5 mL syrup</td><td>Fever/pain management in children.</td></tr><tr><td style=\"white-space:nowrap\">R03-SALB-INH<a name=\"ng-atc-medication-cs-R03-SALB-INH\"> </a></td><td>Salbutamol 100 mcg inhaler</td><td>Wheeze/asthma relief in MNCH contexts.</td></tr><tr><td style=\"white-space:nowrap\">P01-ACT-AL<a name=\"ng-atc-medication-cs-P01-ACT-AL\"> </a></td><td>ACT: Artemether–Lumefantrine</td><td>First-line uncomplicated malaria (weight-based).</td></tr><tr><td style=\"white-space:nowrap\">P01-ACT-DHA-PPQ<a name=\"ng-atc-medication-cs-P01-ACT-DHA-PPQ\"> </a></td><td>ACT: Dihydroartemisinin–Piperaquine</td><td>Alternative ACT per national guideline.</td></tr><tr><td style=\"white-space:nowrap\">P01-SP<a name=\"ng-atc-medication-cs-P01-SP\"> </a></td><td>Sulfadoxine–Pyrimethamine (SP)</td><td>IPTp in pregnancy per schedule.</td></tr><tr><td style=\"white-space:nowrap\">P02-ALB<a name=\"ng-atc-medication-cs-P02-ALB\"> </a></td><td>Albendazole 400 mg tablet</td><td>Antenatal deworming per protocol.</td></tr><tr><td style=\"white-space:nowrap\">G03-LNG-EC<a name=\"ng-atc-medication-cs-G03-LNG-EC\"> </a></td><td>Levonorgestrel 1.5 mg (EC)</td><td>Emergency contraception (single dose).</td></tr><tr><td style=\"white-space:nowrap\">G03-DMPA-IM<a name=\"ng-atc-medication-cs-G03-DMPA-IM\"> </a></td><td>DMPA 150 mg/mL IM injection</td><td>3-monthly injectable contraceptive.</td></tr><tr><td style=\"white-space:nowrap\">G03-DMPA-SC<a name=\"ng-atc-medication-cs-G03-DMPA-SC\"> </a></td><td>DMPA 104 mg/0.65 mL SC</td><td>3-monthly SC contraceptive (sayana-type).</td></tr><tr><td style=\"white-space:nowrap\">G03-ETON-IMP<a name=\"ng-atc-medication-cs-G03-ETON-IMP\"> </a></td><td>Etonogestrel implant</td><td>Long-acting reversible contraception.</td></tr><tr><td style=\"white-space:nowrap\">G03-COC<a name=\"ng-atc-medication-cs-G03-COC\"> </a></td><td>Combined oral contraceptive (LNG/EE)</td><td>Daily combined pill per protocol.</td></tr><tr><td style=\"white-space:nowrap\">D08-CHX-7<a name=\"ng-atc-medication-cs-D08-CHX-7\"> </a></td><td>Chlorhexidine 7.1% digluconate gel</td><td>Umbilical cord care (4% free CHX equivalent).</td></tr><tr><td style=\"white-space:nowrap\">J07-BCG<a name=\"ng-atc-medication-cs-J07-BCG\"> </a></td><td>BCG vaccine</td><td>At birth — TB prevention.</td></tr><tr><td style=\"white-space:nowrap\">J07-OPV<a name=\"ng-atc-medication-cs-J07-OPV\"> </a></td><td>OPV vaccine</td><td>Oral polio per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-IPV<a name=\"ng-atc-medication-cs-J07-IPV\"> </a></td><td>IPV vaccine</td><td>Inactivated polio per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-PENTA<a name=\"ng-atc-medication-cs-J07-PENTA\"> </a></td><td>Pentavalent DTP-HepB-Hib vaccine</td><td>Primary series per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-PCV<a name=\"ng-atc-medication-cs-J07-PCV\"> </a></td><td>Pneumococcal conjugate vaccine</td><td>PCV10/13 per national schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-ROTA<a name=\"ng-atc-medication-cs-J07-ROTA\"> </a></td><td>Rotavirus vaccine</td><td>Rotavirus per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-MR<a name=\"ng-atc-medication-cs-J07-MR\"> </a></td><td>Measles-Rubella vaccine</td><td>MR at 9/15 months per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-YF<a name=\"ng-atc-medication-cs-J07-YF\"> </a></td><td>Yellow fever vaccine</td><td>Yellow fever per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-HPV<a name=\"ng-atc-medication-cs-J07-HPV\"> </a></td><td>HPV vaccine</td><td>Girls/boys per national program.</td></tr><tr><td style=\"white-space:nowrap\">J07-TD<a name=\"ng-atc-medication-cs-J07-TD\"> </a></td><td>Tetanus-diphtheria (Td) vaccine</td><td>Adolescent/maternal protection.</td></tr><tr><td style=\"white-space:nowrap\">R01-ORS-ZINC-KIT<a name=\"ng-atc-medication-cs-R01-ORS-ZINC-KIT\"> </a></td><td>ORS + Zinc kit</td><td>Community diarrhea pack for claims/prescription.</td></tr><tr><td style=\"white-space:nowrap\">J01-AMP-GEN-COMB<a name=\"ng-atc-medication-cs-J01-AMP-GEN-COMB\"> </a></td><td>Ampicillin + Gentamicin regimen (neonatal)</td><td>Combined line item for neonatal sepsis claims.</td></tr><tr><td style=\"white-space:nowrap\">A10-INSULIN-NPH<a name=\"ng-atc-medication-cs-A10-INSULIN-NPH\"> </a></td><td>Insulin NPH</td><td>Gestational diabetes—basal insulin per protocol.</td></tr><tr><td style=\"white-space:nowrap\">A10-METFORMIN<a name=\"ng-atc-medication-cs-A10-METFORMIN\"> </a></td><td>Metformin 500 mg tablet</td><td>GDM/T2DM per national guideline and obstetric advice.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.4" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgATCLocalMedicationCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG Local ATC Medication Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local ATC. Codes are placeholders aligned to common maternal, newborn, and child health needs, plus EPI vaccines."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "49"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A11-IFA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Iron–Folic Acid tablets (30/0.4 mg)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Daily antenatal iron–folate for anemia prevention." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A11-FA-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Folic acid 5 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "High-dose folate per protocol." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A12-CALC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Calcium carbonate 500 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Calcium supplementation to reduce pre-eclampsia risk." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "B03-FE-SULF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ferrous sulfate 200 mg (65 mg elemental) tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Treatment of iron-deficiency anemia." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A11-MV-PREN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prenatal multivitamin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Combined antenatal vitamin/mineral tablet." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A11-VITA-100" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vitamin A 100,000 IU capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "For post-partum/child dosing per guideline." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A11-VITA-200" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vitamin A 200,000 IU capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "For post-partum/child dosing per guideline." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G02-OXY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oxytocin 10 IU/mL injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Active management of third stage, PPH prevention/treatment." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G02-MISO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Misoprostol 200 mcg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PPH prevention/treatment where oxytocin unavailable." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A12-MGSO4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Magnesium sulfate injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Severe pre-eclampsia/eclampsia management (loading/maintenance)." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "C02-METHYLDOPA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Methyldopa 250 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antihypertensive in pregnancy per protocol." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "C08-NIFEDIPINE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nifedipine 10 mg capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Acute BP control in severe hypertension (per protocol)." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-AMX-DT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Amoxicillin 250 mg dispersible tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Child pneumonia/OTIT treatment; community case mgmt." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-AMOX-CAP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Amoxicillin 500 mg capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult/maternal infections per protocol." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-AMP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ampicillin injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neonatal sepsis first-line (with gentamicin)." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-GENTA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gentamicin injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Neonatal sepsis first-line (with ampicillin)." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-CEFTRI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ceftriaxone injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Severe infections; inpatient use per protocol." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-CLX" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cloxacillin 500 mg capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Skin/soft tissue and mastitis per protocol." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-METRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metronidazole 400 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anaerobic/obstetric infections per protocol." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J06-ANTI-D-IG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-D immunoglobulin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rh-D negative prophylaxis for sensitizing events." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-ERYTHRO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erythromycin 250 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alternative macrolide; PPROM/GBS contexts per protocol." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A07-ORS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral rehydration salts (sachet)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Acute diarrhea rehydration." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A07-ZINC20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zinc sulfate 20 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adjunct for pediatric diarrhea (10–14 days)." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "N02-PARA-SYR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Paracetamol 125 mg/5 mL syrup" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fever/pain management in children." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "R03-SALB-INH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Salbutamol 100 mcg inhaler" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Wheeze/asthma relief in MNCH contexts." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "P01-ACT-AL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACT: Artemether–Lumefantrine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "First-line uncomplicated malaria (weight-based)." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "P01-ACT-DHA-PPQ" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ACT: Dihydroartemisinin–Piperaquine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alternative ACT per national guideline." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "P01-SP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sulfadoxine–Pyrimethamine (SP)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "IPTp in pregnancy per schedule." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "P02-ALB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Albendazole 400 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antenatal deworming per protocol." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G03-LNG-EC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Levonorgestrel 1.5 mg (EC)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Emergency contraception (single dose)." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G03-DMPA-IM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DMPA 150 mg/mL IM injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3-monthly injectable contraceptive." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G03-DMPA-SC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DMPA 104 mg/0.65 mL SC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "3-monthly SC contraceptive (sayana-type)." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G03-ETON-IMP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Etonogestrel implant" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Long-acting reversible contraception." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G03-COC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Combined oral contraceptive (LNG/EE)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Daily combined pill per protocol." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "D08-CHX-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chlorhexidine 7.1% digluconate gel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Umbilical cord care (4% free CHX equivalent)." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-BCG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BCG vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "At birth — TB prevention." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-OPV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OPV vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Oral polio per schedule." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-IPV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "IPV vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Inactivated polio per schedule." ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-PENTA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pentavalent DTP-HepB-Hib vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Primary series per schedule." ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-PCV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumococcal conjugate vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PCV10/13 per national schedule." ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-ROTA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rotavirus per schedule." ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-MR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Measles-Rubella vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "MR at 9/15 months per schedule." ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-YF" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yellow fever vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Yellow fever per schedule." ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-HPV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HPV vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Girls/boys per national program." ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J07-TD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tetanus-diphtheria (Td) vaccine" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adolescent/maternal protection." ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "R01-ORS-ZINC-KIT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ORS + Zinc kit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Community diarrhea pack for claims/prescription." ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J01-AMP-GEN-COMB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ampicillin + Gentamicin regimen (neonatal)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Combined line item for neonatal sepsis claims." ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A10-INSULIN-NPH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insulin NPH" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Gestational diabetes—basal insulin per protocol." ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A10-METFORMIN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metformin 500 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "GDM/T2DM per national guideline and obstetric advice." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

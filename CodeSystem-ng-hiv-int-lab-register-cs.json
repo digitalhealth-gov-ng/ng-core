@@ -1,0 +1,177 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-int-lab-register-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-int-lab-register-cs</b></p><a name=\"ng-hiv-int-lab-register-cs\"> </a><a name=\"hcng-hiv-int-lab-register-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-register-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">gene-xpert<a name=\"ng-hiv-int-lab-register-cs-gene-xpert\"> </a></td><td>GeneXpert</td><td>Testing performed using a GeneXpert platform.</td></tr><tr><td style=\"white-space:nowrap\">m-pima<a name=\"ng-hiv-int-lab-register-cs-m-pima\"> </a></td><td>m-PIMA</td><td>Testing performed using an m-PIMA platform.</td></tr><tr><td style=\"white-space:nowrap\">conventional-pcr<a name=\"ng-hiv-int-lab-register-cs-conventional-pcr\"> </a></td><td>Conventional PCR laboratory</td><td>Testing performed using a conventional PCR laboratory platform. The source SOP also prints 'PCR LaC'.</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ng-hiv-int-lab-register-cs-1\"> </a></td><td>Devolved</td><td>Source register DSD status code 1: devolved.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ng-hiv-int-lab-register-cs-2\"> </a></td><td>Non-devolved</td><td>Source register DSD status code 2: non-devolved.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ng-hiv-int-lab-register-cs-3\"> </a></td><td>Not eligible for devolvement</td><td>Source register DSD status code 3: not eligible for devolvement.</td></tr><tr><td style=\"white-space:nowrap\">vl-undetectable-or-le-50<a name=\"ng-hiv-int-lab-register-cs-vl-undetectable-or-le-50\"> </a></td><td>Target not detected or 50 copies/mL or less</td><td>Source A34 category: undetectable or no more than 50 copies/mL.</td></tr><tr><td style=\"white-space:nowrap\">vl-suppressed-detectable<a name=\"ng-hiv-int-lab-register-cs-vl-suppressed-detectable\"> </a></td><td>Suppressed but detectable</td><td>Source A35 category: greater than 50 and no more than 1000 copies/mL.</td></tr><tr><td style=\"white-space:nowrap\">vl-unsuppressed<a name=\"ng-hiv-int-lab-register-cs-vl-unsuppressed\"> </a></td><td>Unsuppressed</td><td>Source A36 category: greater than 1000 copies/mL.</td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"ng-hiv-int-lab-register-cs-routine\"> </a></td><td>Routine viral-load monitoring</td><td>Routine viral-load monitoring.</td></tr><tr><td style=\"white-space:nowrap\">targeted<a name=\"ng-hiv-int-lab-register-cs-targeted\"> </a></td><td>Targeted viral-load monitoring</td><td>Viral-load testing prompted by a clinical, immunological, pregnancy, post-EAC, recent-infection or early-detection indication.</td></tr><tr><td style=\"white-space:nowrap\">male-under-1<a name=\"ng-hiv-int-lab-register-cs-male-under-1\"> </a></td><td>Male, younger than 1 year</td><td/></tr><tr><td style=\"white-space:nowrap\">male-1-4<a name=\"ng-hiv-int-lab-register-cs-male-1-4\"> </a></td><td>Male, 1–4 years</td><td/></tr><tr><td style=\"white-space:nowrap\">male-5-9<a name=\"ng-hiv-int-lab-register-cs-male-5-9\"> </a></td><td>Male, 5–9 years</td><td/></tr><tr><td style=\"white-space:nowrap\">male-10-14<a name=\"ng-hiv-int-lab-register-cs-male-10-14\"> </a></td><td>Male, 10–14 years</td><td/></tr><tr><td style=\"white-space:nowrap\">male-15-19<a name=\"ng-hiv-int-lab-register-cs-male-15-19\"> </a></td><td>Male, 15–19 years</td><td/></tr><tr><td style=\"white-space:nowrap\">male-20-24<a name=\"ng-hiv-int-lab-register-cs-male-20-24\"> </a></td><td>Male, 20–24 years</td><td/></tr><tr><td style=\"white-space:nowrap\">male-25-49<a name=\"ng-hiv-int-lab-register-cs-male-25-49\"> </a></td><td>Male, 25–49 years</td><td/></tr><tr><td style=\"white-space:nowrap\">male-50-plus<a name=\"ng-hiv-int-lab-register-cs-male-50-plus\"> </a></td><td>Male, 50 years or older</td><td/></tr><tr><td style=\"white-space:nowrap\">female-under-1<a name=\"ng-hiv-int-lab-register-cs-female-under-1\"> </a></td><td>Female, younger than 1 year</td><td/></tr><tr><td style=\"white-space:nowrap\">female-1-4<a name=\"ng-hiv-int-lab-register-cs-female-1-4\"> </a></td><td>Female, 1–4 years</td><td/></tr><tr><td style=\"white-space:nowrap\">female-5-9<a name=\"ng-hiv-int-lab-register-cs-female-5-9\"> </a></td><td>Female, 5–9 years</td><td/></tr><tr><td style=\"white-space:nowrap\">female-10-14<a name=\"ng-hiv-int-lab-register-cs-female-10-14\"> </a></td><td>Female, 10–14 years</td><td/></tr><tr><td style=\"white-space:nowrap\">female-15-19<a name=\"ng-hiv-int-lab-register-cs-female-15-19\"> </a></td><td>Female, 15–19 years</td><td/></tr><tr><td style=\"white-space:nowrap\">female-20-24<a name=\"ng-hiv-int-lab-register-cs-female-20-24\"> </a></td><td>Female, 20–24 years</td><td/></tr><tr><td style=\"white-space:nowrap\">female-25-49<a name=\"ng-hiv-int-lab-register-cs-female-25-49\"> </a></td><td>Female, 25–49 years</td><td/></tr><tr><td style=\"white-space:nowrap\">female-50-plus<a name=\"ng-hiv-int-lab-register-cs-female-50-plus\"> </a></td><td>Female, 50 years or older</td><td/></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-register-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.55"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivIntLabRegisterCS",
+  "title" : "NG HIV Integrated Laboratory Monitoring Register Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-29",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Local codes required to represent the Integrated Laboratory Monitoring\nRegister revised November 2025. The source workbook does not provide a complete\nEID-entry-point legend or a POC error-code catalogue; those values are therefore\nrepresented using existing terminology or free text in the logical model.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 27,
+  "concept" : [{
+    "code" : "gene-xpert",
+    "display" : "GeneXpert",
+    "definition" : "Testing performed using a GeneXpert platform."
+  },
+  {
+    "code" : "m-pima",
+    "display" : "m-PIMA",
+    "definition" : "Testing performed using an m-PIMA platform."
+  },
+  {
+    "code" : "conventional-pcr",
+    "display" : "Conventional PCR laboratory",
+    "definition" : "Testing performed using a conventional PCR laboratory platform. The source SOP also prints 'PCR LaC'."
+  },
+  {
+    "code" : "1",
+    "display" : "Devolved",
+    "definition" : "Source register DSD status code 1: devolved."
+  },
+  {
+    "code" : "2",
+    "display" : "Non-devolved",
+    "definition" : "Source register DSD status code 2: non-devolved."
+  },
+  {
+    "code" : "3",
+    "display" : "Not eligible for devolvement",
+    "definition" : "Source register DSD status code 3: not eligible for devolvement."
+  },
+  {
+    "code" : "vl-undetectable-or-le-50",
+    "display" : "Target not detected or 50 copies/mL or less",
+    "definition" : "Source A34 category: undetectable or no more than 50 copies/mL."
+  },
+  {
+    "code" : "vl-suppressed-detectable",
+    "display" : "Suppressed but detectable",
+    "definition" : "Source A35 category: greater than 50 and no more than 1000 copies/mL."
+  },
+  {
+    "code" : "vl-unsuppressed",
+    "display" : "Unsuppressed",
+    "definition" : "Source A36 category: greater than 1000 copies/mL."
+  },
+  {
+    "code" : "routine",
+    "display" : "Routine viral-load monitoring",
+    "definition" : "Routine viral-load monitoring."
+  },
+  {
+    "code" : "targeted",
+    "display" : "Targeted viral-load monitoring",
+    "definition" : "Viral-load testing prompted by a clinical, immunological, pregnancy, post-EAC, recent-infection or early-detection indication."
+  },
+  {
+    "code" : "male-under-1",
+    "display" : "Male, younger than 1 year"
+  },
+  {
+    "code" : "male-1-4",
+    "display" : "Male, 1–4 years"
+  },
+  {
+    "code" : "male-5-9",
+    "display" : "Male, 5–9 years"
+  },
+  {
+    "code" : "male-10-14",
+    "display" : "Male, 10–14 years"
+  },
+  {
+    "code" : "male-15-19",
+    "display" : "Male, 15–19 years"
+  },
+  {
+    "code" : "male-20-24",
+    "display" : "Male, 20–24 years"
+  },
+  {
+    "code" : "male-25-49",
+    "display" : "Male, 25–49 years"
+  },
+  {
+    "code" : "male-50-plus",
+    "display" : "Male, 50 years or older"
+  },
+  {
+    "code" : "female-under-1",
+    "display" : "Female, younger than 1 year"
+  },
+  {
+    "code" : "female-1-4",
+    "display" : "Female, 1–4 years"
+  },
+  {
+    "code" : "female-5-9",
+    "display" : "Female, 5–9 years"
+  },
+  {
+    "code" : "female-10-14",
+    "display" : "Female, 10–14 years"
+  },
+  {
+    "code" : "female-15-19",
+    "display" : "Female, 15–19 years"
+  },
+  {
+    "code" : "female-20-24",
+    "display" : "Female, 20–24 years"
+  },
+  {
+    "code" : "female-25-49",
+    "display" : "Female, 25–49 years"
+  },
+  {
+    "code" : "female-50-plus",
+    "display" : "Female, 50 years or older"
+  }]
+}

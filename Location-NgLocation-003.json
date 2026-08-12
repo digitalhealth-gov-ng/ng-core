@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Location",
+  "id" : "NgLocation-003",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location NgLocation-003</b></p><a name=\"NgLocation-003\"> </a><a name=\"hcNgLocation-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-location.html\">NG Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Immunization Room</p><p><b>type</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs phc-center-l2}\">PHC Center Level 2</span></p><p><b>address</b>: Opposite Central Market Gwagwalada FC NG </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>7.081</td><td>8.939</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-NgOrganization-003.html\">Organization Gwagwalada Model PHC</a></p></div>"
+  },
+  "status" : "active",
+  "name" : "Immunization Room",
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs",
+      "code" : "phc-center-l2",
+      "display" : "PHC Center Level 2"
+    }]
+  }],
+  "address" : {
+    "line" : ["Opposite Central Market"],
+    "city" : "Gwagwalada",
+    "district" : "fc-gwagwalada",
+    "state" : "FC",
+    "country" : "NG"
+  },
+  "position" : {
+    "longitude" : 7.081,
+    "latitude" : 8.939
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/NgOrganization-003"
+  }
+}

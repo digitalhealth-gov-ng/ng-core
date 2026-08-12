@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-provenance-activity-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-provenance-activity-cs</b></p><a name="ng-provenance-activity-cs"> </a><a name="hcng-provenance-activity-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ANONY<a name="ng-provenance-activity-cs-ANONY"> </a></td><td>Anonymize</td><td>Activity that removes all personally identifiable information (PII) to prevent re-identification.</td></tr><tr><td style="white-space:nowrap">DEID<a name="ng-provenance-activity-cs-DEID"> </a></td><td>De-identify</td><td>Activity that removes or obfuscates personal identifiers while retaining data usability.</td></tr><tr><td style="white-space:nowrap">MASK<a name="ng-provenance-activity-cs-MASK"> </a></td><td>Mask</td><td>Activity that hides or replaces specific data elements with placeholder values.</td></tr><tr><td style="white-space:nowrap">LABEL<a name="ng-provenance-activity-cs-LABEL"> </a></td><td>Assign Security Label</td><td>Activity that applies confidentiality, sensitivity, or purpose-of-use labels to data.</td></tr><tr><td style="white-space:nowrap">PSEUD<a name="ng-provenance-activity-cs-PSEUD"> </a></td><td>Pseudonymize</td><td>Activity that replaces direct identifiers with pseudonyms that can be re-linked under controlled conditions.</td></tr><tr><td style="white-space:nowrap">CREATE<a name="ng-provenance-activity-cs-CREATE"> </a></td><td>Create</td><td>Activity representing the creation of new data or resource instance.</td></tr><tr><td style="white-space:nowrap">DELETE<a name="ng-provenance-activity-cs-DELETE"> </a></td><td>Delete</td><td>Activity representing deletion or removal of a data record.</td></tr><tr><td style="white-space:nowrap">APPEND<a name="ng-provenance-activity-cs-APPEND"> </a></td><td>Append</td><td>Activity representing addition of new information to an existing resource or record.</td></tr><tr><td style="white-space:nowrap">NULLIFY<a name="ng-provenance-activity-cs-NULLIFY"> </a></td><td>Nullify</td><td>Activity that invalidates or renders data non-usable without deleting the record.</td></tr><tr><td style="white-space:nowrap">LA<a name="ng-provenance-activity-cs-LA"> </a></td><td>Legally Authenticated</td><td>Activity confirming legal authentication of a record (e.g., signed or witnessed by authorized person).</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.98"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgProvenanceActivityCS"/>
+  <title value="NG Provenance Activity Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local CodeSystem defining provenance activity codes for data lifecycle operations such as anonymization, de-identification, labeling, creation, and deletion."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <hierarchyMeaning value="grouped-by"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="ANONY"/>
+    <display value="Anonymize"/>
+    <definition value="Activity that removes all personally identifiable information (PII) to prevent re-identification."/>
+  </concept>
+  <concept>
+    <code value="DEID"/>
+    <display value="De-identify"/>
+    <definition value="Activity that removes or obfuscates personal identifiers while retaining data usability."/>
+  </concept>
+  <concept>
+    <code value="MASK"/>
+    <display value="Mask"/>
+    <definition value="Activity that hides or replaces specific data elements with placeholder values."/>
+  </concept>
+  <concept>
+    <code value="LABEL"/>
+    <display value="Assign Security Label"/>
+    <definition value="Activity that applies confidentiality, sensitivity, or purpose-of-use labels to data."/>
+  </concept>
+  <concept>
+    <code value="PSEUD"/>
+    <display value="Pseudonymize"/>
+    <definition value="Activity that replaces direct identifiers with pseudonyms that can be re-linked under controlled conditions."/>
+  </concept>
+  <concept>
+    <code value="CREATE"/>
+    <display value="Create"/>
+    <definition value="Activity representing the creation of new data or resource instance."/>
+  </concept>
+  <concept>
+    <code value="DELETE"/>
+    <display value="Delete"/>
+    <definition value="Activity representing deletion or removal of a data record."/>
+  </concept>
+  <concept>
+    <code value="APPEND"/>
+    <display value="Append"/>
+    <definition value="Activity representing addition of new information to an existing resource or record."/>
+  </concept>
+  <concept>
+    <code value="NULLIFY"/>
+    <display value="Nullify"/>
+    <definition value="Activity that invalidates or renders data non-usable without deleting the record."/>
+  </concept>
+  <concept>
+    <code value="LA"/>
+    <display value="Legally Authenticated"/>
+    <definition value="Activity confirming legal authentication of a record (e.g., signed or witnessed by authorized person)."/>
+  </concept>
+</CodeSystem>

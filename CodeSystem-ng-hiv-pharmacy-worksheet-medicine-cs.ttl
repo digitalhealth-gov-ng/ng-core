@@ -1,0 +1,320 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-pharmacy-worksheet-medicine-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-pharmacy-worksheet-medicine-cs</b></p><a name=\"ng-hiv-pharmacy-worksheet-medicine-cs\"> </a><a name=\"hcng-hiv-pharmacy-worksheet-medicine-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">W24<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W24\"> </a></td><td>Abacavir/Lamivudine 600/300 mg</td><td>W24; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W25<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W25\"> </a></td><td>Zidovudine/Lamivudine 300/150 mg</td><td>W25; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W26<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W26\"> </a></td><td>Tenofovir/Lamivudine 300/300 mg</td><td>W26; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W27<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W27\"> </a></td><td>Tenofovir/Lamivudine/Efavirenz 300/300/400 mg</td><td>W27; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W28<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W28\"> </a></td><td>Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 30 tablets</td><td>W28; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 30-tablet presentation.</td></tr><tr><td style=\"white-space:nowrap\">W29<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W29\"> </a></td><td>Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 90 tablets</td><td>W29; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 90-tablet presentation.</td></tr><tr><td style=\"white-space:nowrap\">W30<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W30\"> </a></td><td>Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg</td><td>W30; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W31<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W31\"> </a></td><td>Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg</td><td>W31; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W32<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W32\"> </a></td><td>Atazanavir/Ritonavir 300/100 mg</td><td>W32; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W33<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W33\"> </a></td><td>Dolutegravir 50 mg</td><td>W33; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W34<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W34\"> </a></td><td>Ritonavir 100 mg</td><td>W34; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W35<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W35\"> </a></td><td>Darunavir 600 mg</td><td>W35; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W36<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W36\"> </a></td><td>Darunavir/Ritonavir 400/50 mg</td><td>W36; category adult-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W37<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W37\"> </a></td><td>Cabotegravir 200 mg/mL, 3 mL vial</td><td>W37; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section.</td></tr><tr><td style=\"white-space:nowrap\">W38<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W38\"> </a></td><td>Lenacapavir 600 mg tablet</td><td>W38; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section.</td></tr><tr><td style=\"white-space:nowrap\">W39<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W39\"> </a></td><td>Lenacapavir 927 mg/3 mL injection</td><td>W39; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section.</td></tr><tr><td style=\"white-space:nowrap\">W40<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W40\"> </a></td><td>Abacavir/Lamivudine/Dolutegravir 60/30/5 mg</td><td>W40; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W41<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W41\"> </a></td><td>Abacavir/Lamivudine 120/60 mg</td><td>W41; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W42<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W42\"> </a></td><td>Zidovudine/Lamivudine 60/30 mg</td><td>W42; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W43<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W43\"> </a></td><td>Dolutegravir 10 mg</td><td>W43; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W44<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W44\"> </a></td><td>Nevirapine 50 mg/5 mL</td><td>W44; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W45<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W45\"> </a></td><td>Lopinavir/Ritonavir 100/25 mg</td><td>W45; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W46<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W46\"> </a></td><td>Darunavir/Ritonavir 120/20 mg</td><td>W46; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W47<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W47\"> </a></td><td>Zidovudine 10 mg/mL</td><td>W47; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W48<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W48\"> </a></td><td>Darunavir 75 mg</td><td>W48; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W49<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W49\"> </a></td><td>Ritonavir 25 mg</td><td>W49; category paediatric-art. Report in packs, bottles or vials.</td></tr><tr><td style=\"white-space:nowrap\">W50<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W50\"> </a></td><td>Co-trimoxazole 960 mg</td><td>W50; category ctx-prophylaxis. Report in tablets.</td></tr><tr><td style=\"white-space:nowrap\">W51<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W51\"> </a></td><td>Co-trimoxazole 120 mg</td><td>W51; category ctx-prophylaxis. Report in tablets.</td></tr><tr><td style=\"white-space:nowrap\">W52<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W52\"> </a></td><td>Isoniazid 100 mg</td><td>W52; category tb-preventive-therapy. Report in kits.</td></tr><tr><td style=\"white-space:nowrap\">W53<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W53\"> </a></td><td>Isoniazid 300 mg</td><td>W53; category tb-preventive-therapy. Report in kits.</td></tr><tr><td style=\"white-space:nowrap\">W54<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W54\"> </a></td><td>Isoniazid/Rifapentine 300/300 mg</td><td>W54; category tb-preventive-therapy. Report in kits.</td></tr><tr><td style=\"white-space:nowrap\">W55<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W55\"> </a></td><td>Rifapentine 150 mg</td><td>W55; category tb-preventive-therapy. Report in kits.</td></tr><tr><td style=\"white-space:nowrap\">W56<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W56\"> </a></td><td>Acyclovir 200 mg tablet</td><td>W56; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W57<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W57\"> </a></td><td>Clotrimazole 100 mg vaginal tablet</td><td>W57; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W58<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W58\"> </a></td><td>Fluconazole 100 mg</td><td>W58; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W59<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W59\"> </a></td><td>Fluconazole 200 mg</td><td>W59; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W60<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W60\"> </a></td><td>Fluconazole 50 mg/5 mL suspension, 35 mL</td><td>W60; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W61<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W61\"> </a></td><td>Nystatin 100,000 IU/mL suspension</td><td>W61; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W62<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W62\"> </a></td><td>Azithromycin 500 mg capsule</td><td>W62; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W63<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W63\"> </a></td><td>Benzathine penicillin 1 g injection</td><td>W63; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W64<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W64\"> </a></td><td>Ceftriaxone 1 g injection</td><td>W64; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W65<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W65\"> </a></td><td>Ciprofloxacin 500 mg tablet</td><td>W65; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W66<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W66\"> </a></td><td>Doxycycline 100 mg capsule</td><td>W66; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W67<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W67\"> </a></td><td>Erythromycin 500 mg tablet</td><td>W67; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W68<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W68\"> </a></td><td>Metronidazole 400 mg tablet</td><td>W68; category anti-infective. The revised worksheet does not state a common reporting unit for this section.</td></tr><tr><td style=\"white-space:nowrap\">W69<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W69\"> </a></td><td>Podophyllotoxin 0.5% solution</td><td>W69; category anti-infective. The workbook prints 'Podophyllon toxin'; this display uses the likely intended medicine name while preserving W69 as the source code.</td></tr><tr><td style=\"white-space:nowrap\">W70<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W70\"> </a></td><td>Amphotericin B 50 mg vial</td><td>W70; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product.</td></tr><tr><td style=\"white-space:nowrap\">W71<a name=\"ng-hiv-pharmacy-worksheet-medicine-cs-W71\"> </a></td><td>Flucytosine 500 mg tablet</td><td>W71; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.64" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivPharmacyWorksheetMedicineCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV Pharmacy Daily Worksheet Medicine Columns"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-29"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local codes for the fixed medicine columns W24–W71 on the revised November\n2025 Pharmacy Daily Worksheet. The code is the printed worksheet column\nidentifier, allowing exact reconstruction of the paper worksheet."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "48"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W24" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abacavir/Lamivudine 600/300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W24; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine/Lamivudine 300/150 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W25; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W26" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine 300/300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W26; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W27" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine/Efavirenz 300/300/400 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W27; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W28" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 30 tablets" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W28; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 30-tablet presentation." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W29" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg, 90 tablets" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W29; category adult-art. Report in packs, bottles or vials; the printed column distinguishes the 90-tablet presentation." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W30" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W30; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W31" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W31; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W32" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atazanavir/Ritonavir 300/100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W32; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W33" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dolutegravir 50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W33; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W34" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ritonavir 100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W34; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W35" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir 600 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W35; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W36" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir/Ritonavir 400/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W36; category adult-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W37" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cabotegravir 200 mg/mL, 3 mL vial" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W37; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W38" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lenacapavir 600 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W38; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W39" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lenacapavir 927 mg/3 mL injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W39; category adult-art. Report in packs, bottles or vials. The source worksheet places this product in the adult-ARV section." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W40" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abacavir/Lamivudine/Dolutegravir 60/30/5 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W40; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W41" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abacavir/Lamivudine 120/60 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W41; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W42" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine/Lamivudine 60/30 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W42; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W43" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dolutegravir 10 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W43; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W44" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nevirapine 50 mg/5 mL" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W44; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W45" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lopinavir/Ritonavir 100/25 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W45; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W46" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir/Ritonavir 120/20 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W46; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W47" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine 10 mg/mL" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W47; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W48" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir 75 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W48; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W49" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ritonavir 25 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W49; category paediatric-art. Report in packs, bottles or vials." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Co-trimoxazole 960 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W50; category ctx-prophylaxis. Report in tablets." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W51" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Co-trimoxazole 120 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W51; category ctx-prophylaxis. Report in tablets." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W52" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid 100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W52; category tb-preventive-therapy. Report in kits." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W53" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid 300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W53; category tb-preventive-therapy. Report in kits." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W54" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid/Rifapentine 300/300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W54; category tb-preventive-therapy. Report in kits." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W55" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rifapentine 150 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W55; category tb-preventive-therapy. Report in kits." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W56" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Acyclovir 200 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W56; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W57" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clotrimazole 100 mg vaginal tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W57; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W58" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluconazole 100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W58; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W59" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluconazole 200 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W59; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W60" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluconazole 50 mg/5 mL suspension, 35 mL" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W60; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W61" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nystatin 100,000 IU/mL suspension" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W61; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W62" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Azithromycin 500 mg capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W62; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W63" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Benzathine penicillin 1 g injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W63; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W64" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ceftriaxone 1 g injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W64; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W65" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ciprofloxacin 500 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W65; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W66" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doxycycline 100 mg capsule" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W66; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W67" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Erythromycin 500 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W67; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W68" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Metronidazole 400 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W68; category anti-infective. The revised worksheet does not state a common reporting unit for this section." ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W69" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Podophyllotoxin 0.5% solution" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W69; category anti-infective. The workbook prints 'Podophyllon toxin'; this display uses the likely intended medicine name while preserving W69 as the source code." ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W70" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Amphotericin B 50 mg vial" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W70; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product." ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W71" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Flucytosine 500 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "W71; category advanced-hiv-disease. Advanced HIV disease or cryptococcal-meningitis treatment product." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

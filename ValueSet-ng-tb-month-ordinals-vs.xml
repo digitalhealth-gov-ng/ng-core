@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-tb-month-ordinals-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-tb-month-ordinals-vs</b></p><a name="ng-tb-month-ordinals-vs"> </a><a name="hcng-tb-month-ordinals-vs"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/255216001">255216001</a></td><td>First</td></tr><tr><td><a href="http://snomed.info/id/81170007">81170007</a></td><td>Second</td></tr><tr><td><a href="http://snomed.info/id/70905002">70905002</a></td><td>Third</td></tr><tr><td><a href="http://snomed.info/id/29970001">29970001</a></td><td>Fourth</td></tr><tr><td><a href="http://snomed.info/id/32088001">32088001</a></td><td>Fifth</td></tr><tr><td><a href="http://snomed.info/id/53046009">53046009</a></td><td>Sixth</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-tb-month-ordinals-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.193"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgTbMonthOrdinalsVS"/>
+  <title value="TB Month Ordinal Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes indicating the month ordinals."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="255216001"/>
+        <display value="First"/>
+      </concept>
+      <concept>
+        <code value="81170007"/>
+        <display value="Second"/>
+      </concept>
+      <concept>
+        <code value="70905002"/>
+        <display value="Third"/>
+      </concept>
+      <concept>
+        <code value="29970001"/>
+        <display value="Fourth"/>
+      </concept>
+      <concept>
+        <code value="32088001"/>
+        <display value="Fifth"/>
+      </concept>
+      <concept>
+        <code value="53046009"/>
+        <display value="Sixth"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

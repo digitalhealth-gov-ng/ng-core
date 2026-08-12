@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-003> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgOrganization-003"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization NgOrganization-003</b></p><a name=\"NgOrganization-003\"> </a><a name=\"hcNgOrganization-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-organization.html\">NG Organization</a></p></div><p><b>NG Owner of Facility</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs public}\">Public Health Institution Location</span></p><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code>/CLM-2025-0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs phc-center-l2}\">Primary Health Care Centre (Level 2)</span></p><p><b>name</b>: Gwagwalada Model PHC</p><p><b>telecom</b>: <a href=\"tel:+234-812-000-4455\">+234-812-000-4455</a></p><p><b>address</b>: Opposite Central Market Gwagwalada FC </p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs" ] ;
+         fhir:Coding.code [ fhir:value "public" ] ;
+         fhir:Coding.display [ fhir:value "Public Health Institution Location" ]
+       ]
+     ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs" ] ;
+     fhir:Identifier.value [ fhir:value "CLM-2025-0001" ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs" ] ;
+       fhir:Coding.code [ fhir:value "phc-center-l2" ] ;
+       fhir:Coding.display [ fhir:value "PHC Center Level 2" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Primary Health Care Centre (Level 2)" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Gwagwalada Model PHC"] ;
+  fhir:Organization.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+234-812-000-4455" ]
+  ] ;
+  fhir:Organization.address [
+     fhir:index 0 ;
+     fhir:Address.line [
+       fhir:value "Opposite Central Market" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Gwagwalada" ] ;
+     fhir:Address.district [ fhir:value "fc-gwagwalada" ] ;
+     fhir:Address.state [ fhir:value "FC" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-003.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

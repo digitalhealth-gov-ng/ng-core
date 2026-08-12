@@ -1,0 +1,126 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-art-register-dsd-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-art-register-dsd-status-cs</b></p><a name=\"ng-hiv-art-register-dsd-status-cs\"> </a><a name=\"hcng-hiv-art-register-dsd-status-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FBM1<a name=\"ng-hiv-art-register-dsd-status-cs-FBM1\"> </a></td><td>Fast-track</td></tr><tr><td style=\"white-space:nowrap\">FBM2<a name=\"ng-hiv-art-register-dsd-status-cs-FBM2\"> </a></td><td>Facility ART group: healthcare-worker led</td></tr><tr><td style=\"white-space:nowrap\">FBM3<a name=\"ng-hiv-art-register-dsd-status-cs-FBM3\"> </a></td><td>Facility ART group: support-group led</td></tr><tr><td style=\"white-space:nowrap\">FBM4<a name=\"ng-hiv-art-register-dsd-status-cs-FBM4\"> </a></td><td>Decentralisation: hub and spoke</td></tr><tr><td style=\"white-space:nowrap\">FBM5<a name=\"ng-hiv-art-register-dsd-status-cs-FBM5\"> </a></td><td>Child, teen or adolescent club: peer managed</td></tr><tr><td style=\"white-space:nowrap\">FBM6<a name=\"ng-hiv-art-register-dsd-status-cs-FBM6\"> </a></td><td>Mother–infant pair or mentor-mother led</td></tr><tr><td style=\"white-space:nowrap\">CBM1<a name=\"ng-hiv-art-register-dsd-status-cs-CBM1\"> </a></td><td>Community pharmacy ART refill</td></tr><tr><td style=\"white-space:nowrap\">CBM2<a name=\"ng-hiv-art-register-dsd-status-cs-CBM2\"> </a></td><td>Community ART refill group: healthcare-worker led</td></tr><tr><td style=\"white-space:nowrap\">CBM3<a name=\"ng-hiv-art-register-dsd-status-cs-CBM3\"> </a></td><td>Community ART refill group: PLHIV led</td></tr><tr><td style=\"white-space:nowrap\">CBM4<a name=\"ng-hiv-art-register-dsd-status-cs-CBM4\"> </a></td><td>Adolescent community ART or peer-led group</td></tr><tr><td style=\"white-space:nowrap\">CBM5<a name=\"ng-hiv-art-register-dsd-status-cs-CBM5\"> </a></td><td>Home delivery</td></tr><tr><td style=\"white-space:nowrap\">CBM6<a name=\"ng-hiv-art-register-dsd-status-cs-CBM6\"> </a></td><td>OSS or Community Service Coordination Centre</td></tr><tr><td style=\"white-space:nowrap\">CBM7<a name=\"ng-hiv-art-register-dsd-status-cs-CBM7\"> </a></td><td>Drop-in centre</td></tr><tr><td style=\"white-space:nowrap\">CBM8<a name=\"ng-hiv-art-register-dsd-status-cs-CBM8\"> </a></td><td>Courier service</td></tr><tr><td style=\"white-space:nowrap\">CBM9<a name=\"ng-hiv-art-register-dsd-status-cs-CBM9\"> </a></td><td>Closed setting</td></tr><tr><td style=\"white-space:nowrap\">ND<a name=\"ng-hiv-art-register-dsd-status-cs-ND\"> </a></td><td>Non-devolved</td></tr><tr><td style=\"white-space:nowrap\">NE<a name=\"ng-hiv-art-register-dsd-status-cs-NE\"> </a></td><td>Not eligible</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.23"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivArtRegisterDsdStatusCS",
+  "title" : "NG HIV ART Register DSD Status Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-28",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Facility- and community-based differentiated-service-delivery model codes printed in column A33 of the National ART Register.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 17,
+  "concept" : [{
+    "code" : "FBM1",
+    "display" : "Fast-track"
+  },
+  {
+    "code" : "FBM2",
+    "display" : "Facility ART group: healthcare-worker led"
+  },
+  {
+    "code" : "FBM3",
+    "display" : "Facility ART group: support-group led"
+  },
+  {
+    "code" : "FBM4",
+    "display" : "Decentralisation: hub and spoke"
+  },
+  {
+    "code" : "FBM5",
+    "display" : "Child, teen or adolescent club: peer managed"
+  },
+  {
+    "code" : "FBM6",
+    "display" : "Mother–infant pair or mentor-mother led"
+  },
+  {
+    "code" : "CBM1",
+    "display" : "Community pharmacy ART refill"
+  },
+  {
+    "code" : "CBM2",
+    "display" : "Community ART refill group: healthcare-worker led"
+  },
+  {
+    "code" : "CBM3",
+    "display" : "Community ART refill group: PLHIV led"
+  },
+  {
+    "code" : "CBM4",
+    "display" : "Adolescent community ART or peer-led group"
+  },
+  {
+    "code" : "CBM5",
+    "display" : "Home delivery"
+  },
+  {
+    "code" : "CBM6",
+    "display" : "OSS or Community Service Coordination Centre"
+  },
+  {
+    "code" : "CBM7",
+    "display" : "Drop-in centre"
+  },
+  {
+    "code" : "CBM8",
+    "display" : "Courier service"
+  },
+  {
+    "code" : "CBM9",
+    "display" : "Closed setting"
+  },
+  {
+    "code" : "ND",
+    "display" : "Non-devolved"
+  },
+  {
+    "code" : "NE",
+    "display" : "Not eligible"
+  }]
+}

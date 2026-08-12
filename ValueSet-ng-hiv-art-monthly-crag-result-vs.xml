@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-monthly-crag-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-art-monthly-crag-result-vs</b></p><a name="ng-hiv-art-monthly-crag-result-vs"> </a><a name="hcng-hiv-art-monthly-crag-result-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-crag-negative">crag-negative</a></td><td style="color: #cccccc">Serum CrAg negative</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-crag-positive">crag-positive</a></td><td style="color: #cccccc">Serum CrAg positive</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-monthly-crag-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.34"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtMonthlyCragResultVS"/>
+  <title value="NG HIV ART Monthly Serum CrAg Results"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Serum CrAg result categories used under ART20."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs"/>
+      <concept>
+        <code value="crag-negative"/>
+      </concept>
+      <concept>
+        <code value="crag-positive"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

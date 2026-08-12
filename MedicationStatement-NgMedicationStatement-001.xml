@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="NgMedicationStatement-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-statement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationStatement NgMedicationStatement-001</b></p><a name="NgMedicationStatement-001"> </a><a name="hcNgMedicationStatement-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-medication-statement.html">Nigeria Medication Statement</a></p></div><p><b>status</b>: Active</p><p><b>category</b>: <span title="Codes:">Outpatient medication</span></p><p><b>medication</b>: <a href="Medication-NgMedication-001.html">Medication </a></p><p><b>subject</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>context</b>: <a href="Encounter-NgEncounter-002.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 12:15:00+0000 --&gt; 2025-11-04 12:25:00+0000</a></p><p><b>effective</b>: 2026-08-01 --&gt; (ongoing)</p><p><b>dateAsserted</b>: 2026-08-03 09:00:00+0100</p><p><b>informationSource</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>reasonCode</b>: <span title="Codes:">Fever and mild body pain</span></p><p><b>note</b>: </p><blockquote><div><p>The patient reported taking the medication as directed.</p>
+</div></blockquote><blockquote><p><b>dosage</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: Take two tablets orally every eight hours as needed for fever</p><p><b>timing</b>: 3 per 1 day</p><p><b>asNeeded</b>: true</p><p><b>route</b>: <span title="Codes:">Oral route</span></p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>2 tablet</td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <category>
+    <text value="Outpatient medication"/>
+  </category>
+  <medicationReference>
+    <reference value="Medication/NgMedication-001"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/NgPatient-002"/>
+  </subject>
+  <context>
+    <reference value="Encounter/NgEncounter-002"/>
+  </context>
+  <effectivePeriod>
+    <start value="2026-08-01"/>
+  </effectivePeriod>
+  <dateAsserted value="2026-08-03T09:00:00+01:00"/>
+  <informationSource>
+    <reference value="Patient/NgPatient-002"/>
+  </informationSource>
+  <reasonCode>
+    <text value="Fever and mild body pain"/>
+  </reasonCode>
+  <note>
+    <text value="The patient reported taking the medication as directed."/>
+  </note>
+  <dosage>
+    <sequence value="1"/>
+    <text value="Take two tablets orally every eight hours as needed for fever"/>
+    <timing>
+      <repeat>
+        <frequency value="3"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <asNeededBoolean value="true"/>
+    <route>
+      <text value="Oral route"/>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="2"/>
+        <unit value="tablet"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

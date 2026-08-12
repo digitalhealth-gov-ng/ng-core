@@ -1,0 +1,270 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-eac-form-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-eac-form-cs</b></p><a name=\"ng-hiv-eac-form-cs\"> </a><a name=\"hcng-hiv-eac-form-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">adherence-good<a name=\"ng-hiv-eac-form-cs-adherence-good\"> </a></td><td>Good</td><td>The client demonstrates good adherence to the prescribed ART regimen.</td></tr><tr><td style=\"white-space:nowrap\">adherence-fair<a name=\"ng-hiv-eac-form-cs-adherence-fair\"> </a></td><td>Fair</td><td>The client demonstrates fair adherence to the prescribed ART regimen.</td></tr><tr><td style=\"white-space:nowrap\">adherence-poor<a name=\"ng-hiv-eac-form-cs-adherence-poor\"> </a></td><td>Poor</td><td>The client demonstrates poor adherence to the prescribed ART regimen.</td></tr><tr><td style=\"white-space:nowrap\">barrier-forgot<a name=\"ng-hiv-eac-form-cs-barrier-forgot\"> </a></td><td>Forgot</td><td>The client forgot to take one or more prescribed ART doses.</td></tr><tr><td style=\"white-space:nowrap\">barrier-knowledge-beliefs<a name=\"ng-hiv-eac-form-cs-barrier-knowledge-beliefs\"> </a></td><td>Knowledge or beliefs</td><td>Knowledge, understanding or beliefs affect the client's adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-side-effects<a name=\"ng-hiv-eac-form-cs-barrier-side-effects\"> </a></td><td>Side effects</td><td>Actual or anticipated medication side effects affect adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-physical-illness<a name=\"ng-hiv-eac-form-cs-barrier-physical-illness\"> </a></td><td>Physical illness</td><td>Physical illness affects the client's ability or willingness to take ART.</td></tr><tr><td style=\"white-space:nowrap\">barrier-substance-use<a name=\"ng-hiv-eac-form-cs-barrier-substance-use\"> </a></td><td>Substance use</td><td>Alcohol or other substance use affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-depression<a name=\"ng-hiv-eac-form-cs-barrier-depression\"> </a></td><td>Depression</td><td>Depression or depressive symptoms affect adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-pill-burden<a name=\"ng-hiv-eac-form-cs-barrier-pill-burden\"> </a></td><td>Pill burden</td><td>The number, size or frequency of medicines affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-lost-ran-out-of-drugs<a name=\"ng-hiv-eac-form-cs-barrier-lost-ran-out-of-drugs\"> </a></td><td>Lost or ran out of drugs</td><td>The client lost the medicines or exhausted the supply before the next refill.</td></tr><tr><td style=\"white-space:nowrap\">barrier-transport<a name=\"ng-hiv-eac-form-cs-barrier-transport\"> </a></td><td>Transport</td><td>Transport availability or cost affects access to ART services or medicines.</td></tr><tr><td style=\"white-space:nowrap\">barrier-child-refusing<a name=\"ng-hiv-eac-form-cs-barrier-child-refusing\"> </a></td><td>Child refusing</td><td>A child refuses to take the prescribed ART medicines.</td></tr><tr><td style=\"white-space:nowrap\">barrier-scheduling<a name=\"ng-hiv-eac-form-cs-barrier-scheduling\"> </a></td><td>Scheduling</td><td>The client's daily schedule or medication schedule affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-fear-of-disclosure<a name=\"ng-hiv-eac-form-cs-barrier-fear-of-disclosure\"> </a></td><td>Fear of disclosure</td><td>Fear that the client's HIV status may be disclosed affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-family-partner<a name=\"ng-hiv-eac-form-cs-barrier-family-partner\"> </a></td><td>Family or partner</td><td>A family or partner-related issue affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-food-insecurity<a name=\"ng-hiv-eac-form-cs-barrier-food-insecurity\"> </a></td><td>Food insecurity</td><td>Lack of reliable access to adequate food affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-drug-stock-out<a name=\"ng-hiv-eac-form-cs-barrier-drug-stock-out\"> </a></td><td>Drug stock-out</td><td>The medicine was unavailable because of a facility or supply-chain stock-out.</td></tr><tr><td style=\"white-space:nowrap\">barrier-long-waiting-time<a name=\"ng-hiv-eac-form-cs-barrier-long-waiting-time\"> </a></td><td>Long waiting time</td><td>Long waiting time at the service-delivery point affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-stigma<a name=\"ng-hiv-eac-form-cs-barrier-stigma\"> </a></td><td>Stigma</td><td>Experienced or anticipated HIV-related stigma affects adherence.</td></tr><tr><td style=\"white-space:nowrap\">barrier-other<a name=\"ng-hiv-eac-form-cs-barrier-other\"> </a></td><td>Other barrier</td><td>An adherence barrier not represented by another code; specify separately.</td></tr><tr><td style=\"white-space:nowrap\">service-education<a name=\"ng-hiv-eac-form-cs-service-education\"> </a></td><td>Education</td><td>Education was provided to address adherence needs.</td></tr><tr><td style=\"white-space:nowrap\">service-individual-counselling<a name=\"ng-hiv-eac-form-cs-service-individual-counselling\"> </a></td><td>Individual counselling</td><td>Individual adherence counselling was provided.</td></tr><tr><td style=\"white-space:nowrap\">service-group-counselling<a name=\"ng-hiv-eac-form-cs-service-group-counselling\"> </a></td><td>Group counselling</td><td>Group adherence counselling was provided.</td></tr><tr><td style=\"white-space:nowrap\">service-peer-support<a name=\"ng-hiv-eac-form-cs-service-peer-support\"> </a></td><td>Peer support</td><td>Peer-based adherence support was provided.</td></tr><tr><td style=\"white-space:nowrap\">service-treatment-buddy<a name=\"ng-hiv-eac-form-cs-service-treatment-buddy\"> </a></td><td>Treatment buddy</td><td>A treatment buddy was established or supported.</td></tr><tr><td style=\"white-space:nowrap\">service-extended-drug-pick-up<a name=\"ng-hiv-eac-form-cs-service-extended-drug-pick-up\"> </a></td><td>Extended drug pick-up</td><td>An extended medicine pick-up arrangement was provided.</td></tr><tr><td style=\"white-space:nowrap\">service-community-art-group<a name=\"ng-hiv-eac-form-cs-service-community-art-group\"> </a></td><td>Community ART group</td><td>The client was linked to or supported through a community ART group.</td></tr><tr><td style=\"white-space:nowrap\">service-directly-observed-therapy<a name=\"ng-hiv-eac-form-cs-service-directly-observed-therapy\"> </a></td><td>Directly observed therapy</td><td>Direct observation of treatment was provided or arranged.</td></tr><tr><td style=\"white-space:nowrap\">service-other<a name=\"ng-hiv-eac-form-cs-service-other\"> </a></td><td>Other service intervention</td><td>A service intervention not represented by another code; specify separately.</td></tr><tr><td style=\"white-space:nowrap\">tool-pill-box<a name=\"ng-hiv-eac-form-cs-tool-pill-box\"> </a></td><td>Pill box</td><td>A pill box was provided or recommended as an adherence aid.</td></tr><tr><td style=\"white-space:nowrap\">tool-calendar<a name=\"ng-hiv-eac-form-cs-tool-calendar\"> </a></td><td>Calendar</td><td>A calendar was provided or recommended as an adherence aid.</td></tr><tr><td style=\"white-space:nowrap\">tool-incentive-calendar-paediatric<a name=\"ng-hiv-eac-form-cs-tool-incentive-calendar-paediatric\"> </a></td><td>Incentive calendar (paediatric)</td><td>A paediatric incentive calendar was provided or recommended.</td></tr><tr><td style=\"white-space:nowrap\">tool-arv-swallowing-instruction<a name=\"ng-hiv-eac-form-cs-tool-arv-swallowing-instruction\"> </a></td><td>ARV swallowing instruction</td><td>Instruction on swallowing or administering ARV medicines was provided.</td></tr><tr><td style=\"white-space:nowrap\">tool-written-instructions<a name=\"ng-hiv-eac-form-cs-tool-written-instructions\"> </a></td><td>Written instructions</td><td>Written medication or adherence instructions were provided.</td></tr><tr><td style=\"white-space:nowrap\">tool-phone-call-sms<a name=\"ng-hiv-eac-form-cs-tool-phone-call-sms\"> </a></td><td>Phone calls or SMS</td><td>Phone calls or SMS messages were used or planned as adherence reminders.</td></tr><tr><td style=\"white-space:nowrap\">tool-alarms<a name=\"ng-hiv-eac-form-cs-tool-alarms\"> </a></td><td>Alarms</td><td>An alarm or electronic reminder was used or recommended.</td></tr><tr><td style=\"white-space:nowrap\">tool-other<a name=\"ng-hiv-eac-form-cs-tool-other\"> </a></td><td>Other intervention tool</td><td>An adherence tool not represented by another code; specify separately.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.44" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivEacFormCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV Enhanced Adherence Counselling Form Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local coded answers transcribed from the Nigeria Enhanced Adherence\nCounselling Form for adherence assessment, adherence barriers, service\ninterventions and intervention tools."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "38"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adherence-good" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Good" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client demonstrates good adherence to the prescribed ART regimen." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adherence-fair" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fair" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client demonstrates fair adherence to the prescribed ART regimen." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adherence-poor" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Poor" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client demonstrates poor adherence to the prescribed ART regimen." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-forgot" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Forgot" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client forgot to take one or more prescribed ART doses." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-knowledge-beliefs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Knowledge or beliefs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Knowledge, understanding or beliefs affect the client's adherence." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-side-effects" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Side effects" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Actual or anticipated medication side effects affect adherence." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-physical-illness" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physical illness" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical illness affects the client's ability or willingness to take ART." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-substance-use" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Substance use" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Alcohol or other substance use affects adherence." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-depression" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depression" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Depression or depressive symptoms affect adherence." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-pill-burden" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pill burden" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The number, size or frequency of medicines affects adherence." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-lost-ran-out-of-drugs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lost or ran out of drugs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client lost the medicines or exhausted the supply before the next refill." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-transport" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transport" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Transport availability or cost affects access to ART services or medicines." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-child-refusing" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Child refusing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A child refuses to take the prescribed ART medicines." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-scheduling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Scheduling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client's daily schedule or medication schedule affects adherence." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-fear-of-disclosure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fear of disclosure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fear that the client's HIV status may be disclosed affects adherence." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-family-partner" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Family or partner" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A family or partner-related issue affects adherence." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-food-insecurity" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Food insecurity" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lack of reliable access to adequate food affects adherence." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-drug-stock-out" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drug stock-out" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The medicine was unavailable because of a facility or supply-chain stock-out." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-long-waiting-time" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Long waiting time" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Long waiting time at the service-delivery point affects adherence." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-stigma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stigma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Experienced or anticipated HIV-related stigma affects adherence." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "barrier-other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other barrier" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An adherence barrier not represented by another code; specify separately." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-education" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Education" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Education was provided to address adherence needs." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-individual-counselling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Individual counselling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Individual adherence counselling was provided." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-group-counselling" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Group counselling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Group adherence counselling was provided." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-peer-support" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Peer support" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Peer-based adherence support was provided." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-treatment-buddy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment buddy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A treatment buddy was established or supported." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-extended-drug-pick-up" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Extended drug pick-up" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An extended medicine pick-up arrangement was provided." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-community-art-group" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community ART group" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client was linked to or supported through a community ART group." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-directly-observed-therapy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Directly observed therapy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Direct observation of treatment was provided or arranged." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other service intervention" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A service intervention not represented by another code; specify separately." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-pill-box" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pill box" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A pill box was provided or recommended as an adherence aid." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-calendar" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Calendar" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A calendar was provided or recommended as an adherence aid." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-incentive-calendar-paediatric" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Incentive calendar (paediatric)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A paediatric incentive calendar was provided or recommended." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-arv-swallowing-instruction" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ARV swallowing instruction" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Instruction on swallowing or administering ARV medicines was provided." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-written-instructions" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Written instructions" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Written medication or adherence instructions were provided." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-phone-call-sms" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Phone calls or SMS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Phone calls or SMS messages were used or planned as adherence reminders." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-alarms" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alarms" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alarm or electronic reminder was used or recommended." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tool-other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other intervention tool" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An adherence tool not represented by another code; specify separately." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="NgPractitionerRole-002"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole NgPractitionerRole-002</b></p><a name="NgPractitionerRole-002"> </a><a name="hcNgPractitionerRole-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a></p></div><p><b>period</b>: 2022-06-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></p><p><b>organization</b>: <a href="Organization-NgOrganization-001.html">Organization Asokoro District Hospital</a></p><p><b>code</b>: <span title="Codes:">Pharmacist</span>, <span title="Codes:">Claims Submission Officer</span></p></div>
+  </text>
+  <period>
+    <start value="2022-06-01"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/NgPractitioner-002"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/NgOrganization-001"/>
+  </organization>
+  <code>
+    <text value="Pharmacist"/>
+  </code>
+  <code>
+    <text value="Claims Submission Officer"/>
+  </code>
+</PractitionerRole>

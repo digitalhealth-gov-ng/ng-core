@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="NgTertiaryRequestorCapability"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Nigeria Core Tertiary Referral Requestor Capability</h2><p>This narrative is a developer-facing summary of the computable Nigeria Core capability requirements for this actor and facility level. The computable <code>CapabilityStatement</code> remains authoritative.</p><h3>Common resource interactions and outcomes</h3><p>Unless this CapabilityStatement narrows a resource capability, each listed resource follows the R4 interaction outcomes below. Failed interactions SHALL return a FHIR <code>OperationOutcome</code> with an appropriate HTTP 4xx or 5xx status.</p><table border="1" cellpadding="4" cellspacing="0"><thead><tr><th>Interaction</th><th>Successful outcome</th><th>Failure outcome</th></tr></thead><tbody><tr><td><code>read</code></td><td>HTTP 200 + requested resource</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>vread</code></td><td>HTTP 200 + requested historical version</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>create</code></td><td>HTTP 201 Created; representation or minimal response as negotiated</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>update</code></td><td>HTTP 200; or HTTP 201 for update-as-create</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>patch</code></td><td>HTTP 200; representation or minimal response as negotiated</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>delete</code></td><td>HTTP 200 or 204 when deletion is permitted</td><td>Rejected/protected deletion: HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>history-instance</code></td><td>HTTP 200 + <code>Bundle.type=history</code></td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>history-type</code></td><td>HTTP 200 + <code>Bundle.type=history</code></td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr><tr><td><code>search-type</code></td><td>HTTP 200 + <code>Bundle.type=searchset</code>, with paging where required</td><td>HTTP 4xx/5xx + <code>OperationOutcome</code></td></tr></tbody></table><h3>Server-level Bundle interactions</h3><p>Where declared by the computable CapabilityStatement, the following server-level Bundle interactions apply.</p><table border="1" cellpadding="4" cellspacing="0"><thead><tr><th>Interaction</th><th>Successful outcome</th><th>Failure behaviour</th></tr></thead><tbody><tr><td><code>transaction</code></td><td>HTTP 200 with <code>Bundle.type=transaction-response</code></td><td>Transaction failure: HTTP 4xx/5xx with <code>OperationOutcome</code>; processing is atomic.</td></tr><tr><td><code>batch</code></td><td>HTTP 200 with <code>Bundle.type=batch-response</code></td><td>Each entry carries its own result and may carry an entry-level <code>OperationOutcome</code>.</td></tr></tbody></table><h3>Resource capability matrix</h3><p><b>Common searches:</b> <code>_id (token)</code>, <code>_lastUpdated (date)</code>, and <code>_profile (uri)</code>. Resource-specific searches are listed below. Unless narrowed by the computable statement, failed operations SHALL return an appropriate HTTP 4xx/5xx response with <code>OperationOutcome</code>.</p><table border="1" cellpadding="4" cellspacing="0"><thead><tr><th>Resource</th><th>Supported Nigeria Core Profile</th><th>Resource-specific search</th><th>Operations and successful outcome</th></tr></thead><tbody><tr><td><code>Patient</code></td><td><code>NgPatient</code></td><td><code>identifier (token)</code><br/><code>name (string)</code><br/><code>birthdate (date)</code><br/><code>gender (token)</code><br/><code>active (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result<br/><code>$match</code> — HTTP 200 with <code>Bundle.type=searchset</code> containing candidate Patient matches<br/><code>$generate-ng-patient-summary</code> — HTTP 2xx with the patient-summary output defined by the Nigeria Core OperationDefinition<br/><code>$generate-certificate</code> — HTTP 2xx with the generated certificate output defined by the Nigeria Core OperationDefinition</td></tr><tr><td><code>Practitioner</code></td><td><code>NgPractitioner</code></td><td><code>identifier (token)</code><br/><code>name (string)</code><br/><code>active (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>PractitionerRole</code></td><td><code>NgPractitionerRole</code></td><td><code>practitioner (reference)</code><br/><code>organization (reference)</code><br/><code>role (token)</code><br/><code>active (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>RelatedPerson</code></td><td><code>NgRelatedPerson</code></td><td><code>identifier (token)</code><br/><code>name (string)</code><br/><code>patient (reference)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Organization</code></td><td><code>NgOrganization</code></td><td><code>identifier (token)</code><br/><code>name (string)</code><br/><code>type (token)</code><br/><code>active (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Location</code></td><td><code>NgLocation</code></td><td><code>identifier (token)</code><br/><code>name (string)</code><br/><code>organization (reference)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Encounter</code></td><td><code>NgEncounter</code></td><td><code>patient (reference)</code><br/><code>identifier (token)</code><br/><code>date (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Observation</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>category (token)</code><br/><code>code (token)</code><br/><code>date (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Condition</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>code (token)</code><br/><code>clinical-status (token)</code><br/><code>verification-status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>MedicationRequest</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>status (token)</code><br/><code>intent (token)</code><br/><code>medication (reference)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>MedicationStatement</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>status (token)</code><br/><code>medication (reference)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>ServiceRequest</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>identifier (token)</code><br/><code>code (token)</code><br/><code>status (token)</code><br/><code>intent (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Specimen</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>identifier (token)</code><br/><code>type (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>DiagnosticReport</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>category (token)</code><br/><code>code (token)</code><br/><code>date (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>AllergyIntolerance</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>code (token)</code><br/><code>clinical-status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Immunization</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>date (date)</code><br/><code>status (token)</code><br/><code>vaccine-code (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>QuestionnaireResponse</code></td><td>Base FHIR resource</td><td><code>questionnaire (reference)</code><br/><code>patient (reference)</code><br/><code>authored (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Flag</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>subject (reference)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Task</code></td><td>Base FHIR resource</td><td><code>status (token)</code><br/><code>owner (reference)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>DocumentReference</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>identifier (token)</code><br/><code>type (token)</code><br/><code>category (token)</code><br/><code>date (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result<br/><code>$verify-certificate</code> — HTTP 2xx with the certificate-verification result defined by the Nigeria Core OperationDefinition</td></tr><tr><td><code>Composition</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>type (token)</code><br/><code>date (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>ImagingStudy</code></td><td>Base FHIR resource</td><td><code>patient (reference)</code><br/><code>identifier (token)</code><br/><code>started (date)</code><br/><code>status (token)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Provenance</code></td><td>Base FHIR resource</td><td><code>target (reference)</code><br/><code>recorded (date)</code><br/><code>agent (reference)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr><tr><td><code>Invoice</code></td><td>Base FHIR resource</td><td><code>identifier (token)</code><br/><code>status (token)</code><br/><code>date (date)</code></td><td><code>$validate</code> — HTTP 200 with <code>OperationOutcome</code> validation result</td></tr></tbody></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgTertiaryRequestorCapability"/>
+  <version value="0.0.0"/>
+  <name value="NgTertiaryRequestorCapability"/>
+  <title value="Nigeria Core Tertiary Referral Requestor Capability"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-09"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Minimum computable FHIR requirements for the Nigeria Core Requestor role in tertiary referral facilities."/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="venue"/>
+    </code>
+    <valueCodeableConcept>
+      <text value="Tertiary referral facilities"/>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Defines the computable Nigeria Core requirements for the Nigeria Core Requestor&#xA;role in tertiary referral facilities. Supports advanced clinical diagnostic imaging pharmacy referral document provenance and financial exchange.&#xA;&#xA;This CapabilityStatement supports implementation, procurement, vendor onboarding,&#xA;SANDBOX FHIR configuration, interoperability testing, and automated conformance&#xA;assessment. A deployed server SHALL expose only capabilities actually implemented&#xA;by the deployment in its runtime /metadata response."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <format value="xml"/>
+  <patchFormat value="application/json-patch+json"/>
+  <patchFormat value="application/xml-patch+xml"/>
+  <rest>
+    <mode value="client"/>
+    <documentation value="Nigeria Core Nigeria Core Requestor requirements for tertiary referral facilities. Initiates comprehensive cross-facility and advanced referral workflows.&#xA;&#xA;Reference Policy: systems SHALL support literal FHIR references and logical&#xA;identifier-based references. Same-server and same-Bundle relationships SHOULD&#xA;use Reference.reference. Cross-platform relationships MAY additionally use&#xA;Reference.identifier with stable national, programme, regulator-issued, or local&#xA;identifiers. External absolute references are not assumed to be resolvable unless&#xA;required by an exchange agreement or a more specific CapabilityStatement.&#xA;&#xA;Search Policy: supported searches SHALL follow FHIR R4 semantics. Search success&#xA;returns HTTP 200 with Bundle.type = searchset. Search failures SHALL return an&#xA;appropriate HTTP 4xx/5xx response with OperationOutcome. Servers SHALL document&#xA;required filters and SHALL NOT apply undocumented hidden filters.&#xA;&#xA;Operation Policy: the referenced OperationDefinition is authoritative for scope,&#xA;parameters, input types, output types, and cardinalities. Failed operations SHALL&#xA;return an appropriate HTTP 4xx/5xx response with OperationOutcome."/>
+    <security>
+      <description value="Production systems SHALL authenticate and authorise access according to Nigeria&#xA;Core security guidance and applicable national, programme, organisational, and&#xA;regulatory policy. Access controls SHOULD consider user, role, organisation,&#xA;facility, geography, purpose, consent, and data sensitivity. Communication over&#xA;open networks SHALL protect confidentiality and integrity."/>
+    </security>
+    <resource>
+      <type value="Patient"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      <documentation value="Nigeria Core Patient read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Patient. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Patient version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="birthdate"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required birthdate search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="gender"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required gender search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="active"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required active search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+      <operation>
+        <name value="match"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Patient-match"/>
+        <documentation value="Success: HTTP 200 with searchset Bundle containing candidate Patient matches. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced OperationDefinition."/>
+      </operation>
+      <operation>
+        <name value="generate-ng-patient-summary"/>
+        <definition value="https://fhir-ig.digitalhealth.gov.ng/OperationDefinition/generate-ng-patient-summary"/>
+        <documentation value="Success: HTTP 2xx with the Nigeria Core patient summary output. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced Nigeria Core OperationDefinition."/>
+      </operation>
+      <operation>
+        <name value="generate-certificate"/>
+        <definition value="https://fhir-ig.digitalhealth.gov.ng/OperationDefinition/generate-certificate"/>
+        <documentation value="Success: HTTP 2xx with the generated certificate output. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced Nigeria Core OperationDefinition."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner"/>
+      <documentation value="Nigeria Core Practitioner read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with Practitioner; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Practitioner. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Practitioner version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <readHistory value="true"/>
+      <conditionalRead value="full-support"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Practitioner-identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="active"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required active search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      <documentation value="Nigeria Core PractitionerRole read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with PractitionerRole; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested PractitionerRole. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical PractitionerRole version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <readHistory value="true"/>
+      <conditionalRead value="full-support"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required practitioner search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required organization search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="role"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required role search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="active"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required active search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person"/>
+      <documentation value="Nigeria Core RelatedPerson read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with RelatedPerson; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested RelatedPerson. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical RelatedPerson version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <readHistory value="true"/>
+      <conditionalRead value="full-support"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      <documentation value="Nigeria Core Organization read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with Organization; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Organization. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Organization version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <readHistory value="true"/>
+      <conditionalRead value="full-support"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required type search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="active"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required active search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location"/>
+      <documentation value="Nigeria Core Location read/search capability. Reference Policy: literal and logical references are supported. Successful read/vread returns HTTP 200 with Location; successful search returns HTTP 200 with Bundle.type = searchset. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Location. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Location version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned"/>
+      <readHistory value="true"/>
+      <conditionalRead value="full-support"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Nigeria Core required name search using FHIR R4 string search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required organization search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Encounter"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-encounter"/>
+      <documentation value="Nigeria Core Encounter read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Encounter. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Encounter version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-status"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-edd"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-outcome"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-tobacco-use"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-radiology"/>
+      <documentation value="Nigeria Core Observation read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Observation. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Observation version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required category search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Condition"/>
+      <documentation value="Nigeria Core Condition read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Condition. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Condition version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="clinical-status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required clinical-status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="verification-status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required verification-status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request"/>
+      <documentation value="Nigeria Core MedicationRequest read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested MedicationRequest. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical MedicationRequest version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="intent"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required intent search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required medication search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="MedicationStatement"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-statement"/>
+      <documentation value="Nigeria Core MedicationStatement read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested MedicationStatement. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical MedicationStatement version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required medication search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="ServiceRequest"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-service-request"/>
+      <documentation value="Nigeria Core ServiceRequest read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested ServiceRequest. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical ServiceRequest version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="intent"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required intent search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Specimen"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-specimen"/>
+      <documentation value="Nigeria Core Specimen read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Specimen. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Specimen version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required type search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="DiagnosticReport"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-diagnostic-report"/>
+      <documentation value="Nigeria Core DiagnosticReport read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested DiagnosticReport. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical DiagnosticReport version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required category search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="AllergyIntolerance"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-allergy-intolerance"/>
+      <documentation value="Nigeria Core AllergyIntolerance read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested AllergyIntolerance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical AllergyIntolerance version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="clinical-status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required clinical-status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Immunization"/>
+      <documentation value="Nigeria Core Immunization read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Immunization. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Immunization version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="vaccine-code"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required vaccine-code search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="QuestionnaireResponse"/>
+      <documentation value="Nigeria Core QuestionnaireResponse read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested QuestionnaireResponse. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical QuestionnaireResponse version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="questionnaire"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required questionnaire search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="authored"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required authored search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Flag"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-flag"/>
+      <documentation value="Nigeria Core Flag read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Flag. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Flag version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required subject search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Task"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task"/>
+      <documentation value="Nigeria Core Task read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Task. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Task version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="owner"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required owner search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="DocumentReference"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-documents"/>
+      <documentation value="Nigeria Core DocumentReference read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested DocumentReference. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical DocumentReference version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required type search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required category search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+      <operation>
+        <name value="verify-certificate"/>
+        <definition value="https://fhir-ig.digitalhealth.gov.ng/OperationDefinition/verify-certificate"/>
+        <documentation value="Success: HTTP 2xx with the certificate verification result. Failure: HTTP 4xx/5xx with OperationOutcome. Inputs and outputs SHALL conform to the referenced Nigeria Core OperationDefinition."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Composition"/>
+      <documentation value="Nigeria Core Composition read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Composition. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Composition version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required type search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="ImagingStudy"/>
+      <documentation value="Nigeria Core ImagingStudy read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested ImagingStudy. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical ImagingStudy version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required patient search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="started"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required started search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Provenance"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provenance"/>
+      <documentation value="Nigeria Core Provenance read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Provenance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Provenance version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="target"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required target search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="recorded"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required recorded search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="agent"/>
+        <type value="reference"/>
+        <documentation value="Nigeria Core required agent search using FHIR R4 reference search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <resource>
+      <type value="Invoice"/>
+      <supportedProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-invoice"/>
+      <documentation value="Nigeria Core Invoice read/write/search capability. Reference Policy: literal and logical references are supported. Create success returns HTTP 201; read/update/patch/search success returns the FHIR R4 result appropriate to the interaction. Failure SHALL return HTTP 4xx/5xx with OperationOutcome."/>
+      <interaction>
+        <code value="read"/>
+        <documentation value="Success: HTTP 200 with the requested Invoice. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+        <documentation value="Success: HTTP 200 with the requested historical Invoice version. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Success: HTTP 201 Created. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="Success: HTTP 200 or HTTP 201 for update-as-create. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="patch"/>
+        <documentation value="Success: HTTP 200 with the updated resource or a minimal response as negotiated. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = history for the resource instance. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Success: HTTP 200 with Bundle.type = searchset. Failure: HTTP 4xx/5xx with OperationOutcome."/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalRead value="full-support"/>
+      <conditionalUpdate value="true"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="logical"/>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required identifier search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Nigeria Core required status search using FHIR R4 token search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Nigeria Core required date search using FHIR R4 date search semantics. Search failure SHALL return OperationOutcome."/>
+      </searchParam>
+      <operation>
+        <name value="validate"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        <documentation value="Success: HTTP 200 with OperationOutcome describing validation results. Failure to execute: HTTP 4xx/5xx with OperationOutcome."/>
+      </operation>
+    </resource>
+    <interaction>
+      <code value="transaction"/>
+      <documentation value="Success: HTTP 200 with Bundle.type = transaction-response. Failure: HTTP 4xx/5xx with OperationOutcome; transaction processing is atomic."/>
+    </interaction>
+    <interaction>
+      <code value="batch"/>
+      <documentation value="Success: HTTP 200 with Bundle.type = batch-response. Each entry carries its own result and MAY include an entry-level OperationOutcome."/>
+    </interaction>
+    <searchParam>
+      <name value="_id"/>
+      <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+      <type value="token"/>
+      <documentation value="Search by logical resource id."/>
+    </searchParam>
+    <searchParam>
+      <name value="_lastUpdated"/>
+      <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+      <type value="date"/>
+      <documentation value="Supports incremental synchronisation using Resource.meta.lastUpdated."/>
+    </searchParam>
+    <searchParam>
+      <name value="_profile"/>
+      <definition value="http://hl7.org/fhir/SearchParameter/Resource-profile"/>
+      <type value="uri"/>
+      <documentation value="Search by profile assertion in Resource.meta.profile."/>
+    </searchParam>
+  </rest>
+</CapabilityStatement>

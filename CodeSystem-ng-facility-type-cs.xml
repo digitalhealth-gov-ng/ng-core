@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-facility-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-facility-type-cs</b></p><a name="ng-facility-type-cs"> </a><a name="hcng-facility-type-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">outreach<a name="ng-facility-type-cs-outreach"> </a></td><td>Outreach Post</td><td>A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations.</td></tr><tr><td style="white-space:nowrap">phc-center-l1<a name="ng-facility-type-cs-phc-center-l1"> </a></td><td>PHC Center Level 1</td><td>A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers.</td></tr><tr><td style="white-space:nowrap">phc-center-l2<a name="ng-facility-type-cs-phc-center-l2"> </a></td><td>PHC Center Level 2</td><td>A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel.</td></tr><tr><td style="white-space:nowrap">phc-center-l3<a name="ng-facility-type-cs-phc-center-l3"> </a></td><td>PHC Center Level 3</td><td>An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer.</td></tr><tr><td style="white-space:nowrap">hospital<a name="ng-facility-type-cs-hospital"> </a></td><td>Secondary Hospital</td><td>A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists.</td></tr><tr><td style="white-space:nowrap">tertiary<a name="ng-facility-type-cs-tertiary"> </a></td><td>Tertiary Facility</td><td>A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.16"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgFacilityTypeCS"/>
+  <title value="NG Facility Type CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="outreach"/>
+    <display value="Outreach Post"/>
+    <definition value="A temporary or mobile health service site established to deliver essential healthcare to underserved or remote populations."/>
+  </concept>
+  <concept>
+    <code value="phc-center-l1"/>
+    <display value="PHC Center Level 1"/>
+    <definition value="A basic primary healthcare facility providing preventive and promotive services, often staffed by community health workers."/>
+  </concept>
+  <concept>
+    <code value="phc-center-l2"/>
+    <display value="PHC Center Level 2"/>
+    <definition value="A primary healthcare facility with limited diagnostic and treatment services, typically staffed by nurses, CHEWs, or junior medical personnel."/>
+  </concept>
+  <concept>
+    <code value="phc-center-l3"/>
+    <display value="PHC Center Level 3"/>
+    <definition value="An advanced primary healthcare facility offering comprehensive outpatient care, minor/light procedures, and referral support, often with a resident medical officer."/>
+  </concept>
+  <concept>
+    <code value="hospital"/>
+    <display value="Secondary Hospital"/>
+    <definition value="A referral facility providing specialized care, inpatient services, and emergency response, staffed by medical officers and specialists."/>
+  </concept>
+  <concept>
+    <code value="tertiary"/>
+    <display value="Tertiary Facility"/>
+    <definition value="A highly specialized hospital offering advanced diagnostic, therapeutic, and surgical care, often affiliated with teaching or research institutions."/>
+  </concept>
+</CodeSystem>

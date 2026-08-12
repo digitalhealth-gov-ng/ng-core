@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-dsd-category-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-dsd-category-cs</b></p><a name="ng-hiv-dsd-category-cs"> </a><a name="hcng-hiv-dsd-category-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-category-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ASM-6MMD<a name="ng-hiv-dsd-category-cs-ASM-6MMD"> </a></td><td>Appointment Spacing Model (ASM)/6MMD</td></tr><tr><td style="white-space:nowrap">3MMD<a name="ng-hiv-dsd-category-cs-3MMD"> </a></td><td>3MMD</td></tr><tr><td style="white-space:nowrap">FTAR<a name="ng-hiv-dsd-category-cs-FTAR"> </a></td><td>FTAR(Fast Track ART Refill)</td></tr><tr><td style="white-space:nowrap">HEP-CAG<a name="ng-hiv-dsd-category-cs-HEP-CAG"> </a></td><td>HEP-CAG(Health Extension Professional Led Community</td></tr><tr><td style="white-space:nowrap">PCAD<a name="ng-hiv-dsd-category-cs-PCAD"> </a></td><td>PCAD (Community Based Group model led by Peer)</td></tr><tr><td style="white-space:nowrap">AHD<a name="ng-hiv-dsd-category-cs-AHD"> </a></td><td>AHD (Advanced HIV Disease Model)</td></tr><tr><td style="white-space:nowrap">DSD-for-Adolescent<a name="ng-hiv-dsd-category-cs-DSD-for-Adolescent"> </a></td><td>DSD for Adolescent</td></tr><tr><td style="white-space:nowrap">DSD-for-MCH<a name="ng-hiv-dsd-category-cs-DSD-for-MCH"> </a></td><td>DSD for MCH</td></tr><tr><td style="white-space:nowrap">KP-DSD<a name="ng-hiv-dsd-category-cs-KP-DSD"> </a></td><td>KP_DSD</td></tr><tr><td style="white-space:nowrap">Other<a name="ng-hiv-dsd-category-cs-Other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-category-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.42"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivDSDCategoryCS"/>
+  <title value="HIV DSD - Category CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code used for indicating the category for the DSD assessment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="ASM-6MMD"/>
+    <display value="Appointment Spacing Model (ASM)/6MMD"/>
+  </concept>
+  <concept>
+    <code value="3MMD"/>
+    <display value="3MMD"/>
+  </concept>
+  <concept>
+    <code value="FTAR"/>
+    <display value="FTAR(Fast Track ART Refill)"/>
+  </concept>
+  <concept>
+    <code value="HEP-CAG"/>
+    <display value="HEP-CAG(Health Extension Professional Led Community"/>
+  </concept>
+  <concept>
+    <code value="PCAD"/>
+    <display value="PCAD (Community Based Group model led by Peer)"/>
+  </concept>
+  <concept>
+    <code value="AHD"/>
+    <display value="AHD (Advanced HIV Disease Model)"/>
+  </concept>
+  <concept>
+    <code value="DSD-for-Adolescent"/>
+    <display value="DSD for Adolescent"/>
+  </concept>
+  <concept>
+    <code value="DSD-for-MCH"/>
+    <display value="DSD for MCH"/>
+  </concept>
+  <concept>
+    <code value="KP-DSD"/>
+    <display value="KP_DSD"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-target-population-category-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-target-population-category-cs</b></p><a name=\"ng-hiv-target-population-category-cs\"> </a><a name=\"hcng-hiv-target-population-category-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">General-Population<a name=\"ng-hiv-target-population-category-cs-General-Population\"> </a></td><td>General Population</td></tr><tr><td style=\"white-space:nowrap\">Prisoner<a name=\"ng-hiv-target-population-category-cs-Prisoner\"> </a></td><td>Prisoner</td></tr><tr><td style=\"white-space:nowrap\">Children-Of-PLHIV<a name=\"ng-hiv-target-population-category-cs-Children-Of-PLHIV\"> </a></td><td>Children of PLHIV</td></tr><tr><td style=\"white-space:nowrap\">Partners-Of-PLHIV<a name=\"ng-hiv-target-population-category-cs-Partners-Of-PLHIV\"> </a></td><td>Partners of PLHIV</td></tr><tr><td style=\"white-space:nowrap\">Discordant-Couples<a name=\"ng-hiv-target-population-category-cs-Discordant-Couples\"> </a></td><td>Discordant Couples</td></tr><tr><td style=\"white-space:nowrap\">Other-MARPS<a name=\"ng-hiv-target-population-category-cs-Other-MARPS\"> </a></td><td>Other MARPS</td></tr><tr><td style=\"white-space:nowrap\">Female-Commercial-Sex-Workers<a name=\"ng-hiv-target-population-category-cs-Female-Commercial-Sex-Workers\"> </a></td><td>Female Commercial Sex Workers</td></tr><tr><td style=\"white-space:nowrap\">Distance-Drivers<a name=\"ng-hiv-target-population-category-cs-Distance-Drivers\"> </a></td><td>Distance Drivers</td></tr><tr><td style=\"white-space:nowrap\">Mobile-Daily-Laborers<a name=\"ng-hiv-target-population-category-cs-Mobile-Daily-Laborers\"> </a></td><td>Mobile or Daily Laborers</td></tr><tr><td style=\"white-space:nowrap\">OVC-AIDS-Orphaned<a name=\"ng-hiv-target-population-category-cs-OVC-AIDS-Orphaned\"> </a></td><td>OVC or AIDS Orphaned</td></tr><tr><td style=\"white-space:nowrap\">TG<a name=\"ng-hiv-target-population-category-cs-TG\"> </a></td><td>TG</td></tr><tr><td style=\"white-space:nowrap\">Refugee<a name=\"ng-hiv-target-population-category-cs-Refugee\"> </a></td><td>Refugee</td></tr><tr><td style=\"white-space:nowrap\">People-Who-Inject-Drug<a name=\"ng-hiv-target-population-category-cs-People-Who-Inject-Drug\"> </a></td><td>People who Inject drug</td></tr><tr><td style=\"white-space:nowrap\">MSM<a name=\"ng-hiv-target-population-category-cs-MSM\"> </a></td><td>MSM</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.74" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivTargetPopulationCategoryCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Target Population Category Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Codes used for representing the patient's target population category"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "General-Population" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General Population" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Prisoner" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prisoner" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Children-Of-PLHIV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Children of PLHIV" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Partners-Of-PLHIV" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Partners of PLHIV" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Discordant-Couples" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Discordant Couples" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Other-MARPS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other MARPS" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Female-Commercial-Sex-Workers" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Female Commercial Sex Workers" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Distance-Drivers" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Distance Drivers" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Mobile-Daily-Laborers" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mobile or Daily Laborers" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OVC-AIDS-Orphaned" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OVC or AIDS Orphaned" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TG" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Refugee" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Refugee" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "People-Who-Inject-Drug" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "People who Inject drug" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MSM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MSM" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

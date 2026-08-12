@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-drug-resistance-result-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-drug-resistance-result-vs</b></p><a name="ng-hiv-drug-resistance-result-vs"> </a><a name="hcng-hiv-drug-resistance-result-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-care-art-codes-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-drug-resistance-result-1">drug-resistance-result-1</a></td><td style="color: #cccccc">Wild type</td><td>Source form code 1.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-drug-resistance-result-2">drug-resistance-result-2</a></td><td style="color: #cccccc">Resistant detected</td><td>Source form code 2.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-drug-resistance-result-3">drug-resistance-result-3</a></td><td style="color: #cccccc">No resistance detected</td><td>Source form code 3.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-drug-resistance-result-4">drug-resistance-result-4</a></td><td style="color: #cccccc">Partial or mixed resistance</td><td>Source form code 4.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-drug-resistance-result-5">drug-resistance-result-5</a></td><td style="color: #cccccc">Indeterminate or unsuccessful test</td><td>Source form code 5.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-drug-resistance-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.63"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivDrugResistanceResultVS"/>
+  <title value="NG HIV Drug Resistance Result"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-27"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Drug-resistance result codes used on the Nigeria HIV Care/ART Card."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"/>
+      <concept>
+        <code value="drug-resistance-result-1"/>
+      </concept>
+      <concept>
+        <code value="drug-resistance-result-2"/>
+      </concept>
+      <concept>
+        <code value="drug-resistance-result-3"/>
+      </concept>
+      <concept>
+        <code value="drug-resistance-result-4"/>
+      </concept>
+      <concept>
+        <code value="drug-resistance-result-5"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

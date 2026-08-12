@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-pregnancies-coutcome-vs"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-pregnancies-coutcome-vs</b></p><a name="ng-pregnancies-coutcome-vs"> </a><a name="hcng-pregnancies-coutcome-vs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/11636-8/">11636-8</a></td><td>[#] Births.live</td></tr><tr><td><a href="https://loinc.org/11637-6/">11637-6</a></td><td>[#] Births.preterm</td></tr><tr><td><a href="https://loinc.org/11638-4/">11638-4</a></td><td>[#] Births.still living</td></tr><tr><td><a href="https://loinc.org/11639-2/">11639-2</a></td><td>[#] Births.term</td></tr><tr><td><a href="https://loinc.org/11640-0/">11640-0</a></td><td>[#] Births total</td></tr><tr><td><a href="https://loinc.org/11612-9/">11612-9</a></td><td>[#] Abortions</td></tr><tr><td><a href="https://loinc.org/11613-7/">11613-7</a></td><td>[#] Abortions.induced</td></tr><tr><td><a href="https://loinc.org/11614-5/">11614-5</a></td><td>[#] Abortions.spontaneous</td></tr><tr><td><a href="https://loinc.org/33065-4/">33065-4</a></td><td>[#] Ectopic pregnancy</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancies-coutcome-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.172"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgPregnanciesOutcomeVS"/>
+  <title value="Pregnancy Outcome - IPS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="IPS Pregnancies Outcome"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="11636-8"/>
+        <display value="[#] Births.live"/>
+      </concept>
+      <concept>
+        <code value="11637-6"/>
+        <display value="[#] Births.preterm"/>
+      </concept>
+      <concept>
+        <code value="11638-4"/>
+        <display value="[#] Births.still living"/>
+      </concept>
+      <concept>
+        <code value="11639-2"/>
+        <display value="[#] Births.term"/>
+      </concept>
+      <concept>
+        <code value="11640-0"/>
+        <display value="[#] Births total"/>
+      </concept>
+      <concept>
+        <code value="11612-9"/>
+        <display value="[#] Abortions"/>
+      </concept>
+      <concept>
+        <code value="11613-7"/>
+        <display value="[#] Abortions.induced"/>
+      </concept>
+      <concept>
+        <code value="11614-5"/>
+        <display value="[#] Abortions.spontaneous"/>
+      </concept>
+      <concept>
+        <code value="33065-4"/>
+        <display value="[#] Ectopic pregnancy"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

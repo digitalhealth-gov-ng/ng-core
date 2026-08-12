@@ -1,0 +1,420 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-care-art-codes-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-care-art-codes-cs</b></p><a name=\"ng-hiv-care-art-codes-cs\"> </a><a name=\"hcng-hiv-care-art-codes-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">marital-status-1<a name=\"ng-hiv-care-art-codes-cs-marital-status-1\"> </a></td><td>Single</td><td>Source form code 1: Single.</td></tr><tr><td style=\"white-space:nowrap\">marital-status-2<a name=\"ng-hiv-care-art-codes-cs-marital-status-2\"> </a></td><td>Married</td><td>Source form code 2: Married.</td></tr><tr><td style=\"white-space:nowrap\">marital-status-3<a name=\"ng-hiv-care-art-codes-cs-marital-status-3\"> </a></td><td>Divorced</td><td>Source form code 3: Divorced.</td></tr><tr><td style=\"white-space:nowrap\">marital-status-4<a name=\"ng-hiv-care-art-codes-cs-marital-status-4\"> </a></td><td>Separated</td><td>Source form code 4: Separated.</td></tr><tr><td style=\"white-space:nowrap\">marital-status-5<a name=\"ng-hiv-care-art-codes-cs-marital-status-5\"> </a></td><td>Cohabiting</td><td>Source form code 5: Cohabiting.</td></tr><tr><td style=\"white-space:nowrap\">marital-status-6<a name=\"ng-hiv-care-art-codes-cs-marital-status-6\"> </a></td><td>Widower</td><td>Source form code 6: Widower.</td></tr><tr><td style=\"white-space:nowrap\">educational-status-1<a name=\"ng-hiv-care-art-codes-cs-educational-status-1\"> </a></td><td>No education</td><td>Source form code 1: No education.</td></tr><tr><td style=\"white-space:nowrap\">educational-status-2<a name=\"ng-hiv-care-art-codes-cs-educational-status-2\"> </a></td><td>Primary Education</td><td>Source form code 2: Primary Education.</td></tr><tr><td style=\"white-space:nowrap\">educational-status-3<a name=\"ng-hiv-care-art-codes-cs-educational-status-3\"> </a></td><td>Secondary Education</td><td>Source form code 3: Secondary Education.</td></tr><tr><td style=\"white-space:nowrap\">educational-status-4<a name=\"ng-hiv-care-art-codes-cs-educational-status-4\"> </a></td><td>Tertiary Education</td><td>Source form code 4: Tertiary Education.</td></tr><tr><td style=\"white-space:nowrap\">educational-status-5<a name=\"ng-hiv-care-art-codes-cs-educational-status-5\"> </a></td><td>Others</td><td>Source form code 5: Others (specify).</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-1<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-1\"> </a></td><td>OPD</td><td>Source form code 1: Outpatient department.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-2<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-2\"> </a></td><td>Inpatients</td><td>Source form code 2: Inpatients.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-3<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-3\"> </a></td><td>HTS</td><td>Source form code 3: HIV testing services.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-4<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-4\"> </a></td><td>TB DOTS</td><td>Source form code 4: TB DOTS.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-5<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-5\"> </a></td><td>STI Clinic</td><td>Source form code 5: STI Clinic.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-6<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-6\"> </a></td><td>ANC/PMTCT</td><td>Source form code 6: ANC/PMTCT.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-7<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-7\"> </a></td><td>Transfer-in</td><td>Source form code 7: Transfer-in.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-8<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-8\"> </a></td><td>Community</td><td>Source form code 8: Community.</td></tr><tr><td style=\"white-space:nowrap\">care-entry-point-9<a name=\"ng-hiv-care-art-codes-cs-care-entry-point-9\"> </a></td><td>Others</td><td>Source form code 9: Others (specify).</td></tr><tr><td style=\"white-space:nowrap\">prior-art-1<a name=\"ng-hiv-care-art-codes-cs-prior-art-1\"> </a></td><td>Earlier ARV but not a transfer in</td><td>Source form code 1.</td></tr><tr><td style=\"white-space:nowrap\">prior-art-2<a name=\"ng-hiv-care-art-codes-cs-prior-art-2\"> </a></td><td>Transfer in without records</td><td>Source form code 2.</td></tr><tr><td style=\"white-space:nowrap\">prior-art-3<a name=\"ng-hiv-care-art-codes-cs-prior-art-3\"> </a></td><td>PrEP</td><td>Source form code 3: Pre-exposure prophylaxis.</td></tr><tr><td style=\"white-space:nowrap\">prior-art-4<a name=\"ng-hiv-care-art-codes-cs-prior-art-4\"> </a></td><td>PEP</td><td>Source form code 4: Post-exposure prophylaxis.</td></tr><tr><td style=\"white-space:nowrap\">kp-typology-1<a name=\"ng-hiv-care-art-codes-cs-kp-typology-1\"> </a></td><td>MSM</td><td>Source form code 1: Men who have sex with men.</td></tr><tr><td style=\"white-space:nowrap\">kp-typology-2<a name=\"ng-hiv-care-art-codes-cs-kp-typology-2\"> </a></td><td>FSW</td><td>Source form code 2: Female sex workers.</td></tr><tr><td style=\"white-space:nowrap\">kp-typology-3<a name=\"ng-hiv-care-art-codes-cs-kp-typology-3\"> </a></td><td>PWID</td><td>Source form code 3: People who inject drugs.</td></tr><tr><td style=\"white-space:nowrap\">kp-typology-4<a name=\"ng-hiv-care-art-codes-cs-kp-typology-4\"> </a></td><td>TG</td><td>Source form code 4: Transgender persons.</td></tr><tr><td style=\"white-space:nowrap\">kp-typology-5<a name=\"ng-hiv-care-art-codes-cs-kp-typology-5\"> </a></td><td>Persons in custodial centers</td><td>Source form code 5.</td></tr><tr><td style=\"white-space:nowrap\">cd4-reference-less-than-200<a name=\"ng-hiv-care-art-codes-cs-cd4-reference-less-than-200\"> </a></td><td>&lt;200 cells/mm3</td><td>CD4 result below 200 cells/mm3.</td></tr><tr><td style=\"white-space:nowrap\">cd4-reference-greater-than-or-equal-200<a name=\"ng-hiv-care-art-codes-cs-cd4-reference-greater-than-or-equal-200\"> </a></td><td>≥200 cells/mm3</td><td>CD4 result greater than or equal to 200 cells/mm3.</td></tr><tr><td style=\"white-space:nowrap\">tpt-1<a name=\"ng-hiv-care-art-codes-cs-tpt-1\"> </a></td><td>Isoniazid (6H)</td><td>Source form code 1: Isoniazid for six months.</td></tr><tr><td style=\"white-space:nowrap\">tpt-2<a name=\"ng-hiv-care-art-codes-cs-tpt-2\"> </a></td><td>Isoniazid and Rifapentine (3HP)</td><td>Source form code 2.</td></tr><tr><td style=\"white-space:nowrap\">tpt-3<a name=\"ng-hiv-care-art-codes-cs-tpt-3\"> </a></td><td>Isoniazid and Rifampicin (3HR)</td><td>Source form code 3.</td></tr><tr><td style=\"white-space:nowrap\">tpt-4<a name=\"ng-hiv-care-art-codes-cs-tpt-4\"> </a></td><td>CTX/INH/B6 FDC (QTIP)</td><td>Source form code 4: Cotrimoxazole/Isoniazid/Pyridoxine fixed-dose combination.</td></tr><tr><td style=\"white-space:nowrap\">drug-resistance-result-1<a name=\"ng-hiv-care-art-codes-cs-drug-resistance-result-1\"> </a></td><td>Wild type</td><td>Source form code 1.</td></tr><tr><td style=\"white-space:nowrap\">drug-resistance-result-2<a name=\"ng-hiv-care-art-codes-cs-drug-resistance-result-2\"> </a></td><td>Resistant detected</td><td>Source form code 2.</td></tr><tr><td style=\"white-space:nowrap\">drug-resistance-result-3<a name=\"ng-hiv-care-art-codes-cs-drug-resistance-result-3\"> </a></td><td>No resistance detected</td><td>Source form code 3.</td></tr><tr><td style=\"white-space:nowrap\">drug-resistance-result-4<a name=\"ng-hiv-care-art-codes-cs-drug-resistance-result-4\"> </a></td><td>Partial or mixed resistance</td><td>Source form code 4.</td></tr><tr><td style=\"white-space:nowrap\">drug-resistance-result-5<a name=\"ng-hiv-care-art-codes-cs-drug-resistance-result-5\"> </a></td><td>Indeterminate or unsuccessful test</td><td>Source form code 5.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-1<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-1\"> </a></td><td>Toxicity/side effects</td><td>Source form code 1.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-2<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-2\"> </a></td><td>Pregnancy</td><td>Source form code 2.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-3<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-3\"> </a></td><td>Risk of pregnancy</td><td>Source form code 3.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-4<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-4\"> </a></td><td>Due to new TB</td><td>Source form code 4.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-5<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-5\"> </a></td><td>New drug available</td><td>Source form code 5.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-6<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-6\"> </a></td><td>Drug out of stock</td><td>Source form code 6.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-7<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-7\"> </a></td><td>Clinical treatment failure</td><td>Source form code 7.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-8<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-8\"> </a></td><td>Immunologic failure</td><td>Source form code 8.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-9<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-9\"> </a></td><td>Virologic failure</td><td>Source form code 9.</td></tr><tr><td style=\"white-space:nowrap\">regimen-change-reason-10<a name=\"ng-hiv-care-art-codes-cs-regimen-change-reason-10\"> </a></td><td>Other reason</td><td>Source form code 10: Other reason (specify).</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-1<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-1\"> </a></td><td>Toxicity/side effects</td><td>Source form code 1.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-2<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-2\"> </a></td><td>Pregnancy</td><td>Source form code 2.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-3<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-3\"> </a></td><td>Treatment failure</td><td>Source form code 3.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-4<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-4\"> </a></td><td>Poor adherence</td><td>Source form code 4.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-5<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-5\"> </a></td><td>Illness or hospitalization</td><td>Source form code 5.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-6<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-6\"> </a></td><td>Drugs out of stock</td><td>Source form code 6.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-7<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-7\"> </a></td><td>Patient lacks finances</td><td>Source form code 7.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-8<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-8\"> </a></td><td>Other patient decision</td><td>Source form code 8.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-9<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-9\"> </a></td><td>Planned treatment interruption</td><td>Source form code 9.</td></tr><tr><td style=\"white-space:nowrap\">art-stop-reason-10<a name=\"ng-hiv-care-art-codes-cs-art-stop-reason-10\"> </a></td><td>Other</td><td>Source form code 10: Other (specify).</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-1<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-1\"> </a></td><td>HIV related</td><td>Source form code 1.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-2<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-2\"> </a></td><td>TB</td><td>Source form code 2.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-3<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-3\"> </a></td><td>Road accident</td><td>Source form code 3.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-4<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-4\"> </a></td><td>Malaria</td><td>Source form code 4.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-5<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-5\"> </a></td><td>COPD</td><td>Source form code 5.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-6<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-6\"> </a></td><td>Hypertension</td><td>Source form code 6.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-7<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-7\"> </a></td><td>Diabetes</td><td>Source form code 7.</td></tr><tr><td style=\"white-space:nowrap\">cause-of-death-8<a name=\"ng-hiv-care-art-codes-cs-cause-of-death-8\"> </a></td><td>Others</td><td>Source form code 8: Others (specify).</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.33" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivCareArtCodesCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV Care and ART Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-27"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local codes transcribed from the Nigeria HIV Care/ART Card for coded answers\nused by the HIV care and ART Questionnaire."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "68"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marital-status-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Single" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1: Single." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marital-status-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Married" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2: Married." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marital-status-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Divorced" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3: Divorced." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marital-status-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Separated" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4: Separated." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marital-status-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cohabiting" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5: Cohabiting." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marital-status-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Widower" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 6: Widower." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "educational-status-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No education" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1: No education." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "educational-status-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Primary Education" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2: Primary Education." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "educational-status-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Secondary Education" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3: Secondary Education." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "educational-status-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tertiary Education" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4: Tertiary Education." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "educational-status-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Others" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5: Others (specify)." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OPD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1: Outpatient department." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inpatients" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2: Inpatients." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HTS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3: HIV testing services." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TB DOTS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4: TB DOTS." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "STI Clinic" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5: STI Clinic." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ANC/PMTCT" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 6: ANC/PMTCT." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transfer-in" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 7: Transfer-in." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 8: Community." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "care-entry-point-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Others" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 9: Others (specify)." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prior-art-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Earlier ARV but not a transfer in" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prior-art-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transfer in without records" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prior-art-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PrEP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3: Pre-exposure prophylaxis." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prior-art-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PEP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4: Post-exposure prophylaxis." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kp-typology-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MSM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1: Men who have sex with men." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kp-typology-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FSW" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2: Female sex workers." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kp-typology-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PWID" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3: People who inject drugs." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kp-typology-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TG" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4: Transgender persons." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "kp-typology-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Persons in custodial centers" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cd4-reference-less-than-200" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "<200 cells/mm3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CD4 result below 200 cells/mm3." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cd4-reference-greater-than-or-equal-200" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "≥200 cells/mm3" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CD4 result greater than or equal to 200 cells/mm3." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid (6H)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1: Isoniazid for six months." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid and Rifapentine (3HP)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid and Rifampicin (3HR)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CTX/INH/B6 FDC (QTIP)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4: Cotrimoxazole/Isoniazid/Pyridoxine fixed-dose combination." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "drug-resistance-result-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wild type" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "drug-resistance-result-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Resistant detected" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "drug-resistance-result-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No resistance detected" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3." ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "drug-resistance-result-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Partial or mixed resistance" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4." ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "drug-resistance-result-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Indeterminate or unsuccessful test" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5." ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Toxicity/side effects" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1." ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pregnancy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2." ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Risk of pregnancy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3." ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Due to new TB" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4." ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "New drug available" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5." ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drug out of stock" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 6." ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical treatment failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 7." ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Immunologic failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 8." ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Virologic failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 9." ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-change-reason-10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other reason" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 10: Other reason (specify)." ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Toxicity/side effects" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1." ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pregnancy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2." ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3." ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Poor adherence" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4." ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Illness or hospitalization" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5." ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drugs out of stock" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 6." ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient lacks finances" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 7." ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other patient decision" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 8." ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Planned treatment interruption" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 9." ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "art-stop-reason-10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 10: Other (specify)." ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HIV related" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 1." ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TB" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 2." ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Road accident" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 3." ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 4." ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "COPD" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 5." ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hypertension" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 6." ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 7." ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cause-of-death-8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Others" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Source form code 8: Others (specify)." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

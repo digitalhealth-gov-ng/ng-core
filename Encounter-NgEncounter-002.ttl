@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Encounter/NgEncounter-002> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgEncounter-002"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-encounter" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-encounter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter NgEncounter-002</b></p><a name=\"NgEncounter-002\"> </a><a name=\"hcNgEncounter-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-encounter.html\">NG Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></td></tr></table><p><b>period</b>: 2025-11-04 12:15:00+0000 --&gt; 2025-11-04 12:25:00+0000</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-NgLocation-003.html\">Location Immunization Room</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></p></div>"
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index 0 ;
+     fhir:Encounter.participant.individual [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2025-11-04T12:15:00Z"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2025-11-04T12:25:00Z"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.location [
+     fhir:index 0 ;
+     fhir:Encounter.location.location [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Location/NgLocation-003> ;
+       fhir:Reference.reference [ fhir:value "Location/NgLocation-003" ]
+     ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-002> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-002" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Encounter/NgEncounter-002.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

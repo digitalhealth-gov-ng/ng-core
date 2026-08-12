@@ -1,0 +1,321 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgVaccineLocal-to-ICD11> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgVaccineLocal-to-ICD11"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap NgVaccineLocal-to-ICD11</b></p><a name=\"NgVaccineLocal-to-ICD11\"> </a><a name=\"hcNgVaccineLocal-to-ICD11\"> </a><p>Mapping from <a href=\"ValueSet-ng-vaccine-local-vs.html\">NG Vaccine Local ValueSet</a> to <a href=\"ValueSet-ng-vaccine-icd-vs.html\">NG Vaccine ICD ValueSet</a></p><br/><p>Mapping from <a href=\"CodeSystem-ng-vaccine-local.html\">NG IMMZ.D.DE4 Vaccine Local Codes (Dose-labelled)</a> to <a href=\"CodeSystem-ng-vaccine-icd-cs.html\">NG IMMZ.D.DE4 ICD11 Vaccine Library</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>IMMZ.Z.DE1 (BCG birth dose)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8142 (BCG vaccine)</td></tr><tr><td>IMMZ.Z.DE2 (HepB birth dose)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9V38 (Hepatitis B vaccine)</td></tr><tr><td>IMMZ.Z.DE3 (Polio (OPV0) birth dose)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N50 (Poliomyelitis vaccines)</td></tr><tr><td>IMMZ.Z.DE5 (Oral Polio Vaccine (OPV 1))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N50 (Poliomyelitis vaccines)</td></tr><tr><td>IMMZ.Z.DE9 (Oral Polio Vaccine (OPV 2))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N50 (Poliomyelitis vaccines)</td></tr><tr><td>IMMZ.Z.DE13 (Oral Polio Vaccine (OPV 3))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N50 (Poliomyelitis vaccines)</td></tr><tr><td>IMMZ.Z.DE8 (Inactivated Polio Vaccine (IPV 1))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N50 (Poliomyelitis vaccines)</td></tr><tr><td>IMMZ.Z.DE17 (Inactivated Polio Vaccine (IPV 2))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N50 (Poliomyelitis vaccines)</td></tr><tr><td>IMMZ.Z.DE4 (Pentavalent 1)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1PB8 (DTP-HepB-Hib pentavalent vaccines)</td></tr><tr><td>IMMZ.Z.DE11 (Pentavalent 2)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1PB8 (DTP-HepB-Hib pentavalent vaccines)</td></tr><tr><td>IMMZ.Z.DE14 (Pentavalent 3)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1PB8 (DTP-HepB-Hib pentavalent vaccines)</td></tr><tr><td>IMMZ.Z.DE6 (Pneumococcal Conjugate Vaccine (PCV 1))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9G97 (Pneumococcal conjugate vaccines)</td></tr><tr><td>IMMZ.Z.DE10 (Pneumococcal Conjugate Vaccine (PCV 2))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9G97 (Pneumococcal conjugate vaccines)</td></tr><tr><td>IMMZ.Z.DE15 (Pneumococcal Conjugate Vaccine (PCV 3))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9G97 (Pneumococcal conjugate vaccines)</td></tr><tr><td>IMMZ.Z.DE7 (Rotavirus 1)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1CE0 (Rotavirus vaccines)</td></tr><tr><td>IMMZ.Z.DE12 (Rotavirus 2)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1CE0 (Rotavirus vaccines)</td></tr><tr><td>IMMZ.Z.DE16 (Rotavirus 3)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1CE0 (Rotavirus vaccines)</td></tr><tr><td>IMMZ.Z.DE22 (Measles Rubella (MR 1))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8TF3 (Measles-rubella vaccine)</td></tr><tr><td>IMMZ.Z.DE26 (Measles Rubella (MR 2))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8TF3 (Measles-rubella vaccine)</td></tr><tr><td>IMMZ.Z.DE23 (Yellow Fever)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0N24 (Yellow fever vaccine)</td></tr><tr><td>IMMZ.Z.DE24 (Meningitis)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM2WV4 (Meningococcal vaccines)</td></tr><tr><td>IMMZ.Z.DE28 (Tetanus Diphtheria)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM32Q5 (Tetanus-diphtheria vaccines)</td></tr><tr><td>IMMZ.Z.DE29 (Human PapillomaVirus (HPV))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9QP0 (Human papillomavirus vaccines)</td></tr><tr><td>IMMZ.Z.DE19 (Vitamin A 1)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>IMMZ.Z.DE25 (Vitamin A 2)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>IMMZ.Z.DE18 (Malaria 1)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>IMMZ.Z.DE20 (Malaria 2)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>IMMZ.Z.DE21 (Malaria 3)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>IMMZ.Z.DE27 (Malaria 4)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgVaccineLocal-to-ICD11"] ;
+  fhir:ConceptMap.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.18.4" ]
+  ] ;
+  fhir:ConceptMap.version [ fhir:value "0.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "Local_icd11"] ;
+  fhir:ConceptMap.title [ fhir:value "NG Local Vaccine Codes → ICD11"] ;
+  fhir:ConceptMap.status [ fhir:value "active"] ;
+  fhir:ConceptMap.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "NDHI"] ;
+  fhir:ConceptMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Maps local dose-labelled DE codes to ICD-11 vaccine concepts (antigen/product level)."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceUri [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-vaccine-local-vs"] ;
+  fhir:ConceptMap.targetUri [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-vaccine-icd-vs"] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-icd-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE1" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM8142" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "BCG vaccine" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE2" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM9V38" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Hepatitis B vaccine" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE3" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N50" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Poliomyelitis vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE5" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N50" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Poliomyelitis vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE9" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N50" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE13" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N50" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE8" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N50" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE17" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N50" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE4" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM1PB8" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "DTP-HepB-Hib pentavalent vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE11" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM1PB8" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE14" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM1PB8" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE6" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM9G97" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pneumococcal conjugate vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE10" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM9G97" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE15" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM9G97" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE7" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM1CE0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Rotavirus vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE12" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM1CE0" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE16" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM1CE0" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE22" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM8TF3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Measles-rubella vaccine" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE26" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM8TF3" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE23" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM0N24" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Yellow fever vaccine" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE24" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM2WV4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Meningococcal vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE28" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM32Q5" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tetanus-diphtheria vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE29" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "XM9QP0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Human papillomavirus vaccines" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE19" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE25" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE18" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE20" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE21" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "IMMZ.Z.DE27" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgVaccineLocal-to-ICD11.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

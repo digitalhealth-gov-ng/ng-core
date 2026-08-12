@@ -1,0 +1,113 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-careplan-activity-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-careplan-activity-cs</b></p><a name=\"ng-careplan-activity-cs\"> </a><a name=\"hcng-careplan-activity-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">anc-counsel<a name=\"ng-careplan-activity-cs-anc-counsel\"> </a></td><td>ANC Counseling</td><td>Antenatal education/counseling.</td></tr><tr><td style=\"white-space:nowrap\">bp-monitor<a name=\"ng-careplan-activity-cs-bp-monitor\"> </a></td><td>BP Monitoring</td><td>Blood pressure monitoring at home.</td></tr><tr><td style=\"white-space:nowrap\">immunize<a name=\"ng-careplan-activity-cs-immunize\"> </a></td><td>Immunization Administration</td><td>Administer scheduled vaccine.</td></tr><tr><td style=\"white-space:nowrap\">defaulter-trace<a name=\"ng-careplan-activity-cs-defaulter-trace\"> </a></td><td>Defaulter Tracing</td><td>Outreach to missed immunization clients.</td></tr><tr><td style=\"white-space:nowrap\">rx-counsel<a name=\"ng-careplan-activity-cs-rx-counsel\"> </a></td><td>Medication Counseling</td><td>Explain regimen and side effects.</td></tr><tr><td style=\"white-space:nowrap\">med-dispense<a name=\"ng-careplan-activity-cs-med-dispense\"> </a></td><td>Medication Dispense</td><td>Dispense prescribed medication.</td></tr><tr><td style=\"white-space:nowrap\">referral-followup<a name=\"ng-careplan-activity-cs-referral-followup\"> </a></td><td>Referral Follow-up</td><td>Confirm referral attended.</td></tr><tr><td style=\"white-space:nowrap\">device-setup<a name=\"ng-careplan-activity-cs-device-setup\"> </a></td><td>Device Setup</td><td>Configure device and train patient.</td></tr><tr><td style=\"white-space:nowrap\">device-check<a name=\"ng-careplan-activity-cs-device-check\"> </a></td><td>Device Check/Calibration</td><td>Validate device performance.</td></tr><tr><td style=\"white-space:nowrap\">claim-submit<a name=\"ng-careplan-activity-cs-claim-submit\"> </a></td><td>Claim Submission</td><td>Submit claim to payer.</td></tr><tr><td style=\"white-space:nowrap\">claim-reconcile<a name=\"ng-careplan-activity-cs-claim-reconcile\"> </a></td><td>Claim Reconciliation</td><td>Match payments to claims.</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.6"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgCareplanActivityCS",
+  "title" : "NG CarePlan Activity Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Activities for CarePlan.activity.detail.code.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 11,
+  "concept" : [{
+    "code" : "anc-counsel",
+    "display" : "ANC Counseling",
+    "definition" : "Antenatal education/counseling."
+  },
+  {
+    "code" : "bp-monitor",
+    "display" : "BP Monitoring",
+    "definition" : "Blood pressure monitoring at home."
+  },
+  {
+    "code" : "immunize",
+    "display" : "Immunization Administration",
+    "definition" : "Administer scheduled vaccine."
+  },
+  {
+    "code" : "defaulter-trace",
+    "display" : "Defaulter Tracing",
+    "definition" : "Outreach to missed immunization clients."
+  },
+  {
+    "code" : "rx-counsel",
+    "display" : "Medication Counseling",
+    "definition" : "Explain regimen and side effects."
+  },
+  {
+    "code" : "med-dispense",
+    "display" : "Medication Dispense",
+    "definition" : "Dispense prescribed medication."
+  },
+  {
+    "code" : "referral-followup",
+    "display" : "Referral Follow-up",
+    "definition" : "Confirm referral attended."
+  },
+  {
+    "code" : "device-setup",
+    "display" : "Device Setup",
+    "definition" : "Configure device and train patient."
+  },
+  {
+    "code" : "device-check",
+    "display" : "Device Check/Calibration",
+    "definition" : "Validate device performance."
+  },
+  {
+    "code" : "claim-submit",
+    "display" : "Claim Submission",
+    "definition" : "Submit claim to payer."
+  },
+  {
+    "code" : "claim-reconcile",
+    "display" : "Claim Reconciliation",
+    "definition" : "Match payments to claims."
+  }]
+}

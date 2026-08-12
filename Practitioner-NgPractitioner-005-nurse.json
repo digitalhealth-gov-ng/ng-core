@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "NgPractitioner-005-nurse",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner NgPractitioner-005-nurse</b></p><a name=\"NgPractitioner-005-nurse\"> </a><a name=\"hcNgPractitioner-005-nurse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-practitioner.html\">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs</code>/PRSN-9C4E-7B12-OB01</p><p><b>active</b>: true</p><p><b>name</b>: Blessing Sister </p><p><b>birthDate</b>: 1981-01-01</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Nurse</span></td><td>2016-01-01 --&gt; (ongoing)</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs",
+    "value" : "PRSN-9C4E-7B12-OB01"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Sister",
+    "given" : ["Blessing"]
+  }],
+  "birthDate" : "1981-01-01",
+  "qualification" : [{
+    "code" : {
+      "text" : "Nurse"
+    },
+    "period" : {
+      "start" : "2016-01-01"
+    }
+  }]
+}

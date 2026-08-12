@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="NgImmunization-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Immunization NgImmunization-001</b></p><a name="NgImmunization-001"> </a><a name="hcNgImmunization-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-immunization.html">NG Immunization</a></p></div><p><b>NG Next Dose Date</b>: 2024-09-10</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local IMMZ.Z.DE4}">Pentavalent 1</span></p><p><b>patient</b>: <a href="Patient-NgPatient-003.html">Suleiman Bala  Male, DoB: 2019-09-05 ( birthcert)</a></p><p><b>occurrence</b>: 2025-09-10 10:00:00+0100</p><p><b>manufacturer</b>: <a href="Organization-NgOrganization-001.html">Organization Asokoro District Hospital</a></p><p><b>lotNumber</b>: PENTA25-0001</p><p><b>expirationDate</b>: 2026-06-30</p><p><b>site</b>: <span title="Codes:">Left thigh</span></p><p><b>route</b>: <span title="Codes:">Intramuscular</span></p><p><b>doseQuantity</b>: 0.5 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-NgPractitioner-003.html">Practitioner Hauwa Garba </a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td>4</td></tr></table></div>
+  </text>
+  <extension url="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-next-dose-date">
+    <valueDate value="2024-09-10"/>
+  </extension>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local"/>
+      <code value="IMMZ.Z.DE4"/>
+      <display value="Pentavalent 1"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/NgPatient-003"/>
+  </patient>
+  <occurrenceDateTime value="2025-09-10T10:00:00+01:00"/>
+  <manufacturer>
+    <reference value="Organization/NgOrganization-001"/>
+  </manufacturer>
+  <lotNumber value="PENTA25-0001"/>
+  <expirationDate value="2026-06-30"/>
+  <site>
+    <text value="Left thigh"/>
+  </site>
+  <route>
+    <text value="Intramuscular"/>
+  </route>
+  <doseQuantity>
+    <value value="0.5"/>
+    <unit value="mL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mL"/>
+  </doseQuantity>
+  <performer>
+    <actor>
+      <reference value="Practitioner/NgPractitioner-003"/>
+    </actor>
+  </performer>
+  <protocolApplied>
+    <doseNumberPositiveInt value="4"/>
+  </protocolApplied>
+</Immunization>

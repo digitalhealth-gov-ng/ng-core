@@ -1,0 +1,26 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "NgPractitionerRole-003",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole NgPractitionerRole-003</b></p><a name=\"NgPractitionerRole-003\"> </a><a name=\"hcNgPractitionerRole-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-practitioner-role.html\">NG PractitionerRole</a></p></div><p><b>period</b>: 2023-03-15 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-NgPractitioner-003.html\">Practitioner Hauwa Garba </a></p><p><b>organization</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>code</b>: <span title=\"Codes:\">Device Operator (CHEW)</span>, <span title=\"Codes:\">Community Health Extension Worker</span></p></div>"
+  },
+  "period" : {
+    "start" : "2023-03-15"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/NgPractitioner-003"
+  },
+  "organization" : {
+    "reference" : "Organization/NgOrganization-001"
+  },
+  "code" : [{
+    "text" : "Device Operator (CHEW)"
+  },
+  {
+    "text" : "Community Health Extension Worker"
+  }]
+}

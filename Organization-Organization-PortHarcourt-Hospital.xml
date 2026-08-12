@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organization-PortHarcourt-Hospital"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provider-organization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Organization-PortHarcourt-Hospital</b></p><a name="Organization-PortHarcourt-Hospital"> </a><a name="hcOrganization-PortHarcourt-Hospital"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-provider-organization.html">NG Provider Organization</a></p></div><p><b>NG Owner of Facility</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs faith-based}">Faith-based Institution Locations such as churches, musques, and traditional homes</span></p><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code>/HCF-RI-0045</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Port Harcourt Emergency Hospital</p><p><b>telecom</b>: ph: 084-234-5678</p><p><b>address</b>: Emergency Services Wing Port Harcourt RI </p></div>
+  </text>
+  <extension url="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs"/>
+        <code value="faith-based"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+    <value value="HCF-RI-0045"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+  </type>
+  <name value="Port Harcourt Emergency Hospital"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="084-234-5678"/>
+  </telecom>
+  <address>
+    <line value="Emergency Services Wing"/>
+    <city value="Port Harcourt"/>
+    <district value="ri-emohua"/>
+    <state value="RI"/>
+  </address>
+</Organization>

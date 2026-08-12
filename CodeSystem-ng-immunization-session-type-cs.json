@@ -1,0 +1,73 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-immunization-session-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-immunization-session-type-cs</b></p><a name=\"ng-immunization-session-type-cs\"> </a><a name=\"hcng-immunization-session-type-cs\"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-session-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fixed<a name=\"ng-immunization-session-type-cs-fixed\"> </a></td><td>Fixed session</td><td>An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available.</td></tr><tr><td style=\"white-space:nowrap\">outreach<a name=\"ng-immunization-session-type-cs-outreach\"> </a></td><td>Outreach session</td><td>An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations.</td></tr><tr><td style=\"white-space:nowrap\">mobile<a name=\"ng-immunization-session-type-cs-mobile\"> </a></td><td>Mobile session</td><td>An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport.</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-session-type-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.87"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgImmunizationSessionTypeCS",
+  "title" : "NG Immunization Session types CS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Type of session for immunization Could be in a fixed facility, outreach or mobile.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "fixed",
+    "display" : "Fixed session",
+    "definition" : "An immunization session conducted at a static health facility or designated fixed site where routine immunization services are regularly available."
+  },
+  {
+    "code" : "outreach",
+    "display" : "Outreach session",
+    "definition" : "An immunization session conducted outside of fixed sites, typically within a 5-10 km radius of a health facility, aimed at increasing access for underserved populations."
+  },
+  {
+    "code" : "mobile",
+    "display" : "Mobile session",
+    "definition" : "An immunization session delivered by a mobile team traveling to hard-to-reach or remote areas beyond the normal outreach distance, often using vehicles or other transport."
+  }]
+}

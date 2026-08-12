@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-tb-tpt-prophylaxis-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-tb-tpt-prophylaxis-type-cs</b></p><a name="ng-tb-tpt-prophylaxis-type-cs"> </a><a name="hcng-tb-tpt-prophylaxis-type-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Continuous<a name="ng-tb-tpt-prophylaxis-type-cs-Continuous"> </a></td><td>Continuous</td></tr><tr><td style="white-space:nowrap">Alternate<a name="ng-tb-tpt-prophylaxis-type-cs-Alternate"> </a></td><td>Alternate</td></tr><tr><td style="white-space:nowrap">inh<a name="ng-tb-tpt-prophylaxis-type-cs-inh"> </a></td><td>INH</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.105"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgTbTPTProphylaxisTypeCS"/>
+  <title value="TB TPT Prophylaxis Type Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the TPT prophylaxis type."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Continuous"/>
+    <display value="Continuous"/>
+  </concept>
+  <concept>
+    <code value="Alternate"/>
+    <display value="Alternate"/>
+  </concept>
+  <concept>
+    <code value="inh"/>
+    <display value="INH"/>
+  </concept>
+</CodeSystem>

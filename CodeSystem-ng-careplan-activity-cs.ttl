@@ -1,0 +1,135 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-careplan-activity-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-careplan-activity-cs</b></p><a name=\"ng-careplan-activity-cs\"> </a><a name=\"hcng-careplan-activity-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">anc-counsel<a name=\"ng-careplan-activity-cs-anc-counsel\"> </a></td><td>ANC Counseling</td><td>Antenatal education/counseling.</td></tr><tr><td style=\"white-space:nowrap\">bp-monitor<a name=\"ng-careplan-activity-cs-bp-monitor\"> </a></td><td>BP Monitoring</td><td>Blood pressure monitoring at home.</td></tr><tr><td style=\"white-space:nowrap\">immunize<a name=\"ng-careplan-activity-cs-immunize\"> </a></td><td>Immunization Administration</td><td>Administer scheduled vaccine.</td></tr><tr><td style=\"white-space:nowrap\">defaulter-trace<a name=\"ng-careplan-activity-cs-defaulter-trace\"> </a></td><td>Defaulter Tracing</td><td>Outreach to missed immunization clients.</td></tr><tr><td style=\"white-space:nowrap\">rx-counsel<a name=\"ng-careplan-activity-cs-rx-counsel\"> </a></td><td>Medication Counseling</td><td>Explain regimen and side effects.</td></tr><tr><td style=\"white-space:nowrap\">med-dispense<a name=\"ng-careplan-activity-cs-med-dispense\"> </a></td><td>Medication Dispense</td><td>Dispense prescribed medication.</td></tr><tr><td style=\"white-space:nowrap\">referral-followup<a name=\"ng-careplan-activity-cs-referral-followup\"> </a></td><td>Referral Follow-up</td><td>Confirm referral attended.</td></tr><tr><td style=\"white-space:nowrap\">device-setup<a name=\"ng-careplan-activity-cs-device-setup\"> </a></td><td>Device Setup</td><td>Configure device and train patient.</td></tr><tr><td style=\"white-space:nowrap\">device-check<a name=\"ng-careplan-activity-cs-device-check\"> </a></td><td>Device Check/Calibration</td><td>Validate device performance.</td></tr><tr><td style=\"white-space:nowrap\">claim-submit<a name=\"ng-careplan-activity-cs-claim-submit\"> </a></td><td>Claim Submission</td><td>Submit claim to payer.</td></tr><tr><td style=\"white-space:nowrap\">claim-reconcile<a name=\"ng-careplan-activity-cs-claim-reconcile\"> </a></td><td>Claim Reconciliation</td><td>Match payments to claims.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.6" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgCareplanActivityCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG CarePlan Activity Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Activities for CarePlan.activity.detail.code."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anc-counsel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ANC Counseling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Antenatal education/counseling." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bp-monitor" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BP Monitoring" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood pressure monitoring at home." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "immunize" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Immunization Administration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Administer scheduled vaccine." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "defaulter-trace" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Defaulter Tracing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Outreach to missed immunization clients." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rx-counsel" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication Counseling" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Explain regimen and side effects." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "med-dispense" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication Dispense" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dispense prescribed medication." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "referral-followup" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Referral Follow-up" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Confirm referral attended." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "device-setup" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Device Setup" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Configure device and train patient." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "device-check" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Device Check/Calibration" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Validate device performance." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "claim-submit" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Claim Submission" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Submit claim to payer." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "claim-reconcile" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Claim Reconciliation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Match payments to claims." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

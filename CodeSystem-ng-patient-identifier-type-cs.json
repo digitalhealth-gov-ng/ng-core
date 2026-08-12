@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-patient-identifier-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-patient-identifier-type-cs</b></p><a name=\"ng-patient-identifier-type-cs\"> </a><a name=\"hcng-patient-identifier-type-cs\"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MRN<a name=\"ng-patient-identifier-type-cs-MRN\"> </a></td><td>mrn</td><td>Medical Record Number</td></tr><tr><td style=\"white-space:nowrap\">NIN<a name=\"ng-patient-identifier-type-cs-NIN\"> </a></td><td>nin</td><td>National Identity Number</td></tr><tr><td style=\"white-space:nowrap\">MOBILE<a name=\"ng-patient-identifier-type-cs-MOBILE\"> </a></td><td>mobile</td><td>Phone Number</td></tr><tr><td style=\"white-space:nowrap\">INSUR<a name=\"ng-patient-identifier-type-cs-INSUR\"> </a></td><td>insurance no</td><td>Insurance or HMO number</td></tr><tr><td style=\"white-space:nowrap\">BIRTHCERT<a name=\"ng-patient-identifier-type-cs-BIRTHCERT\"> </a></td><td>birthcert</td><td>Birth certificate number</td></tr><tr><td style=\"white-space:nowrap\">IMMNO<a name=\"ng-patient-identifier-type-cs-IMMNO\"> </a></td><td>immunizationo</td><td>Immunization Number</td></tr><tr><td style=\"white-space:nowrap\">PSEUDONYM<a name=\"ng-patient-identifier-type-cs-PSEUDONYM\"> </a></td><td>Pseudonymized Identifier</td><td>Pseudonymized patient data</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.95"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgPatientIdentifierTypeCS",
+  "title" : "NG Patient Identifier Type CS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This CodeSystem defines list of options for uniquely Identifting a Client",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : false,
+  "hierarchyMeaning" : "is-a",
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "MRN",
+    "display" : "mrn",
+    "definition" : "Medical Record Number"
+  },
+  {
+    "code" : "NIN",
+    "display" : "nin",
+    "definition" : "National Identity Number"
+  },
+  {
+    "code" : "MOBILE",
+    "display" : "mobile",
+    "definition" : "Phone Number"
+  },
+  {
+    "code" : "INSUR",
+    "display" : "insurance no",
+    "definition" : "Insurance or HMO number"
+  },
+  {
+    "code" : "BIRTHCERT",
+    "display" : "birthcert",
+    "definition" : "Birth certificate number"
+  },
+  {
+    "code" : "IMMNO",
+    "display" : "immunizationo",
+    "definition" : "Immunization Number"
+  },
+  {
+    "code" : "PSEUDONYM",
+    "display" : "Pseudonymized Identifier",
+    "definition" : "Pseudonymized patient data"
+  }]
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-register-hepatitis-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-art-register-hepatitis-status-cs</b></p><a name="ng-hiv-art-register-hepatitis-status-cs"> </a><a name="hcng-hiv-art-register-hepatitis-status-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-hepatitis-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1a<a name="ng-hiv-art-register-hepatitis-status-cs-1a"> </a></td><td>Hepatitis B negative</td></tr><tr><td style="white-space:nowrap">1b<a name="ng-hiv-art-register-hepatitis-status-cs-1b"> </a></td><td>Hepatitis B positive</td></tr><tr><td style="white-space:nowrap">2a<a name="ng-hiv-art-register-hepatitis-status-cs-2a"> </a></td><td>Hepatitis C negative</td></tr><tr><td style="white-space:nowrap">2b<a name="ng-hiv-art-register-hepatitis-status-cs-2b"> </a></td><td>Hepatitis C positive</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-art-register-hepatitis-status-cs-3"> </a></td><td>Hepatitis C treatment</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-hepatitis-status-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.24"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtRegisterHepatitisStatusCS"/>
+  <title value="NG HIV ART Register Hepatitis Screening Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Hepatitis screening and treatment codes printed in column A28 of the National ART Register."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1a"/>
+    <display value="Hepatitis B negative"/>
+  </concept>
+  <concept>
+    <code value="1b"/>
+    <display value="Hepatitis B positive"/>
+  </concept>
+  <concept>
+    <code value="2a"/>
+    <display value="Hepatitis C negative"/>
+  </concept>
+  <concept>
+    <code value="2b"/>
+    <display value="Hepatitis C positive"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Hepatitis C treatment"/>
+  </concept>
+</CodeSystem>

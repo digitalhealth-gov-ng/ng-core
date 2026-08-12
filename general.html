@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>General Requirements - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>General Requirements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>General Requirements</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#implementation-first-approach" id="markdown-toc-implementation-first-approach">Implementation-First Approach</a></li>
+  <li><a href="#conformance-requirements" id="markdown-toc-conformance-requirements">Conformance Requirements</a></li>
+  <li><a href="#conformance-artefacts-and-claims" id="markdown-toc-conformance-artefacts-and-claims">Conformance Artefacts and Claims</a></li>
+  <li><a href="#mandatory-and-must-support-elements" id="markdown-toc-mandatory-and-must-support-elements">Mandatory and Must Support Elements</a></li>
+  <li><a href="#programme-use-of-nigeria-core" id="markdown-toc-programme-use-of-nigeria-core">Programme Use of Nigeria Core</a></li>
+  <li><a href="#references-and-identifiers" id="markdown-toc-references-and-identifiers">References and Identifiers</a></li>
+  <li><a href="#restful-interactions-searches-and-operations" id="markdown-toc-restful-interactions-searches-and-operations">RESTful Interactions, Searches, and Operations</a></li>
+  <li><a href="#terminology-conformance" id="markdown-toc-terminology-conformance">Terminology Conformance</a></li>
+  <li><a href="#ucum-units" id="markdown-toc-ucum-units">UCUM Units</a></li>
+  <li><a href="#missing-suppressed-and-contained-data" id="markdown-toc-missing-suppressed-and-contained-data">Missing, Suppressed, and Contained Data</a></li>
+  <li><a href="#corrections-narrative-and-language" id="markdown-toc-corrections-narrative-and-language">Corrections, Narrative, and Language</a></li>
+  <li><a href="#programme-implementation-checklist" id="markdown-toc-programme-implementation-checklist">Programme Implementation Checklist</a></li>
+</ul>
+
+</div>
+<p>This page defines the common implementation and conformance guidance for systems using the Nigeria Core FHIR Implementation Guide and programme-specific guides derived from it. It is organised to help implementers move from workflow definition to development, testing, deployment, and formal conformance claims.</p>
+
+<h3 id="implementation-first-approach">Implementation-First Approach</h3>
+
+<p>Implementers should begin with the workflow and actor responsibilities rather than attempting to support every artefact in the guide.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Activity</th>
+      <th>Expected output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Define the workflow, actors, business purpose, and exchange boundary.</td>
+      <td>Documented use case and actor model.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Identify applicable Nigeria Core and programme profiles.</td>
+      <td>Profile support matrix.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Identify required identifiers, references, CodeSystems, ValueSets, and ConceptMaps.</td>
+      <td>Identifier and terminology plan.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Select required RESTful interactions, searches, operations, documents, and reports.</td>
+      <td>API and exchange specification.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Implement resource creation, receipt, persistence, processing, and validation.</td>
+      <td>Working implementation.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Publish supported capabilities and limitations in a <code class="language-plaintext highlighter-rouge">CapabilityStatement</code>.</td>
+      <td>Implementation CapabilityStatement.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Validate examples and production-like test data.</td>
+      <td>Validation and test evidence.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Test privacy, security, audit, paging, synchronization, and failure handling.</td>
+      <td>Operational readiness evidence.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Declare the supported Nigeria Core version, programme scope, profiles, interactions, and terminology versions.</td>
+      <td>Conformance statement.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="conformance-requirements">Conformance Requirements</h3>
+
+<p>The keywords <strong>SHALL</strong>, <strong>SHALL NOT</strong>, <strong>SHOULD</strong>, <strong>SHOULD NOT</strong>, and <strong>MAY</strong> are normative and indicate the degree of conformance required by this guide.</p>
+
+<p><strong>Mandatory rules</strong></p>
+<ul>
+  <li><strong>SHALL</strong> indicates an absolute requirement.</li>
+  <li><strong>SHALL NOT</strong> indicates an absolute prohibition.</li>
+</ul>
+
+<p><strong>Recommendations</strong></p>
+<ul>
+  <li><strong>SHOULD</strong> indicates a strong recommendation. An alternative may be used only where the implementer understands and documents the implications.</li>
+  <li><strong>SHOULD NOT</strong> indicates an approach that is generally discouraged unless a justified exception applies.</li>
+</ul>
+
+<p><strong>Optional choices</strong></p>
+<ul>
+  <li><strong>MAY</strong> indicates that an item or action is optional.</li>
+</ul>
+
+<p>In general:</p>
+
+<ol>
+  <li>A system claiming conformance to the Nigeria Core FHIR specifications <strong>SHALL</strong> validate all supported instances against the applicable Nigeria Core or programme-specific profile.</li>
+  <li>A system <strong>SHALL</strong> comply with the cardinalities, Must Support flags, invariants, fixed values, required references, slicing rules, and terminology bindings defined by each applicable artefact.</li>
+  <li>A system <strong>SHALL</strong> declare its supported profiles, interactions, operations, search parameters, and exchange capabilities in its <code class="language-plaintext highlighter-rouge">CapabilityStatement</code>.</li>
+  <li>A system <strong>SHALL</strong> use the published national CodeSystems and ValueSets where a required terminology binding is specified.</li>
+  <li>A system using local codes <strong>SHALL</strong> retain the source code and coding system and <strong>SHOULD</strong> provide mappings through an applicable published <code class="language-plaintext highlighter-rouge">ConceptMap</code> where one is available.</li>
+  <li>A system <strong>SHALL NOT</strong> claim support for an artefact unless it can create, receive, process, persist, validate, or otherwise handle that artefact in accordance with the stated conformance requirements.</li>
+  <li>A system <strong>SHOULD</strong> support the profiles, extensions, Questionnaires, QuestionnaireResponses, logical models, Measures, MeasureReports, documents, transactions, and exchange patterns applicable to its implemented use cases.</li>
+  <li>Additional profiles, extensions, terminology, operations, or implementation-specific constraints <strong>MAY</strong> be used where required, but they <strong>SHALL NOT</strong> contradict, weaken, or invalidate the requirements of this guide.</li>
+</ol>
+
+<h3 id="conformance-artefacts-and-claims">Conformance Artefacts and Claims</h3>
+
+<p>The [Profiles and Extensions] page lists the profiles and extensions defined by this guide. Each profile's computable <code class="language-plaintext highlighter-rouge">StructureDefinition</code> is authoritative for cardinalities, Must Support flags, terminology bindings, slices, patterns, fixed values, invariants, and target profiles.</p>
+
+<p>The [Capability Statements] page defines expected profiles, RESTful interactions, search parameters, and operations for Nigeria Core actors. Implementers making an interaction-level claim <strong>SHALL</strong> use the applicable CapabilityStatement.</p>
+
+<p>Nigeria Core supports two broad claims:</p>
+
+<ol>
+  <li><strong>Profile Support:</strong> the system creates, stores, processes, or exchanges resources conforming to one or more Nigeria Core profiles.</li>
+  <li><strong>Profile and Interaction Support:</strong> the system supports profile content together with the interactions, searches, or operations defined by an applicable CapabilityStatement.</li>
+</ol>
+
+<p>A conformance claim <strong>SHALL</strong> identify the Nigeria Core version, programme or workflow scope, actor role, supported profiles, applicable CapabilityStatement, supported interactions, and terminology versions or update policy.</p>
+
+<p>Derived programme guides <strong>MAY</strong> add constraints but <strong>SHALL NOT</strong> weaken Nigeria Core requirements.</p>
+
+<h3 id="mandatory-and-must-support-elements">Mandatory and Must Support Elements</h3>
+
+<p>A Mandatory element has <code class="language-plaintext highlighter-rouge">min &gt; 0</code> and <strong>SHALL</strong> be present. If its value is unavailable, an allowed FHIR missing-data representation <strong>SHALL</strong> be used rather than omitting the element.</p>
+
+<p>For Must Support elements:</p>
+
+<ul>
+  <li>Responders <strong>SHALL</strong> be able to populate and exchange the element when information is available and applicable.</li>
+  <li>Requestors <strong>SHALL</strong> be able to receive and safely process the element without loss of essential meaning.</li>
+  <li>Optional Must Support elements <strong>SHALL</strong> be omitted when no value is available unless an allowed absence mechanism is used.</li>
+  <li>Omission does not imply a negative value.</li>
+  <li>Modifier elements <strong>SHALL</strong> be processed safely.</li>
+</ul>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Element form</th>
+      <th>Minimum expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primitive</td>
+      <td>Responder can provide the value; Requestor can process it.</td>
+    </tr>
+    <tr>
+      <td>Complex</td>
+      <td>At least one valid sub-element is supported.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pattern[x]</code></td>
+      <td>Content conforms to the defined pattern.</td>
+    </tr>
+    <tr>
+      <td>Single-target Reference</td>
+      <td>The specified target profile is supported.</td>
+    </tr>
+    <tr>
+      <td>Multiple-target Reference</td>
+      <td>Required targets are supported; otherwise at least one allowed target is declared.</td>
+    </tr>
+    <tr>
+      <td>Choice <code class="language-plaintext highlighter-rouge">[x]</code></td>
+      <td>Required datatype choices are supported.</td>
+    </tr>
+    <tr>
+      <td>Slice</td>
+      <td>Support is required when the slice is Mandatory, Must Support, or part of the declared scope.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Differential Table shows constraints introduced by the profile. The Snapshot Table provides the complete inherited definition. The computable <code class="language-plaintext highlighter-rouge">StructureDefinition</code> remains authoritative.</p>
+
+<h3 id="programme-use-of-nigeria-core">Programme Use of Nigeria Core</h3>
+
+<p>Programme guides <strong>SHOULD</strong> reuse Nigeria Core profiles, terminology, identifiers, search parameters, and CapabilityStatements wherever applicable. They <strong>SHOULD NOT</strong> redefine existing national artefacts unless there is a documented implementation need.</p>
+
+<p>Additional programme requirements should normally be expressed through derived profiles, extensions, additional terminology, ConceptMaps, programme CapabilityStatements, operations, and conformance tests.</p>
+
+<h3 id="references-and-identifiers">References and Identifiers</h3>
+
+<p>A reference to a Nigeria Core resource <strong>SHOULD</strong> include <code class="language-plaintext highlighter-rouge">Reference.reference</code> when the resource is available on the same server or within the same Bundle.</p>
+
+<p>When the referenced resource is managed by another system, programme, state, registry, regulator, or national service, <code class="language-plaintext highlighter-rouge">Reference.identifier</code> <strong>MAY</strong> also be included to preserve the recognised identifier.</p>
+
+<p>References <strong>SHOULD</strong> resolve to the applicable Nigeria Core profile where one exists, including Patient, Organization, Location, Practitioner, and PractitionerRole profiles.</p>
+
+<p>External absolute references are not assumed to be resolvable. Cross-platform exchange agreements <strong>SHOULD</strong> define resolution rules and <strong>SHOULD</strong> use stable identifiers where required.</p>
+
+<h3 id="restful-interactions-searches-and-operations">RESTful Interactions, Searches, and Operations</h3>
+
+<p>Servers claiming a Nigeria Core search interaction <strong>SHALL</strong> follow the [FHIR RESTful Search API] and declare supported search parameters in their CapabilityStatement.</p>
+
+<ul>
+  <li>Required searches <strong>SHALL</strong> support HTTP <code class="language-plaintext highlighter-rouge">GET</code>.</li>
+  <li>HTTP <code class="language-plaintext highlighter-rouge">POST</code> search <strong>SHOULD</strong> be supported for long or sensitive queries where appropriate.</li>
+  <li>Required token, reference, and date searches <strong>SHALL</strong> support the forms stated in the applicable CapabilityStatement.</li>
+  <li>Unsupported or failed searches <strong>SHOULD</strong> return an informative [OperationOutcome].</li>
+  <li>Undocumented filters <strong>SHALL NOT</strong> be applied.</li>
+</ul>
+
+<p>Servers <strong>SHOULD</strong> support <code class="language-plaintext highlighter-rouge">_lastUpdated</code> where synchronization, registry updates, or programme reporting require it, and <strong>SHOULD</strong> document its behaviour.</p>
+
+<p>Population-level searches <strong>SHALL</strong> enforce access control, audit logging, purpose limitation, paging, and result limits. Large extracts <strong>SHOULD</strong> use FHIR Bulk Data Access or another governed export workflow.</p>
+
+<p>Named operations <strong>SHOULD</strong> document their purpose, actors, inputs, outputs, applicable profiles, terminology, security expectations, and error handling.</p>
+
+<h3 id="terminology-conformance">Terminology Conformance</h3>
+
+<p>Nigeria Core uses national, programme, regulator, and international terminology systems, including ICD-11, SNOMED CT, LOINC, ATC, and UCUM.</p>
+
+<p>For every CodeSystem or ValueSet used in a conformance claim, implementation documentation <strong>SHALL</strong> identify:</p>
+
+<ul>
+  <li>canonical identifier and publisher;</li>
+  <li>supported version or update policy;</li>
+  <li>authoritative distribution or terminology-service source;</li>
+  <li>code representation rules;</li>
+  <li>handling of inactive or retired concepts;</li>
+  <li>intended use and limitations; and</li>
+  <li>migration arrangements when versions change.</li>
+</ul>
+
+<p>For a Required binding, a valid code from the bound ValueSet <strong>SHALL</strong> be present. For an Extensible binding, a code from the ValueSet <strong>SHALL</strong> be used when a suitable concept exists.</p>
+
+<p>Local codes <strong>SHOULD</strong> use stable canonical URLs and persistent identifiers. Where a safe mapping exists, systems <strong>SHOULD</strong> also provide the mapped national or international code while retaining the original local coding.</p>
+
+<p>ConceptMaps <strong>SHALL</strong> be used only for their declared purpose. A map created for reporting, migration, analytics, or clinical exchange <strong>SHALL NOT</strong> automatically be treated as safe for another purpose. Mappings used in direct patient care or decision support <strong>SHALL</strong> undergo appropriate clinical review and testing.</p>
+
+<p>Terminology services <strong>SHOULD</strong> support validation, expansion, lookup, and translation where required by the workflow.</p>
+
+<h3 id="ucum-units">UCUM Units</h3>
+
+<p>Where possible, <code class="language-plaintext highlighter-rouge">Quantity.system</code> and <code class="language-plaintext highlighter-rouge">Quantity.code</code> <strong>SHOULD</strong> use UCUM.</p>
+
+<p>Free-text units <strong>MAY</strong> be used where UCUM is unavailable. Unitless values <strong>SHOULD</strong> be avoided where the unit is required for safe interpretation.</p>
+
+<h3 id="missing-suppressed-and-contained-data">Missing, Suppressed, and Contained Data</h3>
+
+<p>Optional elements with no value <strong>SHALL</strong> be omitted. Empty strings and placeholder values <strong>SHALL NOT</strong> be used to satisfy cardinality.</p>
+
+<p>For Mandatory non-coded elements, the [DataAbsentReason Extension] <strong>SHOULD</strong> be used where permitted. For Mandatory coded elements, an appropriate absent or unknown code from the bound ValueSet <strong>SHOULD</strong> be used where available.</p>
+
+<p>Suppressed data <strong>SHOULD</strong> follow privacy, consent, legal, programme, and access-control policy without exposing more information than the Requestor is authorised to know.</p>
+
+<p>Contained resources <strong>SHOULD NOT</strong> be used where the resource can be independently identified, searched, retrieved, or governed. If used, they <strong>SHOULD</strong> conform to a Nigeria Core profile where one exists.</p>
+
+<h3 id="corrections-narrative-and-language">Corrections, Narrative, and Language</h3>
+
+<p>Clinical, registry, programme, claims, or audit-relevant information <strong>SHOULD NOT</strong> be permanently deleted unless permitted by law, policy, or retention rules. Incorrect records <strong>SHOULD</strong> use an appropriate status such as <code class="language-plaintext highlighter-rouge">entered-in-error</code>, <code class="language-plaintext highlighter-rouge">inactive</code>, <code class="language-plaintext highlighter-rouge">cancelled</code>, or <code class="language-plaintext highlighter-rouge">revoked</code>, with <code class="language-plaintext highlighter-rouge">Provenance</code>, <code class="language-plaintext highlighter-rouge">AuditEvent</code>, or <code class="language-plaintext highlighter-rouge">OperationOutcome</code> where appropriate.</p>
+
+<p>Narrative in <code class="language-plaintext highlighter-rouge">Resource.text</code> <strong>SHALL</strong> receive the same privacy and security protection as structured data. Where possible, narrative <strong>SHOULD</strong> be generated from structured content.</p>
+
+<p>Systems <strong>SHOULD</strong> support safe multilingual representation where appropriate. Clinical content <strong>SHOULD NOT</strong> be automatically translated without suitable safety controls.</p>
+
+<h3 id="programme-implementation-checklist">Programme Implementation Checklist</h3>
+
+<p>A programme guide derived from Nigeria Core <strong>SHOULD</strong> document:</p>
+
+<ul>
+  <li>actors and responsibilities;</li>
+  <li>applicable Nigeria Core and derived profiles;</li>
+  <li>identifiers and NamingSystems;</li>
+  <li>required CodeSystems, ValueSets, and ConceptMaps;</li>
+  <li>CapabilityStatement expectations;</li>
+  <li>interactions, searches, operations, documents, and reports;</li>
+  <li>privacy, security, consent, and audit requirements;</li>
+  <li>offline, synchronization, and conflict handling;</li>
+  <li>examples, test data, and sandbox testing;</li>
+  <li>terminology and profile versioning; and</li>
+  <li>change management and implementation limitations.</li>
+</ul>
+
+<p>Nigeria Core implementations <strong>SHOULD</strong> use recognised national identifiers, preserve original codes and identifiers for traceability, support Nigeria's federal and decentralised architecture, and complete profile, terminology, reference, search, security, and interaction testing before production exchange.</p>
+
+<hr />
+
+<p><em>Nigeria Core terminology guidance is aligned with NIS ISO/TR 12300:2019 and NIS ISO/TR 12310:2019.</em></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

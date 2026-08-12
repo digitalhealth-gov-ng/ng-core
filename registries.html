@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Registries &amp; Shared Services - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Registries &amp; Shared Services</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Registries &amp; Shared Services</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#role-of-registries-and-shared-services-in-nigeria-core" id="markdown-toc-role-of-registries-and-shared-services-in-nigeria-core">Role of Registries and Shared Services in Nigeria Core</a></li>
+  <li><a href="#shared-service-principles" id="markdown-toc-shared-service-principles">Shared Service Principles</a></li>
+  <li><a href="#overview-of-key-registries-and-shared-services" id="markdown-toc-overview-of-key-registries-and-shared-services">Overview of Key Registries and Shared Services</a></li>
+  <li><a href="#client-or-patient-registry" id="markdown-toc-client-or-patient-registry">Client or Patient Registry</a>    <ul>
+      <li><a href="#recommended-fhir-resources" id="markdown-toc-recommended-fhir-resources">Recommended FHIR Resources</a></li>
+      <li><a href="#recommended-interactions" id="markdown-toc-recommended-interactions">Recommended Interactions</a></li>
+      <li><a href="#patient-identifier-guidance" id="markdown-toc-patient-identifier-guidance">Patient Identifier Guidance</a></li>
+    </ul>
+  </li>
+  <li><a href="#health-facility-registry" id="markdown-toc-health-facility-registry">Health Facility Registry</a>    <ul>
+      <li><a href="#recommended-fhir-resources-1" id="markdown-toc-recommended-fhir-resources-1">Recommended FHIR Resources</a></li>
+      <li><a href="#recommended-interactions-1" id="markdown-toc-recommended-interactions-1">Recommended Interactions</a></li>
+      <li><a href="#facility-identifier-guidance" id="markdown-toc-facility-identifier-guidance">Facility Identifier Guidance</a></li>
+    </ul>
+  </li>
+  <li><a href="#health-workforce-registry" id="markdown-toc-health-workforce-registry">Health Workforce Registry</a>    <ul>
+      <li><a href="#recommended-fhir-resources-2" id="markdown-toc-recommended-fhir-resources-2">Recommended FHIR Resources</a></li>
+      <li><a href="#recommended-interactions-2" id="markdown-toc-recommended-interactions-2">Recommended Interactions</a></li>
+      <li><a href="#workforce-identifier-guidance" id="markdown-toc-workforce-identifier-guidance">Workforce Identifier Guidance</a></li>
+    </ul>
+  </li>
+  <li><a href="#provider-and-regulator-registries" id="markdown-toc-provider-and-regulator-registries">Provider and Regulator Registries</a>    <ul>
+      <li><a href="#recommended-patterns" id="markdown-toc-recommended-patterns">Recommended Patterns</a></li>
+    </ul>
+  </li>
+  <li><a href="#organisation-and-programme-registries" id="markdown-toc-organisation-and-programme-registries">Organisation and Programme Registries</a></li>
+  <li><a href="#terminology-service" id="markdown-toc-terminology-service">Terminology Service</a>    <ul>
+      <li><a href="#recommended-fhir-resources-and-operations" id="markdown-toc-recommended-fhir-resources-and-operations">Recommended FHIR Resources and Operations</a></li>
+    </ul>
+  </li>
+  <li><a href="#consent-and-privacy-services" id="markdown-toc-consent-and-privacy-services">Consent and Privacy Services</a></li>
+  <li><a href="#audit-and-provenance-services" id="markdown-toc-audit-and-provenance-services">Audit and Provenance Services</a></li>
+  <li><a href="#nigeria-shared-health-record" id="markdown-toc-nigeria-shared-health-record">Nigeria Shared Health Record</a></li>
+  <li><a href="#conformance-and-sandbox-services" id="markdown-toc-conformance-and-sandbox-services">Conformance and Sandbox Services</a></li>
+  <li><a href="#registry-api-patterns" id="markdown-toc-registry-api-patterns">Registry API Patterns</a>    <ul>
+      <li><a href="#read-by-logical-id" id="markdown-toc-read-by-logical-id">Read by Logical ID</a></li>
+      <li><a href="#search-by-identifier" id="markdown-toc-search-by-identifier">Search by Identifier</a></li>
+      <li><a href="#search-by-name-or-type" id="markdown-toc-search-by-name-or-type">Search by Name or Type</a></li>
+      <li><a href="#verify-entity" id="markdown-toc-verify-entity">Verify Entity</a></li>
+      <li><a href="#bulk-or-periodic-synchronization" id="markdown-toc-bulk-or-periodic-synchronization">Bulk or Periodic Synchronization</a></li>
+    </ul>
+  </li>
+  <li><a href="#offline-and-hybrid-architecture-considerations" id="markdown-toc-offline-and-hybrid-architecture-considerations">Offline and Hybrid Architecture Considerations</a></li>
+  <li><a href="#governance-and-stewardship" id="markdown-toc-governance-and-stewardship">Governance and Stewardship</a></li>
+  <li><a href="#data-quality-expectations" id="markdown-toc-data-quality-expectations">Data Quality Expectations</a></li>
+  <li><a href="#security-privacy-and-access-control" id="markdown-toc-security-privacy-and-access-control">Security, Privacy, and Access Control</a></li>
+  <li><a href="#implementation-notes-for-nigeria" id="markdown-toc-implementation-notes-for-nigeria">Implementation Notes for Nigeria</a></li>
+</ul>
+
+</div>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>This page provides implementation guidance for using Nigeria Core with national, state, programme, regulator, and institutional registries and shared services.</p>
+
+<p>Nigeria Core recognises that interoperability depends not only on clinical data exchange, but also on a trusted set of shared services that provide common identifiers, reference data, terminology, consent, audit, and longitudinal record linkage.</p>
+
+<p>This guidance applies to shared services such as:</p>
+
+<ul>
+  <li>Client or patient registries</li>
+  <li>Health Facility Registry</li>
+  <li>Health Workforce Registry</li>
+  <li>Provider and professional regulator registries</li>
+  <li>Organisation and programme registries</li>
+  <li>Pharmacy, laboratory, payer, and facility licensing registries</li>
+  <li>Terminology services</li>
+  <li>Consent and privacy services</li>
+  <li>Audit and Provenance services</li>
+  <li>Nigeria Shared Health Record</li>
+  <li>Conformance and sandbox services</li>
+</ul>
+
+<h3 id="role-of-registries-and-shared-services-in-nigeria-core">Role of Registries and Shared Services in Nigeria Core</h3>
+
+<p>Registries and shared services provide authoritative or reference information used by multiple digital health systems. They help reduce duplication, improve identity resolution, support reporting, improve data quality, and enable safe exchange across Nigeria’s decentralised and hybrid digital health architecture.</p>
+
+<p>Nigeria Core provides FHIR profiles, identifiers, terminology, RESTful interactions, and implementation guidance for representing and interacting with these services in a consistent way.</p>
+
+<p>The objective is to allow EMRs, eCHIS platforms, laboratory systems, pharmacy systems, claims systems, programme databases, DHIS2 reporting adapters, Shared Health Record platforms, and interoperability layers to reference the same trusted sources.</p>
+
+<h3 id="shared-service-principles">Shared Service Principles</h3>
+
+<p>Implementers <strong>SHOULD</strong> apply the following principles when using registries and shared services:</p>
+
+<ul>
+  <li>Use authoritative registries where available.</li>
+  <li>Preserve local identifiers while adding national or regulator identifiers.</li>
+  <li>Maintain mappings between local, programme, state, regulator, and national identifiers.</li>
+  <li>Use FHIR resources and profiles to represent registry entities consistently.</li>
+  <li>Use terminology services to validate and map codes.</li>
+  <li>Apply security, consent, privacy, audit, and Provenance controls.</li>
+  <li>Support offline and low-connectivity workflows where needed.</li>
+  <li>Design registry integrations for decentralised and hybrid deployment.</li>
+  <li>Validate registry-related resources in the Nigeria Core sandbox before production use.</li>
+</ul>
+
+<h3 id="overview-of-key-registries-and-shared-services">Overview of Key Registries and Shared Services</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Shared Service</th>
+      <th>Main Purpose</th>
+      <th>Key FHIR Resources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Client or Patient Registry</td>
+      <td>Supports patient identity, demographic lookup, matching, and longitudinal record linkage</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">RelatedPerson</code>, <code class="language-plaintext highlighter-rouge">Person</code>, <code class="language-plaintext highlighter-rouge">Bundle</code>, <code class="language-plaintext highlighter-rouge">OperationOutcome</code></td>
+    </tr>
+    <tr>
+      <td>Health Facility Registry</td>
+      <td>Provides authoritative facility identity, type, ownership, level, status, and location</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Location</code>, <code class="language-plaintext highlighter-rouge">OrganizationAffiliation</code></td>
+    </tr>
+    <tr>
+      <td>Health Workforce Registry</td>
+      <td>Provides authoritative health worker identity, cadre, role, qualification, status, and deployment</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Location</code>, <code class="language-plaintext highlighter-rouge">Qualification</code></td>
+    </tr>
+    <tr>
+      <td>Provider and Regulator Registries</td>
+      <td>Supports verification of professional registration, facility licensing, pharmacy licensing, laboratory accreditation, and other statutory registers</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Location</code>, <code class="language-plaintext highlighter-rouge">VerificationResult</code></td>
+    </tr>
+    <tr>
+      <td>Terminology Service</td>
+      <td>Provides CodeSystems, ValueSets, ConceptMaps, validation, expansion, and code mapping</td>
+      <td><code class="language-plaintext highlighter-rouge">CodeSystem</code>, <code class="language-plaintext highlighter-rouge">ValueSet</code>, <code class="language-plaintext highlighter-rouge">ConceptMap</code>, <code class="language-plaintext highlighter-rouge">NamingSystem</code>, <code class="language-plaintext highlighter-rouge">Parameters</code></td>
+    </tr>
+    <tr>
+      <td>Consent and Privacy Service</td>
+      <td>Supports computable consent, disclosure rules, access restrictions, and purpose-based access</td>
+      <td><code class="language-plaintext highlighter-rouge">Consent</code>, <code class="language-plaintext highlighter-rouge">Provenance</code>, <code class="language-plaintext highlighter-rouge">AuditEvent</code>, <code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">RelatedPerson</code></td>
+    </tr>
+    <tr>
+      <td>Shared Health Record</td>
+      <td>Supports longitudinal patient record contribution, retrieval, reconciliation, and summary generation</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code>, <code class="language-plaintext highlighter-rouge">Composition</code>, <code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code>, <code class="language-plaintext highlighter-rouge">Immunization</code>, <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+    </tr>
+    <tr>
+      <td>Conformance Sandbox</td>
+      <td>Supports validation, vendor onboarding, test data, reference servers, and Connectathon-style testing</td>
+      <td><code class="language-plaintext highlighter-rouge">CapabilityStatement</code>, <code class="language-plaintext highlighter-rouge">StructureDefinition</code>, <code class="language-plaintext highlighter-rouge">OperationDefinition</code>, <code class="language-plaintext highlighter-rouge">TestScript</code>, <code class="language-plaintext highlighter-rouge">Bundle</code>, <code class="language-plaintext highlighter-rouge">OperationOutcome</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="client-or-patient-registry">Client or Patient Registry</h3>
+
+<p>A Client or Patient Registry supports identity management and linkage of patient records across facilities, programmes, states, and health information systems.</p>
+
+<p>Nigeria Core Patient profiles provide the baseline for representing patient demographics and identifiers. A patient registry may support:</p>
+
+<ul>
+  <li>Patient creation and update.</li>
+  <li>Patient lookup.</li>
+  <li>Patient matching.</li>
+  <li>Duplicate detection.</li>
+  <li>Record linkage.</li>
+  <li>Merge and unmerge workflows.</li>
+  <li>Patient demographic updates.</li>
+  <li>Cross-facility and cross-programme linkage.</li>
+  <li>Shared Health Record identity resolution.</li>
+</ul>
+
+<h4 id="recommended-fhir-resources">Recommended FHIR Resources</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Use Case</th>
+      <th>Recommended Resources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient demographic record</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code></td>
+    </tr>
+    <tr>
+      <td>Related person, caregiver, parent, guardian</td>
+      <td><code class="language-plaintext highlighter-rouge">RelatedPerson</code></td>
+    </tr>
+    <tr>
+      <td>Cross-record linkage or person-level identity</td>
+      <td><code class="language-plaintext highlighter-rouge">Person</code> where supported</td>
+    </tr>
+    <tr>
+      <td>Search result or match candidates</td>
+      <td><code class="language-plaintext highlighter-rouge">Bundle</code></td>
+    </tr>
+    <tr>
+      <td>Match or validation errors</td>
+      <td><code class="language-plaintext highlighter-rouge">OperationOutcome</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recommended-interactions">Recommended Interactions</h4>
+
+<p>Patient registries <strong>SHOULD</strong> support appropriate read and search operations such as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient/[id]
+GET [base]/Patient?identifier=[system]|[value]
+GET [base]/Patient?family=[family]&amp;given=[given]&amp;birthdate=[date]
+GET [base]/Patient?phone=[phone]
+</code></pre></div></div>
+
+<p>Where patient matching is supported, registries <strong>MAY</strong> support the FHIR <code class="language-plaintext highlighter-rouge">$match</code> operation or another documented operation.</p>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/Patient/$match
+</code></pre></div></div>
+
+<h4 id="patient-identifier-guidance">Patient Identifier Guidance</h4>
+
+<p>Patient identifiers may include:</p>
+
+<ul>
+  <li>National identifiers where legally and operationally appropriate.</li>
+  <li>Facility medical record numbers.</li>
+  <li>State or programme patient identifiers.</li>
+  <li>Shared Health Record identifiers.</li>
+  <li>Insurance or coverage identifiers.</li>
+  <li>Community health identifiers.</li>
+  <li>Temporary or emergency identifiers.</li>
+  <li>Mother-child or household-linked identifiers where used by programme workflows.</li>
+</ul>
+
+<p>Systems <strong>SHOULD</strong> preserve all relevant identifiers with clear <code class="language-plaintext highlighter-rouge">Identifier.system</code>, <code class="language-plaintext highlighter-rouge">Identifier.value</code>, <code class="language-plaintext highlighter-rouge">Identifier.type</code>, and <code class="language-plaintext highlighter-rouge">Identifier.assigner</code>.</p>
+
+<h3 id="health-facility-registry">Health Facility Registry</h3>
+
+<p>The Health Facility Registry provides authoritative information about health facilities, service delivery locations, ownership, facility type, operational status, and geographic location.</p>
+
+<p>Nigeria Core represents facility and location information using <code class="language-plaintext highlighter-rouge">Organization</code> and <code class="language-plaintext highlighter-rouge">Location</code>.</p>
+
+<h4 id="recommended-fhir-resources-1">Recommended FHIR Resources</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Registry Concept</th>
+      <th>Recommended Resource</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Facility</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+    <tr>
+      <td>Physical facility location</td>
+      <td><code class="language-plaintext highlighter-rouge">Location</code></td>
+    </tr>
+    <tr>
+      <td>Service delivery point, ward, unit, department</td>
+      <td><code class="language-plaintext highlighter-rouge">Location</code></td>
+    </tr>
+    <tr>
+      <td>Facility ownership or managing authority</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+    <tr>
+      <td>Relationship between organisations</td>
+      <td><code class="language-plaintext highlighter-rouge">OrganizationAffiliation</code></td>
+    </tr>
+    <tr>
+      <td>Facility verification or accreditation status</td>
+      <td><code class="language-plaintext highlighter-rouge">VerificationResult</code> where supported</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recommended-interactions-1">Recommended Interactions</h4>
+
+<p>Health Facility Registry services <strong>SHOULD</strong> support:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Organization/[id]
+GET [base]/Organization?identifier=[system]|[value]
+GET [base]/Organization?type=[code]
+GET [base]/Organization?name=[name]
+GET [base]/Location?organization=Organization/[id]
+GET [base]/Location?identifier=[system]|[value]
+</code></pre></div></div>
+
+<h4 id="facility-identifier-guidance">Facility Identifier Guidance</h4>
+
+<p>Implementations <strong>SHOULD</strong> maintain mappings between:</p>
+
+<ul>
+  <li>Health Facility Registry identifier.</li>
+  <li>DHIS2 organisation unit UID.</li>
+  <li>State facility code.</li>
+  <li>Programme facility code.</li>
+  <li>Facility license or regulator identifier.</li>
+  <li>Local EMR facility identifier.</li>
+  <li>Partner or donor programme identifiers where needed.</li>
+</ul>
+
+<p>The Health Facility Registry identifier <strong>SHOULD</strong> be used as the preferred facility identifier where available.</p>
+
+<h3 id="health-workforce-registry">Health Workforce Registry</h3>
+
+<p>The Health Workforce Registry provides authoritative information about health workers, cadres, professional roles, qualifications, deployment, facility association, and workforce status.</p>
+
+<p>Nigeria Core represents health worker information using <code class="language-plaintext highlighter-rouge">Practitioner</code> and <code class="language-plaintext highlighter-rouge">PractitionerRole</code>.</p>
+
+<h4 id="recommended-fhir-resources-2">Recommended FHIR Resources</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Registry Concept</th>
+      <th>Recommended Resource</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Health worker identity</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code></td>
+    </tr>
+    <tr>
+      <td>Role, cadre, facility assignment, programme role</td>
+      <td><code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+    </tr>
+    <tr>
+      <td>Employing or hosting facility</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+    <tr>
+      <td>Service delivery location</td>
+      <td><code class="language-plaintext highlighter-rouge">Location</code></td>
+    </tr>
+    <tr>
+      <td>Qualification or licence</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner.qualification</code> or profile-specific extension</td>
+    </tr>
+    <tr>
+      <td>Verification status</td>
+      <td><code class="language-plaintext highlighter-rouge">VerificationResult</code> where supported</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recommended-interactions-2">Recommended Interactions</h4>
+
+<p>Health Workforce Registry services <strong>SHOULD</strong> support:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Practitioner/[id]
+GET [base]/Practitioner?identifier=[system]|[value]
+GET [base]/Practitioner?family=[family]&amp;given=[given]
+GET [base]/PractitionerRole?practitioner=Practitioner/[id]
+GET [base]/PractitionerRole?organization=Organization/[id]
+GET [base]/PractitionerRole?role=[code]
+</code></pre></div></div>
+
+<h4 id="workforce-identifier-guidance">Workforce Identifier Guidance</h4>
+
+<p>Health worker identifiers may include:</p>
+
+<ul>
+  <li>National health workforce registry identifier.</li>
+  <li>Professional council registration number.</li>
+  <li>State HRH database identifier.</li>
+  <li>Facility staff identifier.</li>
+  <li>Programme-specific provider identifier.</li>
+  <li>Training or certification identifier.</li>
+</ul>
+
+<p>Systems <strong>SHOULD</strong> distinguish between the person’s identity (<code class="language-plaintext highlighter-rouge">Practitioner</code>) and their role or assignment (<code class="language-plaintext highlighter-rouge">PractitionerRole</code>).</p>
+
+<h3 id="provider-and-regulator-registries">Provider and Regulator Registries</h3>
+
+<p>Provider and regulator registries support verification of professionals, facilities, pharmacies, laboratories, payers, and other regulated actors.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>Medical and dental practitioner registration.</li>
+  <li>Nursing and midwifery registration.</li>
+  <li>Pharmacy professional registration.</li>
+  <li>Pharmacy premises registration.</li>
+  <li>Laboratory registration or accreditation.</li>
+  <li>Facility licensing.</li>
+  <li>Payer or insurance provider registration.</li>
+  <li>Medical device distributor or facility registration where applicable.</li>
+</ul>
+
+<p>Nigeria Core does not define every regulator-specific register, but provides a consistent way to reference and verify regulated entities.</p>
+
+<h4 id="recommended-patterns">Recommended Patterns</h4>
+
+<ul>
+  <li>Professionals <strong>SHOULD</strong> be represented as <code class="language-plaintext highlighter-rouge">Practitioner</code>.</li>
+  <li>Professional roles, cadre, facility assignment, and scope of practice <strong>SHOULD</strong> be represented as <code class="language-plaintext highlighter-rouge">PractitionerRole</code>.</li>
+  <li>Facilities, pharmacies, laboratories, payers, and regulators <strong>SHOULD</strong> be represented as <code class="language-plaintext highlighter-rouge">Organization</code>.</li>
+  <li>Physical service points <strong>SHOULD</strong> be represented as <code class="language-plaintext highlighter-rouge">Location</code>.</li>
+  <li>Verification outcomes <strong>MAY</strong> be represented using <code class="language-plaintext highlighter-rouge">VerificationResult</code> or implementation-specific verification operations.</li>
+</ul>
+
+<p>Example verification search:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Practitioner?identifier=https://fhir.health.gov.ng/NamingSystem/mdcn|MDCN-12345
+GET [base]/Organization?identifier=https://fhir.health.gov.ng/NamingSystem/pcn-premises|PCN-ABJ-0001
+</code></pre></div></div>
+
+<h3 id="organisation-and-programme-registries">Organisation and Programme Registries</h3>
+
+<p>Programme registries may define participating facilities, implementing partners, service delivery points, supported interventions, and programme-specific configurations.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>Immunization programme facility lists.</li>
+  <li>HIV treatment sites.</li>
+  <li>TB DOTS centres.</li>
+  <li>Malaria service delivery points.</li>
+  <li>Nutrition treatment sites.</li>
+  <li>NHIA or payer networks.</li>
+  <li>ePharmacy participating providers.</li>
+  <li>Medical device testing sites.</li>
+</ul>
+
+<p>Programme registries <strong>SHOULD</strong> reuse Nigeria Core <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Location</code>, and <code class="language-plaintext highlighter-rouge">OrganizationAffiliation</code> patterns rather than creating separate incompatible facility lists.</p>
+
+<h3 id="terminology-service">Terminology Service</h3>
+
+<p>A terminology service provides the controlled vocabularies and mappings needed for consistent data exchange and analytics.</p>
+
+<p>Nigeria Core terminology services may support:</p>
+
+<ul>
+  <li>National CodeSystems.</li>
+  <li>Programme CodeSystems.</li>
+  <li>Regulator CodeSystems.</li>
+  <li>ValueSet expansion.</li>
+  <li>Code validation.</li>
+  <li>Code translation and mapping.</li>
+  <li>ConceptMap maintenance.</li>
+  <li>NamingSystem publication.</li>
+  <li>Mapping between local codes and international standards.</li>
+</ul>
+
+<h4 id="recommended-fhir-resources-and-operations">Recommended FHIR Resources and Operations</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Recommended Resource or Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Publish a code system</td>
+      <td><code class="language-plaintext highlighter-rouge">CodeSystem</code></td>
+    </tr>
+    <tr>
+      <td>Publish a value set</td>
+      <td><code class="language-plaintext highlighter-rouge">ValueSet</code></td>
+    </tr>
+    <tr>
+      <td>Publish mappings</td>
+      <td><code class="language-plaintext highlighter-rouge">ConceptMap</code></td>
+    </tr>
+    <tr>
+      <td>Publish identifier systems</td>
+      <td><code class="language-plaintext highlighter-rouge">NamingSystem</code></td>
+    </tr>
+    <tr>
+      <td>Expand a value set</td>
+      <td><code class="language-plaintext highlighter-rouge">ValueSet/$expand</code></td>
+    </tr>
+    <tr>
+      <td>Validate a code</td>
+      <td><code class="language-plaintext highlighter-rouge">ValueSet/$validate-code</code></td>
+    </tr>
+    <tr>
+      <td>Translate a code</td>
+      <td><code class="language-plaintext highlighter-rouge">ConceptMap/$translate</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example terminology interactions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/ValueSet/$expand?url=[valueSetUrl]
+GET [base]/ValueSet/$validate-code?url=[valueSetUrl]&amp;system=[system]&amp;code=[code]
+GET [base]/ConceptMap/$translate?system=[system]&amp;code=[code]&amp;targetsystem=[targetSystem]
+</code></pre></div></div>
+
+<p>Terminology services <strong>SHOULD</strong> support mapping between:</p>
+
+<ul>
+  <li>Local EMR codes and Nigeria Core codes.</li>
+  <li>Programme codes and national codes.</li>
+  <li>Nigeria Core codes and international terminologies such as ICD-11, SNOMED CT, LOINC, ATC, and UCUM.</li>
+  <li>Facility, workforce, and regulator classification codes.</li>
+</ul>
+
+<h3 id="consent-and-privacy-services">Consent and Privacy Services</h3>
+
+<p>Consent and privacy services support computable consent, access rules, disclosure restrictions, proxy access, purpose limitation, and patient preferences.</p>
+
+<p>Nigeria Core implementations <strong>SHOULD</strong> use the FHIR <code class="language-plaintext highlighter-rouge">Consent</code> resource where consent needs to be exchanged, validated, stored, or enforced across systems.</p>
+
+<p>Consent services may support:</p>
+
+<ul>
+  <li>Patient consent capture.</li>
+  <li>Consent withdrawal.</li>
+  <li>Consent verification.</li>
+  <li>Disclosure restrictions.</li>
+  <li>Programme-specific consent.</li>
+  <li>Caregiver or proxy access.</li>
+  <li>Sensitive data restrictions.</li>
+  <li>Purpose-of-use enforcement.</li>
+  <li>Consent for Shared Health Record contribution.</li>
+  <li>Consent for patient-facing access.</li>
+</ul>
+
+<p>Example consent search:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Consent?patient=Patient/[id]&amp;status=active
+</code></pre></div></div>
+
+<p>Sensitive workflows such as HIV, reproductive health, mental health, claims, and patient-facing access <strong>SHOULD</strong> define clear consent and access control rules.</p>
+
+<h3 id="audit-and-provenance-services">Audit and Provenance Services</h3>
+
+<p>Audit and Provenance services support trust, accountability, and traceability.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Provenance</code> explains how a resource was created, updated, transmitted, transformed, reconciled, or imported.</p>
+
+<p><code class="language-plaintext highlighter-rouge">AuditEvent</code> records access and system activity, such as reads, searches, submissions, exports, and administrative changes.</p>
+
+<p>Systems <strong>SHOULD</strong> record Provenance when:</p>
+
+<ul>
+  <li>Data are submitted to a Shared Health Record.</li>
+  <li>Data are transformed by an interoperability layer.</li>
+  <li>Data are imported from another system.</li>
+  <li>Registry data are verified or updated.</li>
+  <li>Clinical information is reconciled.</li>
+  <li>Bundle submissions are accepted or rejected.</li>
+  <li>Programme reports are generated from source data.</li>
+</ul>
+
+<p>Systems <strong>SHOULD</strong> record AuditEvent or equivalent logs when:</p>
+
+<ul>
+  <li>A user searches for or reads patient data.</li>
+  <li>A system submits data.</li>
+  <li>A registry lookup occurs.</li>
+  <li>A Bundle is exported or imported.</li>
+  <li>A user changes permissions or roles.</li>
+  <li>A sensitive record is accessed.</li>
+  <li>A break-glass or emergency access workflow is used.</li>
+</ul>
+
+<h3 id="nigeria-shared-health-record">Nigeria Shared Health Record</h3>
+
+<p>The Nigeria Shared Health Record is expected to support longitudinal patient information sharing across authorised systems and care settings. It may be based on or aligned with the International Patient Summary, while including Nigeria-specific identifiers, registry references, programme data, and consent rules.</p>
+
+<p>The Shared Health Record may include:</p>
+
+<ul>
+  <li>Patient demographics.</li>
+  <li>Allergies and intolerances.</li>
+  <li>Conditions and diagnoses.</li>
+  <li>Medications.</li>
+  <li>Immunizations.</li>
+  <li>Procedures.</li>
+  <li>Observations and vital signs.</li>
+  <li>Laboratory and diagnostic reports.</li>
+  <li>Clinical notes and discharge summaries.</li>
+  <li>Referrals and care plans.</li>
+  <li>Provenance and source information.</li>
+</ul>
+
+<p>Shared Health Record implementations <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Reuse Nigeria Core profiles.</li>
+  <li>Maintain patient identity linkage.</li>
+  <li>Preserve facility, provider, and source system metadata.</li>
+  <li>Support consent and access control.</li>
+  <li>Preserve Provenance.</li>
+  <li>Support incremental updates where appropriate.</li>
+  <li>Avoid unnecessary duplication.</li>
+  <li>Support reconciliation workflows.</li>
+  <li>Provide summary views where appropriate.</li>
+</ul>
+
+<h3 id="conformance-and-sandbox-services">Conformance and Sandbox Services</h3>
+
+<p>Conformance and sandbox services support implementation readiness and vendor onboarding.</p>
+
+<p>A Nigeria Core sandbox may provide:</p>
+
+<ul>
+  <li>Reference FHIR servers.</li>
+  <li>Synthetic patient, facility, workforce, and programme data.</li>
+  <li>FHIR validation.</li>
+  <li>Terminology validation.</li>
+  <li>CapabilityStatement testing.</li>
+  <li>Example transactions.</li>
+  <li>Bundle validation and submission.</li>
+  <li>Registry lookup simulation.</li>
+  <li>SMART-on-FHIR or OAuth2 testing.</li>
+  <li>Connectathon-style test tracks.</li>
+  <li>Conformance scoring and feedback.</li>
+</ul>
+
+<p>Systems participating in sandbox testing <strong>SHOULD</strong> validate:</p>
+
+<ul>
+  <li>Profile conformance.</li>
+  <li>Must Support element handling.</li>
+  <li>Identifier usage.</li>
+  <li>Terminology binding.</li>
+  <li>Registry references.</li>
+  <li>Search parameters.</li>
+  <li>Security and access control behaviour.</li>
+  <li>Bundle submission and validation.</li>
+  <li>OperationOutcome handling.</li>
+  <li>Provenance and audit behaviour where applicable.</li>
+</ul>
+
+<h3 id="registry-api-patterns">Registry API Patterns</h3>
+
+<p>Registry services may use simple read/search APIs, FHIR operations, or both.</p>
+
+<h4 id="read-by-logical-id">Read by Logical ID</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Organization/[id]
+GET [base]/Practitioner/[id]
+GET [base]/Patient/[id]
+</code></pre></div></div>
+
+<h4 id="search-by-identifier">Search by Identifier</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Organization?identifier=[system]|[value]
+GET [base]/Practitioner?identifier=[system]|[value]
+GET [base]/Location?identifier=[system]|[value]
+GET [base]/Patient?identifier=[system]|[value]
+</code></pre></div></div>
+
+<h4 id="search-by-name-or-type">Search by Name or Type</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Organization?name=[name]
+GET [base]/Organization?type=[code]
+GET [base]/Practitioner?family=[family]&amp;given=[given]
+GET [base]/Location?type=[code]
+</code></pre></div></div>
+
+<h4 id="verify-entity">Verify Entity</h4>
+
+<p>Where a verification operation is implemented, the operation <strong>SHOULD</strong> be documented using an <code class="language-plaintext highlighter-rouge">OperationDefinition</code>.</p>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/Organization/$verify
+POST [base]/Practitioner/$verify
+</code></pre></div></div>
+
+<h4 id="bulk-or-periodic-synchronization">Bulk or Periodic Synchronization</h4>
+
+<p>Where systems need local registry copies for offline or low-connectivity operation, registries <strong>MAY</strong> support governed export or synchronization patterns.</p>
+
+<p>Examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Organization?_lastUpdated=ge2026-01-01
+GET [base]/PractitionerRole?_lastUpdated=ge2026-01-01
+GET [base]/ValueSet?_lastUpdated=ge2026-01-01
+</code></pre></div></div>
+
+<p>Bulk export should be access-controlled, logged, and scoped to authorised use.</p>
+
+<h3 id="offline-and-hybrid-architecture-considerations">Offline and Hybrid Architecture Considerations</h3>
+
+<p>Nigeria Core recognises that many systems may operate in low-connectivity environments. Local facility servers, state repositories, programme repositories, and national services may need to synchronize data periodically.</p>
+
+<p>Implementations <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Maintain local cache of essential registry data where permitted.</li>
+  <li>Record the version and date of cached registry data.</li>
+  <li>Support <code class="language-plaintext highlighter-rouge">_lastUpdated</code> or other incremental update patterns.</li>
+  <li>Preserve local identifiers and map them to national identifiers.</li>
+  <li>Detect and resolve conflicts.</li>
+  <li>Avoid overwriting authoritative registry updates without governance.</li>
+  <li>Validate synchronized data against Nigeria Core profiles.</li>
+  <li>Log synchronization events and errors.</li>
+</ul>
+
+<h3 id="governance-and-stewardship">Governance and Stewardship</h3>
+
+<p>Registries and shared services require clear governance. Each registry <strong>SHOULD</strong> have an identified owner, steward, data update process, access policy, and change management process.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Shared Service</th>
+      <th>Typical Stewardship Considerations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Client Registry</td>
+      <td>Patient identity governance, matching rules, merge/unmerge policy, privacy, consent</td>
+    </tr>
+    <tr>
+      <td>Health Facility Registry</td>
+      <td>Facility lifecycle, ownership, licensing, location, status, DHIS2 alignment</td>
+    </tr>
+    <tr>
+      <td>Health Workforce Registry</td>
+      <td>Workforce identity, cadre, qualification, deployment, regulator linkage</td>
+    </tr>
+    <tr>
+      <td>Provider Registries</td>
+      <td>Professional registration, licence status, scope, disciplinary or status updates where applicable</td>
+    </tr>
+    <tr>
+      <td>Terminology Service</td>
+      <td>Code governance, ValueSet versioning, mapping review, programme alignment</td>
+    </tr>
+    <tr>
+      <td>Consent Service</td>
+      <td>Consent policy, patient rights, proxy access, withdrawal, audit</td>
+    </tr>
+    <tr>
+      <td>Shared Health Record</td>
+      <td>Contribution rules, retrieval rules, reconciliation, patient access, privacy</td>
+    </tr>
+    <tr>
+      <td>Sandbox</td>
+      <td>Test data governance, onboarding, conformance criteria, version control</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="data-quality-expectations">Data Quality Expectations</h3>
+
+<p>Registry and shared service data <strong>SHOULD</strong> be:</p>
+
+<ul>
+  <li>Unique where appropriate.</li>
+  <li>Routinely updated.</li>
+  <li>Versioned.</li>
+  <li>Traceable to a responsible steward.</li>
+  <li>Validated against defined rules.</li>
+  <li>Mapped to related identifiers.</li>
+  <li>Available through documented APIs.</li>
+  <li>Protected according to privacy and security requirements.</li>
+</ul>
+
+<p>Systems consuming registry data <strong>SHOULD</strong> handle inactive, duplicate, replaced, merged, suspended, or retired records safely.</p>
+
+<h3 id="security-privacy-and-access-control">Security, Privacy, and Access Control</h3>
+
+<p>Registry and shared service APIs <strong>SHALL</strong> be protected using appropriate authentication, authorization, audit, and transport security.</p>
+
+<p>Systems <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Use HTTPS/TLS for all API transactions.</li>
+  <li>Authenticate client systems and users.</li>
+  <li>Apply role-based, organisation-based, or purpose-based access control.</li>
+  <li>Limit access to authorised data.</li>
+  <li>Log registry lookups and updates.</li>
+  <li>Protect sensitive identifiers.</li>
+  <li>Avoid exposing full registry datasets publicly unless explicitly approved.</li>
+  <li>Use synthetic data for public sandbox environments.</li>
+  <li>Apply privacy and consent rules for patient-facing and shared record workflows.</li>
+</ul>
+
+<h3 id="implementation-notes-for-nigeria">Implementation Notes for Nigeria</h3>
+
+<p>Implementers should consider the following:</p>
+
+<ul>
+  <li>Nigeria Core should be used as the common FHIR layer for registries and shared services.</li>
+  <li>Facility, workforce, provider, and terminology services are essential for reliable interoperability and reporting.</li>
+  <li>Registry identifiers should be reused across EMRs, eCHIS, DHIS2, HIE, Shared Health Record, claims, pharmacy, laboratory, and programme systems.</li>
+  <li>Programme systems should avoid creating isolated facility, workforce, or terminology lists where national or state registries already exist.</li>
+  <li>Shared services should be tested through the Nigeria Core sandbox before production exchange.</li>
+  <li>Registry updates should follow formal stewardship processes.</li>
+  <li>Local identifiers should be preserved but mapped to national or authoritative identifiers.</li>
+  <li>Systems should support progressive maturity: manual lookup, API lookup, cached synchronization, and full registry integration.</li>
+</ul>
+
+<p>Footnotes</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

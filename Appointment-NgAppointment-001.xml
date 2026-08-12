@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="NgAppointment-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-appointment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment NgAppointment-001</b></p><a name="NgAppointment-001"> </a><a name="hcNgAppointment-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-appointment.html">Ng Appointment</a></p></div><p><b>status</b>: Proposed</p><p><b>description</b>: Child immunization visit (MCV1)</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient-NgPatient-001.html">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Practitioner-NgPractitioner-001.html">Practitioner Kehinde Adebayo </a></p><p><b>status</b>: Accepted</p></blockquote></div>
+  </text>
+  <status value="proposed"/>
+  <description value="Child immunization visit (MCV1)"/>
+  <participant>
+    <actor>
+      <reference value="Patient/NgPatient-001"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="Practitioner/NgPractitioner-001"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-reason-for-art-eligibility-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-reason-for-art-eligibility-cs</b></p><a name="ng-hiv-reason-for-art-eligibility-cs"> </a><a name="hcng-hiv-reason-for-art-eligibility-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-for-art-eligibility-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Test-and-Treat<a name="ng-hiv-reason-for-art-eligibility-cs-Test-and-Treat"> </a></td><td>Test and treat</td></tr><tr><td style="white-space:nowrap">Clinical-Staging<a name="ng-hiv-reason-for-art-eligibility-cs-Clinical-Staging"> </a></td><td>Clinical Staging</td></tr><tr><td style="white-space:nowrap">Transfer-in<a name="ng-hiv-reason-for-art-eligibility-cs-Transfer-in"> </a></td><td>Transfer in</td></tr><tr><td style="white-space:nowrap">Stage-Three<a name="ng-hiv-reason-for-art-eligibility-cs-Stage-Three"> </a></td><td>Stage Three</td></tr><tr><td style="white-space:nowrap">Stage-Four<a name="ng-hiv-reason-for-art-eligibility-cs-Stage-Four"> </a></td><td>Stage Four</td></tr><tr><td style="white-space:nowrap">Discordant-Couple<a name="ng-hiv-reason-for-art-eligibility-cs-Discordant-Couple"> </a></td><td>Discordant couple</td></tr><tr><td style="white-space:nowrap">Other<a name="ng-hiv-reason-for-art-eligibility-cs-Other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-for-art-eligibility-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.68"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivReasonForARTEligibilityCS"/>
+  <title value="HIV Reasons For ART Eligibility"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons For ART Eligibility"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="Test-and-Treat"/>
+    <display value="Test and treat"/>
+  </concept>
+  <concept>
+    <code value="Clinical-Staging"/>
+    <display value="Clinical Staging"/>
+  </concept>
+  <concept>
+    <code value="Transfer-in"/>
+    <display value="Transfer in"/>
+  </concept>
+  <concept>
+    <code value="Stage-Three"/>
+    <display value="Stage Three"/>
+  </concept>
+  <concept>
+    <code value="Stage-Four"/>
+    <display value="Stage Four"/>
+  </concept>
+  <concept>
+    <code value="Discordant-Couple"/>
+    <display value="Discordant couple"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,88 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-eac-register-virologic-failure-cause-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-eac-register-virologic-failure-cause-cs</b></p><a name=\"ng-hiv-eac-register-virologic-failure-cause-cs\"> </a><a name=\"hcng-hiv-eac-register-virologic-failure-cause-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-register-virologic-failure-cause-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1a<a name=\"ng-hiv-eac-register-virologic-failure-cause-cs-1a\"> </a></td><td>Missed doses</td><td>The client missed one or more ART doses.</td></tr><tr><td style=\"white-space:nowrap\">1b<a name=\"ng-hiv-eac-register-virologic-failure-cause-cs-1b\"> </a></td><td>Abnormal or irregular dosing frequency</td><td>The client took ART at an abnormal or irregular frequency.</td></tr><tr><td style=\"white-space:nowrap\">2a<a name=\"ng-hiv-eac-register-virologic-failure-cause-cs-2a\"> </a></td><td>Drug–drug interaction</td><td>A drug–drug interaction is suspected to have contributed to virologic failure.</td></tr><tr><td style=\"white-space:nowrap\">2b<a name=\"ng-hiv-eac-register-virologic-failure-cause-cs-2b\"> </a></td><td>Drug–herb interaction</td><td>A drug–herb interaction is suspected to have contributed to virologic failure.</td></tr><tr><td style=\"white-space:nowrap\">2c<a name=\"ng-hiv-eac-register-virologic-failure-cause-cs-2c\"> </a></td><td>Drug–substance interaction</td><td>A drug–substance interaction is suspected to have contributed to virologic failure.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ng-hiv-eac-register-virologic-failure-cause-cs-3\"> </a></td><td>Other suspected cause</td><td>A suspected cause not represented by another register code; describe it separately.</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-register-virologic-failure-cause-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.46"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivEacRegisterVirologicFailureCauseCS",
+  "title" : "NG HIV EAC Register Suspected Causes of Virologic Failure",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-29",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes printed in the Enhanced Adherence Counselling Monitoring Register for\nrecording the suspected cause or causes of virologic failure after EAC.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "1a",
+    "display" : "Missed doses",
+    "definition" : "The client missed one or more ART doses."
+  },
+  {
+    "code" : "1b",
+    "display" : "Abnormal or irregular dosing frequency",
+    "definition" : "The client took ART at an abnormal or irregular frequency."
+  },
+  {
+    "code" : "2a",
+    "display" : "Drug–drug interaction",
+    "definition" : "A drug–drug interaction is suspected to have contributed to virologic failure."
+  },
+  {
+    "code" : "2b",
+    "display" : "Drug–herb interaction",
+    "definition" : "A drug–herb interaction is suspected to have contributed to virologic failure."
+  },
+  {
+    "code" : "2c",
+    "display" : "Drug–substance interaction",
+    "definition" : "A drug–substance interaction is suspected to have contributed to virologic failure."
+  },
+  {
+    "code" : "3",
+    "display" : "Other suspected cause",
+    "definition" : "A suspected cause not represented by another register code; describe it separately."
+  }]
+}

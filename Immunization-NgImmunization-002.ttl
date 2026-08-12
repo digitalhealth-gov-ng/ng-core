@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Immunization/NgImmunization-002> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgImmunization-002"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization NgImmunization-002</b></p><a name=\"NgImmunization-002\"> </a><a name=\"hcNgImmunization-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-immunization.html\">NG Immunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local IMMZ.Z.DE7}\">Rotavirus 1</span></p><p><b>patient</b>: <a href=\"Patient-NgPatient-003.html\">Suleiman Bala  Male, DoB: 2019-09-05 ( birthcert)</a></p><p><b>occurrence</b>: 2025-09-10 10:05:00+0100</p><p><b>manufacturer</b>: <a href=\"Organization-NgOrganization-003.html\">Organization Gwagwalada Model PHC</a></p><p><b>lotNumber</b>: ROTA25-0045</p><p><b>expirationDate</b>: 2026-04-30</p><p><b>route</b>: <span title=\"Codes:\">Oral</span></p><p><b>doseQuantity</b>: 2 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-003.html\">Practitioner Hauwa Garba </a></td></tr></table></div>"
+  ] ;
+  fhir:Immunization.status [ fhir:value "completed"] ;
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local" ] ;
+       fhir:Coding.code [ fhir:value "IMMZ.Z.DE7" ] ;
+       fhir:Coding.display [ fhir:value "Rotavirus 1" ]
+     ]
+  ] ;
+  fhir:Immunization.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-003> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-003" ]
+  ] ;
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2025-09-10T10:05:00+01:00"^^xsd:dateTime] ;
+  fhir:Immunization.manufacturer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-003> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-003" ]
+  ] ;
+  fhir:Immunization.lotNumber [ fhir:value "ROTA25-0045"] ;
+  fhir:Immunization.expirationDate [ fhir:value "2026-04-30"^^xsd:date] ;
+  fhir:Immunization.route [
+     fhir:CodeableConcept.text [ fhir:value "Oral" ]
+  ] ;
+  fhir:Immunization.doseQuantity [
+     fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "mL" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "mL" ]
+  ] ;
+  fhir:Immunization.performer [
+     fhir:index 0 ;
+     fhir:Immunization.performer.actor [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-003> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-003" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Immunization/NgImmunization-002.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

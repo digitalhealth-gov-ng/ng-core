@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Immunization FHIR Artefacts - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"20"}
+    h3,h4,h5,h6{--heading-prefix:"20"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Immunization FHIR Artefacts</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Immunization FHIR Artefacts</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#conformance-requirements" id="markdown-toc-conformance-requirements">Conformance Requirements</a></li>
+  <li><a href="#foundational-resources" id="markdown-toc-foundational-resources">Foundational Resources</a></li>
+  <li><a href="#clinical-resources" id="markdown-toc-clinical-resources">Clinical Resources</a></li>
+  <li><a href="#questionnaire-profile" id="markdown-toc-questionnaire-profile">Questionnaire Profile</a></li>
+  <li><a href="#extension-definitions" id="markdown-toc-extension-definitions">Extension Definitions</a></li>
+  <li><a href="#immunization-specific-terminology" id="markdown-toc-immunization-specific-terminology">Immunization-Specific Terminology</a></li>
+  <li><a href="#administrative-valuesets" id="markdown-toc-administrative-valuesets">Administrative ValueSets</a></li>
+  <li><a href="#conceptmaps" id="markdown-toc-conceptmaps">ConceptMaps</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#exchange-documents" id="markdown-toc-exchange-documents">Exchange Documents</a></li>
+  <li><a href="#minimum-conformance-claim" id="markdown-toc-minimum-conformance-claim">Minimum Conformance Claim</a></li>
+</ul>
+
+</div>
+<p>The Immunization Artefacts page is the primary conformance entry point for implementing immunization workflows within the Nigeria Core FHIR Implementation Guide. It brings together foundational profiles, clinical resources, exchange documents, questionnaires, extensions, terminology, mappings, and examples required to support immunization registration, service delivery, adverse-event management, defaulter tracking, and reporting. Implementers SHALL use the referenced Nigeria Core profiles and terminology where applicable, SHALL preserve required bindings and cardinalities, and SHALL validate exchanged resources against the published definitions. Systems SHOULD support the listed questionnaires and exchange patterns relevant to their use cases and MAY support additional artefacts, provided they remain nationally conformant.</p>
+
+<h3 id="conformance-requirements">Conformance Requirements</h3>
+<p>The keywords <strong>SHALL</strong>, <strong>SHALL NOT</strong>, <strong>SHOULD</strong>, <strong>SHOULD NOT</strong>, and <strong>MAY</strong> are normative and indicate the degree of conformance required by this guide already defined in <a href="general.html">Conformace/General Requirements</a>.</p>
+
+<h3 id="foundational-resources">Foundational Resources</h3>
+
+<p>These profiles provide the common identity, provider, organizational, and service-delivery context used by immunization artefacts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-patient.html">NgPatient</a></td>
+      <td>Represents the immunization client or vaccine recipient.</td>
+      <td><strong>SHALL</strong> be used when a Patient is exchanged within a conformant immunization workflow.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-practitioner.html">NgPractitioner</a></td>
+      <td>Represents a health worker participating in immunization services.</td>
+      <td><strong>SHALL</strong> be used when identifying the person who registered, assessed, administered, reviewed, or reported an immunization event.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-organization.html">NgOrganization</a></td>
+      <td>Represents the responsible facility, programme, authority, or implementing organization.</td>
+      <td><strong>SHALL</strong> be used for organizations referenced by immunization transactions.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-location.html">NgLocation</a></td>
+      <td>Represents the physical or service location where immunization activities occur.</td>
+      <td><strong>SHALL</strong> be used where the service location, outreach point, ward, facility, or administrative location is exchanged.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clinical-resources">Clinical Resources</h3>
+
+<p>These profiles represent the principal clinical and service-delivery information required for immunization workflows.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-immunization.html">NgImmunization</a></td>
+      <td>Records a vaccine administration event or a documented non-administration.</td>
+      <td><strong>SHALL</strong> be used for completed, entered-in-error, or not-done immunization events.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-immunization-recommendation.html">NgImmunizationRecommendation</a></td>
+      <td>Represents the recommended vaccine, dose, and due date for a client.</td>
+      <td><strong>SHALL</strong> be used when communicating a forecast, due dose, or next-dose recommendation.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-flag.html">NgFlag</a></td>
+      <td>Represents an immunization-related alert requiring attention.</td>
+      <td><strong>SHOULD</strong> be supported by systems that generate or consume clinical, safety, or follow-up alerts.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-allergy-intolerance.html">NgAllergyIntolerance</a></td>
+      <td>Represents allergies, intolerances, and vaccine-related sensitivity information.</td>
+      <td><strong>SHALL</strong> be considered during contraindication and pre-vaccination assessment workflows.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-condition.html">NgCondition</a></td>
+      <td>Represents relevant diagnoses, health conditions, or contraindicating conditions.</td>
+      <td><strong>SHALL</strong> be used when a condition materially affects immunization eligibility, safety, or follow-up.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-observation.html">NgObservation</a></td>
+      <td>Represents clinical findings and observations relevant to immunization.</td>
+      <td><strong>SHOULD</strong> be used for measurable or coded findings that are not appropriately represented by another profile.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-procedure.html">NgProcedure</a></td>
+      <td>Represents related clinical or public-health procedures.</td>
+      <td><strong>MAY</strong> be used for procedures associated with immunization service delivery or follow-up.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="questionnaire-profile">Questionnaire Profile</h3>
+
+<p>All immunization programme forms conform to the
+<a href="StructureDefinition-ng-immunization-questionnaire.html">NG Immunization Questionnaire Profile</a>.
+The profile establishes the minimum metadata, item structure, stable link identifiers,
+terminology bindings and publication requirements used across immunization forms.</p>
+
+<h4 id="questionnaires">Questionnaires</h4>
+
+<p>The following computable Questionnaires support immunization programme workflows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Questionnaire</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-facility-registration-form.html">Facility Registration Form</a></td>
+      <td>Registers organizations and locations providing immunization services.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-client-registration-form.html">Client Registration Form</a></td>
+      <td>Captures client demographics, identifiers, caregiver details and residence information.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-updating-client-record-form.html">Updating Client Record Form</a></td>
+      <td>Updates client demographic, contact and relevant clinical information.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-administer-vaccine-form.html">Administer Vaccine Form</a></td>
+      <td>Records vaccine administration, dose, batch, vaccinator, facility and next-dose information.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-manage-aefi-form.html">Manage AEFI Form</a></td>
+      <td>Records and manages adverse events following immunization.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-defaulter-tracking-form.html">Defaulter Tracking Form</a></td>
+      <td>Supports identification, tracing and follow-up of clients who missed scheduled doses.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-imm-generate-report-form.html">Generate Report Form</a></td>
+      <td>Captures the parameters required to generate immunization programme reports.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="questionnaire-responses">Questionnaire Responses</h4>
+
+<ul>
+  <li>A conformant <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code> <strong>SHALL</strong> reference the canonical URL of the applicable Questionnaire.</li>
+  <li>Implementers <strong>SHALL</strong> preserve item <code class="language-plaintext highlighter-rouge">linkId</code> values and <strong>SHALL NOT</strong> repurpose an existing <code class="language-plaintext highlighter-rouge">linkId</code> for a different data element.</li>
+  <li>Required Questionnaire items <strong>SHALL</strong> be completed unless the Questionnaire explicitly enables conditional omission.</li>
+  <li>Coded answers <strong>SHALL</strong> use the bound terminology where a binding is defined.</li>
+  <li>Systems <strong>SHOULD</strong> retain the Questionnaire version used to collect each response.</li>
+  <li>Extraction of Questionnaire responses into clinical or administrative resources <strong>SHOULD</strong> follow the mappings published with the Questionnaire.</li>
+</ul>
+
+<h3 id="extension-definitions">Extension Definitions</h3>
+
+<p>Extensions listed here are part of the immunization conformance surface. Implementers <strong>SHALL</strong> use the published extension URL and value type and <strong>SHALL NOT</strong> redefine the same meaning under a different local URL.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extension</th>
+      <th>Intended use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-contraindicated.html">NgContraindicated</a></td>
+      <td>Indicates that a vaccine or immunization action is contraindicated.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-next-dose-date.html">NgNextDose</a></td>
+      <td>Communicates the next expected dose, dose number, or related scheduling information.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-vaccine-contraindications.html">NgVaccineContraIndications</a></td>
+      <td>Represents one or more vaccine-specific contraindications or precautions.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="immunization-specific-terminology">Immunization-Specific Terminology</h3>
+
+<p>The following ValueSets define controlled terminology for immunization-specific data elements. Required and extensible bindings <strong>SHALL</strong> be applied as defined by the consuming profile.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Intended use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ng-vaccine-local-vs.html">NgVaccineLocalVS</a></td>
+      <td>Nationally recognized vaccines, vaccine products, antigens, or vaccine groupings.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-immunization-clinical-status-vs.html">NgImmunizationClinicalStatusVS</a></td>
+      <td>Clinical or workflow status applicable to an immunization event or assessment.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-sibling-health-status-vs.html">NgSiblingHealthStatusVS</a></td>
+      <td>Permitted coded values for sibling health-status information.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-immunization-session-type-vs.html">NGImmunizationSessionTypeVS</a></td>
+      <td>Types of immunization sessions, including fixed, outreach, mobile, campaign, or other nationally defined sessions.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="administrative-valuesets">Administrative ValueSets</h3>
+
+<p>Administrative ValueSets support identity, facility, geography, ownership, relationship, and client-identification requirements.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ValueSet</th>
+      <th>Intended use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ng-gender-vs.html">NgGenderVS</a></td>
+      <td>Administrative or recorded sex/gender values permitted by the Nigeria Core IG.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-facility-type-vs.html">NgFacilityTypeVS</a></td>
+      <td>Classification of health facilities and immunization service-delivery points.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-lgas-vs.html">NgLGAsVS</a></td>
+      <td>Nigerian Local Government Area codes.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-states-vs.html">NgStatesVS</a></td>
+      <td>Nigerian state and Federal Capital Territory codes.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-wards-vs.html">NgWardsVS</a></td>
+      <td>Administrative ward codes.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-organization-owner-vs.html">NgOrganizationOwnerVS</a></td>
+      <td>Ownership or managing authority of a facility or service location.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-relationships-vs.html">NgRelationshipsVS</a></td>
+      <td>Relationship of a caregiver, contact person, or related person to the client.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-client-identifier-vs.html">NgClientIdentifierVS</a></td>
+      <td>Permitted identifier types used to identify an immunization client.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="conceptmaps">ConceptMaps</h3>
+
+<p>ConceptMaps support translation between local vaccine terminology and external classifications. A translation <strong>SHALL NOT</strong> be treated as equivalent unless the relationship stated in the <code class="language-plaintext highlighter-rouge">ConceptMap</code> supports equivalence.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ConceptMap</th>
+      <th>Mapping purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ConceptMap-NGVaccineLocal-to-ICD11.html">Local Vaccine Codes – ICD-11</a></td>
+      <td>Maps nationally or locally used vaccine codes to relevant ICD-11 concepts.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-NGVaccineLocal-to-SNOMED.html">Local Vaccine Codes – SNOMED CT</a></td>
+      <td>Maps nationally or locally used vaccine codes to relevant SNOMED CT concepts.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="terminology-translation-requirements">Terminology Translation Requirements</h4>
+
+<ul>
+  <li>Systems <strong>SHALL</strong> preserve the original source coding when applying a mapped code.</li>
+  <li>Systems <strong>SHALL</strong> record the source system, code, and display where these are available.</li>
+  <li>Systems <strong>SHOULD</strong> use the published <code class="language-plaintext highlighter-rouge">ConceptMap/$translate</code> operation where terminology-server support is available.</li>
+  <li>A mapping marked broader, narrower, related-to, inexact, or unmatched <strong>SHALL NOT</strong> be represented as exact equivalence.</li>
+  <li>Implementers <strong>MAY</strong> submit proposed mappings for national review, but unpublished mappings <strong>SHALL NOT</strong> be represented as nationally approved.</li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>The links below are placeholders for future published examples. They <strong>SHALL</strong> be replaced with links to generated example-resource pages when the corresponding instances are added to the Implementation Guide.</p>
+
+<ul>
+  <li>[Example Immunization Registration Bundle]</li>
+  <li>[Example Vaccine Administration]</li>
+  <li>[Example Immunization Recommendation]</li>
+  <li>[Example AEFI QuestionnaireResponse]</li>
+  <li>[Example Defaulter-Tracking QuestionnaireResponse]</li>
+  <li>[Example Immunization Summary Document]</li>
+  <li>[Example Immunization Reporting Bundle]</li>
+</ul>
+
+<h3 id="exchange-documents">Exchange Documents</h3>
+
+<p>These profiles support document-based exchange and the communication of medication or vaccination history.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-documents.html">NgDocuments</a></td>
+      <td>Represents immunization-related documents, certificates, summaries, attachments, or supporting records.</td>
+      <td><strong>SHALL</strong> be used when exchanging a document that is not represented solely as discrete FHIR resources.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-medication-statement.html">NgMedicationStatement</a></td>
+      <td>Represents a reported or historical statement about a medication or vaccine received.</td>
+      <td><strong>SHOULD</strong> be used where immunization history is reported but cannot be asserted as a directly verified administration event.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="minimum-conformance-claim">Minimum Conformance Claim</h3>
+
+<p>A system claiming <strong>Nigeria Core Immunization Conformance</strong> <strong>SHALL</strong>, at minimum:</p>
+
+<ol>
+  <li>publish or expose a <code class="language-plaintext highlighter-rouge">CapabilityStatement</code> identifying the supported artefacts on this page;</li>
+  <li>support <a href="StructureDefinition-ng-patient.html">NgPatient</a>, <a href="StructureDefinition-ng-organization.html">NgOrganization</a>, and <a href="StructureDefinition-ng-location.html">NgLocation</a> where these resources occur in its immunization workflow;</li>
+  <li>support <a href="StructureDefinition-ng-immunization.html">NgImmunization</a> for vaccine administration records;</li>
+  <li>support the national Vaccine Library and all required terminology bindings used by its implemented profiles;</li>
+  <li>validate submitted and generated resources against the applicable profile versions;</li>
+  <li>return meaningful validation or operation outcomes when an instance is rejected; and</li>
+  <li>demonstrate the supported immunization workflow using at least one valid example or test transaction.</li>
+</ol>
+
+<p>Conformance to this page does not imply support for every listed artefact. Implementers <strong>SHALL</strong> clearly declare the subset supported by their system and <strong>SHALL</strong> satisfy all requirements attached to each claimed artefact.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

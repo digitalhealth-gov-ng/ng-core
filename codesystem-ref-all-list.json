@@ -1,0 +1,3909 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dicom.nema.org/resources/ontology/DCM",
+    "version" : "01",
+    "status" : "active",
+    "name" : "DICOM Controlled Terminology Definitions",
+    "title" : null,
+    "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+    "oids" : ["1.2.840.10008.2.16.4"],
+    "uses" : {
+    },
+    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1380"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationRequest Intent",
+    "title" : "Medication request  intent",
+    "description" : "MedicationRequest Intent Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationrequest Status",
+    "title" : "Medicationrequest  status",
+    "description" : "MedicationRequest Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/task-code",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "TaskCode",
+    "title" : "Task Codes",
+    "description" : "Codes indicating the type of action that is expected to be performed",
+    "oids" : ["2.16.840.1.113883.4.642.4.1397"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-task-code.html" : "Task Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "oids" : ["2.16.840.1.113883.4.642.4.70"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "oids" : ["2.16.840.1.113883.4.642.4.68"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2"],
+    "uses" : {
+    },
+    "ValueSet-ng-gender-vs.html" : "NG Gender or Sex VS",
+    "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+  },
+  {
+    "url" : "http://hl7.org/fhir/allergy-intolerance-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceCategory",
+    "title" : "AllergyIntoleranceCategory",
+    "description" : "Category of an identified substance associated with allergies or intolerances.",
+    "oids" : ["2.16.840.1.113883.4.642.4.134"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-allergy-intolerance-category.html" : "AllergyIntoleranceCategory"
+  },
+  {
+    "url" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceCriticality",
+    "title" : "AllergyIntoleranceCriticality",
+    "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+    "oids" : ["2.16.840.1.113883.4.642.4.130"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-allergy-intolerance-criticality.html" : "AllergyIntoleranceCriticality"
+  },
+  {
+    "url" : "http://hl7.org/fhir/allergy-intolerance-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceType",
+    "title" : "AllergyIntoleranceType",
+    "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+    "oids" : ["2.16.840.1.113883.4.642.4.132"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-allergy-intolerance-type.html" : "AllergyIntoleranceType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/appointmentstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentStatus",
+    "title" : "AppointmentStatus",
+    "description" : "The free/busy status of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.485"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-appointmentstatus.html" : "AppointmentStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/bundle-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "BundleType",
+    "title" : "BundleType",
+    "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+    "oids" : ["2.16.840.1.113883.4.642.4.621"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/care-plan-activity-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityStatus",
+    "title" : "CarePlanActivityStatus",
+    "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+    "oids" : ["2.16.840.1.113883.4.642.4.147"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html" : "CarePlanActivityStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/claim-use",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Use",
+    "title" : "Use",
+    "description" : "The purpose of the Claim: predetermination, preauthorization, claim.",
+    "oids" : ["2.16.840.1.113883.4.642.4.545"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-use.html" : "Use"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.239"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-data-meaning",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentDataMeaning",
+    "title" : "ConsentDataMeaning",
+    "description" : "How a resource reference is interpreted when testing consent restrictions.",
+    "oids" : ["2.16.840.1.113883.4.642.4.760"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-data-meaning.html" : "ConsentDataMeaning"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-provision-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentProvisionType",
+    "title" : "ConsentProvisionType",
+    "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+    "oids" : ["2.16.840.1.113883.4.642.4.758"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-provision-type.html" : "ConsentProvisionType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-state-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentState",
+    "title" : "ConsentState",
+    "description" : "Indicates the state of the consent.",
+    "oids" : ["2.16.840.1.113883.4.642.4.756"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-state-codes.html" : "ConsentState"
+  },
+  {
+    "url" : "http://hl7.org/fhir/contact-point-system",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ContactPointSystem",
+    "title" : "ContactPointSystem",
+    "description" : "Telecommunications form for contact point.",
+    "oids" : ["2.16.840.1.113883.4.642.4.72"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/contact-point-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ContactPointUse",
+    "title" : "ContactPointUse",
+    "description" : "Use of contact point.",
+    "oids" : ["2.16.840.1.113883.4.642.4.74"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "oids" : ["2.16.840.1.113883.4.642.4.513"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+  },
+  {
+    "url" : "http://hl7.org/fhir/device-nametype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceNameType",
+    "title" : "DeviceNameType",
+    "description" : "The type of name the device is referred by.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1084"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/device-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatus",
+    "title" : "FHIRDeviceStatus",
+    "description" : "The availability status of the device.",
+    "oids" : ["2.16.840.1.113883.4.642.4.210"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-status.html" : "FHIRDeviceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.236"],
+    "uses" : {
+    },
+    "ValueSet-ng-diagnostics-report-status-vs.html" : "Diagnostics Report Status Codes - IPS"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-reference-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "oids" : ["2.16.840.1.113883.4.642.4.8"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "oids" : ["2.16.840.1.113883.4.642.4.245"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/eligibilityrequest-purpose",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EligibilityRequestPurpose",
+    "title" : "EligibilityRequestPurpose",
+    "description" : "A code specifying the types of information being requested.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1183"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-eligibilityrequest-purpose.html" : "EligibilityRequestPurpose"
+  },
+  {
+    "url" : "http://hl7.org/fhir/eligibilityresponse-purpose",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EligibilityResponsePurpose",
+    "title" : "EligibilityResponsePurpose",
+    "description" : "A code specifying the types of information being requested.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1185"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-eligibilityresponse-purpose.html" : "EligibilityResponsePurpose"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterLocationStatus",
+    "title" : "EncounterLocationStatus",
+    "description" : "The status of the location.",
+    "oids" : ["2.16.840.1.113883.4.642.4.263"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-location-status.html" : "EncounterLocationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterStatus",
+    "title" : "EncounterStatus",
+    "description" : "Current state of the encounter.",
+    "oids" : ["2.16.840.1.113883.4.642.4.247"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/event-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EventStatus",
+    "title" : "EventStatus",
+    "description" : "Codes identifying the lifecycle stage of an event.",
+    "oids" : ["2.16.840.1.113883.4.642.4.110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-status.html" : "Immunization Status Codes",
+    "http://hl7.org/fhir/R4/valueset-event-status.html" : "EventStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/explanationofbenefit-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ExplanationOfBenefitStatus",
+    "title" : "ExplanationOfBenefitStatus",
+    "description" : "A code specifying the state of the resource instance.",
+    "oids" : ["2.16.840.1.113883.4.642.4.619"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-explanationofbenefit-status.html" : "ExplanationOfBenefitStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/flag-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FlagStatus",
+    "title" : "FlagStatus",
+    "description" : "Indicates whether this flag is active and needs to be displayed to a user, or whether it is no longer needed or was entered in error.",
+    "oids" : ["2.16.840.1.113883.4.642.4.121"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-flag-status.html" : "FlagStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/fm-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FinancialResourceStatusCodes",
+    "title" : "Financial Resource Status Codes",
+    "description" : "This value set includes Status codes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.593"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-fm-status.html" : "Financial Resource Status Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/goal-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "GoalLifecycleStatus",
+    "title" : "GoalLifecycleStatus",
+    "description" : "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+    "oids" : ["2.16.840.1.113883.4.642.4.272"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-goal-status.html" : "GoalLifecycleStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/http-verb",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "HTTPVerb",
+    "title" : "HTTPVerb",
+    "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+    "oids" : ["2.16.840.1.113883.4.642.4.625"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/invoice-priceComponentType",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "InvoicePriceComponentType",
+    "title" : "InvoicePriceComponentType",
+    "description" : "Codes indicating the kind of the price component.",
+    "oids" : ["2.16.840.1.113883.4.642.4.869"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-invoice-priceComponentType.html" : "InvoicePriceComponentType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/invoice-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "InvoiceStatus",
+    "title" : "InvoiceStatus",
+    "description" : "Codes identifying the lifecycle stage of an Invoice.",
+    "oids" : ["2.16.840.1.113883.4.642.4.867"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-invoice-status.html" : "InvoiceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/item-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "QuestionnaireItemType",
+    "title" : "QuestionnaireItemType",
+    "description" : "Distinguishes groups from questions and display text and indicates data type for questions.",
+    "oids" : ["2.16.840.1.113883.4.642.4.445"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-item-type.html" : "QuestionnaireItemType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/link-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "LinkType",
+    "title" : "LinkType",
+    "description" : "The type of link between this patient resource and another patient resource.",
+    "oids" : ["2.16.840.1.113883.4.642.4.424"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.319"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/location-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationMode",
+    "title" : "LocationMode",
+    "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+    "oids" : ["2.16.840.1.113883.4.642.4.331"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-location-mode.html" : "LocationMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationStatus",
+    "title" : "LocationStatus",
+    "description" : "Indicates whether the location is still in use.",
+    "oids" : ["2.16.840.1.113883.4.642.4.333"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-location-status.html" : "LocationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/measure-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MeasureReportStatus",
+    "title" : "MeasureReportStatus",
+    "description" : "The status of the measure report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.777"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-report-status.html" : "MeasureReportStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/measure-report-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MeasureReportType",
+    "title" : "MeasureReportType",
+    "description" : "The type of the measure report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.779"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-report-type.html" : "MeasureReportType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/name-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "NameUse",
+    "title" : "NameUse",
+    "description" : "The use of a human name.",
+    "oids" : ["2.16.840.1.113883.4.642.4.66"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/note-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "NoteType",
+    "title" : "NoteType",
+    "description" : "The presentation types of notes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.16"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-note-type.html" : "NoteType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "ObservationStatus",
+    "description" : "Codes providing the status of an observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.401"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus",
+    "ValueSet-ng-results-status-vs.html" : "Results Status Codes - IPS"
+  },
+  {
+    "url" : "http://hl7.org/fhir/participantrequired",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantRequired",
+    "title" : "ParticipantRequired",
+    "description" : "Is the Participant required to attend the appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.489"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-participantrequired.html" : "ParticipantRequired"
+  },
+  {
+    "url" : "http://hl7.org/fhir/participationstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipationStatus",
+    "title" : "ParticipationStatus",
+    "description" : "The Participation status of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.4.487"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/provenance-entity-role",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProvenanceEntityRole",
+    "title" : "ProvenanceEntityRole",
+    "description" : "How an entity was used in an activity.",
+    "oids" : ["2.16.840.1.113883.4.642.4.437"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-entity-role.html" : "ProvenanceEntityRole"
+  },
+  {
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/questionnaire-enable-behavior",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EnableWhenBehavior",
+    "title" : "EnableWhenBehavior",
+    "description" : "Controls how multiple enableWhen values are interpreted -  whether all or any must be true.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1008"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html" : "EnableWhenBehavior"
+  },
+  {
+    "url" : "http://hl7.org/fhir/questionnaire-enable-operator",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "QuestionnaireItemOperator",
+    "title" : "QuestionnaireItemOperator",
+    "description" : "The criteria by which a question is enabled.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1006"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html" : "QuestionnaireItemOperator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/reaction-event-severity",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceSeverity",
+    "title" : "AllergyIntoleranceSeverity",
+    "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+    "oids" : ["2.16.840.1.113883.4.642.4.136"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-reaction-event-severity.html" : "AllergyIntoleranceSeverity"
+  },
+  {
+    "url" : "http://hl7.org/fhir/remittance-outcome",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ClaimProcessingCodes",
+    "title" : "Claim Processing Codes",
+    "description" : "This value set includes Claim Processing Outcome codes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.14"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-remittance-outcome.html" : "Claim Processing Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestIntent",
+    "title" : "RequestIntent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.114"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent",
+    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
+    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-priority",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestPriority",
+    "title" : "RequestPriority",
+    "description" : "Identifies the level of importance to be assigned to actioning the request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.116"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestStatus",
+    "title" : "RequestStatus",
+    "description" : "Codes identifying the lifecycle stage of a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-entry-mode",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "SearchEntryMode",
+    "title" : "SearchEntryMode",
+    "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+    "oids" : ["2.16.840.1.113883.4.642.4.623"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/cvx",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "CVX",
+    "title" : "Vaccine Administered Code Set (CVX)",
+    "description" : "The CDC's National Center of Immunization and Respiratory Diseases (NCIRD - see [https://www.cdc.gov/ncird/](https://www.cdc.gov/ncird/)) developed and maintains the CVX (vaccine administered) code set. It includes both active and inactive vaccines available in the US. CVX codes for inactive vaccines allow transmission of historical immunization records. When a MVX (manufacturer) code is paired with a CVX (vaccine administered) code, the specific trade named vaccine may be indicated. These codes should be used for immunization messages using either HL7 Version 2.3.1 or HL7 Version 2.5.1. CVX is the underlying Master Code System for V2 table 0292 (Vaccines Administered). The machine readable name for CVX in PHIN VADS is PH_VaccinesAdministeredCVX_CDC_NIP. The version of the CVX code set for certification can be found on the archive page:[https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp](https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp) \r\n\r\nThe Status column indicates if the vaccine is currently available in the United States.\r\n\r\n*  Active: A currently available administrable vaccine \r\n\r\n*  Inactive: An administrable vaccine formulation that is no longer available for patient administration, but can be found in historical patient records OR A historical record of a vaccine administered where the exact formulation is unknown \r\n\r\n*  Pending: A vaccine that is expected to become active in the future \r\n\r\n*  Non-US: A vaccine that available outside the US only \r\n\r\n*  Never Active: A vaccine that was never available and is not in the pipeline of new vaccines \r\n\r\nThe Last Updated column indicates the last time this particular vaccine code was updated in this table.\r\n\r\nQuestions regarding this table should be directed to the IIS Technical Assistance Team via iisinfo@cdc.gov (or use mailing address via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr)) \r\n\r\nHL7 Implementers should note that 'Status' IS NOT CONCEPT STATUS as all codes are ACTIVE in this code system.\r\n\r\nThe current code system is available via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx)",
+    "oids" : ["2.16.840.1.113883.12.292"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-vaccine-code.html" : "Vaccine Administered Value Set"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/ex-icd-10-procedures",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ICD-10ProcedureCodes",
+    "title" : "ICD-10 Procedure Codes",
+    "description" : "This value set includes sample ICD-10 Procedure codes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.575"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-icd-10-procedures.html" : "ICD-10 Procedure Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icd-10",
+    "version" : "2.1.1",
+    "status" : "retired",
+    "name" : "Icd10",
+    "title" : "ICD-10",
+    "description" : "International Classification of Diseases revision 10 (ICD 10)",
+    "oids" : ["2.16.840.1.113883.6.3"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-icd-10.html" : "ICD-10 Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/specimen-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenStatus",
+    "title" : "SpecimenStatus",
+    "description" : "Codes providing the status/availability of a specimen.",
+    "oids" : ["2.16.840.1.113883.4.642.4.472"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-specimen-status.html" : "SpecimenStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/task-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "TaskIntent",
+    "title" : "TaskIntent",
+    "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1241"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/task-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "TaskStatus",
+    "title" : "TaskStatus",
+    "description" : "The current status of the task.",
+    "oids" : ["2.16.840.1.113883.4.642.4.791"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/udi-entry-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "UDIEntryType",
+    "title" : "UDIEntryType",
+    "description" : "Codes to identify how UDI data was entered.",
+    "oids" : ["2.16.840.1.113883.4.642.4.212"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "ValueSet-ng-tb-screening-result-vs.html" : "TB Screening Result Codes ValueSet",
+    "ValueSet-ng-hiv-referral-reason-vs.html" : "Referral Reason",
+    "ValueSet-ng-hiv-physical-exam-vs.html" : "HIV Physical Examinations",
+    "ValueSet-ng-hiv-encounter-location-vs.html" : "HIV Encounter Locations",
+    "ValueSet-ng-pregnancy-mode-of-delivery-vs.html" : "Mode Of Delivery",
+    "ValueSet-ng-hiv-pain-scale-vs.html" : "HIV Pain Scale",
+    "ValueSet-ng-hiv-presenting-symptoms-vs.html" : "Presenting Symptoms",
+    "ValueSet-ng-hiv-arv-side-effects-vs.html" : "HIV ARV Side Effects",
+    "ValueSet-ng-hiv-dsd-assessment-status-vs.html" : "Differentiated Service Delivery - Assessment Status",
+    "ValueSet-ng-hiv-reason-stopped-art-vs.html" : "HIV Reason For Stopping ART",
+    "ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.html" : "HIV-Cervical Cancer Treatment Received ValueSet",
+    "ValueSet-ng-nutritional-suppliments-provided-vs.html" : "Nutritional Suppliments Provided",
+    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
+    "ValueSet-ng-hiv-reason-not-linked-to-partner-services-vs.html" : "HIV Reason Not Linked to Partner Services",
+    "ValueSet-ng-hiv-prevention-plan-vs.html" : "HIV Prevention Plan",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+    "ValueSet-ng-hiv-loinc-concepts.html" : "Nigeria HIV LOINC Concepts",
+    "ValueSet-ng-hiv-cd4-vl-classification-for-treatment-failure-vs.html" : "HIV Viral Load/CD4 Count Classifications ValueSet",
+    "ValueSet-ng-hiv-art-follow-up-status-vs.html" : "HIV Follow Up Status ValueSet",
+    "ValueSet-ng-pregnancy-expected-delivery-date-method-vs.html" : "Pregnancy EDD Method",
+    "ConceptMap-NgHivLOINCToSNOMEDCT.html" : "Nigeria HIV LOINC → SNOMED CT",
+    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
+    "ValueSet-ng-pregnancy-place-of-delivery-vs.html" : "Place Of Delivery",
+    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "ValueSet-ng-results-radiology-observations-vs.html" : "Results Radiology Observation - IPS",
+    "ValueSet-ng-pregnancies-coutcome-vs.html" : "Pregnancy Outcome - IPS",
+    "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+    "ValueSet-ng-hiv-reason-for-arv-regimen-change-vs.html" : "HIV Reason For ARV Regimen Change",
+    "ValueSet-ng-hiv-status-vs.html" : "HIV Status Codes",
+    "ValueSet-ng-tb-screening-type-vs.html" : "TB Screening Type Codes ValueSet",
+    "ValueSet-ng-tb-diagnostic-test-result-vs.html" : "TB Diagnostic Test Result Codes ValueSet",
+    "ValueSet-ng-hiv-opportunistic-infections-treatment-vs.html" : "HIV-Opportunistic Infection Medication Codes ValueSet",
+    "ValueSet-ng-patient-education-level-value-set.html" : "HIV Patient Education Level",
+    "ValueSet-ng-hiv-reasons-for-poor-arv-adherence-vs.html" : "Reasons For Poor ARV Adherence",
+    "ValueSet-ng-hiv-health-status-vs.html" : "HIV Health Status",
+    "ValueSet-ng-results-laboratory-pathology-observation-vs.html" : "Results Laboratory/Pathology Observation - IPS",
+    "ValueSet-ng-children-developmental-milestone-vs.html" : "Children Developmental Milestone ValueSet",
+    "ValueSet-ng-hiv-cervical-cancer-screening-type-vs.html" : "Cervical Cancer Screening Type",
+    "ValueSet-ng-hiv-test-result-vs.html" : "HIV Test Results",
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-opportunistic-infections-vs.html" : "HIV Opportunistic Infections ValueSet",
+    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility",
+    "ValueSet-ng-hiv-test-results-vs.html" : "HIV Test Results",
+    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
+    "ValueSet-ng-hiv-reason-for-not-testing-vs.html" : "HIV Reason For Not Testing",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "ValueSet-ng-hiv-test-type-vs.html" : "HIV Test Types",
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-date-criterion.html" : "Immunization Recommendation Date Criterion Codes",
+    "ValueSet-ng-hiv-plan-for-next-step-vs.html" : "ART Not Started - Plan For Next Step",
+    "ValueSet-ng-hiv-viral-load-indication-vs.html" : "HIV Viral Load Indication",
+    "ValueSet-ng-hiv-reason-partner-not-notified-vs.html" : "HIV Reason Partner Not Notified ValueSet",
+    "ValueSet-ng-hiv-reason-index-case-not-interviewed-vs.html" : "HIV Reason Index Case Not Interviewed",
+    "ValueSet-ng-family-planning-method-vs.html" : "Family Planning Method",
+    "ValueSet-ng-hiv-edema-presence-vs.html" : "Edema Presence Codes ValueSet",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+    "ValueSet-ng-hiv-dsd-reason-for-category-change-vs.html" : "Differentiated Service Delivery - Reason For Category Change",
+    "ValueSet-ng-hiv-reason-partner-not-contacted-vs.html" : "HIV Reason Partner Not Contacted ValueSet",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes",
+    "ValueSet-ng-tb-tpt-prophylaxis-vs.html" : "TB TPT Prophylaxis Codes For Medication Requests ValueSet"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+    "ValueSet-ng-hiv-referral-reason-vs.html" : "Referral Reason",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+    "ValueSet-ng-hiv-arv-treatment-vs.html" : "HIV - ARV Drugs ValueSet",
+    "ValueSet-ng-hiv-encounter-location-vs.html" : "HIV Encounter Locations",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "ValueSet-ng-results-specimen-type-vs.html" : "Results Specimen Type",
+    "ValueSet-ng-hiv-presenting-symptoms-vs.html" : "Presenting Symptoms",
+    "ValueSet-ng-hiv-arv-side-effects-vs.html" : "HIV ARV Side Effects",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "ValueSet-ng-hiv-viral-load-status-vs.html" : "HIV Viral Load Status",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-target-disease.html" : "Immunization Recommendation Target Disease Codes",
+    "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+    "ValueSet-ng-results-specimen-collection-method-vs.html" : "Results Specimen Collection Method - IPS",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ValueSet-ng-nutritional-status-vs.html" : "Nutritional Status",
+    "ValueSet-ng-target-population-category-vs.html" : "NG Target Population Category VS",
+    "ValueSet-ng-tb-month-ordinals-vs.html" : "TB Month Ordinal Codes",
+    "ValueSet-ng-hiv-disclosure-stage-vs.html" : "HIV Disclosure Stage",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+    "ValueSet-ng-hiv-prevention-plan-vs.html" : "HIV Prevention Plan",
+    "ValueSet-ng-hiv-snomed-ct-concepts.html" : "Nigeria HIV SNOMED CT Concepts",
+    "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "ConceptMap-NgHivLOINCToSNOMEDCT.html" : "Nigeria HIV LOINC → SNOMED CT",
+    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
+    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "ValueSet-ng-hiv-encounter-type-vs.html" : "HIV Encounter Type",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+    "ValueSet-ng-hiv-reasons-for-poor-arv-adherence-vs.html" : "Reasons For Poor ARV Adherence",
+    "ValueSet-ng-tb-tpt-reason-not-eligibile-vs.html" : "TB Reason Not Eligible for TPT Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+    "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+    "ValueSet-ng-current-smoking-status-vs.html" : "Current Smoking Status",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "ValueSet-ng-pregnancy-status-vs.html" : "NG Clinical Status VS",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+    "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+    "ValueSet-ng-hiv-opportunistic-infections-vs.html" : "HIV Opportunistic Infections ValueSet",
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-reason.html" : "Immunization Recommendation Reason Codes",
+    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility",
+    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "ValueSet-ng-hiv-plan-for-next-step-vs.html" : "ART Not Started - Plan For Next Step",
+    "ValueSet-ng-patient-functional-status-vs.html" : "Patient Functional Status",
+    "ValueSet-ng-tb-tpt-alternate-prophylaxis-type-vs.html" : "TB Alternate TPT Prophylaxis Type Codes ValueSet",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "ValueSet-ng-hiv-edema-presence-vs.html" : "Edema Presence Codes ValueSet",
+    "ValueSet-ng-tb-active-tb-diagnosis-vs.html" : "TB Active TB Diagnosis Codes",
+    "ValueSet-ng-hiv-residential-type-vs.html" : "HIV Residential Type",
+    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+    "ValueSet-ng-hiv-cervical-cancer-screened-vs.html" : "HIV Cervical Cancer Screened",
+    "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+    "ValueSet-ng-tb-tpt-prophylaxis-vs.html" : "TB TPT Prophylaxis Codes For Medication Requests ValueSet",
+    "ValueSet-ng-body-site-vs.html" : "Body Site - IPS",
+    "ValueSet-ng-hiv-arv-adherence-vs.html" : "HIV-ARV Adherence ValueSet",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "ValueSet-ng-tb-treatment-outcome-vs.html" : "TB Treatment Outcome Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/FDI-surface",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "SurfaceCodes",
+    "title" : "Surface Codes",
+    "description" : "This value set includes a smattering of FDI tooth surface codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1154"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-surface.html" : "Surface Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adjudication",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AdjudicationValueCodes",
+    "title" : "Adjudication Value Codes",
+    "description" : "This value set includes a smattering of Adjudication Value codes which includes codes to indicate the amounts eligible under the plan, the amount of benefit, copays etc.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1171"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adjudication.html" : "Adjudication Value Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adjudication-error",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AdjudicationErrorCodes",
+    "title" : "Adjudication Error Codes",
+    "description" : "This value set includes a smattering of adjudication codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1053"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adjudication-error.html" : "AdjudicationError"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adjudication-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AdjudicationReasonCodes",
+    "title" : "Adjudication Reason Codes",
+    "description" : "This value set includes smattering of Adjudication Reason codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1172"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adjudication-reason.html" : "Adjudication Reason Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AdmitSource",
+    "title" : "Admit source",
+    "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1092"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-admit-source.html" : "Admit source"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AllergyIntoleranceClinicalStatusCodes",
+    "title" : "AllergyIntolerance Clinical Status Codes",
+    "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1373"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html" : "AllergyIntolerance Clinical Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AllergyIntoleranceVerificationStatus",
+    "title" : "AllergyIntolerance Verification Status",
+    "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+    "version" : "2.1.1",
+    "status" : "active",
+    "name" : "AppointmentCancellationReason",
+    "title" : "Appointment cancellation reason",
+    "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1382"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-appointment-cancellation-reason.html" : "Appointment cancellation reason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/benefit-network",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "NetworkTypeCodes",
+    "title" : "Network Type Codes",
+    "description" : "This code system represents the contractual relationship between a provider and payer for administrative purposes for a specific patient, service, or product.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1177"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-benefit-network.html" : "Network Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/benefit-term",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "BenefitTermCodes",
+    "title" : "Benefit Term Codes",
+    "description" : "This value set includes a smattering of Benefit Term codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1179"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-benefit-term.html" : "Benefit Term Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/benefit-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "BenefitTypeCodes",
+    "title" : "Benefit Type Codes",
+    "description" : "This value set includes a smattering of Benefit type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1176"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-benefit-type.html" : "Benefit Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/benefit-unit",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "UnitTypeCodes",
+    "title" : "Unit Type Codes",
+    "description" : "This value set includes a smattering of Unit type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1178"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-benefit-unit.html" : "Unit Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/claim-exception",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExceptionCodes",
+    "title" : "Exception Codes",
+    "description" : "This value set includes sample Exception codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1162"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-exception.html" : "Exception Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/claim-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ClaimTypeCodes",
+    "title" : "Claim Type Codes",
+    "description" : "This value set includes Claim Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1156"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-type.html" : "Claim Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ClaimCareTeamRoleCodes",
+    "title" : "Claim Care Team Role Codes",
+    "description" : "Claim roles of the care team members providing products and services.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1165"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-careteamrole.html" : "Claim Care Team Role Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ClaimInformationCategoryCodes",
+    "title" : "Claim Information Category Codes",
+    "description" : "This value set includes sample Information Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1163"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-informationcategory.html" : "Claim Information Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/communication-category",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommunicationCategory",
+    "title" : "CommunicationCategory",
+    "description" : "Codes for general categories of communications such as alerts, instructions, etc.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1076"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-communication-category.html" : "CommunicationCategory"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/communication-not-done-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommunicationNotDoneReason",
+    "title" : "CommunicationNotDoneReason",
+    "description" : "Codes for the reason why a communication did not happen.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1077"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-communication-not-done-reason.html" : "CommunicationNotDoneReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/communication-topic",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommunicationTopic",
+    "title" : "CommunicationTopic",
+    "description" : "Codes describing the purpose or content of the communication.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1078"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-communication-topic.html" : "CommunicationTopic"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CompositeMeasureScoring",
+    "title" : "CompositeMeasureScoring",
+    "description" : "The composite scoring method of the measure.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1235"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composite-measure-scoring.html" : "CompositeMeasureScoring"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ConsentActionCodes",
+    "title" : "Consent Action Codes",
+    "description" : "This value set includes sample Consent Action codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1227"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-action.html" : "Consent Action Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ConsentCategoryCodes",
+    "title" : "Consent Category Codes",
+    "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+    "oids" : ["2.16.840.1.113883.4.642.1.1226"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "ConsentPolicyRuleCodes",
+    "title" : "Consent PolicyRule Codes",
+    "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1229"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-policy.html" : "Consent PolicyRule Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentscope",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConsentScopeCodes",
+    "title" : "Consent Scope Codes",
+    "description" : "This value set includes the four Consent scope codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1228"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-scope.html" : "Consent Scope Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ContactEntityType",
+    "title" : "Contact entity type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ContractSignerTypeCodes",
+    "title" : "Contract Signer Type Codes",
+    "description" : "This value set includes sample Contract Signer Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1201"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/coverage-class",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CoverageClassCodes",
+    "title" : "Coverage Class Codes",
+    "description" : "This value set includes Coverage Class codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1147"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-coverage-class.html" : "Coverage Class Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CoverageCopayTypeCodes",
+    "title" : "Coverage Copay Type Codes",
+    "description" : "This value set includes sample Coverage Copayment Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1149"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-coverage-copay-type.html" : "Coverage Copay Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/coverage-selfpay",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CoverageSelfPayCodes",
+    "title" : "Coverage SelfPay Codes",
+    "description" : "This value set includes Coverage SelfPay codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1148"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-coverage-type.html" : "Coverage Type and Self-Pay Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/coverageeligibilityresponse-ex-auth-support",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CoverageEligibilityResponseAuthSupportCodes",
+    "title" : "CoverageEligibilityResponse Auth Support Codes",
+    "description" : "This value set includes CoverageEligibilityResponse Auth Support codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1394"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-coverageeligibilityresponse-ex-auth-support.html" : "CoverageEligibilityResponse Auth Support Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/definition-topic",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "DefinitionTopic",
+    "title" : "DefinitionTopic",
+    "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1244"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-definition-topic.html" : "DefinitionTopic"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "FHIRDeviceStatusReason",
+    "title" : "FHIRDeviceStatusReason",
+    "description" : "The availability status reason of the device.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1082"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+    "version" : "1.1.1",
+    "status" : "active",
+    "name" : "DiagnosisRole",
+    "title" : "Diagnosis Role",
+    "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1054"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnosis-role.html" : "DiagnosisRole"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/diet",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "Diet",
+    "title" : "Diet",
+    "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1091"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-diet.html" : "Diet"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "DischargeDisposition",
+    "title" : "Discharge disposition",
+    "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1093"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SpecialArrangements",
+    "title" : "Special arrangements",
+    "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1090"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "EncounterType",
+    "title" : "Encounter type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1088"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-USCLS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "USCLSCodes",
+    "title" : "USCLS Codes",
+    "description" : "This value set includes a smattering of USCLS codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1153"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-uscls.html" : "USCLS Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "BenefitCategoryCodes",
+    "title" : "Benefit Category Codes",
+    "description" : "This value set includes examples of Benefit Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1175"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-benefitcategory.html" : "Benefit Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-claimsubtype",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleClaimSubTypeCodes",
+    "title" : "Example Claim SubType Codes",
+    "description" : "This value set includes sample Claim SubType codes which are used to distinguish the claim types for example within type institutional there may be subtypes for emergency services, bed stay and transportation.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1158"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-subtype.html" : "Example Claim SubType Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-coverage-financial-exception",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleCoverageFinancialExceptionCodes",
+    "title" : "Example Coverage Financial Exception Codes",
+    "description" : "This value set includes Example Coverage Financial Exception Codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1329"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-coverage-financial-exception.html" : "Example Coverage Financial Exception Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-diagnosis-on-admission",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleDiagnosisOnAdmissionCodes",
+    "title" : "Example Diagnosis on Admission Codes",
+    "description" : "This value set includes example Diagnosis on Admission codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1170"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-diagnosis-on-admission.html" : "Example Diagnosis on Admission Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-diagnosisrelatedgroup",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleDiagnosisRelatedGroupCodes",
+    "title" : "Example Diagnosis Related Group Codes",
+    "description" : "This value set includes example Diagnosis Related Group codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1166"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-diagnosisrelatedgroup.html" : "Example Diagnosis Related Group Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleDiagnosisTypeCodes",
+    "title" : "Example Diagnosis Type Codes",
+    "description" : "This value set includes example Diagnosis Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1167"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-diagnosistype.html" : "Example Diagnosis Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-paymenttype",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExamplePaymentTypeCodes",
+    "title" : "Example Payment Type Codes",
+    "description" : "This value set includes example Payment Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1181"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-paymenttype.html" : "Example Payment Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleProcedureTypeCodes",
+    "title" : "Example Procedure Type Codes",
+    "description" : "This value set includes example Procedure Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1388"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-procedure-type.html" : "Example Procedure Type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-programcode",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleProgramReasonCodes",
+    "title" : "Example Program Reason Codes",
+    "description" : "This value set includes sample Program Reason Span codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1161"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-program-code.html" : "Example Program Reason Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-providerqualification",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleProviderQualificationCodes",
+    "title" : "Example Provider Qualification Codes",
+    "description" : "This value set includes sample Provider Qualification codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1160"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provider-qualification.html" : "Example Provider Qualification Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleRelatedClaimRelationshipCodes",
+    "title" : "Example Related Claim Relationship Codes",
+    "description" : "This value set includes sample Related Claim Relationship codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1159"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-related-claim-relationship.html" : "Example Related Claim Relationship Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-revenue-center",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleRevenueCenterCodes",
+    "title" : "Example Revenue Center Codes",
+    "description" : "This value set includes sample Revenue Center codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1168"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-ex-revenue-center.html" : "Example Revenue Center Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleServicePlaceCodes",
+    "title" : "Example Service Place Codes",
+    "description" : "This value set includes a smattering of Service Place codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1157"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-place.html" : "Example Service Place Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/ex-tooth",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "OralSiteCodes",
+    "title" : "Oral Site Codes",
+    "description" : "This value set includes a smattering of FDI oral site codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1152"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-tooth.html" : "Oral Site Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SecurityRoleType",
+    "title" : "Security Role Type",
+    "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/forms-codes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "FormCodes",
+    "title" : "Form Codes",
+    "description" : "This value set includes a sample set of Forms codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1052"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-forms.html" : "Forms"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/fundsreserve",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "FundsReservationCodes",
+    "title" : "Funds Reservation Codes",
+    "description" : "This value set includes sample funds reservation type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1051"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-fundsreserve.html" : "FundsReserve"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/goal-achievement",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "GoalAchievementStatus",
+    "title" : "Goal achievement status",
+    "description" : "Describes the progression, or lack thereof, towards the goal against the target.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1375"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-goal-achievement.html" : "Goal achievement status"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/goal-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "GoalCategory",
+    "title" : "Goal category",
+    "description" : "Codes for grouping goals to use for filtering or presentation.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1097"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-goal-category.html" : "Goal category"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "GoalPriority",
+    "title" : "Goal priority",
+    "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1096"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-goal-priority.html" : "Goal priority"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ImmunizationFundingSource",
+    "title" : "Immunization Funding Source",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1100"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-funding-source.html" : "Immunization Funding Source"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/immunization-origin",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ImmunizationOriginCodes",
+    "title" : "Immunization Origin Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1101"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-origin.html" : "Immunization Origin Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ImmunizationProgramEligibility",
+    "title" : "Immunization Program Eligibility",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1099"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html" : "Immunization Program Eligibility"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ImmunizationRecommendationStatusCodes",
+    "title" : "Immunization Recommendation Status Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the status of the patient towards perceived immunity against a vaccine preventable disease. This value set is provided as a suggestive example.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1104"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-status.html" : "Immunization Recommendation Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ImmunizationSubpotentReason",
+    "title" : "Immunization Subpotent Reason",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1098"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-subpotent-reason.html" : "Immunization Subpotent Reason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of item lists in resources.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MeasureDataUsage",
+    "title" : "MeasureDataUsage",
+    "description" : "The intended usage for supplemental data elements in the measure.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1234"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-data-usage.html" : "MeasureDataUsage"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MeasureImprovementNotation",
+    "title" : "MeasureImprovementNotation",
+    "description" : "Observation values that indicate what change in a measurement value or score is indicative of an improvement in the measured item or scored issue.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1395"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-improvement-notation.html" : "MeasureImprovementNotation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-population",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "MeasurePopulationType",
+    "title" : "Measure Population Type",
+    "description" : "The type of population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1231"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-population.html" : "MeasurePopulationType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "MeasureScoring",
+    "title" : "Measure Scoring",
+    "description" : "The scoring type of the measure.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1232"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-scoring.html" : "MeasureScoring"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-type",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "MeasureType",
+    "title" : "MeasureType",
+    "description" : "The type of measure (includes codes from 2.16.840.1.113883.1.11.20368).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1233"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-type.html" : "MeasureType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication usage category codes",
+    "title" : "Medication usage category codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationDispensePerformerFunctionCodes",
+    "title" : "MedicationDispense Performer Function Codes",
+    "description" : "MedicationDispense Performer Function Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1319"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationdispense-performer-function.html" : "Medication dispense  performer  function  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationdispense-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationDispense Status Codes",
+    "title" : "Medication dispense  status  codes",
+    "description" : "MedicationDispense Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1313"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationdispense-status.html" : "Medication dispense  status  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "MedicationRequestCategoryCodes",
+    "title" : "MedicationRequest Category Codes",
+    "description" : "MedicationRequest Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequestCourseOfTherapyCodes",
+    "title" : "MedicationRequest Course of Therapy Codes",
+    "description" : "MedicationRequest Course of Therapy Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequestStatusReasonCodes",
+    "title" : "MedicationRequest Status Reason Codes",
+    "description" : "MedicationRequest Status Reason Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/missingtoothreason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MissingToothReasonCodes",
+    "title" : "Missing Tooth Reason Codes",
+    "description" : "This value set includes sample Missing Tooth Reason codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1150"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-missing-tooth-reason.html" : "Missing Tooth Reason Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/modifiers",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ModifierTypeCodes",
+    "title" : "Modifier type Codes",
+    "description" : "This value set includes sample Modifier type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1151"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-claim-modifiers.html" : "Modifier type Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "OrganizationType",
+    "title" : "Organization type",
+    "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+    "uses" : {
+    },
+    "ValueSet-ng-insurer-org-type-vs.html" : "NG Insurer Organization Types",
+    "ValueSet-ng-provider-org-type-vs.html" : "NG Provider Organization Types",
+    "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type",
+    "ValueSet-ng-pharmacy-org-type-vs.html" : "NG Pharmacy Organization Types"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ParticipantType",
+    "title" : "Participant type",
+    "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/payeetype",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ClaimPayeeTypeCodes",
+    "title" : "Payee Type Codes",
+    "description" : "Codes indicating the type of party to be reimbursed for cost of products and services.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1050"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-payeetype.html" : "PayeeType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/payment-adjustment-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "PaymentAdjustmentReasonCodes",
+    "title" : "Payment Adjustment Reason Codes",
+    "description" : "This value set includes smattering of Payment Adjustment Reason codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1173"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-payment-adjustment-reason.html" : "Payment Adjustment Reason Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "PractitionerRole",
+    "title" : "Practitioner role",
+    "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/processpriority",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ProcessPriorityCodes",
+    "title" : "Process Priority Codes",
+    "description" : "This value set includes the financial processing priority codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1155"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-process-priority.html" : "Process Priority Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/program",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "Program",
+    "title" : "Program",
+    "description" : "This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1384"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-program.html" : "Program"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ProvenanceParticipantType",
+    "title" : "Provenance participant type",
+    "description" : "These codes define the type of participation by an agent in a provenance activity. An agent is something that bears the responsibility identified by the type of participation in the activity taking place, for the existence of an entity, or for another agent's activity. An Agent may be An agent, device, system, organization, group, care-team, or other identifiable thing.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1131"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-agent-type.html" : "Provenance participant type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/service-category",
+    "version" : "1.1.1",
+    "status" : "active",
+    "name" : "ServiceCategory",
+    "title" : "Service category",
+    "description" : "This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1144"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-category.html" : "Service category"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/service-provision-conditions",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ServiceProvisionConditions",
+    "title" : "ServiceProvisionConditions",
+    "description" : "The code(s) that detail the conditions under which the healthcare service is available/offered.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1143"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-provision-conditions.html" : "ServiceProvisionConditions"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/service-referral-method",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ReferralMethod",
+    "title" : "ReferralMethod",
+    "description" : "The methods of referral can be used when referring to a specific HealthCareService resource.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1142"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-referral-method.html" : "ReferralMethod"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/service-type",
+    "version" : "1.1.1",
+    "status" : "active",
+    "name" : "ServiceType",
+    "title" : "Service type",
+    "description" : "This value set defines an example set of codes of service-types.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1145"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SubscriberRelationshipCodes",
+    "title" : "SubscriberPolicyholder Relationship Codes",
+    "description" : "This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1386"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-subscriber-relationship.html" : "SubscriberPolicyholder Relationship Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+    "oids" : ["2.16.840.1.113883.18.29"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ReAdmissionIndicator",
+    "title" : "re-admissionIndicator",
+    "description" : "Code system of concepts which are used to specify that a patient is being re admitted to a healthcare facilityin from which they were discharged, and indicates the circumstances around such re-admission.  Used in HL7 Version 2.x messagine in the PV1 segment.",
+    "oids" : ["2.16.840.1.113883.18.36"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "BedStatus",
+    "title" : "bedStatus",
+    "description" : "Code system of concepts which specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.  Used in HL7 Version 2.x messaging in the DLD and PV1 segments.",
+    "oids" : ["2.16.840.1.113883.18.47"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ContactRole2",
+    "title" : "contactRole2",
+    "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+    "oids" : ["2.16.840.1.113883.18.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+    "oids" : ["2.16.840.1.113883.18.108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "AppointmentReason",
+    "title" : "appointmentReason",
+    "description" : "Code system of concepts used to describe the kind of appointment or the reason why an appointment has been scheduled.  Used in HL7 Version 2.x messaging in the ARQ segment.",
+    "oids" : ["2.16.840.1.113883.18.169"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0276.html" : "hl7VS-appointmentReasonCodes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "AdditivePreservative",
+    "title" : "additivePreservative",
+    "description" : "HL7-defined code system of concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in HL7 Version 2.x messaging in the SPM and SAC segments.",
+    "oids" : ["2.16.840.1.113883.18.229"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Treatment",
+    "title" : "treatment",
+    "description" : "Code system of concepts that identify the specimen treatment performed during lab processing.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+    "oids" : ["2.16.840.1.113883.18.231"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-specimen-processing-procedure.html" : "Specimen processing procedure"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0443",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ProviderRole",
+    "title" : "providerRole",
+    "description" : "Code system of concepts specifying the functional involvement with the activity being transmitted (e.g., Case Manager, Evaluator, Transcriber, Nurse Care Practitioner, Midwife, Physician Assistant, etc.).  Used in HL7 Version 2.x messaging in the ROL segment.",
+    "oids" : ["2.16.840.1.113883.18.283"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-function.html" : "Immunization Function Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SpecimenType",
+    "title" : "specimenType",
+    "description" : "HL7-defined code system of concepts that describe the precise nature of an entity that may be used as the source material for an observation.  This is one of two code systems that are used instead of table 0070 (code system 2.16.840.1.113883.18.28) which conflated specimen types and specimen collection methods.   Used in HL7 Version 2.x messaging in the SPM segment.",
+    "oids" : ["2.16.840.1.113883.18.311"],
+    "uses" : {
+    },
+    "ValueSet-ng-tb-screening-specimen-type-vs.html" : "TB Screening Specimen Type Codes ValueSet"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SpecimenCondition",
+    "title" : "specimenCondition",
+    "description" : "Code system of concepts specifying a mode or state of being that describes the nature of the specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
+    "oids" : ["2.16.840.1.113883.18.317"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "RelevantClincialInformation",
+    "title" : "relevantClincialInformation",
+    "description" : "Code system of concepts specifying additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies. Used in HL7 Version 2.x messaging in the OBR segment.",
+    "oids" : ["2.16.840.1.113883.18.422"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "11.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ActPriority",
+    "title" : "ActPriority",
+    "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
+    "oids" : ["2.16.840.1.113883.5.7"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPriority.html" : "ActPriority"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ActReason",
+    "title" : "ActReason",
+    "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+    "oids" : ["2.16.840.1.113883.5.8"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+    "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActSite",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ActSite",
+    "title" : "ActSite",
+    "description" : "An anatomical location on an organism which can be the focus of an act.",
+    "oids" : ["2.16.840.1.113883.5.1052"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-site.html" : "Codes for Immunization Site of Administration"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "Confidentiality",
+    "title" : "Confidentiality",
+    "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+    "oids" : ["2.16.840.1.113883.5.25"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "DataOperation",
+    "title" : "DataOperation",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.1123"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "DocumentCompletion",
+    "title" : "DocumentCompletion",
+    "description" : "Identifies the current completion state of a clinical document.",
+    "oids" : ["2.16.840.1.113883.5.33"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "EncounterSpecialCourtesy",
+    "title" : "EncounterSpecialCourtesy",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.40"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MaritalStatus",
+    "title" : "MaritalStatus",
+    "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+    "oids" : ["2.16.840.1.113883.5.2"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "NullFlavor",
+    "title" : "NullFlavor",
+    "description" : "A collection of codes specifying why a valid value is not present.",
+    "oids" : ["2.16.840.1.113883.5.1008"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "oids" : ["2.16.840.1.113883.5.83"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-physical-examination-interpretation-vs.html" : "HIV Physical Examinations Interpretation",
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ParticipationFunction",
+    "title" : "ParticipationFunction",
+    "description" : "This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).",
+    "oids" : ["2.16.840.1.113883.5.88"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode",
+    "version" : "6.0.0",
+    "status" : "active",
+    "name" : "ParticipationMode",
+    "title" : "ParticipationMode",
+    "description" : "A set of codes specifying the modality by which the Entity playing the Role is participating in the Act.\r\n\r\n*Examples:* Physically present, over the telephone, written communication.\r\n\r\n*Rationale:* Particularly for author (originator) participants this is used to specify whether the information represented by the act was initially provided verbally, (hand-)written, or electronically.\r\n\r\n*Open Issue:* There needs to be a reexamination of the hierarchies as there seems to be some muddling between ELECTRONIC and other concepts that involve electronic communication that are in other hierarchies.",
+    "oids" : ["2.16.840.1.113883.5.1064"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ParticipationMode.html" : "ParticipationMode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "ParticipationType",
+    "title" : "ParticipationType",
+    "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+    "oids" : ["2.16.840.1.113883.5.90"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "version" : "6.0.0",
+    "status" : "active",
+    "name" : "RoleClass",
+    "title" : "RoleClass",
+    "description" : "Codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+    "oids" : ["2.16.840.1.113883.5.110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "RoleCode",
+    "title" : "RoleCode",
+    "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+    "oids" : ["2.16.840.1.113883.5.111"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "RouteOfAdministration",
+    "title" : "RouteOfAdministration",
+    "description" : "The path the administered medication takes to get into the body or into contact with the body.",
+    "oids" : ["2.16.840.1.113883.5.112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-immunization-route.html" : "Immunization Route Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "SubstanceAdminSubstitution",
+    "title" : "Substance Admin Substitution",
+    "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+    "oids" : ["2.16.840.1.113883.5.1070"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationDispense Category Codes",
+    "title" : "Medication dispense  category  codes",
+    "description" : "MedicationDispense Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1315"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationdispense-category.html" : "Medication dispense  category  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationDispense Status Reason Codes",
+    "title" : "Medication dispense  status  reason  codes",
+    "description" : "MedicationDispense Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1317"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationdispense-status-reason.html" : "Medication dispense  status  reason  codes"
+  },
+  {
+    "url" : "http://unitsofmeasure.org",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "UCUM",
+    "title" : "Unified Code for Units of Measure (UCUM)",
+    "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgAlertCategoryCS",
+    "title" : "Nigeria Alert Category Code System",
+    "description" : "Categories used to classify alerts represented using the Nigeria Alert Flag profile.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.2"],
+    "uses" : {
+    },
+    "ValueSet-ng-alert-category-vs.html" : "Nigeria Alert Category Value Set"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-code-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgAlertCodeCS",
+    "title" : "Nigeria Alert Code System",
+    "description" : "Common alert types used by Nigerian health information systems and represented using the Nigeria Alert Flag profile.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.3"],
+    "uses" : {
+    },
+    "ValueSet-ng-alert-code-vs.html" : "Nigeria Alert Code Value Set"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgATCLocalMedicationCS",
+    "title" : "NG Local ATC Medication Codes",
+    "description" : "Local ATC. Codes are placeholders aligned to common maternal, newborn, and child health needs, plus EPI vaccines.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.4"],
+    "uses" : {
+    },
+    "ValueSet-ng-atc-all-medications-vs.html" : "NG Local ATC — All Medications"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-bundle-identifier-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgBundleIdentifierCS",
+    "title" : "NG Bundle Identifier Codes",
+    "description" : "Local CodeSystem defining standard bundle identifiers.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.5"],
+    "uses" : {
+    },
+    "ValueSet-ng-bundle-identifier-vs.html" : "NG Bundle Identifier Codes"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgCareplanActivityCS",
+    "title" : "NG CarePlan Activity Codes",
+    "description" : "Activities for CarePlan.activity.detail.code.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.6"],
+    "uses" : {
+    },
+    "ValueSet-ng-careplan-activity-vs.html" : "NG CarePlan Activity VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgCareplanCategoryCS",
+    "title" : "NG CarePlan Category Codes",
+    "description" : "Categories for CarePlan.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.7"],
+    "uses" : {
+    },
+    "ValueSet-ng-careplan-category-vs.html" : "NG CarePlan Category VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-children-developmental-milestone-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgChildrenDevelopmentalMilestoneCS",
+    "title" : "Children Developmental Milestone Codes CodeSystem",
+    "description" : "Code used for representing the child's developmental milestone.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.8"],
+    "uses" : {
+    },
+    "ValueSet-ng-children-developmental-milestone-vs.html" : "Children Developmental Milestone ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-clinical-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgClinicalStatusCS",
+    "title" : "NG Adverse Event CS",
+    "description" : "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.10"],
+    "uses" : {
+    },
+    "ValueSet-ng-immunization-clinical-status-vs.html" : "NG Clinical Status VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgDeviceIdentifierCS",
+    "title" : "NG Electromechanical Medical Device Identifier CS",
+    "description" : "Simplified CodeSystem of 50 placeholder identifiers for electromechanical medical devices (vital signs, analyzers, imaging/DICOM, bedside, handheld, IoT).",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.11"],
+    "uses" : {
+    },
+    "ValueSet-ng-device-identifier-vs.html" : "NG Electromechanical Medical Device Identifier VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgFacilityIdentifierCS",
+    "title" : "NG Facility Identifier CS",
+    "description" : "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifiers in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.15"],
+    "uses" : {
+    },
+    "ValueSet-ng-facility-identifier-vs.html" : "NG Clinical Status VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgFacilityTypeCS",
+    "title" : "NG Facility Type CS",
+    "description" : "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.16"],
+    "uses" : {
+    },
+    "ValueSet-ng-facility-type-vs.html" : "NG HealthFacility Type VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivAbsentUnknownCS",
+    "title" : "HIV Absent or Unknown CodeSystem",
+    "description" : "Codes used for indicating when a value is absent or unknown.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.17"],
+    "uses" : {
+    },
+    "ValueSet-ng-yes-no-vs.html" : "NG Yes/No Codes VS",
+    "ValueSet-ng-hiv-occupation-vs.html" : "HIV Occupation Valueset"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-eligibility-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARTEligibilityStatusCS",
+    "title" : "HIV Eligility Status for ART Codes",
+    "description" : "Observation codes used for indicating patient eligibility for ART.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.18"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-eligibility-status-vs.html" : "ART Eligibility Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARTFollowUpStatusCS",
+    "title" : "HIV Follow Up Status CodeSystem",
+    "description" : "A list of codes describing the follow up statuses",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.19"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-art-follow-up-status-vs.html" : "HIV Follow Up Status ValueSet",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ValueSet-ng-hiv-art-register-outcome-vs.html" : "NG HIV ART Register Six-Month Outcomes"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtMonthlySummaryCS",
+    "title" : "NG HIV ART Monthly Summary Codes",
+    "description" : "Indicator, stratifier-dimension and local disaggregation codes for the Nigeria ART Monthly Summary Form revised November 2025.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.20"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-monthly-mmd-duration-vs.html" : "NG HIV ART Monthly MMD Duration",
+    "ValueSet-ng-hiv-art-monthly-cervical-screening-timing-vs.html" : "NG HIV ART Monthly Cervical Screening Timing",
+    "ValueSet-ng-hiv-art-monthly-interruption-outcome-vs.html" : "NG HIV ART Monthly Interruption Outcomes",
+    "ValueSet-ng-hiv-art-monthly-cm-result-vs.html" : "NG HIV ART Monthly Cryptococcal Meningitis Results",
+    "ValueSet-ng-hiv-art-monthly-age-group-vs.html" : "NG HIV ART Monthly Age Groups",
+    "ValueSet-ng-hiv-art-monthly-indicator-vs.html" : "NG HIV ART Monthly Summary Indicators",
+    "ValueSet-ng-hiv-art-monthly-cervical-screening-result-vs.html" : "NG HIV ART Monthly Cervical Screening Results",
+    "ValueSet-ng-hiv-art-monthly-cervical-treatment-type-vs.html" : "NG HIV ART Monthly Cervical Treatment Types",
+    "ValueSet-ng-hiv-art-monthly-tb-ahd-age-group-vs.html" : "NG HIV ART Monthly TB and AHD Age Groups",
+    "ValueSet-ng-hiv-art-monthly-ahd-category-vs.html" : "NG HIV ART Monthly AHD Categories",
+    "ValueSet-ng-hiv-art-monthly-crag-age-group-vs.html" : "NG HIV ART Monthly CrAg Age Groups",
+    "ValueSet-ng-hiv-art-monthly-crag-result-vs.html" : "NG HIV ART Monthly Serum CrAg Results",
+    "ValueSet-ng-hiv-art-monthly-cervical-age-group-vs.html" : "NG HIV ART Monthly Cervical Screening Age Groups"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cervical-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterCervicalStatusCS",
+    "title" : "NG HIV ART Register Cervical Cancer Screening Status Codes",
+    "description" : "Combined cervical-cancer screening workflow statuses printed in column A27 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.21"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-cervical-status-vs.html" : "NG HIV ART Register Cervical Cancer Screening Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cryptococcal-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterCryptococcalStatusCS",
+    "title" : "NG HIV ART Register Cryptococcal Status Codes",
+    "description" : "Cryptococcal screening and treatment-state codes printed in column A25 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.22"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-cryptococcal-status-vs.html" : "NG HIV ART Register Cryptococcal Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterDsdStatusCS",
+    "title" : "NG HIV ART Register DSD Status Codes",
+    "description" : "Facility- and community-based differentiated-service-delivery model codes printed in column A33 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.23"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-dsd-status-vs.html" : "NG HIV ART Register DSD Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-hepatitis-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterHepatitisStatusCS",
+    "title" : "NG HIV ART Register Hepatitis Screening Codes",
+    "description" : "Hepatitis screening and treatment codes printed in column A28 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.24"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-hepatitis-status-vs.html" : "NG HIV ART Register Hepatitis Screening Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-regimen-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterRegimenCS",
+    "title" : "NG HIV ART Register Regimen Codes",
+    "description" : "Adult and paediatric first-, second- and third-line ART regimen codes printed on the November 2025 National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.25"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-regimen-vs.html" : "NG HIV ART Register Regimens"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-tb-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterTbStatusCS",
+    "title" : "NG HIV ART Register TB Status Codes",
+    "description" : "Combined TB screening, diagnostic and treatment status codes printed on column A20 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.26"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-tb-status-vs.html" : "NG HIV ART Register TB Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-tpt-outcome-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterTptOutcomeCS",
+    "title" : "NG HIV ART Register TPT Outcome Codes",
+    "description" : "TB preventive-therapy outcome codes printed in column A22 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.27"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-art-register-tpt-outcome-vs.html" : "NG HIV ART Register TPT Outcome"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVAdherenceCS",
+    "title" : "HIV-ARV Adherence CodeSystem",
+    "description" : "ARV Adherence",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.28"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-arv-adherence-vs.html" : "HIV-ARV Adherence ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-change-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVRegimenChangeCategoryCS",
+    "title" : "HIV ARV Regimen Change Category",
+    "description" : "Codes used for representing the category for the ARV regimen change.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.29"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-arv-regimen-change-category-vs.html" : "HIV ARV Regimen Change Category"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-substitute-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVRegimenSubstituteTypeCS",
+    "title" : "HIV ARV Regimen Substitue Type",
+    "description" : "Codes used for representing the type for the ARV regimen substitued.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.30"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-arv-regimen-change-type-vs.html" : "HIV ARV Regimen Change Type"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-switch-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVRegimenSwitchTypeCS",
+    "title" : "ARV Regimen Switch Type",
+    "description" : "Codes used for representing the type for the ARV regimen switched.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.31"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-arv-regimen-change-type-vs.html" : "HIV ARV Regimen Change Type"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-treatment-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVTreatmentCS",
+    "title" : "HIV ARV Drugs CodeSystem",
+    "description" : "A list of codes describing the ARV Drugs.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.32"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-arv-treatment-vs.html" : "HIV - ARV Drugs ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCareArtCodesCS",
+    "title" : "NG HIV Care and ART Codes",
+    "description" : "Local codes transcribed from the Nigeria HIV Care/ART Card for coded answers\nused by the HIV care and ART Questionnaire.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.33"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cd4-reference-vs.html" : "NG HIV CD4 Reference",
+    "ValueSet-ng-hiv-regimen-change-reason-vs.html" : "NG HIV Regimen Substitution or Switch Reason",
+    "ValueSet-ng-hiv-educational-status-vs.html" : "NG HIV Educational Status",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-prior-art-vs.html" : "NG HIV Prior ART",
+    "ValueSet-ng-hiv-art-stop-reason-vs.html" : "NG HIV ART Stop Reason",
+    "ValueSet-ng-hiv-cause-of-death-vs.html" : "NG HIV Cause of Death",
+    "ValueSet-ng-hiv-kp-typology-vs.html" : "NG HIV Key Population Typology",
+    "ValueSet-ng-hiv-tb-preventive-therapy-vs.html" : "NG HIV TB Preventive Therapy",
+    "ValueSet-ng-hiv-drug-resistance-result-vs.html" : "NG HIV Drug Resistance Result",
+    "ValueSet-ng-hiv-marital-status-vs.html" : "NG HIV Marital Status",
+    "ValueSet-ng-hiv-care-entry-point-vs.html" : "NG HIV Care Entry Point"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCD4AndVLClassificationForTreatmentFailureCS",
+    "title" : "HIV Viral Load/CD4 Count Classifications CodeSystem",
+    "description" : "Codes used for indicating the classification for the Viral Load/CD4 count treatment failure.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.35"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cd4-vl-classification-for-treatment-failure-vs.html" : "HIV Viral Load/CD4 Count Classifications ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningHPVResultsCS",
+    "title" : "HIV-Cervical Cancer Screening Results CodeSystem",
+    "description" : "A list of codes describing the Cervical Cancer Screening Results",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.36"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cervical-cancer-screening-result-vs.html" : "HIV-Cervical Cancer Screening Results ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-method-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningMethodCS",
+    "title" : "HIV-Cervical Cancer Screening Method CodeSystem",
+    "description" : "A list of codes describing the Cervical Cancer Screening Method",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.37"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cervical-cancer-screening-method-vs.html" : "HIV-Cervical Cancer Screening Method"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningTypeCS",
+    "title" : "HIV Cervical Cancer Screening Type",
+    "description" : "Codes used for representing the cervical screening type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.38"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cervical-cancer-screening-type-vs.html" : "Cervical Cancer Screening Type"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-via-result-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningVIAResultsCS",
+    "title" : "HIV-Cervical Cancer Screening Results CodeSyetem",
+    "description" : "A list of codes describing the Cervical Cancer Screening Results",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.39"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cervical-cancer-screening-result-vs.html" : "HIV-Cervical Cancer Screening Results ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-assessment-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDAssessmentStatusCS",
+    "title" : "Differentiated Service Delivery - Assessment Status",
+    "description" : "Code used for indicating the status of the DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.41"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-dsd-assessment-status-vs.html" : "Differentiated Service Delivery - Assessment Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDCategoryCS",
+    "title" : "HIV DSD - Category CodeSystem",
+    "description" : "Code used for indicating the category for the DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.42"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-dsd-category-vs.html" : "HIV DSD - Category ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDReasonForCategoryChangeCS",
+    "title" : "HIV DSD - Reason For Category Change CodeSystem",
+    "description" : "Code used for indicating the reason for the category change for the DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.43"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-dsd-reason-for-category-change-vs.html" : "Differentiated Service Delivery - Reason For Category Change"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEacFormCS",
+    "title" : "NG HIV Enhanced Adherence Counselling Form Codes",
+    "description" : "Local coded answers transcribed from the Nigeria Enhanced Adherence\nCounselling Form for adherence assessment, adherence barriers, service\ninterventions and intervention tools.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.44"],
+    "uses" : {
+    },
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-eac-intervention-tools-vs.html" : "NG HIV EAC Intervention Tools",
+    "ValueSet-ng-hiv-eac-intervention-services-vs.html" : "NG HIV EAC Intervention Services",
+    "ValueSet-ng-hiv-eac-barriers-vs.html" : "NG HIV EAC Adherence Barriers",
+    "ValueSet-ng-hiv-eac-adherence-vs.html" : "NG HIV EAC Adherence"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-given-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEACGivenCS",
+    "title" : "HIV EAC Given CodeSystem",
+    "description" : "Codes used for representing the Enhanced Adherence Councilling (EAC) given.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.45"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-eac-given-vs.html" : "HIV EAC Given ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-register-virologic-failure-cause-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivEacRegisterVirologicFailureCauseCS",
+    "title" : "NG HIV EAC Register Suspected Causes of Virologic Failure",
+    "description" : "Codes printed in the Enhanced Adherence Counselling Monitoring Register for\nrecording the suspected cause or causes of virologic failure after EAC.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.46"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-eac-register-virologic-failure-cause-vs.html" : "NG HIV EAC Register Suspected Causes of Virologic Failure"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-visit-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEncounterVisitTypeCS",
+    "title" : "HIV-Nature of Encounter CodeSystem",
+    "description" : "A list of codes describing the nature of the patient visit to the health facility",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.49"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-encounter-visit-type-vs.html" : "HIV-Nature of Encounter ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEnhancedAdherenceCounsellingCS",
+    "title" : "Enhanced Adherence Counselling",
+    "description" : "Code used for indicating a proprietary enhanced adherence counselling",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.50"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivFinalOutcomeCS",
+    "title" : "HIV - Final Outcome CodeSystem",
+    "description" : "Final Outcome",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.52"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-final-outcome-value-set.html" : "HIV-Final Outcome ValueSet",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivIndexCasePartnerQuestionnaireCS",
+    "title" : "HIV Index Case Sex Partner Questionnaire",
+    "description" : "Proprietary Codes used in the Index Case Partner Questionnaire.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.53"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
+    "ValueSet-ng-hiv-reason-partner-not-contacted-vs.html" : "HIV Reason Partner Not Contacted ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivIntLabFormCS",
+    "title" : "NG HIV Integrated Laboratory Form Codes",
+    "description" : "Local coded answer concepts transcribed or inferred from the Nigeria HIV\nIntegrated Laboratory Order and Result Form revised November 2025.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.54"],
+    "uses" : {
+    },
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-int-lab-specimen-type-vs.html" : "NG HIV Integrated Laboratory Specimen Type",
+    "ValueSet-ng-hiv-int-lab-other-test-vs.html" : "NG HIV Integrated Laboratory Other Test",
+    "ValueSet-ng-hiv-int-lab-eid-result-vs.html" : "NG HIV Integrated Laboratory EID Result",
+    "ValueSet-ng-hiv-int-lab-cytology-method-vs.html" : "NG HIV Integrated Laboratory Cytology Method",
+    "ValueSet-ng-hiv-int-lab-register-test-vs.html" : "NG HIV Integrated Laboratory Register Test Type",
+    "ValueSet-ng-hiv-int-lab-viral-load-indication-vs.html" : "NG HIV Integrated Laboratory Viral-Load Indication",
+    "ValueSet-ng-hiv-int-lab-regimen-line-vs.html" : "NG HIV Integrated Laboratory ART Regimen Line",
+    "ValueSet-ng-hiv-int-lab-reactive-result-vs.html" : "NG HIV Integrated Laboratory Reactive or Non-Reactive Result",
+    "ValueSet-ng-hiv-int-lab-requested-test-type-vs.html" : "NG HIV Integrated Laboratory Requested Test Type",
+    "ValueSet-ng-hiv-int-lab-eid-age-category-vs.html" : "NG HIV Integrated Laboratory EID Age Category",
+    "ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.html" : "NG HIV Integrated Laboratory ARV Prophylaxis",
+    "ValueSet-ng-hiv-int-lab-eid-indication-vs.html" : "NG HIV Integrated Laboratory EID Indication",
+    "ValueSet-ng-hiv-int-lab-positive-negative-result-vs.html" : "NG HIV Integrated Laboratory Positive or Negative Result"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-register-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivIntLabRegisterCS",
+    "title" : "NG HIV Integrated Laboratory Monitoring Register Codes",
+    "description" : "Local codes required to represent the Integrated Laboratory Monitoring\nRegister revised November 2025. The source workbook does not provide a complete\nEID-entry-point legend or a POC error-code catalogue; those values are therefore\nrepresented using existing terminology or free text in the logical model.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.55"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-int-lab-register-monitoring-type-vs.html" : "NG HIV Integrated Laboratory Register Monitoring Type",
+    "ValueSet-ng-hiv-int-lab-register-dsd-status-vs.html" : "NG HIV Integrated Laboratory Register DSD Status",
+    "ValueSet-ng-hiv-int-lab-register-mode-of-testing-vs.html" : "NG HIV Integrated Laboratory Register Mode of Testing",
+    "ValueSet-ng-hiv-int-lab-register-viral-load-disaggregation-vs.html" : "NG HIV Integrated Laboratory Register Viral-Load Disaggregation",
+    "ValueSet-ng-hiv-int-lab-register-viral-load-category-vs.html" : "NG HIV Integrated Laboratory Register Viral-Load Category"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-occupation-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivOccupationCS",
+    "title" : "HIV Occupation Codes",
+    "description" : "Codes used for representing the patient's occupation",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.56"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-occupation-vs.html" : "HIV Occupation Valueset"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-notification-plan-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPartnerNotificationPlanCS",
+    "title" : "HIV Partner Notification Plan CodeSystem",
+    "description" : "Codes used for indicating the plan for notifying the partner regarding the index case's HIV status.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.58"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-partner-notification-plan-vs.html" : "HIV Partner Notification Plan ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-period-of-hiv-exposure-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPeriodOfHIVExposureCS",
+    "title" : "HIV Period of HIV Exposure",
+    "description" : "Codes used for indicating the period when last the individual was exposed to HIV.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.59"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-period-of-hiv-exposure-vs.html" : "Period of HIV Exposure"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyOrderCS",
+    "title" : "NG HIV Pharmacy Order Form Codes",
+    "description" : "Local coded medicine products transcribed from the Nigeria Combined Pharmacy\nOrder Form revised November 2025. The codes distinguish products by program\ncategory, ingredient combination and preprinted strength.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.60"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-prep-medication-vs.html" : "NG HIV PrEP Medications",
+    "ValueSet-ng-hiv-oi-prophylaxis-treatment-medication-vs.html" : "NG HIV OI Prophylaxis and Treatment Medications",
+    "ValueSet-ng-hiv-paediatric-art-medication-vs.html" : "NG HIV Paediatric ART Medications",
+    "ValueSet-ng-hiv-adult-art-medication-vs.html" : "NG HIV Adult ART Medications",
+    "ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.html" : "NG HIV TB Preventive Therapy Medications"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetArvProphylaxisCS",
+    "title" : "NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimens",
+    "description" : "ARV prophylaxis codes printed in W17 for HIV-exposed infants.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.61"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs.html" : "NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimen"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-dsd-model-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetDsdModelCS",
+    "title" : "NG HIV Pharmacy Worksheet DSD Models",
+    "description" : "DSD models represented by W9 and W10.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.62"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-pharmacy-worksheet-dsd-model-vs.html" : "NG HIV Pharmacy Worksheet DSD Model"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetMedicineCategoryCS",
+    "title" : "NG HIV Pharmacy Worksheet Medicine Categories",
+    "description" : "Medicine-section categories printed on the revised Pharmacy Daily Worksheet.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.63"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-pharmacy-worksheet-medicine-category-vs.html" : "NG HIV Pharmacy Worksheet Medicine Category"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetMedicineCS",
+    "title" : "NG HIV Pharmacy Daily Worksheet Medicine Columns",
+    "description" : "Local codes for the fixed medicine columns W24–W71 on the revised November\n2025 Pharmacy Daily Worksheet. The code is the printed worksheet column\nidentifier, allowing exact reconstruction of the paper worksheet.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.64"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-pharmacy-worksheet-medicine-vs.html" : "NG HIV Pharmacy Daily Worksheet Medicines"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-summary-scope-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetSummaryScopeCS",
+    "title" : "NG HIV Pharmacy Worksheet Summary Scopes",
+    "description" : "The three summary rows printed at the bottom of the worksheet.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.65"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-pharmacy-worksheet-summary-scope-vs.html" : "NG HIV Pharmacy Worksheet Summary Scope"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPositiveTrackingCS",
+    "title" : "HIV Positive Tracking",
+    "description" : "Codes used for representing HIV positive tracking.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.66"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPrecancerousLesionTreatmentReceivedCS",
+    "title" : "HIV-Precancerous Lesion Treatment Received CodeSystem",
+    "description" : "A list of codes describing the precancerous lesion treatment received",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.67"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.html" : "HIV-Cervical Cancer Treatment Received ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-for-art-eligibility-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivReasonForARTEligibilityCS",
+    "title" : "HIV Reasons For ART Eligibility",
+    "description" : "Reasons For ART Eligibility",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.68"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivReasonNotStartedARTCS",
+    "title" : "HIV - Reason Not Started ART CodeSystem",
+    "description" : "Reason Not Started ART",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.69"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-reason-not-started-art-vs.html" : "HIV - Reason Not Started ART ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-routine-indication-viral-load-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivRoutineIndicationViralLoadCS",
+    "title" : "HIV Routine Indication Viral Load",
+    "description" : "Codes used for representing routine indication for viral load.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.70"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-vl-indication-vs.html" : "HIV Viral Load Indication"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivServiceProviderTypeCS",
+    "title" : "HIV Service Providers CodeSystem",
+    "description" : "Code used for representing the classification of organizations providing health services.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.71"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivStatusCS",
+    "title" : "NG Client HIV status CS",
+    "description" : "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status of a Client",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.72"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-status-vs.html" : "HIV Status Codes"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivSuspiciousCancerousTreatmentCS",
+    "title" : "HIV-Suspicious Cancerous Treatment CodeSystem",
+    "description" : "A list of codes describing the suspicious Cancerous treatment",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.73"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.html" : "HIV-Cervical Cancer Treatment Received ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTargetPopulationCategoryCS",
+    "title" : "Target Population Category Codes",
+    "description" : "Codes used for representing the patient's target population category",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.74"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ValueSet-ng-target-population-category-vs.html" : "NG Target Population Category VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-targeted-indication-viral-load-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTargetedIndicationViralLoadCS",
+    "title" : "HIV Targeted Indication Viral Load",
+    "description" : "Codes used for representing targeted indication for viral load.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.75"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-vl-indication-vs.html" : "HIV Viral Load Indication"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-attempt-stage-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingAttemptStageCS",
+    "title" : "NG HIV Tracking Register Attempt Stages",
+    "description" : "The four numbered tracking attempts and the final attempt at the end of the tracking period represented by columns T19–T23.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.76"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-attempt-stage-vs.html" : "NG HIV Tracking Register Attempt Stage"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-default-reason-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDefaultReasonCS",
+    "title" : "NG HIV Tracking Register Reasons for Defaulting",
+    "description" : "Reasons recorded when successful contact establishes why the client missed the appointment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.77"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-default-reason-vs.html" : "NG HIV Tracking Register Reason for Defaulting"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-discontinuation-reason-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDiscontinuationReasonCS",
+    "title" : "NG HIV Tracking Register Reasons for Discontinuation",
+    "description" : "Reasons for discontinuing care at the facility printed for T26.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.78"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-discontinuation-reason-vs.html" : "NG HIV Tracking Register Reason for Discontinuation"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-dsd-model-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDsdModelCS",
+    "title" : "NG HIV Tracking Register DSD Model Codes",
+    "description" : "High-level DSD model codes printed in T15.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.79"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-dsd-model-vs.html" : "NG HIV Tracking Register DSD Model"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-dsd-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDsdStatusCS",
+    "title" : "NG HIV Tracking Register DSD Status Codes",
+    "description" : "High-level differentiated-service-delivery status codes printed in T15. The source register spells devolved as 'Devloved'; this artefact uses the intended spelling while preserving code D.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.80"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-dsd-status-vs.html" : "NG HIV Tracking Register DSD Status"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-mode-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingModeCS",
+    "title" : "NG HIV Tracking Register Tracking Modes",
+    "description" : "Tracking modes printed for T19–T23.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.81"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-mode-vs.html" : "NG HIV Tracking Register Tracking Mode"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-person-contacted-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingPersonContactedCS",
+    "title" : "NG HIV Tracking Register Person Contacted Codes",
+    "description" : "Person-contacted codes printed for T19–T23.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.82"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-person-contacted-vs.html" : "NG HIV Tracking Register Person Contacted"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-reason-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingReasonCS",
+    "title" : "NG HIV Tracking Register Reasons for Tracking",
+    "description" : "Reason-for-tracking codes printed for T16.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.83"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-tracking-reason-vs.html" : "NG HIV Tracking Register Reason for Tracking"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivTransferReasonCS",
+    "title" : "NG HIV Care and Treatment Transfer Reasons",
+    "description" : "Reasons for transferring a client between HIV treatment sites, transcribed from the November 2025 HIV Care and Treatment Transfer Form.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.84"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-transfer-reason-vs.html" : "NG HIV Care and Treatment Transfer Reasons"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-who-stage-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivWHOStageCS",
+    "title" : "WHO Stage Codes",
+    "description" : "Code used for representing the patient's WHO stage.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.85"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-who-stage-vs.html" : "HIV WHO Stage"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-contraindication-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgImmunizationContraindicationCS",
+    "title" : "NG Vaccine contraindications CS",
+    "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.86"],
+    "uses" : {
+    },
+    "ValueSet-ng-vaccine-contraindication-vs.html" : "NG Vaccine Contraindication VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-session-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgImmunizationSessionTypeCS",
+    "title" : "NG Immunization Session types CS",
+    "description" : "Type of session for immunization Could be in a fixed facility, outreach or mobile.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.87"],
+    "uses" : {
+    },
+    "ValueSet-ng-immunization-session-type-vs.html" : "NG Session Type VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-lgas-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgLgasCS",
+    "title" : "NG LGAs in Nigeria CS",
+    "description" : "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.88"],
+    "uses" : {
+    },
+    "ValueSet-ng-lgas-vs.html" : "NG LGAs VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-nutritional-screening-result-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgNutritionalScreeningResultCS",
+    "title" : "Nutritional Screening Result Codes",
+    "description" : "Codes used for representing the patient's nutritional screening result.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.90"],
+    "uses" : {
+    },
+    "ValueSet-ng-nutritional-screening-result-vs.html" : "Nutritional Screening Result"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-nutritional-suppliments-provided-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgNutritionalSupplimentsProvidedCS",
+    "title" : "Nutritional Suppliments Provided Codes",
+    "description" : "Code used for representing the patient's nutritional suppliments provided.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.91"],
+    "uses" : {
+    },
+    "ValueSet-ng-nutritional-suppliments-provided-vs.html" : "Nutritional Suppliments Provided"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgOrganizationOwnerCS",
+    "title" : "NG Location Owner CS",
+    "description" : "This CodeSystem defines Immunization Location Owner.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.93"],
+    "uses" : {
+    },
+    "ValueSet-ng-organization-owner-vs.html" : "NG Location Owner"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPatientEducationLevelCS",
+    "title" : "HIV Patient Education Level Codes",
+    "description" : "Codes used for indicating the patient's highest qualification.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.94"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPatientIdentifierTypeCS",
+    "title" : "NG Patient Identifier Type CS",
+    "description" : "This CodeSystem defines list of options for uniquely Identifting a Client",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.95"],
+    "uses" : {
+    },
+    "ValueSet-ng-client-identifier-vs.html" : "NG Client Identifier VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pregnancy-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPregnancyStatusCS",
+    "title" : "NG Client Pregnancy Status CS",
+    "description" : "This CodeSystem defines list of options for Pregnancy status of a Client",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.97"],
+    "uses" : {
+    },
+    "ValueSet-ng-pregnancy-status-vs.html" : "NG Clinical Status VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgProvenanceActivityCS",
+    "title" : "NG Provenance Activity Codes",
+    "description" : "Local CodeSystem defining provenance activity codes for data lifecycle operations such as anonymization, de-identification, labeling, creation, and deletion.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.98"],
+    "uses" : {
+    },
+    "ValueSet-ng-provenance-activity-vs.html" : "NG Provenance Activity Codes"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgRelationshipsCS",
+    "title" : "NG Relationships CS",
+    "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.99"],
+    "uses" : {
+    },
+    "ValueSet-ng-relationships-vs.html" : "NG Relationships VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgSiblingHealthStatusCS",
+    "title" : "NG Health Status CS",
+    "description" : "This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.100"],
+    "uses" : {
+    },
+    "ValueSet-ng-sibling-health-status-vs.html" : "NG Sibling Health Status VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgStatesCS",
+    "title" : "NG States in Nigeria CS",
+    "description" : "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.101"],
+    "uses" : {
+    },
+    "ValueSet-ng-states-vs.html" : "NG States VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-screening-diagnostic-test-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTBScreeningDiagnosticTestTypeCS",
+    "title" : "TB Screening Diagnostic Test Type Codes CodeSystem",
+    "description" : "A list of codes describing the types of diagnostic tests that can be peformed on the specimen taken during TB screening.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.102"],
+    "uses" : {
+    },
+    "ValueSet-ng-tb-screening-diagnostic-test-type-vs.html" : "TB Screening Diagnostic Test Type Codes ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTbTPTProphylaxisTypeCS",
+    "title" : "TB TPT Prophylaxis Type Codes",
+    "description" : "A list of codes describing the TPT prophylaxis type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.105"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-tb-tpt-prophylaxis-type-vs.html" : "TB TPT Prophylaxis Type Codes"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-treatment-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTBTreatmentStatusCS",
+    "title" : "TB Treatment Status Codes CodeSystem",
+    "description" : "A list of codes describing the status of TB treatment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.106"],
+    "uses" : {
+    },
+    "ValueSet-ng-tb-treatment-status-value-set.html" : "TB Treatment Status Codes CodeSystem"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-icd-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgVaccineLibraryICD11CS",
+    "title" : "NG IMMZ.D.DE4 ICD11 Vaccine Library",
+    "description" : "ICD11 code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x].",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.107"],
+    "uses" : {
+    },
+    "ConceptMap-NgVaccineLocal-to-ICD11.html" : "NG Local Vaccine Codes → ICD11",
+    "ValueSet-ng-vaccine-icd-vs.html" : "NG Vaccine ICD ValueSet"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgVaccineLocalCS",
+    "title" : "NG IMMZ.D.DE4 Vaccine Local Codes (Dose-labelled)",
+    "description" : "Locally defined vaccine codes used for data capture and UI labels. Doses are local; external systems map at antigen/product level.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.109"],
+    "uses" : {
+    },
+    "ConceptMap-NgVaccineLocal-to-ICD11.html" : "NG Local Vaccine Codes → ICD11",
+    "ValueSet-ng-vaccine-local-vs.html" : "NG Vaccine Local ValueSet",
+    "ConceptMap-NgVaccineLocal-to-SNOMED.html" : "NG Local Vaccine Codes → SNOMED CT"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local-to-snomed-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgVaccineLibrarySnomedCS",
+    "title" : "NG IMMZ.D.DE4 Vaccine Library (SNOMED CT)",
+    "description" : "SNOMED-CT code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x].",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.108"],
+    "uses" : {
+    },
+    "ValueSet-ng-vaccine-snomed-vs.html" : "NG Vaccine SNOMED ValueSet",
+    "ConceptMap-NgVaccineLocal-to-SNOMED.html" : "NG Local Vaccine Codes → SNOMED CT"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-wards-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgWardsCS",
+    "title" : "NG Administrative Wards CS",
+    "description" : "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.110"],
+    "uses" : {
+    },
+    "ValueSet-ng-wards-vs.html" : "NG Wards VS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgYesNoCS",
+    "title" : "Yes/No Codes",
+    "description" : "Yes/No Codes Represented as Boolean.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.111"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ValueSet-ng-yes-no-vs.html" : "NG Yes/No Codes VS"
+  },
+  {
+    "url" : "urn:ietf:bcp:47",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Ietf3066",
+    "title" : "Tags for the Identification of Languages",
+    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ISO3166Part1",
+    "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+    "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+    "oids" : ["1.0.3166.1"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166:-2",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ISO3166Part2",
+    "title" : "ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code",
+    "description" : "ISO 3166-2 establishes a code that represents the names of the principal administrative divisions, or similar areas, of the countries and entities included in ISO 3166-1.",
+    "oids" : ["1.0.3166.2"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+  }]
+}

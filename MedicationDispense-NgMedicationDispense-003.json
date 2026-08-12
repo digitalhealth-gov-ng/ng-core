@@ -1,0 +1,36 @@
+{
+  "resourceType" : "MedicationDispense",
+  "id" : "NgMedicationDispense-003",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense NgMedicationDispense-003</b></p><a name=\"NgMedicationDispense-003\"> </a><a name=\"hcNgMedicationDispense-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-medication-dispense.html\">NG MedicationDispense</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:\">Insulin (short-acting) 100 IU/mL vial</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></td></tr></table><p><b>quantity</b>: 10 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><p><b>whenHandedOver</b>: 2025-11-04 12:40:00+0100</p><p><b>note</b>: </p><blockquote><div><p>Keep refrigerated. Do not freeze.</p>\n</div></blockquote><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Inject 10 units subcutaneously before breakfast daily.</td></tr></table></div>"
+  },
+  "status" : "completed",
+  "medicationCodeableConcept" : {
+    "text" : "Insulin (short-acting) 100 IU/mL vial"
+  },
+  "subject" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/NgPractitioner-001"
+    }
+  }],
+  "quantity" : {
+    "value" : 10,
+    "unit" : "mL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mL"
+  },
+  "whenHandedOver" : "2025-11-04T12:40:00+01:00",
+  "note" : [{
+    "text" : "Keep refrigerated. Do not freeze."
+  }],
+  "dosageInstruction" : [{
+    "text" : "Inject 10 units subcutaneously before breakfast daily."
+  }]
+}

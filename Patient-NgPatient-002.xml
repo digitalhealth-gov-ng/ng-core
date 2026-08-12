@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="NgPatient-002"/>
+  <meta>
+    <lastUpdated value="2025-11-04T09:10:00Z"/>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient NgPatient-002</b></p><a name="NgPatient-002"> </a><a name="hcNgPatient-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2025-11-04 09:10:00+0000</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-patient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>mrn/KNH-2025-33445</li><li>insurance no/NHIA-0011223344</li><li>mobile/08031234567</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">No. 8 Lafia Road Kano KN </td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: ">:</td><td colspan="3"><ul><li>Zainab Abdullahi </li><li>Kano KN </li><li><a href="tel:+2348031112233">+2348031112233</a></li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+        <code value="NIN"/>
+      </coding>
+    </type>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+    <value value="12345678901"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+        <code value="MRN"/>
+      </coding>
+    </type>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+    <value value="KNH-2025-33445"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+        <code value="INSUR"/>
+      </coding>
+    </type>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+    <value value="NHIA-0011223344"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+        <code value="MOBILE"/>
+      </coding>
+    </type>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+    <value value="08031234567"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Abdullahi"/>
+    <given value="Musa"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1987-07-06"/>
+  <address>
+    <line value="No. 8 Lafia Road"/>
+    <city value="Kano"/>
+    <district value="kn-kano-municipal"/>
+    <state value="KN"/>
+  </address>
+  <contact>
+    <relationship>
+      <text value="Sister"/>
+    </relationship>
+    <name>
+      <family value="Abdullahi"/>
+      <given value="Zainab"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+2348031112233"/>
+    </telecom>
+    <address>
+      <city value="Kano"/>
+      <district value="kn-kano-municipal"/>
+      <state value="KN"/>
+    </address>
+  </contact>
+</Patient>

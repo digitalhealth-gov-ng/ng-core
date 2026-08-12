@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Immunization/NgImmunization-003> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgImmunization-003"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization NgImmunization-003</b></p><a name=\"NgImmunization-003\"> </a><a name=\"hcNgImmunization-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-immunization.html\">NG Immunization</a></p></div><p><b>NG Vaccine Contraindications</b>: <span title=\"Codes:{http://snomed.info/sct 419076005}\">Mild seasonal allergies - assessed, not a contraindication to vaccination</span></p><p><b>NG Vaccine Contraindications</b>: <span title=\"Codes:{http://snomed.info/sct 386661006}\">Low-grade fever (37.8°C) - assessed by clinician, vaccination approved</span></p><p><b>NG Immunization Contraindicated</b>: false</p><p><b>NG Next Dose Date</b>: 2026-05-18</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local IMMZ.Z.DE28}\">Tetanus Diphtheria</span></p><p><b>patient</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>occurrence</b>: 2025-11-04 09:10:00+0100</p><p><b>manufacturer</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>lotNumber</b>: TD25-0300</p><p><b>expirationDate</b>: 2027-12-31</p><p><b>site</b>: <span title=\"Codes:\">Left deltoid</span></p><p><b>route</b>: <span title=\"Codes:\">Intramuscular</span></p><p><b>doseQuantity</b>: 0.5 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Hepatitis B Primary Series</td><td><span title=\"Codes:{http://snomed.info/sct 66071002}\">Viral hepatitis type B</span></td><td>2</td><td>3</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:419076005 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "419076005" ] ;
+         fhir:Coding.display [ fhir:value "Allergic reaction (disorder)" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Mild seasonal allergies - assessed, not a contraindication to vaccination" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:386661006 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "386661006" ] ;
+         fhir:Coding.display [ fhir:value "Fever" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Low-grade fever (37.8°C) - assessed by clinician, vaccination approved" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-contraindicated" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-next-dose-date" ] ;
+     fhir:Extension.valueDate [ fhir:value "2026-05-18"^^xsd:date ]
+  ] ;
+  fhir:Immunization.status [ fhir:value "completed"] ;
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local" ] ;
+       fhir:Coding.code [ fhir:value "IMMZ.Z.DE28" ] ;
+       fhir:Coding.display [ fhir:value "Tetanus Diphtheria" ]
+     ]
+  ] ;
+  fhir:Immunization.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] ;
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2025-11-04T09:10:00+01:00"^^xsd:dateTime] ;
+  fhir:Immunization.manufacturer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-001> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-001" ]
+  ] ;
+  fhir:Immunization.lotNumber [ fhir:value "TD25-0300"] ;
+  fhir:Immunization.expirationDate [ fhir:value "2027-12-31"^^xsd:date] ;
+  fhir:Immunization.site [
+     fhir:CodeableConcept.text [ fhir:value "Left deltoid" ]
+  ] ;
+  fhir:Immunization.route [
+     fhir:CodeableConcept.text [ fhir:value "Intramuscular" ]
+  ] ;
+  fhir:Immunization.doseQuantity [
+     fhir:Quantity.value [ fhir:value "0.5"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "mL" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "mL" ]
+  ] ;
+  fhir:Immunization.performer [
+     fhir:index 0 ;
+     fhir:Immunization.performer.actor [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-001> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-001" ]
+     ]
+  ] ;
+  fhir:Immunization.protocolApplied [
+     fhir:index 0 ;
+     fhir:Immunization.protocolApplied.series [ fhir:value "Hepatitis B Primary Series" ] ;
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:66071002 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "66071002" ] ;
+         fhir:Coding.display [ fhir:value "Viral hepatitis type B" ]
+       ]
+     ] ;
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "2"^^xsd:positiveInteger ] ;
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "3"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Immunization/NgImmunization-003.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

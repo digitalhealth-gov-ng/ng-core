@@ -1,0 +1,75 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-hiv-int-lab-eid-indication-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-int-lab-eid-indication-vs</b></p><a name=\"ng-hiv-int-lab-eid-indication-vs\"> </a><a name=\"hcng-hiv-int-lab-eid-indication-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-indication-at-birth\">eid-indication-at-birth</a></td><td style=\"color: #cccccc\">EID at birth</td><td>Early infant diagnosis requested at birth.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-indication-six-eight-weeks\">eid-indication-six-eight-weeks</a></td><td style=\"color: #cccccc\">EID at 6–8 weeks</td><td>Early infant diagnosis requested at six to eight weeks.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-indication-two-twelve-months\">eid-indication-two-twelve-months</a></td><td style=\"color: #cccccc\">EID at 2–12 months</td><td>Early infant diagnosis requested between two and twelve months.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-indication-repeat-invalid\">eid-indication-repeat-invalid</a></td><td style=\"color: #cccccc\">Repeat because of invalid test</td><td>The EID test is repeated because a previous result was invalid.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-indication-after-breastfeeding\">eid-indication-after-breastfeeding</a></td><td style=\"color: #cccccc\">Repeat after cessation of breastfeeding</td><td>Repeat EID at least six weeks after the last exposure to breast milk.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-eid-indication-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.83"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivIntLabEidIndicationVS",
+  "title" : "NG HIV Integrated Laboratory EID Indication",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-28",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Early-infant-diagnosis indications printed on the integrated laboratory form.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs",
+      "concept" : [{
+        "code" : "eid-indication-at-birth"
+      },
+      {
+        "code" : "eid-indication-six-eight-weeks"
+      },
+      {
+        "code" : "eid-indication-two-twelve-months"
+      },
+      {
+        "code" : "eid-indication-repeat-invalid"
+      },
+      {
+        "code" : "eid-indication-after-breastfeeding"
+      }]
+    }]
+  }
+}

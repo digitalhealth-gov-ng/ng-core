@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-nutritional-suppliments-provided-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-nutritional-suppliments-provided-cs</b></p><a name="ng-nutritional-suppliments-provided-cs"> </a><a name="hcng-nutritional-suppliments-provided-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-nutritional-suppliments-provided-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">RUTF<a name="ng-nutritional-suppliments-provided-cs-RUTF"> </a></td><td>Ready-to-Use Therapeutic Food</td></tr><tr><td style="white-space:nowrap">RUSF<a name="ng-nutritional-suppliments-provided-cs-RUSF"> </a></td><td>Ready-to-Use Supplementary Food</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-nutritional-suppliments-provided-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.91"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgNutritionalSupplimentsProvidedCS"/>
+  <title value="Nutritional Suppliments Provided Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Code used for representing the patient's nutritional suppliments provided."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="RUTF"/>
+    <display value="Ready-to-Use Therapeutic Food"/>
+  </concept>
+  <concept>
+    <code value="RUSF"/>
+    <display value="Ready-to-Use Supplementary Food"/>
+  </concept>
+</CodeSystem>

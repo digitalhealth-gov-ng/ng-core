@@ -1,0 +1,285 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-pharmacy-order-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-pharmacy-order-cs</b></p><a name=\"ng-hiv-pharmacy-order-cs\"> </a><a name=\"hcng-hiv-pharmacy-order-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">adult-tdf-3tc-dtg-300-300-50<a name=\"ng-hiv-pharmacy-order-cs-adult-tdf-3tc-dtg-300-300-50\"> </a></td><td>Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-tdf-3tc-efv-300-300-400<a name=\"ng-hiv-pharmacy-order-cs-adult-tdf-3tc-efv-300-300-400\"> </a></td><td>Tenofovir/Lamivudine/Efavirenz 300/300/400 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-taf-ftc-dtg-25-200-50<a name=\"ng-hiv-pharmacy-order-cs-adult-taf-ftc-dtg-25-200-50\"> </a></td><td>Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-taf-3tc-dtg-25-300-50<a name=\"ng-hiv-pharmacy-order-cs-adult-taf-3tc-dtg-25-300-50\"> </a></td><td>Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-abc-3tc-600-300<a name=\"ng-hiv-pharmacy-order-cs-adult-abc-3tc-600-300\"> </a></td><td>Abacavir/Lamivudine 600/300 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-azt-3tc-300-150<a name=\"ng-hiv-pharmacy-order-cs-adult-azt-3tc-300-150\"> </a></td><td>Zidovudine/Lamivudine 300/150 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-tdf-3tc-300-300<a name=\"ng-hiv-pharmacy-order-cs-adult-tdf-3tc-300-300\"> </a></td><td>Tenofovir/Lamivudine 300/300 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-azt-300<a name=\"ng-hiv-pharmacy-order-cs-adult-azt-300\"> </a></td><td>Zidovudine 300 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-atv-r-300-100<a name=\"ng-hiv-pharmacy-order-cs-adult-atv-r-300-100\"> </a></td><td>Atazanavir/Ritonavir 300/100 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-3tc-150<a name=\"ng-hiv-pharmacy-order-cs-adult-3tc-150\"> </a></td><td>Lamivudine 150 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-drv-600<a name=\"ng-hiv-pharmacy-order-cs-adult-drv-600\"> </a></td><td>Darunavir 600 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-rtv-100<a name=\"ng-hiv-pharmacy-order-cs-adult-rtv-100\"> </a></td><td>Ritonavir 100 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-drv-r-400-50<a name=\"ng-hiv-pharmacy-order-cs-adult-drv-r-400-50\"> </a></td><td>Darunavir/Ritonavir 400/50 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">adult-dtg-50<a name=\"ng-hiv-pharmacy-order-cs-adult-dtg-50\"> </a></td><td>Dolutegravir 50 mg</td><td>Adult ART formulation. The source form permits once- or twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-abc-3tc-120-60<a name=\"ng-hiv-pharmacy-order-cs-paediatric-abc-3tc-120-60\"> </a></td><td>Abacavir/Lamivudine 120/60 mg</td><td>Paediatric ART formulation. The source form permits once- or twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-azt-3tc-60-30<a name=\"ng-hiv-pharmacy-order-cs-paediatric-azt-3tc-60-30\"> </a></td><td>Zidovudine/Lamivudine 60/30 mg</td><td>Paediatric ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-nvp-50-per-5ml<a name=\"ng-hiv-pharmacy-order-cs-paediatric-nvp-50-per-5ml\"> </a></td><td>Nevirapine 50 mg/5 mL</td><td>Paediatric ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-abc-60<a name=\"ng-hiv-pharmacy-order-cs-paediatric-abc-60\"> </a></td><td>Abacavir 60 mg</td><td>Paediatric ART formulation. The source form permits once- or twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-lpv-r-100-25<a name=\"ng-hiv-pharmacy-order-cs-paediatric-lpv-r-100-25\"> </a></td><td>Lopinavir/Ritonavir 100/25 mg</td><td>Paediatric ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-ral-25<a name=\"ng-hiv-pharmacy-order-cs-paediatric-ral-25\"> </a></td><td>Raltegravir 25 mg</td><td>Paediatric ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-azt-10-per-ml<a name=\"ng-hiv-pharmacy-order-cs-paediatric-azt-10-per-ml\"> </a></td><td>Zidovudine 10 mg/mL</td><td>Paediatric ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-dtg-10<a name=\"ng-hiv-pharmacy-order-cs-paediatric-dtg-10\"> </a></td><td>Dolutegravir 10 mg</td><td>Paediatric ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-dtg-5<a name=\"ng-hiv-pharmacy-order-cs-paediatric-dtg-5\"> </a></td><td>Dolutegravir 5 mg</td><td>Paediatric ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-drv-150<a name=\"ng-hiv-pharmacy-order-cs-paediatric-drv-150\"> </a></td><td>Darunavir 150 mg</td><td>Paediatric ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-drv-75<a name=\"ng-hiv-pharmacy-order-cs-paediatric-drv-75\"> </a></td><td>Darunavir 75 mg</td><td>Paediatric ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-rtv-25<a name=\"ng-hiv-pharmacy-order-cs-paediatric-rtv-25\"> </a></td><td>Ritonavir 25 mg</td><td>Paediatric ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">paediatric-tdf-3tc-dtg-300-300-50<a name=\"ng-hiv-pharmacy-order-cs-paediatric-tdf-3tc-dtg-300-300-50\"> </a></td><td>Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg</td><td>ART formulation listed in the paediatric section of the source form; dosing should follow the applicable dosing wheel or chart.</td></tr><tr><td style=\"white-space:nowrap\">oi-cotrimoxazole-120<a name=\"ng-hiv-pharmacy-order-cs-oi-cotrimoxazole-120\"> </a></td><td>Co-trimoxazole 120 mg</td><td>Drug for opportunistic-infection prophylaxis or treatment. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">oi-cotrimoxazole-960<a name=\"ng-hiv-pharmacy-order-cs-oi-cotrimoxazole-960\"> </a></td><td>Co-trimoxazole 960 mg</td><td>Drug for opportunistic-infection prophylaxis or treatment. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">oi-fluconazole<a name=\"ng-hiv-pharmacy-order-cs-oi-fluconazole\"> </a></td><td>Fluconazole</td><td>Drug for opportunistic-infection prophylaxis or treatment; strength is entered separately.</td></tr><tr><td style=\"white-space:nowrap\">oi-flucytosine-500<a name=\"ng-hiv-pharmacy-order-cs-oi-flucytosine-500\"> </a></td><td>Flucytosine 500 mg</td><td>The source form notes 100 mg/kg in four divided doses and preprints four-times-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">oi-cotrimoxazole-inh-pyridoxine-960-300-25<a name=\"ng-hiv-pharmacy-order-cs-oi-cotrimoxazole-inh-pyridoxine-960-300-25\"> </a></td><td>Co-trimoxazole/Isoniazid/Pyridoxine 960/300/25 mg</td><td>Fixed-dose combination listed under drugs for opportunistic-infection prophylaxis or treatment.</td></tr><tr><td style=\"white-space:nowrap\">oi-nystatin<a name=\"ng-hiv-pharmacy-order-cs-oi-nystatin\"> </a></td><td>Nystatin</td><td>Drug for opportunistic-infection prophylaxis or treatment; strength is entered separately.</td></tr><tr><td style=\"white-space:nowrap\">oi-liposomal-amphotericin-b-50<a name=\"ng-hiv-pharmacy-order-cs-oi-liposomal-amphotericin-b-50\"> </a></td><td>Liposomal Amphotericin B 50 mg</td><td>The source form notes 3 mg/kg intravenously daily.</td></tr><tr><td style=\"white-space:nowrap\">tpt-isoniazid-100<a name=\"ng-hiv-pharmacy-order-cs-tpt-isoniazid-100\"> </a></td><td>Isoniazid 100 mg</td><td>Drug for TB preventive therapy. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">tpt-isoniazid-300<a name=\"ng-hiv-pharmacy-order-cs-tpt-isoniazid-300\"> </a></td><td>Isoniazid 300 mg</td><td>Drug for TB preventive therapy. The source form preprints once-daily frequency.</td></tr><tr><td style=\"white-space:nowrap\">tpt-isoniazid-rifapentine-3hp<a name=\"ng-hiv-pharmacy-order-cs-tpt-isoniazid-rifapentine-3hp\"> </a></td><td>Isoniazid/Rifapentine (3HP)</td><td>TB preventive therapy regimen listed on the source form; strength is entered separately.</td></tr><tr><td style=\"white-space:nowrap\">tpt-other<a name=\"ng-hiv-pharmacy-order-cs-tpt-other\"> </a></td><td>Other TB preventive therapy drug or regimen</td><td>A TB preventive therapy drug or regimen not otherwise listed; specify separately.</td></tr><tr><td style=\"white-space:nowrap\">prep-cabotegravir-200-per-ml-3ml-vial<a name=\"ng-hiv-pharmacy-order-cs-prep-cabotegravir-200-per-ml-3ml-vial\"> </a></td><td>Cabotegravir 200 mg/mL (3 mL vial)</td><td>PrEP product listed on the source form.</td></tr><tr><td style=\"white-space:nowrap\">prep-lenacapavir-600-tablet<a name=\"ng-hiv-pharmacy-order-cs-prep-lenacapavir-600-tablet\"> </a></td><td>Lenacapavir 600 mg tablet</td><td>PrEP product listed on the source form.</td></tr><tr><td style=\"white-space:nowrap\">prep-lenacapavir-927-per-3ml-injection<a name=\"ng-hiv-pharmacy-order-cs-prep-lenacapavir-927-per-3ml-injection\"> </a></td><td>Lenacapavir 927 mg/3 mL injection</td><td>PrEP product listed on the source form.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.60" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivPharmacyOrderCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV Pharmacy Order Form Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local coded medicine products transcribed from the Nigeria Combined Pharmacy\nOrder Form revised November 2025. The codes distinguish products by program\ncategory, ingredient combination and preprinted strength."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "41"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-tdf-3tc-dtg-300-300-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-tdf-3tc-efv-300-300-400" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine/Efavirenz 300/300/400 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-taf-ftc-dtg-25-200-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-taf-3tc-dtg-25-300-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-abc-3tc-600-300" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abacavir/Lamivudine 600/300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-azt-3tc-300-150" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine/Lamivudine 300/150 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-tdf-3tc-300-300" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine 300/300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-azt-300" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine 300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-atv-r-300-100" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atazanavir/Ritonavir 300/100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-3tc-150" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lamivudine 150 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-drv-600" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir 600 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-rtv-100" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ritonavir 100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-drv-r-400-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir/Ritonavir 400/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "adult-dtg-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dolutegravir 50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Adult ART formulation. The source form permits once- or twice-daily frequency." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-abc-3tc-120-60" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abacavir/Lamivudine 120/60 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form permits once- or twice-daily frequency." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-azt-3tc-60-30" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine/Lamivudine 60/30 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-nvp-50-per-5ml" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nevirapine 50 mg/5 mL" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-abc-60" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abacavir 60 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form permits once- or twice-daily frequency." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-lpv-r-100-25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lopinavir/Ritonavir 100/25 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-ral-25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Raltegravir 25 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-azt-10-per-ml" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zidovudine 10 mg/mL" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints twice-daily frequency." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-dtg-10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dolutegravir 10 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-dtg-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dolutegravir 5 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-drv-150" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir 150 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-drv-75" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Darunavir 75 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-rtv-25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ritonavir 25 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Paediatric ART formulation. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "paediatric-tdf-3tc-dtg-300-300-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ART formulation listed in the paediatric section of the source form; dosing should follow the applicable dosing wheel or chart." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-cotrimoxazole-120" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Co-trimoxazole 120 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug for opportunistic-infection prophylaxis or treatment. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-cotrimoxazole-960" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Co-trimoxazole 960 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug for opportunistic-infection prophylaxis or treatment. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-fluconazole" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fluconazole" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug for opportunistic-infection prophylaxis or treatment; strength is entered separately." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-flucytosine-500" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Flucytosine 500 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The source form notes 100 mg/kg in four divided doses and preprints four-times-daily frequency." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-cotrimoxazole-inh-pyridoxine-960-300-25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Co-trimoxazole/Isoniazid/Pyridoxine 960/300/25 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Fixed-dose combination listed under drugs for opportunistic-infection prophylaxis or treatment." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-nystatin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nystatin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug for opportunistic-infection prophylaxis or treatment; strength is entered separately." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oi-liposomal-amphotericin-b-50" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liposomal Amphotericin B 50 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The source form notes 3 mg/kg intravenously daily." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-isoniazid-100" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid 100 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug for TB preventive therapy. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-isoniazid-300" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid 300 mg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug for TB preventive therapy. The source form preprints once-daily frequency." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-isoniazid-rifapentine-3hp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isoniazid/Rifapentine (3HP)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "TB preventive therapy regimen listed on the source form; strength is entered separately." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tpt-other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other TB preventive therapy drug or regimen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A TB preventive therapy drug or regimen not otherwise listed; specify separately." ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prep-cabotegravir-200-per-ml-3ml-vial" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cabotegravir 200 mg/mL (3 mL vial)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PrEP product listed on the source form." ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prep-lenacapavir-600-tablet" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lenacapavir 600 mg tablet" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PrEP product listed on the source form." ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prep-lenacapavir-927-per-3ml-injection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lenacapavir 927 mg/3 mL injection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PrEP product listed on the source form." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

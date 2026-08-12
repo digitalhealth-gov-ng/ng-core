@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="NgPractitionerRole-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole NgPractitionerRole-001</b></p><a name="NgPractitionerRole-001"> </a><a name="hcNgPractitionerRole-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a></p></div><p><b>period</b>: 2024-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href="Practitioner-NgPractitioner-001.html">Practitioner Kehinde Adebayo </a></p><p><b>organization</b>: <a href="Organization-NgOrganization-001.html">Organization Asokoro District Hospital</a></p><p><b>code</b>: <span title="Codes:">Obstetrician / ANC Clinician</span></p></div>
+  </text>
+  <period>
+    <start value="2024-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/NgPractitioner-001"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/NgOrganization-001"/>
+  </organization>
+  <code>
+    <text value="Obstetrician / ANC Clinician"/>
+  </code>
+</PractitionerRole>

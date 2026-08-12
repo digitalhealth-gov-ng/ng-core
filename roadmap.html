@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Roadmap - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"28"}
+    h3,h4,h5,h6{--heading-prefix:"28"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Roadmap</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Roadmap</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#roadmap-principles" id="markdown-toc-roadmap-principles">Roadmap Principles</a></li>
+  <li><a href="#roadmap-context" id="markdown-toc-roadmap-context">Roadmap Context</a></li>
+  <li><a href="#roadmap-horizons" id="markdown-toc-roadmap-horizons">Roadmap Horizons</a></li>
+  <li><a href="#horizon-1-foundation" id="markdown-toc-horizon-1-foundation">Horizon 1: Foundation</a>    <ul>
+      <li><a href="#priority-activities" id="markdown-toc-priority-activities">Priority Activities</a></li>
+      <li><a href="#priority-artefacts" id="markdown-toc-priority-artefacts">Priority Artefacts</a></li>
+      <li><a href="#expected-maturity" id="markdown-toc-expected-maturity">Expected Maturity</a></li>
+    </ul>
+  </li>
+  <li><a href="#horizon-2-programme-alignment" id="markdown-toc-horizon-2-programme-alignment">Horizon 2: Programme Alignment</a>    <ul>
+      <li><a href="#priority-programme-areas" id="markdown-toc-priority-programme-areas">Priority Programme Areas</a></li>
+      <li><a href="#priority-activities-1" id="markdown-toc-priority-activities-1">Priority Activities</a></li>
+      <li><a href="#programme-extension-pattern" id="markdown-toc-programme-extension-pattern">Programme Extension Pattern</a></li>
+    </ul>
+  </li>
+  <li><a href="#horizon-3-conformance-and-adoption" id="markdown-toc-horizon-3-conformance-and-adoption">Horizon 3: Conformance and Adoption</a>    <ul>
+      <li><a href="#priority-activities-2" id="markdown-toc-priority-activities-2">Priority Activities</a></li>
+      <li><a href="#conformance-pathways" id="markdown-toc-conformance-pathways">Conformance Pathways</a></li>
+    </ul>
+  </li>
+  <li><a href="#horizon-4-scale-and-optimisation" id="markdown-toc-horizon-4-scale-and-optimisation">Horizon 4: Scale and Optimisation</a>    <ul>
+      <li><a href="#priority-activities-3" id="markdown-toc-priority-activities-3">Priority Activities</a></li>
+      <li><a href="#expected-outcomes" id="markdown-toc-expected-outcomes">Expected Outcomes</a></li>
+    </ul>
+  </li>
+  <li><a href="#content-prioritisation" id="markdown-toc-content-prioritisation">Content Prioritisation</a></li>
+  <li><a href="#what-nigeria-core-should-not-try-to-do-too-early" id="markdown-toc-what-nigeria-core-should-not-try-to-do-too-early">What Nigeria Core Should Not Try to Do Too Early</a></li>
+  <li><a href="#progressive-implementation-by-care-level" id="markdown-toc-progressive-implementation-by-care-level">Progressive Implementation by Care Level</a></li>
+  <li><a href="#roadmap-for-the-ng-patient-summary-and-ng-shr" id="markdown-toc-roadmap-for-the-ng-patient-summary-and-ng-shr">Roadmap for the NG Patient Summary and NG-SHR</a>    <ul>
+      <li><a href="#early-stage-first-six-months" id="markdown-toc-early-stage-first-six-months">Early Stage (first six months)</a></li>
+      <li><a href="#intermediate-stage-first-one-year" id="markdown-toc-intermediate-stage-first-one-year">Intermediate Stage (first one year)</a></li>
+      <li><a href="#mature-stage" id="markdown-toc-mature-stage">Mature Stage</a></li>
+    </ul>
+  </li>
+  <li><a href="#roadmap-for-registries-and-shared-services" id="markdown-toc-roadmap-for-registries-and-shared-services">Roadmap for Registries and Shared Services</a>    <ul>
+      <li><a href="#early-stage" id="markdown-toc-early-stage">Early Stage</a></li>
+      <li><a href="#intermediate-stage" id="markdown-toc-intermediate-stage">Intermediate Stage</a></li>
+      <li><a href="#mature-stage-1" id="markdown-toc-mature-stage-1">Mature Stage</a></li>
+    </ul>
+  </li>
+  <li><a href="#roadmap-for-nhmisdhis2-alignment" id="markdown-toc-roadmap-for-nhmisdhis2-alignment">Roadmap for NHMIS/DHIS2 Alignment</a>    <ul>
+      <li><a href="#early-stage-1" id="markdown-toc-early-stage-1">Early Stage</a></li>
+      <li><a href="#intermediate-stage-1" id="markdown-toc-intermediate-stage-1">Intermediate Stage</a></li>
+      <li><a href="#mature-stage-2" id="markdown-toc-mature-stage-2">Mature Stage</a></li>
+    </ul>
+  </li>
+  <li><a href="#roadmap-for-terminology" id="markdown-toc-roadmap-for-terminology">Roadmap for Terminology</a>    <ul>
+      <li><a href="#early-stage-2" id="markdown-toc-early-stage-2">Early Stage</a></li>
+      <li><a href="#intermediate-stage-2" id="markdown-toc-intermediate-stage-2">Intermediate Stage</a></li>
+      <li><a href="#mature-stage-3" id="markdown-toc-mature-stage-3">Mature Stage</a></li>
+    </ul>
+  </li>
+  <li><a href="#roadmap-for-security-consent-and-trust" id="markdown-toc-roadmap-for-security-consent-and-trust">Roadmap for Security, Consent, and Trust</a>    <ul>
+      <li><a href="#early-stage-3" id="markdown-toc-early-stage-3">Early Stage</a></li>
+      <li><a href="#intermediate-stage-3" id="markdown-toc-intermediate-stage-3">Intermediate Stage</a></li>
+      <li><a href="#mature-stage-4" id="markdown-toc-mature-stage-4">Mature Stage</a></li>
+    </ul>
+  </li>
+  <li><a href="#release-cadence" id="markdown-toc-release-cadence">Release Cadence</a></li>
+  <li><a href="#governance-and-decision-making" id="markdown-toc-governance-and-decision-making">Governance and Decision-Making</a></li>
+  <li><a href="#how-new-content-is-added-to-nigeria-core" id="markdown-toc-how-new-content-is-added-to-nigeria-core">How New Content Is Added to Nigeria Core</a></li>
+  <li><a href="#key-risks-and-mitigation" id="markdown-toc-key-risks-and-mitigation">Key Risks and Mitigation</a></li>
+  <li><a href="#success-measures" id="markdown-toc-success-measures">Success Measures</a></li>
+  <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+</ul>
+
+</div>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>The <strong>Nigeria Core Roadmap</strong> describes the intended direction for the Nigeria Core FHIR Implementation Guide as Nigeria’s digital health ecosystem matures.</p>
+
+<p>Nigeria is still in a nascent but rapidly evolving phase of its digital health journey. Many systems are in active deployment, but national-scale interoperability, routine conformance testing, shared registries, standardised terminology services, and consistent use of FHIR across programmes are still emerging.</p>
+
+<p>For this reason, Nigeria Core is intentionally designed as a <strong>minimum viable national interoperability foundation</strong>. It establishes a common baseline while allowing programmes, states, regulators, vendors, and implementing partners to adopt incrementally.</p>
+
+<p>This roadmap explains how Nigeria Core is expected to grow over time without creating unrealistic requirements for systems that are still at early stages of digital maturity.</p>
+
+<h3 id="roadmap-principles">Roadmap Principles</h3>
+
+<p>Nigeria Core is guided by the following principles:</p>
+
+<ul>
+  <li><strong>Start with the minimum useful national core.</strong> The first releases should focus on the smallest set of profiles, terminology, identifiers, and interactions needed to enable real interoperability.</li>
+  <li><strong>Be permissive before becoming prescriptive.</strong> Early versions should support adoption and learning, while later versions may strengthen conformance once implementation experience matures.</li>
+  <li><strong>Support incremental adoption.</strong> Systems may conform by profile, by RESTful interaction, by data block, by programme use case, or by full Shared Health Record participation.</li>
+  <li><strong>Reuse international standards.</strong> Nigeria Core should align with FHIR R4, IPS, SMART App Launch, WHO SMART Guidelines, IHE/OpenHIE patterns, and applicable ISO/NIS standards where appropriate.</li>
+  <li><strong>Adapt to Nigerian realities.</strong> The guide must support low-connectivity settings, paper-to-digital transition, decentralised state systems, programme systems, regulatory systems, and hybrid national architecture.</li>
+  <li><strong>Prioritise implementation over documentation.</strong> Profiles and guidance should be tested in sandbox, Connectathon, pilot, or real-world environments before being treated as stable.</li>
+  <li><strong>Harmonise rather than replace.</strong> Nigeria Core should harmonise existing health data standards, programme datasets, registries, and implementation guides rather than forcing abrupt replacement.</li>
+  <li><strong>Build trust through conformance.</strong> The guide should progressively support validation, vendor onboarding, sandbox testing, certification readiness, and procurement alignment.</li>
+  <li><strong>Keep the patient summary portable.</strong> The NG Patient Summary and NG Shared Health Record should remain programme-agnostic, specialty-agnostic, condition-independent, and useful across PHC, secondary, and tertiary care.</li>
+  <li><strong>Evolve through governance.</strong> Changes should be reviewed through appropriate national, technical, programme, regulator, and standards governance processes.</li>
+</ul>
+
+<h3 id="roadmap-context">Roadmap Context</h3>
+
+<p>Nigeria’s health information ecosystem includes a mix of:</p>
+
+<ul>
+  <li>Paper-based primary health care records.</li>
+  <li>Patially-electronic primary health care records.</li>
+  <li>Facility EMRs at different levels of maturity.</li>
+  <li>Community health applications.</li>
+  <li>Programme-specific systems.</li>
+  <li>DHIS2-based NHMIS reporting.</li>
+  <li>Laboratory and pharmacy systems.</li>
+  <li>Insurance and claims systems.</li>
+  <li>Health Facility Registry and Health Workforce Registry initiatives.</li>
+  <li>Professional and regulator registries.</li>
+  <li>Emerging Shared Health Record and interoperability layer concepts.</li>
+  <li>Vendor and innovator systems with varied standards maturity.</li>
+</ul>
+
+<p>Nigeria Core must therefore support a gradual transition from fragmented and programme-specific systems toward standards-based, reusable, and testable interoperability.</p>
+
+<h3 id="roadmap-horizons">Roadmap Horizons</h3>
+
+<p>The Nigeria Core Roadmap is organised into four broad horizons.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Horizon</th>
+      <th>Focus</th>
+      <th>Expected Outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Horizon 1: Foundation</td>
+      <td>Establish the minimum national FHIR baseline</td>
+      <td>Draft profiles, guidance, identifiers, terminology approach, core pages, and initial sandbox testing</td>
+    </tr>
+    <tr>
+      <td>Horizon 2: Programme Alignment</td>
+      <td>Harmonise priority programme use cases</td>
+      <td>Derived programme IGs, reusable profiles, FHIR examples, NHMIS/DHIS2 mappings, and programme testing tracks</td>
+    </tr>
+    <tr>
+      <td>Horizon 3: Conformance and Adoption</td>
+      <td>Move from guidance to tested implementation</td>
+      <td>Vendor onboarding, sandbox validation, Connectathon testing, procurement alignment, and implementation feedback</td>
+    </tr>
+    <tr>
+      <td>Horizon 4: Scale and Optimisation</td>
+      <td>Mature national interoperability services</td>
+      <td>Stable registries, Shared Health Record exchange, terminology services, certification readiness, and continuous improvement</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="horizon-1-foundation">Horizon 1: Foundation</h3>
+
+<p>Horizon 1 focuses on establishing the first usable national core.</p>
+
+<h4 id="priority-activities">Priority Activities</h4>
+
+<ul>
+  <li>Publish the initial Nigeria Core IG structure.</li>
+  <li>Define common conformance requirements.</li>
+  <li>Define Must Support expectations.</li>
+  <li>Define security, consent, privacy, audit, and Provenance guidance.</li>
+  <li>Define core actor patterns for Requestors, Responders, registries, terminology services, sandbox services, and Shared Health Record services.</li>
+  <li>Establish guidance for programme IGs.</li>
+  <li>Establish NG Patient Summary guidance aligned with IPS and NIS ISO 27269.</li>
+  <li>Establish relationship guidance for NHMIS/DHIS2.</li>
+  <li>Establish guidance on registries and shared services.</li>
+  <li>Create initial examples and downloadable artefacts.</li>
+  <li>Support initial sandbox and Connectathon-style testing.</li>
+</ul>
+
+<h4 id="priority-artefacts">Priority Artefacts</h4>
+
+<ul>
+  <li>Nigeria Core Home page.</li>
+  <li>General Requirements.</li>
+  <li>Must Support.</li>
+  <li>Security.</li>
+  <li>Programme Guidance.</li>
+  <li>Clinical Notes.</li>
+  <li>Medication Management.</li>
+  <li>Basic Provenance.</li>
+  <li>Relationship With Other IGs.</li>
+  <li>Relationship With NHMIS/DHIS2.</li>
+  <li>Guidance on Registries and Shared Services.</li>
+  <li>NG Patient Summary.</li>
+  <li>Downloads.</li>
+  <li>Change Log and Roadmap.</li>
+</ul>
+
+<h4 id="expected-maturity">Expected Maturity</h4>
+
+<p>Most artefacts in Horizon 1 should be considered <strong>draft</strong> or <strong>trial-use</strong>. They are intended to support review, learning, and early implementation rather than full national enforcement.</p>
+
+<h3 id="horizon-2-programme-alignment">Horizon 2: Programme Alignment</h3>
+
+<p>Horizon 2 focuses on aligning Nigeria Core with priority health programmes and existing implementation guides.</p>
+
+<h4 id="priority-programme-areas">Priority Programme Areas</h4>
+
+<p>Programme-specific work may include:</p>
+
+<ul>
+  <li>eCHIS and community health.</li>
+  <li>MNCH.</li>
+  <li>Immunization.</li>
+  <li>HIV.</li>
+  <li>Tuberculosis.</li>
+  <li>Malaria.</li>
+  <li>Family Planning.</li>
+  <li>Nutrition.</li>
+  <li>Health logistics and supply chain.</li>
+  <li>ePharmacy and ePrescription.</li>
+  <li>Insurance and claims.</li>
+  <li>Medical devices and diagnostics.</li>
+  <li>Referral and counter-referral.</li>
+  <li>Public health reporting and analytics.</li>
+</ul>
+
+<h4 id="priority-activities-1">Priority Activities</h4>
+
+<ul>
+  <li>Map programme data dictionaries to Nigeria Core profiles.</li>
+  <li>Harmonise programme-specific FHIR IGs into or against Nigeria Core.</li>
+  <li>Define derived profiles only where programme constraints are needed.</li>
+  <li>Define programme-specific ValueSets, CodeSystems, and ConceptMaps.</li>
+  <li>Create programme-specific examples and Bundles.</li>
+  <li>Map programme data to NHMIS/DHIS2 where required.</li>
+  <li>Define programme-specific CapabilityStatements.</li>
+  <li>Define programme-specific test cases for sandbox use.</li>
+  <li>Identify gaps in Nigeria Core profiles and terminology.</li>
+  <li>Update Nigeria Core based on programme implementation feedback.</li>
+</ul>
+
+<h4 id="programme-extension-pattern">Programme Extension Pattern</h4>
+
+<p>Programme guides <strong>SHOULD</strong> follow this pattern:</p>
+
+<ol>
+  <li>Reuse Nigeria Core profiles where sufficient.</li>
+  <li>Derive programme profiles only where additional constraints are needed.</li>
+  <li>Reuse Nigeria Core identifiers and NamingSystems.</li>
+  <li>Add programme terminology through ValueSets, CodeSystems, and ConceptMaps.</li>
+  <li>Provide examples.</li>
+  <li>Define CapabilityStatements.</li>
+  <li>Test in the Nigeria Core sandbox.</li>
+  <li>Document conformance expectations.</li>
+</ol>
+
+<h3 id="horizon-3-conformance-and-adoption">Horizon 3: Conformance and Adoption</h3>
+
+<p>Horizon 3 moves Nigeria Core from guidance to tested implementation.</p>
+
+<h4 id="priority-activities-2">Priority Activities</h4>
+
+<ul>
+  <li>Establish sandbox validation pipelines.</li>
+  <li>Load Nigeria Core packages into reference FHIR servers.</li>
+  <li>Validate examples against profiles.</li>
+  <li>Test RESTful interactions and search parameters.</li>
+  <li>Test CapabilityStatements.</li>
+  <li>Test Bundle submission and validation patterns.</li>
+  <li>Test terminology expansion and validation.</li>
+  <li>Test patient summary generation and consumption.</li>
+  <li>Test registry lookup and synchronisation patterns.</li>
+  <li>Test FHIR-to-DHIS2 reporting adapters.</li>
+  <li>Test security, consent, and audit workflows.</li>
+  <li>Support vendor onboarding and implementation feedback.</li>
+  <li>Support Connectathon-style testing across tracks.</li>
+</ul>
+
+<h4 id="conformance-pathways">Conformance Pathways</h4>
+
+<p>Nigeria Core supports multiple conformance pathways.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Conformance Pathway</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Profile-only conformance</td>
+      <td>A system can produce or consume resources that conform to Nigeria Core profiles without exposing a full FHIR API.</td>
+    </tr>
+    <tr>
+      <td>Profile plus interaction conformance</td>
+      <td>A system supports Nigeria Core profiles and the required FHIR RESTful interactions.</td>
+    </tr>
+    <tr>
+      <td>Data block conformance</td>
+      <td>A system supports one or more NG Patient Summary or Shared Health Record data blocks.</td>
+    </tr>
+    <tr>
+      <td>Programme conformance</td>
+      <td>A system conforms to a derived programme IG that builds on Nigeria Core.</td>
+    </tr>
+    <tr>
+      <td>Registry conformance</td>
+      <td>A system supports registry lookup, verification, synchronisation, or authoritative reference data exchange.</td>
+    </tr>
+    <tr>
+      <td>Reporting conformance</td>
+      <td>A system maps Nigeria Core data to NHMIS/DHIS2 or programme reporting requirements.</td>
+    </tr>
+    <tr>
+      <td>Sandbox conformance</td>
+      <td>A system passes defined sandbox or Connectathon test cases.</td>
+    </tr>
+    <tr>
+      <td>Full Shared Health Record conformance</td>
+      <td>A system contributes to or consumes from the NG Shared Health Record according to defined requirements.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="horizon-4-scale-and-optimisation">Horizon 4: Scale and Optimisation</h3>
+
+<p>Horizon 4 focuses on national scale, production-grade implementation, and continuous improvement.</p>
+
+<h4 id="priority-activities-3">Priority Activities</h4>
+
+<ul>
+  <li>Stabilise core profiles and terminology.</li>
+  <li>Strengthen national terminology services.</li>
+  <li>Mature the Health Facility Registry and Health Workforce Registry integrations.</li>
+  <li>Support patient and provider identity matching.</li>
+  <li>Support production Shared Health Record exchange.</li>
+  <li>Support conformance testing linked to procurement.</li>
+  <li>Support certification-readiness for vendors.</li>
+  <li>Support national and state implementation dashboards.</li>
+  <li>Monitor IG adoption and implementation quality.</li>
+  <li>Define maintenance processes for profiles, terminology, and examples.</li>
+  <li>Align future releases with formal standards endorsement and national governance.</li>
+</ul>
+
+<h4 id="expected-outcomes">Expected Outcomes</h4>
+
+<p>At this stage, Nigeria Core should support:</p>
+
+<ul>
+  <li>More stable artefacts.</li>
+  <li>Tested implementation patterns.</li>
+  <li>More consistent vendor compliance.</li>
+  <li>Improved programme alignment.</li>
+  <li>Reduced duplicate data entry.</li>
+  <li>Better data quality.</li>
+  <li>Reusable national registries and shared services.</li>
+  <li>Safer cross-facility and cross-programme information sharing.</li>
+  <li>Stronger trust in digital health systems.</li>
+</ul>
+
+<h3 id="content-prioritisation">Content Prioritisation</h3>
+
+<p>Nigeria Core content should be prioritised based on implementation value, national need, stakeholder readiness, and testing feasibility.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Priority Level</th>
+      <th>Content Type</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Priority 1</td>
+      <td>Foundational identity and exchange</td>
+      <td>Patient, Organization, Location, Practitioner, PractitionerRole, Encounter, Observation, Condition, MedicationRequest, DiagnosticReport, DocumentReference</td>
+    </tr>
+    <tr>
+      <td>Priority 2</td>
+      <td>Shared Health Record and referral</td>
+      <td>NG Patient Summary, AllergyIntolerance, Immunization, Procedure, CarePlan, ServiceRequest, Task, Provenance</td>
+    </tr>
+    <tr>
+      <td>Priority 3</td>
+      <td>Registries and reporting</td>
+      <td>HFR, HWFR, terminology service, FHIR-to-DHIS2 mapping, MeasureReport, QuestionnaireResponse</td>
+    </tr>
+    <tr>
+      <td>Priority 4</td>
+      <td>Programme and domain extensions</td>
+      <td>Immunization, MNCH, HIV, TB, Malaria, Nutrition, Logistics, ePharmacy, Claims, Medical Devices</td>
+    </tr>
+    <tr>
+      <td>Priority 5</td>
+      <td>Advanced interoperability</td>
+      <td>Subscriptions, bulk data, digital signatures, portable certificates, decision support, analytics, AI-ready data services</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="what-nigeria-core-should-not-try-to-do-too-early">What Nigeria Core Should Not Try to Do Too Early</h3>
+
+<p>Because Nigeria is still early in its national interoperability journey, Nigeria Core should avoid over-specification in early releases.</p>
+
+<p>Early versions <strong>SHOULD NOT</strong> attempt to:</p>
+
+<ul>
+  <li>Require all systems to support every profile.</li>
+  <li>Require every facility to expose a full FHIR API immediately.</li>
+  <li>Require full national Shared Health Record participation before registries and consent services mature.</li>
+  <li>Over-constrain programme workflows before field testing.</li>
+  <li>Replace DHIS2, EMRs, registries, or programme systems.</li>
+  <li>Require advanced security patterns that are not yet implementable by most systems.</li>
+  <li>Treat untested profiles as stable national requirements.</li>
+  <li>Require perfect terminology mapping before useful implementation can begin.</li>
+  <li>Make PHC-level systems comply with the same requirements as tertiary hospital systems without a maturity pathway.</li>
+</ul>
+
+<p>Instead, Nigeria Core should create a practical pathway for systems to improve over time.</p>
+
+<h3 id="progressive-implementation-by-care-level">Progressive Implementation by Care Level</h3>
+
+<p>Nigeria Core should support different levels of implementation maturity across PHC, secondary, and tertiary care.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Care Level</th>
+      <th>Early Implementation Focus (first 12 months)</th>
+      <th>Later Implementation Focus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PHC</td>
+      <td>Patient attributes, encounter, immunization, referrals, basic observations, facility identifiers, eCHIS alignment</td>
+      <td>Patient summary generation, referral feedback, registry integration, automated DHIS2 reporting</td>
+    </tr>
+    <tr>
+      <td>Secondary Care</td>
+      <td>Referral intake, diagnostic reports, medication list, procedures, discharge summaries, DHIS2 reporting</td>
+      <td>Shared Health Record contribution, specialist summaries, conformance-tested APIs</td>
+    </tr>
+    <tr>
+      <td>Tertiary Care</td>
+      <td>Advanced EMR exchange, diagnostic reports, clinical notes, medication reconciliation, discharge summaries</td>
+      <td>Full NG Patient Summary support, specialty extensions, Shared Health Record integration, advanced conformance, DHIS2 reporting</td>
+    </tr>
+    <tr>
+      <td>Community Systems</td>
+      <td>Household, outreach, immunization, MNCH, malaria, nutrition, referrals</td>
+      <td>Synchronisation, patient summary contribution, programme reporting, registry-linked workflows</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="roadmap-for-the-ng-patient-summary-and-ng-shr">Roadmap for the NG Patient Summary and NG-SHR</h3>
+
+<p>The NG Patient Summary is a core building block for Nigeria’s Shared Health Record.</p>
+
+<h4 id="early-stage-first-six-months">Early Stage (first six months)</h4>
+
+<ul>
+  <li>Define mandatory and required-if-known data blocks.</li>
+  <li>Support PHC-to-secondary and secondary-to-tertiary referral scenarios.</li>
+  <li>Support portable patient summary examples.</li>
+  <li>Support basic document Bundle and Composition patterns.</li>
+</ul>
+
+<h4 id="intermediate-stage-first-one-year">Intermediate Stage (first one year)</h4>
+
+<ul>
+  <li>Support immunization certificate examples.</li>
+  <li>Add programme-specific patient summary examples.</li>
+  <li>Support specialty extensions.</li>
+  <li>Support data block conformance.</li>
+  <li>Support Shared Health Record contribution and retrieval.</li>
+  <li>Test summary generation in sandbox.</li>
+</ul>
+
+<h4 id="mature-stage">Mature Stage</h4>
+
+<ul>
+  <li>Support production NG-SHR exchange.</li>
+  <li>Support patient-facing access.</li>
+  <li>Support portable certificates.</li>
+  <li>Support digital signatures where required.</li>
+  <li>Support longitudinal record reconciliation.</li>
+  <li>Support cross-state and cross-programme continuity of care.</li>
+</ul>
+
+<h3 id="roadmap-for-registries-and-shared-services">Roadmap for Registries and Shared Services</h3>
+
+<p>Registries and shared services should mature progressively.</p>
+
+<h4 id="early-stage">Early Stage</h4>
+
+<ul>
+  <li>Define identifier systems.</li>
+  <li>Document registry profiles and API patterns.</li>
+  <li>Publish facility and workforce mapping guidance.</li>
+  <li>Support registry lookup examples.</li>
+</ul>
+
+<h4 id="intermediate-stage">Intermediate Stage</h4>
+
+<ul>
+  <li>Implement HFR and HWFR API integrations.</li>
+  <li>Support terminology validation and expansion.</li>
+  <li>Support provider and regulator verification workflows.</li>
+  <li>Support sandbox registry simulations.</li>
+</ul>
+
+<h4 id="mature-stage-1">Mature Stage</h4>
+
+<ul>
+  <li>Support production-grade shared services.</li>
+  <li>Support automated registry synchronisation.</li>
+  <li>Support consent, audit, and Provenance services.</li>
+  <li>Support national and state-level Shared Health Record integration.</li>
+</ul>
+
+<h3 id="roadmap-for-nhmisdhis2-alignment">Roadmap for NHMIS/DHIS2 Alignment</h3>
+
+<p>Nigeria Core should strengthen NHMIS/DHIS2 reporting without replacing DHIS2.</p>
+
+<h4 id="early-stage-1">Early Stage</h4>
+
+<ul>
+  <li>Define relationship between Nigeria Core and NHMIS/DHIS2.</li>
+  <li>Identify common FHIR-to-DHIS2 mapping patterns.</li>
+  <li>Support aggregate reporting from FHIR source data.</li>
+</ul>
+
+<h4 id="intermediate-stage-1">Intermediate Stage</h4>
+
+<ul>
+  <li>Create programme-specific FHIR-to-DHIS2 mapping tables.</li>
+  <li>Test reporting adapters.</li>
+  <li>Validate facility and organisation unit mappings.</li>
+  <li>Support M&amp;E review workflows.</li>
+</ul>
+
+<h4 id="mature-stage-2">Mature Stage</h4>
+
+<ul>
+  <li>Support automated reporting from EMRs, eCHIS, LIS, pharmacy systems, and programme platforms.</li>
+  <li>Support traceability from aggregate reports to source counts where authorised.</li>
+  <li>Reduce duplicate manual reporting.</li>
+  <li>Support routine data quality feedback loops.</li>
+</ul>
+
+<h3 id="roadmap-for-terminology">Roadmap for Terminology</h3>
+
+<p>Terminology maturity is essential for interoperability, analytics, decision support, and reporting.</p>
+
+<h4 id="early-stage-2">Early Stage</h4>
+
+<ul>
+  <li>Define Nigeria Core CodeSystems and ValueSets.</li>
+  <li>Preserve local and programme codes.</li>
+  <li>Begin mapping to ICD-11, SNOMED CT, LOINC, ATC, UCUM, and other relevant terminologies.</li>
+</ul>
+
+<h4 id="intermediate-stage-2">Intermediate Stage</h4>
+
+<ul>
+  <li>Publish ConceptMaps.</li>
+  <li>Support terminology validation in sandbox.</li>
+  <li>Align programme terminology with Nigeria Core.</li>
+  <li>Define versioning rules.</li>
+</ul>
+
+<h4 id="mature-stage-3">Mature Stage</h4>
+
+<ul>
+  <li>Operate a national terminology service.</li>
+  <li>Support terminology expansion, validation, and translation.</li>
+  <li>Maintain mappings through formal governance.</li>
+  <li>Support analytics, decision support, and AI-ready data services.</li>
+</ul>
+
+<h3 id="roadmap-for-security-consent-and-trust">Roadmap for Security, Consent, and Trust</h3>
+
+<p>Security and trust must mature alongside data exchange.</p>
+
+<h4 id="early-stage-3">Early Stage</h4>
+
+<ul>
+  <li>Require HTTPS/TLS for protected APIs.</li>
+  <li>Define role-based and organisation-based access control expectations.</li>
+  <li>Use synthetic data in sandbox environments.</li>
+  <li>Define audit and Provenance expectations.</li>
+</ul>
+
+<h4 id="intermediate-stage-3">Intermediate Stage</h4>
+
+<ul>
+  <li>Support OAuth2, SMART-on-FHIR, OpenID Connect, or mutual TLS where appropriate.</li>
+  <li>Define consent patterns for Shared Health Record and patient-facing access.</li>
+  <li>Support security labels for sensitive data.</li>
+  <li>Test access control and audit in sandbox.</li>
+</ul>
+
+<h4 id="mature-stage-4">Mature Stage</h4>
+
+<ul>
+  <li>Support production consent services.</li>
+  <li>Support patient-facing access and proxy access.</li>
+  <li>Support digital signatures for portable certificates where required.</li>
+  <li>Support advanced audit, monitoring, and incident response.</li>
+</ul>
+
+<h3 id="release-cadence">Release Cadence</h3>
+
+<p>Nigeria Core may follow a phased release cadence:</p>
+
+<ul>
+  <li><strong>Working Drafts:</strong> Used for authoring, technical review, and early stakeholder engagement.</li>
+  <li><strong>Ballot or Stakeholder Review Releases:</strong> Used for formal comment and structured review.</li>
+  <li><strong>Trial-Use Releases:</strong> Used for sandbox testing, pilot implementation, and vendor onboarding.</li>
+  <li><strong>Patch Releases:</strong> Used to correct errors, clarify requirements, or resolve urgent implementation issues.</li>
+  <li><strong>Stable Releases:</strong> Used for national adoption, procurement alignment, conformance testing, and standards endorsement.</li>
+</ul>
+
+<p>The release cadence should be realistic and linked to implementation feedback rather than documentation timelines alone.</p>
+
+<h3 id="governance-and-decision-making">Governance and Decision-Making</h3>
+
+<p>Roadmap decisions should be informed by:</p>
+
+<ul>
+  <li>National digital health leadership.</li>
+  <li>Health programme priorities.</li>
+  <li>State implementation needs.</li>
+  <li>Standards governance processes.</li>
+  <li>Regulator requirements.</li>
+  <li>Vendor readiness.</li>
+  <li>Sandbox and Connectathon results.</li>
+  <li>Public and private sector implementation experience.</li>
+  <li>Patient safety and privacy considerations.</li>
+  <li>Data use and reporting needs.</li>
+</ul>
+
+<h3 id="how-new-content-is-added-to-nigeria-core">How New Content Is Added to Nigeria Core</h3>
+
+<p>New profiles, extensions, terminology, examples, or guidance pages should follow a transparent process.</p>
+
+<ol>
+  <li>Identify implementation need.</li>
+  <li>Document use case and actors.</li>
+  <li>Review existing Nigeria Core artefacts.</li>
+  <li>Reuse or derive from existing profiles where possible.</li>
+  <li>Define terminology and identifiers.</li>
+  <li>Create examples.</li>
+  <li>Add CapabilityStatement expectations where needed.</li>
+  <li>Test in sandbox or Connectathon environment.</li>
+  <li>Review through technical and stakeholder governance.</li>
+  <li>Publish in a draft, trial-use, patch, or stable release.</li>
+</ol>
+
+<h3 id="key-risks-and-mitigation">Key Risks and Mitigation</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Risk</th>
+      <th>Mitigation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Over-specification before implementation maturity</td>
+      <td>Keep early releases permissive and support incremental conformance.</td>
+    </tr>
+    <tr>
+      <td>Programme fragmentation</td>
+      <td>Require derived programme IGs to reuse Nigeria Core profiles where applicable.</td>
+    </tr>
+    <tr>
+      <td>Weak terminology alignment</td>
+      <td>Publish ConceptMaps and maintain terminology governance.</td>
+    </tr>
+    <tr>
+      <td>Poor facility and workforce identifier quality</td>
+      <td>Strengthen HFR and HWFR alignment and registry API patterns.</td>
+    </tr>
+    <tr>
+      <td>Limited vendor readiness</td>
+      <td>Use sandbox testing, examples, and staged conformance pathways.</td>
+    </tr>
+    <tr>
+      <td>Inconsistent state implementation</td>
+      <td>Support decentralised and hybrid architecture with common national rules.</td>
+    </tr>
+    <tr>
+      <td>Privacy and consent gaps</td>
+      <td>Strengthen security, audit, consent, and data minimisation guidance.</td>
+    </tr>
+    <tr>
+      <td>Duplicate reporting burden</td>
+      <td>Support FHIR-to-DHIS2 mapping and automated aggregate reporting.</td>
+    </tr>
+    <tr>
+      <td>Lack of implementation feedback</td>
+      <td>Use Connectathons, pilots, and vendor onboarding to refine the guide.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="success-measures">Success Measures</h3>
+
+<p>Nigeria Core roadmap success may be measured by:</p>
+
+<ul>
+  <li>Number of systems validating resources against Nigeria Core.</li>
+  <li>Number of vendors participating in sandbox testing.</li>
+  <li>Number of programme IGs derived from Nigeria Core.</li>
+  <li>Number of profiles with tested examples.</li>
+  <li>Number of systems using HFR, HWFR, or terminology services.</li>
+  <li>Number of FHIR-to-DHIS2 reporting adapters tested.</li>
+  <li>Number of Shared Health Record or patient summary exchange scenarios implemented.</li>
+  <li>Reduction in duplicated data entry.</li>
+  <li>Improved consistency of identifiers and terminology.</li>
+  <li>Increased conformance readiness for procurement and implementation.</li>
+</ul>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<p>Implementers should interpret this roadmap as a maturity pathway rather than a fixed compliance deadline.</p>
+
+<p>Early adoption should focus on:</p>
+
+<ul>
+  <li>Useful patient, facility, provider, and encounter exchange.</li>
+  <li>Programme-specific examples.</li>
+  <li>Basic registry linkage.</li>
+  <li>Basic security and audit.</li>
+  <li>Patient summary and referral use cases.</li>
+  <li>NHMIS/DHIS2 reporting alignment.</li>
+  <li>Sandbox validation.</li>
+</ul>
+
+<p>As Nigeria’s ecosystem matures, Nigeria Core should become more prescriptive, more testable, and more closely tied to procurement, conformance, and national standards endorsement.</p>
+
+<p>Footnotes</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

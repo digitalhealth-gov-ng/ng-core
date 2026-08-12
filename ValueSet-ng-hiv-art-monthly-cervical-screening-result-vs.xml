@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-monthly-cervical-screening-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-art-monthly-cervical-screening-result-vs</b></p><a name="ng-hiv-art-monthly-cervical-screening-result-vs"> </a><a name="hcng-hiv-art-monthly-cervical-screening-result-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-cervical-positive">cervical-positive</a></td><td style="color: #cccccc">Positive</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-cervical-negative">cervical-negative</a></td><td style="color: #cccccc">Negative</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-cervical-precancerous-lesion">cervical-precancerous-lesion</a></td><td style="color: #cccccc">Pre-cancerous lesion</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html#ng-hiv-art-monthly-summary-cs-cervical-suspected-cancer">cervical-suspected-cancer</a></td><td style="color: #cccccc">Suspected cancer</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-monthly-cervical-screening-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.29"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtMonthlyCervicalScreeningResultVS"/>
+  <title value="NG HIV ART Monthly Cervical Screening Results"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Cervical screening result categories used under ART23."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs"/>
+      <concept>
+        <code value="cervical-positive"/>
+      </concept>
+      <concept>
+        <code value="cervical-negative"/>
+      </concept>
+      <concept>
+        <code value="cervical-precancerous-lesion"/>
+      </concept>
+      <concept>
+        <code value="cervical-suspected-cancer"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

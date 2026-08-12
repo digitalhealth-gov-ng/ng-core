@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImmunizationRecommendation xmlns="http://hl7.org/fhir">
+  <id value="NgImmunizationRecommendation-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImmunizationRecommendation NgImmunizationRecommendation-001</b></p><a name="NgImmunizationRecommendation-001"> </a><a name="hcNgImmunizationRecommendation-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-immunization-recommendation.html">NG ImmunizationRecommendation</a></p></div><p><b>patient</b>: <a href="Patient-NgPatient-001.html">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>date</b>: 2025-11-06 09:00:00+0100</p><h3>Recommendations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>VaccineCode</b></td><td><b>ForecastStatus</b></td><td><b>Series</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Measles-containing vaccine (MCV1)</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}">Due</span></td><td>RI Schedule – Measles</td><td>1</td></tr></table></div>
+  </text>
+  <patient>
+    <reference value="Patient/NgPatient-001"/>
+  </patient>
+  <date value="2025-11-06T09:00:00+01:00"/>
+  <recommendation>
+    <vaccineCode>
+      <text value="Measles-containing vaccine (MCV1)"/>
+    </vaccineCode>
+    <forecastStatus>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"/>
+        <code value="due"/>
+      </coding>
+    </forecastStatus>
+    <series value="RI Schedule – Measles"/>
+    <doseNumberPositiveInt value="1"/>
+  </recommendation>
+</ImmunizationRecommendation>

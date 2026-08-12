@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG HIV Care and ART Codes - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.386"}
+    h3,h4,h5,h6{--heading-prefix:"32.386"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NG HIV Care and ART Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-care-art-codes-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-care-art-codes-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-care-art-codes-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NG HIV Care and ART Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs|0.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NgHivCareArtCodesCS</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113884.3.9944.1.16.33
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Local codes transcribed from the Nigeria HIV Care/ART Card for coded answers
+used by the HIV care and ART Questionnaire.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-ng-hiv-art-stop-reason-vs.html">NgHivArtStopReasonVS</a></li>
+ <li><a href="ValueSet-ng-hiv-care-entry-point-vs.html">NgHivCareEntryPointVS</a></li>
+ <li><a href="ValueSet-ng-hiv-cause-of-death-vs.html">NgHivCauseOfDeathVS</a></li>
+ <li><a href="ValueSet-ng-hiv-cd4-reference-vs.html">NgHivCd4ReferenceVS</a></li>
+ <li><a href="ValueSet-ng-hiv-drug-resistance-result-vs.html">NgHivDrugResistanceResultVS</a></li>
+ <li><a href="ValueSet-ng-hiv-educational-status-vs.html">NgHivEducationalStatusVS</a></li>
+ <li><a href="ValueSet-ng-hiv-kp-typology-vs.html">NgHivKpTypologyVS</a></li>
+ <li><a href="ValueSet-ng-hiv-marital-status-vs.html">NgHivMaritalStatusVS</a></li>
+ <li><a href="ValueSet-ng-hiv-prior-art-vs.html">NgHivPriorArtVS</a></li>
+ <li><a href="ValueSet-ng-hiv-regimen-change-reason-vs.html">NgHivRegimenChangeReasonVS</a></li>
+ <li><a href="ValueSet-ng-hiv-tb-preventive-therapy-vs.html">NgHivTbPreventiveTherapyVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="ng-hiv-care-art-codes-cs"> </a><a name="hcng-hiv-care-art-codes-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">marital-status-1<a name="ng-hiv-care-art-codes-cs-marital-status-1"> </a></td>
+<td>Single</td>
+<td>Source form code 1: Single.</td></tr>
+<tr><td style="white-space:nowrap">marital-status-2<a name="ng-hiv-care-art-codes-cs-marital-status-2"> </a></td>
+<td>Married</td>
+<td>Source form code 2: Married.</td></tr>
+<tr><td style="white-space:nowrap">marital-status-3<a name="ng-hiv-care-art-codes-cs-marital-status-3"> </a></td>
+<td>Divorced</td>
+<td>Source form code 3: Divorced.</td></tr>
+<tr><td style="white-space:nowrap">marital-status-4<a name="ng-hiv-care-art-codes-cs-marital-status-4"> </a></td>
+<td>Separated</td>
+<td>Source form code 4: Separated.</td></tr>
+<tr><td style="white-space:nowrap">marital-status-5<a name="ng-hiv-care-art-codes-cs-marital-status-5"> </a></td>
+<td>Cohabiting</td>
+<td>Source form code 5: Cohabiting.</td></tr>
+<tr><td style="white-space:nowrap">marital-status-6<a name="ng-hiv-care-art-codes-cs-marital-status-6"> </a></td>
+<td>Widower</td>
+<td>Source form code 6: Widower.</td></tr>
+<tr><td style="white-space:nowrap">educational-status-1<a name="ng-hiv-care-art-codes-cs-educational-status-1"> </a></td>
+<td>No education</td>
+<td>Source form code 1: No education.</td></tr>
+<tr><td style="white-space:nowrap">educational-status-2<a name="ng-hiv-care-art-codes-cs-educational-status-2"> </a></td>
+<td>Primary Education</td>
+<td>Source form code 2: Primary Education.</td></tr>
+<tr><td style="white-space:nowrap">educational-status-3<a name="ng-hiv-care-art-codes-cs-educational-status-3"> </a></td>
+<td>Secondary Education</td>
+<td>Source form code 3: Secondary Education.</td></tr>
+<tr><td style="white-space:nowrap">educational-status-4<a name="ng-hiv-care-art-codes-cs-educational-status-4"> </a></td>
+<td>Tertiary Education</td>
+<td>Source form code 4: Tertiary Education.</td></tr>
+<tr><td style="white-space:nowrap">educational-status-5<a name="ng-hiv-care-art-codes-cs-educational-status-5"> </a></td>
+<td>Others</td>
+<td>Source form code 5: Others (specify).</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-1<a name="ng-hiv-care-art-codes-cs-care-entry-point-1"> </a></td>
+<td>OPD</td>
+<td>Source form code 1: Outpatient department.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-2<a name="ng-hiv-care-art-codes-cs-care-entry-point-2"> </a></td>
+<td>Inpatients</td>
+<td>Source form code 2: Inpatients.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-3<a name="ng-hiv-care-art-codes-cs-care-entry-point-3"> </a></td>
+<td>HTS</td>
+<td>Source form code 3: HIV testing services.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-4<a name="ng-hiv-care-art-codes-cs-care-entry-point-4"> </a></td>
+<td>TB DOTS</td>
+<td>Source form code 4: TB DOTS.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-5<a name="ng-hiv-care-art-codes-cs-care-entry-point-5"> </a></td>
+<td>STI Clinic</td>
+<td>Source form code 5: STI Clinic.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-6<a name="ng-hiv-care-art-codes-cs-care-entry-point-6"> </a></td>
+<td>ANC/PMTCT</td>
+<td>Source form code 6: ANC/PMTCT.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-7<a name="ng-hiv-care-art-codes-cs-care-entry-point-7"> </a></td>
+<td>Transfer-in</td>
+<td>Source form code 7: Transfer-in.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-8<a name="ng-hiv-care-art-codes-cs-care-entry-point-8"> </a></td>
+<td>Community</td>
+<td>Source form code 8: Community.</td></tr>
+<tr><td style="white-space:nowrap">care-entry-point-9<a name="ng-hiv-care-art-codes-cs-care-entry-point-9"> </a></td>
+<td>Others</td>
+<td>Source form code 9: Others (specify).</td></tr>
+<tr><td style="white-space:nowrap">prior-art-1<a name="ng-hiv-care-art-codes-cs-prior-art-1"> </a></td>
+<td>Earlier ARV but not a transfer in</td>
+<td>Source form code 1.</td></tr>
+<tr><td style="white-space:nowrap">prior-art-2<a name="ng-hiv-care-art-codes-cs-prior-art-2"> </a></td>
+<td>Transfer in without records</td>
+<td>Source form code 2.</td></tr>
+<tr><td style="white-space:nowrap">prior-art-3<a name="ng-hiv-care-art-codes-cs-prior-art-3"> </a></td>
+<td>PrEP</td>
+<td>Source form code 3: Pre-exposure prophylaxis.</td></tr>
+<tr><td style="white-space:nowrap">prior-art-4<a name="ng-hiv-care-art-codes-cs-prior-art-4"> </a></td>
+<td>PEP</td>
+<td>Source form code 4: Post-exposure prophylaxis.</td></tr>
+<tr><td style="white-space:nowrap">kp-typology-1<a name="ng-hiv-care-art-codes-cs-kp-typology-1"> </a></td>
+<td>MSM</td>
+<td>Source form code 1: Men who have sex with men.</td></tr>
+<tr><td style="white-space:nowrap">kp-typology-2<a name="ng-hiv-care-art-codes-cs-kp-typology-2"> </a></td>
+<td>FSW</td>
+<td>Source form code 2: Female sex workers.</td></tr>
+<tr><td style="white-space:nowrap">kp-typology-3<a name="ng-hiv-care-art-codes-cs-kp-typology-3"> </a></td>
+<td>PWID</td>
+<td>Source form code 3: People who inject drugs.</td></tr>
+<tr><td style="white-space:nowrap">kp-typology-4<a name="ng-hiv-care-art-codes-cs-kp-typology-4"> </a></td>
+<td>TG</td>
+<td>Source form code 4: Transgender persons.</td></tr>
+<tr><td style="white-space:nowrap">kp-typology-5<a name="ng-hiv-care-art-codes-cs-kp-typology-5"> </a></td>
+<td>Persons in custodial centers</td>
+<td>Source form code 5.</td></tr>
+<tr><td style="white-space:nowrap">cd4-reference-less-than-200<a name="ng-hiv-care-art-codes-cs-cd4-reference-less-than-200"> </a></td>
+<td>&lt;200 cells/mm3</td>
+<td>CD4 result below 200 cells/mm3.</td></tr>
+<tr><td style="white-space:nowrap">cd4-reference-greater-than-or-equal-200<a name="ng-hiv-care-art-codes-cs-cd4-reference-greater-than-or-equal-200"> </a></td>
+<td>≥200 cells/mm3</td>
+<td>CD4 result greater than or equal to 200 cells/mm3.</td></tr>
+<tr><td style="white-space:nowrap">tpt-1<a name="ng-hiv-care-art-codes-cs-tpt-1"> </a></td>
+<td>Isoniazid (6H)</td>
+<td>Source form code 1: Isoniazid for six months.</td></tr>
+<tr><td style="white-space:nowrap">tpt-2<a name="ng-hiv-care-art-codes-cs-tpt-2"> </a></td>
+<td>Isoniazid and Rifapentine (3HP)</td>
+<td>Source form code 2.</td></tr>
+<tr><td style="white-space:nowrap">tpt-3<a name="ng-hiv-care-art-codes-cs-tpt-3"> </a></td>
+<td>Isoniazid and Rifampicin (3HR)</td>
+<td>Source form code 3.</td></tr>
+<tr><td style="white-space:nowrap">tpt-4<a name="ng-hiv-care-art-codes-cs-tpt-4"> </a></td>
+<td>CTX/INH/B6 FDC (QTIP)</td>
+<td>Source form code 4: Cotrimoxazole/Isoniazid/Pyridoxine fixed-dose combination.</td></tr>
+<tr><td style="white-space:nowrap">drug-resistance-result-1<a name="ng-hiv-care-art-codes-cs-drug-resistance-result-1"> </a></td>
+<td>Wild type</td>
+<td>Source form code 1.</td></tr>
+<tr><td style="white-space:nowrap">drug-resistance-result-2<a name="ng-hiv-care-art-codes-cs-drug-resistance-result-2"> </a></td>
+<td>Resistant detected</td>
+<td>Source form code 2.</td></tr>
+<tr><td style="white-space:nowrap">drug-resistance-result-3<a name="ng-hiv-care-art-codes-cs-drug-resistance-result-3"> </a></td>
+<td>No resistance detected</td>
+<td>Source form code 3.</td></tr>
+<tr><td style="white-space:nowrap">drug-resistance-result-4<a name="ng-hiv-care-art-codes-cs-drug-resistance-result-4"> </a></td>
+<td>Partial or mixed resistance</td>
+<td>Source form code 4.</td></tr>
+<tr><td style="white-space:nowrap">drug-resistance-result-5<a name="ng-hiv-care-art-codes-cs-drug-resistance-result-5"> </a></td>
+<td>Indeterminate or unsuccessful test</td>
+<td>Source form code 5.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-1<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-1"> </a></td>
+<td>Toxicity/side effects</td>
+<td>Source form code 1.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-2<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-2"> </a></td>
+<td>Pregnancy</td>
+<td>Source form code 2.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-3<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-3"> </a></td>
+<td>Risk of pregnancy</td>
+<td>Source form code 3.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-4<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-4"> </a></td>
+<td>Due to new TB</td>
+<td>Source form code 4.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-5<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-5"> </a></td>
+<td>New drug available</td>
+<td>Source form code 5.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-6<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-6"> </a></td>
+<td>Drug out of stock</td>
+<td>Source form code 6.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-7<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-7"> </a></td>
+<td>Clinical treatment failure</td>
+<td>Source form code 7.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-8<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-8"> </a></td>
+<td>Immunologic failure</td>
+<td>Source form code 8.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-9<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-9"> </a></td>
+<td>Virologic failure</td>
+<td>Source form code 9.</td></tr>
+<tr><td style="white-space:nowrap">regimen-change-reason-10<a name="ng-hiv-care-art-codes-cs-regimen-change-reason-10"> </a></td>
+<td>Other reason</td>
+<td>Source form code 10: Other reason (specify).</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-1<a name="ng-hiv-care-art-codes-cs-art-stop-reason-1"> </a></td>
+<td>Toxicity/side effects</td>
+<td>Source form code 1.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-2<a name="ng-hiv-care-art-codes-cs-art-stop-reason-2"> </a></td>
+<td>Pregnancy</td>
+<td>Source form code 2.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-3<a name="ng-hiv-care-art-codes-cs-art-stop-reason-3"> </a></td>
+<td>Treatment failure</td>
+<td>Source form code 3.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-4<a name="ng-hiv-care-art-codes-cs-art-stop-reason-4"> </a></td>
+<td>Poor adherence</td>
+<td>Source form code 4.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-5<a name="ng-hiv-care-art-codes-cs-art-stop-reason-5"> </a></td>
+<td>Illness or hospitalization</td>
+<td>Source form code 5.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-6<a name="ng-hiv-care-art-codes-cs-art-stop-reason-6"> </a></td>
+<td>Drugs out of stock</td>
+<td>Source form code 6.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-7<a name="ng-hiv-care-art-codes-cs-art-stop-reason-7"> </a></td>
+<td>Patient lacks finances</td>
+<td>Source form code 7.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-8<a name="ng-hiv-care-art-codes-cs-art-stop-reason-8"> </a></td>
+<td>Other patient decision</td>
+<td>Source form code 8.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-9<a name="ng-hiv-care-art-codes-cs-art-stop-reason-9"> </a></td>
+<td>Planned treatment interruption</td>
+<td>Source form code 9.</td></tr>
+<tr><td style="white-space:nowrap">art-stop-reason-10<a name="ng-hiv-care-art-codes-cs-art-stop-reason-10"> </a></td>
+<td>Other</td>
+<td>Source form code 10: Other (specify).</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-1<a name="ng-hiv-care-art-codes-cs-cause-of-death-1"> </a></td>
+<td>HIV related</td>
+<td>Source form code 1.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-2<a name="ng-hiv-care-art-codes-cs-cause-of-death-2"> </a></td>
+<td>TB</td>
+<td>Source form code 2.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-3<a name="ng-hiv-care-art-codes-cs-cause-of-death-3"> </a></td>
+<td>Road accident</td>
+<td>Source form code 3.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-4<a name="ng-hiv-care-art-codes-cs-cause-of-death-4"> </a></td>
+<td>Malaria</td>
+<td>Source form code 4.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-5<a name="ng-hiv-care-art-codes-cs-cause-of-death-5"> </a></td>
+<td>COPD</td>
+<td>Source form code 5.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-6<a name="ng-hiv-care-art-codes-cs-cause-of-death-6"> </a></td>
+<td>Hypertension</td>
+<td>Source form code 6.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-7<a name="ng-hiv-care-art-codes-cs-cause-of-death-7"> </a></td>
+<td>Diabetes</td>
+<td>Source form code 7.</td></tr>
+<tr><td style="white-space:nowrap">cause-of-death-8<a name="ng-hiv-care-art-codes-cs-cause-of-death-8"> </a></td>
+<td>Others</td>
+<td>Source form code 8: Others (specify).</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,355 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-local-concepts"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-local-concepts</b></p><a name=\"ng-hiv-local-concepts\"> </a><a name=\"hcng-hiv-local-concepts\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-to\">to</a></td><td>Transfer out</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45256-5/\">45256-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-dead\">dead</a></td><td>Dead</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/77978-5/\">77978-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-drop\">drop</a></td><td>Drop</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45257-3/\">45257-3</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-restart\">restart</a></td><td>Restart</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/63936-9/\">63936-9</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-lost\">lost</a></td><td>Lost to follow-up</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45237-5/\">45237-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-stop\">stop</a></td><td>Stopped treatment</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/91382-2/\">91382-2</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-alive-on-art\">alive-on-art</a></td><td>Alive on ART</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/129019007\">129019007</a></td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-arv-adherence-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-arv-adherence-cs.html#ng-hiv-arv-adherence-cs-Stopped\">Stopped</a></td><td>Stopped</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/91382-2/\">91382-2</a></td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-yes-no-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-yes-no-cs.html#ng-yes-no-cs-true\">true</a></td><td>Yes</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA29252-6/\">LA29252-6</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA26438-4/\">LA26438-4</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA15173-0/\">LA15173-0</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-yes-no-cs.html#ng-yes-no-cs-false\">false</a></td><td>No</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA29253-4/\">LA29253-4</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA26440-0/\">LA26440-0</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA26683-5/\">LA26683-5</a></td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html#ng-hiv-dsd-reason-for-category-change-cs-Dead\">Dead</a></td><td>Dead</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/77978-5/\">77978-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html#ng-hiv-dsd-reason-for-category-change-cs-Lost\">Lost</a></td><td>Lost</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45237-5/\">45237-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html#ng-hiv-dsd-reason-for-category-change-cs-TO\">TO</a></td><td>TO</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45256-5/\">45256-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html#ng-hiv-dsd-reason-for-category-change-cs-Unknown\">Unknown</a></td><td>Unknown</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA29947-1/\">LA29947-1</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html#ng-hiv-dsd-reason-for-category-change-cs-Other\">Other</a></td><td>Other</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-patient-education-level-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-patient-education-level-cs.html#ng-patient-education-level-cs-No-Education\">No-Education</a></td><td>No education</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA35-1/\">LA35-1</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-patient-education-level-cs.html#ng-patient-education-level-cs-Primary\">Primary</a></td><td>Primary</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA32466-7/\">LA32466-7</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-patient-education-level-cs.html#ng-patient-education-level-cs-Secondary\">Secondary</a></td><td>Secondary</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA32467-5/\">LA32467-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-patient-education-level-cs.html#ng-patient-education-level-cs-Tertiary\">Tertiary</a></td><td>Tertiary</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA15568-1/\">LA15568-1</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-patient-education-level-cs.html#ng-patient-education-level-cs-TVET\">TVET</a></td><td>TVET</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA39-3/\">LA39-3</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-patient-education-level-cs.html#ng-patient-education-level-cs-Other\">Other</a></td><td>Other, specify</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-positive-tracking-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-positive-tracking-cs.html#ng-hiv-positive-tracking-cs-Started-ART\">Started-ART</a></td><td>Started ART</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/63936-9/\">63936-9</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-positive-tracking-cs.html#ng-hiv-positive-tracking-cs-Final-Outcome\">Final-Outcome</a></td><td>Final outcome</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/63939-3/\">63939-3</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-positive-tracking-cs.html#ng-hiv-positive-tracking-cs-Linked-To-Care\">Linked-To-Care</a></td><td>Linked to care and treatment</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/67723-7/\">67723-7</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-positive-tracking-cs.html#ng-hiv-positive-tracking-cs-Not-Started\">Not-Started</a></td><td>ART Not started</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/410524007\">410524007</a></td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-service-provider-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Health-Center\">Health-Center</a></td><td>Health center</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/257622000\">257622000</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Public-Hospital\">Public-Hospital</a></td><td>Public hospital</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/276052003\">276052003</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Private-Hospital\">Private-Hospital</a></td><td>Private hospital</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/309895006\">309895006</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-NBO-FBO-Hospital\">NBO-FBO-Hospital</a></td><td>NBO/FBO hospital</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/394794000\">394794000</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Private-Clinic\">Private-Clinic</a></td><td>Private clinic</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/185483006\">185483006</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Self-referred\">Self-referred</a></td><td>Self-referred</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/1991000124105\">1991000124105</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Community-Referred\">Community-Referred</a></td><td>Community referred</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/310391008\">310391008</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-service-provider-cs.html#ng-hiv-service-provider-cs-Other\">Other</a></td><td>Other (Specify)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-final-outcome-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-started-art\">started-art</a></td><td>Started ART</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/63936-9/\">63936-9</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-died\">died</a></td><td>Died</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/81954-0/\">81954-0</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA4645-3/\">LA4645-3</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-confirmed-referral\">confirmed-referral</a></td><td>Confirmed referral</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/39266-2/\">39266-2</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-started-art-in-other-hf\">started-art-in-other-hf</a></td><td>Started ART in other HF</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45235-9/\">45235-9</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-lost-to-follow-up\">lost-to-follow-up</a></td><td>Lost to Follow up</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45237-5/\">45237-5</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-other\">other</a></td><td>Other</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-final-outcome-cs.html#ng-hiv-final-outcome-cs-declined\">declined</a></td><td>Declined</td><td/><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-tb-tpt-prophylaxis-type-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-tb-tpt-prophylaxis-type-cs.html#ng-tb-tpt-prophylaxis-type-cs-inh\">inh</a></td><td>INH</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/18934-0/\">18934-0</a></td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-referred-tx-not-initiated\">referred-tx-not-initiated</a></td><td>Referred TX not initiated</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LP73973-7/\">LP73973-7</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-died\">died</a></td><td>Died</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/81954-0/\">81954-0</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA4645-3/\">LA4645-3</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-known-positive-on-art\">known-positive-on-art</a></td><td>Known +VE on ART</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/45231-8/\">45231-8</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-on-oi-management\">on-oi-management</a></td><td>On OI management</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/47244-9/\">47244-9</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-other\">other</a></td><td>Other Specify here</td><td><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-declined\">declined</a></td><td>Declined</td><td/><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html#ng-hiv-reason-not-started-art-cs-on-adherence-preparation\">on-adherence-preparation</a></td><td>On adherence preparation</td><td/><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-target-population-category-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-MSM\">MSM</a></td><td>MSM</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/76102007\">76102007</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-Female-Commercial-Sex-Workers\">Female-Commercial-Sex-Workers</a></td><td>Female commercial sex workers</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/159799000\">159799000</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-TG\">TG</a></td><td>TG</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/407375002\">407375002</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-OVC-AIDS-Orphaned\">OVC-AIDS-Orphaned</a></td><td>OVC or AIDS Orphaned</td><td/><td/></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-Mobile-Daily-Laborers\">Mobile-Daily-Laborers</a></td><td>Mobile or Daily laborers</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/106540006\">106540006</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-Distance-Drivers\">Distance-Drivers</a></td><td>Distance drivers</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/87447002\">87447002</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-Refugee\">Refugee</a></td><td>Refugee</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/446654005\">446654005</a></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-target-population-category-cs.html#ng-hiv-target-population-category-cs-People-Who-Inject-Drug\">People-Who-Inject-Drug</a></td><td>People who Inject drug</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/226034001\">226034001</a></td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-enhanced-adherence-counselling-status-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV Local Concepts to LOINC</a></b></td><td><b><a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV Local Concepts → SNOMED CT</a></b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-enhanced-adherence-counselling-status-cs.html#ng-hiv-enhanced-adherence-counselling-status-cs-eac\">eac</a></td><td>Enhanced Adherence Counselling</td><td/><td><span title=\"EQUIVALENT\">~</span><a href=\"http://snomed.info/id/410265008\">410265008</a></td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.48.99" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "NgHivLocalConceptsVS"] ;
+  fhir:ValueSet.title [ fhir:value "Nigeria HIV Local Concepts"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-24"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "to" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transfer out" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "dead" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dead" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "drop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drop" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "restart" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Restart" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lost" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lost to follow-up" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "stop" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stopped treatment" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "alive-on-art" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alive on ART" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Stopped" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stopped" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "true" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yes" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "false" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Dead" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dead" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Lost" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lost" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TO" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TO" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Unknown" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "No-Education" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No education" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Primary" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Primary" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Secondary" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Secondary" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tertiary" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tertiary" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TVET" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TVET" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other, specify" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Started-ART" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Started ART" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Final-Outcome" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Final outcome" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Linked-To-Care" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Linked to care and treatment" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Not-Started" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ART Not started" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Health-Center" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health center" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Public-Hospital" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Public hospital" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Private-Hospital" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Private hospital" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "NBO-FBO-Hospital" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "NBO/FBO hospital" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Private-Clinic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Private clinic" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Self-referred" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Self-referred" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Community-Referred" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Community referred" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other (Specify)" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "started-art" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Started ART" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "died" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Died" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "confirmed-referral" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Confirmed referral" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "started-art-in-other-hf" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Started ART in other HF" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "lost-to-follow-up" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lost to Follow up" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "declined" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Declined" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "inh" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "INH" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "referred-tx-not-initiated" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Referred TX not initiated" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "died" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Died" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "known-positive-on-art" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Known +VE on ART" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "on-oi-management" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "On OI management" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "other" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other Specify here" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "declined" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Declined" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "on-adherence-preparation" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "On adherence preparation" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "MSM" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MSM" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Female-Commercial-Sex-Workers" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female commercial sex workers" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TG" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TG" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "OVC-AIDS-Orphaned" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "OVC or AIDS Orphaned" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Mobile-Daily-Laborers" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mobile or Daily laborers" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Distance-Drivers" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distance drivers" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Refugee" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refugee" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "People-Who-Inject-Drug" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "People who Inject drug" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "eac" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enhanced Adherence Counselling" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

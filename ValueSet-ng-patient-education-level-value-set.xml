@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-patient-education-level-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-patient-education-level-value-set</b></p><a name="ng-patient-education-level-value-set"> </a><a name="hcng-patient-education-level-value-set"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA35-1/">LA35-1</a></td><td>No schooling</td></tr><tr><td><a href="https://loinc.org/LA32466-7/">LA32466-7</a></td><td>Primary school education</td></tr><tr><td><a href="https://loinc.org/LA32467-5/">LA32467-5</a></td><td>High school education</td></tr><tr><td><a href="https://loinc.org/LA15568-1/">LA15568-1</a></td><td>Graduated from a college or university</td></tr><tr><td><a href="https://loinc.org/LA39-3/">LA39-3</a></td><td>Technical or trade school</td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-patient-education-level-value-set"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.169"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgPatientEducationLevelValueSet"/>
+  <title value="HIV Patient Education Level"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating the patient's highest qualification."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA35-1"/>
+        <display value="No schooling"/>
+      </concept>
+      <concept>
+        <code value="LA32466-7"/>
+        <display value="Primary school education"/>
+      </concept>
+      <concept>
+        <code value="LA32467-5"/>
+        <display value="High school education"/>
+      </concept>
+      <concept>
+        <code value="LA15568-1"/>
+        <display value="Graduated from a college or university"/>
+      </concept>
+      <concept>
+        <code value="LA39-3"/>
+        <display value="Technical or trade school"/>
+      </concept>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,303 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-atc-medication-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-atc-medication-cs</b></p><a name=\"ng-atc-medication-cs\"> </a><a name=\"hcng-atc-medication-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A11-IFA<a name=\"ng-atc-medication-cs-A11-IFA\"> </a></td><td>Iron–Folic Acid tablets (30/0.4 mg)</td><td>Daily antenatal iron–folate for anemia prevention.</td></tr><tr><td style=\"white-space:nowrap\">A11-FA-5<a name=\"ng-atc-medication-cs-A11-FA-5\"> </a></td><td>Folic acid 5 mg tablet</td><td>High-dose folate per protocol.</td></tr><tr><td style=\"white-space:nowrap\">A12-CALC<a name=\"ng-atc-medication-cs-A12-CALC\"> </a></td><td>Calcium carbonate 500 mg tablet</td><td>Calcium supplementation to reduce pre-eclampsia risk.</td></tr><tr><td style=\"white-space:nowrap\">B03-FE-SULF<a name=\"ng-atc-medication-cs-B03-FE-SULF\"> </a></td><td>Ferrous sulfate 200 mg (65 mg elemental) tablet</td><td>Treatment of iron-deficiency anemia.</td></tr><tr><td style=\"white-space:nowrap\">A11-MV-PREN<a name=\"ng-atc-medication-cs-A11-MV-PREN\"> </a></td><td>Prenatal multivitamin</td><td>Combined antenatal vitamin/mineral tablet.</td></tr><tr><td style=\"white-space:nowrap\">A11-VITA-100<a name=\"ng-atc-medication-cs-A11-VITA-100\"> </a></td><td>Vitamin A 100,000 IU capsule</td><td>For post-partum/child dosing per guideline.</td></tr><tr><td style=\"white-space:nowrap\">A11-VITA-200<a name=\"ng-atc-medication-cs-A11-VITA-200\"> </a></td><td>Vitamin A 200,000 IU capsule</td><td>For post-partum/child dosing per guideline.</td></tr><tr><td style=\"white-space:nowrap\">G02-OXY<a name=\"ng-atc-medication-cs-G02-OXY\"> </a></td><td>Oxytocin 10 IU/mL injection</td><td>Active management of third stage, PPH prevention/treatment.</td></tr><tr><td style=\"white-space:nowrap\">G02-MISO<a name=\"ng-atc-medication-cs-G02-MISO\"> </a></td><td>Misoprostol 200 mcg tablet</td><td>PPH prevention/treatment where oxytocin unavailable.</td></tr><tr><td style=\"white-space:nowrap\">A12-MGSO4<a name=\"ng-atc-medication-cs-A12-MGSO4\"> </a></td><td>Magnesium sulfate injection</td><td>Severe pre-eclampsia/eclampsia management (loading/maintenance).</td></tr><tr><td style=\"white-space:nowrap\">C02-METHYLDOPA<a name=\"ng-atc-medication-cs-C02-METHYLDOPA\"> </a></td><td>Methyldopa 250 mg tablet</td><td>Antihypertensive in pregnancy per protocol.</td></tr><tr><td style=\"white-space:nowrap\">C08-NIFEDIPINE<a name=\"ng-atc-medication-cs-C08-NIFEDIPINE\"> </a></td><td>Nifedipine 10 mg capsule</td><td>Acute BP control in severe hypertension (per protocol).</td></tr><tr><td style=\"white-space:nowrap\">J01-AMX-DT<a name=\"ng-atc-medication-cs-J01-AMX-DT\"> </a></td><td>Amoxicillin 250 mg dispersible tablet</td><td>Child pneumonia/OTIT treatment; community case mgmt.</td></tr><tr><td style=\"white-space:nowrap\">J01-AMOX-CAP<a name=\"ng-atc-medication-cs-J01-AMOX-CAP\"> </a></td><td>Amoxicillin 500 mg capsule</td><td>Adult/maternal infections per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J01-AMP<a name=\"ng-atc-medication-cs-J01-AMP\"> </a></td><td>Ampicillin injection</td><td>Neonatal sepsis first-line (with gentamicin).</td></tr><tr><td style=\"white-space:nowrap\">J01-GENTA<a name=\"ng-atc-medication-cs-J01-GENTA\"> </a></td><td>Gentamicin injection</td><td>Neonatal sepsis first-line (with ampicillin).</td></tr><tr><td style=\"white-space:nowrap\">J01-CEFTRI<a name=\"ng-atc-medication-cs-J01-CEFTRI\"> </a></td><td>Ceftriaxone injection</td><td>Severe infections; inpatient use per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J01-CLX<a name=\"ng-atc-medication-cs-J01-CLX\"> </a></td><td>Cloxacillin 500 mg capsule</td><td>Skin/soft tissue and mastitis per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J01-METRO<a name=\"ng-atc-medication-cs-J01-METRO\"> </a></td><td>Metronidazole 400 mg tablet</td><td>Anaerobic/obstetric infections per protocol.</td></tr><tr><td style=\"white-space:nowrap\">J06-ANTI-D-IG<a name=\"ng-atc-medication-cs-J06-ANTI-D-IG\"> </a></td><td>Anti-D immunoglobulin</td><td>Rh-D negative prophylaxis for sensitizing events.</td></tr><tr><td style=\"white-space:nowrap\">J01-ERYTHRO<a name=\"ng-atc-medication-cs-J01-ERYTHRO\"> </a></td><td>Erythromycin 250 mg tablet</td><td>Alternative macrolide; PPROM/GBS contexts per protocol.</td></tr><tr><td style=\"white-space:nowrap\">A07-ORS<a name=\"ng-atc-medication-cs-A07-ORS\"> </a></td><td>Oral rehydration salts (sachet)</td><td>Acute diarrhea rehydration.</td></tr><tr><td style=\"white-space:nowrap\">A07-ZINC20<a name=\"ng-atc-medication-cs-A07-ZINC20\"> </a></td><td>Zinc sulfate 20 mg tablet</td><td>Adjunct for pediatric diarrhea (10–14 days).</td></tr><tr><td style=\"white-space:nowrap\">N02-PARA-SYR<a name=\"ng-atc-medication-cs-N02-PARA-SYR\"> </a></td><td>Paracetamol 125 mg/5 mL syrup</td><td>Fever/pain management in children.</td></tr><tr><td style=\"white-space:nowrap\">R03-SALB-INH<a name=\"ng-atc-medication-cs-R03-SALB-INH\"> </a></td><td>Salbutamol 100 mcg inhaler</td><td>Wheeze/asthma relief in MNCH contexts.</td></tr><tr><td style=\"white-space:nowrap\">P01-ACT-AL<a name=\"ng-atc-medication-cs-P01-ACT-AL\"> </a></td><td>ACT: Artemether–Lumefantrine</td><td>First-line uncomplicated malaria (weight-based).</td></tr><tr><td style=\"white-space:nowrap\">P01-ACT-DHA-PPQ<a name=\"ng-atc-medication-cs-P01-ACT-DHA-PPQ\"> </a></td><td>ACT: Dihydroartemisinin–Piperaquine</td><td>Alternative ACT per national guideline.</td></tr><tr><td style=\"white-space:nowrap\">P01-SP<a name=\"ng-atc-medication-cs-P01-SP\"> </a></td><td>Sulfadoxine–Pyrimethamine (SP)</td><td>IPTp in pregnancy per schedule.</td></tr><tr><td style=\"white-space:nowrap\">P02-ALB<a name=\"ng-atc-medication-cs-P02-ALB\"> </a></td><td>Albendazole 400 mg tablet</td><td>Antenatal deworming per protocol.</td></tr><tr><td style=\"white-space:nowrap\">G03-LNG-EC<a name=\"ng-atc-medication-cs-G03-LNG-EC\"> </a></td><td>Levonorgestrel 1.5 mg (EC)</td><td>Emergency contraception (single dose).</td></tr><tr><td style=\"white-space:nowrap\">G03-DMPA-IM<a name=\"ng-atc-medication-cs-G03-DMPA-IM\"> </a></td><td>DMPA 150 mg/mL IM injection</td><td>3-monthly injectable contraceptive.</td></tr><tr><td style=\"white-space:nowrap\">G03-DMPA-SC<a name=\"ng-atc-medication-cs-G03-DMPA-SC\"> </a></td><td>DMPA 104 mg/0.65 mL SC</td><td>3-monthly SC contraceptive (sayana-type).</td></tr><tr><td style=\"white-space:nowrap\">G03-ETON-IMP<a name=\"ng-atc-medication-cs-G03-ETON-IMP\"> </a></td><td>Etonogestrel implant</td><td>Long-acting reversible contraception.</td></tr><tr><td style=\"white-space:nowrap\">G03-COC<a name=\"ng-atc-medication-cs-G03-COC\"> </a></td><td>Combined oral contraceptive (LNG/EE)</td><td>Daily combined pill per protocol.</td></tr><tr><td style=\"white-space:nowrap\">D08-CHX-7<a name=\"ng-atc-medication-cs-D08-CHX-7\"> </a></td><td>Chlorhexidine 7.1% digluconate gel</td><td>Umbilical cord care (4% free CHX equivalent).</td></tr><tr><td style=\"white-space:nowrap\">J07-BCG<a name=\"ng-atc-medication-cs-J07-BCG\"> </a></td><td>BCG vaccine</td><td>At birth — TB prevention.</td></tr><tr><td style=\"white-space:nowrap\">J07-OPV<a name=\"ng-atc-medication-cs-J07-OPV\"> </a></td><td>OPV vaccine</td><td>Oral polio per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-IPV<a name=\"ng-atc-medication-cs-J07-IPV\"> </a></td><td>IPV vaccine</td><td>Inactivated polio per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-PENTA<a name=\"ng-atc-medication-cs-J07-PENTA\"> </a></td><td>Pentavalent DTP-HepB-Hib vaccine</td><td>Primary series per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-PCV<a name=\"ng-atc-medication-cs-J07-PCV\"> </a></td><td>Pneumococcal conjugate vaccine</td><td>PCV10/13 per national schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-ROTA<a name=\"ng-atc-medication-cs-J07-ROTA\"> </a></td><td>Rotavirus vaccine</td><td>Rotavirus per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-MR<a name=\"ng-atc-medication-cs-J07-MR\"> </a></td><td>Measles-Rubella vaccine</td><td>MR at 9/15 months per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-YF<a name=\"ng-atc-medication-cs-J07-YF\"> </a></td><td>Yellow fever vaccine</td><td>Yellow fever per schedule.</td></tr><tr><td style=\"white-space:nowrap\">J07-HPV<a name=\"ng-atc-medication-cs-J07-HPV\"> </a></td><td>HPV vaccine</td><td>Girls/boys per national program.</td></tr><tr><td style=\"white-space:nowrap\">J07-TD<a name=\"ng-atc-medication-cs-J07-TD\"> </a></td><td>Tetanus-diphtheria (Td) vaccine</td><td>Adolescent/maternal protection.</td></tr><tr><td style=\"white-space:nowrap\">R01-ORS-ZINC-KIT<a name=\"ng-atc-medication-cs-R01-ORS-ZINC-KIT\"> </a></td><td>ORS + Zinc kit</td><td>Community diarrhea pack for claims/prescription.</td></tr><tr><td style=\"white-space:nowrap\">J01-AMP-GEN-COMB<a name=\"ng-atc-medication-cs-J01-AMP-GEN-COMB\"> </a></td><td>Ampicillin + Gentamicin regimen (neonatal)</td><td>Combined line item for neonatal sepsis claims.</td></tr><tr><td style=\"white-space:nowrap\">A10-INSULIN-NPH<a name=\"ng-atc-medication-cs-A10-INSULIN-NPH\"> </a></td><td>Insulin NPH</td><td>Gestational diabetes—basal insulin per protocol.</td></tr><tr><td style=\"white-space:nowrap\">A10-METFORMIN<a name=\"ng-atc-medication-cs-A10-METFORMIN\"> </a></td><td>Metformin 500 mg tablet</td><td>GDM/T2DM per national guideline and obstetric advice.</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.4"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgATCLocalMedicationCS",
+  "title" : "NG Local ATC Medication Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Local ATC. Codes are placeholders aligned to common maternal, newborn, and child health needs, plus EPI vaccines.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 49,
+  "concept" : [{
+    "code" : "A11-IFA",
+    "display" : "Iron–Folic Acid tablets (30/0.4 mg)",
+    "definition" : "Daily antenatal iron–folate for anemia prevention."
+  },
+  {
+    "code" : "A11-FA-5",
+    "display" : "Folic acid 5 mg tablet",
+    "definition" : "High-dose folate per protocol."
+  },
+  {
+    "code" : "A12-CALC",
+    "display" : "Calcium carbonate 500 mg tablet",
+    "definition" : "Calcium supplementation to reduce pre-eclampsia risk."
+  },
+  {
+    "code" : "B03-FE-SULF",
+    "display" : "Ferrous sulfate 200 mg (65 mg elemental) tablet",
+    "definition" : "Treatment of iron-deficiency anemia."
+  },
+  {
+    "code" : "A11-MV-PREN",
+    "display" : "Prenatal multivitamin",
+    "definition" : "Combined antenatal vitamin/mineral tablet."
+  },
+  {
+    "code" : "A11-VITA-100",
+    "display" : "Vitamin A 100,000 IU capsule",
+    "definition" : "For post-partum/child dosing per guideline."
+  },
+  {
+    "code" : "A11-VITA-200",
+    "display" : "Vitamin A 200,000 IU capsule",
+    "definition" : "For post-partum/child dosing per guideline."
+  },
+  {
+    "code" : "G02-OXY",
+    "display" : "Oxytocin 10 IU/mL injection",
+    "definition" : "Active management of third stage, PPH prevention/treatment."
+  },
+  {
+    "code" : "G02-MISO",
+    "display" : "Misoprostol 200 mcg tablet",
+    "definition" : "PPH prevention/treatment where oxytocin unavailable."
+  },
+  {
+    "code" : "A12-MGSO4",
+    "display" : "Magnesium sulfate injection",
+    "definition" : "Severe pre-eclampsia/eclampsia management (loading/maintenance)."
+  },
+  {
+    "code" : "C02-METHYLDOPA",
+    "display" : "Methyldopa 250 mg tablet",
+    "definition" : "Antihypertensive in pregnancy per protocol."
+  },
+  {
+    "code" : "C08-NIFEDIPINE",
+    "display" : "Nifedipine 10 mg capsule",
+    "definition" : "Acute BP control in severe hypertension (per protocol)."
+  },
+  {
+    "code" : "J01-AMX-DT",
+    "display" : "Amoxicillin 250 mg dispersible tablet",
+    "definition" : "Child pneumonia/OTIT treatment; community case mgmt."
+  },
+  {
+    "code" : "J01-AMOX-CAP",
+    "display" : "Amoxicillin 500 mg capsule",
+    "definition" : "Adult/maternal infections per protocol."
+  },
+  {
+    "code" : "J01-AMP",
+    "display" : "Ampicillin injection",
+    "definition" : "Neonatal sepsis first-line (with gentamicin)."
+  },
+  {
+    "code" : "J01-GENTA",
+    "display" : "Gentamicin injection",
+    "definition" : "Neonatal sepsis first-line (with ampicillin)."
+  },
+  {
+    "code" : "J01-CEFTRI",
+    "display" : "Ceftriaxone injection",
+    "definition" : "Severe infections; inpatient use per protocol."
+  },
+  {
+    "code" : "J01-CLX",
+    "display" : "Cloxacillin 500 mg capsule",
+    "definition" : "Skin/soft tissue and mastitis per protocol."
+  },
+  {
+    "code" : "J01-METRO",
+    "display" : "Metronidazole 400 mg tablet",
+    "definition" : "Anaerobic/obstetric infections per protocol."
+  },
+  {
+    "code" : "J06-ANTI-D-IG",
+    "display" : "Anti-D immunoglobulin",
+    "definition" : "Rh-D negative prophylaxis for sensitizing events."
+  },
+  {
+    "code" : "J01-ERYTHRO",
+    "display" : "Erythromycin 250 mg tablet",
+    "definition" : "Alternative macrolide; PPROM/GBS contexts per protocol."
+  },
+  {
+    "code" : "A07-ORS",
+    "display" : "Oral rehydration salts (sachet)",
+    "definition" : "Acute diarrhea rehydration."
+  },
+  {
+    "code" : "A07-ZINC20",
+    "display" : "Zinc sulfate 20 mg tablet",
+    "definition" : "Adjunct for pediatric diarrhea (10–14 days)."
+  },
+  {
+    "code" : "N02-PARA-SYR",
+    "display" : "Paracetamol 125 mg/5 mL syrup",
+    "definition" : "Fever/pain management in children."
+  },
+  {
+    "code" : "R03-SALB-INH",
+    "display" : "Salbutamol 100 mcg inhaler",
+    "definition" : "Wheeze/asthma relief in MNCH contexts."
+  },
+  {
+    "code" : "P01-ACT-AL",
+    "display" : "ACT: Artemether–Lumefantrine",
+    "definition" : "First-line uncomplicated malaria (weight-based)."
+  },
+  {
+    "code" : "P01-ACT-DHA-PPQ",
+    "display" : "ACT: Dihydroartemisinin–Piperaquine",
+    "definition" : "Alternative ACT per national guideline."
+  },
+  {
+    "code" : "P01-SP",
+    "display" : "Sulfadoxine–Pyrimethamine (SP)",
+    "definition" : "IPTp in pregnancy per schedule."
+  },
+  {
+    "code" : "P02-ALB",
+    "display" : "Albendazole 400 mg tablet",
+    "definition" : "Antenatal deworming per protocol."
+  },
+  {
+    "code" : "G03-LNG-EC",
+    "display" : "Levonorgestrel 1.5 mg (EC)",
+    "definition" : "Emergency contraception (single dose)."
+  },
+  {
+    "code" : "G03-DMPA-IM",
+    "display" : "DMPA 150 mg/mL IM injection",
+    "definition" : "3-monthly injectable contraceptive."
+  },
+  {
+    "code" : "G03-DMPA-SC",
+    "display" : "DMPA 104 mg/0.65 mL SC",
+    "definition" : "3-monthly SC contraceptive (sayana-type)."
+  },
+  {
+    "code" : "G03-ETON-IMP",
+    "display" : "Etonogestrel implant",
+    "definition" : "Long-acting reversible contraception."
+  },
+  {
+    "code" : "G03-COC",
+    "display" : "Combined oral contraceptive (LNG/EE)",
+    "definition" : "Daily combined pill per protocol."
+  },
+  {
+    "code" : "D08-CHX-7",
+    "display" : "Chlorhexidine 7.1% digluconate gel",
+    "definition" : "Umbilical cord care (4% free CHX equivalent)."
+  },
+  {
+    "code" : "J07-BCG",
+    "display" : "BCG vaccine",
+    "definition" : "At birth — TB prevention."
+  },
+  {
+    "code" : "J07-OPV",
+    "display" : "OPV vaccine",
+    "definition" : "Oral polio per schedule."
+  },
+  {
+    "code" : "J07-IPV",
+    "display" : "IPV vaccine",
+    "definition" : "Inactivated polio per schedule."
+  },
+  {
+    "code" : "J07-PENTA",
+    "display" : "Pentavalent DTP-HepB-Hib vaccine",
+    "definition" : "Primary series per schedule."
+  },
+  {
+    "code" : "J07-PCV",
+    "display" : "Pneumococcal conjugate vaccine",
+    "definition" : "PCV10/13 per national schedule."
+  },
+  {
+    "code" : "J07-ROTA",
+    "display" : "Rotavirus vaccine",
+    "definition" : "Rotavirus per schedule."
+  },
+  {
+    "code" : "J07-MR",
+    "display" : "Measles-Rubella vaccine",
+    "definition" : "MR at 9/15 months per schedule."
+  },
+  {
+    "code" : "J07-YF",
+    "display" : "Yellow fever vaccine",
+    "definition" : "Yellow fever per schedule."
+  },
+  {
+    "code" : "J07-HPV",
+    "display" : "HPV vaccine",
+    "definition" : "Girls/boys per national program."
+  },
+  {
+    "code" : "J07-TD",
+    "display" : "Tetanus-diphtheria (Td) vaccine",
+    "definition" : "Adolescent/maternal protection."
+  },
+  {
+    "code" : "R01-ORS-ZINC-KIT",
+    "display" : "ORS + Zinc kit",
+    "definition" : "Community diarrhea pack for claims/prescription."
+  },
+  {
+    "code" : "J01-AMP-GEN-COMB",
+    "display" : "Ampicillin + Gentamicin regimen (neonatal)",
+    "definition" : "Combined line item for neonatal sepsis claims."
+  },
+  {
+    "code" : "A10-INSULIN-NPH",
+    "display" : "Insulin NPH",
+    "definition" : "Gestational diabetes—basal insulin per protocol."
+  },
+  {
+    "code" : "A10-METFORMIN",
+    "display" : "Metformin 500 mg tablet",
+    "definition" : "GDM/T2DM per national guideline and obstetric advice."
+  }]
+}

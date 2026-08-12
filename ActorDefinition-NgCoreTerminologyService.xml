@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="NgCoreTerminologyService"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition NgCoreTerminologyService</b></p><a name="NgCoreTerminologyService"> </a><a name="hcNgCoreTerminologyService"> </a><table class="grid"><tr><td><b>Actor: NgCoreTerminologyService </b></td><td>Nigeria Core Terminology Service</td><td>Type: system </td></tr><tr><td colspan="3"><div><h3>Role</h3>
+<p>The <strong>Nigeria Core Terminology Service</strong> publishes, maintains, or provides
+computational access to:</p>
+<ul>
+<li><code>CodeSystem</code>;</li>
+<li><code>ValueSet</code>;</li>
+<li><code>ConceptMap</code>;</li>
+<li><code>NamingSystem</code>, where applicable;</li>
+<li>national and program terminology; and</li>
+<li>adopted international terminology such as ICD-11, SNOMED CT, LOINC, ATC,
+and other approved systems where licensing permits.</li>
+</ul>
+<h3>Responsibilities</h3>
+<p>The service may:</p>
+<ul>
+<li>publish governed terminology artefacts;</li>
+<li>validate codes and ValueSet membership;</li>
+<li>expand ValueSets;</li>
+<li>provide concept lookup;</li>
+<li>translate codes using governed <code>ConceptMap</code> resources;</li>
+<li>manage terminology versions and mappings; and</li>
+<li>support terminology validation during Nigeria Core conformance testing.</li>
+</ul>
+<p>Supported operations may include:</p>
+<p><code>$lookup</code> | <code>$validate-code</code> | <code>$expand</code> | <code>$translate</code> | <code>$subsumes</code></p>
+<p>Availability <strong>SHALL</strong> be determined from the service <code>CapabilityStatement</code>.</p>
+<h3>Conformance expectations</h3>
+<p>A Terminology Service <strong>SHALL</strong>:</p>
+<ul>
+<li>expose valid FHIR terminology resources;</li>
+<li>preserve canonical URLs and terminology identifiers;</li>
+<li>preserve relevant terminology versions;</li>
+<li>distinguish coding systems using governed identifiers;</li>
+<li>return FHIR-conformant responses;</li>
+<li>advertise only reliably supported terminology and operations; and</li>
+<li>provide an accurate <code>CapabilityStatement</code>.</li>
+</ul>
+<p>It <strong>SHALL NOT</strong> silently substitute terminology versions where meaning or
+validity could change.</p>
+<p>Where local terminology is exchanged, the original code and coding system
+<strong>SHALL</strong> be retained. Version information <strong>SHOULD</strong> be retained where
+relevant, and governed mappings <strong>SHOULD</strong> use published <code>ConceptMap</code>
+resources.</p>
+<p>Mappings <strong>SHOULD NOT</strong> be treated as simple text substitutions. Where no valid
+mapping exists, a service <strong>SHOULD</strong> report that no translation can be
+determined rather than inventing a code.</p>
+<p>Required terminology bindings defined by Nigeria Core profiles <strong>SHALL</strong> be
+honoured.</p>
+<h3>Governance and licensing</h3>
+<p>Terminology governance <strong>SHOULD</strong> address approval, versioning, retirement,
+mapping, publication, correction, and stewardship.</p>
+<p>National terminology <strong>SHALL NOT</strong> be locally modified while retaining the same
+canonical identifier if the modification changes its governed meaning.</p>
+<p>Implementers <strong>SHALL</strong> comply with applicable licensing and distribution
+requirements for external terminologies.</p>
+<h3>Relationships</h3>
+<p>The Terminology Service commonly supports the <strong>Nigeria Core Requestor,
+Responder, Registry Service,</strong> and <strong>Conformance and Sandbox Service</strong>.</p>
+<p>Facilities may consume shared national or subnational terminology services
+rather than operating independent terminology servers.</p>
+</div></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="https://fhir-ig.digitalhealth.gov.ng/ActorDefinition/NgCoreTerminologyService"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="0.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="NgCoreTerminologyService"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Nigeria Core Terminology Service"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-08-12T13:22:49+01:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="NDHI"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="NDHI"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://digitalhealth.gov.ng"/>
+      </telecom>
+      <telecom>
+        <system value="email"/>
+        <value value="emeka2015@gmail.com"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="Nigeria Digital in Health Initiative."/>
+      <telecom>
+        <system value="email"/>
+        <value value="lekeojewale@gmail.com"/>
+        <use value="work"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="Nigeria Digital in Health Initiative."/>
+      <telecom>
+        <system value="email"/>
+        <value value="emeka2015@gmail.com"/>
+        <use value="work"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="A **terminology service** providing computational access to Nigeria Core&#xA;CodeSystems, ValueSets, ConceptMaps, and supported external terminologies."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="NG"/>
+        <display value="Nigeria"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose">
+    <valueMarkdown value="Defines the role responsible for consistent representation, validation, lookup,&#xA;expansion, and translation of coded information used by Nigeria Core&#xA;implementations."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="system"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation">
+    <valueMarkdown value="&#xA;### Role&#xA;&#xA;The **Nigeria Core Terminology Service** publishes, maintains, or provides&#xA;computational access to:&#xA;&#xA;* `CodeSystem`;&#xA;* `ValueSet`;&#xA;* `ConceptMap`;&#xA;* `NamingSystem`, where applicable;&#xA;* national and program terminology; and&#xA;* adopted international terminology such as ICD-11, SNOMED CT, LOINC, ATC,&#xA;  and other approved systems where licensing permits.&#xA;&#xA;### Responsibilities&#xA;&#xA;The service may:&#xA;&#xA;* publish governed terminology artefacts;&#xA;* validate codes and ValueSet membership;&#xA;* expand ValueSets;&#xA;* provide concept lookup;&#xA;* translate codes using governed `ConceptMap` resources;&#xA;* manage terminology versions and mappings; and&#xA;* support terminology validation during Nigeria Core conformance testing.&#xA;&#xA;Supported operations may include:&#xA;&#xA;`$lookup` | `$validate-code` | `$expand` | `$translate` | `$subsumes`&#xA;&#xA;Availability **SHALL** be determined from the service `CapabilityStatement`.&#xA;&#xA;### Conformance expectations&#xA;&#xA;A Terminology Service **SHALL**:&#xA;&#xA;* expose valid FHIR terminology resources;&#xA;* preserve canonical URLs and terminology identifiers;&#xA;* preserve relevant terminology versions;&#xA;* distinguish coding systems using governed identifiers;&#xA;* return FHIR-conformant responses;&#xA;* advertise only reliably supported terminology and operations; and&#xA;* provide an accurate `CapabilityStatement`.&#xA;&#xA;It **SHALL NOT** silently substitute terminology versions where meaning or&#xA;validity could change.&#xA;&#xA;Where local terminology is exchanged, the original code and coding system&#xA;**SHALL** be retained. Version information **SHOULD** be retained where&#xA;relevant, and governed mappings **SHOULD** use published `ConceptMap`&#xA;resources.&#xA;&#xA;Mappings **SHOULD NOT** be treated as simple text substitutions. Where no valid&#xA;mapping exists, a service **SHOULD** report that no translation can be&#xA;determined rather than inventing a code.&#xA;&#xA;Required terminology bindings defined by Nigeria Core profiles **SHALL** be&#xA;honoured.&#xA;&#xA;### Governance and licensing&#xA;&#xA;Terminology governance **SHOULD** address approval, versioning, retirement,&#xA;mapping, publication, correction, and stewardship.&#xA;&#xA;National terminology **SHALL NOT** be locally modified while retaining the same&#xA;canonical identifier if the modification changes its governed meaning.&#xA;&#xA;Implementers **SHALL** comply with applicable licensing and distribution&#xA;requirements for external terminologies.&#xA;&#xA;### Relationships&#xA;&#xA;The Terminology Service commonly supports the **Nigeria Core Requestor,&#xA;Responder, Registry Service,** and **Conformance and Sandbox Service**.&#xA;&#xA;Facilities may consume shared national or subnational terminology services&#xA;rather than operating independent terminology servers."/>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.12.5"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

@@ -1,0 +1,63 @@
+{
+  "resourceType" : "Patient",
+  "id" : "NgPatient-003",
+  "meta" : {
+    "lastUpdated" : "2025-11-04T11:45:00Z",
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient NgPatient-003</b></p><a name=\"NgPatient-003\"> </a><a name=\"hcNgPatient-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-11-04 11:45:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-patient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Suleiman Bala  Male, DoB: 2019-09-05 ( birthcert)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">mobile/08123456789</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Plot 7, Mabushi Abuja FC </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Aisha Bala </li><li>Abuja FC </li><li><a href=\"tel:+2348122223344\">+2348122223344</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "BIRTHCERT"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "NPC-FCT-2019-004321"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "MOBILE"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "08123456789"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Bala",
+    "given" : ["Suleiman"]
+  }],
+  "gender" : "male",
+  "birthDate" : "2019-09-05",
+  "address" : [{
+    "line" : ["Plot 7, Mabushi"],
+    "city" : "Abuja",
+    "district" : "fc-municipal",
+    "state" : "FC"
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "text" : "MOTHER"
+    }],
+    "name" : {
+      "family" : "Bala",
+      "given" : ["Aisha"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "+2348122223344"
+    }],
+    "address" : {
+      "city" : "Abuja",
+      "district" : "fc-municipal",
+      "state" : "FC"
+    }
+  }]
+}

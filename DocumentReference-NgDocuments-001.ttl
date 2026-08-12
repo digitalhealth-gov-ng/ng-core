@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/DocumentReference/NgDocuments-001> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgDocuments-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-documents" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-documents>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference NgDocuments-001</b></p><a name=\"NgDocuments-001\"> </a><a name=\"hcNgDocuments-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-documents.html\">Nigeria Document Reference</a></p></div><p><b>status</b>: Current</p><p><b>docStatus</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/document-relationship-type appends}\">Appends</span></p><p><b>category</b>: <span title=\"Codes:\">Immunization record</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>date</b>: 2026-08-03 07:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></p><p><b>authenticator</b>: <a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></p><p><b>custodian</b>: <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://nphcda.gov.ng/bhcpf-validated-list-tiered/\">https://nphcda.gov.ng/bhcpf-validated-list-tiered/</a></td><td>Immunization Record</td><td>2026-08-03 07:25:00+0100</td></tr></table></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td><td><b>Period</b></td><td><b>FacilityType</b></td><td><b>PracticeSetting</b></td><td><b>SourcePatientInfo</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter-NgEncounter-002.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 12:15:00+0000 --&gt; 2025-11-04 12:25:00+0000</a></td><td>2026-08-03 07:00:00+0100 --&gt; 2026-08-03 07:30:00+0100</td><td><span title=\"Codes:\">Primary health care facility</span></td><td><span title=\"Codes:\">Routine immunization service</span></td><td><a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></td></tr></table></div>"
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.docStatus [ fhir:value "final"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/document-relationship-type" ] ;
+       fhir:Coding.code [ fhir:value "appends" ] ;
+       fhir:Coding.display [ fhir:value "Appends" ]
+     ]
+  ] ;
+  fhir:DocumentReference.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Immunization record" ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2026-08-03T07:30:00+01:00"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+  ] ;
+  fhir:DocumentReference.authenticator [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+  ] ;
+  fhir:DocumentReference.custodian [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-002> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-002" ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+       fhir:Attachment.url [ fhir:value "https://nphcda.gov.ng/bhcpf-validated-list-tiered/" ] ;
+       fhir:Attachment.title [ fhir:value "Immunization Record" ] ;
+       fhir:Attachment.creation [ fhir:value "2026-08-03T07:25:00+01:00"^^xsd:dateTime ]
+     ]
+  ] ;
+  fhir:DocumentReference.context [
+     fhir:DocumentReference.context.encounter [
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Encounter/NgEncounter-002> ;
+       fhir:Reference.reference [ fhir:value "Encounter/NgEncounter-002" ]
+     ] ;
+     fhir:DocumentReference.context.period [
+       fhir:Period.start [ fhir:value "2026-08-03T07:00:00+01:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2026-08-03T07:30:00+01:00"^^xsd:dateTime ]
+     ] ;
+     fhir:DocumentReference.context.facilityType [
+       fhir:CodeableConcept.text [ fhir:value "Primary health care facility" ]
+     ] ;
+     fhir:DocumentReference.context.practiceSetting [
+       fhir:CodeableConcept.text [ fhir:value "Routine immunization service" ]
+     ] ;
+     fhir:DocumentReference.context.sourcePatientInfo [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+       fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/DocumentReference/NgDocuments-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

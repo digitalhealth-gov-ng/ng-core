@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Invoice xmlns="http://hl7.org/fhir">
+  <id value="NgInvoice-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-invoice"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Invoice NgInvoice-001</b></p><a name="NgInvoice-001"> </a><a name="hcNgInvoice-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-invoice.html">NG Invoice</a></p></div><p><b>status</b>: issued</p><p><b>type</b>: <span title="Codes:">Pharmacy dispensing invoice</span></p><p><b>subject</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>date</b>: 2026-08-03 08:30:00+0100</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Role</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Dispensing pharmacist</span></td><td><a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></td></tr></table><p><b>issuer</b>: <a href="Organization-NgOrganization-002.html">Organization Kano Central Hospital Pharmacy</a></p><blockquote><p><b>lineItem</b></p><p><b>sequence</b>: 1</p><p><b>chargeItem</b>: <span title="Codes:">Amoxicillin 500 mg capsules, 21 capsules</span></p><blockquote><p><b>priceComponent</b></p><p><b>type</b>: base price</p><h3>Amounts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>3500</td><td>Nigerian naira</td></tr></table></blockquote></blockquote><blockquote><p><b>lineItem</b></p><p><b>sequence</b>: 2</p><p><b>chargeItem</b>: <span title="Codes:">Paracetamol 500 mg tablets, 20 tablets</span></p><blockquote><p><b>priceComponent</b></p><p><b>type</b>: base price</p><h3>Amounts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>1000</td><td>Nigerian naira</td></tr></table></blockquote></blockquote><blockquote><p><b>lineItem</b></p><p><b>sequence</b>: 3</p><p><b>chargeItem</b>: <span title="Codes:">Pharmacy dispensing service</span></p><blockquote><p><b>priceComponent</b></p><p><b>type</b>: base price</p><h3>Amounts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>500</td><td>Nigerian naira</td></tr></table></blockquote></blockquote><h3>TotalNets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>5000</td><td>Nigerian naira</td></tr></table><h3>TotalGrosses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>5000</td><td>Nigerian naira</td></tr></table><p><b>paymentTerms</b>: </p><div><p>Payment is due at the point of medicine collection.</p>
+</div><p><b>note</b>: </p><blockquote><div><p>The invoice covers medicines dispensed and the associated pharmacy service.</p>
+</div></blockquote></div>
+  </text>
+  <status value="issued"/>
+  <type>
+    <text value="Pharmacy dispensing invoice"/>
+  </type>
+  <subject>
+    <reference value="Patient/NgPatient-002"/>
+  </subject>
+  <date value="2026-08-03T08:30:00+01:00"/>
+  <participant>
+    <role>
+      <text value="Dispensing pharmacist"/>
+    </role>
+    <actor>
+      <reference value="Practitioner/NgPractitioner-002"/>
+    </actor>
+  </participant>
+  <issuer>
+    <reference value="Organization/NgOrganization-002"/>
+  </issuer>
+  <lineItem>
+    <sequence value="1"/>
+    <chargeItemCodeableConcept>
+      <text value="Amoxicillin 500 mg capsules, 21 capsules"/>
+    </chargeItemCodeableConcept>
+    <priceComponent>
+      <type value="base"/>
+      <amount>
+        <value value="3500"/>
+        <currency value="NGN"/>
+      </amount>
+    </priceComponent>
+  </lineItem>
+  <lineItem>
+    <sequence value="2"/>
+    <chargeItemCodeableConcept>
+      <text value="Paracetamol 500 mg tablets, 20 tablets"/>
+    </chargeItemCodeableConcept>
+    <priceComponent>
+      <type value="base"/>
+      <amount>
+        <value value="1000"/>
+        <currency value="NGN"/>
+      </amount>
+    </priceComponent>
+  </lineItem>
+  <lineItem>
+    <sequence value="3"/>
+    <chargeItemCodeableConcept>
+      <text value="Pharmacy dispensing service"/>
+    </chargeItemCodeableConcept>
+    <priceComponent>
+      <type value="base"/>
+      <amount>
+        <value value="500"/>
+        <currency value="NGN"/>
+      </amount>
+    </priceComponent>
+  </lineItem>
+  <totalNet>
+    <value value="5000"/>
+    <currency value="NGN"/>
+  </totalNet>
+  <totalGross>
+    <value value="5000"/>
+    <currency value="NGN"/>
+  </totalGross>
+  <paymentTerms value="Payment is due at the point of medicine collection."/>
+  <note>
+    <text value="The invoice covers medicines dispensed and the associated pharmacy service."/>
+  </note>
+</Invoice>

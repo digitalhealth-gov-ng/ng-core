@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-art-register-tpt-outcome-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-art-register-tpt-outcome-cs</b></p><a name=\"ng-hiv-art-register-tpt-outcome-cs\"> </a><a name=\"hcng-hiv-art-register-tpt-outcome-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-tpt-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ng-hiv-art-register-tpt-outcome-cs-1\"> </a></td><td>Treatment completed</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ng-hiv-art-register-tpt-outcome-cs-2\"> </a></td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ng-hiv-art-register-tpt-outcome-cs-3\"> </a></td><td>Stopped TPT</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ng-hiv-art-register-tpt-outcome-cs-4\"> </a></td><td>Developed active TB</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ng-hiv-art-register-tpt-outcome-cs-5\"> </a></td><td>Died</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-tpt-outcome-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.27"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivArtRegisterTptOutcomeCS",
+  "title" : "NG HIV ART Register TPT Outcome Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-28",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "TB preventive-therapy outcome codes printed in column A22 of the National ART Register.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Treatment completed"
+  },
+  {
+    "code" : "2",
+    "display" : "Lost to follow-up"
+  },
+  {
+    "code" : "3",
+    "display" : "Stopped TPT"
+  },
+  {
+    "code" : "4",
+    "display" : "Developed active TB"
+  },
+  {
+    "code" : "5",
+    "display" : "Died"
+  }]
+}

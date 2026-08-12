@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-snomed-ct-concepts"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-snomed-ct-concepts</b></p><a name="ng-hiv-snomed-ct-concepts"> </a><a name="hcng-hiv-snomed-ct-concepts"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/135818000">135818000</a></td><td style="color: #cccccc">General health poor</td></tr><tr><td><a href="http://snomed.info/id/135817005">135817005</a></td><td style="color: #cccccc">General health fair</td></tr><tr><td><a href="http://snomed.info/id/135815002">135815002</a></td><td style="color: #cccccc">General health good</td></tr><tr><td><a href="http://snomed.info/id/87276001">87276001</a></td><td style="color: #cccccc">Nutritional status</td></tr><tr><td><a href="http://snomed.info/id/284473002">284473002</a></td><td style="color: #cccccc">Mid upper arm circumference</td></tr><tr><td><a href="http://snomed.info/id/315124004">315124004</a></td><td style="color: #cccccc">HIV viral load</td></tr><tr><td><a href="http://snomed.info/id/129019007">129019007</a></td><td style="color: #cccccc">Taking medication</td></tr><tr><td><a href="http://snomed.info/id/410524007">410524007</a></td><td style="color: #cccccc">Was not started</td></tr><tr><td><a href="http://snomed.info/id/257622000">257622000</a></td><td style="color: #cccccc">Healthcare facility</td></tr><tr><td><a href="http://snomed.info/id/276052003">276052003</a></td><td style="color: #cccccc">Public facilities</td></tr><tr><td><a href="http://snomed.info/id/309895006">309895006</a></td><td style="color: #cccccc">Private hospital</td></tr><tr><td><a href="http://snomed.info/id/394794000">394794000</a></td><td style="color: #cccccc">Health clinic managed by voluntary or private agents</td></tr><tr><td><a href="http://snomed.info/id/185483006">185483006</a></td><td style="color: #cccccc">Outreach clinic</td></tr><tr><td><a href="http://snomed.info/id/1991000124105">1991000124105</a></td><td style="color: #cccccc">Referred by self</td></tr><tr><td><a href="http://snomed.info/id/310391008">310391008</a></td><td style="color: #cccccc">Community clinic</td></tr><tr><td><a href="http://snomed.info/id/76102007">76102007</a></td><td style="color: #cccccc">Male homosexual</td></tr><tr><td><a href="http://snomed.info/id/159799000">159799000</a></td><td style="color: #cccccc">Female prostitute</td></tr><tr><td><a href="http://snomed.info/id/407375002">407375002</a></td><td style="color: #cccccc">Surgically transgendered transsexual</td></tr><tr><td><a href="http://snomed.info/id/106540006">106540006</a></td><td style="color: #cccccc">Laborer</td></tr><tr><td><a href="http://snomed.info/id/87447002">87447002</a></td><td style="color: #cccccc">Truck and van driver (long-distance transport)</td></tr><tr><td><a href="http://snomed.info/id/446654005">446654005</a></td><td style="color: #cccccc">Refugee</td></tr><tr><td><a href="http://snomed.info/id/226034001">226034001</a></td><td style="color: #cccccc">Injecting drug user</td></tr><tr><td><a href="http://snomed.info/id/410265008">410265008</a></td><td style="color: #cccccc">Medication administration education, guidance, and counseling</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-snomed-ct-concepts"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.136"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivSNOMEDCTConceptsVS"/>
+  <title value="Nigeria HIV SNOMED CT Concepts"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-24"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="135818000"/>
+      </concept>
+      <concept>
+        <code value="135817005"/>
+      </concept>
+      <concept>
+        <code value="135815002"/>
+      </concept>
+      <concept>
+        <code value="87276001"/>
+      </concept>
+      <concept>
+        <code value="284473002"/>
+      </concept>
+      <concept>
+        <code value="315124004"/>
+      </concept>
+      <concept>
+        <code value="129019007"/>
+      </concept>
+      <concept>
+        <code value="410524007"/>
+      </concept>
+      <concept>
+        <code value="257622000"/>
+      </concept>
+      <concept>
+        <code value="276052003"/>
+      </concept>
+      <concept>
+        <code value="309895006"/>
+      </concept>
+      <concept>
+        <code value="394794000"/>
+      </concept>
+      <concept>
+        <code value="185483006"/>
+      </concept>
+      <concept>
+        <code value="1991000124105"/>
+      </concept>
+      <concept>
+        <code value="310391008"/>
+      </concept>
+      <concept>
+        <code value="76102007"/>
+      </concept>
+      <concept>
+        <code value="159799000"/>
+      </concept>
+      <concept>
+        <code value="407375002"/>
+      </concept>
+      <concept>
+        <code value="106540006"/>
+      </concept>
+      <concept>
+        <code value="87447002"/>
+      </concept>
+      <concept>
+        <code value="446654005"/>
+      </concept>
+      <concept>
+        <code value="226034001"/>
+      </concept>
+      <concept>
+        <code value="410265008"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

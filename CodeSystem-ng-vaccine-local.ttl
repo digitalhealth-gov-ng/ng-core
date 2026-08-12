@@ -1,0 +1,200 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-vaccine-local"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-vaccine-local</b></p><a name=\"ng-vaccine-local\"> </a><a name=\"hcng-vaccine-local\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE1<a name=\"ng-vaccine-local-IMMZ.46Z.46DE1\"> </a></td><td>BCG birth dose</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE2<a name=\"ng-vaccine-local-IMMZ.46Z.46DE2\"> </a></td><td>HepB birth dose</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE3<a name=\"ng-vaccine-local-IMMZ.46Z.46DE3\"> </a></td><td>Polio (OPV0) birth dose</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE4<a name=\"ng-vaccine-local-IMMZ.46Z.46DE4\"> </a></td><td>Pentavalent 1</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE5<a name=\"ng-vaccine-local-IMMZ.46Z.46DE5\"> </a></td><td>Oral Polio Vaccine (OPV 1)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE6<a name=\"ng-vaccine-local-IMMZ.46Z.46DE6\"> </a></td><td>Pneumococcal Conjugate Vaccine (PCV 1)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE7<a name=\"ng-vaccine-local-IMMZ.46Z.46DE7\"> </a></td><td>Rotavirus 1</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE8<a name=\"ng-vaccine-local-IMMZ.46Z.46DE8\"> </a></td><td>Inactivated Polio Vaccine (IPV 1)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE9<a name=\"ng-vaccine-local-IMMZ.46Z.46DE9\"> </a></td><td>Oral Polio Vaccine (OPV 2)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE10<a name=\"ng-vaccine-local-IMMZ.46Z.46DE10\"> </a></td><td>Pneumococcal Conjugate Vaccine (PCV 2)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE11<a name=\"ng-vaccine-local-IMMZ.46Z.46DE11\"> </a></td><td>Pentavalent 2</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE12<a name=\"ng-vaccine-local-IMMZ.46Z.46DE12\"> </a></td><td>Rotavirus 2</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE13<a name=\"ng-vaccine-local-IMMZ.46Z.46DE13\"> </a></td><td>Oral Polio Vaccine (OPV 3)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE14<a name=\"ng-vaccine-local-IMMZ.46Z.46DE14\"> </a></td><td>Pentavalent 3</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE15<a name=\"ng-vaccine-local-IMMZ.46Z.46DE15\"> </a></td><td>Pneumococcal Conjugate Vaccine (PCV 3)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE16<a name=\"ng-vaccine-local-IMMZ.46Z.46DE16\"> </a></td><td>Rotavirus 3</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE17<a name=\"ng-vaccine-local-IMMZ.46Z.46DE17\"> </a></td><td>Inactivated Polio Vaccine (IPV 2)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE18<a name=\"ng-vaccine-local-IMMZ.46Z.46DE18\"> </a></td><td>Malaria 1</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE19<a name=\"ng-vaccine-local-IMMZ.46Z.46DE19\"> </a></td><td>Vitamin A 1</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE20<a name=\"ng-vaccine-local-IMMZ.46Z.46DE20\"> </a></td><td>Malaria 2</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE21<a name=\"ng-vaccine-local-IMMZ.46Z.46DE21\"> </a></td><td>Malaria 3</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE22<a name=\"ng-vaccine-local-IMMZ.46Z.46DE22\"> </a></td><td>Measles Rubella (MR 1)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE23<a name=\"ng-vaccine-local-IMMZ.46Z.46DE23\"> </a></td><td>Yellow Fever</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE24<a name=\"ng-vaccine-local-IMMZ.46Z.46DE24\"> </a></td><td>Meningitis</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE25<a name=\"ng-vaccine-local-IMMZ.46Z.46DE25\"> </a></td><td>Vitamin A 2</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE26<a name=\"ng-vaccine-local-IMMZ.46Z.46DE26\"> </a></td><td>Measles Rubella (MR 2)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE27<a name=\"ng-vaccine-local-IMMZ.46Z.46DE27\"> </a></td><td>Malaria 4</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE28<a name=\"ng-vaccine-local-IMMZ.46Z.46DE28\"> </a></td><td>Tetanus Diphtheria</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE29<a name=\"ng-vaccine-local-IMMZ.46Z.46DE29\"> </a></td><td>Human PapillomaVirus (HPV)</td></tr><tr><td style=\"white-space:nowrap\">IMMZ.Z.DE30<a name=\"ng-vaccine-local-IMMZ.46Z.46DE30\"> </a></td><td>Date LLIN was provided</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.109" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgVaccineLocalCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG IMMZ.D.DE4 Vaccine Local Codes (Dose-labelled)"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Locally defined vaccine codes used for data capture and UI labels. Doses are local; external systems map at antigen/product level."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "30"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BCG birth dose" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HepB birth dose" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Polio (OPV0) birth dose" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pentavalent 1" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral Polio Vaccine (OPV 1)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumococcal Conjugate Vaccine (PCV 1)" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus 1" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inactivated Polio Vaccine (IPV 1)" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral Polio Vaccine (OPV 2)" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumococcal Conjugate Vaccine (PCV 2)" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE11" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pentavalent 2" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE12" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus 2" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE13" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oral Polio Vaccine (OPV 3)" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE14" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pentavalent 3" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE15" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pneumococcal Conjugate Vaccine (PCV 3)" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE16" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotavirus 3" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE17" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inactivated Polio Vaccine (IPV 2)" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE18" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria 1" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE19" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vitamin A 1" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE20" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria 2" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE21" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria 3" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE22" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Measles Rubella (MR 1)" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE23" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yellow Fever" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE24" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Meningitis" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE25" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vitamin A 2" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE26" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Measles Rubella (MR 2)" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE27" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria 4" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE28" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tetanus Diphtheria" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE29" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Human PapillomaVirus (HPV)" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMMZ.Z.DE30" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Date LLIN was provided" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

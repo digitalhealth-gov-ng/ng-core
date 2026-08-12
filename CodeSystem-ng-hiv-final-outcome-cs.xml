@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-final-outcome-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-final-outcome-cs</b></p><a name="ng-hiv-final-outcome-cs"> </a><a name="hcng-hiv-final-outcome-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">started-art<a name="ng-hiv-final-outcome-cs-started-art"> </a></td><td>Started ART</td></tr><tr><td style="white-space:nowrap">declined<a name="ng-hiv-final-outcome-cs-declined"> </a></td><td>Declined</td></tr><tr><td style="white-space:nowrap">died<a name="ng-hiv-final-outcome-cs-died"> </a></td><td>Died</td></tr><tr><td style="white-space:nowrap">confirmed-referral<a name="ng-hiv-final-outcome-cs-confirmed-referral"> </a></td><td>Confirmed referral</td></tr><tr><td style="white-space:nowrap">started-art-in-other-hf<a name="ng-hiv-final-outcome-cs-started-art-in-other-hf"> </a></td><td>Started ART in other HF</td></tr><tr><td style="white-space:nowrap">lost-to-follow-up<a name="ng-hiv-final-outcome-cs-lost-to-follow-up"> </a></td><td>Lost to Follow up</td></tr><tr><td style="white-space:nowrap">other<a name="ng-hiv-final-outcome-cs-other"> </a></td><td>Other</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.52"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivFinalOutcomeCS"/>
+  <title value="HIV - Final Outcome CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Final Outcome"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="started-art"/>
+    <display value="Started ART"/>
+  </concept>
+  <concept>
+    <code value="declined"/>
+    <display value="Declined"/>
+  </concept>
+  <concept>
+    <code value="died"/>
+    <display value="Died"/>
+  </concept>
+  <concept>
+    <code value="confirmed-referral"/>
+    <display value="Confirmed referral"/>
+  </concept>
+  <concept>
+    <code value="started-art-in-other-hf"/>
+    <display value="Started ART in other HF"/>
+  </concept>
+  <concept>
+    <code value="lost-to-follow-up"/>
+    <display value="Lost to Follow up"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

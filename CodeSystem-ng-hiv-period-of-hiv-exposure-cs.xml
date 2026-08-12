@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-period-of-hiv-exposure-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-period-of-hiv-exposure-cs</b></p><a name="ng-hiv-period-of-hiv-exposure-cs"> </a><a name="hcng-hiv-period-of-hiv-exposure-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-period-of-hiv-exposure-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">&lt;3Mths<a name="ng-hiv-period-of-hiv-exposure-cs-.603Mths"> </a></td><td>Less than 3 months</td></tr><tr><td style="white-space:nowrap">3-12Mths<a name="ng-hiv-period-of-hiv-exposure-cs-3-12Mths"> </a></td><td>In 3 to 12 months</td></tr><tr><td style="white-space:nowrap">&gt;12Mths<a name="ng-hiv-period-of-hiv-exposure-cs-.6212Mths"> </a></td><td>Greater than 12 months</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-period-of-hiv-exposure-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.59"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPeriodOfHIVExposureCS"/>
+  <title value="HIV Period of HIV Exposure"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating the period when last the individual was exposed to HIV."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="&lt;3Mths"/>
+    <display value="Less than 3 months"/>
+  </concept>
+  <concept>
+    <code value="3-12Mths"/>
+    <display value="In 3 to 12 months"/>
+  </concept>
+  <concept>
+    <code value="&gt;12Mths"/>
+    <display value="Greater than 12 months"/>
+  </concept>
+</CodeSystem>

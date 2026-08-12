@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-mdcn-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-mdcn-cs</b></p><a name="ng-mdcn-cs"> </a><a name="hcng-mdcn-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">MDCN/R/45231<a name="ng-mdcn-cs-MDCN.47R.4745231"> </a></td><td>First Doctor</td></tr><tr><td style="white-space:nowrap">MDCN/R/12345<a name="ng-mdcn-cs-MDCN.47R.4712345"> </a></td><td>Second Doctor</td></tr><tr><td style="white-space:nowrap">MDCN/R/12346<a name="ng-mdcn-cs-MDCN.47R.4712346"> </a></td><td>Old Doctor</td></tr><tr><td style="white-space:nowrap">MDCN/R/12347<a name="ng-mdcn-cs-MDCN.47R.4712347"> </a></td><td>Young Doctor</td></tr><tr><td style="white-space:nowrap">CHEW-12346<a name="ng-mdcn-cs-CHEW-12346"> </a></td><td>Test CHEW</td></tr><tr><td style="white-space:nowrap">CHEW-12347<a name="ng-mdcn-cs-CHEW-12347"> </a></td><td>Dentist</td></tr><tr><td style="white-space:nowrap">PRSN-9C4E-7B12-OB01<a name="ng-mdcn-cs-PRSN-9C4E-7B12-OB01"> </a></td><td>Pseudonymized Doctor</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.89"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgMdcnCS"/>
+  <title value="NG Practitioner Identifier CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="grouped-by"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="MDCN/R/45231"/>
+    <display value="First Doctor"/>
+  </concept>
+  <concept>
+    <code value="MDCN/R/12345"/>
+    <display value="Second Doctor"/>
+  </concept>
+  <concept>
+    <code value="MDCN/R/12346"/>
+    <display value="Old Doctor"/>
+  </concept>
+  <concept>
+    <code value="MDCN/R/12347"/>
+    <display value="Young Doctor"/>
+  </concept>
+  <concept>
+    <code value="CHEW-12346"/>
+    <display value="Test CHEW"/>
+  </concept>
+  <concept>
+    <code value="CHEW-12347"/>
+    <display value="Dentist"/>
+  </concept>
+  <concept>
+    <code value="PRSN-9C4E-7B12-OB01"/>
+    <display value="Pseudonymized Doctor"/>
+  </concept>
+</CodeSystem>

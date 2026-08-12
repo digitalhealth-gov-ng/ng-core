@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-relationship-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-relationship-cs</b></p><a name="ng-relationship-cs"> </a><a name="hcng-relationship-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BROTHER<a name="ng-relationship-cs-BROTHER"> </a></td><td>Brother</td></tr><tr><td style="white-space:nowrap">SISTER<a name="ng-relationship-cs-SISTER"> </a></td><td>Sister</td></tr><tr><td style="white-space:nowrap">SON<a name="ng-relationship-cs-SON"> </a></td><td>Son</td></tr><tr><td style="white-space:nowrap">DAUGHTER<a name="ng-relationship-cs-DAUGHTER"> </a></td><td>Daughter</td></tr><tr><td style="white-space:nowrap">MOTHER<a name="ng-relationship-cs-MOTHER"> </a></td><td>Mother</td></tr><tr><td style="white-space:nowrap">FATHER<a name="ng-relationship-cs-FATHER"> </a></td><td>Father</td></tr><tr><td style="white-space:nowrap">AUNT<a name="ng-relationship-cs-AUNT"> </a></td><td>Aunt</td></tr><tr><td style="white-space:nowrap">COUSIN<a name="ng-relationship-cs-COUSIN"> </a></td><td>Cousin</td></tr><tr><td style="white-space:nowrap">GRDSON<a name="ng-relationship-cs-GRDSON"> </a></td><td>Grand Son</td></tr><tr><td style="white-space:nowrap">GRDDAU<a name="ng-relationship-cs-GRDDAU"> </a></td><td>Grand Daughter</td></tr><tr><td style="white-space:nowrap">INLAW<a name="ng-relationship-cs-INLAW"> </a></td><td>Inlaw</td></tr><tr><td style="white-space:nowrap">NEPHEW<a name="ng-relationship-cs-NEPHEW"> </a></td><td>Nephew</td></tr><tr><td style="white-space:nowrap">NIECE<a name="ng-relationship-cs-NIECE"> </a></td><td>Niece</td></tr><tr><td style="white-space:nowrap">UNCLE<a name="ng-relationship-cs-UNCLE"> </a></td><td>Uncle</td></tr><tr><td style="white-space:nowrap">FRND<a name="ng-relationship-cs-FRND"> </a></td><td>Friend</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.99"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgRelationshipsCS"/>
+  <title value="NG Relationships CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem defines list of persons related to a patient, but who is not a direct target of care"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="BROTHER"/>
+    <display value="Brother"/>
+  </concept>
+  <concept>
+    <code value="SISTER"/>
+    <display value="Sister"/>
+  </concept>
+  <concept>
+    <code value="SON"/>
+    <display value="Son"/>
+  </concept>
+  <concept>
+    <code value="DAUGHTER"/>
+    <display value="Daughter"/>
+  </concept>
+  <concept>
+    <code value="MOTHER"/>
+    <display value="Mother"/>
+  </concept>
+  <concept>
+    <code value="FATHER"/>
+    <display value="Father"/>
+  </concept>
+  <concept>
+    <code value="AUNT"/>
+    <display value="Aunt"/>
+  </concept>
+  <concept>
+    <code value="COUSIN"/>
+    <display value="Cousin"/>
+  </concept>
+  <concept>
+    <code value="GRDSON"/>
+    <display value="Grand Son"/>
+  </concept>
+  <concept>
+    <code value="GRDDAU"/>
+    <display value="Grand Daughter"/>
+  </concept>
+  <concept>
+    <code value="INLAW"/>
+    <display value="Inlaw"/>
+  </concept>
+  <concept>
+    <code value="NEPHEW"/>
+    <display value="Nephew"/>
+  </concept>
+  <concept>
+    <code value="NIECE"/>
+    <display value="Niece"/>
+  </concept>
+  <concept>
+    <code value="UNCLE"/>
+    <display value="Uncle"/>
+  </concept>
+  <concept>
+    <code value="FRND"/>
+    <display value="Friend"/>
+  </concept>
+</CodeSystem>

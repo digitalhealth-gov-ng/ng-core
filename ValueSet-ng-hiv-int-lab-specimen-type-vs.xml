@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-int-lab-specimen-type-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-int-lab-specimen-type-vs</b></p><a name="ng-hiv-int-lab-specimen-type-vs"> </a><a name="hcng-hiv-int-lab-specimen-type-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-int-lab-form-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-specimen-whole-blood">specimen-whole-blood</a></td><td style="color: #cccccc">Whole blood</td><td>Whole-blood specimen.</td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-specimen-plasma">specimen-plasma</a></td><td style="color: #cccccc">Plasma</td><td>Plasma specimen.</td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-specimen-dbs">specimen-dbs</a></td><td style="color: #cccccc">DBS</td><td>Dried blood spot specimen.</td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-specimen-pbs">specimen-pbs</a></td><td style="color: #cccccc">PBS</td><td>PBS as printed on the source form; the expansion is not specified by the source workbook.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-specimen-type-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.96"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivIntLabSpecimenTypeVS"/>
+  <title value="NG HIV Integrated Laboratory Specimen Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Specimen types printed on the integrated laboratory form."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs"/>
+      <concept>
+        <code value="specimen-whole-blood"/>
+      </concept>
+      <concept>
+        <code value="specimen-plasma"/>
+      </concept>
+      <concept>
+        <code value="specimen-dbs"/>
+      </concept>
+      <concept>
+        <code value="specimen-pbs"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-art-register-hepatitis-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-art-register-hepatitis-status-cs</b></p><a name=\"ng-hiv-art-register-hepatitis-status-cs\"> </a><a name=\"hcng-hiv-art-register-hepatitis-status-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-hepatitis-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1a<a name=\"ng-hiv-art-register-hepatitis-status-cs-1a\"> </a></td><td>Hepatitis B negative</td></tr><tr><td style=\"white-space:nowrap\">1b<a name=\"ng-hiv-art-register-hepatitis-status-cs-1b\"> </a></td><td>Hepatitis B positive</td></tr><tr><td style=\"white-space:nowrap\">2a<a name=\"ng-hiv-art-register-hepatitis-status-cs-2a\"> </a></td><td>Hepatitis C negative</td></tr><tr><td style=\"white-space:nowrap\">2b<a name=\"ng-hiv-art-register-hepatitis-status-cs-2b\"> </a></td><td>Hepatitis C positive</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ng-hiv-art-register-hepatitis-status-cs-3\"> </a></td><td>Hepatitis C treatment</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-hepatitis-status-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.24"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivArtRegisterHepatitisStatusCS",
+  "title" : "NG HIV ART Register Hepatitis Screening Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-28",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Hepatitis screening and treatment codes printed in column A28 of the National ART Register.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "1a",
+    "display" : "Hepatitis B negative"
+  },
+  {
+    "code" : "1b",
+    "display" : "Hepatitis B positive"
+  },
+  {
+    "code" : "2a",
+    "display" : "Hepatitis C negative"
+  },
+  {
+    "code" : "2b",
+    "display" : "Hepatitis C positive"
+  },
+  {
+    "code" : "3",
+    "display" : "Hepatitis C treatment"
+  }]
+}

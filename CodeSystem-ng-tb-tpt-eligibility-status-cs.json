@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-tb-tpt-eligibility-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-tb-tpt-eligibility-status-cs</b></p><a name=\"ng-tb-tpt-eligibility-status-cs\"> </a><a name=\"hcng-tb-tpt-eligibility-status-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-eligibility-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Eligible-For-TPT<a name=\"ng-tb-tpt-eligibility-status-cs-Eligible-For-TPT\"> </a></td><td>Is Eligible for TPT</td></tr><tr><td style=\"white-space:nowrap\">TPT-Reason-Not-Eligible<a name=\"ng-tb-tpt-eligibility-status-cs-TPT-Reason-Not-Eligible\"> </a></td><td>Reason Not Eligible for TPT</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-eligibility-status-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.104"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgTbTPTEligibilityStatusCS",
+  "title" : "TB Eligility Status for TPT Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Observation codes used for indicating whether the patient is eligible for TPT.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "Eligible-For-TPT",
+    "display" : "Is Eligible for TPT"
+  },
+  {
+    "code" : "TPT-Reason-Not-Eligible",
+    "display" : "Reason Not Eligible for TPT"
+  }]
+}

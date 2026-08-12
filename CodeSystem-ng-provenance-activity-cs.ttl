@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-provenance-activity-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-provenance-activity-cs</b></p><a name=\"ng-provenance-activity-cs\"> </a><a name=\"hcng-provenance-activity-cs\"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ANONY<a name=\"ng-provenance-activity-cs-ANONY\"> </a></td><td>Anonymize</td><td>Activity that removes all personally identifiable information (PII) to prevent re-identification.</td></tr><tr><td style=\"white-space:nowrap\">DEID<a name=\"ng-provenance-activity-cs-DEID\"> </a></td><td>De-identify</td><td>Activity that removes or obfuscates personal identifiers while retaining data usability.</td></tr><tr><td style=\"white-space:nowrap\">MASK<a name=\"ng-provenance-activity-cs-MASK\"> </a></td><td>Mask</td><td>Activity that hides or replaces specific data elements with placeholder values.</td></tr><tr><td style=\"white-space:nowrap\">LABEL<a name=\"ng-provenance-activity-cs-LABEL\"> </a></td><td>Assign Security Label</td><td>Activity that applies confidentiality, sensitivity, or purpose-of-use labels to data.</td></tr><tr><td style=\"white-space:nowrap\">PSEUD<a name=\"ng-provenance-activity-cs-PSEUD\"> </a></td><td>Pseudonymize</td><td>Activity that replaces direct identifiers with pseudonyms that can be re-linked under controlled conditions.</td></tr><tr><td style=\"white-space:nowrap\">CREATE<a name=\"ng-provenance-activity-cs-CREATE\"> </a></td><td>Create</td><td>Activity representing the creation of new data or resource instance.</td></tr><tr><td style=\"white-space:nowrap\">DELETE<a name=\"ng-provenance-activity-cs-DELETE\"> </a></td><td>Delete</td><td>Activity representing deletion or removal of a data record.</td></tr><tr><td style=\"white-space:nowrap\">APPEND<a name=\"ng-provenance-activity-cs-APPEND\"> </a></td><td>Append</td><td>Activity representing addition of new information to an existing resource or record.</td></tr><tr><td style=\"white-space:nowrap\">NULLIFY<a name=\"ng-provenance-activity-cs-NULLIFY\"> </a></td><td>Nullify</td><td>Activity that invalidates or renders data non-usable without deleting the record.</td></tr><tr><td style=\"white-space:nowrap\">LA<a name=\"ng-provenance-activity-cs-LA\"> </a></td><td>Legally Authenticated</td><td>Activity confirming legal authentication of a record (e.g., signed or witnessed by authorized person).</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.98" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgProvenanceActivityCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG Provenance Activity Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local CodeSystem defining provenance activity codes for data lifecycle operations such as anonymization, de-identification, labeling, creation, and deletion."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "grouped-by"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ANONY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anonymize" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity that removes all personally identifiable information (PII) to prevent re-identification." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DEID" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "De-identify" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity that removes or obfuscates personal identifiers while retaining data usability." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MASK" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mask" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity that hides or replaces specific data elements with placeholder values." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LABEL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Assign Security Label" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity that applies confidentiality, sensitivity, or purpose-of-use labels to data." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PSEUD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pseudonymize" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity that replaces direct identifiers with pseudonyms that can be re-linked under controlled conditions." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CREATE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Create" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity representing the creation of new data or resource instance." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DELETE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Delete" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity representing deletion or removal of a data record." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "APPEND" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Append" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity representing addition of new information to an existing resource or record." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NULLIFY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nullify" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity that invalidates or renders data non-usable without deleting the record." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Legally Authenticated" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Activity confirming legal authentication of a record (e.g., signed or witnessed by authorized person)." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

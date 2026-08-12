@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="NgMedication-003"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication NgMedication-003</b></p><a name="NgMedication-003"> </a><a name="hcNgMedication-003"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-medication.html">NG Medication</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local</code>/IMMZ.Z.DE5</p><p><b>code</b>: <span title="Codes:">Insulin (short-acting) 100 IU/mL</span></p><p><b>form</b>: <span title="Codes:">Injection Solution</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Insulin (short-acting)</span></td><td>100 IU<span style="background: LightGoldenRodYellow"> (Details: UCUM  code[iU] = '[iU]')</span>/1 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span></td></tr></table><h3>Batches</h3><table class="grid"><tr><td style="display: none">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style="display: none">*</td><td>INS-100-2025A</td><td>2027-03-31</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local"/>
+    <value value="IMMZ.Z.DE5"/>
+  </identifier>
+  <code>
+    <text value="Insulin (short-acting) 100 IU/mL"/>
+  </code>
+  <form>
+    <text value="Injection Solution"/>
+  </form>
+  <ingredient>
+    <itemCodeableConcept>
+      <text value="Insulin (short-acting)"/>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="100"/>
+        <unit value="IU"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[iU]"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+      </denominator>
+    </strength>
+  </ingredient>
+  <batch>
+    <lotNumber value="INS-100-2025A"/>
+    <expirationDate value="2027-03-31"/>
+  </batch>
+</Medication>

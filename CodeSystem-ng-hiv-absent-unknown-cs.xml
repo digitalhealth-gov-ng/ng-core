@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-absent-unknown-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-absent-unknown-cs</b></p><a name="ng-hiv-absent-unknown-cs"> </a><a name="hcng-hiv-absent-unknown-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">Absent-or-unknown<a name="ng-hiv-absent-unknown-cs-Absent-or-unknown"> </a></td><td>Absent or unknown</td><td>When the value is not available at the time of the event</td></tr><tr><td style="white-space:nowrap">Not-Applicable<a name="ng-hiv-absent-unknown-cs-Not-Applicable"> </a></td><td>Not Applicable</td><td>The value is not applicable for one or more reasons that are captured by the clinician</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.17"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivAbsentUnknownCS"/>
+  <title value="HIV Absent or Unknown CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating when a value is absent or unknown."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="Absent-or-unknown"/>
+    <display value="Absent or unknown"/>
+    <definition value="When the value is not available at the time of the event"/>
+  </concept>
+  <concept>
+    <code value="Not-Applicable"/>
+    <display value="Not Applicable"/>
+    <definition value="The value is not applicable for one or more reasons that are captured by the clinician"/>
+  </concept>
+</CodeSystem>

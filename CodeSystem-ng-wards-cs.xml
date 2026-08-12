@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-wards-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-wards-cs</b></p><a name="ng-wards-cs"> </a><a name="hcng-wards-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-wards-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fc-amac-abajic<a name="ng-wards-cs-fc-amac-abajic"> </a></td><td>Abaji central</td><td>Abaji central</td></tr><tr><td style="white-space:nowrap">fc-amac-abajine<a name="ng-wards-cs-fc-amac-abajine"> </a></td><td>Abaji North East</td><td>Abaji North East</td></tr><tr><td style="white-space:nowrap">fc-amac-abajise<a name="ng-wards-cs-fc-amac-abajise"> </a></td><td>Abaji South East</td><td>Abaji South East</td></tr><tr><td style="white-space:nowrap">fc-amac-agyana<a name="ng-wards-cs-fc-amac-agyana"> </a></td><td>Agyana/Pandagi</td><td>Agyana/Pandagi</td></tr><tr><td style="white-space:nowrap">fc-amac-rimba<a name="ng-wards-cs-fc-amac-rimba"> </a></td><td>Rimba Ebagi</td><td>Rimba Ebagi</td></tr><tr><td style="white-space:nowrap">fc-amac-nuku<a name="ng-wards-cs-fc-amac-nuku"> </a></td><td>Nuku</td><td>Nuku</td></tr><tr><td style="white-space:nowrap">fc-amac-alu<a name="ng-wards-cs-fc-amac-alu"> </a></td><td>Alu Mamagi</td><td>Alu Mamagi</td></tr><tr><td style="white-space:nowrap">fc-amac-yaba<a name="ng-wards-cs-fc-amac-yaba"> </a></td><td>Yaba</td><td>Yaba</td></tr><tr><td style="white-space:nowrap">fc-amac-gurdi<a name="ng-wards-cs-fc-amac-gurdi"> </a></td><td>Gurdi</td><td>Gurdi</td></tr><tr><td style="white-space:nowrap">fc-amac-gawu<a name="ng-wards-cs-fc-amac-gawu"> </a></td><td>Gawu</td><td>Gawu</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-wards-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.110"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgWardsCS"/>
+  <title value="NG Administrative Wards CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="grouped-by"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="fc-amac-abajic"/>
+    <display value="Abaji central"/>
+    <definition value="Abaji central"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-abajine"/>
+    <display value="Abaji North East"/>
+    <definition value="Abaji North East"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-abajise"/>
+    <display value="Abaji South East"/>
+    <definition value="Abaji South East"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-agyana"/>
+    <display value="Agyana/Pandagi"/>
+    <definition value="Agyana/Pandagi"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-rimba"/>
+    <display value="Rimba Ebagi"/>
+    <definition value="Rimba Ebagi"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-nuku"/>
+    <display value="Nuku"/>
+    <definition value="Nuku"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-alu"/>
+    <display value="Alu Mamagi"/>
+    <definition value="Alu Mamagi"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-yaba"/>
+    <display value="Yaba"/>
+    <definition value="Yaba"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-gurdi"/>
+    <display value="Gurdi"/>
+    <definition value="Gurdi"/>
+  </concept>
+  <concept>
+    <code value="fc-amac-gawu"/>
+    <display value="Gawu"/>
+    <definition value="Gawu"/>
+  </concept>
+</CodeSystem>

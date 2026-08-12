@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-status-vs</b></p><a name="ng-hiv-status-vs"> </a><a name="hcng-hiv-status-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/94652-5/">94652-5</a></td><td>Known exposure date</td></tr><tr><td><a href="https://loinc.org/LA6577-6/">LA6577-6</a></td><td>Negative</td></tr><tr><td><a href="https://loinc.org/LA29947-1/">LA29947-1</a></td><td>Carrier status unknown</td></tr><tr><td><a href="https://loinc.org/77978-5/">77978-5</a></td><td>Patient died from illness of interest</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-ng-hiv-status-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-status-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.137"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivStatusVS"/>
+  <title value="HIV Status Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the patient's HIV status."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="94652-5"/>
+        <display value="Known exposure date"/>
+      </concept>
+      <concept>
+        <code value="LA6577-6"/>
+        <display value="Negative"/>
+      </concept>
+      <concept>
+        <code value="LA29947-1"/>
+        <display value="Carrier status unknown"/>
+      </concept>
+      <concept>
+        <code value="77978-5"/>
+        <display value="Patient died from illness of interest"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-status-cs"/>
+    </include>
+  </compose>
+</ValueSet>

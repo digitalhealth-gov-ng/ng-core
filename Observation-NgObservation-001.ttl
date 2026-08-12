@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Observation/NgObservation-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgObservation-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation NgObservation-001</b></p><a name=\"NgObservation-001\"> </a><a name=\"hcNgObservation-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-observation.html\">Nigeria Core Composite Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-observation-code client-registration-summary}\">Client registration observation summary</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-002.html\">Example Nigeria Core patient</a></p><p><b>effective</b>: 2026-08-02 10:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/age-component-codes-cs a}\">Age in years</span></p><p><b>value</b>: 28 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82810-3}\">Pregnancy status</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnant</span></p></blockquote></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "social-history" ] ;
+       fhir:Coding.display [ fhir:value "Social History" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-observation-code" ] ;
+       fhir:Coding.code [ fhir:value "client-registration-summary" ] ;
+       fhir:Coding.display [ fhir:value "Client registration observation summary" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ] ;
+     fhir:Reference.display [ fhir:value "Example Nigeria Core patient" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-08-02T10:00:00+01:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-001> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-001" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/age-component-codes-cs" ] ;
+         fhir:Coding.code [ fhir:value "a" ] ;
+         fhir:Coding.display [ fhir:value "Age in years" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "28"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "year" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "a" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:82810-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "82810-3" ] ;
+         fhir:Coding.display [ fhir:value "Pregnancy status" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:77386006 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "77386006" ] ;
+         fhir:Coding.display [ fhir:value "Pregnant" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Observation/NgObservation-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

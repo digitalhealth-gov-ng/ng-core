@@ -1,0 +1,2185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NgHivPharmacyDailyWorksheet"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition NgHivPharmacyDailyWorksheet</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet" title="Logical model for the revised Nigeria HIV Pharmacy Daily Worksheet. One
+instance represents one pharmacist worksheet for one dispensing date and
+contains repeatable patient-level dispensing entries corresponding to
+printed fields W1 through W73.">NgHivPharmacyDailyWorksheet</a><a name="NgHivPharmacyDailyWorksheet"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">NG HIV Pharmacy Daily Worksheet</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.identifier" title="Identifier assigned to the Pharmacy Daily Worksheet instance.">identifier</a><a name="NgHivPharmacyDailyWorksheet.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Worksheet identifier</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.worksheetNumber" title="Continuous worksheet number. The supporting SOP permits a pharmacist-specific alphabetical suffix in facilities with multiple dispensing points.">worksheetNumber</a><a name="NgHivPharmacyDailyWorksheet.worksheetNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Worksheet number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.facility" title="Reference to the dispensing facility, when available.">facility</a><a name="NgHivPharmacyDailyWorksheet.facility"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-organization.html">NG Organization</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Facility reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.state" title="State where the dispensing facility is located.">state</a><a name="NgHivPharmacyDailyWorksheet.state"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">State<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-states-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs" class="binding">NG States VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.lga" title="Local Government Area where the dispensing facility is located.">lga</a><a name="NgHivPharmacyDailyWorksheet.lga"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">LGA<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-lgas-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs" class="binding">NG LGAs VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.facilityName" title="Official name of the dispensing facility.">facilityName</a><a name="NgHivPharmacyDailyWorksheet.facilityName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Facility name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.dispensingDate" title="Date on which medicines were dispensed and recorded on this worksheet.">dispensingDate</a><a name="NgHivPharmacyDailyWorksheet.dispensingDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensing date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry" title="One patient-level row in the Pharmacy Daily Worksheet. The printed page provides fifteen rows.">entry</a><a name="NgHivPharmacyDailyWorksheet.entry"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient dispensing entry<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.subject" title="Reference to the corresponding Nigeria Core Patient resource, when available.">subject</a><a name="NgHivPharmacyDailyWorksheet.entry.subject"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-patient.html">NG Patient</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.serialNumber" title="Sequential number assigned to the patient row.">serialNumber</a><a name="NgHivPharmacyDailyWorksheet.entry.serialNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W1 Serial number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.hospitalNumber" title="Facility-specific hospital or unit number.">hospitalNumber</a><a name="NgHivPharmacyDailyWorksheet.entry.hospitalNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W2 Hospital number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.uniqueId" title="HIV program client unique identifier.">uniqueId</a><a name="NgHivPharmacyDailyWorksheet.entry.uniqueId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W3 Unique ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.patientName" title="Patient name recorded surname first.">patientName</a><a name="NgHivPharmacyDailyWorksheet.entry.patientName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W4 Patient name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.sex" title="Client sex represented by the printed male and female columns.">sex</a><a name="NgHivPharmacyDailyWorksheet.entry.sex"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W5–W7 Sex<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-gender-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs" class="binding">NG Gender or Sex VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.pregnant" title="True when the female-pregnant column is marked. Female non-pregnant is represented by female sex with pregnant set to false.">pregnant</a><a name="NgHivPharmacyDailyWorksheet.entry.pregnant"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W7 Pregnancy status</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.ageYears" title="Client age in completed years.">ageYears</a><a name="NgHivPharmacyDailyWorksheet.entry.ageYears"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W8 Age</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.dsdModel" title="Facility-based or community-based differentiated-service-delivery model.">dsdModel</a><a name="NgHivPharmacyDailyWorksheet.entry.dsdModel"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W9–W10 DSD model<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-pharmacy-worksheet-dsd-model-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-dsd-model-vs" class="binding">NG HIV Pharmacy Worksheet DSD Model</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt" title="True when ART was initiated at the dispensing visit.">newlyStartedOnArt</a><a name="NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W11 Newly started on ART</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.artRefill" title="True for ART refill, including transfer-in and restart.">artRefill</a><a name="NgHivPharmacyDailyWorksheet.entry.artRefill"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W12 ART refill</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.regimenSubstitution" title="True when a drug was replaced because of toxicity, side effect or another substitution reason.">regimenSubstitution</a><a name="NgHivPharmacyDailyWorksheet.entry.regimenSubstitution"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W13 Regimen substitution</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.regimenSwitch" title="True when the client changed between ART regimen lines.">regimenSwitch</a><a name="NgHivPharmacyDailyWorksheet.entry.regimenSwitch"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W14 Regimen switch</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis" title="True when an HIV-exposed infant initiated ARV prophylaxis.">heiNewlyStartedArvProphylaxis</a><a name="NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W15 HEI newly started on ARV prophylaxis</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill" title="True when an HIV-exposed infant received a prophylaxis refill.">heiArvProphylaxisRefill</a><a name="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W16 HEI ARV prophylaxis refill</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen" title="Printed prophylaxis code 1, 2 or 3.">heiArvProphylaxisRegimen</a><a name="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W17 HEI ARV prophylaxis regimen<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs" class="binding">NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimen</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.occupationalPep" title="True when ARVs were dispensed for occupational HIV exposure.">occupationalPep</a><a name="NgHivPharmacyDailyWorksheet.entry.occupationalPep"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W18 Occupational PEP</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep" title="True when ARVs were dispensed for non-occupational HIV exposure.">nonOccupationalPep</a><a name="NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W19 Non-occupational PEP</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated" title="True when a client was newly initiated on PrEP.">prepNewlyInitiated</a><a name="NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W20 PrEP newly initiated</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.prepRefill" title="True when a client received a PrEP refill.">prepRefill</a><a name="NgHivPharmacyDailyWorksheet.entry.prepRefill"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W21 PrEP refill</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided" title="True when pharmaceutical care was provided during the visit.">pharmaceuticalCareProvided</a><a name="NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W22 Pharmaceutical care provided</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.currentArvRegimen" title="Current ART regimen code.">currentArvRegimen</a><a name="NgHivPharmacyDailyWorksheet.entry.currentArvRegimen"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W23 ARV regimen code<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-art-register-regimen-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs" class="binding">NG HIV ART Register Regimens</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText" title="Source regimen text when a valid ART register code is unavailable.">currentArvRegimenText</a><a name="NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W23 ARV regimen source text</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.dispensedMedicine" title="A quantity recorded under one of the fixed medicine-product columns.">dispensedMedicine</a><a name="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W24–W71 Fixed medicine product dispensed<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product" title="The fixed product column under which the quantity was recorded.">product</a><a name="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Worksheet medicine product<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-pharmacy-worksheet-medicine-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-medicine-vs" class="binding">NG HIV Pharmacy Daily Worksheet Medicines</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category" title="Adult ART, paediatric ART, CTX prophylaxis, TPT, anti-infective or advanced-HIV-disease treatment.">category</a><a name="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Medicine category<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-pharmacy-worksheet-medicine-category-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-medicine-category-vs" class="binding">NG HIV Pharmacy Worksheet Medicine Category</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity" title="Quantity dispensed using the worksheet reporting unit. Adult and paediatric ARVs are reported in packs, bottles or vials; CTX in tablets; TPT in kits. Other sections should retain the locally recorded unit.">quantity</a><a name="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Quantity dispensed</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note" title="Optional note about package size, unit, formulation or another source detail.">note</a><a name="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dispensing note</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement" title="Type of nutritional supplement provided.">nutritionalSupplement</a><a name="NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W72 Nutritional supplement<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.entry.otherMedicine" title="Type of medicine provided for another opportunistic infection or non-HIV-related condition.">otherMedicine</a><a name="NgHivPharmacyDailyWorksheet.entry.otherMedicine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">W73 Other OI or non-HIV medicine<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.summary" title="Total for the page, cumulative total for the day or cumulative total for the month.">summary</a><a name="NgHivPharmacyDailyWorksheet.summary"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..3</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Worksheet summary row</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.summary.scope" title="Page, day or month.">scope</a><a name="NgHivPharmacyDailyWorksheet.summary.scope"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Summary scope<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-hiv-pharmacy-worksheet-summary-scope-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-summary-scope-vs" class="binding">NG HIV Pharmacy Worksheet Summary Scope</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.summary.columnTotal" title="A total for one printed worksheet column.">columnTotal</a><a name="NgHivPharmacyDailyWorksheet.summary.columnTotal"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Column total<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode" title="Printed column identifier W1 through W73.">columnCode</a><a name="NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Worksheet column code</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.summary.columnTotal.value" title="Count or quantity total recorded for the selected worksheet column.">value</a><a name="NgHivPharmacyDailyWorksheet.summary.columnTotal.value"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Column total value</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.summary.columnTotal.unit" title="Unit associated with the total when applicable.">unit</a><a name="NgHivPharmacyDailyWorksheet.summary.columnTotal.unit"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Column total unit</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.completedBy" title="Name of the pharmacist or pharmacy technician who completed the worksheet.">completedBy</a><a name="NgHivPharmacyDailyWorksheet.completedBy"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of pharmacist</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.completedSignature" title="Signature or electronic signature reference.">completedSignature</a><a name="NgHivPharmacyDailyWorksheet.completedSignature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature or signature reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgHivPharmacyDailyWorksheet-definitions.html#NgHivPharmacyDailyWorksheet.completedDate" title="Date the worksheet was completed.">completedDate</a><a name="NgHivPharmacyDailyWorksheet.completedDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Completion date</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivPharmacyDailyWorksheet"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.42.6"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPharmacyDailyWorksheet"/>
+  <title value="NG HIV Pharmacy Daily Worksheet"/>
+  <status value="draft"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Logical model for the revised Nigeria HIV Pharmacy Daily Worksheet. One&#xA;instance represents one pharmacist worksheet for one dispensing date and&#xA;contains repeatable patient-level dispensing entries corresponding to&#xA;printed fields W1 through W73."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+    <uri value="urn:ng:hiv-pharmacy-daily-worksheet:2025"/>
+    <name value="NG HIV Pharmacy Daily Worksheet Column Mapping"/>
+    <comment value="Maps logical-model elements to the revised November 2025 Pharmacy Daily Worksheet fields W1–W73."/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivPharmacyDailyWorksheet"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="NgHivPharmacyDailyWorksheet">
+      <path value="NgHivPharmacyDailyWorksheet"/>
+      <short value="NG HIV Pharmacy Daily Worksheet"/>
+      <definition value="Logical model for the revised Nigeria HIV Pharmacy Daily Worksheet. One&#xA;instance represents one pharmacist worksheet for one dispensing date and&#xA;contains repeatable patient-level dispensing entries corresponding to&#xA;printed fields W1 through W73."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.identifier">
+      <path value="NgHivPharmacyDailyWorksheet.identifier"/>
+      <short value="Worksheet identifier"/>
+      <definition value="Identifier assigned to the Pharmacy Daily Worksheet instance."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.identifier"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.worksheetNumber">
+      <path value="NgHivPharmacyDailyWorksheet.worksheetNumber"/>
+      <short value="Worksheet number"/>
+      <definition value="Continuous worksheet number. The supporting SOP permits a pharmacist-specific alphabetical suffix in facilities with multiple dispensing points."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.worksheetNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: Worksheet No"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.facility">
+      <path value="NgHivPharmacyDailyWorksheet.facility"/>
+      <short value="Facility reference"/>
+      <definition value="Reference to the dispensing facility, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.facility"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.state">
+      <path value="NgHivPharmacyDailyWorksheet.state"/>
+      <short value="State"/>
+      <definition value="State where the dispensing facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.state"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: State"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.lga">
+      <path value="NgHivPharmacyDailyWorksheet.lga"/>
+      <short value="LGA"/>
+      <definition value="Local Government Area where the dispensing facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.lga"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: LGA"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.facilityName">
+      <path value="NgHivPharmacyDailyWorksheet.facilityName"/>
+      <short value="Facility name"/>
+      <definition value="Official name of the dispensing facility."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.facilityName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: Facility Name"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.dispensingDate">
+      <path value="NgHivPharmacyDailyWorksheet.dispensingDate"/>
+      <short value="Dispensing date"/>
+      <definition value="Date on which medicines were dispensed and recorded on this worksheet."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.dispensingDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: Date"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry">
+      <path value="NgHivPharmacyDailyWorksheet.entry"/>
+      <short value="Patient dispensing entry"/>
+      <definition value="One patient-level row in the Pharmacy Daily Worksheet. The printed page provides fifteen rows."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.id">
+      <path value="NgHivPharmacyDailyWorksheet.entry.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.extension">
+      <path value="NgHivPharmacyDailyWorksheet.entry.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.modifierExtension">
+      <path value="NgHivPharmacyDailyWorksheet.entry.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.subject">
+      <path value="NgHivPharmacyDailyWorksheet.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.subject"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.serialNumber">
+      <path value="NgHivPharmacyDailyWorksheet.entry.serialNumber"/>
+      <short value="W1 Serial number"/>
+      <definition value="Sequential number assigned to the patient row."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.serialNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W1"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.hospitalNumber">
+      <path value="NgHivPharmacyDailyWorksheet.entry.hospitalNumber"/>
+      <short value="W2 Hospital number"/>
+      <definition value="Facility-specific hospital or unit number."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.hospitalNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W2"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.uniqueId">
+      <path value="NgHivPharmacyDailyWorksheet.entry.uniqueId"/>
+      <short value="W3 Unique ID"/>
+      <definition value="HIV program client unique identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.uniqueId"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W3"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.patientName">
+      <path value="NgHivPharmacyDailyWorksheet.entry.patientName"/>
+      <short value="W4 Patient name"/>
+      <definition value="Patient name recorded surname first."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.patientName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W4"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.sex">
+      <path value="NgHivPharmacyDailyWorksheet.entry.sex"/>
+      <short value="W5–W7 Sex"/>
+      <definition value="Client sex represented by the printed male and female columns."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.sex"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W5 Male / W6 Female non-pregnant / W7 Female pregnant"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.pregnant">
+      <path value="NgHivPharmacyDailyWorksheet.entry.pregnant"/>
+      <short value="W7 Pregnancy status"/>
+      <definition value="True when the female-pregnant column is marked. Female non-pregnant is represented by female sex with pregnant set to false."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.pregnant"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W7; false with female sex corresponds to W6"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.ageYears">
+      <path value="NgHivPharmacyDailyWorksheet.entry.ageYears"/>
+      <short value="W8 Age"/>
+      <definition value="Client age in completed years."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.ageYears"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W8"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dsdModel">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dsdModel"/>
+      <short value="W9–W10 DSD model"/>
+      <definition value="Facility-based or community-based differentiated-service-delivery model."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.dsdModel"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-dsd-model-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W9 Facility-based / W10 Community-based"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt">
+      <path value="NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt"/>
+      <short value="W11 Newly started on ART"/>
+      <definition value="True when ART was initiated at the dispensing visit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W11"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.artRefill">
+      <path value="NgHivPharmacyDailyWorksheet.entry.artRefill"/>
+      <short value="W12 ART refill"/>
+      <definition value="True for ART refill, including transfer-in and restart."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.artRefill"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W12"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.regimenSubstitution">
+      <path value="NgHivPharmacyDailyWorksheet.entry.regimenSubstitution"/>
+      <short value="W13 Regimen substitution"/>
+      <definition value="True when a drug was replaced because of toxicity, side effect or another substitution reason."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.regimenSubstitution"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W13"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.regimenSwitch">
+      <path value="NgHivPharmacyDailyWorksheet.entry.regimenSwitch"/>
+      <short value="W14 Regimen switch"/>
+      <definition value="True when the client changed between ART regimen lines."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.regimenSwitch"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W14"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis">
+      <path value="NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis"/>
+      <short value="W15 HEI newly started on ARV prophylaxis"/>
+      <definition value="True when an HIV-exposed infant initiated ARV prophylaxis."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W15"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill">
+      <path value="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill"/>
+      <short value="W16 HEI ARV prophylaxis refill"/>
+      <definition value="True when an HIV-exposed infant received a prophylaxis refill."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W16"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen">
+      <path value="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen"/>
+      <short value="W17 HEI ARV prophylaxis regimen"/>
+      <definition value="Printed prophylaxis code 1, 2 or 3."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W17"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.occupationalPep">
+      <path value="NgHivPharmacyDailyWorksheet.entry.occupationalPep"/>
+      <short value="W18 Occupational PEP"/>
+      <definition value="True when ARVs were dispensed for occupational HIV exposure."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.occupationalPep"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W18"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep">
+      <path value="NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep"/>
+      <short value="W19 Non-occupational PEP"/>
+      <definition value="True when ARVs were dispensed for non-occupational HIV exposure."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W19"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated">
+      <path value="NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated"/>
+      <short value="W20 PrEP newly initiated"/>
+      <definition value="True when a client was newly initiated on PrEP."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W20"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.prepRefill">
+      <path value="NgHivPharmacyDailyWorksheet.entry.prepRefill"/>
+      <short value="W21 PrEP refill"/>
+      <definition value="True when a client received a PrEP refill."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.prepRefill"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W21"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided">
+      <path value="NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided"/>
+      <short value="W22 Pharmaceutical care provided"/>
+      <definition value="True when pharmaceutical care was provided during the visit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W22"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.currentArvRegimen">
+      <path value="NgHivPharmacyDailyWorksheet.entry.currentArvRegimen"/>
+      <short value="W23 ARV regimen code"/>
+      <definition value="Current ART regimen code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.currentArvRegimen"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W23"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText">
+      <path value="NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText"/>
+      <short value="W23 ARV regimen source text"/>
+      <definition value="Source regimen text when a valid ART register code is unavailable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W23 uncoded source text"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine"/>
+      <short value="W24–W71 Fixed medicine product dispensed"/>
+      <definition value="A quantity recorded under one of the fixed medicine-product columns."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.id">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.extension">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.modifierExtension">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product"/>
+      <short value="Worksheet medicine product"/>
+      <definition value="The fixed product column under which the quantity was recorded."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-medicine-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W24–W71; the Coding.code is the exact printed column identifier"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category"/>
+      <short value="Medicine category"/>
+      <definition value="Adult ART, paediatric ART, CTX prophylaxis, TPT, anti-infective or advanced-HIV-disease treatment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-medicine-category-vs"/>
+      </binding>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity"/>
+      <short value="Quantity dispensed"/>
+      <definition value="Quantity dispensed using the worksheet reporting unit. Adult and paediatric ARVs are reported in packs, bottles or vials; CTX in tablets; TPT in kits. Other sections should retain the locally recorded unit."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Quantity entered under the selected W24–W71 product column"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note"/>
+      <short value="Dispensing note"/>
+      <definition value="Optional note about package size, unit, formulation or another source detail."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement">
+      <path value="NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement"/>
+      <short value="W72 Nutritional supplement"/>
+      <definition value="Type of nutritional supplement provided."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W72"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.otherMedicine">
+      <path value="NgHivPharmacyDailyWorksheet.entry.otherMedicine"/>
+      <short value="W73 Other OI or non-HIV medicine"/>
+      <definition value="Type of medicine provided for another opportunistic infection or non-HIV-related condition."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.entry.otherMedicine"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W73"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary">
+      <path value="NgHivPharmacyDailyWorksheet.summary"/>
+      <short value="Worksheet summary row"/>
+      <definition value="Total for the page, cumulative total for the day or cumulative total for the month."/>
+      <min value="0"/>
+      <max value="3"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.summary"/>
+        <min value="0"/>
+        <max value="3"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.id">
+      <path value="NgHivPharmacyDailyWorksheet.summary.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.extension">
+      <path value="NgHivPharmacyDailyWorksheet.summary.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.modifierExtension">
+      <path value="NgHivPharmacyDailyWorksheet.summary.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.scope">
+      <path value="NgHivPharmacyDailyWorksheet.summary.scope"/>
+      <short value="Summary scope"/>
+      <definition value="Page, day or month."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.summary.scope"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-summary-scope-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Total for this page / Cumulative for the day / Cumulative for the month"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal"/>
+      <short value="Column total"/>
+      <definition value="A total for one printed worksheet column."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.id">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.extension">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.modifierExtension">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode"/>
+      <short value="Worksheet column code"/>
+      <definition value="Printed column identifier W1 through W73."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Printed W1–W73 column being totalled"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.value">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.value"/>
+      <short value="Column total value"/>
+      <definition value="Count or quantity total recorded for the selected worksheet column."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Value in the corresponding bottom summary row"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.unit">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.unit"/>
+      <short value="Column total unit"/>
+      <definition value="Unit associated with the total when applicable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.unit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.completedBy">
+      <path value="NgHivPharmacyDailyWorksheet.completedBy"/>
+      <short value="Name of pharmacist"/>
+      <definition value="Name of the pharmacist or pharmacy technician who completed the worksheet."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.completedBy"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Bottom row: Name of Pharmacist"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.completedSignature">
+      <path value="NgHivPharmacyDailyWorksheet.completedSignature"/>
+      <short value="Signature or signature reference"/>
+      <definition value="Signature or electronic signature reference."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.completedSignature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Bottom row: Signature"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.completedDate">
+      <path value="NgHivPharmacyDailyWorksheet.completedDate"/>
+      <short value="Completion date"/>
+      <definition value="Date the worksheet was completed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgHivPharmacyDailyWorksheet.completedDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Bottom row: Date"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="NgHivPharmacyDailyWorksheet">
+      <path value="NgHivPharmacyDailyWorksheet"/>
+      <short value="NG HIV Pharmacy Daily Worksheet"/>
+      <definition value="Logical model for the revised Nigeria HIV Pharmacy Daily Worksheet. One&#xA;instance represents one pharmacist worksheet for one dispensing date and&#xA;contains repeatable patient-level dispensing entries corresponding to&#xA;printed fields W1 through W73."/>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.identifier">
+      <path value="NgHivPharmacyDailyWorksheet.identifier"/>
+      <short value="Worksheet identifier"/>
+      <definition value="Identifier assigned to the Pharmacy Daily Worksheet instance."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.worksheetNumber">
+      <path value="NgHivPharmacyDailyWorksheet.worksheetNumber"/>
+      <short value="Worksheet number"/>
+      <definition value="Continuous worksheet number. The supporting SOP permits a pharmacist-specific alphabetical suffix in facilities with multiple dispensing points."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: Worksheet No"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.facility">
+      <path value="NgHivPharmacyDailyWorksheet.facility"/>
+      <short value="Facility reference"/>
+      <definition value="Reference to the dispensing facility, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.state">
+      <path value="NgHivPharmacyDailyWorksheet.state"/>
+      <short value="State"/>
+      <definition value="State where the dispensing facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: State"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.lga">
+      <path value="NgHivPharmacyDailyWorksheet.lga"/>
+      <short value="LGA"/>
+      <definition value="Local Government Area where the dispensing facility is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: LGA"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.facilityName">
+      <path value="NgHivPharmacyDailyWorksheet.facilityName"/>
+      <short value="Facility name"/>
+      <definition value="Official name of the dispensing facility."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: Facility Name"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.dispensingDate">
+      <path value="NgHivPharmacyDailyWorksheet.dispensingDate"/>
+      <short value="Dispensing date"/>
+      <definition value="Date on which medicines were dispensed and recorded on this worksheet."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Header: Date"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry">
+      <path value="NgHivPharmacyDailyWorksheet.entry"/>
+      <short value="Patient dispensing entry"/>
+      <definition value="One patient-level row in the Pharmacy Daily Worksheet. The printed page provides fifteen rows."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.subject">
+      <path value="NgHivPharmacyDailyWorksheet.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.serialNumber">
+      <path value="NgHivPharmacyDailyWorksheet.entry.serialNumber"/>
+      <short value="W1 Serial number"/>
+      <definition value="Sequential number assigned to the patient row."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W1"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.hospitalNumber">
+      <path value="NgHivPharmacyDailyWorksheet.entry.hospitalNumber"/>
+      <short value="W2 Hospital number"/>
+      <definition value="Facility-specific hospital or unit number."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W2"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.uniqueId">
+      <path value="NgHivPharmacyDailyWorksheet.entry.uniqueId"/>
+      <short value="W3 Unique ID"/>
+      <definition value="HIV program client unique identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W3"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.patientName">
+      <path value="NgHivPharmacyDailyWorksheet.entry.patientName"/>
+      <short value="W4 Patient name"/>
+      <definition value="Patient name recorded surname first."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W4"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.sex">
+      <path value="NgHivPharmacyDailyWorksheet.entry.sex"/>
+      <short value="W5–W7 Sex"/>
+      <definition value="Client sex represented by the printed male and female columns."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W5 Male / W6 Female non-pregnant / W7 Female pregnant"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.pregnant">
+      <path value="NgHivPharmacyDailyWorksheet.entry.pregnant"/>
+      <short value="W7 Pregnancy status"/>
+      <definition value="True when the female-pregnant column is marked. Female non-pregnant is represented by female sex with pregnant set to false."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W7; false with female sex corresponds to W6"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.ageYears">
+      <path value="NgHivPharmacyDailyWorksheet.entry.ageYears"/>
+      <short value="W8 Age"/>
+      <definition value="Client age in completed years."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W8"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dsdModel">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dsdModel"/>
+      <short value="W9–W10 DSD model"/>
+      <definition value="Facility-based or community-based differentiated-service-delivery model."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-dsd-model-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W9 Facility-based / W10 Community-based"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt">
+      <path value="NgHivPharmacyDailyWorksheet.entry.newlyStartedOnArt"/>
+      <short value="W11 Newly started on ART"/>
+      <definition value="True when ART was initiated at the dispensing visit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W11"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.artRefill">
+      <path value="NgHivPharmacyDailyWorksheet.entry.artRefill"/>
+      <short value="W12 ART refill"/>
+      <definition value="True for ART refill, including transfer-in and restart."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W12"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.regimenSubstitution">
+      <path value="NgHivPharmacyDailyWorksheet.entry.regimenSubstitution"/>
+      <short value="W13 Regimen substitution"/>
+      <definition value="True when a drug was replaced because of toxicity, side effect or another substitution reason."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W13"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.regimenSwitch">
+      <path value="NgHivPharmacyDailyWorksheet.entry.regimenSwitch"/>
+      <short value="W14 Regimen switch"/>
+      <definition value="True when the client changed between ART regimen lines."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W14"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis">
+      <path value="NgHivPharmacyDailyWorksheet.entry.heiNewlyStartedArvProphylaxis"/>
+      <short value="W15 HEI newly started on ARV prophylaxis"/>
+      <definition value="True when an HIV-exposed infant initiated ARV prophylaxis."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W15"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill">
+      <path value="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRefill"/>
+      <short value="W16 HEI ARV prophylaxis refill"/>
+      <definition value="True when an HIV-exposed infant received a prophylaxis refill."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W16"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen">
+      <path value="NgHivPharmacyDailyWorksheet.entry.heiArvProphylaxisRegimen"/>
+      <short value="W17 HEI ARV prophylaxis regimen"/>
+      <definition value="Printed prophylaxis code 1, 2 or 3."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W17"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.occupationalPep">
+      <path value="NgHivPharmacyDailyWorksheet.entry.occupationalPep"/>
+      <short value="W18 Occupational PEP"/>
+      <definition value="True when ARVs were dispensed for occupational HIV exposure."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W18"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep">
+      <path value="NgHivPharmacyDailyWorksheet.entry.nonOccupationalPep"/>
+      <short value="W19 Non-occupational PEP"/>
+      <definition value="True when ARVs were dispensed for non-occupational HIV exposure."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W19"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated">
+      <path value="NgHivPharmacyDailyWorksheet.entry.prepNewlyInitiated"/>
+      <short value="W20 PrEP newly initiated"/>
+      <definition value="True when a client was newly initiated on PrEP."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W20"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.prepRefill">
+      <path value="NgHivPharmacyDailyWorksheet.entry.prepRefill"/>
+      <short value="W21 PrEP refill"/>
+      <definition value="True when a client received a PrEP refill."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W21"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided">
+      <path value="NgHivPharmacyDailyWorksheet.entry.pharmaceuticalCareProvided"/>
+      <short value="W22 Pharmaceutical care provided"/>
+      <definition value="True when pharmaceutical care was provided during the visit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W22"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.currentArvRegimen">
+      <path value="NgHivPharmacyDailyWorksheet.entry.currentArvRegimen"/>
+      <short value="W23 ARV regimen code"/>
+      <definition value="Current ART regimen code."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W23"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText">
+      <path value="NgHivPharmacyDailyWorksheet.entry.currentArvRegimenText"/>
+      <short value="W23 ARV regimen source text"/>
+      <definition value="Source regimen text when a valid ART register code is unavailable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W23 uncoded source text"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine"/>
+      <short value="W24–W71 Fixed medicine product dispensed"/>
+      <definition value="A quantity recorded under one of the fixed medicine-product columns."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.product"/>
+      <short value="Worksheet medicine product"/>
+      <definition value="The fixed product column under which the quantity was recorded."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-medicine-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W24–W71; the Coding.code is the exact printed column identifier"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.category"/>
+      <short value="Medicine category"/>
+      <definition value="Adult ART, paediatric ART, CTX prophylaxis, TPT, anti-infective or advanced-HIV-disease treatment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-medicine-category-vs"/>
+      </binding>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.quantity"/>
+      <short value="Quantity dispensed"/>
+      <definition value="Quantity dispensed using the worksheet reporting unit. Adult and paediatric ARVs are reported in packs, bottles or vials; CTX in tablets; TPT in kits. Other sections should retain the locally recorded unit."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Quantity entered under the selected W24–W71 product column"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note">
+      <path value="NgHivPharmacyDailyWorksheet.entry.dispensedMedicine.note"/>
+      <short value="Dispensing note"/>
+      <definition value="Optional note about package size, unit, formulation or another source detail."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement">
+      <path value="NgHivPharmacyDailyWorksheet.entry.nutritionalSupplement"/>
+      <short value="W72 Nutritional supplement"/>
+      <definition value="Type of nutritional supplement provided."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W72"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.entry.otherMedicine">
+      <path value="NgHivPharmacyDailyWorksheet.entry.otherMedicine"/>
+      <short value="W73 Other OI or non-HIV medicine"/>
+      <definition value="Type of medicine provided for another opportunistic infection or non-HIV-related condition."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="W73"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary">
+      <path value="NgHivPharmacyDailyWorksheet.summary"/>
+      <short value="Worksheet summary row"/>
+      <definition value="Total for the page, cumulative total for the day or cumulative total for the month."/>
+      <min value="0"/>
+      <max value="3"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.scope">
+      <path value="NgHivPharmacyDailyWorksheet.summary.scope"/>
+      <short value="Summary scope"/>
+      <definition value="Page, day or month."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pharmacy-worksheet-summary-scope-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Total for this page / Cumulative for the day / Cumulative for the month"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal"/>
+      <short value="Column total"/>
+      <definition value="A total for one printed worksheet column."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.columnCode"/>
+      <short value="Worksheet column code"/>
+      <definition value="Printed column identifier W1 through W73."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Printed W1–W73 column being totalled"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.value">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.value"/>
+      <short value="Column total value"/>
+      <definition value="Count or quantity total recorded for the selected worksheet column."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Value in the corresponding bottom summary row"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.summary.columnTotal.unit">
+      <path value="NgHivPharmacyDailyWorksheet.summary.columnTotal.unit"/>
+      <short value="Column total unit"/>
+      <definition value="Unit associated with the total when applicable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.completedBy">
+      <path value="NgHivPharmacyDailyWorksheet.completedBy"/>
+      <short value="Name of pharmacist"/>
+      <definition value="Name of the pharmacist or pharmacy technician who completed the worksheet."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Bottom row: Name of Pharmacist"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.completedSignature">
+      <path value="NgHivPharmacyDailyWorksheet.completedSignature"/>
+      <short value="Signature or signature reference"/>
+      <definition value="Signature or electronic signature reference."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Bottom row: Signature"/>
+      </mapping>
+    </element>
+    <element id="NgHivPharmacyDailyWorksheet.completedDate">
+      <path value="NgHivPharmacyDailyWorksheet.completedDate"/>
+      <short value="Completion date"/>
+      <definition value="Date the worksheet was completed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-hiv-pharmacy-daily-worksheet-columns"/>
+        <map value="Bottom row: Date"/>
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

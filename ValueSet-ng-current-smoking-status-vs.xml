@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-current-smoking-status-vs"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-current-smoking-status-vs</b></p><a name="ng-current-smoking-status-vs"> </a><a name="hcng-current-smoking-status-vs"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/449868002">449868002</a></td><td>Smokes tobacco daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/428041000124106">428041000124106</a></td><td>Occasional tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/8517006">8517006</a></td><td>Ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/266919005">266919005</a></td><td>Never smoked tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/77176002">77176002</a></td><td>Smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/266927001">266927001</a></td><td>Tobacco smoking consumption unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/230063004">230063004</a></td><td>Heavy cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230060001">230060001</a></td><td>Light cigarette smoker (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-current-smoking-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.13"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgCurrentSmokingStatusVS"/>
+  <title value="Current Smoking Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for smoking status.  This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="449868002"/>
+        <display value="Smokes tobacco daily (finding)"/>
+      </concept>
+      <concept>
+        <code value="428041000124106"/>
+        <display value="Occasional tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="8517006"/>
+        <display value="Ex-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="266919005"/>
+        <display value="Never smoked tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="77176002"/>
+        <display value="Smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="266927001"/>
+        <display value="Tobacco smoking consumption unknown (finding)"/>
+      </concept>
+      <concept>
+        <code value="230063004"/>
+        <display value="Heavy cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="230060001"/>
+        <display value="Light cigarette smoker (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

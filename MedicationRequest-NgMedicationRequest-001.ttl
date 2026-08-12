@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/MedicationRequest/NgMedicationRequest-001> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgMedicationRequest-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest NgMedicationRequest-001</b></p><a name=\"NgMedicationRequest-001\"> </a><a name=\"hcNgMedicationRequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-medication-request.html\">NG MedicationRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category outpatient}\">Outpatient</span></p><p><b>reported</b>: false</p><p><b>medication</b>: <a href=\"Medication-NgMedication-001.html\">Medication </a></p><p><b>subject</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>encounter</b>: <a href=\"Encounter-NgEncounter-002.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 12:15:00+0000 --&gt; 2025-11-04 12:25:00+0000</a></p><p><b>authoredOn</b>: 2026-08-03 09:00:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></p><p><b>reasonCode</b>: <span title=\"Codes:\">Fever and mild body pain</span></p><p><b>note</b>: </p><blockquote><div><p>Review the patient if symptoms persist after five days.</p>\n</div></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: Take two tablets orally every eight hours for five days</p><p><b>timing</b>: 3 per 1 day</p><p><b>route</b>: <span title=\"Codes:\">Oral route</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td></tr></table></blockquote><blockquote><p><b>dispenseRequest</b></p><p><b>numberOfRepeatsAllowed</b>: 0</p><p><b>quantity</b>: 30 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><h3>ExpectedSupplyDurations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Unit</b></td><td><b>System</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>5</td><td>day</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html\">http://unitsofmeasure.org</a></td><td>d</td></tr></table></blockquote></div>"
+  ] ;
+  fhir:MedicationRequest.status [ fhir:value "active"] ;
+  fhir:MedicationRequest.intent [ fhir:value "order"] ;
+  fhir:MedicationRequest.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicationrequest-category" ] ;
+       fhir:Coding.code [ fhir:value "outpatient" ] ;
+       fhir:Coding.display [ fhir:value "Outpatient" ]
+     ]
+  ] ;
+  fhir:MedicationRequest.reportedBoolean [ fhir:value "false"^^xsd:boolean] ;
+  fhir:MedicationRequest.medicationReference [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Medication/NgMedication-001> ;
+     fhir:Reference.reference [ fhir:value "Medication/NgMedication-001" ]
+  ] ;
+  fhir:MedicationRequest.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:MedicationRequest.encounter [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Encounter/NgEncounter-002> ;
+     fhir:Reference.reference [ fhir:value "Encounter/NgEncounter-002" ]
+  ] ;
+  fhir:MedicationRequest.authoredOn [ fhir:value "2026-08-03T09:00:00+01:00"^^xsd:dateTime] ;
+  fhir:MedicationRequest.requester [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+  ] ;
+  fhir:MedicationRequest.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Fever and mild body pain" ]
+  ] ;
+  fhir:MedicationRequest.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Review the patient if symptoms persist after five days." ]
+  ] ;
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0 ;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ] ;
+     fhir:Dosage.text [ fhir:value "Take two tablets orally every eight hours for five days" ] ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsDuration [
+           fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ] ;
+           fhir:Quantity.unit [ fhir:value "day" ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "d" ]
+         ] ;
+         fhir:Timing.repeat.frequency [ fhir:value "3"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.text [ fhir:value "Oral route" ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index 0 ;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "tablet" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "1" ]
+       ]
+     ]
+  ] ;
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.numberOfRepeatsAllowed [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "tablet" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "1" ]
+     ] ;
+     fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+       fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "day" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "d" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/MedicationRequest/NgMedicationRequest-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

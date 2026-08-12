@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Clinical Notes - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Clinical Notes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Clinical Notes</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#clinical-notes" id="markdown-toc-clinical-notes">Clinical Notes</a></li>
+  <li><a href="#fhir-resources-to-exchange-clinical-notes" id="markdown-toc-fhir-resources-to-exchange-clinical-notes">FHIR Resources to Exchange Clinical Notes</a></li>
+  <li><a href="#resource-selection" id="markdown-toc-resource-selection">Resource Selection</a></li>
+  <li><a href="#scanned-and-narrative-only-reports" id="markdown-toc-scanned-and-narrative-only-reports">Scanned and Narrative-Only Reports</a></li>
+  <li><a href="#support-requirements" id="markdown-toc-support-requirements">Support Requirements</a></li>
+  <li><a href="#search" id="markdown-toc-search">Search</a></li>
+  <li><a href="#using-expand" id="markdown-toc-using-expand">Determining Server Note and Report Types</a></li>
+  <li><a href="#clinical-notes-in-referral-workflows" id="markdown-toc-clinical-notes-in-referral-workflows">Clinical Notes in Referral Workflows</a></li>
+  <li><a href="#clinical-notes-in-community-health-workflows" id="markdown-toc-clinical-notes-in-community-health-workflows">Clinical Notes in Community Health Workflows</a></li>
+  <li><a href="#clinical-notes-and-the-nigeria-shared-health-record" id="markdown-toc-clinical-notes-and-the-nigeria-shared-health-record">Clinical Notes and the Nigeria Shared Health Record</a></li>
+  <li><a href="#privacy-and-security-for-clinical-notes" id="markdown-toc-privacy-and-security-for-clinical-notes">Privacy and Security for Clinical Notes</a></li>
+  <li><a href="#provenance-and-authorship" id="markdown-toc-provenance-and-authorship">Provenance and Authorship</a></li>
+  <li><a href="#language-support-for-clinical-notes" id="markdown-toc-language-support-for-clinical-notes">Language Support for Clinical Notes</a></li>
+  <li><a href="#attachments-and-binary-content" id="markdown-toc-attachments-and-binary-content">Attachments and Binary Content</a></li>
+  <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+</ul>
+
+</div>
+<p>This PLACEHOLDER section provides implementers with important definitions, requirements, and guidance on creating, using, searching, and sharing clinical notes in Nigeria Core.</p>
+
+<h3 id="clinical-notes">Clinical Notes</h3>
+
+<p>Clinical notes are a key component in communicating a patient's current status, clinical history, care plan, referral context, diagnostic findings, treatment decisions, and follow-up needs.</p>
+
+<p>In the context of Nigeria Core, the term <strong>clinical notes</strong> refers to the wide variety of documents and narrative records generated on behalf of a patient during care delivery, referral, reporting, diagnostics, community health, pharmacy, public health, and health programme workflows. These may include structured notes, narrative-only notes, scanned notes, handwritten notes, discharge documents, referral notes, diagnostic reports, and attachments stored in existing systems.</p>
+
+<p>Nigeria Core does not define the full content requirements for each note type. Instead, this guide focuses on how systems expose, reference, retrieve, and exchange clinical notes that already exist in EMRs, EHRs, laboratory systems, imaging systems, community health applications, referral platforms, shared health records, and health programme repositories (eg. Nigeria HIV data repository, Nigeria Immunization registry etc.).</p>
+
+<p>Nigeria Core recommends support for a minimum set of common clinical note types to promote consistent access across systems.</p>
+
+<p>Servers <strong>MAY</strong> support, the following common clinical notes where applicable to their setting:</p>
+
+<ol>
+  <li>Consultation Note</li>
+  <li>Discharge Summary</li>
+  <li>History and Physical Note</li>
+  <li>Progress Note</li>
+  <li>Procedure Note</li>
+  <li>Surgical Operation Note</li>
+  <li>Emergency Department Note</li>
+  <li>Referral Note</li>
+  <li>Nurse Note</li>
+  <li>Community Health Worker Note</li>
+  <li>Antenatal Care Note</li>
+  <li>Immunization Encounter Note</li>
+  <li>Medication Review or Pharmacy Note</li>
+  <li>Care Plan Note</li>
+  <li>Death Summary or Mortality Review Note, where applicable</li>
+</ol>
+
+<p>Where international terminology codes are available, systems <strong>SHOULD</strong> use standard codes such as LOINC codes. Where a required note type is not available in an adopted international terminology, systems <strong>MAY</strong> use a Nigeria Core CodeSystem or programme-specific CodeSystem, provided that the system URI, code, and display are clearly defined.</p>
+
+<p>Servers <strong>MAY</strong> also support diagnostic report categories relevant to Nigerian care delivery and programme workflows, including:</p>
+
+<ol>
+  <li>Laboratory</li>
+  <li>Radiology or Imaging</li>
+  <li>Pathology</li>
+  <li>Cardiology</li>
+  <li>Microbiology</li>
+  <li>Other diagnostic or procedure reports supported by the implementation</li>
+</ol>
+
+<p>A DiagnosticReport category query allows a Client to retrieve multiple diagnostic reports in a single query. A DocumentReference query allows a Client to retrieve narrative notes, scanned notes, attachments, and documents associated with a patient.</p>
+
+<h3 id="fhir-resources-to-exchange-clinical-notes">FHIR Resources to Exchange Clinical Notes</h3>
+
+<p>Nigeria Core uses the FHIR <code class="language-plaintext highlighter-rouge">DocumentReference</code> and <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> resources as the primary mechanisms for exchanging clinical notes and reports.</p>
+
+<h4 id="documentreference">DocumentReference</h4>
+
+<p><code class="language-plaintext highlighter-rouge">DocumentReference</code> is the preferred resource when the note or document is broader than a specific diagnostic order or diagnostic report. It can point to a short note, a scanned document, an XHTML narrative, a PDF, a CDA document, a Composition, or another Binary resource.</p>
+
+<p>Examples of content suitable for <code class="language-plaintext highlighter-rouge">DocumentReference</code> include:</p>
+
+<ul>
+  <li>Consultation notes</li>
+  <li>Referral notes</li>
+  <li>Discharge summaries</li>
+  <li>Progress notes</li>
+  <li>Nursing notes</li>
+  <li>Community health worker notes</li>
+  <li>Antenatal care notes</li>
+  <li>Care plans</li>
+  <li>Scanned clinical documents</li>
+  <li>External clinical documents</li>
+  <li>Paper forms digitised into an EMR</li>
+  <li>Patient-held or facility-held clinical summaries</li>
+</ul>
+
+<h4 id="diagnosticreport">DiagnosticReport</h4>
+
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport</code> is preferred where the content represents a diagnostic service, investigation, coded result interpretation, or report associated with laboratory, imaging, pathology, cardiology, microbiology, or other diagnostic workflows.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code> element supports links to discrete results such as <code class="language-plaintext highlighter-rouge">Observation</code> resources. The <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code> element can represent the complete narrative report or attachment.</p>
+
+<p>Examples of content suitable for <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> include:</p>
+
+<ul>
+  <li>Laboratory reports</li>
+  <li>Radiology or imaging reports</li>
+  <li>Pathology reports</li>
+  <li>Microbiology reports</li>
+  <li>Cardiology reports</li>
+  <li>Procedure reports where results are represented as a diagnostic report</li>
+  <li>Narrative reports linked to discrete observations</li>
+</ul>
+
+<h3 id="resource-selection">Resource Selection</h3>
+
+<p>Nigeria Core adopts the same general resource selection pattern used by major FHIR implementation guides:</p>
+
+<ul>
+  <li>Use <code class="language-plaintext highlighter-rouge">DocumentReference</code> to index and retrieve broad clinical notes, scanned documents, attachments, and narrative documents.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> for diagnostic reports that may include discrete results and a narrative report.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">Composition</code> where a structured clinical document needs to be represented and exchanged.</li>
+</ul>
+
+<p>The main design goal is to make it possible for a Client to answer questions such as:</p>
+
+<ul>
+  <li>What clinical notes exist for this patient?</li>
+  <li>What referral note accompanied this patient?</li>
+  <li>What discharge summary was issued after admission?</li>
+  <li>What diagnostic reports are available?</li>
+  <li>What document was uploaded from a paper record?</li>
+  <li>What note should be added to the Shared Health Record?</li>
+</ul>
+
+<p>Because Nigerian systems may store notes as text, XHTML, PDF, scanned images, CDA documents, or structured FHIR documents, <code class="language-plaintext highlighter-rouge">DocumentReference</code> and <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> serve as practical index resources to the underlying content.</p>
+
+<h3 id="scanned-and-narrative-only-reports">Scanned and Narrative-Only Reports</h3>
+
+<p>There is no single best practice for representing a scanned or narrative-only report because system implementations vary. Some systems treat every scanned clinical document as <code class="language-plaintext highlighter-rouge">DocumentReference</code>. Other systems store scanned laboratory, pathology, or radiology reports as <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>.</p>
+
+<p>To support consistent access, if a scanned or narrative-only diagnostic report is exposed as a <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm.url</code>, the same attachment <strong>SHOULD</strong> also be discoverable through <code class="language-plaintext highlighter-rouge">DocumentReference.content.attachment.url</code> where this is necessary to prevent Clients from missing clinically relevant information.</p>
+
+<p>This approach is especially useful where:</p>
+
+<ul>
+  <li>Paper laboratory reports are scanned into an EMR.</li>
+  <li>Radiology or pathology reports are uploaded as PDFs.</li>
+  <li>Referral forms are scanned and stored as attachments.</li>
+  <li>Historical paper records are digitised.</li>
+  <li>Programme reports are stored as documents rather than structured resources.</li>
+</ul>
+
+<p>Not all documents stored through <code class="language-plaintext highlighter-rouge">DocumentReference</code> should be exposed through <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>. For example, an insurance card, consent form, administrative letter, or patient registration document may be stored as <code class="language-plaintext highlighter-rouge">DocumentReference</code> but should not be represented as <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>.</p>
+
+<h3 id="support-requirements">Support Requirements</h3>
+
+<p>Systems that support clinical notes <strong>SHOULD</strong> implement the Nigeria Core DocumentReference Profile and support the minimum common clinical note types relevant to their care setting.</p>
+
+<p>Systems that support diagnostic reporting <strong>SHOULD</strong> implement the Nigeria Core DiagnosticReport Profile and support diagnostic report categories relevant to their services, such as laboratory, radiology, pathology, cardiology, and microbiology.</p>
+
+<p>Systems <strong>MAY</strong> support additional note and report types required by:</p>
+
+<ul>
+  <li>National programmes</li>
+  <li>State systems</li>
+  <li>Facility workflows</li>
+  <li>Regulators</li>
+  <li>Payers</li>
+  <li>Shared Health Record implementations</li>
+  <li>Referral networks</li>
+  <li>Community health platforms</li>
+  <li>Sandbox or Connectathon test tracks</li>
+</ul>
+
+<p>Servers that support <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> <strong>SHOULD</strong> include the clinical note narrative or report attachment in <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code> when the narrative report exists.</p>
+
+<p>Servers that support <code class="language-plaintext highlighter-rouge">DocumentReference</code> <strong>SHOULD</strong> include a retrievable attachment, reference, or location in <code class="language-plaintext highlighter-rouge">DocumentReference.content.attachment</code>.</p>
+
+<p>Where a Binary endpoint is used for note content, access to the Binary <strong>SHALL</strong> be protected using the same security and consent rules that apply to the indexing resource.</p>
+
+<h3 id="search">Search</h3>
+
+<p>The standard FHIR [search] API retrieves clinical notes and reports. Nigeria Core CapabilityStatements and profile "Quick Start" sections define the required or recommended search parameters.</p>
+
+<p>Common Client search scenarios include:</p>
+
+<ol>
+  <li>
+    <p>A Client interested in all clinical notes for a patient: <code class="language-plaintext highlighter-rouge">GET [base]/DocumentReference?patient=[id]&amp;category=clinical-note</code></p>
+  </li>
+  <li>
+    <p>A Client interested in discharge summaries for a patient: <code class="language-plaintext highlighter-rouge">GET [base]/DocumentReference?patient=[id]&amp;type=http://loinc.org|18842-5</code></p>
+  </li>
+  <li>
+    <p>A Client interested in referral notes for a patient: <code class="language-plaintext highlighter-rouge">GET [base]/DocumentReference?patient=[id]&amp;type=http://loinc.org|57133-1</code></p>
+  </li>
+  <li>
+    <p>A Client interested in laboratory reports for a patient: <code class="language-plaintext highlighter-rouge">GET [base]/DiagnosticReport?patient=[id]&amp;category=http://terminology.hl7.org/CodeSystem/v2-0074|LAB</code></p>
+  </li>
+  <li>
+    <p>A Client interested in radiology or imaging reports for a patient: <code class="language-plaintext highlighter-rouge">GET [base]/DiagnosticReport?patient=[id]&amp;category=http://terminology.hl7.org/CodeSystem/v2-0074|RAD</code></p>
+  </li>
+  <li>
+    <p>A Client interested in notes updated since a specific date: <code class="language-plaintext highlighter-rouge">GET [base]/DocumentReference?patient=[id]&amp;_lastUpdated=ge2026-01-01</code></p>
+  </li>
+  <li>
+    <p>A Client interested in diagnostic reports updated since a specific date: <code class="language-plaintext highlighter-rouge">GET [base]/DiagnosticReport?patient=[id]&amp;_lastUpdated=ge2026-01-01</code></p>
+  </li>
+</ol>
+
+<p>Servers <strong>SHOULD</strong> support search by patient, type, category, date, status, and <code class="language-plaintext highlighter-rouge">_lastUpdated</code> where applicable.</p>
+
+<p>Clients <strong>SHOULD</strong> use <code class="language-plaintext highlighter-rouge">_include</code> where supported to retrieve related resources such as Patient, Encounter, Practitioner, Organization, Location, or Binary references.</p>
+
+<h3 id="using-expand">Determining Server Note and Report Types</h3>
+
+<p>In addition to inspecting a Server CapabilityStatement, a Client <strong>MAY</strong> determine note and report types supported by a Server by invoking the standard FHIR ValueSet Expansion (<code class="language-plaintext highlighter-rouge">$expand</code>) operation where supported.</p>
+
+<p>A Server claiming support for Nigeria Core clinical note exchange <strong>SHOULD</strong> support <code class="language-plaintext highlighter-rouge">$expand</code> for note type and report type discovery where the terminology server or FHIR server provides this capability.</p>
+
+<h4 id="discovering-note-and-report-types">Discovering Note and Report Types</h4>
+
+<p>The note and report types for a particular Server may be discovered by invoking: <code class="language-plaintext highlighter-rouge">GET [base]/ValueSet/$expand?context=[context]&amp;contextDirection=[contextDirection]</code></p>
+
+<p>Where:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">contextDirection=outgoing</code> is used for read operations.</li>
+  <li><code class="language-plaintext highlighter-rouge">contextDirection=incoming</code> is used for write operations.</li>
+  <li><code class="language-plaintext highlighter-rouge">context</code> identifies the profile element for which note or report type support is being discovered.</li>
+</ul>
+
+<h4 id="discovering-server-read-and-write-formats">Discovering Server Read and Write Formats</h4>
+
+<p>The read and write formats for a particular Server may be discovered by invoking <code class="language-plaintext highlighter-rouge">$expand</code> for content type contexts where supported.</p>
+
+<p>Examples of content types include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">text/plain</code></li>
+  <li><code class="language-plaintext highlighter-rouge">text/html</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xhtml+xml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/pdf</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">text/markdown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">image/jpeg</code></li>
+  <li><code class="language-plaintext highlighter-rouge">image/png</code></li>
+</ul>
+
+<p>Programme guides <strong>SHOULD</strong> document allowed formats for specific workflows. For example, a national referral workflow may permit PDF and XHTML attachments, while a Shared Health Record workflow may require structured FHIR resources plus XHTML narrative.</p>
+
+<h3 id="clinical-notes-in-referral-workflows">Clinical Notes in Referral Workflows</h3>
+
+<p>Referral workflows are a priority use case for Nigeria Core. Referral notes may be exchanged using <code class="language-plaintext highlighter-rouge">DocumentReference</code>, <code class="language-plaintext highlighter-rouge">ServiceRequest</code>, <code class="language-plaintext highlighter-rouge">Task</code>, <code class="language-plaintext highlighter-rouge">Composition</code>, or a Bundle containing these resources.</p>
+
+<p>A referral note <strong>SHOULD</strong> include or reference:</p>
+
+<ul>
+  <li>Patient</li>
+  <li>Referring facility</li>
+  <li>Receiving facility</li>
+  <li>Referring practitioner or care team</li>
+  <li>Reason for referral</li>
+  <li>Relevant clinical findings</li>
+  <li>Diagnosis or suspected diagnosis</li>
+  <li>Medications</li>
+  <li>Allergies</li>
+  <li>Vital signs or observations</li>
+  <li>Laboratory or imaging results, where available</li>
+  <li>Urgency or priority</li>
+  <li>Transport or care instructions</li>
+  <li>Date and time of referral</li>
+</ul>
+
+<p>Where the referral workflow uses <code class="language-plaintext highlighter-rouge">ServiceRequest</code> and <code class="language-plaintext highlighter-rouge">Task</code>, the referral note may be represented as a <code class="language-plaintext highlighter-rouge">DocumentReference</code> linked to the request, task, encounter, or patient.</p>
+
+<h3 id="clinical-notes-in-community-health-workflows">Clinical Notes in Community Health Workflows</h3>
+
+<p>Community health systems may generate notes during household visits, outreach, immunization sessions, antenatal care, nutrition follow-up, malaria case management, TB screening, or community referral.</p>
+
+<p>Community health notes <strong>SHOULD</strong> be structured where possible, but may also include narrative. Where notes are collected offline and synchronized later, systems <strong>SHOULD</strong> preserve:</p>
+
+<ul>
+  <li>Author or recorder</li>
+  <li>Date and time of capture</li>
+  <li>Facility, ward, settlement, or service area</li>
+  <li>Programme context</li>
+  <li>Synchronization date and time</li>
+  <li>Source application or device</li>
+  <li>Any changes made during synchronization</li>
+</ul>
+
+<p>Community health notes that become part of a patient’s longitudinal record <strong>SHOULD</strong> be exposed through <code class="language-plaintext highlighter-rouge">DocumentReference</code>, <code class="language-plaintext highlighter-rouge">Encounter</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">ServiceRequest</code>, <code class="language-plaintext highlighter-rouge">CarePlan</code>, or other appropriate Nigeria Core Profiles.</p>
+
+<h3 id="clinical-notes-and-the-nigeria-shared-health-record">Clinical Notes and the Nigeria Shared Health Record</h3>
+
+<p>Clinical notes may be contributed to or retrieved from a Nigeria Shared Health Record where authorised.</p>
+
+<p>Shared Health Record implementations <strong>SHOULD</strong> include only notes relevant to continuity of care, referral, emergency care, patient access, programme follow-up, or longitudinal record use.</p>
+
+<p>Systems <strong>SHOULD</strong> avoid sending excessive, duplicated, low-value, or sensitive narrative content to the Shared Health Record unless needed for care continuity and authorised by policy.</p>
+
+<p>Shared Health Record note exchange <strong>SHOULD</strong> include appropriate metadata:</p>
+
+<ul>
+  <li>Patient</li>
+  <li>Encounter</li>
+  <li>Author</li>
+  <li>Custodian</li>
+  <li>Facility or organisation</li>
+  <li>Date and time</li>
+  <li>Type</li>
+  <li>Category</li>
+  <li>Security label, where needed</li>
+  <li>Consent or access restriction, where applicable</li>
+  <li>Provenance</li>
+</ul>
+
+<h3 id="privacy-and-security-for-clinical-notes">Privacy and Security for Clinical Notes</h3>
+
+<p>Clinical notes often contain sensitive information that may not be present in structured fields. Notes may include HIV status, reproductive health information, mental health information, family history, social circumstances, safeguarding concerns, financial information, identifiers, or details about third parties.</p>
+
+<p>Systems <strong>SHALL</strong> protect clinical notes according to applicable privacy, consent, access control, and security requirements.</p>
+
+<p>Systems <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Apply role-based and organisation-based access control.</li>
+  <li>Respect consent and purpose-of-use restrictions.</li>
+  <li>Apply security labels where special handling is required.</li>
+  <li>Avoid exposing sensitive note content in public dashboards, logs, exports, or notifications.</li>
+  <li>Avoid using real clinical notes in sandbox or public testing environments unless explicitly authorised.</li>
+  <li>Use synthetic, anonymised, or pseudonymized notes for testing, training, and Connectathon scenarios.</li>
+  <li>Audit access to clinical notes and attachments.</li>
+  <li>Protect Binary endpoints and attachment URLs.</li>
+</ul>
+
+<p>Narrative text <strong>SHALL</strong> be treated with the same level of protection as structured clinical data.</p>
+
+<h3 id="provenance-and-authorship">Provenance and Authorship</h3>
+
+<p>Clinical notes <strong>SHOULD</strong> include metadata that identifies who authored, recorded, authenticated, or submitted the note.</p>
+
+<p>Where appropriate, implementers <strong>SHOULD</strong> use:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">DocumentReference.author</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DocumentReference.custodian</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DocumentReference.date</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DocumentReference.context.encounter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DiagnosticReport.performer</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DiagnosticReport.resultsInterpreter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Provenance</code></li>
+  <li><code class="language-plaintext highlighter-rouge">AuditEvent</code></li>
+</ul>
+
+<p>Where a note is derived from another source, transformed, translated, scanned, or imported, systems <strong>SHOULD</strong> preserve source attribution and transformation history.</p>
+
+<h3 id="language-support-for-clinical-notes">Language Support for Clinical Notes</h3>
+
+<p>Nigeria is multilingual. Clinical notes may be created in English or in local languages, especially in community health, patient-facing, counselling, education, and referral contexts.</p>
+
+<p>Systems <strong>SHOULD</strong> populate the resource <code class="language-plaintext highlighter-rouge">language</code> element where the language of the note is known.</p>
+
+<p>Systems <strong>MAY</strong> use FHIR language and translation extensions where a note, display, or attachment title is translated.</p>
+
+<p>Clinical notes <strong>SHOULD NOT</strong> be automatically translated for care delivery without appropriate human review or safety controls where mistranslation could affect diagnosis, treatment, referral, or medication use.</p>
+
+<h3 id="attachments-and-binary-content">Attachments and Binary Content</h3>
+
+<p>Clinical note attachments may be represented using <code class="language-plaintext highlighter-rouge">Attachment</code> elements and may reference FHIR <code class="language-plaintext highlighter-rouge">Binary</code> resources or secure external URLs.</p>
+
+<p>Attachment metadata <strong>SHOULD</strong> include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">contentType</code></li>
+  <li><code class="language-plaintext highlighter-rouge">language</code>, where known</li>
+  <li><code class="language-plaintext highlighter-rouge">title</code></li>
+  <li><code class="language-plaintext highlighter-rouge">creation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">url</code> or inline data</li>
+  <li><code class="language-plaintext highlighter-rouge">size</code>, where available</li>
+  <li><code class="language-plaintext highlighter-rouge">hash</code>, where available</li>
+</ul>
+
+<p>Systems <strong>SHOULD NOT</strong> expose public, unauthenticated URLs for clinical note content.</p>
+
+<p>If an external document repository is used, the FHIR Server <strong>SHOULD</strong> ensure that links are secure, access-controlled, auditable, and durable enough for the intended workflow.</p>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<p>Nigeria Core implementers should consider the following:</p>
+
+<ul>
+  <li>Clinical note exchange should support both structured and unstructured health information.</li>
+  <li>DocumentReference should be used as the primary index for broad clinical notes and scanned documents.</li>
+  <li>DiagnosticReport should be used for diagnostic reports, especially when discrete results are linked.</li>
+  <li>Referral notes should be discoverable and exchangeable across primary, secondary, and tertiary care.</li>
+  <li>Community health notes should be integrated into patient records where clinically relevant.</li>
+  <li>Programme guides should define note types, ValueSets, and examples for their specific workflows.</li>
+  <li>Shared Health Record implementations should include only clinically relevant and authorised notes.</li>
+  <li>Sandbox and Connectathon environments should use synthetic or anonymised clinical notes.</li>
+  <li>Vendors should validate clinical note resources against Nigeria Core Profiles before production exchange.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

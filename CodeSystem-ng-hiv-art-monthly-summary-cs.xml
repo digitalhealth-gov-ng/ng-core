@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-monthly-summary-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-art-monthly-summary-cs</b></p><a name="ng-hiv-art-monthly-summary-cs"> </a><a name="hcng-hiv-art-monthly-summary-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ART1<a name="ng-hiv-art-monthly-summary-cs-ART1"> </a></td><td>ART1 (TX_NEW)</td><td>Number of people living with HIV newly started on ART during the month, excluding ART transfer-in.</td></tr><tr><td style="white-space:nowrap">ART2<a name="ng-hiv-art-monthly-summary-cs-ART2"> </a></td><td>ART2 (TX_CURR)</td><td>Number of people living with HIV currently receiving ART during the month.</td></tr><tr><td style="white-space:nowrap">ART3<a name="ng-hiv-art-monthly-summary-cs-ART3"> </a></td><td>ART3 (TX_PVLS_D)</td><td>Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months.</td></tr><tr><td style="white-space:nowrap">ART4<a name="ng-hiv-art-monthly-summary-cs-ART4"> </a></td><td>ART4 (TX_PVLS_N)</td><td>Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months.</td></tr><tr><td style="white-space:nowrap">ART5<a name="ng-hiv-art-monthly-summary-cs-ART5"> </a></td><td>ART5 (TX_ATRR)</td><td>Number of people living with HIV on ART who had treatment interruption during the reporting month, disaggregated by tracking outcome.</td></tr><tr><td style="white-space:nowrap">ART6<a name="ng-hiv-art-monthly-summary-cs-ART6"> </a></td><td>ART6 (TX_RTT)</td><td>Number of people living with HIV who restarted ART during the month.</td></tr><tr><td style="white-space:nowrap">ART7<a name="ng-hiv-art-monthly-summary-cs-ART7"> </a></td><td>ART7 (TX_TO)</td><td>Number of people living with HIV who transferred out during the month.</td></tr><tr><td style="white-space:nowrap">ART8<a name="ng-hiv-art-monthly-summary-cs-ART8"> </a></td><td>ART8 (TX_TI)</td><td>Number of people living with HIV who transferred in during the month.</td></tr><tr><td style="white-space:nowrap">ART9<a name="ng-hiv-art-monthly-summary-cs-ART9"> </a></td><td>ART9 (ART_INSURANCE)</td><td>Number of people living with HIV on ART with current health-insurance cover.</td></tr><tr><td style="white-space:nowrap">ART10<a name="ng-hiv-art-monthly-summary-cs-ART10"> </a></td><td>ART10 (TX_TB_SCRN)</td><td>Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings.</td></tr><tr><td style="white-space:nowrap">ART11<a name="ng-hiv-art-monthly-summary-cs-ART11"> </a></td><td>ART11 (TX_TB_SCRN_POS)</td><td>Number of people living with HIV on ART with presumptive TB during the month.</td></tr><tr><td style="white-space:nowrap">ART12<a name="ng-hiv-art-monthly-summary-cs-ART12"> </a></td><td>ART12 (TX_TB_TST)</td><td>Number of people living with HIV on ART with presumptive TB who were tested for TB during the month.</td></tr><tr><td style="white-space:nowrap">ART13<a name="ng-hiv-art-monthly-summary-cs-ART13"> </a></td><td>ART13 (TX_TB_TST_POS)</td><td>Number of people living with HIV on ART who had active TB disease.</td></tr><tr><td style="white-space:nowrap">ART14<a name="ng-hiv-art-monthly-summary-cs-ART14"> </a></td><td>ART14 (TX_TB)</td><td>Number of people living with HIV on ART with active TB disease who initiated TB treatment.</td></tr><tr><td style="white-space:nowrap">ART15<a name="ng-hiv-art-monthly-summary-cs-ART15"> </a></td><td>ART15 (TB_PREV_D)</td><td>Number of people living with HIV on ART who initiated TB preventive treatment.</td></tr><tr><td style="white-space:nowrap">ART16<a name="ng-hiv-art-monthly-summary-cs-ART16"> </a></td><td>ART16 (TB_PREV_N)</td><td>Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it.</td></tr><tr><td style="white-space:nowrap">ART17<a name="ng-hiv-art-monthly-summary-cs-ART17"> </a></td><td>ART17 (TB_PREV_EVR)</td><td>Number of people living with HIV currently on ART who had ever received TB preventive treatment.</td></tr><tr><td style="white-space:nowrap">ART18<a name="ng-hiv-art-monthly-summary-cs-ART18"> </a></td><td>ART18 (CARE_NEW)</td><td>Number of people living with HIV newly enrolled in care during the month.</td></tr><tr><td style="white-space:nowrap">ART19<a name="ng-hiv-art-monthly-summary-cs-ART19"> </a></td><td>ART19 (AHD_SCRN)</td><td>Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger.</td></tr><tr><td style="white-space:nowrap">ART20<a name="ng-hiv-art-monthly-summary-cs-ART20"> </a></td><td>ART20 (AHD_SCRN_CRAG)</td><td>Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen.</td></tr><tr><td style="white-space:nowrap">ART21<a name="ng-hiv-art-monthly-summary-cs-ART21"> </a></td><td>ART21 (AHD_SCRN_CSF)</td><td>Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture.</td></tr><tr><td style="white-space:nowrap">ART22<a name="ng-hiv-art-monthly-summary-cs-ART22"> </a></td><td>ART22 (AHD_MEN_TX)</td><td>Number of people living with HIV started on treatment for cryptococcal meningitis.</td></tr><tr><td style="white-space:nowrap">ART23<a name="ng-hiv-art-monthly-summary-cs-ART23"> </a></td><td>ART23 (CER_SCRN)</td><td>Number of women living with HIV on ART screened for cervical cancer.</td></tr><tr><td style="white-space:nowrap">ART24<a name="ng-hiv-art-monthly-summary-cs-ART24"> </a></td><td>ART24 (CER_TX)</td><td>Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP.</td></tr><tr><td style="white-space:nowrap">artAgeGroup<a name="ng-hiv-art-monthly-summary-cs-artAgeGroup"> </a></td><td>ART age group</td><td/></tr><tr><td style="white-space:nowrap">sex<a name="ng-hiv-art-monthly-summary-cs-sex"> </a></td><td>Sex</td><td/></tr><tr><td style="white-space:nowrap">keyPopulation<a name="ng-hiv-art-monthly-summary-cs-keyPopulation"> </a></td><td>Key-population typology</td><td/></tr><tr><td style="white-space:nowrap">regimenLine<a name="ng-hiv-art-monthly-summary-cs-regimenLine"> </a></td><td>ART regimen line</td><td/></tr><tr><td style="white-space:nowrap">mmdDuration<a name="ng-hiv-art-monthly-summary-cs-mmdDuration"> </a></td><td>Multi-month dispensing duration</td><td/></tr><tr><td style="white-space:nowrap">interruptionOutcome<a name="ng-hiv-art-monthly-summary-cs-interruptionOutcome"> </a></td><td>Treatment-interruption outcome</td><td/></tr><tr><td style="white-space:nowrap">tbAhdAgeGroup<a name="ng-hiv-art-monthly-summary-cs-tbAhdAgeGroup"> </a></td><td>TB and AHD age group</td><td/></tr><tr><td style="white-space:nowrap">tptRegimen<a name="ng-hiv-art-monthly-summary-cs-tptRegimen"> </a></td><td>TB preventive-treatment regimen</td><td/></tr><tr><td style="white-space:nowrap">ahdCategory<a name="ng-hiv-art-monthly-summary-cs-ahdCategory"> </a></td><td>Advanced-HIV-disease entry category</td><td/></tr><tr><td style="white-space:nowrap">cragAgeGroup<a name="ng-hiv-art-monthly-summary-cs-cragAgeGroup"> </a></td><td>CrAg age group</td><td/></tr><tr><td style="white-space:nowrap">cragResult<a name="ng-hiv-art-monthly-summary-cs-cragResult"> </a></td><td>Serum CrAg result</td><td/></tr><tr><td style="white-space:nowrap">cryptococcalMeningitisResult<a name="ng-hiv-art-monthly-summary-cs-cryptococcalMeningitisResult"> </a></td><td>Cryptococcal-meningitis screening result</td><td/></tr><tr><td style="white-space:nowrap">cervicalAgeGroup<a name="ng-hiv-art-monthly-summary-cs-cervicalAgeGroup"> </a></td><td>Cervical-screening age group</td><td/></tr><tr><td style="white-space:nowrap">cervicalScreeningResult<a name="ng-hiv-art-monthly-summary-cs-cervicalScreeningResult"> </a></td><td>Cervical-screening result</td><td/></tr><tr><td style="white-space:nowrap">cervicalScreeningTiming<a name="ng-hiv-art-monthly-summary-cs-cervicalScreeningTiming"> </a></td><td>Cervical-screening timing</td><td/></tr><tr><td style="white-space:nowrap">cervicalTreatmentType<a name="ng-hiv-art-monthly-summary-cs-cervicalTreatmentType"> </a></td><td>Cervical treatment type</td><td/></tr><tr><td style="white-space:nowrap">age-lt-1<a name="ng-hiv-art-monthly-summary-cs-age-lt-1"> </a></td><td>Younger than 1 year</td><td/></tr><tr><td style="white-space:nowrap">age-1-4<a name="ng-hiv-art-monthly-summary-cs-age-1-4"> </a></td><td>1–4 years</td><td/></tr><tr><td style="white-space:nowrap">age-5-9<a name="ng-hiv-art-monthly-summary-cs-age-5-9"> </a></td><td>5–9 years</td><td/></tr><tr><td style="white-space:nowrap">age-10-14<a name="ng-hiv-art-monthly-summary-cs-age-10-14"> </a></td><td>10–14 years</td><td/></tr><tr><td style="white-space:nowrap">age-15-19<a name="ng-hiv-art-monthly-summary-cs-age-15-19"> </a></td><td>15–19 years</td><td/></tr><tr><td style="white-space:nowrap">age-20-24<a name="ng-hiv-art-monthly-summary-cs-age-20-24"> </a></td><td>20–24 years</td><td/></tr><tr><td style="white-space:nowrap">age-25-49<a name="ng-hiv-art-monthly-summary-cs-age-25-49"> </a></td><td>25–49 years</td><td/></tr><tr><td style="white-space:nowrap">age-50-plus<a name="ng-hiv-art-monthly-summary-cs-age-50-plus"> </a></td><td>50 years or older</td><td/></tr><tr><td style="white-space:nowrap">age-lt-5<a name="ng-hiv-art-monthly-summary-cs-age-lt-5"> </a></td><td>Younger than 5 years</td><td/></tr><tr><td style="white-space:nowrap">age-5-14<a name="ng-hiv-art-monthly-summary-cs-age-5-14"> </a></td><td>5–14 years</td><td/></tr><tr><td style="white-space:nowrap">age-15-plus<a name="ng-hiv-art-monthly-summary-cs-age-15-plus"> </a></td><td>15 years or older</td><td/></tr><tr><td style="white-space:nowrap">age-10-14-crag<a name="ng-hiv-art-monthly-summary-cs-age-10-14-crag"> </a></td><td>10–14 years</td><td/></tr><tr><td style="white-space:nowrap">age-15-plus-crag<a name="ng-hiv-art-monthly-summary-cs-age-15-plus-crag"> </a></td><td>15 years or older</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-15-19<a name="ng-hiv-art-monthly-summary-cs-cervical-age-15-19"> </a></td><td>15–19 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-20-24<a name="ng-hiv-art-monthly-summary-cs-cervical-age-20-24"> </a></td><td>20–24 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-25-29<a name="ng-hiv-art-monthly-summary-cs-cervical-age-25-29"> </a></td><td>25–29 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-30-34<a name="ng-hiv-art-monthly-summary-cs-cervical-age-30-34"> </a></td><td>30–34 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-35-39<a name="ng-hiv-art-monthly-summary-cs-cervical-age-35-39"> </a></td><td>35–39 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-40-44<a name="ng-hiv-art-monthly-summary-cs-cervical-age-40-44"> </a></td><td>40–44 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-45-49<a name="ng-hiv-art-monthly-summary-cs-cervical-age-45-49"> </a></td><td>45–49 years</td><td/></tr><tr><td style="white-space:nowrap">cervical-age-50-plus<a name="ng-hiv-art-monthly-summary-cs-cervical-age-50-plus"> </a></td><td>50 years or older</td><td/></tr><tr><td style="white-space:nowrap">mmd-lt-3-months<a name="ng-hiv-art-monthly-summary-cs-mmd-lt-3-months"> </a></td><td>Less than 3 months</td><td/></tr><tr><td style="white-space:nowrap">mmd-3-5-months<a name="ng-hiv-art-monthly-summary-cs-mmd-3-5-months"> </a></td><td>3–5 months</td><td/></tr><tr><td style="white-space:nowrap">mmd-6-plus-months<a name="ng-hiv-art-monthly-summary-cs-mmd-6-plus-months"> </a></td><td>6 months or more</td><td/></tr><tr><td style="white-space:nowrap">stopped-treatment<a name="ng-hiv-art-monthly-summary-cs-stopped-treatment"> </a></td><td>Stopped treatment</td><td/></tr><tr><td style="white-space:nowrap">lost-to-follow-up<a name="ng-hiv-art-monthly-summary-cs-lost-to-follow-up"> </a></td><td>Lost to follow-up</td><td/></tr><tr><td style="white-space:nowrap">dead<a name="ng-hiv-art-monthly-summary-cs-dead"> </a></td><td>Dead</td><td/></tr><tr><td style="white-space:nowrap">newly-enrolled<a name="ng-hiv-art-monthly-summary-cs-newly-enrolled"> </a></td><td>Newly enrolled</td><td/></tr><tr><td style="white-space:nowrap">unsuppressed<a name="ng-hiv-art-monthly-summary-cs-unsuppressed"> </a></td><td>Unsuppressed</td><td/></tr><tr><td style="white-space:nowrap">restarted<a name="ng-hiv-art-monthly-summary-cs-restarted"> </a></td><td>Restarted ART</td><td/></tr><tr><td style="white-space:nowrap">crag-negative<a name="ng-hiv-art-monthly-summary-cs-crag-negative"> </a></td><td>Serum CrAg negative</td><td/></tr><tr><td style="white-space:nowrap">crag-positive<a name="ng-hiv-art-monthly-summary-cs-crag-positive"> </a></td><td>Serum CrAg positive</td><td/></tr><tr><td style="white-space:nowrap">cm-positive<a name="ng-hiv-art-monthly-summary-cs-cm-positive"> </a></td><td>Cryptococcal meningitis screening positive</td><td/></tr><tr><td style="white-space:nowrap">cm-negative<a name="ng-hiv-art-monthly-summary-cs-cm-negative"> </a></td><td>Cryptococcal meningitis screening negative</td><td/></tr><tr><td style="white-space:nowrap">cervical-positive<a name="ng-hiv-art-monthly-summary-cs-cervical-positive"> </a></td><td>Positive</td><td/></tr><tr><td style="white-space:nowrap">cervical-negative<a name="ng-hiv-art-monthly-summary-cs-cervical-negative"> </a></td><td>Negative</td><td/></tr><tr><td style="white-space:nowrap">cervical-precancerous-lesion<a name="ng-hiv-art-monthly-summary-cs-cervical-precancerous-lesion"> </a></td><td>Pre-cancerous lesion</td><td/></tr><tr><td style="white-space:nowrap">cervical-suspected-cancer<a name="ng-hiv-art-monthly-summary-cs-cervical-suspected-cancer"> </a></td><td>Suspected cancer</td><td/></tr><tr><td style="white-space:nowrap">screening-first-time<a name="ng-hiv-art-monthly-summary-cs-screening-first-time"> </a></td><td>First-time screening</td><td/></tr><tr><td style="white-space:nowrap">screening-repeat-negative<a name="ng-hiv-art-monthly-summary-cs-screening-repeat-negative"> </a></td><td>Re-screening after a previous negative result</td><td/></tr><tr><td style="white-space:nowrap">screening-post-treatment<a name="ng-hiv-art-monthly-summary-cs-screening-post-treatment"> </a></td><td>Post-treatment follow-up</td><td/></tr><tr><td style="white-space:nowrap">treatment-cryotherapy<a name="ng-hiv-art-monthly-summary-cs-treatment-cryotherapy"> </a></td><td>Cryotherapy</td><td/></tr><tr><td style="white-space:nowrap">treatment-leep<a name="ng-hiv-art-monthly-summary-cs-treatment-leep"> </a></td><td>Loop electrosurgical excision procedure</td><td/></tr><tr><td style="white-space:nowrap">treatment-thermal-ablation<a name="ng-hiv-art-monthly-summary-cs-treatment-thermal-ablation"> </a></td><td>Thermal ablation</td><td/></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.20"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtMonthlySummaryCS"/>
+  <title value="NG HIV ART Monthly Summary Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Indicator, stratifier-dimension and local disaggregation codes for the Nigeria ART Monthly Summary Form revised November 2025."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="84"/>
+  <concept>
+    <code value="ART1"/>
+    <display value="ART1 (TX_NEW)"/>
+    <definition value="Number of people living with HIV newly started on ART during the month, excluding ART transfer-in."/>
+  </concept>
+  <concept>
+    <code value="ART2"/>
+    <display value="ART2 (TX_CURR)"/>
+    <definition value="Number of people living with HIV currently receiving ART during the month."/>
+  </concept>
+  <concept>
+    <code value="ART3"/>
+    <display value="ART3 (TX_PVLS_D)"/>
+    <definition value="Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months."/>
+  </concept>
+  <concept>
+    <code value="ART4"/>
+    <display value="ART4 (TX_PVLS_N)"/>
+    <definition value="Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months."/>
+  </concept>
+  <concept>
+    <code value="ART5"/>
+    <display value="ART5 (TX_ATRR)"/>
+    <definition value="Number of people living with HIV on ART who had treatment interruption during the reporting month, disaggregated by tracking outcome."/>
+  </concept>
+  <concept>
+    <code value="ART6"/>
+    <display value="ART6 (TX_RTT)"/>
+    <definition value="Number of people living with HIV who restarted ART during the month."/>
+  </concept>
+  <concept>
+    <code value="ART7"/>
+    <display value="ART7 (TX_TO)"/>
+    <definition value="Number of people living with HIV who transferred out during the month."/>
+  </concept>
+  <concept>
+    <code value="ART8"/>
+    <display value="ART8 (TX_TI)"/>
+    <definition value="Number of people living with HIV who transferred in during the month."/>
+  </concept>
+  <concept>
+    <code value="ART9"/>
+    <display value="ART9 (ART_INSURANCE)"/>
+    <definition value="Number of people living with HIV on ART with current health-insurance cover."/>
+  </concept>
+  <concept>
+    <code value="ART10"/>
+    <display value="ART10 (TX_TB_SCRN)"/>
+    <definition value="Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings."/>
+  </concept>
+  <concept>
+    <code value="ART11"/>
+    <display value="ART11 (TX_TB_SCRN_POS)"/>
+    <definition value="Number of people living with HIV on ART with presumptive TB during the month."/>
+  </concept>
+  <concept>
+    <code value="ART12"/>
+    <display value="ART12 (TX_TB_TST)"/>
+    <definition value="Number of people living with HIV on ART with presumptive TB who were tested for TB during the month."/>
+  </concept>
+  <concept>
+    <code value="ART13"/>
+    <display value="ART13 (TX_TB_TST_POS)"/>
+    <definition value="Number of people living with HIV on ART who had active TB disease."/>
+  </concept>
+  <concept>
+    <code value="ART14"/>
+    <display value="ART14 (TX_TB)"/>
+    <definition value="Number of people living with HIV on ART with active TB disease who initiated TB treatment."/>
+  </concept>
+  <concept>
+    <code value="ART15"/>
+    <display value="ART15 (TB_PREV_D)"/>
+    <definition value="Number of people living with HIV on ART who initiated TB preventive treatment."/>
+  </concept>
+  <concept>
+    <code value="ART16"/>
+    <display value="ART16 (TB_PREV_N)"/>
+    <definition value="Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it."/>
+  </concept>
+  <concept>
+    <code value="ART17"/>
+    <display value="ART17 (TB_PREV_EVR)"/>
+    <definition value="Number of people living with HIV currently on ART who had ever received TB preventive treatment."/>
+  </concept>
+  <concept>
+    <code value="ART18"/>
+    <display value="ART18 (CARE_NEW)"/>
+    <definition value="Number of people living with HIV newly enrolled in care during the month."/>
+  </concept>
+  <concept>
+    <code value="ART19"/>
+    <display value="ART19 (AHD_SCRN)"/>
+    <definition value="Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger."/>
+  </concept>
+  <concept>
+    <code value="ART20"/>
+    <display value="ART20 (AHD_SCRN_CRAG)"/>
+    <definition value="Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen."/>
+  </concept>
+  <concept>
+    <code value="ART21"/>
+    <display value="ART21 (AHD_SCRN_CSF)"/>
+    <definition value="Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture."/>
+  </concept>
+  <concept>
+    <code value="ART22"/>
+    <display value="ART22 (AHD_MEN_TX)"/>
+    <definition value="Number of people living with HIV started on treatment for cryptococcal meningitis."/>
+  </concept>
+  <concept>
+    <code value="ART23"/>
+    <display value="ART23 (CER_SCRN)"/>
+    <definition value="Number of women living with HIV on ART screened for cervical cancer."/>
+  </concept>
+  <concept>
+    <code value="ART24"/>
+    <display value="ART24 (CER_TX)"/>
+    <definition value="Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP."/>
+  </concept>
+  <concept>
+    <code value="artAgeGroup"/>
+    <display value="ART age group"/>
+  </concept>
+  <concept>
+    <code value="sex"/>
+    <display value="Sex"/>
+  </concept>
+  <concept>
+    <code value="keyPopulation"/>
+    <display value="Key-population typology"/>
+  </concept>
+  <concept>
+    <code value="regimenLine"/>
+    <display value="ART regimen line"/>
+  </concept>
+  <concept>
+    <code value="mmdDuration"/>
+    <display value="Multi-month dispensing duration"/>
+  </concept>
+  <concept>
+    <code value="interruptionOutcome"/>
+    <display value="Treatment-interruption outcome"/>
+  </concept>
+  <concept>
+    <code value="tbAhdAgeGroup"/>
+    <display value="TB and AHD age group"/>
+  </concept>
+  <concept>
+    <code value="tptRegimen"/>
+    <display value="TB preventive-treatment regimen"/>
+  </concept>
+  <concept>
+    <code value="ahdCategory"/>
+    <display value="Advanced-HIV-disease entry category"/>
+  </concept>
+  <concept>
+    <code value="cragAgeGroup"/>
+    <display value="CrAg age group"/>
+  </concept>
+  <concept>
+    <code value="cragResult"/>
+    <display value="Serum CrAg result"/>
+  </concept>
+  <concept>
+    <code value="cryptococcalMeningitisResult"/>
+    <display value="Cryptococcal-meningitis screening result"/>
+  </concept>
+  <concept>
+    <code value="cervicalAgeGroup"/>
+    <display value="Cervical-screening age group"/>
+  </concept>
+  <concept>
+    <code value="cervicalScreeningResult"/>
+    <display value="Cervical-screening result"/>
+  </concept>
+  <concept>
+    <code value="cervicalScreeningTiming"/>
+    <display value="Cervical-screening timing"/>
+  </concept>
+  <concept>
+    <code value="cervicalTreatmentType"/>
+    <display value="Cervical treatment type"/>
+  </concept>
+  <concept>
+    <code value="age-lt-1"/>
+    <display value="Younger than 1 year"/>
+  </concept>
+  <concept>
+    <code value="age-1-4"/>
+    <display value="1–4 years"/>
+  </concept>
+  <concept>
+    <code value="age-5-9"/>
+    <display value="5–9 years"/>
+  </concept>
+  <concept>
+    <code value="age-10-14"/>
+    <display value="10–14 years"/>
+  </concept>
+  <concept>
+    <code value="age-15-19"/>
+    <display value="15–19 years"/>
+  </concept>
+  <concept>
+    <code value="age-20-24"/>
+    <display value="20–24 years"/>
+  </concept>
+  <concept>
+    <code value="age-25-49"/>
+    <display value="25–49 years"/>
+  </concept>
+  <concept>
+    <code value="age-50-plus"/>
+    <display value="50 years or older"/>
+  </concept>
+  <concept>
+    <code value="age-lt-5"/>
+    <display value="Younger than 5 years"/>
+  </concept>
+  <concept>
+    <code value="age-5-14"/>
+    <display value="5–14 years"/>
+  </concept>
+  <concept>
+    <code value="age-15-plus"/>
+    <display value="15 years or older"/>
+  </concept>
+  <concept>
+    <code value="age-10-14-crag"/>
+    <display value="10–14 years"/>
+  </concept>
+  <concept>
+    <code value="age-15-plus-crag"/>
+    <display value="15 years or older"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-15-19"/>
+    <display value="15–19 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-20-24"/>
+    <display value="20–24 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-25-29"/>
+    <display value="25–29 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-30-34"/>
+    <display value="30–34 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-35-39"/>
+    <display value="35–39 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-40-44"/>
+    <display value="40–44 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-45-49"/>
+    <display value="45–49 years"/>
+  </concept>
+  <concept>
+    <code value="cervical-age-50-plus"/>
+    <display value="50 years or older"/>
+  </concept>
+  <concept>
+    <code value="mmd-lt-3-months"/>
+    <display value="Less than 3 months"/>
+  </concept>
+  <concept>
+    <code value="mmd-3-5-months"/>
+    <display value="3–5 months"/>
+  </concept>
+  <concept>
+    <code value="mmd-6-plus-months"/>
+    <display value="6 months or more"/>
+  </concept>
+  <concept>
+    <code value="stopped-treatment"/>
+    <display value="Stopped treatment"/>
+  </concept>
+  <concept>
+    <code value="lost-to-follow-up"/>
+    <display value="Lost to follow-up"/>
+  </concept>
+  <concept>
+    <code value="dead"/>
+    <display value="Dead"/>
+  </concept>
+  <concept>
+    <code value="newly-enrolled"/>
+    <display value="Newly enrolled"/>
+  </concept>
+  <concept>
+    <code value="unsuppressed"/>
+    <display value="Unsuppressed"/>
+  </concept>
+  <concept>
+    <code value="restarted"/>
+    <display value="Restarted ART"/>
+  </concept>
+  <concept>
+    <code value="crag-negative"/>
+    <display value="Serum CrAg negative"/>
+  </concept>
+  <concept>
+    <code value="crag-positive"/>
+    <display value="Serum CrAg positive"/>
+  </concept>
+  <concept>
+    <code value="cm-positive"/>
+    <display value="Cryptococcal meningitis screening positive"/>
+  </concept>
+  <concept>
+    <code value="cm-negative"/>
+    <display value="Cryptococcal meningitis screening negative"/>
+  </concept>
+  <concept>
+    <code value="cervical-positive"/>
+    <display value="Positive"/>
+  </concept>
+  <concept>
+    <code value="cervical-negative"/>
+    <display value="Negative"/>
+  </concept>
+  <concept>
+    <code value="cervical-precancerous-lesion"/>
+    <display value="Pre-cancerous lesion"/>
+  </concept>
+  <concept>
+    <code value="cervical-suspected-cancer"/>
+    <display value="Suspected cancer"/>
+  </concept>
+  <concept>
+    <code value="screening-first-time"/>
+    <display value="First-time screening"/>
+  </concept>
+  <concept>
+    <code value="screening-repeat-negative"/>
+    <display value="Re-screening after a previous negative result"/>
+  </concept>
+  <concept>
+    <code value="screening-post-treatment"/>
+    <display value="Post-treatment follow-up"/>
+  </concept>
+  <concept>
+    <code value="treatment-cryotherapy"/>
+    <display value="Cryotherapy"/>
+  </concept>
+  <concept>
+    <code value="treatment-leep"/>
+    <display value="Loop electrosurgical excision procedure"/>
+  </concept>
+  <concept>
+    <code value="treatment-thermal-ablation"/>
+    <display value="Thermal ablation"/>
+  </concept>
+</CodeSystem>

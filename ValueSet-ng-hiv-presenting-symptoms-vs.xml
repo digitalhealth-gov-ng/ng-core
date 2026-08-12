@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-presenting-symptoms-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-presenting-symptoms-vs</b></p><a name="ng-hiv-presenting-symptoms-vs"> </a><a name="hcng-hiv-presenting-symptoms-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/68154008">68154008</a></td><td>Chronic cough</td></tr><tr><td><a href="http://snomed.info/id/267036007">267036007</a></td><td>Dyspnea</td></tr><tr><td><a href="http://snomed.info/id/66857006">66857006</a></td><td>Hemoptysis</td></tr><tr><td><a href="http://snomed.info/id/52702003">52702003</a></td><td>Chronic fatigue syndrome</td></tr><tr><td><a href="http://snomed.info/id/95891005">95891005</a></td><td>Influenza-like illness</td></tr><tr><td><a href="http://snomed.info/id/42984000">42984000</a></td><td>Night sweats</td></tr><tr><td><a href="http://snomed.info/id/386661006">386661006</a></td><td>Fever</td></tr><tr><td><a href="http://snomed.info/id/40739000">40739000</a></td><td>Dysphagia</td></tr><tr><td><a href="http://snomed.info/id/30233002">30233002</a></td><td>Swallowing painful</td></tr><tr><td><a href="http://snomed.info/id/422587007">422587007</a></td><td>Nausea</td></tr><tr><td><a href="http://snomed.info/id/422400008">422400008</a></td><td>Vomiting</td></tr><tr><td><a href="http://snomed.info/id/21522001">21522001</a></td><td>Abdominal pain</td></tr><tr><td><a href="http://snomed.info/id/101000119102">101000119102</a></td><td>Numbness and tingling sensation of skin</td></tr><tr><td><a href="http://snomed.info/id/121021000119105">121021000119105</a></td><td>New daily persistent headache</td></tr><tr><td><a href="http://snomed.info/id/712831003">712831003</a></td><td>Frequent headache</td></tr><tr><td><a href="http://snomed.info/id/2776000">2776000</a></td><td>Delirium</td></tr><tr><td><a href="http://snomed.info/id/236071009">236071009</a></td><td>Chronic diarrhea</td></tr><tr><td><a href="http://snomed.info/id/8098009">8098009</a></td><td>Sexually transmitted infectious disease</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-presenting-symptoms-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.120"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPresentingSymptomsVS"/>
+  <title value="Presenting Symptoms"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for representing the symptoms currently being experienced by the patient."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="68154008"/>
+        <display value="Chronic cough"/>
+      </concept>
+      <concept>
+        <code value="267036007"/>
+        <display value="Dyspnea"/>
+      </concept>
+      <concept>
+        <code value="66857006"/>
+        <display value="Hemoptysis"/>
+      </concept>
+      <concept>
+        <code value="52702003"/>
+        <display value="Chronic fatigue syndrome"/>
+      </concept>
+      <concept>
+        <code value="95891005"/>
+        <display value="Influenza-like illness"/>
+      </concept>
+      <concept>
+        <code value="42984000"/>
+        <display value="Night sweats"/>
+      </concept>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fever"/>
+      </concept>
+      <concept>
+        <code value="40739000"/>
+        <display value="Dysphagia"/>
+      </concept>
+      <concept>
+        <code value="30233002"/>
+        <display value="Swallowing painful"/>
+      </concept>
+      <concept>
+        <code value="422587007"/>
+        <display value="Nausea"/>
+      </concept>
+      <concept>
+        <code value="422400008"/>
+        <display value="Vomiting"/>
+      </concept>
+      <concept>
+        <code value="21522001"/>
+        <display value="Abdominal pain"/>
+      </concept>
+      <concept>
+        <code value="101000119102"/>
+        <display value="Numbness and tingling sensation of skin"/>
+      </concept>
+      <concept>
+        <code value="121021000119105"/>
+        <display value="New daily persistent headache"/>
+      </concept>
+      <concept>
+        <code value="712831003"/>
+        <display value="Frequent headache"/>
+      </concept>
+      <concept>
+        <code value="2776000"/>
+        <display value="Delirium"/>
+      </concept>
+      <concept>
+        <code value="236071009"/>
+        <display value="Chronic diarrhea"/>
+      </concept>
+      <concept>
+        <code value="8098009"/>
+        <display value="Sexually transmitted infectious disease"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

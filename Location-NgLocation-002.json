@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Location",
+  "id" : "NgLocation-002",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location NgLocation-002</b></p><a name=\"NgLocation-002\"> </a><a name=\"hcNgLocation-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-location.html\">NG Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Pharmacy Counter</p><p><b>type</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs hospital}\">Secondary Hospital</span></p><p><b>telecom</b>: <a href=\"tel:+234-803-555-7788\">+234-803-555-7788</a></p><p><b>address</b>: No. 8 Lafia Road Kano Municipal KN NG </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>8.5</td><td>12</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></p></div>"
+  },
+  "status" : "active",
+  "name" : "Pharmacy Counter",
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs",
+      "code" : "hospital",
+      "display" : "Secondary Hospital"
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+234-803-555-7788"
+  }],
+  "address" : {
+    "line" : ["No. 8 Lafia Road"],
+    "city" : "Kano Municipal",
+    "district" : "kn-kano-municipal",
+    "state" : "KN",
+    "country" : "NG"
+  },
+  "position" : {
+    "longitude" : 8.5,
+    "latitude" : 12
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/NgOrganization-002"
+  }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-device-metric-category-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-device-metric-category-cs</b></p><a name="ng-device-metric-category-cs"> </a><a name="hcng-device-metric-category-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-metric-category-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">measurement<a name="ng-device-metric-category-cs-measurement"> </a></td><td>Measurement</td><td>Metric represents a measured value from a device.</td></tr><tr><td style="white-space:nowrap">setting<a name="ng-device-metric-category-cs-setting"> </a></td><td>Setting</td><td>Metric represents a device setting that affects behavior.</td></tr><tr><td style="white-space:nowrap">calculation<a name="ng-device-metric-category-cs-calculation"> </a></td><td>Calculation</td><td>Metric represents a calculated/derived value.</td></tr><tr><td style="white-space:nowrap">unspecified<a name="ng-device-metric-category-cs-unspecified"> </a></td><td>Unspecified</td><td>Metric category is not specified.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-metric-category-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.12"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgDeviceMetricCategoryCS"/>
+  <title value="NG DeviceMetric Category Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Local mirror of DeviceMetric.category. Consider using 'http://terminology.hl7.org/CodeSystem/metric-category' in production."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="measurement"/>
+    <display value="Measurement"/>
+    <definition value="Metric represents a measured value from a device."/>
+  </concept>
+  <concept>
+    <code value="setting"/>
+    <display value="Setting"/>
+    <definition value="Metric represents a device setting that affects behavior."/>
+  </concept>
+  <concept>
+    <code value="calculation"/>
+    <display value="Calculation"/>
+    <definition value="Metric represents a calculated/derived value."/>
+  </concept>
+  <concept>
+    <code value="unspecified"/>
+    <display value="Unspecified"/>
+    <definition value="Metric category is not specified."/>
+  </concept>
+</CodeSystem>

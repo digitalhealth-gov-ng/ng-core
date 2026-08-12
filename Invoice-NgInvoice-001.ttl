@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Invoice/NgInvoice-001> a fhir:Invoice ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgInvoice-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-invoice" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-invoice>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Invoice NgInvoice-001</b></p><a name=\"NgInvoice-001\"> </a><a name=\"hcNgInvoice-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-invoice.html\">NG Invoice</a></p></div><p><b>status</b>: issued</p><p><b>type</b>: <span title=\"Codes:\">Pharmacy dispensing invoice</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>date</b>: 2026-08-03 08:30:00+0100</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Dispensing pharmacist</span></td><td><a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></td></tr></table><p><b>issuer</b>: <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></p><blockquote><p><b>lineItem</b></p><p><b>sequence</b>: 1</p><p><b>chargeItem</b>: <span title=\"Codes:\">Amoxicillin 500 mg capsules, 21 capsules</span></p><blockquote><p><b>priceComponent</b></p><p><b>type</b>: base price</p><h3>Amounts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>3500</td><td>Nigerian naira</td></tr></table></blockquote></blockquote><blockquote><p><b>lineItem</b></p><p><b>sequence</b>: 2</p><p><b>chargeItem</b>: <span title=\"Codes:\">Paracetamol 500 mg tablets, 20 tablets</span></p><blockquote><p><b>priceComponent</b></p><p><b>type</b>: base price</p><h3>Amounts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>1000</td><td>Nigerian naira</td></tr></table></blockquote></blockquote><blockquote><p><b>lineItem</b></p><p><b>sequence</b>: 3</p><p><b>chargeItem</b>: <span title=\"Codes:\">Pharmacy dispensing service</span></p><blockquote><p><b>priceComponent</b></p><p><b>type</b>: base price</p><h3>Amounts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>500</td><td>Nigerian naira</td></tr></table></blockquote></blockquote><h3>TotalNets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>5000</td><td>Nigerian naira</td></tr></table><h3>TotalGrosses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>5000</td><td>Nigerian naira</td></tr></table><p><b>paymentTerms</b>: </p><div><p>Payment is due at the point of medicine collection.</p>\n</div><p><b>note</b>: </p><blockquote><div><p>The invoice covers medicines dispensed and the associated pharmacy service.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:Invoice.status [ fhir:value "issued"] ;
+  fhir:Invoice.type [
+     fhir:CodeableConcept.text [ fhir:value "Pharmacy dispensing invoice" ]
+  ] ;
+  fhir:Invoice.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:Invoice.date [ fhir:value "2026-08-03T08:30:00+01:00"^^xsd:dateTime] ;
+  fhir:Invoice.participant [
+     fhir:index 0 ;
+     fhir:Invoice.participant.role [
+       fhir:CodeableConcept.text [ fhir:value "Dispensing pharmacist" ]
+     ] ;
+     fhir:Invoice.participant.actor [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+     ]
+  ] ;
+  fhir:Invoice.issuer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-002> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-002" ]
+  ] ;
+  fhir:Invoice.lineItem [
+     fhir:index 0 ;
+     fhir:Invoice.lineItem.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Invoice.lineItem.chargeItemCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Amoxicillin 500 mg capsules, 21 capsules" ]
+     ] ;
+     fhir:Invoice.lineItem.priceComponent [
+       fhir:index 0 ;
+       fhir:Invoice.lineItem.priceComponent.type [ fhir:value "base" ] ;
+       fhir:Invoice.lineItem.priceComponent.amount [
+         fhir:Money.value [ fhir:value "3500"^^xsd:decimal ] ;
+         fhir:Money.currency [ fhir:value "NGN" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Invoice.lineItem.sequence [ fhir:value "2"^^xsd:positiveInteger ] ;
+     fhir:Invoice.lineItem.chargeItemCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Paracetamol 500 mg tablets, 20 tablets" ]
+     ] ;
+     fhir:Invoice.lineItem.priceComponent [
+       fhir:index 0 ;
+       fhir:Invoice.lineItem.priceComponent.type [ fhir:value "base" ] ;
+       fhir:Invoice.lineItem.priceComponent.amount [
+         fhir:Money.value [ fhir:value "1000"^^xsd:decimal ] ;
+         fhir:Money.currency [ fhir:value "NGN" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Invoice.lineItem.sequence [ fhir:value "3"^^xsd:positiveInteger ] ;
+     fhir:Invoice.lineItem.chargeItemCodeableConcept [
+       fhir:CodeableConcept.text [ fhir:value "Pharmacy dispensing service" ]
+     ] ;
+     fhir:Invoice.lineItem.priceComponent [
+       fhir:index 0 ;
+       fhir:Invoice.lineItem.priceComponent.type [ fhir:value "base" ] ;
+       fhir:Invoice.lineItem.priceComponent.amount [
+         fhir:Money.value [ fhir:value "500"^^xsd:decimal ] ;
+         fhir:Money.currency [ fhir:value "NGN" ]
+       ]
+     ]
+  ] ;
+  fhir:Invoice.totalNet [
+     fhir:Money.value [ fhir:value "5000"^^xsd:decimal ] ;
+     fhir:Money.currency [ fhir:value "NGN" ]
+  ] ;
+  fhir:Invoice.totalGross [
+     fhir:Money.value [ fhir:value "5000"^^xsd:decimal ] ;
+     fhir:Money.currency [ fhir:value "NGN" ]
+  ] ;
+  fhir:Invoice.paymentTerms [ fhir:value "Payment is due at the point of medicine collection."] ;
+  fhir:Invoice.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "The invoice covers medicines dispensed and the associated pharmacy service." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Invoice/NgInvoice-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

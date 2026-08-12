@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG HIV Enhanced Adherence Counselling Form Codes - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.389"}
+    h3,h4,h5,h6{--heading-prefix:"32.389"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NG HIV Enhanced Adherence Counselling Form Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-eac-form-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-eac-form-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-hiv-eac-form-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NG HIV Enhanced Adherence Counselling Form Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs|0.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-07-28
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NgHivEacFormCS</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113884.3.9944.1.16.44
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Local coded answers transcribed from the Nigeria Enhanced Adherence
+Counselling Form for adherence assessment, adherence barriers, service
+interventions and intervention tools.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-ng-hiv-eac-adherence-vs.html">NgHivEacAdherenceVS</a></li>
+ <li><a href="ValueSet-ng-hiv-eac-barriers-vs.html">NgHivEacBarriersVS</a></li>
+ <li><a href="ValueSet-ng-hiv-eac-intervention-services-vs.html">NgHivEacInterventionServicesVS</a></li>
+ <li><a href="ValueSet-ng-hiv-eac-intervention-tools-vs.html">NgHivEacInterventionToolsVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="ng-hiv-eac-form-cs"> </a><a name="hcng-hiv-eac-form-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">adherence-good<a name="ng-hiv-eac-form-cs-adherence-good"> </a></td>
+<td>Good</td>
+<td>The client demonstrates good adherence to the prescribed ART regimen.</td></tr>
+<tr><td style="white-space:nowrap">adherence-fair<a name="ng-hiv-eac-form-cs-adherence-fair"> </a></td>
+<td>Fair</td>
+<td>The client demonstrates fair adherence to the prescribed ART regimen.</td></tr>
+<tr><td style="white-space:nowrap">adherence-poor<a name="ng-hiv-eac-form-cs-adherence-poor"> </a></td>
+<td>Poor</td>
+<td>The client demonstrates poor adherence to the prescribed ART regimen.</td></tr>
+<tr><td style="white-space:nowrap">barrier-forgot<a name="ng-hiv-eac-form-cs-barrier-forgot"> </a></td>
+<td>Forgot</td>
+<td>The client forgot to take one or more prescribed ART doses.</td></tr>
+<tr><td style="white-space:nowrap">barrier-knowledge-beliefs<a name="ng-hiv-eac-form-cs-barrier-knowledge-beliefs"> </a></td>
+<td>Knowledge or beliefs</td>
+<td>Knowledge, understanding or beliefs affect the client's adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-side-effects<a name="ng-hiv-eac-form-cs-barrier-side-effects"> </a></td>
+<td>Side effects</td>
+<td>Actual or anticipated medication side effects affect adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-physical-illness<a name="ng-hiv-eac-form-cs-barrier-physical-illness"> </a></td>
+<td>Physical illness</td>
+<td>Physical illness affects the client's ability or willingness to take ART.</td></tr>
+<tr><td style="white-space:nowrap">barrier-substance-use<a name="ng-hiv-eac-form-cs-barrier-substance-use"> </a></td>
+<td>Substance use</td>
+<td>Alcohol or other substance use affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-depression<a name="ng-hiv-eac-form-cs-barrier-depression"> </a></td>
+<td>Depression</td>
+<td>Depression or depressive symptoms affect adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-pill-burden<a name="ng-hiv-eac-form-cs-barrier-pill-burden"> </a></td>
+<td>Pill burden</td>
+<td>The number, size or frequency of medicines affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-lost-ran-out-of-drugs<a name="ng-hiv-eac-form-cs-barrier-lost-ran-out-of-drugs"> </a></td>
+<td>Lost or ran out of drugs</td>
+<td>The client lost the medicines or exhausted the supply before the next refill.</td></tr>
+<tr><td style="white-space:nowrap">barrier-transport<a name="ng-hiv-eac-form-cs-barrier-transport"> </a></td>
+<td>Transport</td>
+<td>Transport availability or cost affects access to ART services or medicines.</td></tr>
+<tr><td style="white-space:nowrap">barrier-child-refusing<a name="ng-hiv-eac-form-cs-barrier-child-refusing"> </a></td>
+<td>Child refusing</td>
+<td>A child refuses to take the prescribed ART medicines.</td></tr>
+<tr><td style="white-space:nowrap">barrier-scheduling<a name="ng-hiv-eac-form-cs-barrier-scheduling"> </a></td>
+<td>Scheduling</td>
+<td>The client's daily schedule or medication schedule affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-fear-of-disclosure<a name="ng-hiv-eac-form-cs-barrier-fear-of-disclosure"> </a></td>
+<td>Fear of disclosure</td>
+<td>Fear that the client's HIV status may be disclosed affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-family-partner<a name="ng-hiv-eac-form-cs-barrier-family-partner"> </a></td>
+<td>Family or partner</td>
+<td>A family or partner-related issue affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-food-insecurity<a name="ng-hiv-eac-form-cs-barrier-food-insecurity"> </a></td>
+<td>Food insecurity</td>
+<td>Lack of reliable access to adequate food affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-drug-stock-out<a name="ng-hiv-eac-form-cs-barrier-drug-stock-out"> </a></td>
+<td>Drug stock-out</td>
+<td>The medicine was unavailable because of a facility or supply-chain stock-out.</td></tr>
+<tr><td style="white-space:nowrap">barrier-long-waiting-time<a name="ng-hiv-eac-form-cs-barrier-long-waiting-time"> </a></td>
+<td>Long waiting time</td>
+<td>Long waiting time at the service-delivery point affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-stigma<a name="ng-hiv-eac-form-cs-barrier-stigma"> </a></td>
+<td>Stigma</td>
+<td>Experienced or anticipated HIV-related stigma affects adherence.</td></tr>
+<tr><td style="white-space:nowrap">barrier-other<a name="ng-hiv-eac-form-cs-barrier-other"> </a></td>
+<td>Other barrier</td>
+<td>An adherence barrier not represented by another code; specify separately.</td></tr>
+<tr><td style="white-space:nowrap">service-education<a name="ng-hiv-eac-form-cs-service-education"> </a></td>
+<td>Education</td>
+<td>Education was provided to address adherence needs.</td></tr>
+<tr><td style="white-space:nowrap">service-individual-counselling<a name="ng-hiv-eac-form-cs-service-individual-counselling"> </a></td>
+<td>Individual counselling</td>
+<td>Individual adherence counselling was provided.</td></tr>
+<tr><td style="white-space:nowrap">service-group-counselling<a name="ng-hiv-eac-form-cs-service-group-counselling"> </a></td>
+<td>Group counselling</td>
+<td>Group adherence counselling was provided.</td></tr>
+<tr><td style="white-space:nowrap">service-peer-support<a name="ng-hiv-eac-form-cs-service-peer-support"> </a></td>
+<td>Peer support</td>
+<td>Peer-based adherence support was provided.</td></tr>
+<tr><td style="white-space:nowrap">service-treatment-buddy<a name="ng-hiv-eac-form-cs-service-treatment-buddy"> </a></td>
+<td>Treatment buddy</td>
+<td>A treatment buddy was established or supported.</td></tr>
+<tr><td style="white-space:nowrap">service-extended-drug-pick-up<a name="ng-hiv-eac-form-cs-service-extended-drug-pick-up"> </a></td>
+<td>Extended drug pick-up</td>
+<td>An extended medicine pick-up arrangement was provided.</td></tr>
+<tr><td style="white-space:nowrap">service-community-art-group<a name="ng-hiv-eac-form-cs-service-community-art-group"> </a></td>
+<td>Community ART group</td>
+<td>The client was linked to or supported through a community ART group.</td></tr>
+<tr><td style="white-space:nowrap">service-directly-observed-therapy<a name="ng-hiv-eac-form-cs-service-directly-observed-therapy"> </a></td>
+<td>Directly observed therapy</td>
+<td>Direct observation of treatment was provided or arranged.</td></tr>
+<tr><td style="white-space:nowrap">service-other<a name="ng-hiv-eac-form-cs-service-other"> </a></td>
+<td>Other service intervention</td>
+<td>A service intervention not represented by another code; specify separately.</td></tr>
+<tr><td style="white-space:nowrap">tool-pill-box<a name="ng-hiv-eac-form-cs-tool-pill-box"> </a></td>
+<td>Pill box</td>
+<td>A pill box was provided or recommended as an adherence aid.</td></tr>
+<tr><td style="white-space:nowrap">tool-calendar<a name="ng-hiv-eac-form-cs-tool-calendar"> </a></td>
+<td>Calendar</td>
+<td>A calendar was provided or recommended as an adherence aid.</td></tr>
+<tr><td style="white-space:nowrap">tool-incentive-calendar-paediatric<a name="ng-hiv-eac-form-cs-tool-incentive-calendar-paediatric"> </a></td>
+<td>Incentive calendar (paediatric)</td>
+<td>A paediatric incentive calendar was provided or recommended.</td></tr>
+<tr><td style="white-space:nowrap">tool-arv-swallowing-instruction<a name="ng-hiv-eac-form-cs-tool-arv-swallowing-instruction"> </a></td>
+<td>ARV swallowing instruction</td>
+<td>Instruction on swallowing or administering ARV medicines was provided.</td></tr>
+<tr><td style="white-space:nowrap">tool-written-instructions<a name="ng-hiv-eac-form-cs-tool-written-instructions"> </a></td>
+<td>Written instructions</td>
+<td>Written medication or adherence instructions were provided.</td></tr>
+<tr><td style="white-space:nowrap">tool-phone-call-sms<a name="ng-hiv-eac-form-cs-tool-phone-call-sms"> </a></td>
+<td>Phone calls or SMS</td>
+<td>Phone calls or SMS messages were used or planned as adherence reminders.</td></tr>
+<tr><td style="white-space:nowrap">tool-alarms<a name="ng-hiv-eac-form-cs-tool-alarms"> </a></td>
+<td>Alarms</td>
+<td>An alarm or electronic reminder was used or recommended.</td></tr>
+<tr><td style="white-space:nowrap">tool-other<a name="ng-hiv-eac-form-cs-tool-other"> </a></td>
+<td>Other intervention tool</td>
+<td>An adherence tool not represented by another code; specify separately.</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

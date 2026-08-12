@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-vaccine-icd-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-vaccine-icd-cs</b></p><a name="ng-vaccine-icd-cs"> </a><a name="hcng-vaccine-icd-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-icd-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">XM8142<a name="ng-vaccine-icd-cs-XM8142"> </a></td><td>BCG vaccine</td></tr><tr><td style="white-space:nowrap">XM9V38<a name="ng-vaccine-icd-cs-XM9V38"> </a></td><td>Hepatitis B vaccine</td></tr><tr><td style="white-space:nowrap">XM0N50<a name="ng-vaccine-icd-cs-XM0N50"> </a></td><td>Poliomyelitis vaccines</td></tr><tr><td style="white-space:nowrap">XM1PB8<a name="ng-vaccine-icd-cs-XM1PB8"> </a></td><td>DTP-HepB-Hib pentavalent vaccines</td></tr><tr><td style="white-space:nowrap">XM9G97<a name="ng-vaccine-icd-cs-XM9G97"> </a></td><td>Pneumococcal conjugate vaccines</td></tr><tr><td style="white-space:nowrap">XM1CE0<a name="ng-vaccine-icd-cs-XM1CE0"> </a></td><td>Rotavirus vaccines</td></tr><tr><td style="white-space:nowrap">XM8TF3<a name="ng-vaccine-icd-cs-XM8TF3"> </a></td><td>Measles-rubella vaccine</td></tr><tr><td style="white-space:nowrap">XM0N24<a name="ng-vaccine-icd-cs-XM0N24"> </a></td><td>Yellow fever vaccine</td></tr><tr><td style="white-space:nowrap">XM2WV4<a name="ng-vaccine-icd-cs-XM2WV4"> </a></td><td>Meningococcal vaccines</td></tr><tr><td style="white-space:nowrap">XM32Q5<a name="ng-vaccine-icd-cs-XM32Q5"> </a></td><td>Tetanus-diphtheria vaccines</td></tr><tr><td style="white-space:nowrap">XM9QP0<a name="ng-vaccine-icd-cs-XM9QP0"> </a></td><td>Human papillomavirus vaccines</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-icd-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.107"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgVaccineLibraryICD11CS"/>
+  <title value="NG IMMZ.D.DE4 ICD11 Vaccine Library"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ICD11 code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x]."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="XM8142"/>
+    <display value="BCG vaccine"/>
+  </concept>
+  <concept>
+    <code value="XM9V38"/>
+    <display value="Hepatitis B vaccine"/>
+  </concept>
+  <concept>
+    <code value="XM0N50"/>
+    <display value="Poliomyelitis vaccines"/>
+  </concept>
+  <concept>
+    <code value="XM1PB8"/>
+    <display value="DTP-HepB-Hib pentavalent vaccines"/>
+  </concept>
+  <concept>
+    <code value="XM9G97"/>
+    <display value="Pneumococcal conjugate vaccines"/>
+  </concept>
+  <concept>
+    <code value="XM1CE0"/>
+    <display value="Rotavirus vaccines"/>
+  </concept>
+  <concept>
+    <code value="XM8TF3"/>
+    <display value="Measles-rubella vaccine"/>
+  </concept>
+  <concept>
+    <code value="XM0N24"/>
+    <display value="Yellow fever vaccine"/>
+  </concept>
+  <concept>
+    <code value="XM2WV4"/>
+    <display value="Meningococcal vaccines"/>
+  </concept>
+  <concept>
+    <code value="XM32Q5"/>
+    <display value="Tetanus-diphtheria vaccines"/>
+  </concept>
+  <concept>
+    <code value="XM9QP0"/>
+    <display value="Human papillomavirus vaccines"/>
+  </concept>
+</CodeSystem>

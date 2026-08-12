@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-gender-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-gender-vs</b></p><a name="ng-gender-vs"> </a><a name="hcng-gender-vs"> </a><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html"><code>http://hl7.org/fhir/administrative-gender</code></a><span title="Version is explicitly stated to be 4.0.1"> version &#x1F4CD;4.0.1</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male">male</a></td><td>Male</td><td>Male.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female">female</a></td><td>Female</td><td>Female.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.22"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgGenderVS"/>
+  <title value="NG Gender or Sex VS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A subset of the administrative gender codes including only 'male' and 'female'"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/administrative-gender"/>
+      <version value="4.0.1"/>
+      <concept>
+        <code value="male"/>
+        <display value="Male"/>
+      </concept>
+      <concept>
+        <code value="female"/>
+        <display value="Female"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

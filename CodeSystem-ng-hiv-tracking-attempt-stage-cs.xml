@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-tracking-attempt-stage-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-tracking-attempt-stage-cs</b></p><a name="ng-hiv-tracking-attempt-stage-cs"> </a><a name="hcng-hiv-tracking-attempt-stage-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-attempt-stage-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ng-hiv-tracking-attempt-stage-cs-1"> </a></td><td>First tracking attempt</td></tr><tr><td style="white-space:nowrap">2<a name="ng-hiv-tracking-attempt-stage-cs-2"> </a></td><td>Second tracking attempt</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-tracking-attempt-stage-cs-3"> </a></td><td>Third tracking attempt</td></tr><tr><td style="white-space:nowrap">4<a name="ng-hiv-tracking-attempt-stage-cs-4"> </a></td><td>Fourth tracking attempt</td></tr><tr><td style="white-space:nowrap">end<a name="ng-hiv-tracking-attempt-stage-cs-end"> </a></td><td>Final attempt at the end of the tracking period</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-attempt-stage-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.76"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivTrackingAttemptStageCS"/>
+  <title value="NG HIV Tracking Register Attempt Stages"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The four numbered tracking attempts and the final attempt at the end of the tracking period represented by columns T19–T23."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="First tracking attempt"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Second tracking attempt"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Third tracking attempt"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Fourth tracking attempt"/>
+  </concept>
+  <concept>
+    <code value="end"/>
+    <display value="Final attempt at the end of the tracking period"/>
+  </concept>
+</CodeSystem>

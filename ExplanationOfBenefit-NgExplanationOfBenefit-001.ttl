@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ExplanationOfBenefit/NgExplanationOfBenefit-001> a fhir:ExplanationOfBenefit ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgExplanationOfBenefit-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-explanation-of-benefit" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-explanation-of-benefit>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ExplanationOfBenefit NgExplanationOfBenefit-001</b></p><a name=\"NgExplanationOfBenefit-001\"> </a><a name=\"hcNgExplanationOfBenefit-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-explanation-of-benefit.html\">NG ExplanationOfBenefit</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\">Pharmacy</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>created</b>: 2025-11-04 12:46:00+0000</p><p><b>insurer</b>: <a href=\"Organization-Organization-Truth-HMO.html\">Organization Truth Health Maintenance Organization</a></p><p><b>provider</b>: <a href=\"Organization-Organization-PortHarcourt-Hospital.html\">Organization Port Harcourt Emergency Hospital</a></p><p><b>claim</b>: <a href=\"Claim-NgClaim-001.html\">Claim: identifier = https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs#CLM-2025-0001; status = active; type = Pharmacy; use = claim; created = 2025-11-04 12:30:00+0000; priority = Normal</a></p><p><b>claimResponse</b>: <a href=\"ClaimResponse-NgClaimResponse-001.html\">ClaimResponse: status = active; type = Pharmacy; use = claim; created = 2025-11-04 12:45:00+0000; outcome = complete; disposition = Approved in full.; preAuthRef = 1234</a></p><p><b>outcome</b>: Processing Complete</p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Focal</b></td><td><b>Coverage</b></td><td><b>PreAuthRef</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td><td><a href=\"Coverage-Coverage-Chika-TruthHMO.html\">Coverage: status = active; type = extended healthcare; subscriberId = TRUTH-HMO-CHIKA-2025; dependent = 00; relationship = Self; period = 2025-01-01 --&gt; 2025-12-31; order = 1</a></td><td>PA-2025-8847</td></tr></table><p><b>benefitPeriod</b>: 2025-01-01 --&gt; 2025-12-31</p></div>"
+  ] ;
+  fhir:ExplanationOfBenefit.status [ fhir:value "active"] ;
+  fhir:ExplanationOfBenefit.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ] ;
+       fhir:Coding.code [ fhir:value "pharmacy" ]
+     ]
+  ] ;
+  fhir:ExplanationOfBenefit.use [ fhir:value "claim"] ;
+  fhir:ExplanationOfBenefit.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:ExplanationOfBenefit.created [ fhir:value "2025-11-04T12:46:00Z"^^xsd:dateTime] ;
+  fhir:ExplanationOfBenefit.insurer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-Truth-HMO> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Truth-HMO" ]
+  ] ;
+  fhir:ExplanationOfBenefit.provider [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-PortHarcourt-Hospital> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-PortHarcourt-Hospital" ]
+  ] ;
+  fhir:ExplanationOfBenefit.claim [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Claim/NgClaim-001> ;
+     fhir:Reference.reference [ fhir:value "Claim/NgClaim-001" ]
+  ] ;
+  fhir:ExplanationOfBenefit.claimResponse [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/ClaimResponse/NgClaimResponse-001> ;
+     fhir:Reference.reference [ fhir:value "ClaimResponse/NgClaimResponse-001" ]
+  ] ;
+  fhir:ExplanationOfBenefit.outcome [ fhir:value "complete"] ;
+  fhir:ExplanationOfBenefit.insurance [
+     fhir:index 0 ;
+     fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:ExplanationOfBenefit.insurance.coverage [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Coverage/Coverage-Chika-TruthHMO> ;
+       fhir:Reference.reference [ fhir:value "Coverage/Coverage-Chika-TruthHMO" ]
+     ] ;
+     fhir:ExplanationOfBenefit.insurance.preAuthRef [
+       fhir:value "PA-2025-8847" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:ExplanationOfBenefit.benefitPeriod [
+     fhir:Period.start [ fhir:value "2025-01-01"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2025-12-31"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ExplanationOfBenefit/NgExplanationOfBenefit-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

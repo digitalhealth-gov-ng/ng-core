@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-register-cervical-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-art-register-cervical-status-cs</b></p><a name="ng-hiv-art-register-cervical-status-cs"> </a><a name="hcng-hiv-art-register-cervical-status-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cervical-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ng-hiv-art-register-cervical-status-cs-1"> </a></td><td>Not ordered</td></tr><tr><td style="white-space:nowrap">2<a name="ng-hiv-art-register-cervical-status-cs-2"> </a></td><td>Ordered, yet to screen</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-art-register-cervical-status-cs-3"> </a></td><td>Screened negative</td></tr><tr><td style="white-space:nowrap">4<a name="ng-hiv-art-register-cervical-status-cs-4"> </a></td><td>Screened positive, yet to treat</td></tr><tr><td style="white-space:nowrap">5<a name="ng-hiv-art-register-cervical-status-cs-5"> </a></td><td>Screened positive and treated</td></tr><tr><td style="white-space:nowrap">6<a name="ng-hiv-art-register-cervical-status-cs-6"> </a></td><td>Screened positive and referred</td></tr><tr><td style="white-space:nowrap">7<a name="ng-hiv-art-register-cervical-status-cs-7"> </a></td><td>Screened positive and declined treatment</td></tr><tr><td style="white-space:nowrap">8<a name="ng-hiv-art-register-cervical-status-cs-8"> </a></td><td>Suspicious for cancer</td></tr><tr><td style="white-space:nowrap">9<a name="ng-hiv-art-register-cervical-status-cs-9"> </a></td><td>Other finding</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cervical-status-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.21"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtRegisterCervicalStatusCS"/>
+  <title value="NG HIV ART Register Cervical Cancer Screening Status Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Combined cervical-cancer screening workflow statuses printed in column A27 of the National ART Register."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="1"/>
+    <display value="Not ordered"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Ordered, yet to screen"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Screened negative"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Screened positive, yet to treat"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Screened positive and treated"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Screened positive and referred"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Screened positive and declined treatment"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Suspicious for cancer"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Other finding"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-careplan-category-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-careplan-category-cs</b></p><a name=\"ng-careplan-category-cs\"> </a><a name=\"hcng-careplan-category-cs\"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">general<a name=\"ng-careplan-category-cs-general\"> </a></td><td>General care plan</td><td>Cross-cutting plan not tied to a single track.</td></tr><tr><td style=\"white-space:nowrap\">mnch<a name=\"ng-careplan-category-cs-mnch\"> </a></td><td>MNCH</td><td>Maternal, newborn &amp; child health plan.</td></tr><tr><td style=\"white-space:nowrap\">immunization<a name=\"ng-careplan-category-cs-immunization\"> </a></td><td>Immunization</td><td>Vaccination and defaulter-tracing plan.</td></tr><tr><td style=\"white-space:nowrap\">pharmacy<a name=\"ng-careplan-category-cs-pharmacy\"> </a></td><td>Pharmacy/ePharmacy</td><td>Medication adherence/dispense plan.</td></tr><tr><td style=\"white-space:nowrap\">claims<a name=\"ng-careplan-category-cs-claims\"> </a></td><td>Insurance &amp; Claims</td><td>Financial protection and claims-related plan.</td></tr><tr><td style=\"white-space:nowrap\">devices<a name=\"ng-careplan-category-cs-devices\"> </a></td><td>Medical Devices</td><td>Connected/home-monitoring device plan.</td></tr><tr><td style=\"white-space:nowrap\">chronic<a name=\"ng-careplan-category-cs-chronic\"> </a></td><td>Chronic disease</td><td>Hypertension, diabetes, etc.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.7" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgCareplanCategoryCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG CarePlan Category Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Categories for CarePlan."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "grouped-by"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "general" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General care plan" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cross-cutting plan not tied to a single track." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mnch" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MNCH" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Maternal, newborn & child health plan." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "immunization" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Immunization" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaccination and defaulter-tracing plan." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pharmacy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pharmacy/ePharmacy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medication adherence/dispense plan." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "claims" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insurance & Claims" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Financial protection and claims-related plan." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "devices" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medical Devices" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Connected/home-monitoring device plan." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chronic disease" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hypertension, diabetes, etc." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

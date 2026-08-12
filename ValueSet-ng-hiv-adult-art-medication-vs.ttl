@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-adult-art-medication-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-adult-art-medication-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-adult-art-medication-vs</b></p><a name=\"ng-hiv-adult-art-medication-vs\"> </a><a name=\"hcng-hiv-adult-art-medication-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-tdf-3tc-dtg-300-300-50\">adult-tdf-3tc-dtg-300-300-50</a></td><td style=\"color: #cccccc\">Tenofovir/Lamivudine/Dolutegravir 300/300/50 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-tdf-3tc-efv-300-300-400\">adult-tdf-3tc-efv-300-300-400</a></td><td style=\"color: #cccccc\">Tenofovir/Lamivudine/Efavirenz 300/300/400 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-taf-ftc-dtg-25-200-50\">adult-taf-ftc-dtg-25-200-50</a></td><td style=\"color: #cccccc\">Tenofovir alafenamide/Emtricitabine/Dolutegravir 25/200/50 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-taf-3tc-dtg-25-300-50\">adult-taf-3tc-dtg-25-300-50</a></td><td style=\"color: #cccccc\">Tenofovir alafenamide/Lamivudine/Dolutegravir 25/300/50 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-abc-3tc-600-300\">adult-abc-3tc-600-300</a></td><td style=\"color: #cccccc\">Abacavir/Lamivudine 600/300 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-azt-3tc-300-150\">adult-azt-3tc-300-150</a></td><td style=\"color: #cccccc\">Zidovudine/Lamivudine 300/150 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-tdf-3tc-300-300\">adult-tdf-3tc-300-300</a></td><td style=\"color: #cccccc\">Tenofovir/Lamivudine 300/300 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-azt-300\">adult-azt-300</a></td><td style=\"color: #cccccc\">Zidovudine 300 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-atv-r-300-100\">adult-atv-r-300-100</a></td><td style=\"color: #cccccc\">Atazanavir/Ritonavir 300/100 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-3tc-150\">adult-3tc-150</a></td><td style=\"color: #cccccc\">Lamivudine 150 mg</td><td>Adult ART formulation. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-drv-600\">adult-drv-600</a></td><td style=\"color: #cccccc\">Darunavir 600 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-rtv-100\">adult-rtv-100</a></td><td style=\"color: #cccccc\">Ritonavir 100 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-drv-r-400-50\">adult-drv-r-400-50</a></td><td style=\"color: #cccccc\">Darunavir/Ritonavir 400/50 mg</td><td>Adult ART formulation. The source form preprints twice-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-adult-dtg-50\">adult-dtg-50</a></td><td style=\"color: #cccccc\">Dolutegravir 50 mg</td><td>Adult ART formulation. The source form permits once- or twice-daily frequency.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-adult-art-medication-vs"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.48.23" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "NgHivAdultArtMedicationVS"] ;
+  fhir:ValueSet.title [ fhir:value "NG HIV Adult ART Medications"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Adult ART medicine products and strengths listed on the Nigeria Combined Pharmacy Order Form."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-tdf-3tc-dtg-300-300-50" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-tdf-3tc-efv-300-300-400" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-taf-ftc-dtg-25-200-50" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-taf-3tc-dtg-25-300-50" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-abc-3tc-600-300" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-azt-3tc-300-150" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-tdf-3tc-300-300" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-azt-300" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-atv-r-300-100" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-3tc-150" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-drv-600" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-rtv-100" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-drv-r-400-50" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "adult-dtg-50" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-adult-art-medication-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

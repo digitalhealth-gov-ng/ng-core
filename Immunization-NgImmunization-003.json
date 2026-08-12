@@ -1,0 +1,87 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "NgImmunization-003",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization NgImmunization-003</b></p><a name=\"NgImmunization-003\"> </a><a name=\"hcNgImmunization-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-immunization.html\">NG Immunization</a></p></div><p><b>NG Vaccine Contraindications</b>: <span title=\"Codes:{http://snomed.info/sct 419076005}\">Mild seasonal allergies - assessed, not a contraindication to vaccination</span></p><p><b>NG Vaccine Contraindications</b>: <span title=\"Codes:{http://snomed.info/sct 386661006}\">Low-grade fever (37.8°C) - assessed by clinician, vaccination approved</span></p><p><b>NG Immunization Contraindicated</b>: false</p><p><b>NG Next Dose Date</b>: 2026-05-18</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local IMMZ.Z.DE28}\">Tetanus Diphtheria</span></p><p><b>patient</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>occurrence</b>: 2025-11-04 09:10:00+0100</p><p><b>manufacturer</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>lotNumber</b>: TD25-0300</p><p><b>expirationDate</b>: 2027-12-31</p><p><b>site</b>: <span title=\"Codes:\">Left deltoid</span></p><p><b>route</b>: <span title=\"Codes:\">Intramuscular</span></p><p><b>doseQuantity</b>: 0.5 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Series</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Hepatitis B Primary Series</td><td><span title=\"Codes:{http://snomed.info/sct 66071002}\">Viral hepatitis type B</span></td><td>2</td><td>3</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "419076005",
+        "display" : "Allergic reaction (disorder)"
+      }],
+      "text" : "Mild seasonal allergies - assessed, not a contraindication to vaccination"
+    }
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "386661006",
+        "display" : "Fever"
+      }],
+      "text" : "Low-grade fever (37.8°C) - assessed by clinician, vaccination approved"
+    }
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-contraindicated",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-next-dose-date",
+    "valueDate" : "2026-05-18"
+  }],
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local",
+      "code" : "IMMZ.Z.DE28",
+      "display" : "Tetanus Diphtheria"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "occurrenceDateTime" : "2025-11-04T09:10:00+01:00",
+  "manufacturer" : {
+    "reference" : "Organization/NgOrganization-001"
+  },
+  "lotNumber" : "TD25-0300",
+  "expirationDate" : "2027-12-31",
+  "site" : {
+    "text" : "Left deltoid"
+  },
+  "route" : {
+    "text" : "Intramuscular"
+  },
+  "doseQuantity" : {
+    "value" : 0.5,
+    "unit" : "mL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mL"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/NgPractitioner-001"
+    }
+  }],
+  "protocolApplied" : [{
+    "series" : "Hepatitis B Primary Series",
+    "targetDisease" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "66071002",
+        "display" : "Viral hepatitis type B"
+      }]
+    }],
+    "doseNumberPositiveInt" : 2,
+    "seriesDosesPositiveInt" : 3
+  }]
+}

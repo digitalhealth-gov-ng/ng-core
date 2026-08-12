@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-follow-up-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-art-follow-up-status-cs</b></p><a name="ng-hiv-art-follow-up-status-cs"> </a><a name="hcng-hiv-art-follow-up-status-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">alive-on-art<a name="ng-hiv-art-follow-up-status-cs-alive-on-art"> </a></td><td>Alive on ART</td></tr><tr><td style="white-space:nowrap">to<a name="ng-hiv-art-follow-up-status-cs-to"> </a></td><td>Transfer out</td></tr><tr><td style="white-space:nowrap">dead<a name="ng-hiv-art-follow-up-status-cs-dead"> </a></td><td>Dead</td></tr><tr><td style="white-space:nowrap">drop<a name="ng-hiv-art-follow-up-status-cs-drop"> </a></td><td>Drop</td></tr><tr><td style="white-space:nowrap">restart<a name="ng-hiv-art-follow-up-status-cs-restart"> </a></td><td>Restart</td></tr><tr><td style="white-space:nowrap">lost<a name="ng-hiv-art-follow-up-status-cs-lost"> </a></td><td>Lost to follow-up</td></tr><tr><td style="white-space:nowrap">stop<a name="ng-hiv-art-follow-up-status-cs-stop"> </a></td><td>Stopped treatment</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.19"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivARTFollowUpStatusCS"/>
+  <title value="HIV Follow Up Status CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the follow up statuses"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="alive-on-art"/>
+    <display value="Alive on ART"/>
+  </concept>
+  <concept>
+    <code value="to"/>
+    <display value="Transfer out"/>
+  </concept>
+  <concept>
+    <code value="dead"/>
+    <display value="Dead"/>
+  </concept>
+  <concept>
+    <code value="drop"/>
+    <display value="Drop"/>
+  </concept>
+  <concept>
+    <code value="restart"/>
+    <display value="Restart"/>
+  </concept>
+  <concept>
+    <code value="lost"/>
+    <display value="Lost to follow-up"/>
+  </concept>
+  <concept>
+    <code value="stop"/>
+    <display value="Stopped treatment"/>
+  </concept>
+</CodeSystem>

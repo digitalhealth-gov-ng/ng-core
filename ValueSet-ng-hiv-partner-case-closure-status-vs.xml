@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-partner-case-closure-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-partner-case-closure-status-vs</b></p><a name="ng-hiv-partner-case-closure-status-vs"> </a><a name="hcng-hiv-partner-case-closure-status-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr><tr><td><a href="https://loinc.org/LA4389-8/">LA4389-8</a></td><td>Refused</td></tr><tr><td><a href="https://loinc.org/77969-4/">77969-4</a></td><td>Jurisdiction code</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.html#ng-hiv-index-case-partner-questionnaire-cs-Partner-Unreachable">Partner-Unreachable</a></td><td style="color: #cccccc">Unable to Locate the Partner</td></tr><tr><td><a href="CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.html#ng-hiv-index-case-partner-questionnaire-cs-Successful-Intervention">Successful-Intervention</a></td><td style="color: #cccccc">Successful Intervention</td></tr><tr><td><a href="CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.html#ng-hiv-index-case-partner-questionnaire-cs-Intervention-Completed">Intervention-Completed</a></td><td style="color: #cccccc">Intervention Completed</td></tr><tr><td><a href="CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.html#ng-hiv-index-case-partner-questionnaire-cs-Intervention-Partially-Completed">Intervention-Partially-Completed</a></td><td style="color: #cccccc">Intervention Partially Completed</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/162171002">162171002</a></td><td>Currently not sexually active</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-partner-case-closure-status-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.108"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPartnerCaseClosureStatusVS"/>
+  <title value="HIV Partner Case Closure Status ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating the closure status for partner services."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="LA4389-8"/>
+        <display value="Refused"/>
+      </concept>
+      <concept>
+        <code value="77969-4"/>
+        <display value="Jurisdiction code"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs"/>
+      <concept>
+        <code value="Partner-Unreachable"/>
+      </concept>
+      <concept>
+        <code value="Successful-Intervention"/>
+      </concept>
+      <concept>
+        <code value="Intervention-Completed"/>
+      </concept>
+      <concept>
+        <code value="Intervention-Partially-Completed"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="162171002"/>
+        <display value="Currently not sexually active"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

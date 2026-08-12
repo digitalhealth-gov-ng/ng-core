@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-relationship-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-relationship-cs</b></p><a name=\"ng-relationship-cs\"> </a><a name=\"hcng-relationship-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BROTHER<a name=\"ng-relationship-cs-BROTHER\"> </a></td><td>Brother</td></tr><tr><td style=\"white-space:nowrap\">SISTER<a name=\"ng-relationship-cs-SISTER\"> </a></td><td>Sister</td></tr><tr><td style=\"white-space:nowrap\">SON<a name=\"ng-relationship-cs-SON\"> </a></td><td>Son</td></tr><tr><td style=\"white-space:nowrap\">DAUGHTER<a name=\"ng-relationship-cs-DAUGHTER\"> </a></td><td>Daughter</td></tr><tr><td style=\"white-space:nowrap\">MOTHER<a name=\"ng-relationship-cs-MOTHER\"> </a></td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\">FATHER<a name=\"ng-relationship-cs-FATHER\"> </a></td><td>Father</td></tr><tr><td style=\"white-space:nowrap\">AUNT<a name=\"ng-relationship-cs-AUNT\"> </a></td><td>Aunt</td></tr><tr><td style=\"white-space:nowrap\">COUSIN<a name=\"ng-relationship-cs-COUSIN\"> </a></td><td>Cousin</td></tr><tr><td style=\"white-space:nowrap\">GRDSON<a name=\"ng-relationship-cs-GRDSON\"> </a></td><td>Grand Son</td></tr><tr><td style=\"white-space:nowrap\">GRDDAU<a name=\"ng-relationship-cs-GRDDAU\"> </a></td><td>Grand Daughter</td></tr><tr><td style=\"white-space:nowrap\">INLAW<a name=\"ng-relationship-cs-INLAW\"> </a></td><td>Inlaw</td></tr><tr><td style=\"white-space:nowrap\">NEPHEW<a name=\"ng-relationship-cs-NEPHEW\"> </a></td><td>Nephew</td></tr><tr><td style=\"white-space:nowrap\">NIECE<a name=\"ng-relationship-cs-NIECE\"> </a></td><td>Niece</td></tr><tr><td style=\"white-space:nowrap\">UNCLE<a name=\"ng-relationship-cs-UNCLE\"> </a></td><td>Uncle</td></tr><tr><td style=\"white-space:nowrap\">FRND<a name=\"ng-relationship-cs-FRND\"> </a></td><td>Friend</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.99" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgRelationshipsCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG Relationships CS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "15"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BROTHER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Brother" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SISTER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sister" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Son" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAUGHTER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Daughter" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MOTHER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mother" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FATHER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Father" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AUNT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Aunt" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "COUSIN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cousin" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRDSON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grand Son" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GRDDAU" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grand Daughter" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INLAW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inlaw" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NEPHEW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nephew" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NIECE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Niece" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "UNCLE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uncle" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FRND" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Friend" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

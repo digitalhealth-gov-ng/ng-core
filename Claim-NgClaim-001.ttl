@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Claim/NgClaim-001> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgClaim-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-claim" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-claim>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim NgClaim-001</b></p><a name=\"NgClaim-001\"> </a><a name=\"hcNgClaim-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim.html\">NG Claim</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs</code>/CLM-2025-0001</p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\">Pharmacy</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>created</b>: 2025-11-04 12:30:00+0000</p><p><b>provider</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>Payees</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/payeetype provider}\">Provider</span></td><td><a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td><td><b>BusinessArrangement</b></td><td><b>PreAuthRef</b></td></tr><tr><td style=\"display: none\">*</td><td>654</td><td>true</td><td><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs</code>/NHIA-0011223344</td><td><a href=\"Coverage-NgCoverage-001.html\">Coverage: status = active; period = 2025-01-01 --&gt; 2025-12-31</a></td><td>NHIA-PlanA-2025</td><td>PA-2025-ABC123</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>diagnosisSequence</b>: 1</p><p><b>productOrService</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/ex-USCLS 1101}\">Exam, comp, primary</span></p><p><b>quantity</b>: 30</p><h3>UnitPrices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>500</td><td>Nigerian naira</td></tr></table><h3>Nets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>15000</td><td>Nigerian naira</td></tr></table></blockquote><h3>Totals</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>15000</td><td>Nigerian naira</td></tr></table></div>"
+  ] ;
+  fhir:Claim.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs" ] ;
+     fhir:Identifier.value [ fhir:value "CLM-2025-0001" ]
+  ] ;
+  fhir:Claim.status [ fhir:value "active"] ;
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ] ;
+       fhir:Coding.code [ fhir:value "pharmacy" ]
+     ]
+  ] ;
+  fhir:Claim.use [ fhir:value "claim"] ;
+  fhir:Claim.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:Claim.created [ fhir:value "2025-11-04T12:30:00Z"^^xsd:dateTime] ;
+  fhir:Claim.provider [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-001> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-001" ]
+  ] ;
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/processpriority" ] ;
+       fhir:Coding.code [ fhir:value "normal" ]
+     ]
+  ] ;
+  fhir:Claim.payee [
+     fhir:Claim.payee.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/payeetype" ] ;
+         fhir:Coding.code [ fhir:value "provider" ]
+       ]
+     ] ;
+     fhir:Claim.payee.party [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+     ]
+  ] ;
+  fhir:Claim.insurance [
+     fhir:index 0 ;
+     fhir:Claim.insurance.sequence [ fhir:value "654"^^xsd:positiveInteger ] ;
+     fhir:Claim.insurance.focal [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Claim.insurance.identifier [
+       fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs" ] ;
+       fhir:Identifier.value [ fhir:value "NHIA-0011223344" ]
+     ] ;
+     fhir:Claim.insurance.coverage [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Coverage/NgCoverage-001> ;
+       fhir:Reference.reference [ fhir:value "Coverage/NgCoverage-001" ]
+     ] ;
+     fhir:Claim.insurance.businessArrangement [ fhir:value "NHIA-PlanA-2025" ] ;
+     fhir:Claim.insurance.preAuthRef [
+       fhir:value "PA-2025-ABC123" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Claim.item [
+     fhir:index 0 ;
+     fhir:Claim.item.sequence [ fhir:value "1"^^xsd:positiveInteger ] ;
+     fhir:Claim.item.diagnosisSequence [
+       fhir:value "1"^^xsd:positiveInteger ;
+       fhir:index 0
+     ] ;
+     fhir:Claim.item.productOrService [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/ex-USCLS" ] ;
+         fhir:Coding.code [ fhir:value "1101" ]
+       ]
+     ] ;
+     fhir:Claim.item.quantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+     ] ;
+     fhir:Claim.item.unitPrice [
+       fhir:Money.value [ fhir:value "500"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "NGN" ]
+     ] ;
+     fhir:Claim.item.net [
+       fhir:Money.value [ fhir:value "15000"^^xsd:decimal ] ;
+       fhir:Money.currency [ fhir:value "NGN" ]
+     ]
+  ] ;
+  fhir:Claim.total [
+     fhir:Money.value [ fhir:value "15000"^^xsd:decimal ] ;
+     fhir:Money.currency [ fhir:value "NGN" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Claim/NgClaim-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

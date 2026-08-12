@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Patient",
+  "id" : "NgPatient-Consent-001",
+  "meta" : {
+    "lastUpdated" : "2025-10-21T09:59:00+01:00",
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient NgPatient-Consent-001</b></p><a name=\"NgPatient-Consent-001\"> </a><a name=\"hcNgPatient-Consent-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-10-21 09:59:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-patient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Eko Okon  Female, DoB: 1992-06-18 ( mobile)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Uyo AK </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "MOBILE"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "08070001234"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Okon",
+    "given" : ["Eko"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1992-06-18",
+  "address" : [{
+    "city" : "Uyo",
+    "district" : "ak-uyo",
+    "state" : "AK"
+  }]
+}

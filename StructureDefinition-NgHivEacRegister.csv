@@ -1,0 +1,106 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: NG HIV EAC Monitoring Register Column Mapping"
+"NgHivEacRegister","NgHivEacRegister","","","",0,*,"","","","null {[]} {[]}
+","NG HIV Enhanced Adherence Counselling Monitoring Register","Logical model for the patient-level Nigeria Enhanced Adherence Counselling
+Monitoring Register. One model instance represents one facility monthly cohort
+page and contains repeatable client entries corresponding to printed columns
+A1 through A24.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NgHivEacRegister.identifier","NgHivEacRegister.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","Register identifier","Identifier assigned to the monthly EAC register page or its electronic equivalent.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.identifier",1,1,"",""
+"NgHivEacRegister.facility","NgHivEacRegister.facility","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization]]}
+","Facility reference","Reference to the facility maintaining the EAC register, when available.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.facility",0,1,"",""
+"NgHivEacRegister.facilityName","NgHivEacRegister.facilityName","","","",1,1,"","","","string {[]} {[]}
+","Facility name","Official name of the facility providing Enhanced Adherence Counselling services.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.facilityName",1,1,"","","Header: Facility"
+"NgHivEacRegister.lga","NgHivEacRegister.lga","","","",1,1,"","","","Coding {[]} {[]}
+","LGA","Local Government Area where the facility is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs","",,,,"NgHivEacRegister.lga",1,1,"","","Header: LGA"
+"NgHivEacRegister.state","NgHivEacRegister.state","","","",1,1,"","","","Coding {[]} {[]}
+","State","State where the facility is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs","",,,,"NgHivEacRegister.state",1,1,"","","Header: State"
+"NgHivEacRegister.reportingPeriod","NgHivEacRegister.reportingPeriod","","","",1,1,"","","","Period {[]} {[]}
+","Registration month and year","Monthly cohort period. The month should correspond to the month the qualifying viral-load result was received at the facility.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.reportingPeriod",1,1,"","","Header: Month and Year"
+"NgHivEacRegister.entry","NgHivEacRegister.entry","","","",1,*,"","","","BackboneElement {[]} {[]}
+","EAC register entry","One patient-level row of the Enhanced Adherence Counselling Monitoring Register.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgHivEacRegister.entry.id","NgHivEacRegister.entry.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgHivEacRegister.entry.extension","NgHivEacRegister.entry.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivEacRegister.entry.modifierExtension","NgHivEacRegister.entry.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivEacRegister.entry.subject","NgHivEacRegister.entry.subject","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient]]}
+","Patient reference","Reference to the corresponding Nigeria Core Patient resource, when available.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.subject",0,1,"",""
+"NgHivEacRegister.entry.serialNumber","NgHivEacRegister.entry.serialNumber","","","",1,1,"","","","positiveInt {[]} {[]}
+","A1 Serial number","Sequential number assigned to the client within the monthly register page.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.serialNumber",1,1,"","","A1"
+"NgHivEacRegister.entry.hospitalNumber","NgHivEacRegister.entry.hospitalNumber","","","",0,1,"","","","string {[]} {[]}
+","A2 Hospital number","Facility hospital or unit number assigned to the client.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.hospitalNumber",0,1,"","","A2"
+"NgHivEacRegister.entry.uniqueId","NgHivEacRegister.entry.uniqueId","","","",1,1,"","","","string {[]} {[]}
+","A3 Unique ID","National HIV program ART unique identifier.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.uniqueId",1,1,"","","A3"
+"NgHivEacRegister.entry.clientName","NgHivEacRegister.entry.clientName","","","",1,1,"","","","string {[]} {[]}
+","A4 Name","Client full name, recorded surname first followed by other names.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.clientName",1,1,"","","A4"
+"NgHivEacRegister.entry.sex","NgHivEacRegister.entry.sex","","","",1,1,"","","","Coding {[]} {[]}
+","A5–A6 Sex","Client sex represented by the printed male or female columns.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs","",,,,"NgHivEacRegister.entry.sex",1,1,"","","A5 Male / A6 Female"
+"NgHivEacRegister.entry.ageValue","NgHivEacRegister.entry.ageValue","","","",1,1,"","","","integer {[]} {[]}
+","A7 Age value","Client age at registration into the EAC monthly cohort.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.ageValue",1,1,"","","A7"
+"NgHivEacRegister.entry.ageUnit","NgHivEacRegister.entry.ageUnit","","","",1,1,"","","","code {[]} {[]}
+","A7 Age unit","Age in years, or months when the client is younger than one year.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/units-of-time","",,,,"NgHivEacRegister.entry.ageUnit",1,1,"","","A7 age unit implied by SOP"
+"NgHivEacRegister.entry.artStartDate","NgHivEacRegister.entry.artStartDate","","","",1,1,"","","","date {[]} {[]}
+","A8 ART start date","Date the client commenced antiretroviral therapy.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.artStartDate",1,1,"","","A8"
+"NgHivEacRegister.entry.currentArtRegimen","NgHivEacRegister.entry.currentArtRegimen","","","",0,1,"","","","Coding {[]} {[]}
+","A9 Current ART regimen","Register ART regimen code at enrolment into EAC.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs","",,,,"NgHivEacRegister.entry.currentArtRegimen",0,1,"","","A9"
+"NgHivEacRegister.entry.currentArtRegimenText","NgHivEacRegister.entry.currentArtRegimenText","","","",0,1,"","","","string {[]} {[]}
+","A9 Current ART regimen source text","Regimen description retained when the source does not provide a valid register code.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.currentArtRegimenText",0,1,"","","A9 legacy or uncoded value"
+"NgHivEacRegister.entry.qualifyingViralLoadResult","NgHivEacRegister.entry.qualifyingViralLoadResult","","","",1,1,"","","","integer {[]} {[]}
+","A10 Qualifying viral-load result","Most recent viral-load result prompting EAC registration, in copies/mL. The register is intended for results greater than 50 copies/mL.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.qualifyingViralLoadResult",1,1,"","","A10 result"
+"NgHivEacRegister.entry.qualifyingViralLoadResultReceivedDate","NgHivEacRegister.entry.qualifyingViralLoadResultReceivedDate","","","",1,1,"","","","date {[]} {[]}
+","A10 Date qualifying result received","Date the qualifying viral-load result was received at the facility. This date determines the monthly cohort.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.qualifyingViralLoadResultReceivedDate",1,1,"","","A10 date received in facility"
+"NgHivEacRegister.entry.indexTestingOffered","NgHivEacRegister.entry.indexTestingOffered","","","",1,1,"","","","boolean {[]} {[]}
+","A11–A12 Offered index testing","True when index testing was offered; false when it was not offered.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.indexTestingOffered",1,1,"","","A11 Yes / A12 No"
+"NgHivEacRegister.entry.eacSession","NgHivEacRegister.entry.eacSession","","","",0,*,"","","","BackboneElement {[]} {[]}
+","A13–A16 EAC session","Enhanced Adherence Counselling session delivered to the client.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.eacSession",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgHivEacRegister.entry.eacSession.id","NgHivEacRegister.entry.eacSession.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgHivEacRegister.entry.eacSession.extension","NgHivEacRegister.entry.eacSession.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivEacRegister.entry.eacSession.modifierExtension","NgHivEacRegister.entry.eacSession.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivEacRegister.entry.eacSession.sequence","NgHivEacRegister.entry.eacSession.sequence","","","",1,1,"","","","Coding {[]} {[]}
+","EAC session number","EAC session sequence. EAC-1, EAC-2 and EAC-3 map to A13–A15; later sessions map to A16.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-eac-given-vs","",,,,"NgHivEacRegister.entry.eacSession.sequence",1,1,"","","A13 first EAC / A14 second EAC / A15 third EAC / A16 additional EAC"
+"NgHivEacRegister.entry.eacSession.date","NgHivEacRegister.entry.eacSession.date","","","",1,1,"","","","date {[]} {[]}
+","EAC session date","Date the EAC session was delivered.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.eacSession.date",1,1,"","","A13–A16"
+"NgHivEacRegister.entry.postEacViralLoadSampleCollectionDate","NgHivEacRegister.entry.postEacViralLoadSampleCollectionDate","","","",0,1,"","","","date {[]} {[]}
+","A17 Date post-EAC VL sample collected","Date the post-EAC viral-load sample was collected after the counselling sequence.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.postEacViralLoadSampleCollectionDate",0,1,"","","A17"
+"NgHivEacRegister.entry.postEacViralLoadResult","NgHivEacRegister.entry.postEacViralLoadResult","","","",0,1,"","","","integer {[]} {[]}
+","A18 Post-EAC repeat viral-load result","Post-EAC repeat viral-load result in copies/mL.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.postEacViralLoadResult",0,1,"","","A18 result"
+"NgHivEacRegister.entry.postEacViralLoadResultReceivedDate","NgHivEacRegister.entry.postEacViralLoadResultReceivedDate","","","",0,1,"","","","date {[]} {[]}
+","A18 Date post-EAC result received","Date the post-EAC viral-load result was received at the facility.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.postEacViralLoadResultReceivedDate",0,1,"","","A18 date received"
+"NgHivEacRegister.entry.suspectedVirologicFailureCause","NgHivEacRegister.entry.suspectedVirologicFailureCause","","","",0,*,"","","","Coding {[]} {[]}
+","A19 Suspected cause of virologic failure","One or more suspected causes selected from the codes printed on the register.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-eac-register-virologic-failure-cause-vs","",,,,"NgHivEacRegister.entry.suspectedVirologicFailureCause",0,*,"","","A19"
+"NgHivEacRegister.entry.suspectedVirologicFailureOther","NgHivEacRegister.entry.suspectedVirologicFailureOther","","","",0,1,"","","","string {[]} {[]}
+","A19 Other suspected cause","Narrative description when code 3, other suspected cause, is selected.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.suspectedVirologicFailureOther",0,1,"","","A19 code 3 narrative"
+"NgHivEacRegister.entry.regimenSwitched","NgHivEacRegister.entry.regimenSwitched","","","",0,1,"","","","boolean {[]} {[]}
+","A20–A21 Regimen switched","True when the ART regimen was switched following EAC; false when it was not switched.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.regimenSwitched",0,1,"","","A20 Yes / A21 No"
+"NgHivEacRegister.entry.regimenSwitchDate","NgHivEacRegister.entry.regimenSwitchDate","","","",0,1,"","","","date {[]} {[]}
+","A20 Date regimen switched","Date the regimen switch occurred when regimenSwitched is true.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.regimenSwitchDate",0,1,"","","A20 date"
+"NgHivEacRegister.entry.newArtRegimen","NgHivEacRegister.entry.newArtRegimen","","","",0,1,"","","","Coding {[]} {[]}
+","A22 New ART regimen","Register ART regimen code after switch or substitution.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs","",,,,"NgHivEacRegister.entry.newArtRegimen",0,1,"","","A22"
+"NgHivEacRegister.entry.newArtRegimenText","NgHivEacRegister.entry.newArtRegimenText","","","",0,1,"","","","string {[]} {[]}
+","A22 New ART regimen source text","Regimen description retained when a valid register code is unavailable.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.newArtRegimenText",0,1,"","","A22 legacy or uncoded value"
+"NgHivEacRegister.entry.oneYearRepeatViralLoadResult","NgHivEacRegister.entry.oneYearRepeatViralLoadResult","","","",0,1,"","","","integer {[]} {[]}
+","A23 Repeat viral-load result one year later","Viral-load result obtained approximately one year after EAC and any regimen switch, in copies/mL.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.oneYearRepeatViralLoadResult",0,1,"","","A23 result"
+"NgHivEacRegister.entry.oneYearRepeatViralLoadResultReceivedDate","NgHivEacRegister.entry.oneYearRepeatViralLoadResultReceivedDate","","","",0,1,"","","","date {[]} {[]}
+","A23 Date one-year repeat result received","Date the one-year repeat viral-load result was received at the facility.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.oneYearRepeatViralLoadResultReceivedDate",0,1,"","","A23 date received"
+"NgHivEacRegister.entry.comments","NgHivEacRegister.entry.comments","","","",0,1,"","","","string {[]} {[]}
+","A24 Comments","Additional notes on EAC completion or stoppage, missed sessions, result delays, regimen changes, follow-up outcomes or further action plans.","","","","","","","","","",,,,,"",,,,"NgHivEacRegister.entry.comments",0,1,"","","A24"

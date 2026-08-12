@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-patient-education-level-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-patient-education-level-cs</b></p><a name="ng-patient-education-level-cs"> </a><a name="hcng-patient-education-level-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">No-Education<a name="ng-patient-education-level-cs-No-Education"> </a></td><td>No education</td></tr><tr><td style="white-space:nowrap">Primary<a name="ng-patient-education-level-cs-Primary"> </a></td><td>Primary</td></tr><tr><td style="white-space:nowrap">Secondary<a name="ng-patient-education-level-cs-Secondary"> </a></td><td>Secondary</td></tr><tr><td style="white-space:nowrap">Tertiary<a name="ng-patient-education-level-cs-Tertiary"> </a></td><td>Tertiary</td></tr><tr><td style="white-space:nowrap">TVET<a name="ng-patient-education-level-cs-TVET"> </a></td><td>TVET</td></tr><tr><td style="white-space:nowrap">Other<a name="ng-patient-education-level-cs-Other"> </a></td><td>Other, specify</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.94"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgPatientEducationLevelCS"/>
+  <title value="HIV Patient Education Level Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating the patient's highest qualification."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="No-Education"/>
+    <display value="No education"/>
+  </concept>
+  <concept>
+    <code value="Primary"/>
+    <display value="Primary"/>
+  </concept>
+  <concept>
+    <code value="Secondary"/>
+    <display value="Secondary"/>
+  </concept>
+  <concept>
+    <code value="Tertiary"/>
+    <display value="Tertiary"/>
+  </concept>
+  <concept>
+    <code value="TVET"/>
+    <display value="TVET"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other, specify"/>
+  </concept>
+</CodeSystem>

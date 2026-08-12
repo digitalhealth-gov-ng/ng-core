@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-facility-identifier-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-facility-identifier-cs</b></p><a name="ng-facility-identifier-cs"> </a><a name="hcng-facility-identifier-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">HCF-45231<a name="ng-facility-identifier-cs-HCF-45231"> </a></td><td>1</td></tr><tr><td style="white-space:nowrap">HCF-12342<a name="ng-facility-identifier-cs-HCF-12342"> </a></td><td>2</td></tr><tr><td style="white-space:nowrap">HCF-12343<a name="ng-facility-identifier-cs-HCF-12343"> </a></td><td>3</td></tr><tr><td style="white-space:nowrap">HCF-12344<a name="ng-facility-identifier-cs-HCF-12344"> </a></td><td>4</td></tr><tr><td style="white-space:nowrap">HCF-12345<a name="ng-facility-identifier-cs-HCF-12345"> </a></td><td>5</td></tr><tr><td style="white-space:nowrap">HCF-12346<a name="ng-facility-identifier-cs-HCF-12346"> </a></td><td>6</td></tr><tr><td style="white-space:nowrap">HCF-12347<a name="ng-facility-identifier-cs-HCF-12347"> </a></td><td>7</td></tr><tr><td style="white-space:nowrap">CLM-2025-0001<a name="ng-facility-identifier-cs-CLM-2025-0001"> </a></td><td>Claims Institution</td></tr><tr><td style="white-space:nowrap">NHIA-0011223344<a name="ng-facility-identifier-cs-NHIA-0011223344"> </a></td><td>Insurance Organization</td></tr><tr><td style="white-space:nowrap">HOSPITAL1234<a name="ng-facility-identifier-cs-HOSPITAL1234"> </a></td><td>Hospital ID example</td></tr><tr><td style="white-space:nowrap">HMO876653<a name="ng-facility-identifier-cs-HMO876653"> </a></td><td>Cool HMO</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.15"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgFacilityIdentifierCS"/>
+  <title value="NG Facility Identifier CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifiers in Nigeria."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="grouped-by"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="HCF-45231"/>
+    <display value="1"/>
+  </concept>
+  <concept>
+    <code value="HCF-12342"/>
+    <display value="2"/>
+  </concept>
+  <concept>
+    <code value="HCF-12343"/>
+    <display value="3"/>
+  </concept>
+  <concept>
+    <code value="HCF-12344"/>
+    <display value="4"/>
+  </concept>
+  <concept>
+    <code value="HCF-12345"/>
+    <display value="5"/>
+  </concept>
+  <concept>
+    <code value="HCF-12346"/>
+    <display value="6"/>
+  </concept>
+  <concept>
+    <code value="HCF-12347"/>
+    <display value="7"/>
+  </concept>
+  <concept>
+    <code value="CLM-2025-0001"/>
+    <display value="Claims Institution"/>
+  </concept>
+  <concept>
+    <code value="NHIA-0011223344"/>
+    <display value="Insurance Organization"/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL1234"/>
+    <display value="Hospital ID example"/>
+  </concept>
+  <concept>
+    <code value="HMO876653"/>
+    <display value="Cool HMO"/>
+  </concept>
+</CodeSystem>

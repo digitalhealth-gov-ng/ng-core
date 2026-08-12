@@ -1,0 +1,284 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-regimen-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-art-register-regimen-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-art-register-regimen-cs</b></p><a name=\"ng-hiv-art-register-regimen-cs\"> </a><a name=\"hcng-hiv-art-register-regimen-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-regimen-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1a<a name=\"ng-hiv-art-register-regimen-cs-1a\"> </a></td><td>TDF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1aa<a name=\"ng-hiv-art-register-regimen-cs-1aa\"> </a></td><td>TDF + FTC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1b<a name=\"ng-hiv-art-register-regimen-cs-1b\"> </a></td><td>TDF + 3TC + EFV 400</td></tr><tr><td style=\"white-space:nowrap\">1bb<a name=\"ng-hiv-art-register-regimen-cs-1bb\"> </a></td><td>TDF + FTC + EFV 400</td></tr><tr><td style=\"white-space:nowrap\">1c<a name=\"ng-hiv-art-register-regimen-cs-1c\"> </a></td><td>ABC + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1d<a name=\"ng-hiv-art-register-regimen-cs-1d\"> </a></td><td>TDF + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">1dd<a name=\"ng-hiv-art-register-regimen-cs-1dd\"> </a></td><td>TDF + FTC + EFV</td></tr><tr><td style=\"white-space:nowrap\">1e<a name=\"ng-hiv-art-register-regimen-cs-1e\"> </a></td><td>TAF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1ee<a name=\"ng-hiv-art-register-regimen-cs-1ee\"> </a></td><td>TAF + FTC + DTG</td></tr><tr><td style=\"white-space:nowrap\">1f<a name=\"ng-hiv-art-register-regimen-cs-1f\"> </a></td><td>TDF + 3TC + RAL</td></tr><tr><td style=\"white-space:nowrap\">1ff<a name=\"ng-hiv-art-register-regimen-cs-1ff\"> </a></td><td>TDF + FTC + RAL</td></tr><tr><td style=\"white-space:nowrap\">2a<a name=\"ng-hiv-art-register-regimen-cs-2a\"> </a></td><td>AZT + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\">2b<a name=\"ng-hiv-art-register-regimen-cs-2b\"> </a></td><td>TDF + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\">2c<a name=\"ng-hiv-art-register-regimen-cs-2c\"> </a></td><td>TDF + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">2d<a name=\"ng-hiv-art-register-regimen-cs-2d\"> </a></td><td>AZT + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">2e<a name=\"ng-hiv-art-register-regimen-cs-2e\"> </a></td><td>AZT + TDF + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\">2f<a name=\"ng-hiv-art-register-regimen-cs-2f\"> </a></td><td>AZT + TDF + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">2g<a name=\"ng-hiv-art-register-regimen-cs-2g\"> </a></td><td>TDF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">2h<a name=\"ng-hiv-art-register-regimen-cs-2h\"> </a></td><td>AZT + 3TC + DRV/r</td></tr><tr><td style=\"white-space:nowrap\">2i<a name=\"ng-hiv-art-register-regimen-cs-2i\"> </a></td><td>TDF + 3TC + DRV/r</td></tr><tr><td style=\"white-space:nowrap\">2j<a name=\"ng-hiv-art-register-regimen-cs-2j\"> </a></td><td>AZT + 3TC + LPV/r + DTG</td></tr><tr><td style=\"white-space:nowrap\">3a<a name=\"ng-hiv-art-register-regimen-cs-3a\"> </a></td><td>DRV/r + DTG ± 1–2 NRTIs</td></tr><tr><td style=\"white-space:nowrap\">3b<a name=\"ng-hiv-art-register-regimen-cs-3b\"> </a></td><td>DRV/r + 2 NRTIs ± ETV</td></tr><tr><td style=\"white-space:nowrap\">4a<a name=\"ng-hiv-art-register-regimen-cs-4a\"> </a></td><td>TDF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4aa<a name=\"ng-hiv-art-register-regimen-cs-4aa\"> </a></td><td>TDF + FTC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4b<a name=\"ng-hiv-art-register-regimen-cs-4b\"> </a></td><td>ABC + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4bb<a name=\"ng-hiv-art-register-regimen-cs-4bb\"> </a></td><td>ABC + FTC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4c<a name=\"ng-hiv-art-register-regimen-cs-4c\"> </a></td><td>ABC + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">4d<a name=\"ng-hiv-art-register-regimen-cs-4d\"> </a></td><td>TDF + 3TC + EFV 400</td></tr><tr><td style=\"white-space:nowrap\">4dd<a name=\"ng-hiv-art-register-regimen-cs-4dd\"> </a></td><td>TDF + FTC + EFV 400</td></tr><tr><td style=\"white-space:nowrap\">4e<a name=\"ng-hiv-art-register-regimen-cs-4e\"> </a></td><td>AZT + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">4f<a name=\"ng-hiv-art-register-regimen-cs-4f\"> </a></td><td>ABC + 3TC + EFV 400</td></tr><tr><td style=\"white-space:nowrap\">4ff<a name=\"ng-hiv-art-register-regimen-cs-4ff\"> </a></td><td>ABC + FTC + EFV 400</td></tr><tr><td style=\"white-space:nowrap\">4g<a name=\"ng-hiv-art-register-regimen-cs-4g\"> </a></td><td>AZT + 3TC + RAL</td></tr><tr><td style=\"white-space:nowrap\">4h<a name=\"ng-hiv-art-register-regimen-cs-4h\"> </a></td><td>ABC + 3TC + EFV</td></tr><tr><td style=\"white-space:nowrap\">4i<a name=\"ng-hiv-art-register-regimen-cs-4i\"> </a></td><td>AZT + 3TC + NVP</td></tr><tr><td style=\"white-space:nowrap\">4j<a name=\"ng-hiv-art-register-regimen-cs-4j\"> </a></td><td>TAF + 3TC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4jj<a name=\"ng-hiv-art-register-regimen-cs-4jj\"> </a></td><td>TAF + FTC + DTG</td></tr><tr><td style=\"white-space:nowrap\">4k<a name=\"ng-hiv-art-register-regimen-cs-4k\"> </a></td><td>ABC + 3TC + RAL</td></tr><tr><td style=\"white-space:nowrap\">4l<a name=\"ng-hiv-art-register-regimen-cs-4l\"> </a></td><td>AZT + 3TC + EFV 200 or 400</td></tr><tr><td style=\"white-space:nowrap\">5a<a name=\"ng-hiv-art-register-regimen-cs-5a\"> </a></td><td>AZT + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">5b<a name=\"ng-hiv-art-register-regimen-cs-5b\"> </a></td><td>AZT + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\">5c<a name=\"ng-hiv-art-register-regimen-cs-5c\"> </a></td><td>TDF + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\">5d<a name=\"ng-hiv-art-register-regimen-cs-5d\"> </a></td><td>TDF + 3TC + LPV/r</td></tr><tr><td style=\"white-space:nowrap\">5e<a name=\"ng-hiv-art-register-regimen-cs-5e\"> </a></td><td>AZT + 3TC + RAL or DTG</td></tr><tr><td style=\"white-space:nowrap\">5f<a name=\"ng-hiv-art-register-regimen-cs-5f\"> </a></td><td>ABC + 3TC + RAL or DTG</td></tr><tr><td style=\"white-space:nowrap\">5g<a name=\"ng-hiv-art-register-regimen-cs-5g\"> </a></td><td>ABC + 3TC + LPV/r or paediatric DRV/r</td></tr><tr><td style=\"white-space:nowrap\">5h<a name=\"ng-hiv-art-register-regimen-cs-5h\"> </a></td><td>ABC + 3TC + LPV/r or ATV/r</td></tr><tr><td style=\"white-space:nowrap\">5i<a name=\"ng-hiv-art-register-regimen-cs-5i\"> </a></td><td>AZT + 3TC + ATV/r, paediatric DRV/r or LPV/r</td></tr><tr><td style=\"white-space:nowrap\">6a<a name=\"ng-hiv-art-register-regimen-cs-6a\"> </a></td><td>DRV/r + DTG or RAL ± 1–2 NRTIs</td></tr><tr><td style=\"white-space:nowrap\">6b<a name=\"ng-hiv-art-register-regimen-cs-6b\"> </a></td><td>DRV/r + 2 NRTIs ± ETV</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-regimen-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.25" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivArtRegisterRegimenCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV ART Register Regimen Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Adult and paediatric first-, second- and third-line ART regimen codes printed on the November 2025 National ART Register."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "51"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + DTG" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1aa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + FTC + DTG" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + EFV 400" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1bb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + FTC + EFV 400" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + DTG" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + EFV" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1dd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + FTC + EFV" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1e" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TAF + 3TC + DTG" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1ee" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TAF + FTC + DTG" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1f" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + RAL" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "1ff" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + FTC + RAL" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + ATV/r" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + ATV/r" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + LPV/r" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + LPV/r" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2e" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + TDF + 3TC + ATV/r" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2f" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + TDF + 3TC + LPV/r" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2g" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + DTG" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2h" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + DRV/r" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2i" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + DRV/r" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "2j" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + LPV/r + DTG" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DRV/r + DTG ± 1–2 NRTIs" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "3b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DRV/r + 2 NRTIs ± ETV" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + DTG" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4aa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + FTC + DTG" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + DTG" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4bb" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + FTC + DTG" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + LPV/r" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + EFV 400" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4dd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + FTC + EFV 400" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4e" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + LPV/r" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4f" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + EFV 400" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4ff" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + FTC + EFV 400" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4g" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + RAL" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4h" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + EFV" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4i" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + NVP" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4j" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TAF + 3TC + DTG" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4jj" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TAF + FTC + DTG" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4k" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + RAL" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "4l" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + EFV 200 or 400" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + LPV/r" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + ATV/r" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5c" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + ATV/r" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5d" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TDF + 3TC + LPV/r" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5e" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + RAL or DTG" ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5f" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + RAL or DTG" ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5g" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + LPV/r or paediatric DRV/r" ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5h" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ABC + 3TC + LPV/r or ATV/r" ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "5i" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + ATV/r, paediatric DRV/r or LPV/r" ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6a" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DRV/r + DTG or RAL ± 1–2 NRTIs" ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "6b" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DRV/r + 2 NRTIs ± ETV" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-regimen-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

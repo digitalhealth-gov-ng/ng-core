@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-family-planning-method-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-family-planning-method-vs</b></p><a name="ng-family-planning-method-vs"> </a><a name="hcng-family-planning-method-vs"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA14543-5/">LA14543-5</a></td><td>Condoms</td></tr><tr><td><a href="https://loinc.org/LA27907-7/">LA27907-7</a></td><td>Injectables</td></tr><tr><td><a href="https://loinc.org/LA27908-5/">LA27908-5</a></td><td>Combined oral contraceptive pills</td></tr><tr><td><a href="https://loinc.org/LA27913-5/">LA27913-5</a></td><td>Diaphragm or cervical cap</td></tr><tr><td><a href="https://loinc.org/LA14534-4/">LA14534-4</a></td><td>Vasectomy</td></tr><tr><td><a href="https://loinc.org/LA27901-0/">LA27901-0</a></td><td>Implantable rod</td></tr><tr><td><a href="https://loinc.org/LA14550-0/">LA14550-0</a></td><td>Abstinence</td></tr><tr><td><a href="https://loinc.org/LA6527-1/">LA6527-1</a></td><td>Intrauterine device</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-family-planning-method-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.21"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgFamilyPlanningMethodVS"/>
+  <title value="Family Planning Method"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Family Planning Method"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA14543-5"/>
+        <display value="Condoms"/>
+      </concept>
+      <concept>
+        <code value="LA27907-7"/>
+        <display value="Injectables"/>
+      </concept>
+      <concept>
+        <code value="LA27908-5"/>
+        <display value="Combined oral contraceptive pills"/>
+      </concept>
+      <concept>
+        <code value="LA27913-5"/>
+        <display value="Diaphragm or cervical cap"/>
+      </concept>
+      <concept>
+        <code value="LA14534-4"/>
+        <display value="Vasectomy"/>
+      </concept>
+      <concept>
+        <code value="LA27901-0"/>
+        <display value="Implantable rod"/>
+      </concept>
+      <concept>
+        <code value="LA14550-0"/>
+        <display value="Abstinence"/>
+      </concept>
+      <concept>
+        <code value="LA6527-1"/>
+        <display value="Intrauterine device"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

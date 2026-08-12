@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Basic Provenance - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Basic Provenance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Basic Provenance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#provenance-in-nigeria-core" id="markdown-toc-provenance-in-nigeria-core">Provenance in Nigeria Core</a></li>
+  <li><a href="#organizational-level-provenance" id="markdown-toc-organizational-level-provenance">Organizational-Level Provenance</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+  <li><a href="#clinical-information-reconciliation-and-incorporation" id="markdown-toc-clinical-information-reconciliation-and-incorporation">Clinical Information Reconciliation and Incorporation</a></li>
+  <li><a href="#hie-and-shared-health-record-redistribution" id="markdown-toc-hie-and-shared-health-record-redistribution">HIE and Shared Health Record Redistribution</a></li>
+  <li><a href="#hie-or-integration-layer-transformation" id="markdown-toc-hie-or-integration-layer-transformation">HIE or Integration-Layer Transformation</a></li>
+  <li><a href="#registry-provenance" id="markdown-toc-registry-provenance">Registry Provenance</a></li>
+  <li><a href="#bundle-and-synchronization-provenance" id="markdown-toc-bundle-and-synchronization-provenance">Bundle and Synchronization Provenance</a></li>
+  <li><a href="#individual-level-provenance" id="markdown-toc-individual-level-provenance">Individual-Level Provenance</a></li>
+  <li><a href="#provenance-for-patient-reported-and-community-reported-data" id="markdown-toc-provenance-for-patient-reported-and-community-reported-data">Provenance for Patient-Reported and Community-Reported Data</a></li>
+  <li><a href="#querying-provenance" id="markdown-toc-querying-provenance">Querying Provenance</a></li>
+  <li><a href="#privacy-security-and-audit" id="markdown-toc-privacy-security-and-audit">Privacy, Security, and Audit</a></li>
+  <li><a href="#implementation-notes-for-nigeria" id="markdown-toc-implementation-notes-for-nigeria">Implementation Notes for Nigeria</a></li>
+</ul>
+
+</div>
+<h3 id="provenance-in-nigeria-core">Provenance in Nigeria Core</h3>
+
+<p>The FHIR [Provenance] Resource tracks information about the activity that created, updated, transformed, transmitted, or otherwise affected a version of a resource. It describes the entities and agents involved in the activity and supports trust, accountability, audit, reconciliation, and safe reuse of health data.</p>
+
+<p>FHIR resources also contain elements that represent “small-p provenance” information about how the resource was created, authored, recorded, reported, performed, or obtained. These elements may overlap with the formal <code class="language-plaintext highlighter-rouge">Provenance</code> resource.</p>
+
+<p>This page provides abridged guidance on two levels of provenance in Nigeria Core:</p>
+
+<ol>
+  <li><strong>Organizational-level provenance</strong>, using the FHIR <code class="language-plaintext highlighter-rouge">Provenance</code> resource to identify where data came from, who transmitted it, and which organisation or system made the latest meaningful update.</li>
+  <li><strong>Individual-level provenance</strong>, using resource-specific elements to identify the person, role, device, patient, related person, facility, or organisation associated with the clinical or administrative action.</li>
+</ol>
+
+<p>Nigeria Core implementers <strong>SHOULD</strong> support provenance where data are exchanged across systems, incorporated into a Shared Health Record, used for referrals, submitted to registries, used for claims, transformed by an interoperability layer, or relied upon for public health, regulatory, or clinical decision-making.</p>
+
+<h3 id="organizational-level-provenance">Organizational-Level Provenance</h3>
+
+<p>Nigeria Core Provenance focuses on a practical subset of elements that communicate the most useful provenance information for real-world exchange. In many cases, the most important information is the “last hop”: the last organisation, system, or actor that made a meaningful update or transmitted the data to the receiving system.</p>
+
+<p>Full end-to-end provenance may require the original creator and every intermediary system that received, transformed, or redistributed the data. Nigeria Core does not require full chain provenance for every use case, but systems <strong>SHOULD</strong> preserve and exchange it where available, especially for Shared Health Record, registry, claims, regulator, and programme reporting workflows.</p>
+
+<h4 id="key-provenance-elements">Key Provenance Elements</h4>
+
+<p>The guidance for Provenance in Nigeria Core focuses on the following key elements:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Description</th>
+      <th>FHIR Element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target</td>
+      <td>Resource or resources the Provenance record supports</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.target</code></td>
+    </tr>
+    <tr>
+      <td>Timestamp</td>
+      <td>Date and time the activity was recorded</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.recorded</code></td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td>Person, device, or system responsible for creating, updating, or accepting the information</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.who</code></td>
+    </tr>
+    <tr>
+      <td>Author Organisation</td>
+      <td>Organisation, facility, programme, regulator, or platform the author acted on behalf of</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.onBehalfOf</code></td>
+    </tr>
+    <tr>
+      <td>Transmitter</td>
+      <td>System, platform, HIE, registry, or gateway that transmitted the information</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.who</code></td>
+    </tr>
+    <tr>
+      <td>Transmitter Organisation</td>
+      <td>Organisation responsible for the transmission</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.onBehalfOf</code></td>
+    </tr>
+    <tr>
+      <td>Activity</td>
+      <td>Type of activity performed, such as create, update, transform, transmit, reconcile, or import</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.activity</code></td>
+    </tr>
+    <tr>
+      <td>Entity</td>
+      <td>Source data, document, Bundle, registry record, or external system used as input</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.entity</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Where available, agents <strong>SHOULD</strong> be represented using Nigeria Core profiles such as <code class="language-plaintext highlighter-rouge">Practitioner</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Device</code>, <code class="language-plaintext highlighter-rouge">RelatedPerson</code>, or <code class="language-plaintext highlighter-rouge">Patient</code>.</p>
+
+<p>Identifiers <strong>SHOULD</strong> use recognised national, regulator, programme, facility, or local identifiers where available.</p>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<p>Nigeria Core provenance is particularly important for the following use cases:</p>
+
+<ul>
+  <li>Shared Health Record contribution and retrieval</li>
+  <li>Referral and counter-referral</li>
+  <li>Clinical information reconciliation</li>
+  <li>Health Information Exchange redistribution</li>
+  <li>HIE or integration-layer transformation</li>
+  <li>Facility registry and health workforce registry updates</li>
+  <li>ePrescription, ePharmacy, and dispensing workflows</li>
+  <li>Claims, insurance, and payer workflows</li>
+  <li>Public health and programme reporting</li>
+  <li>Laboratory, imaging, and diagnostic reporting</li>
+  <li>Offline data capture and later synchronization</li>
+  <li>Sandbox, Connectathon, and conformance testing</li>
+</ul>
+
+<h3 id="clinical-information-reconciliation-and-incorporation">Clinical Information Reconciliation and Incorporation</h3>
+
+<p>Clinical Information Reconciliation and Incorporation allows a clinician or system to review information received from external sources and incorporate selected information into a local patient record.</p>
+
+<p>Examples include:</p>
+
+<ul>
+  <li>A referral hospital incorporating medication, allergy, diagnosis, and laboratory information from a PHC.</li>
+  <li>A state Shared Health Record receiving clinical data from several EMRs.</li>
+  <li>A clinician reconciling medication history from a pharmacy, patient report, and hospital record.</li>
+  <li>A programme system incorporating immunization, HIV, TB, malaria, or MNCH data from facility systems.</li>
+</ul>
+
+<p>When a clinician reviews and accepts external data into the local record, the accepting clinician or system may become the latest author for the reconciled resource. However, the original data source <strong>SHOULD</strong> still be preserved using <code class="language-plaintext highlighter-rouge">Provenance.entity</code>, <code class="language-plaintext highlighter-rouge">Provenance.agent</code>, or other appropriate metadata.</p>
+
+<p>Example query to retrieve resources with associated provenance:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance?patient=[id]&amp;_revinclude=Provenance:target
+</code></pre></div></div>
+
+<p>Systems <strong>SHOULD</strong> support provenance for reconciled information such as:</p>
+
+<ul>
+  <li>Allergies and intolerances</li>
+  <li>Problems and diagnoses</li>
+  <li>Medications</li>
+  <li>Immunizations</li>
+  <li>Procedures</li>
+  <li>Laboratory results</li>
+  <li>Referrals</li>
+  <li>Care plans</li>
+  <li>Clinical notes, where applicable</li>
+</ul>
+
+<p>Clinical notes that are merely stored or redistributed without content change <strong>SHOULD</strong> retain their original author and author organisation.</p>
+
+<h3 id="hie-and-shared-health-record-redistribution">HIE and Shared Health Record Redistribution</h3>
+
+<p>A Health Information Exchange or Shared Health Record may receive information from one system and redistribute it to other authorised systems without changing the clinical content.</p>
+
+<p>Where no clinical content is changed, the preferred provenance pattern is:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Provenance.agent.type = author</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Provenance.agent.who</code> identifies the practitioner, device, patient, or system that authored the content where known.</li>
+      <li><code class="language-plaintext highlighter-rouge">Provenance.agent.onBehalfOf</code> identifies the facility, programme, regulator, or organisation the author acted for.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Provenance.agent.type = transmitter</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Provenance.agent.who</code> identifies the HIE, Shared Health Record, registry, or platform that transmitted the data.</li>
+      <li><code class="language-plaintext highlighter-rouge">Provenance.agent.onBehalfOf</code> identifies the organisation responsible for that transmission.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">Provenance.target</code> and <code class="language-plaintext highlighter-rouge">Provenance.recorded</code> elements <strong>SHOULD</strong> be included for all Provenance records.</p>
+
+<p>Where the original author is not available, the transmitting organisation or system <strong>SHOULD</strong> still provide the best available source information and avoid falsely claiming authorship of clinical content.</p>
+
+<h3 id="hie-or-integration-layer-transformation">HIE or Integration-Layer Transformation</h3>
+
+<p>Transformation occurs when a system converts source data from one format or model into another. Examples include:</p>
+
+<ul>
+  <li>HL7 v2 laboratory result to FHIR Observation and DiagnosticReport.</li>
+  <li>Paper form or spreadsheet import into FHIR resources.</li>
+  <li>DHIS2 or programme data transformed into FHIR reporting resources.</li>
+  <li>CDA or PDF metadata indexed as DocumentReference.</li>
+  <li>Local EMR schema transformed into Nigeria Core profiles.</li>
+  <li>Bundle validation, normalisation, or enrichment by an interoperability layer.</li>
+</ul>
+
+<p>Transformation may change how authorship is represented. The transforming system <strong>SHOULD</strong> preserve the original source and identify itself as the assembler, transformer, transmitter, or responsible system using appropriate <code class="language-plaintext highlighter-rouge">Provenance.agent.type</code> values.</p>
+
+<p>Systems <strong>SHOULD</strong> not overwrite the original clinical author unless the content has been clinically reconciled or re-authored by an authorised person or organisation.</p>
+
+<h3 id="registry-provenance">Registry Provenance</h3>
+
+<p>Nigeria Core supports interaction with national, state, programme, and regulator registries, including facility, workforce, provider, pharmacy, payer, and organisation registries.</p>
+
+<p>For registry data, systems <strong>SHOULD</strong> record:</p>
+
+<ul>
+  <li>The registry source.</li>
+  <li>The responsible organisation or regulator.</li>
+  <li>The date and time of verification or lookup.</li>
+  <li>The identifier used for lookup.</li>
+  <li>The version or status of the registry record where available.</li>
+  <li>Whether the data was imported, verified, corrected, or updated.</li>
+</ul>
+
+<p>Registry provenance is important for:</p>
+
+<ul>
+  <li>Health Facility Registry references.</li>
+  <li>Health Workforce Registry references.</li>
+  <li>Professional council registration checks.</li>
+  <li>Pharmacy and ePharmacy verification.</li>
+  <li>Facility licensing and accreditation.</li>
+  <li>Payer and provider verification.</li>
+  <li>Programme participation and eligibility checks.</li>
+</ul>
+
+<h3 id="bundle-and-synchronization-provenance">Bundle and Synchronization Provenance</h3>
+
+<p>Nigeria’s decentralised and hybrid architecture may involve offline-first systems, local facility servers, state-level repositories, programme repositories, and national services. Data may be captured offline and synchronized later.</p>
+
+<p>For Bundle submission, synchronization, and import workflows, systems <strong>SHOULD</strong> preserve:</p>
+
+<ul>
+  <li>Source system.</li>
+  <li>Source facility or organisation.</li>
+  <li>Submitter.</li>
+  <li>Submission date and time.</li>
+  <li>Capture date and time where different from submission time.</li>
+  <li>Transformation or validation performed.</li>
+  <li>Conflict resolution decisions.</li>
+  <li>Receiving system.</li>
+  <li>Version of the profile or implementation guide used.</li>
+  <li>Validation outcome or OperationOutcome reference where applicable.</li>
+</ul>
+
+<p>Where data are synchronized after offline capture, systems <strong>SHOULD</strong> distinguish the clinical event time from the synchronization time.</p>
+
+<h3 id="individual-level-provenance">Individual-Level Provenance</h3>
+
+<p>Many FHIR resources include elements that communicate individual-level provenance. These “small-p provenance” elements may identify who authored, recorded, performed, requested, reported, administered, dispensed, interpreted, or verified an event.</p>
+
+<p>Examples include:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource Area</th>
+      <th>Example Provenance Elements</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clinical notes</td>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference.author</code>, <code class="language-plaintext highlighter-rouge">DocumentReference.custodian</code></td>
+    </tr>
+    <tr>
+      <td>Diagnostic reports</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.performer</code>, <code class="language-plaintext highlighter-rouge">DiagnosticReport.resultsInterpreter</code></td>
+    </tr>
+    <tr>
+      <td>Observations</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.performer</code></td>
+    </tr>
+    <tr>
+      <td>Medication requests</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest.requester</code>, <code class="language-plaintext highlighter-rouge">MedicationRequest.reported[x]</code>, <code class="language-plaintext highlighter-rouge">MedicationRequest.recorder</code></td>
+    </tr>
+    <tr>
+      <td>Medication dispense</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationDispense.performer</code>, <code class="language-plaintext highlighter-rouge">MedicationDispense.authorizingPrescription</code></td>
+    </tr>
+    <tr>
+      <td>Medication administration</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.performer</code></td>
+    </tr>
+    <tr>
+      <td>Service requests</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.requester</code>, <code class="language-plaintext highlighter-rouge">ServiceRequest.performer</code></td>
+    </tr>
+    <tr>
+      <td>Procedures</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure.performer</code>, <code class="language-plaintext highlighter-rouge">Procedure.recorder</code></td>
+    </tr>
+    <tr>
+      <td>Immunization</td>
+      <td><code class="language-plaintext highlighter-rouge">Immunization.performer</code>, <code class="language-plaintext highlighter-rouge">Immunization.recorded</code>, <code class="language-plaintext highlighter-rouge">Immunization.primarySource</code></td>
+    </tr>
+    <tr>
+      <td>Conditions</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition.recorder</code>, <code class="language-plaintext highlighter-rouge">Condition.asserter</code></td>
+    </tr>
+    <tr>
+      <td>AllergyIntolerance</td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance.recorder</code>, <code class="language-plaintext highlighter-rouge">AllergyIntolerance.asserter</code></td>
+    </tr>
+    <tr>
+      <td>Encounters</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.participant</code>, <code class="language-plaintext highlighter-rouge">Encounter.serviceProvider</code></td>
+    </tr>
+    <tr>
+      <td>Claims</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim.provider</code>, <code class="language-plaintext highlighter-rouge">Claim.enterer</code>, <code class="language-plaintext highlighter-rouge">Claim.insurer</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Where a system captures these elements, it <strong>SHOULD</strong> exchange them using the applicable Nigeria Core Profile. Where the individual role is important, the referenced resource <strong>SHOULD</strong> contain sufficient role information, such as <code class="language-plaintext highlighter-rouge">PractitionerRole</code>, <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Location</code>, <code class="language-plaintext highlighter-rouge">Device</code>, <code class="language-plaintext highlighter-rouge">Patient</code>, or <code class="language-plaintext highlighter-rouge">RelatedPerson</code>.</p>
+
+<h3 id="provenance-for-patient-reported-and-community-reported-data">Provenance for Patient-Reported and Community-Reported Data</h3>
+
+<p>Some data may be reported by a patient, caregiver, related person, community health worker, or non-clinical actor.</p>
+
+<p>Systems <strong>SHOULD</strong> distinguish patient-reported or community-reported information from provider-authored information using the appropriate resource elements. Examples include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MedicationRequest.reported[x]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Immunization.primarySource</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Condition.asserter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">AllergyIntolerance.asserter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.performer</code></li>
+  <li><code class="language-plaintext highlighter-rouge">QuestionnaireResponse.author</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Provenance.agent</code></li>
+</ul>
+
+<p>Patient-reported or community-reported data may still be clinically useful, but receiving systems <strong>SHOULD</strong> display or process it with its source clearly identified.</p>
+
+<h3 id="querying-provenance">Querying Provenance</h3>
+
+<p>Clients may request Provenance records using <code class="language-plaintext highlighter-rouge">_revinclude</code> where supported.</p>
+
+<p>Examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Observation?patient=[id]&amp;_revinclude=Provenance:target
+GET [base]/MedicationRequest?patient=[id]&amp;_revinclude=Provenance:target
+GET [base]/DocumentReference?patient=[id]&amp;_revinclude=Provenance:target
+</code></pre></div></div>
+
+<p>Servers <strong>SHOULD</strong> document Provenance search capabilities in their CapabilityStatement.</p>
+
+<h3 id="privacy-security-and-audit">Privacy, Security, and Audit</h3>
+
+<p>Provenance may contain sensitive information about patients, providers, facilities, organisations, regulators, devices, locations, or source systems. Systems <strong>SHALL</strong> protect Provenance records using the same security and access control expectations applied to the target resource.</p>
+
+<p>Systems <strong>SHOULD</strong>:</p>
+
+<ul>
+  <li>Limit Provenance access to authorised users and systems.</li>
+  <li>Avoid exposing sensitive organisational, provider, or patient information unnecessarily.</li>
+  <li>Preserve Provenance for audit and accountability.</li>
+  <li>Protect Provenance records from unauthorised alteration or deletion.</li>
+  <li>Use synthetic or anonymised Provenance data in public sandbox and Connectathon environments.</li>
+  <li>Ensure that Provenance and <code class="language-plaintext highlighter-rouge">AuditEvent</code> are complementary: Provenance explains the source and activity related to data, while AuditEvent records access and system events.</li>
+</ul>
+
+<h3 id="implementation-notes-for-nigeria">Implementation Notes for Nigeria</h3>
+
+<p>Nigeria Core implementers should consider the following:</p>
+
+<ul>
+  <li>Use <code class="language-plaintext highlighter-rouge">Provenance</code> where data cross organisational, state, programme, registry, or system boundaries.</li>
+  <li>Preserve the original clinical author where content is redistributed without clinical change.</li>
+  <li>Identify the HIE, Shared Health Record, registry, or integration layer as transmitter or assembler where appropriate.</li>
+  <li>Use resource-specific “small-p provenance” elements for individual authorship and roles.</li>
+  <li>Preserve registry lookup and verification provenance where facility, provider, pharmacy, payer, or regulator identifiers are used.</li>
+  <li>Distinguish event time, authoring time, submission time, transformation time, and synchronization time where relevant.</li>
+  <li>Record Provenance for reconciled clinical information, especially allergies, conditions, medications, immunizations, and clinical notes.</li>
+  <li>Include Provenance in sandbox and conformance testing where workflows involve transformation, reconciliation, registry validation, or Shared Health Record exchange.</li>
+</ul>
+
+<p>Footnotes</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

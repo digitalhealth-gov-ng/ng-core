@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Organization",
+  "id" : "NgInsurerOrganization-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-insurer-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization NgInsurerOrganization-001</b></p><a name=\"NgInsurerOrganization-001\"> </a><a name=\"hcNgInsurerOrganization-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-insurer-organization.html\">NG Insurer Organization</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type ins}\">Insurance Company</span></p><p><b>name</b>: Ondo Community Health Insurance</p><p><b>telecom</b>: <a href=\"tel:+2348030000000\">+2348030000000</a>, <a href=\"mailto:info@ondohealthassurance.example\">info@ondohealthassurance.example</a></p><p><b>address</b>: 10 Igbatoro Road Akure south ON Nigeria </p></div>"
+  },
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "ins",
+      "display" : "Insurance Company"
+    }]
+  }],
+  "name" : "Ondo Community Health Insurance",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+2348030000000"
+  },
+  {
+    "system" : "email",
+    "value" : "info@ondohealthassurance.example"
+  }],
+  "address" : [{
+    "type" : "physical",
+    "line" : ["10 Igbatoro Road"],
+    "city" : "Akure south",
+    "district" : "on-akure-south",
+    "state" : "ON",
+    "country" : "Nigeria"
+  }]
+}

@@ -1,0 +1,248 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-radiology-component-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-results-radiology-component-vs"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-results-radiology-component-vs</b></p><a name=\"ng-results-radiology-component-vs\"> </a><a name=\"hcng-results-radiology-component-vs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://dicom.nema.org/resources/ontology/DCM\"><code>http://dicom.nema.org/resources/ontology/DCM</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 01, the version found through the package references\"> version ?01</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121065\">121065</a></td><td>Procedure Description</td><td>A description of the imaging procedure</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121069\">121069</a></td><td>Previous Finding</td><td>An observation found on a prior imaging study</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121071\">121071</a></td><td>Finding</td><td>An observation found on an imaging study</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121073\">121073</a></td><td>Impression</td><td>An interpretation in the clinical context of the finding(s) on an imaging study</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121075\">121075</a></td><td>Recommendation</td><td>A recommendation for management or investigation based on the findings and impressions of an imaging study</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121077\">121077</a></td><td>Conclusion</td><td>An interpretation in the clinical context of the finding(s) on an imaging study</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121207\">121207</a></td><td>Height</td><td>Vertical measurement value</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121211\">121211</a></td><td>Path length</td><td>A one dimensional, or linear, numeric measurement along a polyline</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121206\">121206</a></td><td>Distance</td><td>A one dimensional, or linear, numeric measurement</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121216\">121216</a></td><td>Volume estimated from single 2D region</td><td>A three-dimensional numeric measurement that is approximate, based on a two-dimensional region in a single image</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121218\">121218</a></td><td>Volume estimated from two non-coplanar 2D regions</td><td>A three-dimensional numeric measurement that is approximate, based on two non-coplanar two-dimensional image regions</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121217\">121217</a></td><td>Volume estimated from three or more non-coplanar 2D regions</td><td>A three-dimensional numeric measurement that is approximate, based on three or more non-coplanar two-dimensional image regions</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121222\">121222</a></td><td>Volume of sphere</td><td>A three-dimensional numeric measurement of a sphere shaped three-dimensional region of interest in an image set</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121221\">121221</a></td><td>Volume of ellipsoid</td><td>A three-dimensional numeric measurement of an ellipsoid shaped three-dimensional region of interest in an image set</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121220\">121220</a></td><td>Volume of circumscribed sphere</td><td>A three-dimensional numeric measurement of the bounding sphere of a three-dimensional region of interest in an image set</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-121219\">121219</a></td><td>Volume of bounding three dimensional region</td><td>A three-dimensional numeric measurement of the bounding region of a three-dimensional region of interest in an image set</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/55108-5/\">55108-5</a></td><td>Clinical presentation Document</td></tr><tr><td><a href=\"https://loinc.org/55112-7/\">55112-7</a></td><td>Document summary</td></tr><tr><td><a href=\"https://loinc.org/11329-0/\">11329-0</a></td><td>History general Narrative - Reported</td></tr><tr><td><a href=\"https://loinc.org/55115-0/\">55115-0</a></td><td>Requested imaging studies information Document</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/116224001\">116224001</a></td><td>Complication of Procedure</td></tr><tr><td><a href=\"http://snomed.info/id/410668003\">410668003</a></td><td>Length</td></tr><tr><td><a href=\"http://snomed.info/id/103355008\">103355008</a></td><td>Width</td></tr><tr><td><a href=\"http://snomed.info/id/131197000\">131197000</a></td><td>Depth</td></tr><tr><td><a href=\"http://snomed.info/id/81827009\">81827009</a></td><td>Diameter</td></tr><tr><td><a href=\"http://snomed.info/id/103339001\">103339001</a></td><td>Long Axis</td></tr><tr><td><a href=\"http://snomed.info/id/103340004\">103340004</a></td><td>Short Axis</td></tr><tr><td><a href=\"http://snomed.info/id/131187009\">131187009</a></td><td>Major Axis</td></tr><tr><td><a href=\"http://snomed.info/id/131188004\">131188004</a></td><td>Minor Axis</td></tr><tr><td><a href=\"http://snomed.info/id/131189007\">131189007</a></td><td>Perpendicular Axis</td></tr><tr><td><a href=\"http://snomed.info/id/131190003\">131190003</a></td><td>Radius</td></tr><tr><td><a href=\"http://snomed.info/id/131191004\">131191004</a></td><td>Perimeter</td></tr><tr><td><a href=\"http://snomed.info/id/74551000\">74551000</a></td><td>Circumference</td></tr><tr><td><a href=\"http://snomed.info/id/131192006\">131192006</a></td><td>Diameter of circumscribed circle</td></tr><tr><td><a href=\"http://snomed.info/id/42798000\">42798000</a></td><td>Area</td></tr><tr><td><a href=\"http://snomed.info/id/131184002\">131184002</a></td><td>Area of defined region</td></tr><tr><td><a href=\"http://snomed.info/id/118565006\">118565006</a></td><td>Volume</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-radiology-component-vs"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.48.182" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "NgResultsRadiologyComponentVS"] ;
+  fhir:ValueSet.title [ fhir:value "Results Radiology Component - IPS"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set including SNOMED CT, LOINC and DICOM concepts for textual reports, measurements, and other radiology components"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.copyright [ fhir:value "\n- This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.\n- This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://dicom.nema.org/resources/ontology/DCM" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121065" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Procedure Description" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121069" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Previous Finding" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121071" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Finding" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121073" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Impression" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121075" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Recommendation" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121077" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conclusion" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121207" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Height" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121211" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Path length" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121206" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Distance" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121216" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume estimated from single 2D region" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121218" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume estimated from two non-coplanar 2D regions" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121217" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume estimated from three or more non-coplanar 2D regions" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121222" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume of sphere" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121221" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume of ellipsoid" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121220" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume of circumscribed sphere" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "121219" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume of bounding three dimensional region" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55108-5" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clinical presentation Document" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55112-7" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Document summary" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11329-0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "History general Narrative - Reported" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55115-0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Requested imaging studies information Document" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "116224001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complication of Procedure" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "410668003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Length" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "103355008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Width" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131197000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Depth" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "81827009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diameter" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "103339001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Long Axis" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "103340004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Short Axis" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131187009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Major Axis" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131188004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Minor Axis" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131189007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perpendicular Axis" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131190003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radius" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131191004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perimeter" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74551000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Circumference" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131192006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diameter of circumscribed circle" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42798000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Area" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131184002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Area of defined region" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "118565006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Volume" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-radiology-component-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

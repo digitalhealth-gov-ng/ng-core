@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-art-register-dsd-status-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-art-register-dsd-status-cs</b></p><a name=\"ng-hiv-art-register-dsd-status-cs\"> </a><a name=\"hcng-hiv-art-register-dsd-status-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FBM1<a name=\"ng-hiv-art-register-dsd-status-cs-FBM1\"> </a></td><td>Fast-track</td></tr><tr><td style=\"white-space:nowrap\">FBM2<a name=\"ng-hiv-art-register-dsd-status-cs-FBM2\"> </a></td><td>Facility ART group: healthcare-worker led</td></tr><tr><td style=\"white-space:nowrap\">FBM3<a name=\"ng-hiv-art-register-dsd-status-cs-FBM3\"> </a></td><td>Facility ART group: support-group led</td></tr><tr><td style=\"white-space:nowrap\">FBM4<a name=\"ng-hiv-art-register-dsd-status-cs-FBM4\"> </a></td><td>Decentralisation: hub and spoke</td></tr><tr><td style=\"white-space:nowrap\">FBM5<a name=\"ng-hiv-art-register-dsd-status-cs-FBM5\"> </a></td><td>Child, teen or adolescent club: peer managed</td></tr><tr><td style=\"white-space:nowrap\">FBM6<a name=\"ng-hiv-art-register-dsd-status-cs-FBM6\"> </a></td><td>Mother–infant pair or mentor-mother led</td></tr><tr><td style=\"white-space:nowrap\">CBM1<a name=\"ng-hiv-art-register-dsd-status-cs-CBM1\"> </a></td><td>Community pharmacy ART refill</td></tr><tr><td style=\"white-space:nowrap\">CBM2<a name=\"ng-hiv-art-register-dsd-status-cs-CBM2\"> </a></td><td>Community ART refill group: healthcare-worker led</td></tr><tr><td style=\"white-space:nowrap\">CBM3<a name=\"ng-hiv-art-register-dsd-status-cs-CBM3\"> </a></td><td>Community ART refill group: PLHIV led</td></tr><tr><td style=\"white-space:nowrap\">CBM4<a name=\"ng-hiv-art-register-dsd-status-cs-CBM4\"> </a></td><td>Adolescent community ART or peer-led group</td></tr><tr><td style=\"white-space:nowrap\">CBM5<a name=\"ng-hiv-art-register-dsd-status-cs-CBM5\"> </a></td><td>Home delivery</td></tr><tr><td style=\"white-space:nowrap\">CBM6<a name=\"ng-hiv-art-register-dsd-status-cs-CBM6\"> </a></td><td>OSS or Community Service Coordination Centre</td></tr><tr><td style=\"white-space:nowrap\">CBM7<a name=\"ng-hiv-art-register-dsd-status-cs-CBM7\"> </a></td><td>Drop-in centre</td></tr><tr><td style=\"white-space:nowrap\">CBM8<a name=\"ng-hiv-art-register-dsd-status-cs-CBM8\"> </a></td><td>Courier service</td></tr><tr><td style=\"white-space:nowrap\">CBM9<a name=\"ng-hiv-art-register-dsd-status-cs-CBM9\"> </a></td><td>Closed setting</td></tr><tr><td style=\"white-space:nowrap\">ND<a name=\"ng-hiv-art-register-dsd-status-cs-ND\"> </a></td><td>Non-devolved</td></tr><tr><td style=\"white-space:nowrap\">NE<a name=\"ng-hiv-art-register-dsd-status-cs-NE\"> </a></td><td>Not eligible</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.23" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivArtRegisterDsdStatusCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV ART Register DSD Status Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Facility- and community-based differentiated-service-delivery model codes printed in column A33 of the National ART Register."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "17"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FBM1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fast-track" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FBM2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Facility ART group: healthcare-worker led" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FBM3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Facility ART group: support-group led" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FBM4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Decentralisation: hub and spoke" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FBM5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Child, teen or adolescent club: peer managed" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FBM6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mother–infant pair or mentor-mother led" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM1" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community pharmacy ART refill" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community ART refill group: healthcare-worker led" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM3" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community ART refill group: PLHIV led" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adolescent community ART or peer-led group" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Home delivery" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "OSS or Community Service Coordination Centre" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM7" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Drop-in centre" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM8" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Courier service" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM9" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Closed setting" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ND" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-devolved" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not eligible" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

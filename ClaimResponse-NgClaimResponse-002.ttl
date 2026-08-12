@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ClaimResponse/NgClaimResponse-002> a fhir:ClaimResponse ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgClaimResponse-002"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-claim-response" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-claim-response>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClaimResponse NgClaimResponse-002</b></p><a name=\"NgClaimResponse-002\"> </a><a name=\"hcNgClaimResponse-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-response.html\">NG ClaimResponse</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type pharmacy}\">Pharmacy</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>created</b>: 2025-11-04 12:50:00+0000</p><p><b>insurer</b>: <a href=\"Organization-Organization-Truth-HMO.html\">Organization Truth Health Maintenance Organization</a></p><p><b>request</b>: <a href=\"Claim-NgClaim-001.html\">Claim: identifier = https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs#CLM-2025-0001; status = active; type = Pharmacy; use = claim; created = 2025-11-04 12:30:00+0000; priority = Normal</a></p><p><b>outcome</b>: Partial Processing</p><p><b>disposition</b>: Partially approved; copay applied.</p><p><b>preAuthRef</b>: 5678</p></div>"
+  ] ;
+  fhir:ClaimResponse.status [ fhir:value "active"] ;
+  fhir:ClaimResponse.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ] ;
+       fhir:Coding.code [ fhir:value "pharmacy" ]
+     ]
+  ] ;
+  fhir:ClaimResponse.use [ fhir:value "claim"] ;
+  fhir:ClaimResponse.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:ClaimResponse.created [ fhir:value "2025-11-04T12:50:00Z"^^xsd:dateTime] ;
+  fhir:ClaimResponse.insurer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-Truth-HMO> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Truth-HMO" ]
+  ] ;
+  fhir:ClaimResponse.request [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Claim/NgClaim-001> ;
+     fhir:Reference.reference [ fhir:value "Claim/NgClaim-001" ]
+  ] ;
+  fhir:ClaimResponse.outcome [ fhir:value "partial"] ;
+  fhir:ClaimResponse.disposition [ fhir:value "Partially approved; copay applied."] ;
+  fhir:ClaimResponse.preAuthRef [ fhir:value "5678"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ClaimResponse/NgClaimResponse-002.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

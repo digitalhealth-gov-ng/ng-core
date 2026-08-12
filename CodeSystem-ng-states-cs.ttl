@@ -1,0 +1,229 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-states-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-states-cs</b></p><a name=\"ng-states-cs\"> </a><a name=\"hcng-states-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"ng-states-cs-AB\"> </a></td><td>Abia</td></tr><tr><td style=\"white-space:nowrap\">AD<a name=\"ng-states-cs-AD\"> </a></td><td>Adamawa</td></tr><tr><td style=\"white-space:nowrap\">AK<a name=\"ng-states-cs-AK\"> </a></td><td>Akwa Ibom</td></tr><tr><td style=\"white-space:nowrap\">AN<a name=\"ng-states-cs-AN\"> </a></td><td>Anambra</td></tr><tr><td style=\"white-space:nowrap\">BA<a name=\"ng-states-cs-BA\"> </a></td><td>Bauchi</td></tr><tr><td style=\"white-space:nowrap\">BY<a name=\"ng-states-cs-BY\"> </a></td><td>Bayelsa</td></tr><tr><td style=\"white-space:nowrap\">BE<a name=\"ng-states-cs-BE\"> </a></td><td>Benue</td></tr><tr><td style=\"white-space:nowrap\">BO<a name=\"ng-states-cs-BO\"> </a></td><td>Borno</td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"ng-states-cs-CR\"> </a></td><td>Cross River</td></tr><tr><td style=\"white-space:nowrap\">DE<a name=\"ng-states-cs-DE\"> </a></td><td>Delta</td></tr><tr><td style=\"white-space:nowrap\">EB<a name=\"ng-states-cs-EB\"> </a></td><td>Ebonyi</td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"ng-states-cs-ED\"> </a></td><td>Edo</td></tr><tr><td style=\"white-space:nowrap\">EK<a name=\"ng-states-cs-EK\"> </a></td><td>Ekiti</td></tr><tr><td style=\"white-space:nowrap\">EN<a name=\"ng-states-cs-EN\"> </a></td><td>Enugu</td></tr><tr><td style=\"white-space:nowrap\">GO<a name=\"ng-states-cs-GO\"> </a></td><td>Gombe</td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"ng-states-cs-IM\"> </a></td><td>Imo</td></tr><tr><td style=\"white-space:nowrap\">JI<a name=\"ng-states-cs-JI\"> </a></td><td>Jigawa</td></tr><tr><td style=\"white-space:nowrap\">KD<a name=\"ng-states-cs-KD\"> </a></td><td>Kaduna</td></tr><tr><td style=\"white-space:nowrap\">KN<a name=\"ng-states-cs-KN\"> </a></td><td>Kano</td></tr><tr><td style=\"white-space:nowrap\">KT<a name=\"ng-states-cs-KT\"> </a></td><td>Katsina</td></tr><tr><td style=\"white-space:nowrap\">KB<a name=\"ng-states-cs-KB\"> </a></td><td>Kebbi</td></tr><tr><td style=\"white-space:nowrap\">KO<a name=\"ng-states-cs-KO\"> </a></td><td>Kogi</td></tr><tr><td style=\"white-space:nowrap\">KW<a name=\"ng-states-cs-KW\"> </a></td><td>Kwara</td></tr><tr><td style=\"white-space:nowrap\">LA<a name=\"ng-states-cs-LA\"> </a></td><td>Lagos</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"ng-states-cs-NA\"> </a></td><td>Nasarawa</td></tr><tr><td style=\"white-space:nowrap\">NI<a name=\"ng-states-cs-NI\"> </a></td><td>Niger</td></tr><tr><td style=\"white-space:nowrap\">OG<a name=\"ng-states-cs-OG\"> </a></td><td>Ogun</td></tr><tr><td style=\"white-space:nowrap\">ON<a name=\"ng-states-cs-ON\"> </a></td><td>Ondo</td></tr><tr><td style=\"white-space:nowrap\">OS<a name=\"ng-states-cs-OS\"> </a></td><td>Osun</td></tr><tr><td style=\"white-space:nowrap\">OY<a name=\"ng-states-cs-OY\"> </a></td><td>Oyo</td></tr><tr><td style=\"white-space:nowrap\">PL<a name=\"ng-states-cs-PL\"> </a></td><td>Plateau</td></tr><tr><td style=\"white-space:nowrap\">RI<a name=\"ng-states-cs-RI\"> </a></td><td>Rivers</td></tr><tr><td style=\"white-space:nowrap\">SO<a name=\"ng-states-cs-SO\"> </a></td><td>Sokoto</td></tr><tr><td style=\"white-space:nowrap\">TA<a name=\"ng-states-cs-TA\"> </a></td><td>Taraba</td></tr><tr><td style=\"white-space:nowrap\">YO<a name=\"ng-states-cs-YO\"> </a></td><td>Yobe</td></tr><tr><td style=\"white-space:nowrap\">ZA<a name=\"ng-states-cs-ZA\"> </a></td><td>Zamfara</td></tr><tr><td style=\"white-space:nowrap\">FC<a name=\"ng-states-cs-FC\"> </a></td><td>Federal Capital Territory (FCT)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.101" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgStatesCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG States in Nigeria CS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "grouped-by"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "37"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abia" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Adamawa" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AK" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Akwa Ibom" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anambra" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bauchi" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bayelsa" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Benue" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Borno" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cross River" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Delta" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ebonyi" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ED" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Edo" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EK" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ekiti" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Enugu" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "GO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gombe" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Imo" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "JI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Jigawa" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kaduna" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kano" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Katsina" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KB" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kebbi" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kogi" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "KW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kwara" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lagos" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nasarawa" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "NI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Niger" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ogun" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ON" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ondo" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Osun" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oyo" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plateau" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "RI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rivers" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sokoto" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Taraba" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "YO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yobe" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ZA" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Zamfara" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "FC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Federal Capital Territory (FCT)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

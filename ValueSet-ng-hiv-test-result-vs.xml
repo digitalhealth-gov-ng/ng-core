@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-test-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-test-result-vs</b></p><a name="ng-hiv-test-result-vs"> </a><a name="hcng-hiv-test-result-vs"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA15256-3/">LA15256-3</a></td><td>Nonreactive</td></tr><tr><td><a href="https://loinc.org/LA20963-7/">LA20963-7</a></td><td>Positive for HIV 1</td></tr><tr><td><a href="https://loinc.org/LA20964-5/">LA20964-5</a></td><td>Positive for HIV 2</td></tr><tr><td><a href="https://loinc.org/LA11884-6/">LA11884-6</a></td><td>Indeterminate</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-test-result-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.140"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivTestResultVS"/>
+  <title value="HIV Test Results"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for representing a patient HIV test results."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA15256-3"/>
+        <display value="Nonreactive"/>
+      </concept>
+      <concept>
+        <code value="LA20963-7"/>
+        <display value="Positive for HIV 1"/>
+      </concept>
+      <concept>
+        <code value="LA20964-5"/>
+        <display value="Positive for HIV 2"/>
+      </concept>
+      <concept>
+        <code value="LA11884-6"/>
+        <display value="Indeterminate"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

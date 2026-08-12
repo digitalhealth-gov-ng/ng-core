@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-alert-category-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-alert-category-cs</b></p><a name=\"ng-alert-category-cs\"> </a><a name=\"hcng-alert-category-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">clinical<a name=\"ng-alert-category-cs-clinical\"> </a></td><td>Clinical</td><td>A general clinical alert that does not fall into a more specific clinical category.</td></tr><tr><td style=\"white-space:nowrap\">allergy<a name=\"ng-alert-category-cs-allergy\"> </a></td><td>Allergy</td><td>An alert concerning a known or suspected allergy or intolerance.</td></tr><tr><td style=\"white-space:nowrap\">medication<a name=\"ng-alert-category-cs-medication\"> </a></td><td>Medication</td><td>An alert concerning medication prescribing, dispensing, administration, duplication, or interaction.</td></tr><tr><td style=\"white-space:nowrap\">immunization<a name=\"ng-alert-category-cs-immunization\"> </a></td><td>Immunization</td><td>An alert concerning vaccination eligibility, contraindication, due status, administration, or follow-up.</td></tr><tr><td style=\"white-space:nowrap\">laboratory<a name=\"ng-alert-category-cs-laboratory\"> </a></td><td>Laboratory</td><td>An alert concerning an abnormal, critical, pending, or otherwise significant laboratory result.</td></tr><tr><td style=\"white-space:nowrap\">infection-control<a name=\"ng-alert-category-cs-infection-control\"> </a></td><td>Infection control</td><td>An alert concerning infection prevention, isolation, exposure, or transmission risk.</td></tr><tr><td style=\"white-space:nowrap\">safeguarding<a name=\"ng-alert-category-cs-safeguarding\"> </a></td><td>Safeguarding</td><td>An alert concerning protection, abuse, neglect, exploitation, or another safeguarding risk.</td></tr><tr><td style=\"white-space:nowrap\">public-health<a name=\"ng-alert-category-cs-public-health\"> </a></td><td>Public health</td><td>An alert concerning a notifiable condition, outbreak, surveillance event, or public-health action.</td></tr><tr><td style=\"white-space:nowrap\">administrative<a name=\"ng-alert-category-cs-administrative\"> </a></td><td>Administrative</td><td>An alert concerning an administrative, operational, eligibility, consent, or service-delivery issue.</td></tr><tr><td style=\"white-space:nowrap\">data-quality<a name=\"ng-alert-category-cs-data-quality\"> </a></td><td>Data quality</td><td>An alert concerning record completeness, identity, duplication, integrity, or another data-quality issue.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"ng-alert-category-cs-other\"> </a></td><td>Other</td><td>An alert category not represented by another code in this code system.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.2" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgAlertCategoryCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Nigeria Alert Category Code System"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-23"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Categories used to classify alerts represented using the Nigeria Alert Flag profile."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "clinical" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A general clinical alert that does not fall into a more specific clinical category." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "allergy" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Allergy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning a known or suspected allergy or intolerance." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medication" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Medication" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning medication prescribing, dispensing, administration, duplication, or interaction." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "immunization" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Immunization" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning vaccination eligibility, contraindication, due status, administration, or follow-up." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "laboratory" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laboratory" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning an abnormal, critical, pending, or otherwise significant laboratory result." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "infection-control" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Infection control" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning infection prevention, isolation, exposure, or transmission risk." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "safeguarding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Safeguarding" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning protection, abuse, neglect, exploitation, or another safeguarding risk." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "public-health" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Public health" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning a notifiable condition, outbreak, surveillance event, or public-health action." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "administrative" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Administrative" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning an administrative, operational, eligibility, consent, or service-delivery issue." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "data-quality" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Data quality" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert concerning record completeness, identity, duplication, integrity, or another data-quality issue." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An alert category not represented by another code in this code system." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

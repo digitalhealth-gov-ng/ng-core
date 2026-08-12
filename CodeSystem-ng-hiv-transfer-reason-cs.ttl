@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-transfer-reason-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-transfer-reason-cs</b></p><a name=\"ng-hiv-transfer-reason-cs\"> </a><a name=\"hcng-hiv-transfer-reason-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">relocating<a name=\"ng-hiv-transfer-reason-cs-relocating\"> </a></td><td>Relocating</td><td>The client is relocating from the area served by the transferring facility.</td></tr><tr><td style=\"white-space:nowrap\">closer-new-facility<a name=\"ng-hiv-transfer-reason-cs-closer-new-facility\"> </a></td><td>Closeness to new facility</td><td>The receiving facility is more conveniently located for the client.</td></tr><tr><td style=\"white-space:nowrap\">self-transfer<a name=\"ng-hiv-transfer-reason-cs-self-transfer\"> </a></td><td>Self transfer</td><td>The client independently requested or initiated transfer to another treatment site.</td></tr><tr><td style=\"white-space:nowrap\">stigma<a name=\"ng-hiv-transfer-reason-cs-stigma\"> </a></td><td>Stigma</td><td>The client is transferring because of experienced or anticipated HIV-related stigma.</td></tr><tr><td style=\"white-space:nowrap\">pmtct<a name=\"ng-hiv-transfer-reason-cs-pmtct\"> </a></td><td>PMTCT</td><td>The client is transferring for prevention of mother-to-child transmission services.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.84" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivTransferReasonCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV Care and Treatment Transfer Reasons"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Reasons for transferring a client between HIV treatment sites, transcribed from the November 2025 HIV Care and Treatment Transfer Form."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "relocating" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Relocating" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client is relocating from the area served by the transferring facility." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "closer-new-facility" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Closeness to new facility" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The receiving facility is more conveniently located for the client." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "self-transfer" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Self transfer" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client independently requested or initiated transfer to another treatment site." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stigma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stigma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client is transferring because of experienced or anticipated HIV-related stigma." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pmtct" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PMTCT" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client is transferring for prevention of mother-to-child transmission services." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CoverageEligibilityResponse xmlns="http://hl7.org/fhir">
+  <id value="NgCoverageEligibilityResponse-ChikaEmergency"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-response"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CoverageEligibilityResponse NgCoverageEligibilityResponse-ChikaEmergency</b></p><a name="NgCoverageEligibilityResponse-ChikaEmergency"> </a><a name="hcNgCoverageEligibilityResponse-ChikaEmergency"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-coverage-eligibility-response.html">NG Claim Coverage Eligibility Response</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs</code>/ELAPPROVE01</p><p><b>status</b>: Active</p><p><b>purpose</b>: Coverage benefits</p><p><b>patient</b>: <a href="Patient-Patient-Chika-Okafor.html">Chika Okafor</a></p><p><b>created</b>: 2025-11-06 23:47:03+0100</p><p><b>requestor</b>: <a href="Organization-Organization-PortHarcourt-Hospital.html">Port Harcourt Emergency Hospital</a></p><p><b>request</b>: <a href="CoverageEligibilityRequest-NgCoverageEligibilityRequest-ChikaEmergency.html">CoverageEligibilityRequest: identifier = https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs#ELAPPROVE01; status = active; purpose = validation; created = 2025-11-06 23:47:00+0100</a></p><p><b>outcome</b>: Processing Complete</p><p><b>insurer</b>: <a href="Organization-Organization-Truth-HMO.html">Truth HMO</a></p></div>
+  </text>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs"/>
+    <value value="ELAPPROVE01"/>
+  </identifier>
+  <status value="active"/>
+  <purpose value="benefits"/>
+  <patient>
+    <reference value="Patient/Patient-Chika-Okafor"/>
+    <display value="Chika Okafor"/>
+  </patient>
+  <created value="2025-11-06T23:47:03+01:00"/>
+  <requestor>
+    <reference value="Organization/Organization-PortHarcourt-Hospital"/>
+    <display value="Port Harcourt Emergency Hospital"/>
+  </requestor>
+  <request>
+    <reference value="CoverageEligibilityRequest/NgCoverageEligibilityRequest-ChikaEmergency"/>
+  </request>
+  <outcome value="complete"/>
+  <insurer>
+    <reference value="Organization/Organization-Truth-HMO"/>
+    <display value="Truth HMO"/>
+  </insurer>
+</CoverageEligibilityResponse>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="NgRelatedPerson-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson NgRelatedPerson-001</b></p><a name="NgRelatedPerson-001"> </a><a name="hcNgRelatedPerson-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-related-person.html">NG RelatedPerson</a></p></div><p><b>patient</b>: <a href="Patient-NgPatient-003.html">Suleiman Bala  Male, DoB: 2019-09-05 ( birthcert)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode BRO}">brother</span></p><p><b>name</b>: Ibrahim Abdullahi </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 2015-07-12</p></div>
+  </text>
+  <patient>
+    <reference value="Patient/NgPatient-003"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="BRO"/>
+      <display value="brother"/>
+    </coding>
+  </relationship>
+  <name>
+    <family value="Abdullahi"/>
+    <given value="Ibrahim"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="2015-07-12"/>
+</RelatedPerson>

@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-001> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgOrganization-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization NgOrganization-001</b></p><a name=\"NgOrganization-001\"> </a><a name=\"hcNgOrganization-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-organization.html\">NG Organization</a></p></div><p><b>NG Owner of Facility</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs public}\">Public Health Institution Location</span></p><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code>/HOSPITAL1234</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs hospital}\">Secondary Hospital</span></p><p><b>name</b>: Asokoro District Hospital</p><p><b>telecom</b>: <a href=\"tel:+234-800-111-2222\">+234-800-111-2222</a>, <a href=\"mailto:info@asokorodh.example.ng\">info@asokorodh.example.ng</a></p><p><b>address</b>: Plot 12, Yakubu Gowon Crescent, Asokoro Abuja FC </p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs" ] ;
+         fhir:Coding.code [ fhir:value "public" ] ;
+         fhir:Coding.display [ fhir:value "Public Health Institution Location" ]
+       ]
+     ]
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs" ] ;
+     fhir:Identifier.value [ fhir:value "HOSPITAL1234" ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs" ] ;
+       fhir:Coding.code [ fhir:value "hospital" ] ;
+       fhir:Coding.display [ fhir:value "Secondary Hospital" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Secondary Hospital" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Asokoro District Hospital"] ;
+  fhir:Organization.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+234-800-111-2222" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "info@asokorodh.example.ng" ]
+  ] ;
+  fhir:Organization.address [
+     fhir:index 0 ;
+     fhir:Address.line [
+       fhir:value "Plot 12, Yakubu Gowon Crescent, Asokoro" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Abuja" ] ;
+     fhir:Address.district [ fhir:value "fc-municipal" ] ;
+     fhir:Address.state [ fhir:value "FC" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

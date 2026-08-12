@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-alert-code-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-alert-code-cs</b></p><a name="ng-alert-code-cs"> </a><a name="hcng-alert-code-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-code-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">contraindication<a name="ng-alert-code-cs-contraindication"> </a></td><td>Contraindication</td><td>A clinical contraindication relevant to a planned intervention, medication, immunization, or procedure.</td></tr><tr><td style="white-space:nowrap">allergy-risk<a name="ng-alert-code-cs-allergy-risk"> </a></td><td>Allergy risk</td><td>A known or suspected allergy or intolerance risk requiring attention.</td></tr><tr><td style="white-space:nowrap">medication-interaction<a name="ng-alert-code-cs-medication-interaction"> </a></td><td>Medication interaction</td><td>A possible clinically significant interaction involving one or more medications.</td></tr><tr><td style="white-space:nowrap">duplicate-therapy<a name="ng-alert-code-cs-duplicate-therapy"> </a></td><td>Duplicate therapy</td><td>Potentially duplicative medication or treatment has been identified.</td></tr><tr><td style="white-space:nowrap">missed-dose<a name="ng-alert-code-cs-missed-dose"> </a></td><td>Missed dose</td><td>A scheduled medication or immunization dose was not administered as expected.</td></tr><tr><td style="white-space:nowrap">dose-due<a name="ng-alert-code-cs-dose-due"> </a></td><td>Dose due</td><td>A scheduled medication or immunization dose is currently due.</td></tr><tr><td style="white-space:nowrap">dose-overdue<a name="ng-alert-code-cs-dose-overdue"> </a></td><td>Dose overdue</td><td>A scheduled medication or immunization dose is overdue.</td></tr><tr><td style="white-space:nowrap">abnormal-result<a name="ng-alert-code-cs-abnormal-result"> </a></td><td>Abnormal result</td><td>A clinical or diagnostic result is outside its expected or acceptable range.</td></tr><tr><td style="white-space:nowrap">critical-result<a name="ng-alert-code-cs-critical-result"> </a></td><td>Critical result</td><td>A critical clinical or diagnostic result requires urgent review or action.</td></tr><tr><td style="white-space:nowrap">pending-result<a name="ng-alert-code-cs-pending-result"> </a></td><td>Pending result</td><td>A clinically relevant diagnostic result is still pending.</td></tr><tr><td style="white-space:nowrap">infection-risk<a name="ng-alert-code-cs-infection-risk"> </a></td><td>Infection risk</td><td>An infection, exposure, or transmission risk requires attention or precautions.</td></tr><tr><td style="white-space:nowrap">isolation-required<a name="ng-alert-code-cs-isolation-required"> </a></td><td>Isolation required</td><td>The subject requires isolation or specific infection-prevention precautions.</td></tr><tr><td style="white-space:nowrap">safeguarding-concern<a name="ng-alert-code-cs-safeguarding-concern"> </a></td><td>Safeguarding concern</td><td>A safeguarding concern requires review or protective action.</td></tr><tr><td style="white-space:nowrap">possible-duplicate-record<a name="ng-alert-code-cs-possible-duplicate-record"> </a></td><td>Possible duplicate record</td><td>The subject may have more than one health record.</td></tr><tr><td style="white-space:nowrap">identity-mismatch<a name="ng-alert-code-cs-identity-mismatch"> </a></td><td>Identity mismatch</td><td>Demographic, biometric, or identifier information may not match the intended subject.</td></tr><tr><td style="white-space:nowrap">data-quality-issue<a name="ng-alert-code-cs-data-quality-issue"> </a></td><td>Data quality issue</td><td>A data-quality, completeness, consistency, or record-integrity issue requires review.</td></tr><tr><td style="white-space:nowrap">consent-restriction<a name="ng-alert-code-cs-consent-restriction"> </a></td><td>Consent restriction</td><td>A consent directive limits access, disclosure, or use of the subject's information.</td></tr><tr><td style="white-space:nowrap">follow-up-required<a name="ng-alert-code-cs-follow-up-required"> </a></td><td>Follow-up required</td><td>The subject requires clinical, public-health, or administrative follow-up.</td></tr><tr><td style="white-space:nowrap">referral-required<a name="ng-alert-code-cs-referral-required"> </a></td><td>Referral required</td><td>Referral to another provider, facility, service, or level of care is required.</td></tr><tr><td style="white-space:nowrap">reporting-required<a name="ng-alert-code-cs-reporting-required"> </a></td><td>Reporting required</td><td>A statutory, programmatic, or public-health report or notification must be submitted.</td></tr><tr><td style="white-space:nowrap">urgent-review<a name="ng-alert-code-cs-urgent-review"> </a></td><td>Urgent review</td><td>The subject's information or clinical status requires urgent review.</td></tr><tr><td style="white-space:nowrap">other<a name="ng-alert-code-cs-other"> </a></td><td>Other</td><td>An alert type not represented by another code in this code system.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-code-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.3"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgAlertCodeCS"/>
+  <title value="Nigeria Alert Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-23"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Common alert types used by Nigerian health information systems and represented using the Nigeria Alert Flag profile."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <compositional value="false"/>
+  <content value="complete"/>
+  <count value="22"/>
+  <concept>
+    <code value="contraindication"/>
+    <display value="Contraindication"/>
+    <definition value="A clinical contraindication relevant to a planned intervention, medication, immunization, or procedure."/>
+  </concept>
+  <concept>
+    <code value="allergy-risk"/>
+    <display value="Allergy risk"/>
+    <definition value="A known or suspected allergy or intolerance risk requiring attention."/>
+  </concept>
+  <concept>
+    <code value="medication-interaction"/>
+    <display value="Medication interaction"/>
+    <definition value="A possible clinically significant interaction involving one or more medications."/>
+  </concept>
+  <concept>
+    <code value="duplicate-therapy"/>
+    <display value="Duplicate therapy"/>
+    <definition value="Potentially duplicative medication or treatment has been identified."/>
+  </concept>
+  <concept>
+    <code value="missed-dose"/>
+    <display value="Missed dose"/>
+    <definition value="A scheduled medication or immunization dose was not administered as expected."/>
+  </concept>
+  <concept>
+    <code value="dose-due"/>
+    <display value="Dose due"/>
+    <definition value="A scheduled medication or immunization dose is currently due."/>
+  </concept>
+  <concept>
+    <code value="dose-overdue"/>
+    <display value="Dose overdue"/>
+    <definition value="A scheduled medication or immunization dose is overdue."/>
+  </concept>
+  <concept>
+    <code value="abnormal-result"/>
+    <display value="Abnormal result"/>
+    <definition value="A clinical or diagnostic result is outside its expected or acceptable range."/>
+  </concept>
+  <concept>
+    <code value="critical-result"/>
+    <display value="Critical result"/>
+    <definition value="A critical clinical or diagnostic result requires urgent review or action."/>
+  </concept>
+  <concept>
+    <code value="pending-result"/>
+    <display value="Pending result"/>
+    <definition value="A clinically relevant diagnostic result is still pending."/>
+  </concept>
+  <concept>
+    <code value="infection-risk"/>
+    <display value="Infection risk"/>
+    <definition value="An infection, exposure, or transmission risk requires attention or precautions."/>
+  </concept>
+  <concept>
+    <code value="isolation-required"/>
+    <display value="Isolation required"/>
+    <definition value="The subject requires isolation or specific infection-prevention precautions."/>
+  </concept>
+  <concept>
+    <code value="safeguarding-concern"/>
+    <display value="Safeguarding concern"/>
+    <definition value="A safeguarding concern requires review or protective action."/>
+  </concept>
+  <concept>
+    <code value="possible-duplicate-record"/>
+    <display value="Possible duplicate record"/>
+    <definition value="The subject may have more than one health record."/>
+  </concept>
+  <concept>
+    <code value="identity-mismatch"/>
+    <display value="Identity mismatch"/>
+    <definition value="Demographic, biometric, or identifier information may not match the intended subject."/>
+  </concept>
+  <concept>
+    <code value="data-quality-issue"/>
+    <display value="Data quality issue"/>
+    <definition value="A data-quality, completeness, consistency, or record-integrity issue requires review."/>
+  </concept>
+  <concept>
+    <code value="consent-restriction"/>
+    <display value="Consent restriction"/>
+    <definition value="A consent directive limits access, disclosure, or use of the subject's information."/>
+  </concept>
+  <concept>
+    <code value="follow-up-required"/>
+    <display value="Follow-up required"/>
+    <definition value="The subject requires clinical, public-health, or administrative follow-up."/>
+  </concept>
+  <concept>
+    <code value="referral-required"/>
+    <display value="Referral required"/>
+    <definition value="Referral to another provider, facility, service, or level of care is required."/>
+  </concept>
+  <concept>
+    <code value="reporting-required"/>
+    <display value="Reporting required"/>
+    <definition value="A statutory, programmatic, or public-health report or notification must be submitted."/>
+  </concept>
+  <concept>
+    <code value="urgent-review"/>
+    <display value="Urgent review"/>
+    <definition value="The subject's information or clinical status requires urgent review."/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <definition value="An alert type not represented by another code in this code system."/>
+  </concept>
+</CodeSystem>

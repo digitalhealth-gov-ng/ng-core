@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-kp-typology-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-kp-typology-vs</b></p><a name="ng-hiv-kp-typology-vs"> </a><a name="hcng-hiv-kp-typology-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-care-art-codes-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-kp-typology-1">kp-typology-1</a></td><td style="color: #cccccc">MSM</td><td>Source form code 1: Men who have sex with men.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-kp-typology-2">kp-typology-2</a></td><td style="color: #cccccc">FSW</td><td>Source form code 2: Female sex workers.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-kp-typology-3">kp-typology-3</a></td><td style="color: #cccccc">PWID</td><td>Source form code 3: People who inject drugs.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-kp-typology-4">kp-typology-4</a></td><td style="color: #cccccc">TG</td><td>Source form code 4: Transgender persons.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-kp-typology-5">kp-typology-5</a></td><td style="color: #cccccc">Persons in custodial centers</td><td>Source form code 5.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-kp-typology-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.98"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivKpTypologyVS"/>
+  <title value="NG HIV Key Population Typology"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-27"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Key-population typology codes used on the Nigeria HIV Care/ART Card."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"/>
+      <concept>
+        <code value="kp-typology-1"/>
+      </concept>
+      <concept>
+        <code value="kp-typology-2"/>
+      </concept>
+      <concept>
+        <code value="kp-typology-3"/>
+      </concept>
+      <concept>
+        <code value="kp-typology-4"/>
+      </concept>
+      <concept>
+        <code value="kp-typology-5"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

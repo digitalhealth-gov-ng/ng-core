@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CoverageEligibilityResponse/NgCoverageEligibilityResponse-ChikaXrayApproved> a fhir:CoverageEligibilityResponse ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgCoverageEligibilityResponse-ChikaXrayApproved"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-response" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-response>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CoverageEligibilityResponse NgCoverageEligibilityResponse-ChikaXrayApproved</b></p><a name=\"NgCoverageEligibilityResponse-ChikaXrayApproved\"> </a><a name=\"hcNgCoverageEligibilityResponse-ChikaXrayApproved\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-coverage-eligibility-response.html\">NG Claim Coverage Eligibility Response</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs</code>/ELAPPROVE02</p><p><b>status</b>: Active</p><p><b>purpose</b>: Coverage Validation</p><p><b>patient</b>: <a href=\"Patient-Patient-Chika-Okafor.html\">Chika Okafor</a></p><p><b>created</b>: 2025-11-07 00:09:00+0100</p><p><b>requestor</b>: <a href=\"Organization-Organization-PortHarcourt-Hospital.html\">Port Harcourt Emergency Hospital</a></p><p><b>request</b>: <a href=\"CoverageEligibilityRequest-NgCoverageEligibilityRequest-ChikaEmergency.html\">CoverageEligibilityRequest: identifier = https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs#ELAPPROVE01; status = active; purpose = validation; created = 2025-11-06 23:47:00+0100</a></p><p><b>outcome</b>: Processing Complete</p><p><b>disposition</b>: Pre-authorization APPROVED. Approved amount: ₦15,000. Patient copay: ₦1,500. Authorization code: PA-2025-8847. Valid until: 10-Nov-2025.</p><p><b>insurer</b>: <a href=\"Organization-Organization-Truth-HMO.html\">Truth HMO</a></p><blockquote><p><b>insurance</b></p><p><b>coverage</b>: <a href=\"Coverage-Coverage-Chika-TruthHMO.html\">Truth HMO Policy - Chika Okafor</a></p><p><b>inforce</b>: true</p><blockquote><p><b>item</b></p><p><b>productOrService</b>: <span title=\"Codes:{http://www.ama-assn.org/go/cpt 73610}\">Ankle X-ray - Right ankle sprain (ICD-10: S93.4)</span></p><p><b>description</b>: Pre-authorization approved for emergency ankle X-ray. Valid until 10-Nov-2025.</p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/benefit-type benefit}\">Benefit</span></p><p><b>allowed</b>: <span title=\"Nigerian Naira\">NGN15,000.00</span> (NGN)</p><p><b>used</b>: <span title=\"Nigerian Naira\">NGN0.00</span> (NGN)</p></blockquote><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/benefit-type copay}\">Copayment per service</span></p><p><b>allowed</b>: <span title=\"Nigerian Naira\">NGN1,500.00</span> (NGN)</p></blockquote><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/benefit-type room}\">HMO Coverage Amount</span></p><p><b>allowed</b>: <span title=\"Nigerian Naira\">NGN13,500.00</span> (NGN)</p></blockquote><p><b>authorizationRequired</b>: true</p><p><b>authorizationSupporting</b>: <span title=\"Codes:\">Emergency presentation with suspected fracture</span></p></blockquote></blockquote><p><b>preAuthRef</b>: PA-2025-8847</p></div>"
+  ] ;
+  fhir:CoverageEligibilityResponse.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs" ] ;
+     fhir:Identifier.value [ fhir:value "ELAPPROVE02" ]
+  ] ;
+  fhir:CoverageEligibilityResponse.status [ fhir:value "active"] ;
+  fhir:CoverageEligibilityResponse.purpose [
+     fhir:value "validation" ;
+     fhir:index 0
+  ] ;
+  fhir:CoverageEligibilityResponse.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/Patient-Chika-Okafor> ;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-Chika-Okafor" ] ;
+     fhir:Reference.display [ fhir:value "Chika Okafor" ]
+  ] ;
+  fhir:CoverageEligibilityResponse.created [ fhir:value "2025-11-07T00:09:00+01:00"^^xsd:dateTime] ;
+  fhir:CoverageEligibilityResponse.requestor [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-PortHarcourt-Hospital> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-PortHarcourt-Hospital" ] ;
+     fhir:Reference.display [ fhir:value "Port Harcourt Emergency Hospital" ]
+  ] ;
+  fhir:CoverageEligibilityResponse.request [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/CoverageEligibilityRequest/NgCoverageEligibilityRequest-ChikaEmergency> ;
+     fhir:Reference.reference [ fhir:value "CoverageEligibilityRequest/NgCoverageEligibilityRequest-ChikaEmergency" ]
+  ] ;
+  fhir:CoverageEligibilityResponse.outcome [ fhir:value "complete"] ;
+  fhir:CoverageEligibilityResponse.disposition [ fhir:value "Pre-authorization APPROVED. Approved amount: ₦15,000. Patient copay: ₦1,500. Authorization code: PA-2025-8847. Valid until: 10-Nov-2025."] ;
+  fhir:CoverageEligibilityResponse.insurer [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/Organization-Truth-HMO> ;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Truth-HMO" ] ;
+     fhir:Reference.display [ fhir:value "Truth HMO" ]
+  ] ;
+  fhir:CoverageEligibilityResponse.insurance [
+     fhir:index 0 ;
+     fhir:CoverageEligibilityResponse.insurance.coverage [
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/Coverage/Coverage-Chika-TruthHMO> ;
+       fhir:Reference.reference [ fhir:value "Coverage/Coverage-Chika-TruthHMO" ] ;
+       fhir:Reference.display [ fhir:value "Truth HMO Policy - Chika Okafor" ]
+     ] ;
+     fhir:CoverageEligibilityResponse.insurance.inforce [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:CoverageEligibilityResponse.insurance.item [
+       fhir:index 0 ;
+       fhir:CoverageEligibilityResponse.insurance.item.productOrService [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://www.ama-assn.org/go/cpt" ] ;
+           fhir:Coding.code [ fhir:value "73610" ] ;
+           fhir:Coding.display [ fhir:value "Radiologic examination, ankle; complete, minimum of 3 views" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Ankle X-ray - Right ankle sprain (ICD-10: S93.4)" ]
+       ] ;
+       fhir:CoverageEligibilityResponse.insurance.item.description [ fhir:value "Pre-authorization approved for emergency ankle X-ray. Valid until 10-Nov-2025." ] ;
+       fhir:CoverageEligibilityResponse.insurance.item.benefit [
+         fhir:index 0 ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/benefit-type" ] ;
+             fhir:Coding.code [ fhir:value "benefit" ] ;
+             fhir:Coding.display [ fhir:value "Benefit" ]
+           ]
+         ] ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.allowedMoney [
+           fhir:Money.value [ fhir:value "15000"^^xsd:decimal ] ;
+           fhir:Money.currency [ fhir:value "NGN" ]
+         ] ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.usedMoney [
+           fhir:Money.value [ fhir:value "0"^^xsd:decimal ] ;
+           fhir:Money.currency [ fhir:value "NGN" ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/benefit-type" ] ;
+             fhir:Coding.code [ fhir:value "copay" ] ;
+             fhir:Coding.display [ fhir:value "Copayment per service" ]
+           ]
+         ] ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.allowedMoney [
+           fhir:Money.value [ fhir:value "1500"^^xsd:decimal ] ;
+           fhir:Money.currency [ fhir:value "NGN" ]
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/benefit-type" ] ;
+             fhir:Coding.code [ fhir:value "room" ] ;
+             fhir:Coding.display [ fhir:value "Room" ]
+           ] ;
+           fhir:CodeableConcept.text [ fhir:value "HMO Coverage Amount" ]
+         ] ;
+         fhir:CoverageEligibilityResponse.insurance.item.benefit.allowedMoney [
+           fhir:Money.value [ fhir:value "13500"^^xsd:decimal ] ;
+           fhir:Money.currency [ fhir:value "NGN" ]
+         ]
+       ] ;
+       fhir:CoverageEligibilityResponse.insurance.item.authorizationRequired [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:CoverageEligibilityResponse.insurance.item.authorizationSupporting [
+         fhir:index 0 ;
+         fhir:CodeableConcept.text [ fhir:value "Emergency presentation with suspected fracture" ]
+       ]
+     ]
+  ] ;
+  fhir:CoverageEligibilityResponse.preAuthRef [ fhir:value "PA-2025-8847"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CoverageEligibilityResponse/NgCoverageEligibilityResponse-ChikaXrayApproved.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1010 @@
+{
+  "codeSystems" : [{
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/age-component-codes-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgAgeComponentCodesCS",
+    "title" : "NG Age Component Codes",
+    "description" : "Local CodeSystem for age components: units, comparison operators, and common MNCH/EPI age bands for use in measures, decision logic, and stratification.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.1"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgAlertCategoryCS",
+    "title" : "Nigeria Alert Category Code System",
+    "description" : "Categories used to classify alerts represented using the Nigeria Alert Flag profile.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.2"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-code-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgAlertCodeCS",
+    "title" : "Nigeria Alert Code System",
+    "description" : "Common alert types used by Nigerian health information systems and represented using the Nigeria Alert Flag profile.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.3"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgATCLocalMedicationCS",
+    "title" : "NG Local ATC Medication Codes",
+    "description" : "Local ATC. Codes are placeholders aligned to common maternal, newborn, and child health needs, plus EPI vaccines.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.4"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-bundle-identifier-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgBundleIdentifierCS",
+    "title" : "NG Bundle Identifier Codes",
+    "description" : "Local CodeSystem defining standard bundle identifiers.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.5"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-activity-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgCareplanActivityCS",
+    "title" : "NG CarePlan Activity Codes",
+    "description" : "Activities for CarePlan.activity.detail.code.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.6"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-careplan-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgCareplanCategoryCS",
+    "title" : "NG CarePlan Category Codes",
+    "description" : "Categories for CarePlan.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.7"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-children-developmental-milestone-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgChildrenDevelopmentalMilestoneCS",
+    "title" : "Children Developmental Milestone Codes CodeSystem",
+    "description" : "Code used for representing the child's developmental milestone.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.8"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgClaimProductOrServiceCS",
+    "title" : "NG Claim Product/Service Codes",
+    "description" : "Nigeria-specific productOrService codes.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.9"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-clinical-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgClinicalStatusCS",
+    "title" : "NG Adverse Event CS",
+    "description" : "A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.10"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgDeviceIdentifierCS",
+    "title" : "NG Electromechanical Medical Device Identifier CS",
+    "description" : "Simplified CodeSystem of 50 placeholder identifiers for electromechanical medical devices (vital signs, analyzers, imaging/DICOM, bedside, handheld, IoT).",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.11"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-metric-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgDeviceMetricCategoryCS",
+    "title" : "NG DeviceMetric Category Codes",
+    "description" : "Local mirror of DeviceMetric.category. Consider using 'http://terminology.hl7.org/CodeSystem/metric-category' in production.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.12"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgDevicetypeCS",
+    "title" : "NG DeviceType Codes",
+    "description" : "Local mirror of Device Type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.13"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgEligibilityRequestIdCS",
+    "title" : "Eligibility Request ID CodeSystem",
+    "description" : "Local codes to identify the type used for an Eligibility Request identifier.\nIntended for use in CoverageEligibilityRequest.identifier.type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.14"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgFacilityIdentifierCS",
+    "title" : "NG Facility Identifier CS",
+    "description" : "This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifiers in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.15"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgFacilityTypeCS",
+    "title" : "NG Facility Type CS",
+    "description" : "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.16"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivAbsentUnknownCS",
+    "title" : "HIV Absent or Unknown CodeSystem",
+    "description" : "Codes used for indicating when a value is absent or unknown.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.17"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-eligibility-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARTEligibilityStatusCS",
+    "title" : "HIV Eligility Status for ART Codes",
+    "description" : "Observation codes used for indicating patient eligibility for ART.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.18"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARTFollowUpStatusCS",
+    "title" : "HIV Follow Up Status CodeSystem",
+    "description" : "A list of codes describing the follow up statuses",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.19"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtMonthlySummaryCS",
+    "title" : "NG HIV ART Monthly Summary Codes",
+    "description" : "Indicator, stratifier-dimension and local disaggregation codes for the Nigeria ART Monthly Summary Form revised November 2025.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.20"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cervical-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterCervicalStatusCS",
+    "title" : "NG HIV ART Register Cervical Cancer Screening Status Codes",
+    "description" : "Combined cervical-cancer screening workflow statuses printed in column A27 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.21"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cryptococcal-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterCryptococcalStatusCS",
+    "title" : "NG HIV ART Register Cryptococcal Status Codes",
+    "description" : "Cryptococcal screening and treatment-state codes printed in column A25 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.22"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-dsd-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterDsdStatusCS",
+    "title" : "NG HIV ART Register DSD Status Codes",
+    "description" : "Facility- and community-based differentiated-service-delivery model codes printed in column A33 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.23"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-hepatitis-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterHepatitisStatusCS",
+    "title" : "NG HIV ART Register Hepatitis Screening Codes",
+    "description" : "Hepatitis screening and treatment codes printed in column A28 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.24"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-regimen-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterRegimenCS",
+    "title" : "NG HIV ART Register Regimen Codes",
+    "description" : "Adult and paediatric first-, second- and third-line ART regimen codes printed on the November 2025 National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.25"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-tb-status-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterTbStatusCS",
+    "title" : "NG HIV ART Register TB Status Codes",
+    "description" : "Combined TB screening, diagnostic and treatment status codes printed on column A20 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.26"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-tpt-outcome-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivArtRegisterTptOutcomeCS",
+    "title" : "NG HIV ART Register TPT Outcome Codes",
+    "description" : "TB preventive-therapy outcome codes printed in column A22 of the National ART Register.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.27"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVAdherenceCS",
+    "title" : "HIV-ARV Adherence CodeSystem",
+    "description" : "ARV Adherence",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.28"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-change-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVRegimenChangeCategoryCS",
+    "title" : "HIV ARV Regimen Change Category",
+    "description" : "Codes used for representing the category for the ARV regimen change.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.29"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-substitute-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVRegimenSubstituteTypeCS",
+    "title" : "HIV ARV Regimen Substitue Type",
+    "description" : "Codes used for representing the type for the ARV regimen substitued.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.30"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-switch-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVRegimenSwitchTypeCS",
+    "title" : "ARV Regimen Switch Type",
+    "description" : "Codes used for representing the type for the ARV regimen switched.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.31"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-treatment-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivARVTreatmentCS",
+    "title" : "HIV ARV Drugs CodeSystem",
+    "description" : "A list of codes describing the ARV Drugs.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.32"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCareArtCodesCS",
+    "title" : "NG HIV Care and ART Codes",
+    "description" : "Local codes transcribed from the Nigeria HIV Care/ART Card for coded answers\nused by the HIV care and ART Questionnaire.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.33"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-plan-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCarePlanCategoryCS",
+    "title" : "HIV-Care Plan Categories CodeSystem",
+    "description" : "A list of codes describing Care Plan categories.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.34"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCD4AndVLClassificationForTreatmentFailureCS",
+    "title" : "HIV Viral Load/CD4 Count Classifications CodeSystem",
+    "description" : "Codes used for indicating the classification for the Viral Load/CD4 count treatment failure.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.35"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningHPVResultsCS",
+    "title" : "HIV-Cervical Cancer Screening Results CodeSystem",
+    "description" : "A list of codes describing the Cervical Cancer Screening Results",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.36"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-method-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningMethodCS",
+    "title" : "HIV-Cervical Cancer Screening Method CodeSystem",
+    "description" : "A list of codes describing the Cervical Cancer Screening Method",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.37"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningTypeCS",
+    "title" : "HIV Cervical Cancer Screening Type",
+    "description" : "Codes used for representing the cervical screening type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.38"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-via-result-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivCervicalCancerScreeningVIAResultsCS",
+    "title" : "HIV-Cervical Cancer Screening Results CodeSyetem",
+    "description" : "A list of codes describing the Cervical Cancer Screening Results",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.39"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-assessment-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDAssessmentCS",
+    "title" : "HIV Differentiated Service Delivery",
+    "description" : "Code used for indicating a DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.40"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-assessment-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDAssessmentStatusCS",
+    "title" : "Differentiated Service Delivery - Assessment Status",
+    "description" : "Code used for indicating the status of the DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.41"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDCategoryCS",
+    "title" : "HIV DSD - Category CodeSystem",
+    "description" : "Code used for indicating the category for the DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.42"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDSDReasonForCategoryChangeCS",
+    "title" : "HIV DSD - Reason For Category Change CodeSystem",
+    "description" : "Code used for indicating the reason for the category change for the DSD assessment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.43"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-form-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEacFormCS",
+    "title" : "NG HIV Enhanced Adherence Counselling Form Codes",
+    "description" : "Local coded answers transcribed from the Nigeria Enhanced Adherence\nCounselling Form for adherence assessment, adherence barriers, service\ninterventions and intervention tools.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.44"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-given-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEACGivenCS",
+    "title" : "HIV EAC Given CodeSystem",
+    "description" : "Codes used for representing the Enhanced Adherence Councilling (EAC) given.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.45"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-register-virologic-failure-cause-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivEacRegisterVirologicFailureCauseCS",
+    "title" : "NG HIV EAC Register Suspected Causes of Virologic Failure",
+    "description" : "Codes printed in the Enhanced Adherence Counselling Monitoring Register for\nrecording the suspected cause or causes of virologic failure after EAC.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.46"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-service-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEncounterServiceTypeCS",
+    "title" : "HIV Proprietary Service Type",
+    "description" : "Codes used for indicating a proprietary encounter service type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.47"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-type-for-entry-from-outside-facility-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEncounterTypeForEntryFromOutsideFacilityCS",
+    "title" : "Encounter Type Code For Entry From Outside Facility",
+    "description" : "Code used for indicating that an encounter was captured to represent an entry point from outside the facility.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.48"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-visit-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEncounterVisitTypeCS",
+    "title" : "HIV-Nature of Encounter CodeSystem",
+    "description" : "A list of codes describing the nature of the patient visit to the health facility",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.49"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivEnhancedAdherenceCounsellingCS",
+    "title" : "Enhanced Adherence Counselling",
+    "description" : "Code used for indicating a proprietary enhanced adherence counselling",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.50"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-family-index-case-contacts-questionnaire-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivFamilyIndexCaseContactsQuestionnairesCS",
+    "title" : "HIV Family Index Case Contacts Questionnaire",
+    "description" : "Proprietary Codes used in the Family Index Case Contacts Questionnaire.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.51"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivFinalOutcomeCS",
+    "title" : "HIV - Final Outcome CodeSystem",
+    "description" : "Final Outcome",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.52"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivIndexCasePartnerQuestionnaireCS",
+    "title" : "HIV Index Case Sex Partner Questionnaire",
+    "description" : "Proprietary Codes used in the Index Case Partner Questionnaire.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.53"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivIntLabFormCS",
+    "title" : "NG HIV Integrated Laboratory Form Codes",
+    "description" : "Local coded answer concepts transcribed or inferred from the Nigeria HIV\nIntegrated Laboratory Order and Result Form revised November 2025.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.54"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-register-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivIntLabRegisterCS",
+    "title" : "NG HIV Integrated Laboratory Monitoring Register Codes",
+    "description" : "Local codes required to represent the Integrated Laboratory Monitoring\nRegister revised November 2025. The source workbook does not provide a complete\nEID-entry-point legend or a POC error-code catalogue; those values are therefore\nrepresented using existing terminology or free text in the logical model.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.55"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-occupation-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivOccupationCS",
+    "title" : "HIV Occupation Codes",
+    "description" : "Codes used for representing the patient's occupation",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.56"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-and-fbict-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPartnerAndFBICTCS",
+    "title" : "HIV Partner and FBICT",
+    "description" : "Codes used for indicating the patient's status for partner and Family-based Index Case Testing (FBICT).",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.57"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-notification-plan-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPartnerNotificationPlanCS",
+    "title" : "HIV Partner Notification Plan CodeSystem",
+    "description" : "Codes used for indicating the plan for notifying the partner regarding the index case's HIV status.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.58"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-period-of-hiv-exposure-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPeriodOfHIVExposureCS",
+    "title" : "HIV Period of HIV Exposure",
+    "description" : "Codes used for indicating the period when last the individual was exposed to HIV.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.59"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyOrderCS",
+    "title" : "NG HIV Pharmacy Order Form Codes",
+    "description" : "Local coded medicine products transcribed from the Nigeria Combined Pharmacy\nOrder Form revised November 2025. The codes distinguish products by program\ncategory, ingredient combination and preprinted strength.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.60"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetArvProphylaxisCS",
+    "title" : "NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimens",
+    "description" : "ARV prophylaxis codes printed in W17 for HIV-exposed infants.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.61"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-dsd-model-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetDsdModelCS",
+    "title" : "NG HIV Pharmacy Worksheet DSD Models",
+    "description" : "DSD models represented by W9 and W10.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.62"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetMedicineCategoryCS",
+    "title" : "NG HIV Pharmacy Worksheet Medicine Categories",
+    "description" : "Medicine-section categories printed on the revised Pharmacy Daily Worksheet.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.63"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-medicine-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetMedicineCS",
+    "title" : "NG HIV Pharmacy Daily Worksheet Medicine Columns",
+    "description" : "Local codes for the fixed medicine columns W24–W71 on the revised November\n2025 Pharmacy Daily Worksheet. The code is the printed worksheet column\nidentifier, allowing exact reconstruction of the paper worksheet.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.64"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-summary-scope-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPharmacyWorksheetSummaryScopeCS",
+    "title" : "NG HIV Pharmacy Worksheet Summary Scopes",
+    "description" : "The three summary rows printed at the bottom of the worksheet.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.65"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPositiveTrackingCS",
+    "title" : "HIV Positive Tracking",
+    "description" : "Codes used for representing HIV positive tracking.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.66"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivPrecancerousLesionTreatmentReceivedCS",
+    "title" : "HIV-Precancerous Lesion Treatment Received CodeSystem",
+    "description" : "A list of codes describing the precancerous lesion treatment received",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.67"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-for-art-eligibility-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivReasonForARTEligibilityCS",
+    "title" : "HIV Reasons For ART Eligibility",
+    "description" : "Reasons For ART Eligibility",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.68"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivReasonNotStartedARTCS",
+    "title" : "HIV - Reason Not Started ART CodeSystem",
+    "description" : "Reason Not Started ART",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.69"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-routine-indication-viral-load-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivRoutineIndicationViralLoadCS",
+    "title" : "HIV Routine Indication Viral Load",
+    "description" : "Codes used for representing routine indication for viral load.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.70"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-service-provider-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivServiceProviderTypeCS",
+    "title" : "HIV Service Providers CodeSystem",
+    "description" : "Code used for representing the classification of organizations providing health services.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.71"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivStatusCS",
+    "title" : "NG Client HIV status CS",
+    "description" : "This CodeSystem IMMZ.C.DE31 defines list of options for HIV status of a Client",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.72"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivSuspiciousCancerousTreatmentCS",
+    "title" : "HIV-Suspicious Cancerous Treatment CodeSystem",
+    "description" : "A list of codes describing the suspicious Cancerous treatment",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.73"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTargetPopulationCategoryCS",
+    "title" : "Target Population Category Codes",
+    "description" : "Codes used for representing the patient's target population category",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.74"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-targeted-indication-viral-load-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTargetedIndicationViralLoadCS",
+    "title" : "HIV Targeted Indication Viral Load",
+    "description" : "Codes used for representing targeted indication for viral load.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.75"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-attempt-stage-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingAttemptStageCS",
+    "title" : "NG HIV Tracking Register Attempt Stages",
+    "description" : "The four numbered tracking attempts and the final attempt at the end of the tracking period represented by columns T19–T23.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.76"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-default-reason-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDefaultReasonCS",
+    "title" : "NG HIV Tracking Register Reasons for Defaulting",
+    "description" : "Reasons recorded when successful contact establishes why the client missed the appointment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.77"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-discontinuation-reason-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDiscontinuationReasonCS",
+    "title" : "NG HIV Tracking Register Reasons for Discontinuation",
+    "description" : "Reasons for discontinuing care at the facility printed for T26.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.78"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-dsd-model-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDsdModelCS",
+    "title" : "NG HIV Tracking Register DSD Model Codes",
+    "description" : "High-level DSD model codes printed in T15.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.79"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-dsd-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingDsdStatusCS",
+    "title" : "NG HIV Tracking Register DSD Status Codes",
+    "description" : "High-level differentiated-service-delivery status codes printed in T15. The source register spells devolved as 'Devloved'; this artefact uses the intended spelling while preserving code D.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.80"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-mode-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingModeCS",
+    "title" : "NG HIV Tracking Register Tracking Modes",
+    "description" : "Tracking modes printed for T19–T23.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.81"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-person-contacted-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingPersonContactedCS",
+    "title" : "NG HIV Tracking Register Person Contacted Codes",
+    "description" : "Person-contacted codes printed for T19–T23.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.82"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-reason-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivTrackingReasonCS",
+    "title" : "NG HIV Tracking Register Reasons for Tracking",
+    "description" : "Reason-for-tracking codes printed for T16.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.83"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs",
+    "version" : "0.0.0",
+    "status" : "draft",
+    "name" : "NgHivTransferReasonCS",
+    "title" : "NG HIV Care and Treatment Transfer Reasons",
+    "description" : "Reasons for transferring a client between HIV treatment sites, transcribed from the November 2025 HIV Care and Treatment Transfer Form.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.84"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-who-stage-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivWHOStageCS",
+    "title" : "WHO Stage Codes",
+    "description" : "Code used for representing the patient's WHO stage.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.85"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-contraindication-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgImmunizationContraindicationCS",
+    "title" : "NG Vaccine contraindications CS",
+    "description" : "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.86"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-session-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgImmunizationSessionTypeCS",
+    "title" : "NG Immunization Session types CS",
+    "description" : "Type of session for immunization Could be in a fixed facility, outreach or mobile.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.87"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-lgas-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgLgasCS",
+    "title" : "NG LGAs in Nigeria CS",
+    "description" : "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.88"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-mdcn-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgMdcnCS",
+    "title" : "NG Practitioner Identifier CS",
+    "description" : "This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.89"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-nutritional-screening-result-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgNutritionalScreeningResultCS",
+    "title" : "Nutritional Screening Result Codes",
+    "description" : "Codes used for representing the patient's nutritional screening result.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.90"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-nutritional-suppliments-provided-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgNutritionalSupplimentsProvidedCS",
+    "title" : "Nutritional Suppliments Provided Codes",
+    "description" : "Code used for representing the patient's nutritional suppliments provided.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.91"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-observation-code",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgObservationCodeCS",
+    "title" : "Nigeria Core Observation Codes",
+    "description" : "Local codes used to identify Nigeria Core observations that do not\nhave an appropriate code in an established terminology.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.92"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgOrganizationOwnerCS",
+    "title" : "NG Location Owner CS",
+    "description" : "This CodeSystem defines Immunization Location Owner.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.93"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-education-level-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPatientEducationLevelCS",
+    "title" : "HIV Patient Education Level Codes",
+    "description" : "Codes used for indicating the patient's highest qualification.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.94"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPatientIdentifierTypeCS",
+    "title" : "NG Patient Identifier Type CS",
+    "description" : "This CodeSystem defines list of options for uniquely Identifting a Client",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.95"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pcn-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPcnCS",
+    "title" : "NG Practitioner Identifier CS",
+    "description" : "This CodeSystem defines placeholder codes to manage Pharmcists' identifiers in Nigeria validated at  https://pcn.gov.ng/practice-number.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.96"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pregnancy-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgPregnancyStatusCS",
+    "title" : "NG Client Pregnancy Status CS",
+    "description" : "This CodeSystem defines list of options for Pregnancy status of a Client",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.97"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-provenance-activity-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgProvenanceActivityCS",
+    "title" : "NG Provenance Activity Codes",
+    "description" : "Local CodeSystem defining provenance activity codes for data lifecycle operations such as anonymization, de-identification, labeling, creation, and deletion.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.98"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-relationship-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgRelationshipsCS",
+    "title" : "NG Relationships CS",
+    "description" : "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.99"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgSiblingHealthStatusCS",
+    "title" : "NG Health Status CS",
+    "description" : "This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.100"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgStatesCS",
+    "title" : "NG States in Nigeria CS",
+    "description" : "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.101"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-screening-diagnostic-test-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTBScreeningDiagnosticTestTypeCS",
+    "title" : "TB Screening Diagnostic Test Type Codes CodeSystem",
+    "description" : "A list of codes describing the types of diagnostic tests that can be peformed on the specimen taken during TB screening.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.102"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-alternate-follow-up-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTbTPTAlternateFollowUpCS",
+    "title" : "TB TPT Alternate Follow-Up CodeSystem",
+    "description" : "A code indicating that the follow-up is for an alternate TPT prophylaxis.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.103"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-eligibility-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTbTPTEligibilityStatusCS",
+    "title" : "TB Eligility Status for TPT Codes",
+    "description" : "Observation codes used for indicating whether the patient is eligible for TPT.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.104"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTbTPTProphylaxisTypeCS",
+    "title" : "TB TPT Prophylaxis Type Codes",
+    "description" : "A list of codes describing the TPT prophylaxis type.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.105"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-treatment-status-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgTBTreatmentStatusCS",
+    "title" : "TB Treatment Status Codes CodeSystem",
+    "description" : "A list of codes describing the status of TB treatment.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.106"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-icd-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgVaccineLibraryICD11CS",
+    "title" : "NG IMMZ.D.DE4 ICD11 Vaccine Library",
+    "description" : "ICD11 code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x].",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.107"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgVaccineLocalCS",
+    "title" : "NG IMMZ.D.DE4 Vaccine Local Codes (Dose-labelled)",
+    "description" : "Locally defined vaccine codes used for data capture and UI labels. Doses are local; external systems map at antigen/product level.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.109"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local-to-snomed-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgVaccineLibrarySnomedCS",
+    "title" : "NG IMMZ.D.DE4 Vaccine Library (SNOMED CT)",
+    "description" : "SNOMED-CT code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x].",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.108"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-wards-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgWardsCS",
+    "title" : "NG Administrative Wards CS",
+    "description" : "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.110"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgYesNoCS",
+    "title" : "Yes/No Codes",
+    "description" : "Yes/No Codes Represented as Boolean.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.111"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/nigeria-languages",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NGLanguagesCS",
+    "title" : "NG Languages in Nigeria CS",
+    "description" : "This CodeSystem defines codes for major languages spoken across Nigeria.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.112"]
+  }]
+}

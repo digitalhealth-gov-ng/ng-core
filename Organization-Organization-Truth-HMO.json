@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Organization",
+  "id" : "Organization-Truth-HMO",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-insurer-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Organization-Truth-HMO</b></p><a name=\"Organization-Truth-HMO\"> </a><a name=\"hcOrganization-Truth-HMO\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-insurer-organization.html\">NG Insurer Organization</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs</code>/HMO-TRUTH-2025</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type ins}\">Insurance Company</span></p><p><b>name</b>: Truth Health Maintenance Organization</p><p><b>alias</b>: Truth HMO</p><p><b>telecom</b>: ph: 0700-TRUTH-HMO, <a href=\"https://truth-hmo.ng\">https://truth-hmo.ng</a></p><p><b>address</b>: HMO Plaza Port Harcourt RI </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-eligibility-request-id-cs",
+    "value" : "HMO-TRUTH-2025"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "ins",
+      "display" : "Insurance Company"
+    }]
+  }],
+  "name" : "Truth Health Maintenance Organization",
+  "alias" : ["Truth HMO"],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "0700-TRUTH-HMO"
+  },
+  {
+    "system" : "url",
+    "value" : "https://truth-hmo.ng"
+  }],
+  "address" : [{
+    "line" : ["HMO Plaza"],
+    "city" : "Port Harcourt",
+    "district" : "ri-emohua",
+    "state" : "RI"
+  }]
+}

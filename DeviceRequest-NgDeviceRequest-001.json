@@ -1,0 +1,39 @@
+{
+  "resourceType" : "DeviceRequest",
+  "id" : "NgDeviceRequest-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-device-request"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceRequest NgDeviceRequest-001</b></p><a name=\"NgDeviceRequest-001\"> </a><a name=\"hcNgDeviceRequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-device-request.html\">NG DeviceRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <a href=\"Device-NgDevice-001.html\">Device: identifier = https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-device-identifier-vs#VS-002; status = active; manufacturer = Acme Medtech; serialNumber = SN-12345; type = </a></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>occurrence</b>: 2025-11-12 09:00:00+0000</p><p><b>requester</b>: <a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></p><p><b>performer</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 250774007}\">Inspired oxygen concentration</span></p><p><b>insurance</b>: <a href=\"Coverage-NgCoverage-001.html\">Coverage: status = active; period = 2025-01-01 --&gt; 2025-12-31</a></p><p><b>note</b>: </p><blockquote><div><p>Provide patient education on device use.</p>\n</div></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "codeReference" : {
+    "reference" : "Device/NgDevice-001"
+  },
+  "subject" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "occurrenceDateTime" : "2025-11-12T09:00:00Z",
+  "requester" : {
+    "reference" : "Practitioner/NgPractitioner-001"
+  },
+  "performer" : {
+    "reference" : "Organization/NgOrganization-001"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "250774007",
+      "display" : "Inspired oxygen concentration"
+    }]
+  }],
+  "insurance" : [{
+    "reference" : "Coverage/NgCoverage-001"
+  }],
+  "note" : [{
+    "text" : "Provide patient education on device use."
+  }]
+}

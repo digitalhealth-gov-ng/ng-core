@@ -1,0 +1,45 @@
+{
+  "resourceType" : "Organization",
+  "id" : "NgOrganization-003",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization NgOrganization-003</b></p><a name=\"NgOrganization-003\"> </a><a name=\"hcNgOrganization-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-organization.html\">NG Organization</a></p></div><p><b>NG Owner of Facility</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs public}\">Public Health Institution Location</span></p><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code>/CLM-2025-0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs phc-center-l2}\">Primary Health Care Centre (Level 2)</span></p><p><b>name</b>: Gwagwalada Model PHC</p><p><b>telecom</b>: <a href=\"tel:+234-812-000-4455\">+234-812-000-4455</a></p><p><b>address</b>: Opposite Central Market Gwagwalada FC </p></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs",
+        "code" : "public",
+        "display" : "Public Health Institution Location"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs",
+    "value" : "CLM-2025-0001"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs",
+      "code" : "phc-center-l2",
+      "display" : "PHC Center Level 2"
+    }],
+    "text" : "Primary Health Care Centre (Level 2)"
+  }],
+  "name" : "Gwagwalada Model PHC",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+234-812-000-4455"
+  }],
+  "address" : [{
+    "line" : ["Opposite Central Market"],
+    "city" : "Gwagwalada",
+    "district" : "fc-gwagwalada",
+    "state" : "FC"
+  }]
+}

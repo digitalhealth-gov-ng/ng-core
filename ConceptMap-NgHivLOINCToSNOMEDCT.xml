@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="NgHivLOINCToSNOMEDCT"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap NgHivLOINCToSNOMEDCT</b></p><a name="NgHivLOINCToSNOMEDCT"> </a><a name="hcNgHivLOINCToSNOMEDCT"> </a><p>Mapping from <a href="ValueSet-ng-hiv-loinc-concepts.html">Nigeria HIV LOINC Concepts</a> to <a href="ValueSet-ng-hiv-snomed-ct-concepts.html">Nigeria HIV SNOMED CT Concepts</a></p><br/><p>Mapping from <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>LA8969-3 (Poor)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>135818000 (General health poor)</td></tr><tr><td>LA8968-5 (Fair)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>135817005 (General health fair)</td></tr><tr><td>LA8967-7 (Good)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>135815002 (General health good)</td></tr><tr><td>101819-1 (Nutritional assessment for malnutrition status)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>87276001 (Nutritional status)</td></tr><tr><td>56072-2 (Circumference Mid upper arm - right)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>284473002 (Mid upper arm circumference)</td></tr><tr><td>25836-8 (HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>315124004 (HIV viral load)</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLOINCToSNOMEDCT"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.18.1"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivLOINCToSNOMEDCT"/>
+  <title value="Nigeria HIV LOINC → SNOMED CT"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-24"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-loinc-concepts"/>
+  <targetCanonical value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-snomed-ct-concepts"/>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="LA8969-3"/>
+      <target>
+        <code value="135818000"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA8968-5"/>
+      <target>
+        <code value="135817005"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA8967-7"/>
+      <target>
+        <code value="135815002"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="101819-1"/>
+      <target>
+        <code value="87276001"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="56072-2"/>
+      <target>
+        <code value="284473002"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="25836-8"/>
+      <target>
+        <code value="315124004"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

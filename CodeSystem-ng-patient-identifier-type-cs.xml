@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-patient-identifier-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-patient-identifier-type-cs</b></p><a name="ng-patient-identifier-type-cs"> </a><a name="hcng-patient-identifier-type-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">MRN<a name="ng-patient-identifier-type-cs-MRN"> </a></td><td>mrn</td><td>Medical Record Number</td></tr><tr><td style="white-space:nowrap">NIN<a name="ng-patient-identifier-type-cs-NIN"> </a></td><td>nin</td><td>National Identity Number</td></tr><tr><td style="white-space:nowrap">MOBILE<a name="ng-patient-identifier-type-cs-MOBILE"> </a></td><td>mobile</td><td>Phone Number</td></tr><tr><td style="white-space:nowrap">INSUR<a name="ng-patient-identifier-type-cs-INSUR"> </a></td><td>insurance no</td><td>Insurance or HMO number</td></tr><tr><td style="white-space:nowrap">BIRTHCERT<a name="ng-patient-identifier-type-cs-BIRTHCERT"> </a></td><td>birthcert</td><td>Birth certificate number</td></tr><tr><td style="white-space:nowrap">IMMNO<a name="ng-patient-identifier-type-cs-IMMNO"> </a></td><td>immunizationo</td><td>Immunization Number</td></tr><tr><td style="white-space:nowrap">PSEUDONYM<a name="ng-patient-identifier-type-cs-PSEUDONYM"> </a></td><td>Pseudonymized Identifier</td><td>Pseudonymized patient data</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.95"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgPatientIdentifierTypeCS"/>
+  <title value="NG Patient Identifier Type CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem defines list of options for uniquely Identifting a Client"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="MRN"/>
+    <display value="mrn"/>
+    <definition value="Medical Record Number"/>
+  </concept>
+  <concept>
+    <code value="NIN"/>
+    <display value="nin"/>
+    <definition value="National Identity Number"/>
+  </concept>
+  <concept>
+    <code value="MOBILE"/>
+    <display value="mobile"/>
+    <definition value="Phone Number"/>
+  </concept>
+  <concept>
+    <code value="INSUR"/>
+    <display value="insurance no"/>
+    <definition value="Insurance or HMO number"/>
+  </concept>
+  <concept>
+    <code value="BIRTHCERT"/>
+    <display value="birthcert"/>
+    <definition value="Birth certificate number"/>
+  </concept>
+  <concept>
+    <code value="IMMNO"/>
+    <display value="immunizationo"/>
+    <definition value="Immunization Number"/>
+  </concept>
+  <concept>
+    <code value="PSEUDONYM"/>
+    <display value="Pseudonymized Identifier"/>
+    <definition value="Pseudonymized patient data"/>
+  </concept>
+</CodeSystem>

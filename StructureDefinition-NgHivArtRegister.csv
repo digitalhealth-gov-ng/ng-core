@@ -1,0 +1,145 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: National ART Register Column Mapping"
+"NgHivArtRegister","NgHivArtRegister","","","",0,*,"","","","null {[]} {[]}
+","NG HIV National ART Register","Logical model for the patient-level Nigeria National ART Register. One model
+instance represents a facility cohort page for a reporting month and contains
+repeatable client entries corresponding to register rows A1 through A35.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NgHivArtRegister.identifier","NgHivArtRegister.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","Register identifier","Identifier assigned to the facility ART register cohort page or electronic equivalent.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.identifier",1,1,"",""
+"NgHivArtRegister.facility","NgHivArtRegister.facility","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization]]}
+","Facility reference","FHIR reference to the facility maintaining the register.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.facility",0,1,"",""
+"NgHivArtRegister.facilityName","NgHivArtRegister.facilityName","","","",1,1,"","","","string {[]} {[]}
+","Facility name","Name of the facility maintaining the register.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.facilityName",1,1,"","","Header: Facility name"
+"NgHivArtRegister.lga","NgHivArtRegister.lga","","","",1,1,"","","","Coding {[]} {[]}
+","LGA","Local Government Area in which the facility is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs","",,,,"NgHivArtRegister.lga",1,1,"","","Header: LGA"
+"NgHivArtRegister.state","NgHivArtRegister.state","","","",1,1,"","","","Coding {[]} {[]}
+","State","State in which the facility is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs","",,,,"NgHivArtRegister.state",1,1,"","","Header: State"
+"NgHivArtRegister.reportingPeriod","NgHivArtRegister.reportingPeriod","","","",1,1,"","","","Period {[]} {[]}
+","Reporting month and year","The monthly cohort period represented by the register page.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.reportingPeriod",1,1,"","","Header: Month and Year"
+"NgHivArtRegister.entry","NgHivArtRegister.entry","","","",1,*,"","","","BackboneElement {[]} {[]}
+","ART register entry","One patient-level row of the National ART Register.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgHivArtRegister.entry.id","NgHivArtRegister.entry.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgHivArtRegister.entry.extension","NgHivArtRegister.entry.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivArtRegister.entry.modifierExtension","NgHivArtRegister.entry.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivArtRegister.entry.subject","NgHivArtRegister.entry.subject","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient]]}
+","Patient reference","Reference to the corresponding FHIR Patient when available.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.subject",0,1,"",""
+"NgHivArtRegister.entry.serialNumber","NgHivArtRegister.entry.serialNumber","","","",1,1,"","","","positiveInt {[]} {[]}
+","A1 Serial number","Monthly serial number beginning from one.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.serialNumber",1,1,"","","A1"
+"NgHivArtRegister.entry.hospitalNumber","NgHivArtRegister.entry.hospitalNumber","","","",0,1,"","","","string {[]} {[]}
+","A2 Hospital number","Client hospital number.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.hospitalNumber",0,1,"","","A2"
+"NgHivArtRegister.entry.uniqueId","NgHivArtRegister.entry.uniqueId","","","",1,1,"","","","string {[]} {[]}
+","A3 Unique ID","HIV program unique identifier.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.uniqueId",1,1,"","","A3"
+"NgHivArtRegister.entry.ancNumber","NgHivArtRegister.entry.ancNumber","","","",0,1,"","","","string {[]} {[]}
+","A4 ANC number","Antenatal-care number for a pregnant client registered for ANC.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.ancNumber",0,1,"","","A4"
+"NgHivArtRegister.entry.surname","NgHivArtRegister.entry.surname","","","",1,1,"","","","string {[]} {[]}
+","A5 Surname","Client surname.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.surname",1,1,"","","A5 Surname"
+"NgHivArtRegister.entry.otherNames","NgHivArtRegister.entry.otherNames","","","",0,1,"","","","string {[]} {[]}
+","A5 Other names","Client first and other names.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.otherNames",0,1,"","","A5 Other names"
+"NgHivArtRegister.entry.address","NgHivArtRegister.entry.address","","","",0,1,"","","","string {[]} {[]}
+","A6 Address","Descriptive residential address.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.address",0,1,"","","A6"
+"NgHivArtRegister.entry.sex","NgHivArtRegister.entry.sex","","","",1,1,"","","","Coding {[]} {[]}
+","A7 Sex","Administrative sex recorded in the register.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs","",,,,"NgHivArtRegister.entry.sex",1,1,"","","A7"
+"NgHivArtRegister.entry.kpTypology","NgHivArtRegister.entry.kpTypology","","","",0,1,"","","","Coding {[]} {[]}
+","A8 KP typology","Key-population typology, when applicable.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-kp-typology-vs","",,,,"NgHivArtRegister.entry.kpTypology",0,1,"","","A8"
+"NgHivArtRegister.entry.dateOfBirth","NgHivArtRegister.entry.dateOfBirth","","","",0,1,"","","","date {[]} {[]}
+","A9 Date of birth","Client date of birth.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.dateOfBirth",0,1,"","","A9"
+"NgHivArtRegister.entry.ageValue","NgHivArtRegister.entry.ageValue","","","",0,1,"","","","integer {[]} {[]}
+","A10 Age value","Age at enrolment or ART start.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.ageValue",0,1,"","","A10"
+"NgHivArtRegister.entry.ageUnit","NgHivArtRegister.entry.ageUnit","","","",0,1,"","","","code {[]} {[]}
+","A10 Age unit","years or months.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/units-of-time","",,,,"NgHivArtRegister.entry.ageUnit",0,1,"",""
+"NgHivArtRegister.entry.careEntryPoint","NgHivArtRegister.entry.careEntryPoint","","","",1,1,"","","","Coding {[]} {[]}
+","A11 Care entry point","Point through which the client entered HIV care.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-care-entry-point-vs","",,,,"NgHivArtRegister.entry.careEntryPoint",1,1,"","","A11"
+"NgHivArtRegister.entry.transferIn","NgHivArtRegister.entry.transferIn","","","",1,1,"","","","boolean {[]} {[]}
+","A12 Transfer in","True when the client was previously enrolled on ART in another facility.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.transferIn",1,1,"","","A12"
+"NgHivArtRegister.entry.confirmedHivTestDate","NgHivArtRegister.entry.confirmedHivTestDate","","","",1,1,"","","","date {[]} {[]}
+","A13 Date of confirmed HIV test","Date the client was confirmed HIV positive.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.confirmedHivTestDate",1,1,"","","A13"
+"NgHivArtRegister.entry.dateEnrolledInCare","NgHivArtRegister.entry.dateEnrolledInCare","","","",1,1,"","","","date {[]} {[]}
+","A14 Date enrolled in care","Date the client was enrolled in HIV care.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.dateEnrolledInCare",1,1,"","","A14"
+"NgHivArtRegister.entry.pregnancyStatus","NgHivArtRegister.entry.pregnancyStatus","","","",0,1,"","","","Coding {[]} {[]}
+","A15 Pregnancy status","Pregnancy status at ART initiation.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancy-status-vs","",,,,"NgHivArtRegister.entry.pregnancyStatus",0,1,"","","A15"
+"NgHivArtRegister.entry.breastfeeding","NgHivArtRegister.entry.breastfeeding","","","",0,1,"","","","boolean {[]} {[]}
+","A15 Breastfeeding status","Whether the client was breastfeeding at ART initiation.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.breastfeeding",0,1,"","","A15"
+"NgHivArtRegister.entry.whoClinicalStage","NgHivArtRegister.entry.whoClinicalStage","","","",0,1,"","","","Coding {[]} {[]}
+","A16 WHO clinical stage","WHO clinical stage at ART initiation.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-who-stage-vs","",,,,"NgHivArtRegister.entry.whoClinicalStage",0,1,"","","A16"
+"NgHivArtRegister.entry.weightKg","NgHivArtRegister.entry.weightKg","","","",0,1,"","","","decimal {[]} {[]}
+","A17 Weight","Weight in kilograms at enrolment or ART initiation.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.weightKg",0,1,"","","A17"
+"NgHivArtRegister.entry.heightLengthValue","NgHivArtRegister.entry.heightLengthValue","","","",0,1,"","","","decimal {[]} {[]}
+","A18 Height or length","Height or length at enrolment or ART initiation.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.heightLengthValue",0,1,"","","A18"
+"NgHivArtRegister.entry.heightLengthUnit","NgHivArtRegister.entry.heightLengthUnit","","","",0,1,"","","","code {[]} {[]}
+","A18 Height or length unit","m or cm.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.heightLengthUnit",0,1,"",""
+"NgHivArtRegister.entry.bodyMassIndex","NgHivArtRegister.entry.bodyMassIndex","","","",0,1,"","","","decimal {[]} {[]}
+","A19 BMI","Body mass index at ART initiation.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.bodyMassIndex",0,1,"","","A19"
+"NgHivArtRegister.entry.midUpperArmCircumferenceCm","NgHivArtRegister.entry.midUpperArmCircumferenceCm","","","",0,1,"","","","decimal {[]} {[]}
+","A19 MUAC","Mid-upper-arm circumference in centimetres at ART initiation.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.midUpperArmCircumferenceCm",0,1,"","","A19"
+"NgHivArtRegister.entry.bmiOrMuacSourceText","NgHivArtRegister.entry.bmiOrMuacSourceText","","","",0,1,"","","","string {[]} {[]}
+","A19 BMI or MUAC source text","Legacy combined BMI/MUAC answer retained when the source does not distinguish the metric.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.bmiOrMuacSourceText",0,1,"","","A19 legacy combined value"
+"NgHivArtRegister.entry.tbStatus","NgHivArtRegister.entry.tbStatus","","","",0,1,"","","","Coding {[]} {[]}
+","A20 TB status","Combined TB screening, preventive-therapy, diagnostic or treatment status.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-tb-status-vs","",,,,"NgHivArtRegister.entry.tbStatus",0,1,"","","A20"
+"NgHivArtRegister.entry.tbStatusSourceText","NgHivArtRegister.entry.tbStatusSourceText","","","",0,1,"","","","string {[]} {[]}
+","A20 TB status source text","Legacy free-text answer retained when the source Questionnaire has not yet been terminology-bound.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.tbStatusSourceText",0,1,"",""
+"NgHivArtRegister.entry.cd4Count","NgHivArtRegister.entry.cd4Count","","","",0,1,"","","","integer {[]} {[]}
+","A21 CD4 count","CD4 count in cells/mm3 at enrolment or ART initiation.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.cd4Count",0,1,"","","A21"
+"NgHivArtRegister.entry.tptType","NgHivArtRegister.entry.tptType","","","",0,1,"","","","Coding {[]} {[]}
+","A22 TPT type","TB preventive-therapy regimen.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tb-preventive-therapy-vs","",,,,"NgHivArtRegister.entry.tptType",0,1,"","","A22 row 1"
+"NgHivArtRegister.entry.tptStartDate","NgHivArtRegister.entry.tptStartDate","","","",0,1,"","","","date {[]} {[]}
+","A22 TPT start date","Date TB preventive therapy commenced.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.tptStartDate",0,1,"","","A22 row 2"
+"NgHivArtRegister.entry.tptStopDate","NgHivArtRegister.entry.tptStopDate","","","",0,1,"","","","date {[]} {[]}
+","A22 TPT stop date","Date TB preventive therapy stopped or completed.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.tptStopDate",0,1,"","","A22 row 3"
+"NgHivArtRegister.entry.tptOutcome","NgHivArtRegister.entry.tptOutcome","","","",0,1,"","","","Coding {[]} {[]}
+","A22 TPT outcome","Outcome of TB preventive therapy.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-tpt-outcome-vs","",,,,"NgHivArtRegister.entry.tptOutcome",0,1,"","","A22 row 4"
+"NgHivArtRegister.entry.ctxStartDate","NgHivArtRegister.entry.ctxStartDate","","","",0,1,"","","","date {[]} {[]}
+","A23 CTX start date","Date co-trimoxazole prophylaxis commenced.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.ctxStartDate",0,1,"","","A23 row 1"
+"NgHivArtRegister.entry.ctxDose","NgHivArtRegister.entry.ctxDose","","","",0,1,"","","","string {[]} {[]}
+","A23 CTX dose","Co-trimoxazole dose.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.ctxDose",0,1,"","","A23 row 2"
+"NgHivArtRegister.entry.tbTreatmentStartDate","NgHivArtRegister.entry.tbTreatmentStartDate","","","",0,1,"","","","date {[]} {[]}
+","A24 TB treatment start date","Date active-TB treatment commenced.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.tbTreatmentStartDate",0,1,"","","A24 row 1"
+"NgHivArtRegister.entry.tbTreatmentStopDate","NgHivArtRegister.entry.tbTreatmentStopDate","","","",0,1,"","","","date {[]} {[]}
+","A24 TB treatment stop date","Date active-TB treatment stopped.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.tbTreatmentStopDate",0,1,"","","A24 row 2"
+"NgHivArtRegister.entry.cryptococcalStatus","NgHivArtRegister.entry.cryptococcalStatus","","","",0,1,"","","","Coding {[]} {[]}
+","A25 Cryptococcal status","Cryptococcal screening or treatment status.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-cryptococcal-status-vs","",,,,"NgHivArtRegister.entry.cryptococcalStatus",0,1,"","","A25"
+"NgHivArtRegister.entry.cryptococcalTreatmentStartDate","NgHivArtRegister.entry.cryptococcalTreatmentStartDate","","","",0,1,"","","","date {[]} {[]}
+","A26 Cryptococcal treatment start date","Date cryptococcal-meningitis treatment commenced.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.cryptococcalTreatmentStartDate",0,1,"","","A26 row 1"
+"NgHivArtRegister.entry.cryptococcalTreatmentStopDate","NgHivArtRegister.entry.cryptococcalTreatmentStopDate","","","",0,1,"","","","date {[]} {[]}
+","A26 Cryptococcal treatment stop date","Date cryptococcal-meningitis treatment stopped or completed.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.cryptococcalTreatmentStopDate",0,1,"","","A26 row 2"
+"NgHivArtRegister.entry.cervicalCancerStatus","NgHivArtRegister.entry.cervicalCancerStatus","","","",0,1,"","","","Coding {[]} {[]}
+","A27 Cervical cancer screening status","Combined screening workflow status.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-cervical-status-vs","",,,,"NgHivArtRegister.entry.cervicalCancerStatus",0,1,"","","A27 row 1"
+"NgHivArtRegister.entry.cervicalCancerTreatment","NgHivArtRegister.entry.cervicalCancerTreatment","","","",0,1,"","","","Coding {[]} {[]}
+","A27 Cervical cancer treatment","Treatment provided following a positive screening result.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cervical-cancer-treatment-received-vs","",,,,"NgHivArtRegister.entry.cervicalCancerTreatment",0,1,"","","A27 row 2"
+"NgHivArtRegister.entry.cervicalCancerOtherFinding","NgHivArtRegister.entry.cervicalCancerOtherFinding","","","",0,1,"","","","string {[]} {[]}
+","A27 Other cervical finding","Narrative for code 9, other finding.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.cervicalCancerOtherFinding",0,1,"",""
+"NgHivArtRegister.entry.hepatitisStatus","NgHivArtRegister.entry.hepatitisStatus","","","",0,*,"","","","Coding {[]} {[]}
+","A28 Hepatitis screening result","Hepatitis B or C screening or HCV-treatment status.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-hepatitis-status-vs","",,,,"NgHivArtRegister.entry.hepatitisStatus",0,*,"","","A28"
+"NgHivArtRegister.entry.artStartDate","NgHivArtRegister.entry.artStartDate","","","",1,1,"","","","date {[]} {[]}
+","A29 ART start date","Date ART commenced.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.artStartDate",1,1,"","","A29"
+"NgHivArtRegister.entry.regimenAtArtStart","NgHivArtRegister.entry.regimenAtArtStart","","","",0,1,"","","","Coding {[]} {[]}
+","A30 Regimen at ART start","Register regimen code at ART commencement.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs","",,,,"NgHivArtRegister.entry.regimenAtArtStart",0,1,"","","A30"
+"NgHivArtRegister.entry.regimenAtArtStartText","NgHivArtRegister.entry.regimenAtArtStartText","","","",0,1,"","","","string {[]} {[]}
+","A30 Regimen at ART start source text","Legacy regimen description retained when the source Questionnaire does not supply the register code.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.regimenAtArtStartText",0,1,"",""
+"NgHivArtRegister.entry.artRestartDate","NgHivArtRegister.entry.artRestartDate","","","",0,1,"","","","date {[]} {[]}
+","A31 ART restart date","Date ART restarted following a treatment interruption.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.artRestartDate",0,1,"","","A31"
+"NgHivArtRegister.entry.regimenAtArtRestart","NgHivArtRegister.entry.regimenAtArtRestart","","","",0,1,"","","","Coding {[]} {[]}
+","A32 Regimen at ART restart","Register regimen code at ART restart.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs","",,,,"NgHivArtRegister.entry.regimenAtArtRestart",0,1,"","","A32"
+"NgHivArtRegister.entry.regimenAtArtRestartText","NgHivArtRegister.entry.regimenAtArtRestartText","","","",0,1,"","","","string {[]} {[]}
+","A32 Regimen at ART restart source text","Legacy regimen description retained when the source does not supply the register code.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.regimenAtArtRestartText",0,1,"",""
+"NgHivArtRegister.entry.dsdStatus","NgHivArtRegister.entry.dsdStatus","","","",0,1,"","","","Coding {[]} {[]}
+","A33 DSD status","First differentiated-service-delivery model to which the client was devolved, or non-devolved/not eligible.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-dsd-status-vs","",,,,"NgHivArtRegister.entry.dsdStatus",0,1,"","","A33 row 1"
+"NgHivArtRegister.entry.dateDevolved","NgHivArtRegister.entry.dateDevolved","","","",0,1,"","","","date {[]} {[]}
+","A33 Date devolved","Date the client was first devolved to the DSD model.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.dateDevolved",0,1,"","","A33 row 2"
+"NgHivArtRegister.entry.sixMonthViralLoadResult","NgHivArtRegister.entry.sixMonthViralLoadResult","","","",0,1,"","","","integer {[]} {[]}
+","A34 Six-month viral-load result","Routine viral-load result approximately six months after ART initiation, in copies/mL.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.sixMonthViralLoadResult",0,1,"","","A34 row 1"
+"NgHivArtRegister.entry.sixMonthViralLoadResultReceivedDate","NgHivArtRegister.entry.sixMonthViralLoadResultReceivedDate","","","",0,1,"","","","date {[]} {[]}
+","A34 Date viral-load result received","Date the six-month viral-load result was received.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.sixMonthViralLoadResultReceivedDate",0,1,"","","A34 row 2"
+"NgHivArtRegister.entry.sixMonthOutcome","NgHivArtRegister.entry.sixMonthOutcome","","","",0,1,"","","","Coding {[]} {[]}
+","A35 Six-month outcome","Transfer out, stopped treatment, dead or lost to follow-up.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-outcome-vs","",,,,"NgHivArtRegister.entry.sixMonthOutcome",0,1,"","","A35 row 1"
+"NgHivArtRegister.entry.sixMonthOutcomeDate","NgHivArtRegister.entry.sixMonthOutcomeDate","","","",0,1,"","","","date {[]} {[]}
+","A35 Date of outcome","Date the outcome became known to the facility.","","","","","","","","","",,,,,"",,,,"NgHivArtRegister.entry.sixMonthOutcomeDate",0,1,"","","A35 row 2"

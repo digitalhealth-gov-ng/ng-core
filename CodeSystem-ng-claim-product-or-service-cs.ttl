@@ -1,0 +1,325 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-claim-product-or-service-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-claim-product-or-service-cs</b></p><a name=\"ng-claim-product-or-service-cs\"> </a><a name=\"hcng-claim-product-or-service-cs\"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SRV-GP-INIT<a name=\"ng-claim-product-or-service-cs-SRV-GP-INIT\"> </a></td><td>General outpatient consultation (initial)</td><td>First GP/Family Medicine visit.</td></tr><tr><td style=\"white-space:nowrap\">SRV-GP-REVIEW<a name=\"ng-claim-product-or-service-cs-SRV-GP-REVIEW\"> </a></td><td>General outpatient consultation (review)</td><td>Follow-up GP visit.</td></tr><tr><td style=\"white-space:nowrap\">SRV-SPEC-INIT<a name=\"ng-claim-product-or-service-cs-SRV-SPEC-INIT\"> </a></td><td>Specialist consultation (initial)</td><td>First specialist visit.</td></tr><tr><td style=\"white-space:nowrap\">SRV-SPEC-REVIEW<a name=\"ng-claim-product-or-service-cs-SRV-SPEC-REVIEW\"> </a></td><td>Specialist consultation (review)</td><td>Follow-up specialist visit.</td></tr><tr><td style=\"white-space:nowrap\">SRV-EMER<a name=\"ng-claim-product-or-service-cs-SRV-EMER\"> </a></td><td>Emergency room consultation</td><td>Triage and emergency physician consult.</td></tr><tr><td style=\"white-space:nowrap\">SRV-TELE<a name=\"ng-claim-product-or-service-cs-SRV-TELE\"> </a></td><td>Teleconsultation</td><td>Synchronous telemedicine visit.</td></tr><tr><td style=\"white-space:nowrap\">PROC-MINOR<a name=\"ng-claim-product-or-service-cs-PROC-MINOR\"> </a></td><td>Minor procedure (OPD)</td><td>E.g., suturing, incision &amp; drainage.</td></tr><tr><td style=\"white-space:nowrap\">PROC-MAJOR<a name=\"ng-claim-product-or-service-cs-PROC-MAJOR\"> </a></td><td>Major procedure (theatre)</td><td>Operating theatre case (non-obstetric).</td></tr><tr><td style=\"white-space:nowrap\">PROC-ANAES<a name=\"ng-claim-product-or-service-cs-PROC-ANAES\"> </a></td><td>Anaesthesia fee</td><td>Anaesthetist professional fee.</td></tr><tr><td style=\"white-space:nowrap\">PROC-THEATRE<a name=\"ng-claim-product-or-service-cs-PROC-THEATRE\"> </a></td><td>Theatre fee</td><td>Use of operating theatre facilities.</td></tr><tr><td style=\"white-space:nowrap\">PROC-DRESS<a name=\"ng-claim-product-or-service-cs-PROC-DRESS\"> </a></td><td>Wound dressing / change</td><td>Clinic or ward-based dressing.</td></tr><tr><td style=\"white-space:nowrap\">MAT-ANC-PACK<a name=\"ng-claim-product-or-service-cs-MAT-ANC-PACK\"> </a></td><td>Antenatal care package (per visit)</td><td>ANC consultation &amp; routine checks.</td></tr><tr><td style=\"white-space:nowrap\">MAT-NVD<a name=\"ng-claim-product-or-service-cs-MAT-NVD\"> </a></td><td>Normal vaginal delivery (NVD) package</td><td>Uncomplicated delivery.</td></tr><tr><td style=\"white-space:nowrap\">MAT-CS<a name=\"ng-claim-product-or-service-cs-MAT-CS\"> </a></td><td>Caesarean section (C-section) package</td><td>Surgical delivery.</td></tr><tr><td style=\"white-space:nowrap\">MAT-PNC<a name=\"ng-claim-product-or-service-cs-MAT-PNC\"> </a></td><td>Postnatal care visit</td><td>Post-delivery follow-up visit.</td></tr><tr><td style=\"white-space:nowrap\">MAT-NB-SCREEN<a name=\"ng-claim-product-or-service-cs-MAT-NB-SCREEN\"> </a></td><td>Newborn screening panel</td><td>Standard neonatal screening bundle.</td></tr><tr><td style=\"white-space:nowrap\">BED-GEN<a name=\"ng-claim-product-or-service-cs-BED-GEN\"> </a></td><td>General ward bed-day</td><td>24-hour inpatient stay (general ward).</td></tr><tr><td style=\"white-space:nowrap\">BED-ICU<a name=\"ng-claim-product-or-service-cs-BED-ICU\"> </a></td><td>ICU bed-day</td><td>Critical care day.</td></tr><tr><td style=\"white-space:nowrap\">BED-SCU<a name=\"ng-claim-product-or-service-cs-BED-SCU\"> </a></td><td>Special care baby unit day</td><td>SCBU/NICU level care.</td></tr><tr><td style=\"white-space:nowrap\">BED-ISOL<a name=\"ng-claim-product-or-service-cs-BED-ISOL\"> </a></td><td>Isolation bed-day</td><td>Isolation ward day.</td></tr><tr><td style=\"white-space:nowrap\">LAB-FBC<a name=\"ng-claim-product-or-service-cs-LAB-FBC\"> </a></td><td>Full blood count (FBC)</td><td>Haematology panel.</td></tr><tr><td style=\"white-space:nowrap\">LAB-CHEM-PAN<a name=\"ng-claim-product-or-service-cs-LAB-CHEM-PAN\"> </a></td><td>Chemistry panel (basic)</td><td>Basic metabolic or chemistry set.</td></tr><tr><td style=\"white-space:nowrap\">LAB-LFT<a name=\"ng-claim-product-or-service-cs-LAB-LFT\"> </a></td><td>Liver function tests (LFT)</td><td>Liver enzyme panel.</td></tr><tr><td style=\"white-space:nowrap\">LAB-RFT<a name=\"ng-claim-product-or-service-cs-LAB-RFT\"> </a></td><td>Renal function tests (RFT)</td><td>Kidney function panel.</td></tr><tr><td style=\"white-space:nowrap\">LAB-CRP<a name=\"ng-claim-product-or-service-cs-LAB-CRP\"> </a></td><td>C-reactive protein (CRP)</td><td>Inflammatory marker.</td></tr><tr><td style=\"white-space:nowrap\">LAB-HBA1C<a name=\"ng-claim-product-or-service-cs-LAB-HBA1C\"> </a></td><td>HbA1c</td><td>Glycated haemoglobin test.</td></tr><tr><td style=\"white-space:nowrap\">LAB-MAL-RDT<a name=\"ng-claim-product-or-service-cs-LAB-MAL-RDT\"> </a></td><td>Malaria rapid test (RDT)</td><td>Point-of-care malaria test.</td></tr><tr><td style=\"white-space:nowrap\">LAB-URINE-ROUT<a name=\"ng-claim-product-or-service-cs-LAB-URINE-ROUT\"> </a></td><td>Urinalysis (routine)</td><td>POCT or lab urinalysis.</td></tr><tr><td style=\"white-space:nowrap\">LAB-PREG<a name=\"ng-claim-product-or-service-cs-LAB-PREG\"> </a></td><td>Pregnancy test (hCG)</td><td>Qualitative hCG.</td></tr><tr><td style=\"white-space:nowrap\">IMG-XR<a name=\"ng-claim-product-or-service-cs-IMG-XR\"> </a></td><td>X-ray (XR) single view</td><td>One anatomical region, single view.</td></tr><tr><td style=\"white-space:nowrap\">IMG-US<a name=\"ng-claim-product-or-service-cs-IMG-US\"> </a></td><td>Ultrasound (US) single study</td><td>Abdominal/obstetric or other US.</td></tr><tr><td style=\"white-space:nowrap\">IMG-CT<a name=\"ng-claim-product-or-service-cs-IMG-CT\"> </a></td><td>CT scan (region)</td><td>CT of a specified region.</td></tr><tr><td style=\"white-space:nowrap\">IMG-MRI<a name=\"ng-claim-product-or-service-cs-IMG-MRI\"> </a></td><td>MRI scan (region)</td><td>MRI of a specified region.</td></tr><tr><td style=\"white-space:nowrap\">IMG-ECHO<a name=\"ng-claim-product-or-service-cs-IMG-ECHO\"> </a></td><td>Echocardiography</td><td>Cardiac ultrasound.</td></tr><tr><td style=\"white-space:nowrap\">IMG-ECG<a name=\"ng-claim-product-or-service-cs-IMG-ECG\"> </a></td><td>ECG (12-lead)</td><td>Standard electrocardiogram.</td></tr><tr><td style=\"white-space:nowrap\">DRG-OPD<a name=\"ng-claim-product-or-service-cs-DRG-OPD\"> </a></td><td>Dispensed medicines (OPD)</td><td>Retail/outpatient drug line items.</td></tr><tr><td style=\"white-space:nowrap\">DRG-INP<a name=\"ng-claim-product-or-service-cs-DRG-INP\"> </a></td><td>Dispensed medicines (inpatient)</td><td>Ward pharmacy drug line items.</td></tr><tr><td style=\"white-space:nowrap\">VAC-ADMIN<a name=\"ng-claim-product-or-service-cs-VAC-ADMIN\"> </a></td><td>Vaccine administration fee</td><td>Service fee for immunization.</td></tr><tr><td style=\"white-space:nowrap\">VAC-PROD<a name=\"ng-claim-product-or-service-cs-VAC-PROD\"> </a></td><td>Vaccine product</td><td>Vaccine dose product cost.</td></tr><tr><td style=\"white-space:nowrap\">CONS-GEN<a name=\"ng-claim-product-or-service-cs-CONS-GEN\"> </a></td><td>General consumables</td><td>Syringes, gloves, dressings, cannulas.</td></tr><tr><td style=\"white-space:nowrap\">OXY-HR<a name=\"ng-claim-product-or-service-cs-OXY-HR\"> </a></td><td>Oxygen therapy (per hour)</td><td>Medical oxygen use.</td></tr><tr><td style=\"white-space:nowrap\">DEV-RENT<a name=\"ng-claim-product-or-service-cs-DEV-RENT\"> </a></td><td>Device rental (short-term)</td><td>E.g., nebulizer, suction machine.</td></tr><tr><td style=\"white-space:nowrap\">HM-CARE<a name=\"ng-claim-product-or-service-cs-HM-CARE\"> </a></td><td>Home care visit</td><td>Home nursing/home-based care.</td></tr><tr><td style=\"white-space:nowrap\">REH-PHYSIO<a name=\"ng-claim-product-or-service-cs-REH-PHYSIO\"> </a></td><td>Physiotherapy session</td><td>Single physio visit.</td></tr><tr><td style=\"white-space:nowrap\">REH-OT<a name=\"ng-claim-product-or-service-cs-REH-OT\"> </a></td><td>Occupational therapy session</td><td>Single OT visit.</td></tr><tr><td style=\"white-space:nowrap\">REH-SPEECH<a name=\"ng-claim-product-or-service-cs-REH-SPEECH\"> </a></td><td>Speech therapy session</td><td>Single speech therapy visit.</td></tr><tr><td style=\"white-space:nowrap\">AMB-TRNS<a name=\"ng-claim-product-or-service-cs-AMB-TRNS\"> </a></td><td>Ambulance transport (one-way)</td><td>Facility-to-facility or scene-to-facility.</td></tr><tr><td style=\"white-space:nowrap\">ADM-CLAIM<a name=\"ng-claim-product-or-service-cs-ADM-CLAIM\"> </a></td><td>Administrative/claim handling fee</td><td>Processing/admin fee per policy.</td></tr><tr><td style=\"white-space:nowrap\">ADM-CO-PAY<a name=\"ng-claim-product-or-service-cs-ADM-CO-PAY\"> </a></td><td>Co-payment</td><td>Member co-pay amount line.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.9" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgClaimProductOrServiceCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG Claim Product/Service Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-12T13:22:49+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Nigeria-specific productOrService codes."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "49"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SRV-GP-INIT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General outpatient consultation (initial)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "First GP/Family Medicine visit." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SRV-GP-REVIEW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General outpatient consultation (review)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Follow-up GP visit." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SRV-SPEC-INIT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Specialist consultation (initial)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "First specialist visit." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SRV-SPEC-REVIEW" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Specialist consultation (review)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Follow-up specialist visit." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SRV-EMER" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency room consultation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Triage and emergency physician consult." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SRV-TELE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Teleconsultation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Synchronous telemedicine visit." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PROC-MINOR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Minor procedure (OPD)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "E.g., suturing, incision & drainage." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PROC-MAJOR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Major procedure (theatre)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Operating theatre case (non-obstetric)." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PROC-ANAES" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anaesthesia fee" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Anaesthetist professional fee." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PROC-THEATRE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Theatre fee" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Use of operating theatre facilities." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "PROC-DRESS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wound dressing / change" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Clinic or ward-based dressing." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAT-ANC-PACK" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Antenatal care package (per visit)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ANC consultation & routine checks." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAT-NVD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Normal vaginal delivery (NVD) package" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Uncomplicated delivery." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAT-CS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Caesarean section (C-section) package" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgical delivery." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAT-PNC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Postnatal care visit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Post-delivery follow-up visit." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "MAT-NB-SCREEN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Newborn screening panel" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Standard neonatal screening bundle." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-GEN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General ward bed-day" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "24-hour inpatient stay (general ward)." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-ICU" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ICU bed-day" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Critical care day." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-SCU" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Special care baby unit day" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "SCBU/NICU level care." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "BED-ISOL" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isolation bed-day" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Isolation ward day." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-FBC" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Full blood count (FBC)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Haematology panel." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-CHEM-PAN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Chemistry panel (basic)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Basic metabolic or chemistry set." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-LFT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Liver function tests (LFT)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Liver enzyme panel." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-RFT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Renal function tests (RFT)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Kidney function panel." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-CRP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "C-reactive protein (CRP)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Inflammatory marker." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-HBA1C" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HbA1c" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Glycated haemoglobin test." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-MAL-RDT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria rapid test (RDT)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Point-of-care malaria test." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-URINE-ROUT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urinalysis (routine)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "POCT or lab urinalysis." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "LAB-PREG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pregnancy test (hCG)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Qualitative hCG." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMG-XR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray (XR) single view" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "One anatomical region, single view." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMG-US" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ultrasound (US) single study" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Abdominal/obstetric or other US." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMG-CT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CT scan (region)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CT of a specified region." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMG-MRI" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "MRI scan (region)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "MRI of a specified region." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMG-ECHO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Echocardiography" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cardiac ultrasound." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "IMG-ECG" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ECG (12-lead)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Standard electrocardiogram." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DRG-OPD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dispensed medicines (OPD)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Retail/outpatient drug line items." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DRG-INP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dispensed medicines (inpatient)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Ward pharmacy drug line items." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VAC-ADMIN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaccine administration fee" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Service fee for immunization." ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VAC-PROD" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaccine product" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaccine dose product cost." ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "CONS-GEN" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "General consumables" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Syringes, gloves, dressings, cannulas." ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OXY-HR" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oxygen therapy (per hour)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Medical oxygen use." ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DEV-RENT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Device rental (short-term)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "E.g., nebulizer, suction machine." ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HM-CARE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Home care visit" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Home nursing/home-based care." ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "REH-PHYSIO" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Physiotherapy session" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Single physio visit." ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "REH-OT" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Occupational therapy session" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Single OT visit." ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "REH-SPEECH" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Speech therapy session" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Single speech therapy visit." ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "AMB-TRNS" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ambulance transport (one-way)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Facility-to-facility or scene-to-facility." ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ADM-CLAIM" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Administrative/claim handling fee" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Processing/admin fee per policy." ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ADM-CO-PAY" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Co-payment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Member co-pay amount line." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

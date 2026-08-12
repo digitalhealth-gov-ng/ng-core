@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG Claim Product/Service Codes - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.369"}
+    h3,h4,h5,h6{--heading-prefix:"32.369"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NG Claim Product/Service Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-claim-product-or-service-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-claim-product-or-service-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-claim-product-or-service-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NG Claim Product/Service Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs|0.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-08-12
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NgClaimProductOrServiceCS</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113884.3.9944.1.16.9
+      </td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Nigeria-specific productOrService codes.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="ng-claim-product-or-service-cs"> </a><a name="hcng-claim-product-or-service-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td style="white-space:nowrap">SRV-GP-INIT<a name="ng-claim-product-or-service-cs-SRV-GP-INIT"> </a></td>
+<td>General outpatient consultation (initial)</td>
+<td>First GP/Family Medicine visit.</td></tr>
+<tr><td style="white-space:nowrap">SRV-GP-REVIEW<a name="ng-claim-product-or-service-cs-SRV-GP-REVIEW"> </a></td>
+<td>General outpatient consultation (review)</td>
+<td>Follow-up GP visit.</td></tr>
+<tr><td style="white-space:nowrap">SRV-SPEC-INIT<a name="ng-claim-product-or-service-cs-SRV-SPEC-INIT"> </a></td>
+<td>Specialist consultation (initial)</td>
+<td>First specialist visit.</td></tr>
+<tr><td style="white-space:nowrap">SRV-SPEC-REVIEW<a name="ng-claim-product-or-service-cs-SRV-SPEC-REVIEW"> </a></td>
+<td>Specialist consultation (review)</td>
+<td>Follow-up specialist visit.</td></tr>
+<tr><td style="white-space:nowrap">SRV-EMER<a name="ng-claim-product-or-service-cs-SRV-EMER"> </a></td>
+<td>Emergency room consultation</td>
+<td>Triage and emergency physician consult.</td></tr>
+<tr><td style="white-space:nowrap">SRV-TELE<a name="ng-claim-product-or-service-cs-SRV-TELE"> </a></td>
+<td>Teleconsultation</td>
+<td>Synchronous telemedicine visit.</td></tr>
+<tr><td style="white-space:nowrap">PROC-MINOR<a name="ng-claim-product-or-service-cs-PROC-MINOR"> </a></td>
+<td>Minor procedure (OPD)</td>
+<td>E.g., suturing, incision &amp; drainage.</td></tr>
+<tr><td style="white-space:nowrap">PROC-MAJOR<a name="ng-claim-product-or-service-cs-PROC-MAJOR"> </a></td>
+<td>Major procedure (theatre)</td>
+<td>Operating theatre case (non-obstetric).</td></tr>
+<tr><td style="white-space:nowrap">PROC-ANAES<a name="ng-claim-product-or-service-cs-PROC-ANAES"> </a></td>
+<td>Anaesthesia fee</td>
+<td>Anaesthetist professional fee.</td></tr>
+<tr><td style="white-space:nowrap">PROC-THEATRE<a name="ng-claim-product-or-service-cs-PROC-THEATRE"> </a></td>
+<td>Theatre fee</td>
+<td>Use of operating theatre facilities.</td></tr>
+<tr><td style="white-space:nowrap">PROC-DRESS<a name="ng-claim-product-or-service-cs-PROC-DRESS"> </a></td>
+<td>Wound dressing / change</td>
+<td>Clinic or ward-based dressing.</td></tr>
+<tr><td style="white-space:nowrap">MAT-ANC-PACK<a name="ng-claim-product-or-service-cs-MAT-ANC-PACK"> </a></td>
+<td>Antenatal care package (per visit)</td>
+<td>ANC consultation &amp; routine checks.</td></tr>
+<tr><td style="white-space:nowrap">MAT-NVD<a name="ng-claim-product-or-service-cs-MAT-NVD"> </a></td>
+<td>Normal vaginal delivery (NVD) package</td>
+<td>Uncomplicated delivery.</td></tr>
+<tr><td style="white-space:nowrap">MAT-CS<a name="ng-claim-product-or-service-cs-MAT-CS"> </a></td>
+<td>Caesarean section (C-section) package</td>
+<td>Surgical delivery.</td></tr>
+<tr><td style="white-space:nowrap">MAT-PNC<a name="ng-claim-product-or-service-cs-MAT-PNC"> </a></td>
+<td>Postnatal care visit</td>
+<td>Post-delivery follow-up visit.</td></tr>
+<tr><td style="white-space:nowrap">MAT-NB-SCREEN<a name="ng-claim-product-or-service-cs-MAT-NB-SCREEN"> </a></td>
+<td>Newborn screening panel</td>
+<td>Standard neonatal screening bundle.</td></tr>
+<tr><td style="white-space:nowrap">BED-GEN<a name="ng-claim-product-or-service-cs-BED-GEN"> </a></td>
+<td>General ward bed-day</td>
+<td>24-hour inpatient stay (general ward).</td></tr>
+<tr><td style="white-space:nowrap">BED-ICU<a name="ng-claim-product-or-service-cs-BED-ICU"> </a></td>
+<td>ICU bed-day</td>
+<td>Critical care day.</td></tr>
+<tr><td style="white-space:nowrap">BED-SCU<a name="ng-claim-product-or-service-cs-BED-SCU"> </a></td>
+<td>Special care baby unit day</td>
+<td>SCBU/NICU level care.</td></tr>
+<tr><td style="white-space:nowrap">BED-ISOL<a name="ng-claim-product-or-service-cs-BED-ISOL"> </a></td>
+<td>Isolation bed-day</td>
+<td>Isolation ward day.</td></tr>
+<tr><td style="white-space:nowrap">LAB-FBC<a name="ng-claim-product-or-service-cs-LAB-FBC"> </a></td>
+<td>Full blood count (FBC)</td>
+<td>Haematology panel.</td></tr>
+<tr><td style="white-space:nowrap">LAB-CHEM-PAN<a name="ng-claim-product-or-service-cs-LAB-CHEM-PAN"> </a></td>
+<td>Chemistry panel (basic)</td>
+<td>Basic metabolic or chemistry set.</td></tr>
+<tr><td style="white-space:nowrap">LAB-LFT<a name="ng-claim-product-or-service-cs-LAB-LFT"> </a></td>
+<td>Liver function tests (LFT)</td>
+<td>Liver enzyme panel.</td></tr>
+<tr><td style="white-space:nowrap">LAB-RFT<a name="ng-claim-product-or-service-cs-LAB-RFT"> </a></td>
+<td>Renal function tests (RFT)</td>
+<td>Kidney function panel.</td></tr>
+<tr><td style="white-space:nowrap">LAB-CRP<a name="ng-claim-product-or-service-cs-LAB-CRP"> </a></td>
+<td>C-reactive protein (CRP)</td>
+<td>Inflammatory marker.</td></tr>
+<tr><td style="white-space:nowrap">LAB-HBA1C<a name="ng-claim-product-or-service-cs-LAB-HBA1C"> </a></td>
+<td>HbA1c</td>
+<td>Glycated haemoglobin test.</td></tr>
+<tr><td style="white-space:nowrap">LAB-MAL-RDT<a name="ng-claim-product-or-service-cs-LAB-MAL-RDT"> </a></td>
+<td>Malaria rapid test (RDT)</td>
+<td>Point-of-care malaria test.</td></tr>
+<tr><td style="white-space:nowrap">LAB-URINE-ROUT<a name="ng-claim-product-or-service-cs-LAB-URINE-ROUT"> </a></td>
+<td>Urinalysis (routine)</td>
+<td>POCT or lab urinalysis.</td></tr>
+<tr><td style="white-space:nowrap">LAB-PREG<a name="ng-claim-product-or-service-cs-LAB-PREG"> </a></td>
+<td>Pregnancy test (hCG)</td>
+<td>Qualitative hCG.</td></tr>
+<tr><td style="white-space:nowrap">IMG-XR<a name="ng-claim-product-or-service-cs-IMG-XR"> </a></td>
+<td>X-ray (XR) single view</td>
+<td>One anatomical region, single view.</td></tr>
+<tr><td style="white-space:nowrap">IMG-US<a name="ng-claim-product-or-service-cs-IMG-US"> </a></td>
+<td>Ultrasound (US) single study</td>
+<td>Abdominal/obstetric or other US.</td></tr>
+<tr><td style="white-space:nowrap">IMG-CT<a name="ng-claim-product-or-service-cs-IMG-CT"> </a></td>
+<td>CT scan (region)</td>
+<td>CT of a specified region.</td></tr>
+<tr><td style="white-space:nowrap">IMG-MRI<a name="ng-claim-product-or-service-cs-IMG-MRI"> </a></td>
+<td>MRI scan (region)</td>
+<td>MRI of a specified region.</td></tr>
+<tr><td style="white-space:nowrap">IMG-ECHO<a name="ng-claim-product-or-service-cs-IMG-ECHO"> </a></td>
+<td>Echocardiography</td>
+<td>Cardiac ultrasound.</td></tr>
+<tr><td style="white-space:nowrap">IMG-ECG<a name="ng-claim-product-or-service-cs-IMG-ECG"> </a></td>
+<td>ECG (12-lead)</td>
+<td>Standard electrocardiogram.</td></tr>
+<tr><td style="white-space:nowrap">DRG-OPD<a name="ng-claim-product-or-service-cs-DRG-OPD"> </a></td>
+<td>Dispensed medicines (OPD)</td>
+<td>Retail/outpatient drug line items.</td></tr>
+<tr><td style="white-space:nowrap">DRG-INP<a name="ng-claim-product-or-service-cs-DRG-INP"> </a></td>
+<td>Dispensed medicines (inpatient)</td>
+<td>Ward pharmacy drug line items.</td></tr>
+<tr><td style="white-space:nowrap">VAC-ADMIN<a name="ng-claim-product-or-service-cs-VAC-ADMIN"> </a></td>
+<td>Vaccine administration fee</td>
+<td>Service fee for immunization.</td></tr>
+<tr><td style="white-space:nowrap">VAC-PROD<a name="ng-claim-product-or-service-cs-VAC-PROD"> </a></td>
+<td>Vaccine product</td>
+<td>Vaccine dose product cost.</td></tr>
+<tr><td style="white-space:nowrap">CONS-GEN<a name="ng-claim-product-or-service-cs-CONS-GEN"> </a></td>
+<td>General consumables</td>
+<td>Syringes, gloves, dressings, cannulas.</td></tr>
+<tr><td style="white-space:nowrap">OXY-HR<a name="ng-claim-product-or-service-cs-OXY-HR"> </a></td>
+<td>Oxygen therapy (per hour)</td>
+<td>Medical oxygen use.</td></tr>
+<tr><td style="white-space:nowrap">DEV-RENT<a name="ng-claim-product-or-service-cs-DEV-RENT"> </a></td>
+<td>Device rental (short-term)</td>
+<td>E.g., nebulizer, suction machine.</td></tr>
+<tr><td style="white-space:nowrap">HM-CARE<a name="ng-claim-product-or-service-cs-HM-CARE"> </a></td>
+<td>Home care visit</td>
+<td>Home nursing/home-based care.</td></tr>
+<tr><td style="white-space:nowrap">REH-PHYSIO<a name="ng-claim-product-or-service-cs-REH-PHYSIO"> </a></td>
+<td>Physiotherapy session</td>
+<td>Single physio visit.</td></tr>
+<tr><td style="white-space:nowrap">REH-OT<a name="ng-claim-product-or-service-cs-REH-OT"> </a></td>
+<td>Occupational therapy session</td>
+<td>Single OT visit.</td></tr>
+<tr><td style="white-space:nowrap">REH-SPEECH<a name="ng-claim-product-or-service-cs-REH-SPEECH"> </a></td>
+<td>Speech therapy session</td>
+<td>Single speech therapy visit.</td></tr>
+<tr><td style="white-space:nowrap">AMB-TRNS<a name="ng-claim-product-or-service-cs-AMB-TRNS"> </a></td>
+<td>Ambulance transport (one-way)</td>
+<td>Facility-to-facility or scene-to-facility.</td></tr>
+<tr><td style="white-space:nowrap">ADM-CLAIM<a name="ng-claim-product-or-service-cs-ADM-CLAIM"> </a></td>
+<td>Administrative/claim handling fee</td>
+<td>Processing/admin fee per policy.</td></tr>
+<tr><td style="white-space:nowrap">ADM-CO-PAY<a name="ng-claim-product-or-service-cs-ADM-CO-PAY"> </a></td>
+<td>Co-payment</td>
+<td>Member co-pay amount line.</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

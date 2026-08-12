@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="NgPractitioner-002"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner NgPractitioner-002</b></p><a name="NgPractitioner-002"> </a><a name="hcNgPractitioner-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-practitioner.html">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pcn-cs</code>/PCN-45231</p><p><b>active</b>: true</p><p><b>name</b>: Nkiru Okeke </p><p><b>telecom</b>: <a href="tel:+2348057788990">+2348057788990</a>, <a href="mailto:nkiru.okeke@pharm.example.ng">nkiru.okeke@pharm.example.ng</a></p><p><b>birthDate</b>: 1990-06-24</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Registered Pharmacist</span></td><td>2018-07-01 --&gt; (ongoing)</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pcn-cs"/>
+    <value value="PCN-45231"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Okeke"/>
+    <given value="Nkiru"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+2348057788990"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="nkiru.okeke@pharm.example.ng"/>
+  </telecom>
+  <birthDate value="1990-06-24"/>
+  <qualification>
+    <code>
+      <text value="Registered Pharmacist"/>
+    </code>
+    <period>
+      <start value="2018-07-01"/>
+    </period>
+  </qualification>
+</Practitioner>

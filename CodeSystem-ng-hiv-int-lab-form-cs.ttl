@@ -1,0 +1,355 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-int-lab-form-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-int-lab-form-cs</b></p><a name=\"ng-hiv-int-lab-form-cs\"> </a><a name=\"hcng-hiv-int-lab-form-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">test-type-viral-load<a name=\"ng-hiv-int-lab-form-cs-test-type-viral-load\"> </a></td><td>Viral load</td><td>A viral-load test is requested.</td></tr><tr><td style=\"white-space:nowrap\">test-type-eid<a name=\"ng-hiv-int-lab-form-cs-test-type-eid\"> </a></td><td>Early infant diagnosis</td><td>An early-infant-diagnosis test is requested.</td></tr><tr><td style=\"white-space:nowrap\">test-type-other<a name=\"ng-hiv-int-lab-form-cs-test-type-other\"> </a></td><td>Other laboratory test</td><td>One or more other laboratory investigations are requested.</td></tr><tr><td style=\"white-space:nowrap\">eid-age-less-than-or-equal-72-hours<a name=\"ng-hiv-int-lab-form-cs-eid-age-less-than-or-equal-72-hours\"> </a></td><td>72 hours or younger</td><td>Infant age is 72 hours or younger at specimen collection.</td></tr><tr><td style=\"white-space:nowrap\">eid-age-over-72-hours-under-2-months<a name=\"ng-hiv-int-lab-form-cs-eid-age-over-72-hours-under-2-months\"> </a></td><td>Older than 72 hours and younger than 2 months</td><td>Infant age is greater than 72 hours and less than 2 months.</td></tr><tr><td style=\"white-space:nowrap\">eid-age-2-to-12-months<a name=\"ng-hiv-int-lab-form-cs-eid-age-2-to-12-months\"> </a></td><td>2 to 12 months</td><td>Infant age is at least 2 months and not more than 12 months.</td></tr><tr><td style=\"white-space:nowrap\">eid-age-over-12-months<a name=\"ng-hiv-int-lab-form-cs-eid-age-over-12-months\"> </a></td><td>Older than 12 months</td><td>Infant age is greater than 12 months.</td></tr><tr><td style=\"white-space:nowrap\">arv-prophylaxis-azt-nvp<a name=\"ng-hiv-int-lab-form-cs-arv-prophylaxis-azt-nvp\"> </a></td><td>AZT + NVP</td><td>Zidovudine and nevirapine prophylaxis.</td></tr><tr><td style=\"white-space:nowrap\">arv-prophylaxis-nvp<a name=\"ng-hiv-int-lab-form-cs-arv-prophylaxis-nvp\"> </a></td><td>NVP</td><td>Nevirapine prophylaxis.</td></tr><tr><td style=\"white-space:nowrap\">arv-prophylaxis-azt-3tc-nvp-ral<a name=\"ng-hiv-int-lab-form-cs-arv-prophylaxis-azt-3tc-nvp-ral\"> </a></td><td>AZT + 3TC + NVP/RAL</td><td>Zidovudine, lamivudine and nevirapine or raltegravir prophylaxis as printed on the source form.</td></tr><tr><td style=\"white-space:nowrap\">arv-prophylaxis-other<a name=\"ng-hiv-int-lab-form-cs-arv-prophylaxis-other\"> </a></td><td>Other ARV prophylaxis</td><td>An ARV-prophylaxis regimen not represented by another code; specify separately.</td></tr><tr><td style=\"white-space:nowrap\">arv-prophylaxis-none<a name=\"ng-hiv-int-lab-form-cs-arv-prophylaxis-none\"> </a></td><td>No ARV prophylaxis</td><td>No ARV prophylaxis was received.</td></tr><tr><td style=\"white-space:nowrap\">regimen-line-first<a name=\"ng-hiv-int-lab-form-cs-regimen-line-first\"> </a></td><td>First-line regimen</td><td>The client is receiving a first-line ART regimen.</td></tr><tr><td style=\"white-space:nowrap\">regimen-line-second<a name=\"ng-hiv-int-lab-form-cs-regimen-line-second\"> </a></td><td>Second-line regimen</td><td>The client is receiving a second-line ART regimen.</td></tr><tr><td style=\"white-space:nowrap\">regimen-line-third<a name=\"ng-hiv-int-lab-form-cs-regimen-line-third\"> </a></td><td>Third-line regimen</td><td>The client is receiving a third-line ART regimen.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-baseline-six-months<a name=\"ng-hiv-int-lab-form-cs-vl-indication-baseline-six-months\"> </a></td><td>Baseline: six months after ART initiation</td><td>Baseline viral-load testing six months after ART initiation.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-routine-annual<a name=\"ng-hiv-int-lab-form-cs-vl-indication-routine-annual\"> </a></td><td>Routine: every 12 months</td><td>Routine annual viral-load monitoring.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-clinical-immunologic-failure<a name=\"ng-hiv-int-lab-form-cs-vl-indication-clinical-immunologic-failure\"> </a></td><td>Clinical or immunologic failure</td><td>Viral-load testing requested because of suspected clinical or immunologic treatment failure.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-gestation-32-36-weeks<a name=\"ng-hiv-int-lab-form-cs-vl-indication-gestation-32-36-weeks\"> </a></td><td>32–36 weeks of gestation</td><td>Viral-load testing requested at 32–36 weeks of gestation.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-confirmation-after-eac<a name=\"ng-hiv-int-lab-form-cs-vl-indication-confirmation-after-eac\"> </a></td><td>Confirmation: three to six months after EAC</td><td>Confirmatory viral-load testing three to six months after enhanced adherence counselling.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-recent-infection<a name=\"ng-hiv-int-lab-form-cs-vl-indication-recent-infection\"> </a></td><td>Recent infection</td><td>Viral-load testing requested in the context of recent HIV infection.</td></tr><tr><td style=\"white-space:nowrap\">vl-indication-early-hiv-detection<a name=\"ng-hiv-int-lab-form-cs-vl-indication-early-hiv-detection\"> </a></td><td>Early HIV detection</td><td>Viral-load testing requested for early HIV detection.</td></tr><tr><td style=\"white-space:nowrap\">eid-indication-at-birth<a name=\"ng-hiv-int-lab-form-cs-eid-indication-at-birth\"> </a></td><td>EID at birth</td><td>Early infant diagnosis requested at birth.</td></tr><tr><td style=\"white-space:nowrap\">eid-indication-six-eight-weeks<a name=\"ng-hiv-int-lab-form-cs-eid-indication-six-eight-weeks\"> </a></td><td>EID at 6–8 weeks</td><td>Early infant diagnosis requested at six to eight weeks.</td></tr><tr><td style=\"white-space:nowrap\">eid-indication-two-twelve-months<a name=\"ng-hiv-int-lab-form-cs-eid-indication-two-twelve-months\"> </a></td><td>EID at 2–12 months</td><td>Early infant diagnosis requested between two and twelve months.</td></tr><tr><td style=\"white-space:nowrap\">eid-indication-repeat-invalid<a name=\"ng-hiv-int-lab-form-cs-eid-indication-repeat-invalid\"> </a></td><td>Repeat because of invalid test</td><td>The EID test is repeated because a previous result was invalid.</td></tr><tr><td style=\"white-space:nowrap\">eid-indication-after-breastfeeding<a name=\"ng-hiv-int-lab-form-cs-eid-indication-after-breastfeeding\"> </a></td><td>Repeat after cessation of breastfeeding</td><td>Repeat EID at least six weeks after the last exposure to breast milk.</td></tr><tr><td style=\"white-space:nowrap\">specimen-whole-blood<a name=\"ng-hiv-int-lab-form-cs-specimen-whole-blood\"> </a></td><td>Whole blood</td><td>Whole-blood specimen.</td></tr><tr><td style=\"white-space:nowrap\">specimen-plasma<a name=\"ng-hiv-int-lab-form-cs-specimen-plasma\"> </a></td><td>Plasma</td><td>Plasma specimen.</td></tr><tr><td style=\"white-space:nowrap\">specimen-dbs<a name=\"ng-hiv-int-lab-form-cs-specimen-dbs\"> </a></td><td>DBS</td><td>Dried blood spot specimen.</td></tr><tr><td style=\"white-space:nowrap\">specimen-pbs<a name=\"ng-hiv-int-lab-form-cs-specimen-pbs\"> </a></td><td>PBS</td><td>PBS as printed on the source form; the expansion is not specified by the source workbook.</td></tr><tr><td style=\"white-space:nowrap\">other-test-cd4-count<a name=\"ng-hiv-int-lab-form-cs-other-test-cd4-count\"> </a></td><td>CD4+ cell count</td><td>Absolute CD4+ cell count.</td></tr><tr><td style=\"white-space:nowrap\">other-test-cd4-percentage<a name=\"ng-hiv-int-lab-form-cs-other-test-cd4-percentage\"> </a></td><td>CD4 percentage</td><td>CD4 percentage.</td></tr><tr><td style=\"white-space:nowrap\">other-test-cd4-lfa<a name=\"ng-hiv-int-lab-form-cs-other-test-cd4-lfa\"> </a></td><td>CD4 LFA</td><td>CD4 lateral-flow assay.</td></tr><tr><td style=\"white-space:nowrap\">other-test-tb-lf-lam<a name=\"ng-hiv-int-lab-form-cs-other-test-tb-lf-lam\"> </a></td><td>TB LF-LAM</td><td>Tuberculosis lateral-flow urine lipoarabinomannan test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-serum-crag<a name=\"ng-hiv-int-lab-form-cs-other-test-serum-crag\"> </a></td><td>Serum CrAg</td><td>Serum cryptococcal antigen test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-csf-crag<a name=\"ng-hiv-int-lab-form-cs-other-test-csf-crag\"> </a></td><td>CSF CrAg</td><td>Cerebrospinal-fluid cryptococcal antigen test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-csf-mcs<a name=\"ng-hiv-int-lab-form-cs-other-test-csf-mcs\"> </a></td><td>CSF M/C/S</td><td>Cerebrospinal-fluid microscopy, culture and sensitivity.</td></tr><tr><td style=\"white-space:nowrap\">other-test-hbsag<a name=\"ng-hiv-int-lab-form-cs-other-test-hbsag\"> </a></td><td>HBsAg</td><td>Hepatitis B surface antigen test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-hcv-antibody<a name=\"ng-hiv-int-lab-form-cs-other-test-hcv-antibody\"> </a></td><td>HCV antibody</td><td>Hepatitis C virus antibody test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-hbv-viral-load<a name=\"ng-hiv-int-lab-form-cs-other-test-hbv-viral-load\"> </a></td><td>HBV viral load</td><td>Hepatitis B virus viral-load test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-hcv-viral-load<a name=\"ng-hiv-int-lab-form-cs-other-test-hcv-viral-load\"> </a></td><td>HCV viral load</td><td>Hepatitis C virus viral-load test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-syphilis<a name=\"ng-hiv-int-lab-form-cs-other-test-syphilis\"> </a></td><td>Syphilis</td><td>Syphilis serology.</td></tr><tr><td style=\"white-space:nowrap\">other-test-hpv<a name=\"ng-hiv-int-lab-form-cs-other-test-hpv\"> </a></td><td>HPV</td><td>Human papillomavirus test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-cytology<a name=\"ng-hiv-int-lab-form-cs-other-test-cytology\"> </a></td><td>Cytology</td><td>Cytology or cervical-screening test, including VIA or Pap smear as printed on the source form.</td></tr><tr><td style=\"white-space:nowrap\">other-test-random-glucose<a name=\"ng-hiv-int-lab-form-cs-other-test-random-glucose\"> </a></td><td>Random glucose</td><td>Random blood-glucose test.</td></tr><tr><td style=\"white-space:nowrap\">other-test-naat<a name=\"ng-hiv-int-lab-form-cs-other-test-naat\"> </a></td><td>NAAT</td><td>Nucleic-acid amplification test; the target organism is not specified on the source form.</td></tr><tr><td style=\"white-space:nowrap\">other-test-urinalysis<a name=\"ng-hiv-int-lab-form-cs-other-test-urinalysis\"> </a></td><td>Urinalysis</td><td>Urinalysis.</td></tr><tr><td style=\"white-space:nowrap\">result-negative<a name=\"ng-hiv-int-lab-form-cs-result-negative\"> </a></td><td>Negative</td><td>The qualitative laboratory result is negative.</td></tr><tr><td style=\"white-space:nowrap\">result-positive<a name=\"ng-hiv-int-lab-form-cs-result-positive\"> </a></td><td>Positive</td><td>The qualitative laboratory result is positive.</td></tr><tr><td style=\"white-space:nowrap\">result-invalid<a name=\"ng-hiv-int-lab-form-cs-result-invalid\"> </a></td><td>Invalid</td><td>The test result is invalid.</td></tr><tr><td style=\"white-space:nowrap\">result-non-reactive<a name=\"ng-hiv-int-lab-form-cs-result-non-reactive\"> </a></td><td>Non-reactive</td><td>The serology result is non-reactive.</td></tr><tr><td style=\"white-space:nowrap\">result-reactive<a name=\"ng-hiv-int-lab-form-cs-result-reactive\"> </a></td><td>Reactive</td><td>The serology result is reactive.</td></tr><tr><td style=\"white-space:nowrap\">cytology-method-via<a name=\"ng-hiv-int-lab-form-cs-cytology-method-via\"> </a></td><td>VIA</td><td>Visual inspection with acetic acid.</td></tr><tr><td style=\"white-space:nowrap\">cytology-method-pap-smear<a name=\"ng-hiv-int-lab-form-cs-cytology-method-pap-smear\"> </a></td><td>Pap smear</td><td>Papanicolaou cervical cytology.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.54" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgHivIntLabFormCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG HIV Integrated Laboratory Form Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-28"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local coded answer concepts transcribed or inferred from the Nigeria HIV\nIntegrated Laboratory Order and Result Form revised November 2025."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "55"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "test-type-viral-load" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Viral load" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A viral-load test is requested." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "test-type-eid" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Early infant diagnosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An early-infant-diagnosis test is requested." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "test-type-other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other laboratory test" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "One or more other laboratory investigations are requested." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-age-less-than-or-equal-72-hours" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "72 hours or younger" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infant age is 72 hours or younger at specimen collection." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-age-over-72-hours-under-2-months" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Older than 72 hours and younger than 2 months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infant age is greater than 72 hours and less than 2 months." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-age-2-to-12-months" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2 to 12 months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infant age is at least 2 months and not more than 12 months." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-age-over-12-months" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Older than 12 months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Infant age is greater than 12 months." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arv-prophylaxis-azt-nvp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + NVP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zidovudine and nevirapine prophylaxis." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arv-prophylaxis-nvp" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NVP" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nevirapine prophylaxis." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arv-prophylaxis-azt-3tc-nvp-ral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AZT + 3TC + NVP/RAL" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Zidovudine, lamivudine and nevirapine or raltegravir prophylaxis as printed on the source form." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arv-prophylaxis-other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other ARV prophylaxis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "An ARV-prophylaxis regimen not represented by another code; specify separately." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "arv-prophylaxis-none" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "No ARV prophylaxis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "No ARV prophylaxis was received." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-line-first" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "First-line regimen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client is receiving a first-line ART regimen." ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-line-second" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Second-line regimen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client is receiving a second-line ART regimen." ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regimen-line-third" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Third-line regimen" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client is receiving a third-line ART regimen." ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-baseline-six-months" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Baseline: six months after ART initiation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Baseline viral-load testing six months after ART initiation." ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-routine-annual" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Routine: every 12 months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Routine annual viral-load monitoring." ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-clinical-immunologic-failure" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical or immunologic failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Viral-load testing requested because of suspected clinical or immunologic treatment failure." ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-gestation-32-36-weeks" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "32–36 weeks of gestation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Viral-load testing requested at 32–36 weeks of gestation." ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-confirmation-after-eac" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Confirmation: three to six months after EAC" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Confirmatory viral-load testing three to six months after enhanced adherence counselling." ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-recent-infection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Recent infection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Viral-load testing requested in the context of recent HIV infection." ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vl-indication-early-hiv-detection" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Early HIV detection" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Viral-load testing requested for early HIV detection." ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-indication-at-birth" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EID at birth" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Early infant diagnosis requested at birth." ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-indication-six-eight-weeks" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EID at 6–8 weeks" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Early infant diagnosis requested at six to eight weeks." ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-indication-two-twelve-months" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "EID at 2–12 months" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Early infant diagnosis requested between two and twelve months." ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-indication-repeat-invalid" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Repeat because of invalid test" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The EID test is repeated because a previous result was invalid." ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eid-indication-after-breastfeeding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Repeat after cessation of breastfeeding" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Repeat EID at least six weeks after the last exposure to breast milk." ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "specimen-whole-blood" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Whole blood" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Whole-blood specimen." ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "specimen-plasma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Plasma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Plasma specimen." ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "specimen-dbs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DBS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Dried blood spot specimen." ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "specimen-pbs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PBS" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "PBS as printed on the source form; the expansion is not specified by the source workbook." ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-cd4-count" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CD4+ cell count" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Absolute CD4+ cell count." ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-cd4-percentage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CD4 percentage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CD4 percentage." ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-cd4-lfa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CD4 LFA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CD4 lateral-flow assay." ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-tb-lf-lam" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "TB LF-LAM" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tuberculosis lateral-flow urine lipoarabinomannan test." ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-serum-crag" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Serum CrAg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Serum cryptococcal antigen test." ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-csf-crag" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CSF CrAg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cerebrospinal-fluid cryptococcal antigen test." ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-csf-mcs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CSF M/C/S" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cerebrospinal-fluid microscopy, culture and sensitivity." ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-hbsag" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HBsAg" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hepatitis B surface antigen test." ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-hcv-antibody" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HCV antibody" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hepatitis C virus antibody test." ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-hbv-viral-load" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HBV viral load" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hepatitis B virus viral-load test." ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-hcv-viral-load" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HCV viral load" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hepatitis C virus viral-load test." ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-syphilis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Syphilis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Syphilis serology." ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-hpv" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HPV" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Human papillomavirus test." ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-cytology" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cytology" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Cytology or cervical-screening test, including VIA or Pap smear as printed on the source form." ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-random-glucose" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Random glucose" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Random blood-glucose test." ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-naat" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "NAAT" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Nucleic-acid amplification test; the target organism is not specified on the source form." ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other-test-urinalysis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Urinalysis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Urinalysis." ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "result-negative" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Negative" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The qualitative laboratory result is negative." ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "result-positive" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Positive" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The qualitative laboratory result is positive." ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "result-invalid" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Invalid" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The test result is invalid." ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "result-non-reactive" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Non-reactive" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The serology result is non-reactive." ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "result-reactive" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reactive" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The serology result is reactive." ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cytology-method-via" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "VIA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Visual inspection with acetic acid." ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cytology-method-pap-smear" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pap smear" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Papanicolaou cervical cytology." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,73 @@
+{
+  "resourceType" : "Patient",
+  "id" : "NgPatient-001",
+  "meta" : {
+    "lastUpdated" : "2025-11-04T08:30:00Z",
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient NgPatient-001</b></p><a name=\"NgPatient-001\"> </a><a name=\"hcNgPatient-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-11-04 08:30:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-patient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>mrn/ASO-2025-0098</li><li>mobile/08051234567</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">15 Ajayi Street Ikeja LA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Funke Adebayo </li><li>Ikeja LA </li><li><a href=\"tel:+2348059988776\">+2348059988776</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "NIN"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "23456789012"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "MRN"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "ASO-2025-0098"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+        "code" : "MOBILE"
+      }]
+    },
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "value" : "08051234567"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Adebayo",
+    "given" : ["Kemi"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1995-02-14",
+  "address" : [{
+    "line" : ["15 Ajayi Street"],
+    "city" : "Ikeja",
+    "district" : "la-ikeja",
+    "state" : "LA"
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "text" : "Mother"
+    }],
+    "name" : {
+      "family" : "Adebayo",
+      "given" : ["Funke"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "+2348059988776"
+    }],
+    "address" : {
+      "city" : "Ikeja",
+      "district" : "la-ikeja",
+      "state" : "LA"
+    }
+  }]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-positive-tracking-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-positive-tracking-cs</b></p><a name="ng-hiv-positive-tracking-cs"> </a><a name="hcng-hiv-positive-tracking-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Started-ART<a name="ng-hiv-positive-tracking-cs-Started-ART"> </a></td><td>Started ART</td></tr><tr><td style="white-space:nowrap">Not-Started<a name="ng-hiv-positive-tracking-cs-Not-Started"> </a></td><td>ART Not Started</td></tr><tr><td style="white-space:nowrap">Final-Outcome<a name="ng-hiv-positive-tracking-cs-Final-Outcome"> </a></td><td>Final Outcome</td></tr><tr><td style="white-space:nowrap">Linked-To-Care<a name="ng-hiv-positive-tracking-cs-Linked-To-Care"> </a></td><td>Linked to care and treatment</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.66"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPositiveTrackingCS"/>
+  <title value="HIV Positive Tracking"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for representing HIV positive tracking."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="Started-ART"/>
+    <display value="Started ART"/>
+  </concept>
+  <concept>
+    <code value="Not-Started"/>
+    <display value="ART Not Started"/>
+  </concept>
+  <concept>
+    <code value="Final-Outcome"/>
+    <display value="Final Outcome"/>
+  </concept>
+  <concept>
+    <code value="Linked-To-Care"/>
+    <display value="Linked to care and treatment"/>
+  </concept>
+</CodeSystem>

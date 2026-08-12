@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-tracking-reason-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-tracking-reason-cs</b></p><a name="ng-hiv-tracking-reason-cs"> </a><a name="hcng-hiv-tracking-reason-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-reason-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">11a<a name="ng-hiv-tracking-reason-cs-11a"> </a></td><td>Intensive follow-up</td></tr><tr><td style="white-space:nowrap">11b<a name="ng-hiv-tracking-reason-cs-11b"> </a></td><td>Missed appointment</td></tr><tr><td style="white-space:nowrap">11c<a name="ng-hiv-tracking-reason-cs-11c"> </a></td><td>Missed pharmacy refill</td></tr><tr><td style="white-space:nowrap">11d<a name="ng-hiv-tracking-reason-cs-11d"> </a></td><td>Lost to follow-up</td></tr><tr><td style="white-space:nowrap">11e<a name="ng-hiv-tracking-reason-cs-11e"> </a></td><td>Other reason</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-reason-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.83"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivTrackingReasonCS"/>
+  <title value="NG HIV Tracking Register Reasons for Tracking"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reason-for-tracking codes printed for T16."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="11a"/>
+    <display value="Intensive follow-up"/>
+  </concept>
+  <concept>
+    <code value="11b"/>
+    <display value="Missed appointment"/>
+  </concept>
+  <concept>
+    <code value="11c"/>
+    <display value="Missed pharmacy refill"/>
+  </concept>
+  <concept>
+    <code value="11d"/>
+    <display value="Lost to follow-up"/>
+  </concept>
+  <concept>
+    <code value="11e"/>
+    <display value="Other reason"/>
+  </concept>
+</CodeSystem>

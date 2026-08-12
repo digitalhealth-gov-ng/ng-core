@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-alert-category-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-alert-category-vs</b></p><a name=\"ng-alert-category-vs\"> </a><a name=\"hcng-alert-category-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ng-alert-category-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.0</span></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-alert-category-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.4"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgAlertCategoryVS",
+  "title" : "Nigeria Alert Category Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Categories for alerts represented using the Nigeria Alert Flag profile.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs"
+    }]
+  }
+}

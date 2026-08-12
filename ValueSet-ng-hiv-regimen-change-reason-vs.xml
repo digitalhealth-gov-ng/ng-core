@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-regimen-change-reason-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-regimen-change-reason-vs</b></p><a name="ng-hiv-regimen-change-reason-vs"> </a><a name="hcng-hiv-regimen-change-reason-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-care-art-codes-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-1">regimen-change-reason-1</a></td><td style="color: #cccccc">Toxicity/side effects</td><td>Source form code 1.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-2">regimen-change-reason-2</a></td><td style="color: #cccccc">Pregnancy</td><td>Source form code 2.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-3">regimen-change-reason-3</a></td><td style="color: #cccccc">Risk of pregnancy</td><td>Source form code 3.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-4">regimen-change-reason-4</a></td><td style="color: #cccccc">Due to new TB</td><td>Source form code 4.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-5">regimen-change-reason-5</a></td><td style="color: #cccccc">New drug available</td><td>Source form code 5.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-6">regimen-change-reason-6</a></td><td style="color: #cccccc">Drug out of stock</td><td>Source form code 6.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-7">regimen-change-reason-7</a></td><td style="color: #cccccc">Clinical treatment failure</td><td>Source form code 7.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-8">regimen-change-reason-8</a></td><td style="color: #cccccc">Immunologic failure</td><td>Source form code 8.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-9">regimen-change-reason-9</a></td><td style="color: #cccccc">Virologic failure</td><td>Source form code 9.</td></tr><tr><td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-regimen-change-reason-10">regimen-change-reason-10</a></td><td style="color: #cccccc">Other reason</td><td>Source form code 10: Other reason (specify).</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-regimen-change-reason-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.134"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivRegimenChangeReasonVS"/>
+  <title value="NG HIV Regimen Substitution or Switch Reason"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-27"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons for ART regimen substitution or switch used on the Nigeria HIV Care/ART Card."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"/>
+      <concept>
+        <code value="regimen-change-reason-1"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-2"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-3"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-4"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-5"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-6"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-7"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-8"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-9"/>
+      </concept>
+      <concept>
+        <code value="regimen-change-reason-10"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

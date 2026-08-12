@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-partner-and-fbict-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-partner-and-fbict-cs</b></p><a name="ng-hiv-partner-and-fbict-cs"> </a><a name="hcng-hiv-partner-and-fbict-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-and-fbict-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Partner-FBICT-Eligibiity<a name="ng-hiv-partner-and-fbict-cs-Partner-FBICT-Eligibiity"> </a></td><td>Eligible for partner and FBICT</td></tr><tr><td style="white-space:nowrap">Partner-FBICT-Offered<a name="ng-hiv-partner-and-fbict-cs-Partner-FBICT-Offered"> </a></td><td>Offered partner and FBICT</td></tr><tr><td style="white-space:nowrap">Partner-FBICT-Accepted<a name="ng-hiv-partner-and-fbict-cs-Partner-FBICT-Accepted"> </a></td><td>Accepted partner and FBICT</td></tr><tr><td style="white-space:nowrap">Partner-Services<a name="ng-hiv-partner-and-fbict-cs-Partner-Services"> </a></td><td>Partner services</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-and-fbict-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.57"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPartnerAndFBICTCS"/>
+  <title value="HIV Partner and FBICT"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating the patient's status for partner and Family-based Index Case Testing (FBICT)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="Partner-FBICT-Eligibiity"/>
+    <display value="Eligible for partner and FBICT"/>
+  </concept>
+  <concept>
+    <code value="Partner-FBICT-Offered"/>
+    <display value="Offered partner and FBICT"/>
+  </concept>
+  <concept>
+    <code value="Partner-FBICT-Accepted"/>
+    <display value="Accepted partner and FBICT"/>
+  </concept>
+  <concept>
+    <code value="Partner-Services"/>
+    <display value="Partner services"/>
+  </concept>
+</CodeSystem>

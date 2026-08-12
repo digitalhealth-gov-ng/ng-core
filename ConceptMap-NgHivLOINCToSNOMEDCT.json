@@ -1,0 +1,103 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NgHivLOINCToSNOMEDCT",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap NgHivLOINCToSNOMEDCT</b></p><a name=\"NgHivLOINCToSNOMEDCT\"> </a><a name=\"hcNgHivLOINCToSNOMEDCT\"> </a><p>Mapping from <a href=\"ValueSet-ng-hiv-loinc-concepts.html\">Nigeria HIV LOINC Concepts</a> to <a href=\"ValueSet-ng-hiv-snomed-ct-concepts.html\">Nigeria HIV SNOMED CT Concepts</a></p><br/><p>Mapping from <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>LA8969-3 (Poor)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>135818000 (General health poor)</td></tr><tr><td>LA8968-5 (Fair)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>135817005 (General health fair)</td></tr><tr><td>LA8967-7 (Good)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>135815002 (General health good)</td></tr><tr><td>101819-1 (Nutritional assessment for malnutrition status)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>87276001 (Nutritional status)</td></tr><tr><td>56072-2 (Circumference Mid upper arm - right)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>284473002 (Mid upper arm circumference)</td></tr><tr><td>25836-8 (HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>315124004 (HIV viral load)</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLOINCToSNOMEDCT",
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.18.1"
+  },
+  "version" : "0.0.0",
+  "name" : "NgHivLOINCToSNOMEDCT",
+  "title" : "Nigeria HIV LOINC → SNOMED CT",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-07-24",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "sourceCanonical" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-loinc-concepts",
+  "targetCanonical" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-snomed-ct-concepts",
+  "group" : [{
+    "source" : "http://loinc.org",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "LA8969-3",
+      "target" : [{
+        "code" : "135818000",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA8968-5",
+      "target" : [{
+        "code" : "135817005",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA8967-7",
+      "target" : [{
+        "code" : "135815002",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "101819-1",
+      "target" : [{
+        "code" : "87276001",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "56072-2",
+      "target" : [{
+        "code" : "284473002",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "25836-8",
+      "target" : [{
+        "code" : "315124004",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

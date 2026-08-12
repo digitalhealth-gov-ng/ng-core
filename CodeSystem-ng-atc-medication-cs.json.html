@@ -1,0 +1,652 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NG Local ATC Medication Codes - JSON Representation - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.412"}
+    h3,h4,h5,h6{--heading-prefix:"32.412"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NG Local ATC Medication Codes</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-ng-atc-medication-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-atc-medication-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ng-atc-medication-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NG Local ATC Medication Codes - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-08-12
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-ng-atc-medication-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-ng-atc-medication-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "ng-atc-medication-cs",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ng-atc-medication-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ng-atc-medication-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcng-atc-medication-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A11-IFA&lt;a name=\&quot;ng-atc-medication-cs-A11-IFA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Iron–Folic Acid tablets (30/0.4 mg)&lt;/td&gt;&lt;td&gt;Daily antenatal iron–folate for anemia prevention.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A11-FA-5&lt;a name=\&quot;ng-atc-medication-cs-A11-FA-5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Folic acid 5 mg tablet&lt;/td&gt;&lt;td&gt;High-dose folate per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A12-CALC&lt;a name=\&quot;ng-atc-medication-cs-A12-CALC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Calcium carbonate 500 mg tablet&lt;/td&gt;&lt;td&gt;Calcium supplementation to reduce pre-eclampsia risk.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B03-FE-SULF&lt;a name=\&quot;ng-atc-medication-cs-B03-FE-SULF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ferrous sulfate 200 mg (65 mg elemental) tablet&lt;/td&gt;&lt;td&gt;Treatment of iron-deficiency anemia.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A11-MV-PREN&lt;a name=\&quot;ng-atc-medication-cs-A11-MV-PREN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prenatal multivitamin&lt;/td&gt;&lt;td&gt;Combined antenatal vitamin/mineral tablet.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A11-VITA-100&lt;a name=\&quot;ng-atc-medication-cs-A11-VITA-100\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vitamin A 100,000 IU capsule&lt;/td&gt;&lt;td&gt;For post-partum/child dosing per guideline.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A11-VITA-200&lt;a name=\&quot;ng-atc-medication-cs-A11-VITA-200\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vitamin A 200,000 IU capsule&lt;/td&gt;&lt;td&gt;For post-partum/child dosing per guideline.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G02-OXY&lt;a name=\&quot;ng-atc-medication-cs-G02-OXY\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oxytocin 10 IU/mL injection&lt;/td&gt;&lt;td&gt;Active management of third stage, PPH prevention/treatment.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G02-MISO&lt;a name=\&quot;ng-atc-medication-cs-G02-MISO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Misoprostol 200 mcg tablet&lt;/td&gt;&lt;td&gt;PPH prevention/treatment where oxytocin unavailable.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A12-MGSO4&lt;a name=\&quot;ng-atc-medication-cs-A12-MGSO4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Magnesium sulfate injection&lt;/td&gt;&lt;td&gt;Severe pre-eclampsia/eclampsia management (loading/maintenance).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C02-METHYLDOPA&lt;a name=\&quot;ng-atc-medication-cs-C02-METHYLDOPA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Methyldopa 250 mg tablet&lt;/td&gt;&lt;td&gt;Antihypertensive in pregnancy per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C08-NIFEDIPINE&lt;a name=\&quot;ng-atc-medication-cs-C08-NIFEDIPINE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nifedipine 10 mg capsule&lt;/td&gt;&lt;td&gt;Acute BP control in severe hypertension (per protocol).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-AMX-DT&lt;a name=\&quot;ng-atc-medication-cs-J01-AMX-DT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amoxicillin 250 mg dispersible tablet&lt;/td&gt;&lt;td&gt;Child pneumonia/OTIT treatment; community case mgmt.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-AMOX-CAP&lt;a name=\&quot;ng-atc-medication-cs-J01-AMOX-CAP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amoxicillin 500 mg capsule&lt;/td&gt;&lt;td&gt;Adult/maternal infections per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-AMP&lt;a name=\&quot;ng-atc-medication-cs-J01-AMP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ampicillin injection&lt;/td&gt;&lt;td&gt;Neonatal sepsis first-line (with gentamicin).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-GENTA&lt;a name=\&quot;ng-atc-medication-cs-J01-GENTA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gentamicin injection&lt;/td&gt;&lt;td&gt;Neonatal sepsis first-line (with ampicillin).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-CEFTRI&lt;a name=\&quot;ng-atc-medication-cs-J01-CEFTRI\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ceftriaxone injection&lt;/td&gt;&lt;td&gt;Severe infections; inpatient use per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-CLX&lt;a name=\&quot;ng-atc-medication-cs-J01-CLX\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cloxacillin 500 mg capsule&lt;/td&gt;&lt;td&gt;Skin/soft tissue and mastitis per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-METRO&lt;a name=\&quot;ng-atc-medication-cs-J01-METRO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metronidazole 400 mg tablet&lt;/td&gt;&lt;td&gt;Anaerobic/obstetric infections per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J06-ANTI-D-IG&lt;a name=\&quot;ng-atc-medication-cs-J06-ANTI-D-IG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anti-D immunoglobulin&lt;/td&gt;&lt;td&gt;Rh-D negative prophylaxis for sensitizing events.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-ERYTHRO&lt;a name=\&quot;ng-atc-medication-cs-J01-ERYTHRO\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Erythromycin 250 mg tablet&lt;/td&gt;&lt;td&gt;Alternative macrolide; PPROM/GBS contexts per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A07-ORS&lt;a name=\&quot;ng-atc-medication-cs-A07-ORS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral rehydration salts (sachet)&lt;/td&gt;&lt;td&gt;Acute diarrhea rehydration.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A07-ZINC20&lt;a name=\&quot;ng-atc-medication-cs-A07-ZINC20\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zinc sulfate 20 mg tablet&lt;/td&gt;&lt;td&gt;Adjunct for pediatric diarrhea (10–14 days).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N02-PARA-SYR&lt;a name=\&quot;ng-atc-medication-cs-N02-PARA-SYR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paracetamol 125 mg/5 mL syrup&lt;/td&gt;&lt;td&gt;Fever/pain management in children.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R03-SALB-INH&lt;a name=\&quot;ng-atc-medication-cs-R03-SALB-INH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Salbutamol 100 mcg inhaler&lt;/td&gt;&lt;td&gt;Wheeze/asthma relief in MNCH contexts.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P01-ACT-AL&lt;a name=\&quot;ng-atc-medication-cs-P01-ACT-AL\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACT: Artemether–Lumefantrine&lt;/td&gt;&lt;td&gt;First-line uncomplicated malaria (weight-based).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P01-ACT-DHA-PPQ&lt;a name=\&quot;ng-atc-medication-cs-P01-ACT-DHA-PPQ\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ACT: Dihydroartemisinin–Piperaquine&lt;/td&gt;&lt;td&gt;Alternative ACT per national guideline.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P01-SP&lt;a name=\&quot;ng-atc-medication-cs-P01-SP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sulfadoxine–Pyrimethamine (SP)&lt;/td&gt;&lt;td&gt;IPTp in pregnancy per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P02-ALB&lt;a name=\&quot;ng-atc-medication-cs-P02-ALB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Albendazole 400 mg tablet&lt;/td&gt;&lt;td&gt;Antenatal deworming per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G03-LNG-EC&lt;a name=\&quot;ng-atc-medication-cs-G03-LNG-EC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Levonorgestrel 1.5 mg (EC)&lt;/td&gt;&lt;td&gt;Emergency contraception (single dose).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G03-DMPA-IM&lt;a name=\&quot;ng-atc-medication-cs-G03-DMPA-IM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DMPA 150 mg/mL IM injection&lt;/td&gt;&lt;td&gt;3-monthly injectable contraceptive.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G03-DMPA-SC&lt;a name=\&quot;ng-atc-medication-cs-G03-DMPA-SC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;DMPA 104 mg/0.65 mL SC&lt;/td&gt;&lt;td&gt;3-monthly SC contraceptive (sayana-type).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G03-ETON-IMP&lt;a name=\&quot;ng-atc-medication-cs-G03-ETON-IMP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Etonogestrel implant&lt;/td&gt;&lt;td&gt;Long-acting reversible contraception.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G03-COC&lt;a name=\&quot;ng-atc-medication-cs-G03-COC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Combined oral contraceptive (LNG/EE)&lt;/td&gt;&lt;td&gt;Daily combined pill per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D08-CHX-7&lt;a name=\&quot;ng-atc-medication-cs-D08-CHX-7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chlorhexidine 7.1% digluconate gel&lt;/td&gt;&lt;td&gt;Umbilical cord care (4% free CHX equivalent).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-BCG&lt;a name=\&quot;ng-atc-medication-cs-J07-BCG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BCG vaccine&lt;/td&gt;&lt;td&gt;At birth — TB prevention.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-OPV&lt;a name=\&quot;ng-atc-medication-cs-J07-OPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OPV vaccine&lt;/td&gt;&lt;td&gt;Oral polio per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-IPV&lt;a name=\&quot;ng-atc-medication-cs-J07-IPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IPV vaccine&lt;/td&gt;&lt;td&gt;Inactivated polio per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-PENTA&lt;a name=\&quot;ng-atc-medication-cs-J07-PENTA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pentavalent DTP-HepB-Hib vaccine&lt;/td&gt;&lt;td&gt;Primary series per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-PCV&lt;a name=\&quot;ng-atc-medication-cs-J07-PCV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumococcal conjugate vaccine&lt;/td&gt;&lt;td&gt;PCV10/13 per national schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-ROTA&lt;a name=\&quot;ng-atc-medication-cs-J07-ROTA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rotavirus vaccine&lt;/td&gt;&lt;td&gt;Rotavirus per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-MR&lt;a name=\&quot;ng-atc-medication-cs-J07-MR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles-Rubella vaccine&lt;/td&gt;&lt;td&gt;MR at 9/15 months per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-YF&lt;a name=\&quot;ng-atc-medication-cs-J07-YF\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yellow fever vaccine&lt;/td&gt;&lt;td&gt;Yellow fever per schedule.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-HPV&lt;a name=\&quot;ng-atc-medication-cs-J07-HPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HPV vaccine&lt;/td&gt;&lt;td&gt;Girls/boys per national program.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J07-TD&lt;a name=\&quot;ng-atc-medication-cs-J07-TD\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tetanus-diphtheria (Td) vaccine&lt;/td&gt;&lt;td&gt;Adolescent/maternal protection.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R01-ORS-ZINC-KIT&lt;a name=\&quot;ng-atc-medication-cs-R01-ORS-ZINC-KIT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ORS + Zinc kit&lt;/td&gt;&lt;td&gt;Community diarrhea pack for claims/prescription.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J01-AMP-GEN-COMB&lt;a name=\&quot;ng-atc-medication-cs-J01-AMP-GEN-COMB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ampicillin + Gentamicin regimen (neonatal)&lt;/td&gt;&lt;td&gt;Combined line item for neonatal sepsis claims.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A10-INSULIN-NPH&lt;a name=\&quot;ng-atc-medication-cs-A10-INSULIN-NPH\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Insulin NPH&lt;/td&gt;&lt;td&gt;Gestational diabetes—basal insulin per protocol.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A10-METFORMIN&lt;a name=\&quot;ng-atc-medication-cs-A10-METFORMIN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metformin 500 mg tablet&lt;/td&gt;&lt;td&gt;GDM/T2DM per national guideline and obstetric advice.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-atc-medication-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "urn:oid:2.16.840.1.113884.3.9944.1.16.4"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.0.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "NgATCLocalMedicationCS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "NG Local ATC Medication Codes",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-08-12T13:22:49+01:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "NDHI",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "NDHI",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://digitalhealth.gov.ng"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "emeka2015@gmail.com"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nigeria Digital in Health Initiative.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "lekeojewale@gmail.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Nigeria Digital in Health Initiative.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "emeka2015@gmail.com",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Local ATC. Codes are placeholders aligned to common maternal, newborn, and child health needs, plus EPI vaccines.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "NG",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Nigeria"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 49,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A11-IFA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Iron–Folic Acid tablets (30/0.4 mg)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Daily antenatal iron–folate for anemia prevention."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A11-FA-5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Folic acid 5 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "High-dose folate per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A12-CALC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Calcium carbonate 500 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Calcium supplementation to reduce pre-eclampsia risk."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B03-FE-SULF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ferrous sulfate 200 mg (65 mg elemental) tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Treatment of iron-deficiency anemia."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A11-MV-PREN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Prenatal multivitamin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Combined antenatal vitamin/mineral tablet."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A11-VITA-100",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vitamin A 100,000 IU capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "For post-partum/child dosing per guideline."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A11-VITA-200",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vitamin A 200,000 IU capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "For post-partum/child dosing per guideline."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G02-OXY",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Oxytocin 10 IU/mL injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Active management of third stage, PPH prevention/treatment."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G02-MISO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Misoprostol 200 mcg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "PPH prevention/treatment where oxytocin unavailable."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A12-MGSO4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Magnesium sulfate injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Severe pre-eclampsia/eclampsia management (loading/maintenance)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "C02-METHYLDOPA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Methyldopa 250 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Antihypertensive in pregnancy per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "C08-NIFEDIPINE",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nifedipine 10 mg capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Acute BP control in severe hypertension (per protocol)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-AMX-DT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Amoxicillin 250 mg dispersible tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Child pneumonia/OTIT treatment; community case mgmt."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-AMOX-CAP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Amoxicillin 500 mg capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Adult/maternal infections per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-AMP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ampicillin injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Neonatal sepsis first-line (with gentamicin)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-GENTA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Gentamicin injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Neonatal sepsis first-line (with ampicillin)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-CEFTRI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ceftriaxone injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Severe infections; inpatient use per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-CLX",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cloxacillin 500 mg capsule",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Skin/soft tissue and mastitis per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-METRO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Metronidazole 400 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Anaerobic/obstetric infections per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J06-ANTI-D-IG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anti-D immunoglobulin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Rh-D negative prophylaxis for sensitizing events."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-ERYTHRO",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Erythromycin 250 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Alternative macrolide; PPROM/GBS contexts per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A07-ORS",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral rehydration salts (sachet)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Acute diarrhea rehydration."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A07-ZINC20",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Zinc sulfate 20 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Adjunct for pediatric diarrhea (10–14 days)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N02-PARA-SYR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Paracetamol 125 mg/5 mL syrup",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Fever/pain management in children."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R03-SALB-INH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Salbutamol 100 mcg inhaler",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Wheeze/asthma relief in MNCH contexts."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P01-ACT-AL",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ACT: Artemether–Lumefantrine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "First-line uncomplicated malaria (weight-based)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P01-ACT-DHA-PPQ",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ACT: Dihydroartemisinin–Piperaquine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Alternative ACT per national guideline."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P01-SP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sulfadoxine–Pyrimethamine (SP)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "IPTp in pregnancy per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P02-ALB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Albendazole 400 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Antenatal deworming per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G03-LNG-EC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Levonorgestrel 1.5 mg (EC)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Emergency contraception (single dose)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G03-DMPA-IM",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DMPA 150 mg/mL IM injection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "3-monthly injectable contraceptive."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G03-DMPA-SC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "DMPA 104 mg/0.65 mL SC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "3-monthly SC contraceptive (sayana-type)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G03-ETON-IMP",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Etonogestrel implant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Long-acting reversible contraception."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G03-COC",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Combined oral contraceptive (LNG/EE)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Daily combined pill per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "D08-CHX-7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chlorhexidine 7.1% digluconate gel",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Umbilical cord care (4% free CHX equivalent)."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-BCG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BCG vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "At birth — TB prevention."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-OPV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OPV vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Oral polio per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-IPV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "IPV vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Inactivated polio per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-PENTA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pentavalent DTP-HepB-Hib vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Primary series per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-PCV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pneumococcal conjugate vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "PCV10/13 per national schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-ROTA",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rotavirus vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Rotavirus per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-MR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles-Rubella vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "MR at 9/15 months per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-YF",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Yellow fever vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Yellow fever per schedule."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-HPV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HPV vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Girls/boys per national program."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J07-TD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tetanus-diphtheria (Td) vaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Adolescent/maternal protection."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R01-ORS-ZINC-KIT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ORS + Zinc kit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Community diarrhea pack for claims/prescription."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J01-AMP-GEN-COMB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ampicillin + Gentamicin regimen (neonatal)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Combined line item for neonatal sepsis claims."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A10-INSULIN-NPH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Insulin NPH",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Gestational diabetes—basal insulin per protocol."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A10-METFORMIN",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Metformin 500 mg tablet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "GDM/T2DM per national guideline and obstetric advice."
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

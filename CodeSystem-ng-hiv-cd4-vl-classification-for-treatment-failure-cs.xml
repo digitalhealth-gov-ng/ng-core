@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-cd4-vl-classification-for-treatment-failure-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-cd4-vl-classification-for-treatment-failure-cs</b></p><a name="ng-hiv-cd4-vl-classification-for-treatment-failure-cs"> </a><a name="hcng-hiv-cd4-vl-classification-for-treatment-failure-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Immunologic-Failure<a name="ng-hiv-cd4-vl-classification-for-treatment-failure-cs-Immunologic-Failure"> </a></td><td>CD4 below 250 cells/mm3 (Immunologic Failure)</td></tr><tr><td style="white-space:nowrap">Clinical-Failure<a name="ng-hiv-cd4-vl-classification-for-treatment-failure-cs-Clinical-Failure"> </a></td><td>CD4 below 100 cells/mm3 (Clinical Failure)</td></tr><tr><td style="white-space:nowrap">Virologic-Failure<a name="ng-hiv-cd4-vl-classification-for-treatment-failure-cs-Virologic-Failure"> </a></td><td>VL above 999 copies/mL (Virologic Failure)</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.35"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivCD4AndVLClassificationForTreatmentFailureCS"/>
+  <title value="HIV Viral Load/CD4 Count Classifications CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for indicating the classification for the Viral Load/CD4 count treatment failure."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Immunologic-Failure"/>
+    <display value="CD4 below 250 cells/mm3 (Immunologic Failure)"/>
+  </concept>
+  <concept>
+    <code value="Clinical-Failure"/>
+    <display value="CD4 below 100 cells/mm3 (Clinical Failure)"/>
+  </concept>
+  <concept>
+    <code value="Virologic-Failure"/>
+    <display value="VL above 999 copies/mL (Virologic Failure)"/>
+  </concept>
+</CodeSystem>

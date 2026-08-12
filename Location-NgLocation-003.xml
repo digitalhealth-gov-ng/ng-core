@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="NgLocation-003"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location NgLocation-003</b></p><a name="NgLocation-003"> </a><a name="hcNgLocation-003"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-location.html">NG Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Immunization Room</p><p><b>type</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs phc-center-l2}">PHC Center Level 2</span></p><p><b>address</b>: Opposite Central Market Gwagwalada FC NG </p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>7.081</td><td>8.939</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-NgOrganization-003.html">Organization Gwagwalada Model PHC</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="Immunization Room"/>
+  <type>
+    <coding>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+      <code value="phc-center-l2"/>
+      <display value="PHC Center Level 2"/>
+    </coding>
+  </type>
+  <address>
+    <line value="Opposite Central Market"/>
+    <city value="Gwagwalada"/>
+    <district value="fc-gwagwalada"/>
+    <state value="FC"/>
+    <country value="NG"/>
+  </address>
+  <position>
+    <longitude value="7.081"/>
+    <latitude value="8.939"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/NgOrganization-003"/>
+  </managingOrganization>
+</Location>

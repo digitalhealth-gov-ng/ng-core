@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/PractitionerRole/NgPractitionerRole-002> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgPractitionerRole-002"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole NgPractitionerRole-002</b></p><a name=\"NgPractitionerRole-002\"> </a><a name=\"hcNgPractitionerRole-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-practitioner-role.html\">NG PractitionerRole</a></p></div><p><b>period</b>: 2022-06-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></p><p><b>organization</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>code</b>: <span title=\"Codes:\">Pharmacist</span>, <span title=\"Codes:\">Claims Submission Officer</span></p></div>"
+  ] ;
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "2022-06-01"^^xsd:date ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-001> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-001" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Pharmacist" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeableConcept.text [ fhir:value "Claims Submission Officer" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/PractitionerRole/NgPractitionerRole-002.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

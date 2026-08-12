@@ -1,0 +1,439 @@
+{
+  "package": "ng.gov.digitalhealth.fhir-ig",
+  "version": "0.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "NG",
+  "extensions": [
+    {
+      "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-administrative-ward",
+      "title": "NG Administrative Wards",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-contraindicated",
+      "title": "NG Immunization Contraindicated",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-next-dose-date",
+      "title": "NG Next Dose Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner",
+      "title": "NG Owner of Facility",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications",
+      "title": "NG Vaccine Contraindications",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-mnch-referral-bundle",
+        "title": "2-NGReferral MNCH Transaction Bundle"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-allergy-intolerance",
+        "title": "Nigeria Allergy Intolerance"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-appointment",
+        "title": "Ng Appointment"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-care-plan",
+        "title": "NG CarePlan"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-claim",
+        "title": "NG Claim"
+      }
+    ],
+    "ClaimResponse": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-claim-response",
+        "title": "NG ClaimResponse"
+      }
+    ],
+    "Communication": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-communication",
+        "title": "NG Communication"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-condition",
+        "title": "NG Condition"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-consent",
+        "title": "NG Consent"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage",
+        "title": "NG Claim Coverage"
+      }
+    ],
+    "CoverageEligibilityRequest": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-request",
+        "title": "NG Claim Coverage Eligibility Request"
+      }
+    ],
+    "CoverageEligibilityResponse": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-response",
+        "title": "NG Claim Coverage Eligibility Response"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-device",
+        "title": "NG Device"
+      }
+    ],
+    "DeviceRequest": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-device-request",
+        "title": "NG DeviceRequest"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-diagnostic-report",
+        "title": "DiagnosticReport (IPS)"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-documents",
+        "title": "Nigeria Document Reference"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-encounter",
+        "title": "NG Encounter"
+      }
+    ],
+    "ExplanationOfBenefit": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-explanation-of-benefit",
+        "title": "NG ExplanationOfBenefit"
+      }
+    ],
+    "Flag": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-flag",
+        "title": "Nigeria Alert Flag"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-goal",
+        "title": "NG Goal"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-healthcare-service",
+        "title": "NG HealthcareService"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-questionnaire",
+        "title": "NG Questionnaire"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization",
+        "title": "NG Immunization"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-recommendation",
+        "title": "NG ImmunizationRecommendation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provider-organization",
+        "title": "NG Provider Organization"
+      }
+    ],
+    "Invoice": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-invoice",
+        "title": "NG Invoice"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-ips-composition",
+        "title": "NG IPS Composition"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location",
+        "title": "NG Location"
+      }
+    ],
+    "Measure": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure",
+        "title": "NG Measure"
+      }
+    ],
+    "MeasureReport": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure-report",
+        "title": "NG Measure Report"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication",
+        "title": "NG Medication"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense",
+        "title": "NG MedicationDispense"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request",
+        "title": "NG MedicationRequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-statement",
+        "title": "Nigeria Medication Statement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation",
+        "title": "Nigeria Core Composite Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-alcohol-use",
+        "title": "Nigeria Core Alcohol Use Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-edd",
+        "title": "Nigeria Core Pregnancy Expected Delivery Date Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-outcome",
+        "title": "Nigeria Core Pregnancy Outcome Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-status",
+        "title": "Nigeria Core Pregnancy Status Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-laboratory-pathology",
+        "title": "Nigeria Core Laboratory or Pathology Result Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-radiology",
+        "title": "Nigeria Core Radiology Result Observation"
+      },
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-tobacco-use",
+        "title": "Nigeria Core Tobacco Smoking Status Observation"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient",
+        "title": "NG Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner",
+        "title": "NG Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role",
+        "title": "NG PractitionerRole"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-procedure",
+        "title": "NG Procedure"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provenance",
+        "title": "NG Lightweight Provenance"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person",
+        "title": "NG RelatedPerson"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-service-request",
+        "title": "NG ServiceRequest"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-specimen",
+        "title": "Specimen profile"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task",
+        "title": "NG Task"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-administrative-ward": [
+      "Location.address",
+      "Patient.address",
+      "Patient.contact.address"
+    ],
+    "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-contraindicated": [
+      "Immunization"
+    ],
+    "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-next-dose-date": [
+      "Immunization"
+    ],
+    "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner": [
+      "Organization"
+    ],
+    "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications": [
+      "Immunization"
+    ]
+  }
+}

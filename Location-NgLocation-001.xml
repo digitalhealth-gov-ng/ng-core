@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="NgLocation-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location NgLocation-001</b></p><a name="NgLocation-001"> </a><a name="hcNgLocation-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-location.html">NG Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Asokoro OPD</p><p><b>type</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs hospital}">Secondary Hospital</span></p><p><b>telecom</b>: <a href="tel:+234-800-111-2222">+234-800-111-2222</a></p><p><b>address</b>: Yakubu Gowon Crescent, Asokoro Abuja Municipal Area Council FC NG </p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>7.516</td><td>9.043</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-NgOrganization-001.html">Organization Asokoro District Hospital</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="Asokoro OPD"/>
+  <type>
+    <coding>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+      <code value="hospital"/>
+      <display value="Secondary Hospital"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="+234-800-111-2222"/>
+  </telecom>
+  <address>
+    <line value="Yakubu Gowon Crescent, Asokoro"/>
+    <city value="Abuja Municipal Area Council"/>
+    <district value="fc-municipal"/>
+    <state value="FC"/>
+    <country value="NG"/>
+  </address>
+  <position>
+    <longitude value="7.516"/>
+    <latitude value="9.043"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/NgOrganization-001"/>
+  </managingOrganization>
+</Location>

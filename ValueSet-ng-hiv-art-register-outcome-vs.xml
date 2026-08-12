@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-register-outcome-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-art-register-outcome-vs</b></p><a name="ng-hiv-art-register-outcome-vs"> </a><a name="hcng-hiv-art-register-outcome-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-to">to</a></td><td>Transfer out</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-stop">stop</a></td><td>Stopped treatment</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-dead">dead</a></td><td>Dead</td></tr><tr><td><a href="CodeSystem-ng-hiv-art-follow-up-status-cs.html#ng-hiv-art-follow-up-status-cs-lost">lost</a></td><td>Lost to follow-up</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-outcome-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.43"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtRegisterOutcomeVS"/>
+  <title value="NG HIV ART Register Six-Month Outcomes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Subset of the existing HIV ART follow-up statuses used in column A35 of the National ART Register."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs"/>
+      <concept>
+        <code value="to"/>
+        <display value="Transfer out"/>
+      </concept>
+      <concept>
+        <code value="stop"/>
+        <display value="Stopped treatment"/>
+      </concept>
+      <concept>
+        <code value="dead"/>
+        <display value="Dead"/>
+      </concept>
+      <concept>
+        <code value="lost"/>
+        <display value="Lost to follow-up"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

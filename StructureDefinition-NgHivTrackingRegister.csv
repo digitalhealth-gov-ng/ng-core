@@ -1,0 +1,123 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: NG HIV Tracking Register Column Mapping"
+"NgHivTrackingRegister","NgHivTrackingRegister","","","",0,*,"","","","null {[]} {[]}
+","NG HIV Tracking Register","Logical model for the Nigeria HIV Tracking Register. One instance represents
+one facility monthly tracking page and contains repeatable client entries for
+current ART clients who missed a scheduled clinic appointment. The printed
+register instructs facilities to enter eligible clients within 24 hours of
+default.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NgHivTrackingRegister.identifier","NgHivTrackingRegister.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","Register identifier","Identifier assigned to the monthly HIV Tracking Register page or its electronic equivalent.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.identifier",1,1,"",""
+"NgHivTrackingRegister.facility","NgHivTrackingRegister.facility","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization]]}
+","Facility reference","Reference to the facility maintaining the tracking register, when available.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.facility",0,1,"",""
+"NgHivTrackingRegister.state","NgHivTrackingRegister.state","","","",1,1,"","","","Coding {[]} {[]}
+","T1 State","State where the facility is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs","",,,,"NgHivTrackingRegister.state",1,1,"","","T1"
+"NgHivTrackingRegister.lga","NgHivTrackingRegister.lga","","","",1,1,"","","","Coding {[]} {[]}
+","T2 LGA","Local Government Area where the facility is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs","",,,,"NgHivTrackingRegister.lga",1,1,"","","T2"
+"NgHivTrackingRegister.facilityName","NgHivTrackingRegister.facilityName","","","",1,1,"","","","string {[]} {[]}
+","T3 Facility name","Official name of the facility maintaining the register.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.facilityName",1,1,"","","T3"
+"NgHivTrackingRegister.reportingPeriod","NgHivTrackingRegister.reportingPeriod","","","",1,1,"","","","Period {[]} {[]}
+","T4–T5 Month and year","Month and year in which clients missed their appointments. Each month begins on a new register page.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.reportingPeriod",1,1,"","","T4 Month / T5 Year"
+"NgHivTrackingRegister.entry","NgHivTrackingRegister.entry","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Tracking-register entry","One patient-level row in the monthly HIV Tracking Register.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgHivTrackingRegister.entry.id","NgHivTrackingRegister.entry.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgHivTrackingRegister.entry.extension","NgHivTrackingRegister.entry.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivTrackingRegister.entry.modifierExtension","NgHivTrackingRegister.entry.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivTrackingRegister.entry.subject","NgHivTrackingRegister.entry.subject","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient]]}
+","Patient reference","Reference to the corresponding Nigeria Core Patient resource, when available.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.subject",0,1,"",""
+"NgHivTrackingRegister.entry.serialNumber","NgHivTrackingRegister.entry.serialNumber","","","",1,1,"","","","positiveInt {[]} {[]}
+","T6 Serial number","Monthly serial number beginning from one for each new register page.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.serialNumber",1,1,"","","T6"
+"NgHivTrackingRegister.entry.hospitalNumber","NgHivTrackingRegister.entry.hospitalNumber","","","",0,1,"","","","string {[]} {[]}
+","T7 Hospital number","Facility-specific hospital number.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.hospitalNumber",0,1,"","","T7 Hospital number before slash"
+"NgHivTrackingRegister.entry.uniqueId","NgHivTrackingRegister.entry.uniqueId","","","",1,1,"","","","string {[]} {[]}
+","T7 Unique ID","Client unique ART program identifier. The printed register records hospital number and unique ID separated by a forward slash.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.uniqueId",1,1,"","","T7 Unique ART ID after slash"
+"NgHivTrackingRegister.entry.clientName","NgHivTrackingRegister.entry.clientName","","","",1,1,"","","","string {[]} {[]}
+","T8 Client name","Client full name, including aliases documented in the clinical folder.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.clientName",1,1,"","","T8"
+"NgHivTrackingRegister.entry.sex","NgHivTrackingRegister.entry.sex","","","",1,1,"","","","Coding {[]} {[]}
+","T9 Sex","Client sex represented by the printed male and female boxes.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs","",,,,"NgHivTrackingRegister.entry.sex",1,1,"","","T9 Male / Female"
+"NgHivTrackingRegister.entry.ageYears","NgHivTrackingRegister.entry.ageYears","","","",0,1,"","","","integer {[]} {[]}
+","T10 Age","Age in completed years at the time of tracking-register entry.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.ageYears",0,1,"","","T10"
+"NgHivTrackingRegister.entry.address","NgHivTrackingRegister.entry.address","","","",0,1,"","","","string {[]} {[]}
+","T11 Descriptive address","Descriptive address sufficient to support tracing when necessary.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.address",0,1,"","","T11"
+"NgHivTrackingRegister.entry.phoneNumber","NgHivTrackingRegister.entry.phoneNumber","","","",0,*,"","","","string {[]} {[]}
+","T12 Phone number","One or more client telephone numbers documented in the folder.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.phoneNumber",0,*,"","","T12"
+"NgHivTrackingRegister.entry.artStartDate","NgHivTrackingRegister.entry.artStartDate","","","",1,1,"","","","date {[]} {[]}
+","T13 ART start date","Date the client commenced antiretroviral therapy.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.artStartDate",1,1,"","","T13"
+"NgHivTrackingRegister.entry.currentArtRegimen","NgHivTrackingRegister.entry.currentArtRegimen","","","",0,1,"","","","Coding {[]} {[]}
+","T14 Current ART regimen","Current ART regimen using the adult or paediatric regimen code printed in the register legend.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-regimen-vs","",,,,"NgHivTrackingRegister.entry.currentArtRegimen",0,1,"","","T14 regimen code"
+"NgHivTrackingRegister.entry.currentArtRegimenText","NgHivTrackingRegister.entry.currentArtRegimenText","","","",0,1,"","","","string {[]} {[]}
+","T14 Current ART regimen source text","Regimen description retained when the source does not contain a valid register code.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.currentArtRegimenText",0,1,"","","T14 uncoded regimen text"
+"NgHivTrackingRegister.entry.pregnant","NgHivTrackingRegister.entry.pregnant","","","",0,1,"","","","boolean {[]} {[]}
+","T14 Pregnancy modifier","True when P was appended to the ART regimen code.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.pregnant",0,1,"","","T14 suffix P"
+"NgHivTrackingRegister.entry.breastfeeding","NgHivTrackingRegister.entry.breastfeeding","","","",0,1,"","","","boolean {[]} {[]}
+","T14 Breastfeeding modifier","True when BF was appended to the ART regimen code.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.breastfeeding",0,1,"","","T14 suffix BF"
+"NgHivTrackingRegister.entry.dsdStatus","NgHivTrackingRegister.entry.dsdStatus","","","",0,1,"","","","Coding {[]} {[]}
+","T15 DSD status","Devolved, non-devolved or not eligible.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-status-vs","",,,,"NgHivTrackingRegister.entry.dsdStatus",0,1,"","","T15 value before slash"
+"NgHivTrackingRegister.entry.dsdModel","NgHivTrackingRegister.entry.dsdModel","","","",0,1,"","","","Coding {[]} {[]}
+","T15 DSD model","Facility-based or community-based model, recorded with the DSD status and separated by a slash.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-dsd-model-vs","",,,,"NgHivTrackingRegister.entry.dsdModel",0,1,"","","T15 value after slash"
+"NgHivTrackingRegister.entry.reasonForTracking","NgHivTrackingRegister.entry.reasonForTracking","","","",1,1,"","","","Coding {[]} {[]}
+","T16 Reason for tracking","Reason the client was entered into the tracking register.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-reason-vs","",,,,"NgHivTrackingRegister.entry.reasonForTracking",1,1,"","","T16"
+"NgHivTrackingRegister.entry.reasonForTrackingOther","NgHivTrackingRegister.entry.reasonForTrackingOther","","","",0,1,"","","","string {[]} {[]}
+","T16 Other tracking reason","Narrative description when T16 code 11e is used.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.reasonForTrackingOther",0,1,"","","T16 code 11e narrative"
+"NgHivTrackingRegister.entry.lastActualContactDate","NgHivTrackingRegister.entry.lastActualContactDate","","","",0,1,"","","","date {[]} {[]}
+","T17 Date of last actual contact or appointment","Date the client last attended or had actual contact with the facility.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.lastActualContactDate",0,1,"","","T17"
+"NgHivTrackingRegister.entry.missedAppointmentDate","NgHivTrackingRegister.entry.missedAppointmentDate","","","",1,1,"","","","date {[]} {[]}
+","T18 Date of missed appointment","Date the client missed the scheduled follow-up appointment.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.missedAppointmentDate",1,1,"","","T18"
+"NgHivTrackingRegister.entry.trackingAttempt","NgHivTrackingRegister.entry.trackingAttempt","","","",0,5,"","","","BackboneElement {[]} {[]}
+","T19–T23 Tracking attempt","A tracking attempt made by phone call or home visit. Each stage should occur no more than once per entry.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.trackingAttempt",0,5,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgHivTrackingRegister.entry.trackingAttempt.id","NgHivTrackingRegister.entry.trackingAttempt.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgHivTrackingRegister.entry.trackingAttempt.extension","NgHivTrackingRegister.entry.trackingAttempt.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivTrackingRegister.entry.trackingAttempt.modifierExtension","NgHivTrackingRegister.entry.trackingAttempt.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgHivTrackingRegister.entry.trackingAttempt.stage","NgHivTrackingRegister.entry.trackingAttempt.stage","","","",1,1,"","","","Coding {[]} {[]}
+","Tracking-attempt stage","First, second, third, fourth or final attempt at the end of the tracking period.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-attempt-stage-vs","",,,,"NgHivTrackingRegister.entry.trackingAttempt.stage",1,1,"","","T19 attempt 1 / T20 attempt 2 / T21 attempt 3 / T22 attempt 4 / T23 final attempt"
+"NgHivTrackingRegister.entry.trackingAttempt.mode","NgHivTrackingRegister.entry.trackingAttempt.mode","","","",0,1,"","","","Coding {[]} {[]}
+","Tracking mode","Mode used for the attempt.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-mode-vs","",,,,"NgHivTrackingRegister.entry.trackingAttempt.mode",0,1,"","","T19–T23 Tracking mode"
+"NgHivTrackingRegister.entry.trackingAttempt.personContacted","NgHivTrackingRegister.entry.trackingAttempt.personContacted","","","",0,1,"","","","Coding {[]} {[]}
+","Person contacted","Guardian, client, treatment partner or not contacted.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-person-contacted-vs","",,,,"NgHivTrackingRegister.entry.trackingAttempt.personContacted",0,1,"","","T19–T23 Person contacted"
+"NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting","NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting","","","",0,1,"","","","Coding {[]} {[]}
+","Reason for defaulting","Reason the client missed the appointment when successful contact established the cause.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-default-reason-vs","",,,,"NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaulting",0,1,"","","T19–T23 Reason for defaulting"
+"NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther","NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther","","","",0,1,"","","","string {[]} {[]}
+","Other reason for defaulting","Narrative description when reason-for-defaulting code 11 is selected.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.trackingAttempt.reasonForDefaultingOther",0,1,"","","T19–T23 code 11 narrative"
+"NgHivTrackingRegister.entry.careDiscontinued","NgHivTrackingRegister.entry.careDiscontinued","","","",1,1,"","","","boolean {[]} {[]}
+","T24 Care in facility discontinued","True when the client no longer receives HIV care at the facility.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.careDiscontinued",1,1,"","","T24 Yes / No"
+"NgHivTrackingRegister.entry.discontinuationDate","NgHivTrackingRegister.entry.discontinuationDate","","","",0,1,"","","","date {[]} {[]}
+","T25 Date of discontinuation","Date care at the facility was discontinued when T24 is true.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.discontinuationDate",0,1,"","","T25"
+"NgHivTrackingRegister.entry.discontinuationReason","NgHivTrackingRegister.entry.discontinuationReason","","","",0,1,"","","","Coding {[]} {[]}
+","T26 Reason for discontinuation","Major reason the client stopped receiving care at the facility.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tracking-discontinuation-reason-vs","",,,,"NgHivTrackingRegister.entry.discontinuationReason",0,1,"","","T26"
+"NgHivTrackingRegister.entry.nextAgreedAppointmentDate","NgHivTrackingRegister.entry.nextAgreedAppointmentDate","","","",0,1,"","","","date {[]} {[]}
+","T27 Next agreed clinic appointment date","Date the contacted client agreed to return. The SOP states that this should be before 28 days after the missed appointment.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.nextAgreedAppointmentDate",0,1,"","","T27"
+"NgHivTrackingRegister.entry.returnDate","NgHivTrackingRegister.entry.returnDate","","","",0,1,"","","","date {[]} {[]}
+","T28 Date client returned","Date the client returned to the facility for any health service.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.returnDate",0,1,"","","T28"
+"NgHivTrackingRegister.entry.referredService","NgHivTrackingRegister.entry.referredService","","","",0,*,"","","","string {[]} {[]}
+","T29 Service referred for","One or more services to which the returning client was referred.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.entry.referredService",0,*,"","","T29"
+"NgHivTrackingRegister.totalClientsThisPage","NgHivTrackingRegister.totalClientsThisPage","","","",0,1,"","","","positiveInt {[]} {[]}
+","Total this page","Total number of client rows on the page. Other printed column totals should be derived from entry data.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.totalClientsThisPage",0,1,"","","TOTAL THIS PAGE"
+"NgHivTrackingRegister.completedByName","NgHivTrackingRegister.completedByName","","","",1,1,"","","","string {[]} {[]}
+","T30 Completed by","Name of the contact-tracking focal person or representative who completed the register.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.completedByName",1,1,"","","T30"
+"NgHivTrackingRegister.completedByDesignation","NgHivTrackingRegister.completedByDesignation","","","",1,1,"","","","string {[]} {[]}
+","T31 Designation","Designation of the person who completed the register.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.completedByDesignation",1,1,"","","T31"
+"NgHivTrackingRegister.completedDate","NgHivTrackingRegister.completedDate","","","",1,1,"","","","date {[]} {[]}
+","T32 Completion date","Date the register page was completed.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.completedDate",1,1,"","","T32 date"
+"NgHivTrackingRegister.completedSignature","NgHivTrackingRegister.completedSignature","","","",0,1,"","","","string {[]} {[]}
+","T32 Signature or signature reference","Signature or an electronic signature reference for the person completing the register.","","","","","","","","","",,,,,"",,,,"NgHivTrackingRegister.completedSignature",0,1,"","","T32 signature"

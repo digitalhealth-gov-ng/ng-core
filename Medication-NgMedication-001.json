@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Medication",
+  "id" : "NgMedication-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication NgMedication-001</b></p><a name=\"NgMedication-001\"> </a><a name=\"hcNgMedication-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-medication.html\">NG Medication</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local</code>/IMMZ.Z.DE5</p><p><b>code</b>: <span title=\"Codes:\">Amoxicillin 500 mg capsule</span></p><p><b>form</b>: <span title=\"Codes:\">Capsule</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Amoxicillin</span></td><td>500 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td></tr></table><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style=\"display: none\">*</td><td>AMX-2025-001</td><td>2027-12-31</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local",
+    "value" : "IMMZ.Z.DE5"
+  }],
+  "code" : {
+    "text" : "Amoxicillin 500 mg capsule"
+  },
+  "form" : {
+    "text" : "Capsule"
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "text" : "Amoxicillin"
+    },
+    "strength" : {
+      "numerator" : {
+        "value" : 500,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "1",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }
+  }],
+  "batch" : {
+    "lotNumber" : "AMX-2025-001",
+    "expirationDate" : "2027-12-31"
+  }
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-art-register-cryptococcal-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-art-register-cryptococcal-status-cs</b></p><a name="ng-hiv-art-register-cryptococcal-status-cs"> </a><a name="hcng-hiv-art-register-cryptococcal-status-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cryptococcal-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ng-hiv-art-register-cryptococcal-status-cs-1"> </a></td><td>Not screened</td></tr><tr><td style="white-space:nowrap">2<a name="ng-hiv-art-register-cryptococcal-status-cs-2"> </a></td><td>Screened for cryptococcal antigen</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-art-register-cryptococcal-status-cs-3"> </a></td><td>Cryptococcal antigen negative</td></tr><tr><td style="white-space:nowrap">4<a name="ng-hiv-art-register-cryptococcal-status-cs-4"> </a></td><td>Cryptococcal antigen positive</td></tr><tr><td style="white-space:nowrap">5<a name="ng-hiv-art-register-cryptococcal-status-cs-5"> </a></td><td>CSF cryptococcal antigen negative; commenced pre-emptive therapy</td></tr><tr><td style="white-space:nowrap">6<a name="ng-hiv-art-register-cryptococcal-status-cs-6"> </a></td><td>Diagnosed with cryptococcal meningitis</td></tr><tr><td style="white-space:nowrap">7<a name="ng-hiv-art-register-cryptococcal-status-cs-7"> </a></td><td>Commenced treatment for cryptococcal meningitis</td></tr><tr><td style="white-space:nowrap">8<a name="ng-hiv-art-register-cryptococcal-status-cs-8"> </a></td><td>Completed treatment for cryptococcal meningitis</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cryptococcal-status-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.22"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivArtRegisterCryptococcalStatusCS"/>
+  <title value="NG HIV ART Register Cryptococcal Status Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Cryptococcal screening and treatment-state codes printed in column A25 of the National ART Register."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1"/>
+    <display value="Not screened"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Screened for cryptococcal antigen"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Cryptococcal antigen negative"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Cryptococcal antigen positive"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="CSF cryptococcal antigen negative; commenced pre-emptive therapy"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Diagnosed with cryptococcal meningitis"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Commenced treatment for cryptococcal meningitis"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Completed treatment for cryptococcal meningitis"/>
+  </concept>
+</CodeSystem>

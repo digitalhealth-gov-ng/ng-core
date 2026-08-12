@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-int-lab-eid-age-category-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-int-lab-eid-age-category-vs</b></p><a name="ng-hiv-int-lab-eid-age-category-vs"> </a><a name="hcng-hiv-int-lab-eid-age-category-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-ng-hiv-int-lab-form-cs.html"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-age-less-than-or-equal-72-hours">eid-age-less-than-or-equal-72-hours</a></td><td style="color: #cccccc">72 hours or younger</td><td>Infant age is 72 hours or younger at specimen collection.</td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-age-over-72-hours-under-2-months">eid-age-over-72-hours-under-2-months</a></td><td style="color: #cccccc">Older than 72 hours and younger than 2 months</td><td>Infant age is greater than 72 hours and less than 2 months.</td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-age-2-to-12-months">eid-age-2-to-12-months</a></td><td style="color: #cccccc">2 to 12 months</td><td>Infant age is at least 2 months and not more than 12 months.</td></tr><tr><td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html#ng-hiv-int-lab-form-cs-eid-age-over-12-months">eid-age-over-12-months</a></td><td style="color: #cccccc">Older than 12 months</td><td>Infant age is greater than 12 months.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-eid-age-category-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.82"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivIntLabEidAgeCategoryVS"/>
+  <title value="NG HIV Integrated Laboratory EID Age Category"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Infant age categories printed on the integrated laboratory form."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs"/>
+      <concept>
+        <code value="eid-age-less-than-or-equal-72-hours"/>
+      </concept>
+      <concept>
+        <code value="eid-age-over-72-hours-under-2-months"/>
+      </concept>
+      <concept>
+        <code value="eid-age-2-to-12-months"/>
+      </concept>
+      <concept>
+        <code value="eid-age-over-12-months"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

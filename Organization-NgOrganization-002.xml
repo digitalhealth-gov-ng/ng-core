@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="NgOrganization-002"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization NgOrganization-002</b></p><a name="NgOrganization-002"> </a><a name="hcNgOrganization-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-organization.html">NG Organization</a></p></div><p><b>NG Owner of Facility</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs private}">Private Health Institution Location</span></p><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs</code>/HCF-12347</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs hospital}">Hospital Department</span></p><p><b>name</b>: Kano Central Hospital Pharmacy</p><p><b>telecom</b>: <a href="tel:+234-803-555-7788">+234-803-555-7788</a>, <a href="mailto:pharmacy@kanocentral.example.ng">pharmacy@kanocentral.example.ng</a></p><p><b>address</b>: No. 7 Kiru Road Kabo KN </p></div>
+  </text>
+  <extension url="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization-owner">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-organization-owner-cs"/>
+        <code value="private"/>
+        <display value="Private Health Institution Location"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+    <value value="HCF-12347"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs"/>
+      <code value="hospital"/>
+      <display value="Secondary Hospital"/>
+    </coding>
+    <text value="Hospital Department"/>
+  </type>
+  <name value="Kano Central Hospital Pharmacy"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+234-803-555-7788"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="pharmacy@kanocentral.example.ng"/>
+  </telecom>
+  <address>
+    <line value="No. 7 Kiru Road"/>
+    <city value="Kabo"/>
+    <district value="kn-kabo"/>
+    <state value="KN"/>
+  </address>
+</Organization>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-sibling-health-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-sibling-health-status-cs</b></p><a name="ng-sibling-health-status-cs"> </a><a name="hcng-sibling-health-status-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ALIVE<a name="ng-sibling-health-status-cs-ALIVE"> </a></td><td>Alive</td><td>Sibling referenced is still alive</td></tr><tr><td style="white-space:nowrap">DEAD<a name="ng-sibling-health-status-cs-DEAD"> </a></td><td>Dead</td><td>Sibling referenced is dead</td></tr><tr><td style="white-space:nowrap">WELL<a name="ng-sibling-health-status-cs-WELL"> </a></td><td>well</td><td>Sibling reference is alive and well</td></tr><tr><td style="white-space:nowrap">ILL<a name="ng-sibling-health-status-cs-ILL"> </a></td><td>underlying disease</td><td>Referenced Sibling has an underlying disease</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.100"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgSiblingHealthStatusCS"/>
+  <title value="NG Health Status CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="ALIVE"/>
+    <display value="Alive"/>
+    <definition value="Sibling referenced is still alive"/>
+  </concept>
+  <concept>
+    <code value="DEAD"/>
+    <display value="Dead"/>
+    <definition value="Sibling referenced is dead"/>
+  </concept>
+  <concept>
+    <code value="WELL"/>
+    <display value="well"/>
+    <definition value="Sibling reference is alive and well"/>
+  </concept>
+  <concept>
+    <code value="ILL"/>
+    <display value="underlying disease"/>
+    <definition value="Referenced Sibling has an underlying disease"/>
+  </concept>
+</CodeSystem>

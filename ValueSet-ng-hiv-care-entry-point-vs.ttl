@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-care-entry-point-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-hiv-care-entry-point-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-care-entry-point-vs</b></p><a name=\"ng-hiv-care-entry-point-vs\"> </a><a name=\"hcng-hiv-care-entry-point-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-1\">care-entry-point-1</a></td><td style=\"color: #cccccc\">OPD</td><td>Source form code 1: Outpatient department.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-2\">care-entry-point-2</a></td><td style=\"color: #cccccc\">Inpatients</td><td>Source form code 2: Inpatients.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-3\">care-entry-point-3</a></td><td style=\"color: #cccccc\">HTS</td><td>Source form code 3: HIV testing services.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-4\">care-entry-point-4</a></td><td style=\"color: #cccccc\">TB DOTS</td><td>Source form code 4: TB DOTS.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-5\">care-entry-point-5</a></td><td style=\"color: #cccccc\">STI Clinic</td><td>Source form code 5: STI Clinic.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-6\">care-entry-point-6</a></td><td style=\"color: #cccccc\">ANC/PMTCT</td><td>Source form code 6: ANC/PMTCT.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-7\">care-entry-point-7</a></td><td style=\"color: #cccccc\">Transfer-in</td><td>Source form code 7: Transfer-in.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-8\">care-entry-point-8</a></td><td style=\"color: #cccccc\">Community</td><td>Source form code 8: Community.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-care-art-codes-cs.html#ng-hiv-care-art-codes-cs-care-entry-point-9\">care-entry-point-9</a></td><td style=\"color: #cccccc\">Others</td><td>Source form code 9: Others (specify).</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-care-entry-point-vs"] ;
+  fhir:ValueSet.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.48.53" ]
+  ] ;
+  fhir:ValueSet.version [ fhir:value "0.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "NgHivCareEntryPointVS"] ;
+  fhir:ValueSet.title [ fhir:value "NG HIV Care Entry Point"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-27"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Care-entry-point codes used on the Nigeria HIV Care/ART Card."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-1" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-2" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-3" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-4" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-5" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-6" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-7" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-8" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "care-entry-point-9" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-care-entry-point-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

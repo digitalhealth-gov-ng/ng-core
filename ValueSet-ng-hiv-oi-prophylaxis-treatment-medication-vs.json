@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-hiv-oi-prophylaxis-treatment-medication-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-oi-prophylaxis-treatment-medication-vs</b></p><a name=\"ng-hiv-oi-prophylaxis-treatment-medication-vs\"> </a><a name=\"hcng-hiv-oi-prophylaxis-treatment-medication-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html\"><code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-cotrimoxazole-120\">oi-cotrimoxazole-120</a></td><td style=\"color: #cccccc\">Co-trimoxazole 120 mg</td><td>Drug for opportunistic-infection prophylaxis or treatment. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-cotrimoxazole-960\">oi-cotrimoxazole-960</a></td><td style=\"color: #cccccc\">Co-trimoxazole 960 mg</td><td>Drug for opportunistic-infection prophylaxis or treatment. The source form preprints once-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-fluconazole\">oi-fluconazole</a></td><td style=\"color: #cccccc\">Fluconazole</td><td>Drug for opportunistic-infection prophylaxis or treatment; strength is entered separately.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-flucytosine-500\">oi-flucytosine-500</a></td><td style=\"color: #cccccc\">Flucytosine 500 mg</td><td>The source form notes 100 mg/kg in four divided doses and preprints four-times-daily frequency.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-cotrimoxazole-inh-pyridoxine-960-300-25\">oi-cotrimoxazole-inh-pyridoxine-960-300-25</a></td><td style=\"color: #cccccc\">Co-trimoxazole/Isoniazid/Pyridoxine 960/300/25 mg</td><td>Fixed-dose combination listed under drugs for opportunistic-infection prophylaxis or treatment.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-nystatin\">oi-nystatin</a></td><td style=\"color: #cccccc\">Nystatin</td><td>Drug for opportunistic-infection prophylaxis or treatment; strength is entered separately.</td></tr><tr><td><a href=\"CodeSystem-ng-hiv-pharmacy-order-cs.html#ng-hiv-pharmacy-order-cs-oi-liposomal-amphotericin-b-50\">oi-liposomal-amphotericin-b-50</a></td><td style=\"color: #cccccc\">Liposomal Amphotericin B 50 mg</td><td>The source form notes 3 mg/kg intravenously daily.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-oi-prophylaxis-treatment-medication-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.103"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivOiProphylaxisTreatmentMedicationVS",
+  "title" : "NG HIV OI Prophylaxis and Treatment Medications",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-07-28",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medicines for opportunistic-infection prophylaxis or treatment listed on the Nigeria Combined Pharmacy Order Form.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs",
+      "concept" : [{
+        "code" : "oi-cotrimoxazole-120"
+      },
+      {
+        "code" : "oi-cotrimoxazole-960"
+      },
+      {
+        "code" : "oi-fluconazole"
+      },
+      {
+        "code" : "oi-flucytosine-500"
+      },
+      {
+        "code" : "oi-cotrimoxazole-inh-pyridoxine-960-300-25"
+      },
+      {
+        "code" : "oi-nystatin"
+      },
+      {
+        "code" : "oi-liposomal-amphotericin-b-50"
+      }]
+    }]
+  }
+}

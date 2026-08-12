@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-transfer-reason-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-transfer-reason-cs</b></p><a name="ng-hiv-transfer-reason-cs"> </a><a name="hcng-hiv-transfer-reason-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">relocating<a name="ng-hiv-transfer-reason-cs-relocating"> </a></td><td>Relocating</td><td>The client is relocating from the area served by the transferring facility.</td></tr><tr><td style="white-space:nowrap">closer-new-facility<a name="ng-hiv-transfer-reason-cs-closer-new-facility"> </a></td><td>Closeness to new facility</td><td>The receiving facility is more conveniently located for the client.</td></tr><tr><td style="white-space:nowrap">self-transfer<a name="ng-hiv-transfer-reason-cs-self-transfer"> </a></td><td>Self transfer</td><td>The client independently requested or initiated transfer to another treatment site.</td></tr><tr><td style="white-space:nowrap">stigma<a name="ng-hiv-transfer-reason-cs-stigma"> </a></td><td>Stigma</td><td>The client is transferring because of experienced or anticipated HIV-related stigma.</td></tr><tr><td style="white-space:nowrap">pmtct<a name="ng-hiv-transfer-reason-cs-pmtct"> </a></td><td>PMTCT</td><td>The client is transferring for prevention of mother-to-child transmission services.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-transfer-reason-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.84"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivTransferReasonCS"/>
+  <title value="NG HIV Care and Treatment Transfer Reasons"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-28"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons for transferring a client between HIV treatment sites, transcribed from the November 2025 HIV Care and Treatment Transfer Form."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="relocating"/>
+    <display value="Relocating"/>
+    <definition value="The client is relocating from the area served by the transferring facility."/>
+  </concept>
+  <concept>
+    <code value="closer-new-facility"/>
+    <display value="Closeness to new facility"/>
+    <definition value="The receiving facility is more conveniently located for the client."/>
+  </concept>
+  <concept>
+    <code value="self-transfer"/>
+    <display value="Self transfer"/>
+    <definition value="The client independently requested or initiated transfer to another treatment site."/>
+  </concept>
+  <concept>
+    <code value="stigma"/>
+    <display value="Stigma"/>
+    <definition value="The client is transferring because of experienced or anticipated HIV-related stigma."/>
+  </concept>
+  <concept>
+    <code value="pmtct"/>
+    <display value="PMTCT"/>
+    <definition value="The client is transferring for prevention of mother-to-child transmission services."/>
+  </concept>
+</CodeSystem>

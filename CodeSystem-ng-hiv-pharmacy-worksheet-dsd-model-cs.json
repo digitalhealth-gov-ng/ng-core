@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-pharmacy-worksheet-dsd-model-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-pharmacy-worksheet-dsd-model-cs</b></p><a name=\"ng-hiv-pharmacy-worksheet-dsd-model-cs\"> </a><a name=\"hcng-hiv-pharmacy-worksheet-dsd-model-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-dsd-model-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">facility-based<a name=\"ng-hiv-pharmacy-worksheet-dsd-model-cs-facility-based\"> </a></td><td>Facility-based</td></tr><tr><td style=\"white-space:nowrap\">community-based<a name=\"ng-hiv-pharmacy-worksheet-dsd-model-cs-community-based\"> </a></td><td>Community-based</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-dsd-model-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.62"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivPharmacyWorksheetDsdModelCS",
+  "title" : "NG HIV Pharmacy Worksheet DSD Models",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-29",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DSD models represented by W9 and W10.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "facility-based",
+    "display" : "Facility-based"
+  },
+  {
+    "code" : "community-based",
+    "display" : "Community-based"
+  }]
+}

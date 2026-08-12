@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MeasureReport xmlns="http://hl7.org/fhir">
+  <id value="NgMeasureReport-NHMIS-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MeasureReport NgMeasureReport-NHMIS-001</b></p><a name="NgMeasureReport-NHMIS-001"> </a><a name="hcNgMeasureReport-NHMIS-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-measure-report.html">NG Measure Report</a></p></div><p><b>status</b>: Complete</p><p><b>type</b>: Summary</p><p><b>measure</b>: <a href="Measure-NgMeasure-NHMIS-001.html">NHMIS Monthly Outpatient Attendance Measure</a></p><p><b>subject</b>: <a href="Patient-NgPatient-002.html">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>date</b>: 2026-08-03 09:00:00+0100</p><p><b>reporter</b>: <a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></p><p><b>period</b>: 2026-07-01 00:00:00+0100 --&gt; 2026-07-31 23:59:59+0100</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:">Total outpatient attendance</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></td><td>1247</td></tr></table></blockquote></div>
+  </text>
+  <status value="complete"/>
+  <type value="summary"/>
+  <measure value="https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-NHMIS-001"/>
+  <subject>
+    <reference value="Patient/NgPatient-002"/>
+  </subject>
+  <date value="2026-08-03T09:00:00+01:00"/>
+  <reporter>
+    <reference value="Practitioner/NgPractitioner-002"/>
+  </reporter>
+  <period>
+    <start value="2026-07-01T00:00:00+01:00"/>
+    <end value="2026-07-31T23:59:59+01:00"/>
+  </period>
+  <group>
+    <code>
+      <text value="Total outpatient attendance"/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+          <display value="Initial Population"/>
+        </coding>
+      </code>
+      <count value="1247"/>
+    </population>
+  </group>
+</MeasureReport>

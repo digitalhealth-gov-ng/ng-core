@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HIV Programme Artefacts - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>HIV Programme Artefacts</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>HIV Programme Artefacts</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#conformance-requirements" id="markdown-toc-conformance-requirements">Conformance Requirements</a></li>
+  <li><a href="#foundational-resources" id="markdown-toc-foundational-resources">Foundational Resources</a></li>
+  <li><a href="#hiv-clinical-resources" id="markdown-toc-hiv-clinical-resources">HIV Clinical Resources</a></li>
+  <li><a href="#questionnaire-forms" id="markdown-toc-questionnaire-forms">Questionnaire (Forms)</a></li>
+  <li><a href="#questionnaireresponse-example-forms" id="markdown-toc-questionnaireresponse-example-forms">QuestionnaireResponse (Example Forms)</a></li>
+  <li><a href="#logical-models-registers-and-worksheets" id="markdown-toc-logical-models-registers-and-worksheets">Logical Models (Registers and Worksheets)</a></li>
+  <li><a href="#measure-and-measurereport-aggregates---draft" id="markdown-toc-measure-and-measurereport-aggregates---draft">Measure and MeasureReport (Aggregates) - DRAFT</a></li>
+  <li><a href="#hiv-terminologies" id="markdown-toc-hiv-terminologies">HIV Terminologies</a></li>
+  <li><a href="#exchange-documents" id="markdown-toc-exchange-documents">Exchange Documents</a></li>
+  <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a></li>
+</ul>
+
+</div>
+<p>This page provides a consolidated catalogue of the FHIR artefacts developed for the Nigeria HIV programme. It brings together foundational and clinical profiles, structured programme forms, completed form examples, programme registers and worksheets, aggregate reporting artefacts, terminology resources, mappings to established clinical terminologies, and exchange documents. Links are relative to the  Implementation Guide and open the corresponding rendered FHIR artefact pages.</p>
+
+<h3 id="conformance-requirements">Conformance Requirements</h3>
+
+<p>The keywords <strong>SHALL</strong>, <strong>SHALL NOT</strong>, <strong>SHOULD</strong>, <strong>SHOULD NOT</strong>, and <strong>MAY</strong> are normative and indicate the degree of conformance required by this guide already defined in <a href="general.html">Conformace/General Requirements</a>.</p>
+
+<h3 id="foundational-resources">Foundational Resources</h3>
+
+<p>These Nigeria Core profiles provide the patient, workforce, organisation, location, relationship, and encounter context required by HIV programme artefacts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-patient.html">NG Patient</a></td>
+      <td>Represents the person receiving HIV prevention, testing, care, treatment, laboratory, pharmacy, transfer, or follow-up services.</td>
+      <td>Systems exchanging patient-level HIV data <strong>SHALL</strong> use this profile and populate all mandatory and Must Support elements relevant to the workflow.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-practitioner.html">NG Practitioner</a></td>
+      <td>Identifies clinicians, counsellors, pharmacists, laboratory personnel, and other health workers participating in HIV services.</td>
+      <td>Systems recording an individual health worker <strong>SHALL</strong> use this profile and preserve the practitioner's identifiers and professional details where available.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a></td>
+      <td>Represents the role, specialty, organisation, and service context in which a practitioner delivers HIV care.</td>
+      <td>Systems that exchange the practitioner's operational role <strong>SHALL</strong> use this profile and reference the associated Practitioner and Organization.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-related-person.html">NG RelatedPerson</a></td>
+      <td>Represents caregivers, treatment supporters, guardians, next of kin, and other persons related to an HIV client.</td>
+      <td>Systems exchanging related-person information <strong>SHALL</strong> use this profile and <strong>SHALL</strong> limit disclosure to the authorised care or programme purpose.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-organization.html">NG Organization</a></td>
+      <td>Identifies health facilities, laboratories, pharmacies, programme units, implementing partners, and other organisations involved in HIV services.</td>
+      <td>Systems <strong>SHALL</strong> use this profile for participating organisations and <strong>SHALL</strong> use nationally governed identifiers where available.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-location.html">NG Location</a></td>
+      <td>Represents the physical or service-delivery location where HIV services, specimen collection, dispensing, or follow-up occur.</td>
+      <td>Systems exchanging location information <strong>SHALL</strong> use this profile and reference the responsible Organization where applicable.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-encounter.html">NG Encounter</a></td>
+      <td>Provides the care-contact context for HIV assessment, counselling, treatment, laboratory, pharmacy, and follow-up activities.</td>
+      <td>Clinical HIV resources associated with a visit <strong>SHOULD</strong> reference a conformant encounter, and systems <strong>SHALL</strong> preserve encounter status, class, period, patient, and service location.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="hiv-clinical-resources">HIV Clinical Resources</h3>
+
+<p>These Nigeria Core clinical profiles support the extraction, persistence, exchange, and reuse of structured data collected through HIV programme forms and workflows.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-condition.html">NG Condition</a></td>
+      <td>Represents HIV diagnosis, opportunistic infections, tuberculosis, comorbidities, pregnancy-related conditions, and other clinically relevant problems.</td>
+      <td>Systems exchanging diagnoses or problem-list entries <strong>SHALL</strong> use this profile and apply the terminology binding defined for the coded condition.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-observation.html">NG Observation</a></td>
+      <td>Represents HIV test results, viral load, CD4, adherence findings, screening results, clinical measurements, and other observed data.</td>
+      <td>Systems exchanging observations <strong>SHALL</strong> use the applicable Nigeria Core Observation profile, preserve status and effective time, and use required codes and UCUM units where specified.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-service-request.html">NG ServiceRequest</a></td>
+      <td>Represents requests for laboratory tests, referrals, procedures, and other HIV-related services.</td>
+      <td>Systems creating or receiving HIV service orders <strong>SHALL</strong> use this profile and populate the patient, requester, requested service, status, intent, and supporting context.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-specimen.html">NG Specimen</a></td>
+      <td>Represents specimens collected for viral load, EID, CD4, drug-resistance, chemistry, haematology, and other HIV-related testing.</td>
+      <td>Laboratory workflows <strong>SHALL</strong> use this profile when specimen identity, type, collection, handling, or traceability is exchanged.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-diagnostic-report.html">NG DiagnosticReport</a></td>
+      <td>Groups and communicates authorised HIV laboratory or diagnostic results and their interpretations.</td>
+      <td>Systems issuing diagnostic reports <strong>SHALL</strong> use this profile, reference the relevant ServiceRequest, Specimen, and Observation resources where available, and preserve report status.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-medication-request.html">NG MedicationRequest</a></td>
+      <td>Represents prescribed ART, PrEP, PEP, TB preventive therapy, opportunistic-infection medicines, and related treatments.</td>
+      <td>Prescribing systems <strong>SHALL</strong> use this profile, identify the patient and prescriber, and use the applicable medication terminology and dosage instructions.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-medication-statement.html">NG MedicationStatement</a></td>
+      <td>Represents medicines reported as currently or previously taken by the client, including prior ART and transferred-in regimens.</td>
+      <td>Systems exchanging medication history <strong>SHALL</strong> use this profile and distinguish reported use from an active prescription or dispensing event.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-allergy-intolerance.html">NG AllergyIntolerance</a></td>
+      <td>Represents allergies, intolerances, and clinically relevant adverse reactions affecting HIV treatment choices.</td>
+      <td>Systems exchanging allergy information <strong>SHALL</strong> use this profile and preserve verification status, clinical status, substance, and reaction details where known.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-procedure.html">NG Procedure</a></td>
+      <td>Represents completed HIV-related procedures and interventions that are not adequately represented as observations or medication events.</td>
+      <td>Systems claiming Procedure support <strong>SHALL</strong> use this profile and record patient, status, performed time, performer, and coded procedure where applicable.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-flag.html">NG Flag</a></td>
+      <td>Represents actionable HIV care alerts, cautions, follow-up warnings, or programme attention markers.</td>
+      <td>Systems using flags <strong>SHALL</strong> state the flag status, category, code, subject, and applicable period, and <strong>SHALL</strong> protect sensitive flag content from unauthorised disclosure.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-task.html">NG Task</a></td>
+      <td>Coordinates HIV referrals, specimen movement, follow-up, treatment actions, pharmacy fulfilment, and other workflow assignments.</td>
+      <td>Workflow systems <strong>SHALL</strong> use this profile when exchanging actionable work and <strong>SHALL</strong> preserve task status, intent, owner, focus, and business identifiers.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="questionnaire-forms">Questionnaire (Forms)</h3>
+
+<p>These Questionnaire artefacts support structured collection of HIV care, treatment, transfer, pharmacy, enhanced adherence counselling, and integrated laboratory information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-ng-hiv-care-art-questionnaire.html">NG HIV Care and ART Questionnaire Group</a></td>
+      <td>Captures HIV enrolment, clinical assessment, ART initiation, follow-up, adherence preparation, regimen changes, interruptions, restarts, and treatment outcomes.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer ValueSet bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-hiv-transfer-form-questionnaire.html">NG HIV Care and Treatment Transfer Form Questionnaire Group</a></td>
+      <td>Captures the transfer of an HIV client and the clinical and programme information required for continuity of care.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer ValueSet bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-hiv-pharmacy-order-questionnaire.html">NG HIV Combined Pharmacy Order Form Questionnaire Group</a></td>
+      <td>Captures ART and related medicine orders, dispensing preparation, regimen details, quantities, and pharmacy workflow information.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer ValueSet bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-hiv-eac-form-questionnaire.html">NG HIV Enhanced Adherence Counselling Form Questionnaire Group</a></td>
+      <td>Captures enhanced adherence counselling sessions, adherence assessment, barriers, interventions, tools, and follow-up outcomes.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer ValueSet bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-hiv-int-lab-form-questionnaire.html">NG HIV Integrated Laboratory Order and Result Form Questionnaire Group</a></td>
+      <td>Captures HIV laboratory requests, specimen processing, test results, and laboratory workflow sign-off, including EID and viral-load testing.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer ValueSet bindings.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="questionnaireresponse-example-forms">QuestionnaireResponse (Example Forms)</h3>
+
+<p>The following QuestionnaireResponse examples demonstrate how completed HIV programme forms can be represented and exchanged using FHIR.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInitialArt.html">NG HIV Care and ART QuestionnaireResponse - Initial ART</a></td>
+      <td>Illustrates a completed Care and ART form for a client initiating ART.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInterruptionRestart.html">NG HIV Care and ART QuestionnaireResponse - Interruption and Restart</a></td>
+      <td>Illustrates documentation of treatment interruption and subsequent restart.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivCareArtQuestionnaireResponseRegimenChange.html">NG HIV Care and ART QuestionnaireResponse - Regimen Change</a></td>
+      <td>Illustrates a regimen substitution or switch and its supporting details.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivEacFormQuestionnaireResponse.html">NG HIV Enhanced Adherence Counselling Questionnaire Response - EAC</a></td>
+      <td>Illustrates a completed enhanced adherence counselling encounter.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseEidExample.html">NG HIV Integrated Laboratory Response – EID</a></td>
+      <td>Illustrates an early infant diagnosis laboratory request and result.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseExtendedPanel.html">NG HIV Integrated Laboratory Response – Extended Panel</a></td>
+      <td>Illustrates an extended HIV laboratory panel with multiple requested tests and results.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseViralLoadExample.html">NG HIV Integrated Laboratory Response – Routine Viral Load</a></td>
+      <td>Illustrates a routine viral-load request, specimen workflow, and result.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgHivPharmacyOrderFormQuestionnaireResponse.html">NG HIV Pharmacy Order Form Questionnaire Response - Pharmacy Order</a></td>
+      <td>Illustrates a completed pharmacy order and related dispensing information.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> validate production responses against the applicable QuestionnaireResponse constraints, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="logical-models-registers-and-worksheets">Logical Models (Registers and Worksheets)</h3>
+
+<p>These logical models describe the data structures used for longitudinal programme monitoring, clinical follow-up, laboratory monitoring, client tracking, and pharmacy operations.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-NgHivArtRegister.html">NG HIV National ART Register</a></td>
+      <td>Defines the longitudinal data structure for national ART enrolment, treatment, monitoring, outcomes, and programme follow-up.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgHivEacRegister.html">NG HIV Enhanced Adherence Counselling Monitoring Register</a></td>
+      <td>Defines the monitoring structure for enhanced adherence counselling sessions and virologic-failure follow-up.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgHivIntLabMonitoringRegister.html">NG HIV Integrated Laboratory Monitoring Register</a></td>
+      <td>Defines the longitudinal laboratory monitoring structure for HIV tests, specimens, results, and viral-load disaggregation.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgHivTrackingRegister.html">NG HIV Tracking Register</a></td>
+      <td>Defines the structure for tracing clients, recording contact attempts, outcomes, DSD information, and discontinuation or defaulting reasons.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgHivPharmacyDailyWorksheet.html">NG HIV Pharmacy Daily Worksheet</a></td>
+      <td>Defines daily pharmacy activity, medicine movement, regimen and DSD summaries, and HEI prophylaxis information.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="measure-and-measurereport-aggregates---draft">Measure and MeasureReport (Aggregates) - DRAFT</h3>
+
+<p>These artefacts define aggregate reporting logic and demonstrate submission of programme and NHMIS reporting results.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Measure-NgMeasure-NHMIS-001.html">NHMIS Monthly Outpatient Attendance Measure</a></td>
+      <td>Defines the computable aggregate measure, population criteria, and reporting logic for the published monthly attendance indicator.</td>
+      <td>Reporting implementations <strong>SHALL</strong> use the published Measure definition for calculation and disaggregation.</td>
+    </tr>
+    <tr>
+      <td><a href="MeasureReport-NgMeasureReport-NHMIS-001.html">NHMIS Monthly Outpatient Attendance Measure Report</a></td>
+      <td>Provides a conformant aggregate result instance for the reporting period and measure.</td>
+      <td>Submitted aggregate results <strong>SHALL</strong> conform to the published MeasureReport artefact, reference the applicable Measure, and include the reporting period, subject or reporter, status, type, and required groups or populations.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="hiv-terminologies">HIV Terminologies</h3>
+
+<p>The HIV terminology artefacts provide controlled codes, permitted answer sets, reporting disaggregations, and mappings required for consistent representation across forms, registers, worksheets, clinical resources, reporting tools, and interoperability services.</p>
+
+<h4 id="hiv-codesystems">HIV CodeSystems</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-mode-cs.html">NG HIV Tracking Register Tracking Modes</a></td>
+      <td>Authoritative local codes for the methods used to trace or follow up clients.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-reason-cs.html">NG HIV Tracking Register Reasons for Tracking</a></td>
+      <td>Authoritative local codes for why a client is selected for tracking.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-discontinuation-reason-cs.html">NG HIV Tracking Register Reasons for Discontinuation</a></td>
+      <td>Authoritative local codes for discontinuation outcomes recorded during tracking.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-default-reason-cs.html">NG HIV Tracking Register Reasons for Defaulting</a></td>
+      <td>Authoritative local codes for documented reasons a client defaulted from care.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-person-contacted-cs.html">NG HIV Tracking Register Person Contacted Codes</a></td>
+      <td>Authoritative local codes for the person reached during a tracking attempt.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-dsd-status-cs.html">NG HIV Tracking Register DSD Status Codes</a></td>
+      <td>Authoritative local codes for differentiated service delivery status in tracking workflows.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-dsd-model-cs.html">NG HIV Tracking Register DSD Model Codes</a></td>
+      <td>Authoritative local codes for differentiated service delivery models used in tracking.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-tracking-attempt-stage-cs.html">NG HIV Tracking Register Attempt Stages</a></td>
+      <td>Authoritative local codes for the sequence or stage of client-tracking attempts.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-pharmacy-worksheet-summary-scope-cs.html">NG HIV Pharmacy Worksheet Summary Scopes</a></td>
+      <td>Authoritative local codes for the scope of pharmacy worksheet summaries.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-category-cs.html">NG HIV Pharmacy Worksheet Medicine Categories</a></td>
+      <td>Authoritative local codes for pharmacy worksheet medicine groupings.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs.html">NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimens</a></td>
+      <td>Authoritative local codes for HIV-exposed infant ARV prophylaxis regimens.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-pharmacy-worksheet-dsd-model-cs.html">NG HIV Pharmacy Worksheet DSD Models</a></td>
+      <td>Authoritative local codes for pharmacy differentiated service delivery models.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-pharmacy-order-cs.html">NG HIV Pharmacy Order Form Codes</a></td>
+      <td>Local form codes used to identify pharmacy-order sections, fields, and programme concepts.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.html">NG HIV Pharmacy Daily Worksheet Medicine Columns</a></td>
+      <td>Local codes identifying medicines and medicine columns in the pharmacy daily worksheet.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-int-lab-register-cs.html">NG HIV Integrated Laboratory Monitoring Register Codes</a></td>
+      <td>Local codes for fields and concepts in the integrated laboratory monitoring register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-int-lab-form-cs.html">NG HIV Integrated Laboratory Form Codes</a></td>
+      <td>Local codes for orders, specimens, tests, results, and sign-off fields on the integrated laboratory form.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-eac-form-cs.html">NG HIV Enhanced Adherence Counselling Form Codes</a></td>
+      <td>Local codes for adherence, barriers, interventions, counselling sessions, and outcomes on the EAC form.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-eac-register-virologic-failure-cause-cs.html">NG HIV EAC Register Suspected Causes of Virologic Failure</a></td>
+      <td>Local codes for suspected causes of virologic failure recorded in the EAC register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-transfer-reason-cs.html">NG HIV Care and Treatment Transfer Reasons</a></td>
+      <td>Local codes for reasons an HIV client is transferred between services or facilities.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-care-art-codes-cs.html">NG HIV Care and ART Codes</a></td>
+      <td>Local codes for structured concepts captured in the HIV Care and ART form.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-tpt-outcome-cs.html">NG HIV ART Register TPT Outcome Codes</a></td>
+      <td>Local codes for tuberculosis preventive treatment outcomes in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-tb-status-cs.html">NG HIV ART Register TB Status Codes</a></td>
+      <td>Local codes for tuberculosis screening or disease status in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-regimen-cs.html">NG HIV ART Register Regimen Codes</a></td>
+      <td>Local codes for ART regimens recorded in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-hepatitis-status-cs.html">NG HIV ART Register Hepatitis Screening Codes</a></td>
+      <td>Local codes for hepatitis screening status and results in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-dsd-status-cs.html">NG HIV ART Register DSD Status Codes</a></td>
+      <td>Local codes for differentiated service delivery status in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-cryptococcal-status-cs.html">NG HIV ART Register Cryptococcal Status Codes</a></td>
+      <td>Local codes for cryptococcal screening and status in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-register-cervical-status-cs.html">NG HIV ART Register Cervical Cancer Screening Status Codes</a></td>
+      <td>Local codes for cervical cancer screening status in the ART register.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ng-hiv-art-monthly-summary-cs.html">NG HIV ART Monthly Summary Codes</a></td>
+      <td>Local codes for HIV ART monthly summary indicators and disaggregation concepts.</td>
+      <td>Where referenced by a required binding, systems <strong>SHALL</strong> use the published CodeSystem URI and code, <strong>SHALL</strong> retain the coding system identity, and <strong>SHALL NOT</strong> redefine a published code with a different meaning.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="hiv-valuesets">HIV ValueSets</h4>
+
+<h5 id="clinical-and-programme-form-valuesets">Clinical and Programme Form ValueSets</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Intended use</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-care-entry-point-vs.html">NG HIV Care Entry Point</a></td>
+      <td>Selects the service or programme entry point through which a client entered HIV care.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-stop-reason-vs.html">NG HIV ART Stop Reason</a></td>
+      <td>Selects the reason ART was stopped or discontinued.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-adult-art-medication-vs.html">NG HIV Adult ART Medications</a></td>
+      <td>Constrains selectable adult ART medicines or regimen components.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-cd4-reference-vs.html">NG HIV CD4 Reference</a></td>
+      <td>Constrains coded CD4 reference categories or assessment selections used by HIV forms.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-transfer-reason-vs.html">NG HIV Care and Treatment Transfer Reasons</a></td>
+      <td>Selects the reason for transferring an HIV client.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-cause-of-death-vs.html">NG HIV Cause of Death</a></td>
+      <td>Selects the documented cause of death for HIV programme records.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-drug-resistance-result-vs.html">NG HIV Drug Resistance Result</a></td>
+      <td>Selects the interpreted outcome of HIV drug-resistance testing.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-eac-adherence-vs.html">NG HIV EAC Adherence</a></td>
+      <td>Selects the assessed adherence level during enhanced adherence counselling.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-eac-barriers-vs.html">NG HIV EAC Adherence Barriers</a></td>
+      <td>Selects identified barriers contributing to poor or inconsistent adherence.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-eac-intervention-services-vs.html">NG HIV EAC Intervention Services</a></td>
+      <td>Selects services provided or arranged as part of an EAC intervention.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-eac-intervention-tools-vs.html">NG HIV EAC Intervention Tools</a></td>
+      <td>Selects counselling, reminder, assessment, or support tools used during EAC.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-educational-status-vs.html">NG HIV Educational Status</a></td>
+      <td>Selects the client's educational attainment or current educational status.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-regimen-line-vs.html">NG HIV Integrated Laboratory ART Regimen Line</a></td>
+      <td>Selects the ART regimen line relevant to a laboratory request or result.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.html">NG HIV Integrated Laboratory ARV Prophylaxis</a></td>
+      <td>Selects ARV prophylaxis used for an HIV-exposed infant or other applicable laboratory context.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-cytology-method-vs.html">NG HIV Integrated Laboratory Cytology Method</a></td>
+      <td>Selects the cytology method used for cervical screening or related laboratory testing.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-eid-age-category-vs.html">NG HIV Integrated Laboratory EID Age Category</a></td>
+      <td>Selects the age category used for early infant diagnosis requests and reporting.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-eid-indication-vs.html">NG HIV Integrated Laboratory EID Indication</a></td>
+      <td>Selects the clinical or programme indication for early infant diagnosis testing.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-eid-result-vs.html">NG HIV Integrated Laboratory EID Result</a></td>
+      <td>Selects the interpreted early infant diagnosis result.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-other-test-vs.html">NG HIV Integrated Laboratory Other Test</a></td>
+      <td>Selects additional HIV-related laboratory tests not represented by the principal test list.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-positive-negative-result-vs.html">NG HIV Integrated Laboratory Positive or Negative Result</a></td>
+      <td>Constrains binary test results expressed as positive or negative.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-reactive-result-vs.html">NG HIV Integrated Laboratory Reactive or Non-Reactive Result</a></td>
+      <td>Constrains screening results expressed as reactive or non-reactive.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-register-dsd-status-vs.html">NG HIV Integrated Laboratory Register DSD Status</a></td>
+      <td>Selects the client's differentiated service delivery status for laboratory monitoring.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-requested-test-type-vs.html">NG HIV Integrated Laboratory Requested Test Type</a></td>
+      <td>Selects one or more laboratory tests requested on the integrated laboratory form.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-specimen-type-vs.html">NG HIV Integrated Laboratory Specimen Type</a></td>
+      <td>Selects the biological specimen type collected or received for testing.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-viral-load-indication-vs.html">NG HIV Integrated Laboratory Viral-Load Indication</a></td>
+      <td>Selects the clinical or programme reason for requesting a viral-load test.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-marital-status-vs.html">NG HIV Marital Status</a></td>
+      <td>Selects the client's marital status.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-oi-prophylaxis-treatment-medication-vs.html">NG HIV OI Prophylaxis and Treatment Medications</a></td>
+      <td>Constrains medicines used for opportunistic-infection prophylaxis or treatment.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-paediatric-art-medication-vs.html">NG HIV Paediatric ART Medications</a></td>
+      <td>Constrains selectable paediatric ART medicines or regimen components.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-prep-medication-vs.html">NG HIV PrEP Medications</a></td>
+      <td>Constrains medicines used for HIV pre-exposure prophylaxis.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-prior-art-vs.html">NG HIV Prior ART</a></td>
+      <td>Selects the type or source of ART exposure before enrolment in the current programme.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-regimen-change-reason-vs.html">NG HIV Regimen Substitution or Switch Reason</a></td>
+      <td>Selects the reason an ART regimen was substituted or switched.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tb-preventive-therapy-vs.html">NG HIV TB Preventive Therapy</a></td>
+      <td>Selects the tuberculosis preventive therapy option or status.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.html">NG HIV TB Preventive Therapy Medications</a></td>
+      <td>Constrains medicines used for tuberculosis preventive treatment.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="register-and-worksheet-valuesets">Register and Worksheet ValueSets</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Intended use</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-cervical-status-vs.html">NG HIV ART Register Cervical Cancer Screening Status</a></td>
+      <td>Constrains cervical cancer screening status recorded in the ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-cryptococcal-status-vs.html">NG HIV ART Register Cryptococcal Status</a></td>
+      <td>Constrains cryptococcal screening, test, or treatment status recorded in the ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-dsd-status-vs.html">NG HIV ART Register DSD Status</a></td>
+      <td>Constrains differentiated service delivery status recorded in the ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-hepatitis-status-vs.html">NG HIV ART Register Hepatitis Screening Status</a></td>
+      <td>Constrains hepatitis screening status recorded in the ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-regimen-vs.html">NG HIV ART Register Regimens</a></td>
+      <td>Constrains ART regimen codes permitted in the national ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-outcome-vs.html">NG HIV ART Register Six-Month Outcomes</a></td>
+      <td>Selects the programme outcome assessed at the six-month follow-up point.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-tb-status-vs.html">NG HIV ART Register TB Status</a></td>
+      <td>Constrains tuberculosis screening or disease status recorded in the ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-register-tpt-outcome-vs.html">NG HIV ART Register TPT Outcome</a></td>
+      <td>Constrains tuberculosis preventive treatment outcomes recorded in the ART register.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-eac-register-virologic-failure-cause-vs.html">NG HIV EAC Register Suspected Causes of Virologic Failure</a></td>
+      <td>Selects suspected causes of virologic failure for EAC monitoring and follow-up.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-register-mode-of-testing-vs.html">NG HIV Integrated Laboratory Register Mode of Testing</a></td>
+      <td>Selects the testing mode used for a laboratory register entry.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-register-monitoring-type-vs.html">NG HIV Integrated Laboratory Register Monitoring Type</a></td>
+      <td>Selects the monitoring category associated with a laboratory register entry.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-register-test-vs.html">NG HIV Integrated Laboratory Register Test Type</a></td>
+      <td>Selects the test represented in an integrated laboratory register entry.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-register-viral-load-category-vs.html">NG HIV Integrated Laboratory Register Viral-Load Category</a></td>
+      <td>Classifies viral-load results into programme-defined result categories.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-int-lab-register-viral-load-disaggregation-vs.html">NG HIV Integrated Laboratory Register Viral-Load Disaggregation</a></td>
+      <td>Selects the disaggregation group used for viral-load monitoring and reporting.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-pharmacy-worksheet-medicine-vs.html">NG HIV Pharmacy Daily Worksheet Medicines</a></td>
+      <td>Constrains medicines represented as columns or entries in the pharmacy daily worksheet.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-pharmacy-worksheet-dsd-model-vs.html">NG HIV Pharmacy Worksheet DSD Model</a></td>
+      <td>Selects the differentiated service delivery model used in pharmacy reporting.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs.html">NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimen</a></td>
+      <td>Selects the ARV prophylaxis regimen supplied to an HIV-exposed infant.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-pharmacy-worksheet-medicine-category-vs.html">NG HIV Pharmacy Worksheet Medicine Category</a></td>
+      <td>Selects the medicine category used to group pharmacy worksheet transactions.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-pharmacy-worksheet-summary-scope-vs.html">NG HIV Pharmacy Worksheet Summary Scope</a></td>
+      <td>Selects whether a pharmacy summary applies to a medicine, category, regimen, DSD model, or other defined scope.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-attempt-stage-vs.html">NG HIV Tracking Register Attempt Stage</a></td>
+      <td>Selects the stage or sequence number of a tracking attempt.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-dsd-model-vs.html">NG HIV Tracking Register DSD Model</a></td>
+      <td>Selects the client's differentiated service delivery model during tracking.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-dsd-status-vs.html">NG HIV Tracking Register DSD Status</a></td>
+      <td>Selects the client's differentiated service delivery status during tracking.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-person-contacted-vs.html">NG HIV Tracking Register Person Contacted</a></td>
+      <td>Selects the person reached during a client-tracking attempt.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-default-reason-vs.html">NG HIV Tracking Register Reason for Defaulting</a></td>
+      <td>Selects the documented reason the client defaulted from HIV care.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-discontinuation-reason-vs.html">NG HIV Tracking Register Reason for Discontinuation</a></td>
+      <td>Selects the discontinuation outcome established through tracking.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-reason-vs.html">NG HIV Tracking Register Reason for Tracking</a></td>
+      <td>Selects why the client was placed on the tracking list.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-tracking-mode-vs.html">NG HIV Tracking Register Tracking Mode</a></td>
+      <td>Selects the method used to trace or contact the client.</td>
+      <td>Implementations <strong>SHALL</strong> follow the binding strength declared by the consuming artefact; for a required binding, at least one coding <strong>SHALL</strong> be drawn from this ValueSet.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="art-monthly-reporting-valuesets">ART Monthly Reporting ValueSets</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Intended use</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-tb-ahd-age-group-vs.html">NG HIV ART Monthly TB and AHD Age Groups</a></td>
+      <td>Provides age groups used to disaggregate tuberculosis and advanced HIV disease indicators.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-indicator-vs.html">NG HIV ART Monthly Summary Indicators</a></td>
+      <td>Constrains the indicator codes reportable in the ART monthly summary.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-crag-result-vs.html">NG HIV ART Monthly Serum CrAg Results</a></td>
+      <td>Selects serum cryptococcal antigen result categories for monthly reporting.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-mmd-duration-vs.html">NG HIV ART Monthly MMD Duration</a></td>
+      <td>Selects multi-month dispensing duration categories used in ART reporting.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-ahd-category-vs.html">NG HIV ART Monthly AHD Categories</a></td>
+      <td>Selects advanced HIV disease assessment or service categories.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-age-group-vs.html">NG HIV ART Monthly Age Groups</a></td>
+      <td>Provides the standard age groups used for general ART monthly indicator disaggregation.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-cervical-age-group-vs.html">NG HIV ART Monthly Cervical Screening Age Groups</a></td>
+      <td>Provides age groups used to disaggregate cervical cancer screening indicators.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-cervical-screening-result-vs.html">NG HIV ART Monthly Cervical Screening Results</a></td>
+      <td>Selects cervical cancer screening result categories for monthly reporting.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-cervical-screening-timing-vs.html">NG HIV ART Monthly Cervical Screening Timing</a></td>
+      <td>Selects when cervical screening occurred relative to enrolment or follow-up.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-cervical-treatment-type-vs.html">NG HIV ART Monthly Cervical Treatment Types</a></td>
+      <td>Selects treatment types provided following abnormal cervical screening.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-crag-age-group-vs.html">NG HIV ART Monthly CrAg Age Groups</a></td>
+      <td>Provides age groups used to disaggregate cryptococcal antigen indicators.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-cm-result-vs.html">NG HIV ART Monthly Cryptococcal Meningitis Results</a></td>
+      <td>Selects cryptococcal meningitis assessment or result categories for monthly reporting.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-art-monthly-interruption-outcome-vs.html">NG HIV ART Monthly Interruption Outcomes</a></td>
+      <td>Selects outcomes for clients returning from or remaining in treatment interruption.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ng-hiv-kp-typology-vs.html">NG HIV Key Population Typology</a></td>
+      <td>Selects the applicable key-population category for programme data and reporting.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published codes for required indicator or disaggregation elements and <strong>SHALL</strong> preserve the reporting code system and version where supplied.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="hiv-conceptmaps">HIV ConceptMaps</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Mapping purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ConceptMap-NgHivLOINCToSNOMEDCT.html">NG HIV LOINC to SNOMED CT (Experimental)</a></td>
+      <td>Maps selected HIV laboratory and observation identifiers expressed in LOINC to semantically corresponding SNOMED CT concepts for cross-terminology search, analytics, and clinical interpretation.</td>
+      <td>Systems performing translation <strong>SHOULD</strong> use the published ConceptMap or <code class="language-plaintext highlighter-rouge">$translate</code>, retain the source coding, record the target coding and equivalence, and <strong>SHALL NOT</strong> treat experimental mappings as clinically authoritative without programme validation.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-NgHivLocalToSNOMEDCT.html">NG HIV Local Concepts to SNOMED CT (Experimental)</a></td>
+      <td>Maps Nigeria HIV local clinical and programme concepts to SNOMED CT to support semantic normalisation and exchange with systems using SNOMED CT.</td>
+      <td>Systems performing translation <strong>SHOULD</strong> use the published ConceptMap or <code class="language-plaintext highlighter-rouge">$translate</code>, retain the source coding, record the target coding and equivalence, and <strong>SHALL NOT</strong> treat experimental mappings as clinically authoritative without programme validation.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-NgHivLocalToLOINC.html">NG HIV Local Concepts → LOINC</a></td>
+      <td>Maps Nigeria HIV local laboratory and observation concepts to LOINC identifiers to support standardised ordering, result exchange, and analytics.</td>
+      <td>Systems performing translation <strong>SHOULD</strong> use the published ConceptMap or <code class="language-plaintext highlighter-rouge">$translate</code>, retain the source coding, record the target coding and equivalence, and <strong>SHALL NOT</strong> treat experimental mappings as clinically authoritative without programme validation.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-WHOHivToNgHivLocal.html">WHO HIV Concepts → NG HIV Local Concepts</a></td>
+      <td>Maps WHO HIV Concepts to Nigeria HIV local concepts to identifiers to support standardised exchange of HIV program data.</td>
+      <td>Systems performing translation <strong>SHOULD</strong> use the published ConceptMap or <code class="language-plaintext highlighter-rouge">$translate</code>, retain the source coding, record the target coding and equivalence, and <strong>SHALL NOT</strong> treat experimental mappings as clinically authoritative without programme validation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="exchange-documents">Exchange Documents</h3>
+
+<p>These artefacts support document-based exchange and traceability of HIV information between authorised facilities, laboratories, pharmacies, programmes, repositories, and health information exchanges.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-documents.html">NG Documents</a></td>
+      <td>Represents HIV clinical documents, transfer summaries, laboratory reports, pharmacy records, and other document references exchanged between authorised systems.</td>
+      <td>Systems exchanging HIV documents <strong>SHALL</strong> use this profile, identify the patient and custodian, provide appropriate content metadata, and protect document confidentiality and integrity.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-provenance.html">NG Provenance</a></td>
+      <td>Records the origin, authorship, transformation, submission, and responsible agents for exchanged HIV data and documents.</td>
+      <td>Systems creating, transforming, or submitting HIV exchange content <strong>SHOULD</strong> provide a conformant Provenance resource; regulated or signed exchanges <strong>SHALL</strong> include it where required by the workflow.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="implementation-guidance">Implementation Guidance</h3>
+
+<p>Implementers should use the Questionnaire artefacts to create interoperable electronic HIV forms and corresponding QuestionnaireResponse resources to represent completed submissions. Where structured clinical reuse is required, QuestionnaireResponse content should be extracted or mapped to the applicable foundational and clinical profiles.</p>
+
+<p>Logical models provide programme-oriented definitions for registers and worksheets and should be mapped to appropriate clinical, administrative, medication, laboratory, workflow, and reporting FHIR resources. Measure artefacts define computable indicator logic, while MeasureReport resources carry the aggregate results for a defined reporting period.</p>
+
+<p>CodeSystems define authoritative programme codes. ValueSets identify the codes permitted for specific data elements and reporting disaggregations. ConceptMaps support translation between Nigeria HIV local concepts, LOINC, and SNOMED CT; mappings should be validated through programme and terminology governance before use in clinical decision-making.</p>
+
+<p>Implementations <strong>SHALL</strong> preserve published canonical URLs, identifiers, terminology system URIs, code-system versions where supplied, references, cardinalities, invariants, and required bindings. HIV data and documents <strong>SHALL</strong> be exchanged only for authorised purposes and protected in accordance with applicable privacy, security, consent, audit, and data-minimisation requirements.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Device/NgDevice-001> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgDevice-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-device" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-device>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device NgDevice-001</b></p><a name=\"NgDevice-001\"> </a><a name=\"hcNgDevice-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-device.html\">NG Device</a></p></div><p><b>identifier</b>: <code>https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-device-identifier-vs</code>/VS-002</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Acme Medtech</p><p><b>serialNumber</b>: SN-12345</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>POX-210</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:\">Pulse oximeter</span></p><p><b>patient</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>owner</b>: <a href=\"Organization-NgOrganization-001.html\">Organization Asokoro District Hospital</a></p><p><b>location</b>: <a href=\"Location-NgLocation-001.html\">Location Asokoro OPD</a></p></div>"
+  ] ;
+  fhir:Device.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-device-identifier-vs" ] ;
+     fhir:Identifier.value [ fhir:value "VS-002" ]
+  ] ;
+  fhir:Device.status [ fhir:value "active"] ;
+  fhir:Device.manufacturer [ fhir:value "Acme Medtech"] ;
+  fhir:Device.serialNumber [ fhir:value "SN-12345"] ;
+  fhir:Device.deviceName [
+     fhir:index 0 ;
+     fhir:Device.deviceName.name [ fhir:value "POX-210" ] ;
+     fhir:Device.deviceName.type [ fhir:value "user-friendly-name" ]
+  ] ;
+  fhir:Device.type [
+     fhir:CodeableConcept.text [ fhir:value "Pulse oximeter" ]
+  ] ;
+  fhir:Device.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] ;
+  fhir:Device.owner [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-001> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-001" ]
+  ] ;
+  fhir:Device.location [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Location/NgLocation-001> ;
+     fhir:Reference.reference [ fhir:value "Location/NgLocation-001" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Device/NgDevice-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

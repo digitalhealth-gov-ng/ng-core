@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Location/NgLocation-004> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgLocation-004"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location NgLocation-004</b></p><a name=\"NgLocation-004\"> </a><a name=\"hcNgLocation-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-location.html\">NG Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Gurdi Outreach Site</p><p><b>type</b>: <span title=\"Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs outreach}\">Outreach Post</span></p><p><b>address</b>: Primary School Field, Gurdi Ward Gurdi FC NG </p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>6.95</td><td>8.47</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></p></div>"
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Gurdi Outreach Site"] ;
+  fhir:Location.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs" ] ;
+       fhir:Coding.code [ fhir:value "outreach" ] ;
+       fhir:Coding.display [ fhir:value "Outreach Post" ]
+     ]
+  ] ;
+  fhir:Location.address [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-administrative-ward" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-wards-cs" ] ;
+           fhir:Coding.code [ fhir:value "fc-amac-gurdi" ] ;
+           fhir:Coding.display [ fhir:value "Gurdi" ]
+         ]
+       ]
+     ] ;
+     fhir:Address.line [
+       fhir:value "Primary School Field, Gurdi Ward" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Gurdi" ] ;
+     fhir:Address.district [ fhir:value "fc-municipal" ] ;
+     fhir:Address.state [ fhir:value "FC" ] ;
+     fhir:Address.country [ fhir:value "NG" ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "6.95"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "8.47"^^xsd:decimal ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-002> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-002" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Location/NgLocation-004.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

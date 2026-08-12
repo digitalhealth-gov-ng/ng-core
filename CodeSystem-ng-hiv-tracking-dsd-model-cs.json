@@ -1,0 +1,66 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-hiv-tracking-dsd-model-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-hiv-tracking-dsd-model-cs</b></p><a name=\"ng-hiv-tracking-dsd-model-cs\"> </a><a name=\"hcng-hiv-tracking-dsd-model-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-dsd-model-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FBM<a name=\"ng-hiv-tracking-dsd-model-cs-FBM\"> </a></td><td>Facility-based model</td></tr><tr><td style=\"white-space:nowrap\">CBM<a name=\"ng-hiv-tracking-dsd-model-cs-CBM\"> </a></td><td>Community-based model</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-tracking-dsd-model-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.79"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivTrackingDsdModelCS",
+  "title" : "NG HIV Tracking Register DSD Model Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-29",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "High-level DSD model codes printed in T15.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "FBM",
+    "display" : "Facility-based model"
+  },
+  {
+    "code" : "CBM",
+    "display" : "Community-based model"
+  }]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="NgHealthcareService-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-healthcare-service"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: HealthcareService NgHealthcareService-001</b></p><a name="NgHealthcareService-001"> </a><a name="hcNgHealthcareService-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-healthcare-service.html">NG HealthcareService</a></p></div><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization-NgOrganization-001.html">Organization Asokoro District Hospital</a></p><p><b>category</b>: <span title="Codes:">Maternal health</span></p><p><b>type</b>: <span title="Codes:">Antenatal care</span></p><p><b>location</b>: <a href="Location-NgLocation-001.html">Location Asokoro OPD</a></p><p><b>name</b>: Asokoro District Hospital ANC Clinic</p><p><b>telecom</b>: <a href="tel:+234-800-123-4567">+234-800-123-4567</a></p><p><b>appointmentRequired</b>: true</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Monday, Wednesday</p><p><b>availableStartTime</b>: 08:00:00</p><p><b>availableEndTime</b>: 16:00:00</p></blockquote></div>
+  </text>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/NgOrganization-001"/>
+  </providedBy>
+  <category>
+    <text value="Maternal health"/>
+  </category>
+  <type>
+    <text value="Antenatal care"/>
+  </type>
+  <location>
+    <reference value="Location/NgLocation-001"/>
+  </location>
+  <name value="Asokoro District Hospital ANC Clinic"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+234-800-123-4567"/>
+  </telecom>
+  <appointmentRequired value="true"/>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="wed"/>
+    <availableStartTime value="08:00:00"/>
+    <availableEndTime value="16:00:00"/>
+  </availableTime>
+</HealthcareService>

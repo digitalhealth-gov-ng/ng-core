@@ -1,0 +1,258 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-device-identifier-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-device-identifier-cs</b></p><a name=\"ng-device-identifier-cs\"> </a><a name=\"hcng-device-identifier-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VS-001<a name=\"ng-device-identifier-cs-VS-001\"> </a></td><td>Automated Blood Pressure Monitor</td></tr><tr><td style=\"white-space:nowrap\">VS-002<a name=\"ng-device-identifier-cs-VS-002\"> </a></td><td>Pulse Oximeter (SpO2)</td></tr><tr><td style=\"white-space:nowrap\">VS-003<a name=\"ng-device-identifier-cs-VS-003\"> </a></td><td>Digital Thermometer</td></tr><tr><td style=\"white-space:nowrap\">VS-004<a name=\"ng-device-identifier-cs-VS-004\"> </a></td><td>ECG Monitor (12-lead)</td></tr><tr><td style=\"white-space:nowrap\">VS-005<a name=\"ng-device-identifier-cs-VS-005\"> </a></td><td>Capnograph (EtCO2)</td></tr><tr><td style=\"white-space:nowrap\">VS-006<a name=\"ng-device-identifier-cs-VS-006\"> </a></td><td>Multiparameter Patient Monitor</td></tr><tr><td style=\"white-space:nowrap\">VS-007<a name=\"ng-device-identifier-cs-VS-007\"> </a></td><td>Spirometer</td></tr><tr><td style=\"white-space:nowrap\">VS-008<a name=\"ng-device-identifier-cs-VS-008\"> </a></td><td>Non-invasive Cardiac Output Monitor</td></tr><tr><td style=\"white-space:nowrap\">AN-001<a name=\"ng-device-identifier-cs-AN-001\"> </a></td><td>Chemistry Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-002<a name=\"ng-device-identifier-cs-AN-002\"> </a></td><td>Hematology Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-003<a name=\"ng-device-identifier-cs-AN-003\"> </a></td><td>Immunoassay Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-004<a name=\"ng-device-identifier-cs-AN-004\"> </a></td><td>Blood Gas Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-005<a name=\"ng-device-identifier-cs-AN-005\"> </a></td><td>Coagulation Analyzer</td></tr><tr><td style=\"white-space:nowrap\">AN-006<a name=\"ng-device-identifier-cs-AN-006\"> </a></td><td>PCR Analyzer (qPCR)</td></tr><tr><td style=\"white-space:nowrap\">US-001<a name=\"ng-device-identifier-cs-US-001\"> </a></td><td>Cart Ultrasound System</td></tr><tr><td style=\"white-space:nowrap\">US-002<a name=\"ng-device-identifier-cs-US-002\"> </a></td><td>Portable Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">US-003<a name=\"ng-device-identifier-cs-US-003\"> </a></td><td>Point-of-Care Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">US-004<a name=\"ng-device-identifier-cs-US-004\"> </a></td><td>Handheld Ultrasound Probe</td></tr><tr><td style=\"white-space:nowrap\">US-005<a name=\"ng-device-identifier-cs-US-005\"> </a></td><td>Obstetric Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">US-006<a name=\"ng-device-identifier-cs-US-006\"> </a></td><td>Vascular Ultrasound</td></tr><tr><td style=\"white-space:nowrap\">XR-001<a name=\"ng-device-identifier-cs-XR-001\"> </a></td><td>Mobile X-ray (DX)</td></tr><tr><td style=\"white-space:nowrap\">XR-002<a name=\"ng-device-identifier-cs-XR-002\"> </a></td><td>Fixed X-ray Room (CR)</td></tr><tr><td style=\"white-space:nowrap\">XR-003<a name=\"ng-device-identifier-cs-XR-003\"> </a></td><td>Digital Radiography Panel (DR)</td></tr><tr><td style=\"white-space:nowrap\">XR-004<a name=\"ng-device-identifier-cs-XR-004\"> </a></td><td>PACS Workstation</td></tr><tr><td style=\"white-space:nowrap\">XR-005<a name=\"ng-device-identifier-cs-XR-005\"> </a></td><td>Fluoroscopy System</td></tr><tr><td style=\"white-space:nowrap\">XR-006<a name=\"ng-device-identifier-cs-XR-006\"> </a></td><td>Mammography System (MG)</td></tr><tr><td style=\"white-space:nowrap\">XR-007<a name=\"ng-device-identifier-cs-XR-007\"> </a></td><td>Dental X-ray (Intraoral)</td></tr><tr><td style=\"white-space:nowrap\">CT-001<a name=\"ng-device-identifier-cs-CT-001\"> </a></td><td>CT Scanner 16-slice</td></tr><tr><td style=\"white-space:nowrap\">CT-002<a name=\"ng-device-identifier-cs-CT-002\"> </a></td><td>CT Scanner 64-slice</td></tr><tr><td style=\"white-space:nowrap\">CT-003<a name=\"ng-device-identifier-cs-CT-003\"> </a></td><td>CT Injector (Contrast)</td></tr><tr><td style=\"white-space:nowrap\">CT-004<a name=\"ng-device-identifier-cs-CT-004\"> </a></td><td>CT Workstation (Reconstruction)</td></tr><tr><td style=\"white-space:nowrap\">MR-001<a name=\"ng-device-identifier-cs-MR-001\"> </a></td><td>MRI 1.5T Scanner</td></tr><tr><td style=\"white-space:nowrap\">MR-002<a name=\"ng-device-identifier-cs-MR-002\"> </a></td><td>MRI 3.0T Scanner</td></tr><tr><td style=\"white-space:nowrap\">MR-003<a name=\"ng-device-identifier-cs-MR-003\"> </a></td><td>MRI Patient Monitor (MR-Conditional)</td></tr><tr><td style=\"white-space:nowrap\">BED-001<a name=\"ng-device-identifier-cs-BED-001\"> </a></td><td>Infusion Pump</td></tr><tr><td style=\"white-space:nowrap\">BED-002<a name=\"ng-device-identifier-cs-BED-002\"> </a></td><td>Syringe Pump</td></tr><tr><td style=\"white-space:nowrap\">BED-003<a name=\"ng-device-identifier-cs-BED-003\"> </a></td><td>Ventilator</td></tr><tr><td style=\"white-space:nowrap\">BED-004<a name=\"ng-device-identifier-cs-BED-004\"> </a></td><td>Anesthesia Machine</td></tr><tr><td style=\"white-space:nowrap\">BED-005<a name=\"ng-device-identifier-cs-BED-005\"> </a></td><td>Defibrillator (AED/Manual)</td></tr><tr><td style=\"white-space:nowrap\">HH-001<a name=\"ng-device-identifier-cs-HH-001\"> </a></td><td>Handheld ECG Recorder</td></tr><tr><td style=\"white-space:nowrap\">HH-002<a name=\"ng-device-identifier-cs-HH-002\"> </a></td><td>Handheld Capnograph</td></tr><tr><td style=\"white-space:nowrap\">HH-003<a name=\"ng-device-identifier-cs-HH-003\"> </a></td><td>Handheld Vital Signs Monitor (NIBP/SpO2)</td></tr><tr><td style=\"white-space:nowrap\">HH-004<a name=\"ng-device-identifier-cs-HH-004\"> </a></td><td>Glucometer (POC)</td></tr><tr><td style=\"white-space:nowrap\">HH-005<a name=\"ng-device-identifier-cs-HH-005\"> </a></td><td>Fetal Doppler (Handheld)</td></tr><tr><td style=\"white-space:nowrap\">HH-006<a name=\"ng-device-identifier-cs-HH-006\"> </a></td><td>Handheld Ultrasound (Probe)</td></tr><tr><td style=\"white-space:nowrap\">IOT-001<a name=\"ng-device-identifier-cs-IOT-001\"> </a></td><td>Cold Chain Temperature Logger</td></tr><tr><td style=\"white-space:nowrap\">IOT-002<a name=\"ng-device-identifier-cs-IOT-002\"> </a></td><td>Room Air Quality Monitor (PM/CO2)</td></tr><tr><td style=\"white-space:nowrap\">IOT-003<a name=\"ng-device-identifier-cs-IOT-003\"> </a></td><td>Smart Medical Scale (Bed/Chair)</td></tr><tr><td style=\"white-space:nowrap\">IOT-004<a name=\"ng-device-identifier-cs-IOT-004\"> </a></td><td>Asset Tracker (BLE/GPS)</td></tr><tr><td style=\"white-space:nowrap\">IOT-005<a name=\"ng-device-identifier-cs-IOT-005\"> </a></td><td>Refrigerator Door/Temperature Sensor</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-device-identifier-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.11"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgDeviceIdentifierCS",
+  "title" : "NG Electromechanical Medical Device Identifier CS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-12T13:22:49+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Simplified CodeSystem of 50 placeholder identifiers for electromechanical medical devices (vital signs, analyzers, imaging/DICOM, bedside, handheld, IoT).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 50,
+  "concept" : [{
+    "code" : "VS-001",
+    "display" : "Automated Blood Pressure Monitor"
+  },
+  {
+    "code" : "VS-002",
+    "display" : "Pulse Oximeter (SpO2)"
+  },
+  {
+    "code" : "VS-003",
+    "display" : "Digital Thermometer"
+  },
+  {
+    "code" : "VS-004",
+    "display" : "ECG Monitor (12-lead)"
+  },
+  {
+    "code" : "VS-005",
+    "display" : "Capnograph (EtCO2)"
+  },
+  {
+    "code" : "VS-006",
+    "display" : "Multiparameter Patient Monitor"
+  },
+  {
+    "code" : "VS-007",
+    "display" : "Spirometer"
+  },
+  {
+    "code" : "VS-008",
+    "display" : "Non-invasive Cardiac Output Monitor"
+  },
+  {
+    "code" : "AN-001",
+    "display" : "Chemistry Analyzer"
+  },
+  {
+    "code" : "AN-002",
+    "display" : "Hematology Analyzer"
+  },
+  {
+    "code" : "AN-003",
+    "display" : "Immunoassay Analyzer"
+  },
+  {
+    "code" : "AN-004",
+    "display" : "Blood Gas Analyzer"
+  },
+  {
+    "code" : "AN-005",
+    "display" : "Coagulation Analyzer"
+  },
+  {
+    "code" : "AN-006",
+    "display" : "PCR Analyzer (qPCR)"
+  },
+  {
+    "code" : "US-001",
+    "display" : "Cart Ultrasound System"
+  },
+  {
+    "code" : "US-002",
+    "display" : "Portable Ultrasound"
+  },
+  {
+    "code" : "US-003",
+    "display" : "Point-of-Care Ultrasound"
+  },
+  {
+    "code" : "US-004",
+    "display" : "Handheld Ultrasound Probe"
+  },
+  {
+    "code" : "US-005",
+    "display" : "Obstetric Ultrasound"
+  },
+  {
+    "code" : "US-006",
+    "display" : "Vascular Ultrasound"
+  },
+  {
+    "code" : "XR-001",
+    "display" : "Mobile X-ray (DX)"
+  },
+  {
+    "code" : "XR-002",
+    "display" : "Fixed X-ray Room (CR)"
+  },
+  {
+    "code" : "XR-003",
+    "display" : "Digital Radiography Panel (DR)"
+  },
+  {
+    "code" : "XR-004",
+    "display" : "PACS Workstation"
+  },
+  {
+    "code" : "XR-005",
+    "display" : "Fluoroscopy System"
+  },
+  {
+    "code" : "XR-006",
+    "display" : "Mammography System (MG)"
+  },
+  {
+    "code" : "XR-007",
+    "display" : "Dental X-ray (Intraoral)"
+  },
+  {
+    "code" : "CT-001",
+    "display" : "CT Scanner 16-slice"
+  },
+  {
+    "code" : "CT-002",
+    "display" : "CT Scanner 64-slice"
+  },
+  {
+    "code" : "CT-003",
+    "display" : "CT Injector (Contrast)"
+  },
+  {
+    "code" : "CT-004",
+    "display" : "CT Workstation (Reconstruction)"
+  },
+  {
+    "code" : "MR-001",
+    "display" : "MRI 1.5T Scanner"
+  },
+  {
+    "code" : "MR-002",
+    "display" : "MRI 3.0T Scanner"
+  },
+  {
+    "code" : "MR-003",
+    "display" : "MRI Patient Monitor (MR-Conditional)"
+  },
+  {
+    "code" : "BED-001",
+    "display" : "Infusion Pump"
+  },
+  {
+    "code" : "BED-002",
+    "display" : "Syringe Pump"
+  },
+  {
+    "code" : "BED-003",
+    "display" : "Ventilator"
+  },
+  {
+    "code" : "BED-004",
+    "display" : "Anesthesia Machine"
+  },
+  {
+    "code" : "BED-005",
+    "display" : "Defibrillator (AED/Manual)"
+  },
+  {
+    "code" : "HH-001",
+    "display" : "Handheld ECG Recorder"
+  },
+  {
+    "code" : "HH-002",
+    "display" : "Handheld Capnograph"
+  },
+  {
+    "code" : "HH-003",
+    "display" : "Handheld Vital Signs Monitor (NIBP/SpO2)"
+  },
+  {
+    "code" : "HH-004",
+    "display" : "Glucometer (POC)"
+  },
+  {
+    "code" : "HH-005",
+    "display" : "Fetal Doppler (Handheld)"
+  },
+  {
+    "code" : "HH-006",
+    "display" : "Handheld Ultrasound (Probe)"
+  },
+  {
+    "code" : "IOT-001",
+    "display" : "Cold Chain Temperature Logger"
+  },
+  {
+    "code" : "IOT-002",
+    "display" : "Room Air Quality Monitor (PM/CO2)"
+  },
+  {
+    "code" : "IOT-003",
+    "display" : "Smart Medical Scale (Bed/Chair)"
+  },
+  {
+    "code" : "IOT-004",
+    "display" : "Asset Tracker (BLE/GPS)"
+  },
+  {
+    "code" : "IOT-005",
+    "display" : "Refrigerator Door/Temperature Sensor"
+  }]
+}

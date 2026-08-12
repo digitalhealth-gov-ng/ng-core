@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-tb-screening-diagnostic-test-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-tb-screening-diagnostic-test-type-cs</b></p><a name="ng-tb-screening-diagnostic-test-type-cs"> </a><a name="hcng-tb-screening-diagnostic-test-type-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-screening-diagnostic-test-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Smear-microscopy-only<a name="ng-tb-screening-diagnostic-test-type-cs-Smear-microscopy-only"> </a></td><td>Smear microscopy only</td></tr><tr><td style="white-space:nowrap">Gene-xpert-MTB/RIF-assay-with-other-testing<a name="ng-tb-screening-diagnostic-test-type-cs-Gene-xpert-MTB.47RIF-assay-with-other-testing"> </a></td><td>Gene-Xpert(MTB/RIF assay) with other testing</td></tr><tr><td style="white-space:nowrap">Gene-xpert-MTB/RIF-assay-without-other-testing<a name="ng-tb-screening-diagnostic-test-type-cs-Gene-xpert-MTB.47RIF-assay-without-other-testing"> </a></td><td>Gene-Xpert(MTB/RIF assay) without other testing</td></tr><tr><td style="white-space:nowrap">Additional-tests-other-than-Gene-Xpert<a name="ng-tb-screening-diagnostic-test-type-cs-Additional-tests-other-than-Gene-Xpert"> </a></td><td>Additional tests other than Gene-Xpert</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-screening-diagnostic-test-type-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.102"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgTBScreeningDiagnosticTestTypeCS"/>
+  <title value="TB Screening Diagnostic Test Type Codes CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the types of diagnostic tests that can be peformed on the specimen taken during TB screening."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="Smear-microscopy-only"/>
+    <display value="Smear microscopy only"/>
+  </concept>
+  <concept>
+    <code value="Gene-xpert-MTB/RIF-assay-with-other-testing"/>
+    <display value="Gene-Xpert(MTB/RIF assay) with other testing"/>
+  </concept>
+  <concept>
+    <code value="Gene-xpert-MTB/RIF-assay-without-other-testing"/>
+    <display value="Gene-Xpert(MTB/RIF assay) without other testing"/>
+  </concept>
+  <concept>
+    <code value="Additional-tests-other-than-Gene-Xpert"/>
+    <display value="Additional tests other than Gene-Xpert"/>
+  </concept>
+</CodeSystem>

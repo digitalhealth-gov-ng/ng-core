@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Condition",
+  "id" : "NgCondition-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-condition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition NgCondition-001</b></p><a name=\"NgCondition-001\"> </a><a name=\"hcNgCondition-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-condition.html\">NG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate (severity modifier)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 59621000}\">Hypertension</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>encounter</b>: <a href=\"Encounter-NgEncounter-001.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 09:00:00+0000 --&gt; 2025-11-04 09:35:00+0000</a></p><p><b>onset</b>: 2025-09-01</p><p><b>recorder</b>: <a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></p><p><b>asserter</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  }],
+  "severity" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "6736007",
+      "display" : "Moderate (severity modifier)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "59621000",
+      "display" : "Essential hypertension"
+    }],
+    "text" : "Hypertension"
+  },
+  "subject" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "encounter" : {
+    "reference" : "Encounter/NgEncounter-001"
+  },
+  "onsetDateTime" : "2025-09-01",
+  "recorder" : {
+    "reference" : "Practitioner/NgPractitioner-001"
+  },
+  "asserter" : {
+    "reference" : "Patient/NgPatient-001"
+  }
+}

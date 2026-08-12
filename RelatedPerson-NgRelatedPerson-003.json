@@ -1,0 +1,27 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "NgRelatedPerson-003",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson NgRelatedPerson-003</b></p><a name=\"NgRelatedPerson-003\"> </a><a name=\"hcNgRelatedPerson-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-related-person.html\">NG RelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode BRO}\">brother</span></p><p><b>name</b>: Chinedu Okafor </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1990-01-20</p></div>"
+  },
+  "patient" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "BRO",
+      "display" : "brother"
+    }]
+  }],
+  "name" : [{
+    "family" : "Okafor",
+    "given" : ["Chinedu"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1990-01-20"
+}

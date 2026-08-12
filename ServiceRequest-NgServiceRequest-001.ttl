@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ServiceRequest/NgServiceRequest-001> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgServiceRequest-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-service-request" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-service-request>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest NgServiceRequest-001</b></p><a name=\"NgServiceRequest-001\"> </a><a name=\"hcNgServiceRequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-service-request.html\">NG ServiceRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:\">Maternal health referral</span></p><p><b>priority</b>: Urgent</p><p><b>code</b>: <span title=\"Codes:\">Specialist obstetric assessment</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-002.html\">Musa Abdullahi  Male, DoB: 1987-07-06 ( nin)</a></p><p><b>encounter</b>: <a href=\"Encounter-NgEncounter-002.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 12:15:00+0000 --&gt; 2025-11-04 12:25:00+0000</a></p><p><b>occurrence</b>: 2026-08-03 12:00:00+0100</p><p><b>authoredOn</b>: 2026-08-03 09:30:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-NgPractitioner-002.html\">Practitioner Nkiru Okeke </a></p><p><b>performerType</b>: <span title=\"Codes:\">Obstetric care provider</span></p><p><b>performer</b>: <a href=\"Organization-NgProviderOrganization-001.html\">Organization Akure Central Hospital</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">Elevated blood pressure detected during antenatal care</span></p><p><b>reasonReference</b>: <a href=\"Observation-NgObservation-001.html\">Observation Client registration observation summary</a></p><p><b>supportingInfo</b>: <a href=\"DocumentReference-NgDocuments-001.html\">DocumentReference: status = current; docStatus = final; type = Appends; category = ; date = 2026-08-03 07:30:00+0100</a></p><p><b>note</b>: </p><blockquote><div><p>Please assess the patient for a possible hypertensive disorder of pregnancy\nand provide appropriate specialist management.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "active"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Maternal health referral" ]
+  ] ;
+  fhir:ServiceRequest.priority [ fhir:value "urgent"] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.text [ fhir:value "Specialist obstetric assessment" ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-002> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-002" ]
+  ] ;
+  fhir:ServiceRequest.encounter [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Encounter/NgEncounter-002> ;
+     fhir:Reference.reference [ fhir:value "Encounter/NgEncounter-002" ]
+  ] ;
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2026-08-03T12:00:00+01:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.authoredOn [ fhir:value "2026-08-03T09:30:00+01:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.requester [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-002> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-002" ]
+  ] ;
+  fhir:ServiceRequest.performerType [
+     fhir:CodeableConcept.text [ fhir:value "Obstetric care provider" ]
+  ] ;
+  fhir:ServiceRequest.performer [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgProviderOrganization-001> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgProviderOrganization-001" ]
+  ] ;
+  fhir:ServiceRequest.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Elevated blood pressure detected during antenatal care" ]
+  ] ;
+  fhir:ServiceRequest.reasonReference [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Observation/NgObservation-001> ;
+     fhir:Reference.reference [ fhir:value "Observation/NgObservation-001" ]
+  ] ;
+  fhir:ServiceRequest.supportingInfo [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/DocumentReference/NgDocuments-001> ;
+     fhir:Reference.reference [ fhir:value "DocumentReference/NgDocuments-001" ]
+  ] ;
+  fhir:ServiceRequest.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Please assess the patient for a possible hypertensive disorder of pregnancy\nand provide appropriate specialist management." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ServiceRequest/NgServiceRequest-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

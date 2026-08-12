@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgPatient-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2025-11-04T08:30:00Z"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient NgPatient-001</b></p><a name=\"NgPatient-001\"> </a><a name=\"hcNgPatient-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-11-04 08:30:00+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-patient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>mrn/ASO-2025-0098</li><li>mobile/08051234567</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">15 Ajayi Street Ikeja LA </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: \">:</td><td colspan=\"3\"><ul><li>Funke Adebayo </li><li>Ikeja LA </li><li><a href=\"tel:+2348059988776\">+2348059988776</a></li></ul></td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+         fhir:Coding.code [ fhir:value "NIN" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.value [ fhir:value "23456789012" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+         fhir:Coding.code [ fhir:value "MRN" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.value [ fhir:value "ASO-2025-0098" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+         fhir:Coding.code [ fhir:value "MOBILE" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.value [ fhir:value "08051234567" ]
+  ] ;
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Adebayo" ] ;
+     fhir:HumanName.given [
+       fhir:value "Kemi" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1995-02-14"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.line [
+       fhir:value "15 Ajayi Street" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Ikeja" ] ;
+     fhir:Address.district [ fhir:value "la-ikeja" ] ;
+     fhir:Address.state [ fhir:value "LA" ]
+  ] ;
+  fhir:Patient.contact [
+     fhir:index 0 ;
+     fhir:Patient.contact.relationship [
+       fhir:index 0 ;
+       fhir:CodeableConcept.text [ fhir:value "Mother" ]
+     ] ;
+     fhir:Patient.contact.name [
+       fhir:HumanName.family [ fhir:value "Adebayo" ] ;
+       fhir:HumanName.given [
+         fhir:value "Funke" ;
+         fhir:index 0
+       ]
+     ] ;
+     fhir:Patient.contact.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "phone" ] ;
+       fhir:ContactPoint.value [ fhir:value "+2348059988776" ]
+     ] ;
+     fhir:Patient.contact.address [
+       fhir:Address.city [ fhir:value "Ikeja" ] ;
+       fhir:Address.district [ fhir:value "la-ikeja" ] ;
+       fhir:Address.state [ fhir:value "LA" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

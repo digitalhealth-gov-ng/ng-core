@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-prevention-plan-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ng-hiv-prevention-plan-vs</b></p><a name="ng-hiv-prevention-plan-vs"> </a><a name="hcng-hiv-prevention-plan-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/266753000">266753000</a></td><td>Referral for laboratory tests</td></tr><tr><td><a href="http://snomed.info/id/386467004">386467004</a></td><td>Safe sex education</td></tr><tr><td><a href="http://snomed.info/id/25681007">25681007</a></td><td>Sexually transmitted disease clinic</td></tr><tr><td><a href="http://snomed.info/id/445563009">445563009</a></td><td>Counseling for sexually transmitted disease</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LP157024-3/">LP157024-3</a></td><td>HIV results shared with partner</td></tr><tr><td><a href="https://loinc.org/28355-6/">28355-6</a></td><td>Substance Use Status [OMAHA]</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-prevention-plan-vs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.48.121"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPreventionPlanVS"/>
+  <title value="HIV Prevention Plan"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used for representing the patient's plan for the prevention of HIV being transmitted to others."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="266753000"/>
+        <display value="Referral for laboratory tests"/>
+      </concept>
+      <concept>
+        <code value="386467004"/>
+        <display value="Safe sex education"/>
+      </concept>
+      <concept>
+        <code value="25681007"/>
+        <display value="Sexually transmitted disease clinic"/>
+      </concept>
+      <concept>
+        <code value="445563009"/>
+        <display value="Counseling for sexually transmitted disease"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LP157024-3"/>
+        <display value="HIV results shared with partner"/>
+      </concept>
+      <concept>
+        <code value="28355-6"/>
+        <display value="Substance Use Status [OMAHA]"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

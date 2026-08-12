@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Condition/NgCondition-001> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgCondition-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-condition" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-condition>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition NgCondition-001</b></p><a name=\"NgCondition-001\"> </a><a name=\"hcNgCondition-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-condition.html\">NG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate (severity modifier)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 59621000}\">Hypertension</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>encounter</b>: <a href=\"Encounter-NgEncounter-001.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 09:00:00+0000 --&gt; 2025-11-04 09:35:00+0000</a></p><p><b>onset</b>: 2025-09-01</p><p><b>recorder</b>: <a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></p><p><b>asserter</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p></div>"
+  ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ] ;
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ] ;
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ] ;
+  fhir:Condition.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ] ;
+       fhir:Coding.code [ fhir:value "problem-list-item" ] ;
+       fhir:Coding.display [ fhir:value "Problem List Item" ]
+     ]
+  ] ;
+  fhir:Condition.severity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:6736007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "6736007" ] ;
+       fhir:Coding.display [ fhir:value "Moderate (severity modifier)" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:59621000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "59621000" ] ;
+       fhir:Coding.display [ fhir:value "Essential hypertension" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Hypertension" ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] ;
+  fhir:Condition.encounter [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Encounter/NgEncounter-001> ;
+     fhir:Reference.reference [ fhir:value "Encounter/NgEncounter-001" ]
+  ] ;
+  fhir:Condition.onsetDateTime [ fhir:value "2025-09-01"^^xsd:date] ;
+  fhir:Condition.recorder [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Practitioner/NgPractitioner-001> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/NgPractitioner-001" ]
+  ] ;
+  fhir:Condition.asserter [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Condition/NgCondition-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

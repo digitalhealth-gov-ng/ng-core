@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ImmunizationRecommendation/NgImmunizationRecommendation-001> a fhir:ImmunizationRecommendation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgImmunizationRecommendation-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-recommendation" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-recommendation>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImmunizationRecommendation NgImmunizationRecommendation-001</b></p><a name=\"NgImmunizationRecommendation-001\"> </a><a name=\"hcNgImmunizationRecommendation-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-immunization-recommendation.html\">NG ImmunizationRecommendation</a></p></div><p><b>patient</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>date</b>: 2025-11-06 09:00:00+0100</p><h3>Recommendations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>VaccineCode</b></td><td><b>ForecastStatus</b></td><td><b>Series</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Measles-containing vaccine (MCV1)</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\">Due</span></td><td>RI Schedule – Measles</td><td>1</td></tr></table></div>"
+  ] ;
+  fhir:ImmunizationRecommendation.patient [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] ;
+  fhir:ImmunizationRecommendation.date [ fhir:value "2025-11-06T09:00:00+01:00"^^xsd:dateTime] ;
+  fhir:ImmunizationRecommendation.recommendation [
+     fhir:index 0 ;
+     fhir:ImmunizationRecommendation.recommendation.vaccineCode [
+       fhir:index 0 ;
+       fhir:CodeableConcept.text [ fhir:value "Measles-containing vaccine (MCV1)" ]
+     ] ;
+     fhir:ImmunizationRecommendation.recommendation.forecastStatus [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status" ] ;
+         fhir:Coding.code [ fhir:value "due" ]
+       ]
+     ] ;
+     fhir:ImmunizationRecommendation.recommendation.series [ fhir:value "RI Schedule – Measles" ] ;
+     fhir:ImmunizationRecommendation.recommendation.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ImmunizationRecommendation/NgImmunizationRecommendation-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

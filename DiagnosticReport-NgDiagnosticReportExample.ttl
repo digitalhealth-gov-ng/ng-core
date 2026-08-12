@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/DiagnosticReport/NgDiagnosticReportExample> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgDiagnosticReportExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-diagnostic-report" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-diagnostic-report>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport NgDiagnosticReportExample</b></p><a name=\"NgDiagnosticReportExample\"> </a><a name=\"hcNgDiagnosticReportExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-diagnostic-report.html\">DiagnosticReport (IPS)</a></p></div><h2><span title=\"Codes:{http://loinc.org 58410-2}\">Full blood count</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</td></tr><tr><td>Relevant Time</td><td>2026-08-02 09:30:00+0100</td></tr><tr><td>Reported</td><td>2026-08-02 11:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Organization-NgOrganization-002.html\">Organization Kano Central Hospital Pharmacy</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href=\"Observation-NgObservationResultsRadiologyExample.html\"><span title=\"Codes:{http://loinc.org 36643-5}\">XR Chest 2 Views</span></a></td><td>No focal pulmonary opacity, pleural effusion, or pneumothorax is seen.</td><td>Final</td><td>2026-08-02 11:15:00+0100</td></tr></table></div>"
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:58410-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "58410-2" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Full blood count" ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Patient/NgPatient-001> ;
+     fhir:Reference.reference [ fhir:value "Patient/NgPatient-001" ]
+  ] ;
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2026-08-02T09:30:00+01:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.issued [ fhir:value "2026-08-02T11:00:00+01:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.performer [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Organization/NgOrganization-002> ;
+     fhir:Reference.reference [ fhir:value "Organization/NgOrganization-002" ]
+  ] ;
+  fhir:DiagnosticReport.result [
+     fhir:index 0 ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/Observation/NgObservationResultsRadiologyExample> ;
+     fhir:Reference.reference [ fhir:value "Observation/NgObservationResultsRadiologyExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/DiagnosticReport/NgDiagnosticReportExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-eac-register-virologic-failure-cause-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-eac-register-virologic-failure-cause-cs</b></p><a name="ng-hiv-eac-register-virologic-failure-cause-cs"> </a><a name="hcng-hiv-eac-register-virologic-failure-cause-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-register-virologic-failure-cause-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1a<a name="ng-hiv-eac-register-virologic-failure-cause-cs-1a"> </a></td><td>Missed doses</td><td>The client missed one or more ART doses.</td></tr><tr><td style="white-space:nowrap">1b<a name="ng-hiv-eac-register-virologic-failure-cause-cs-1b"> </a></td><td>Abnormal or irregular dosing frequency</td><td>The client took ART at an abnormal or irregular frequency.</td></tr><tr><td style="white-space:nowrap">2a<a name="ng-hiv-eac-register-virologic-failure-cause-cs-2a"> </a></td><td>Drug–drug interaction</td><td>A drug–drug interaction is suspected to have contributed to virologic failure.</td></tr><tr><td style="white-space:nowrap">2b<a name="ng-hiv-eac-register-virologic-failure-cause-cs-2b"> </a></td><td>Drug–herb interaction</td><td>A drug–herb interaction is suspected to have contributed to virologic failure.</td></tr><tr><td style="white-space:nowrap">2c<a name="ng-hiv-eac-register-virologic-failure-cause-cs-2c"> </a></td><td>Drug–substance interaction</td><td>A drug–substance interaction is suspected to have contributed to virologic failure.</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-eac-register-virologic-failure-cause-cs-3"> </a></td><td>Other suspected cause</td><td>A suspected cause not represented by another register code; describe it separately.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-register-virologic-failure-cause-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.46"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivEacRegisterVirologicFailureCauseCS"/>
+  <title value="NG HIV EAC Register Suspected Causes of Virologic Failure"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes printed in the Enhanced Adherence Counselling Monitoring Register for&#xA;recording the suspected cause or causes of virologic failure after EAC."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1a"/>
+    <display value="Missed doses"/>
+    <definition value="The client missed one or more ART doses."/>
+  </concept>
+  <concept>
+    <code value="1b"/>
+    <display value="Abnormal or irregular dosing frequency"/>
+    <definition value="The client took ART at an abnormal or irregular frequency."/>
+  </concept>
+  <concept>
+    <code value="2a"/>
+    <display value="Drug–drug interaction"/>
+    <definition value="A drug–drug interaction is suspected to have contributed to virologic failure."/>
+  </concept>
+  <concept>
+    <code value="2b"/>
+    <display value="Drug–herb interaction"/>
+    <definition value="A drug–herb interaction is suspected to have contributed to virologic failure."/>
+  </concept>
+  <concept>
+    <code value="2c"/>
+    <display value="Drug–substance interaction"/>
+    <definition value="A drug–substance interaction is suspected to have contributed to virologic failure."/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Other suspected cause"/>
+    <definition value="A suspected cause not represented by another register code; describe it separately."/>
+  </concept>
+</CodeSystem>

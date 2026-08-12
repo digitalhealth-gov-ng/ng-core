@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs</b></p><a name="ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs"> </a><a name="hcng-hiv-pharmacy-worksheet-arv-prophylaxis-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs-1"> </a></td><td>Nevirapine</td><td>NVP.</td></tr><tr><td style="white-space:nowrap">2<a name="ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs-2"> </a></td><td>Zidovudine plus Nevirapine</td><td>AZT + NVP.</td></tr><tr><td style="white-space:nowrap">3<a name="ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs-3"> </a></td><td>Zidovudine plus Lamivudine plus Nevirapine or Raltegravir</td><td>AZT + 3TC + NVP/RAL, preserving the source worksheet expression.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.61"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPharmacyWorksheetArvProphylaxisCS"/>
+  <title value="NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimens"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-29"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ARV prophylaxis codes printed in W17 for HIV-exposed infants."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="1"/>
+    <display value="Nevirapine"/>
+    <definition value="NVP."/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Zidovudine plus Nevirapine"/>
+    <definition value="AZT + NVP."/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Zidovudine plus Lamivudine plus Nevirapine or Raltegravir"/>
+    <definition value="AZT + 3TC + NVP/RAL, preserving the source worksheet expression."/>
+  </concept>
+</CodeSystem>

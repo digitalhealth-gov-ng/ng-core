@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="generate-certificate"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition generate-certificate</b></p><a name="generate-certificate"> </a><a name="hcgenerate-certificate"> </a><p>URL: [base]/Patient/[id]/$generate-certificate</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/OperationDefinition/generate-certificate"/>
+  <version value="0.0.0"/>
+  <name value="NgGenerateCertificate"/>
+  <title value="Generate Nigeria Core Certificate"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Generates a certificate or certificate document for the Patient on which&#xA;the operation is invoked."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="true"/>
+  <code value="generate-certificate"/>
+  <resource value="Patient"/>
+  <system value="false"/>
+  <type value="false"/>
+  <instance value="true"/>
+</OperationDefinition>

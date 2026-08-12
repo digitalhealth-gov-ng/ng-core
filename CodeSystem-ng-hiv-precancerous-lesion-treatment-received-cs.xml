@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-hiv-precancerous-lesion-treatment-received-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-hiv-precancerous-lesion-treatment-received-cs</b></p><a name="ng-hiv-precancerous-lesion-treatment-received-cs"> </a><a name="hcng-hiv-precancerous-lesion-treatment-received-cs"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">no-treatment<a name="ng-hiv-precancerous-lesion-treatment-received-cs-no-treatment"> </a></td><td>No Treatment</td></tr><tr><td style="white-space:nowrap">cryotherapy<a name="ng-hiv-precancerous-lesion-treatment-received-cs-cryotherapy"> </a></td><td>Cryotherapy</td></tr><tr><td style="white-space:nowrap">thermo-coagulation<a name="ng-hiv-precancerous-lesion-treatment-received-cs-thermo-coagulation"> </a></td><td>Thermo-Coagulation</td></tr><tr><td style="white-space:nowrap">leep<a name="ng-hiv-precancerous-lesion-treatment-received-cs-leep"> </a></td><td>LEEP</td></tr><tr><td style="white-space:nowrap">referred-for-leep<a name="ng-hiv-precancerous-lesion-treatment-received-cs-referred-for-leep"> </a></td><td>Referred for LEEP</td></tr><tr><td style="white-space:nowrap">referred-for-suspicious-cancer-evaluation<a name="ng-hiv-precancerous-lesion-treatment-received-cs-referred-for-suspicious-cancer-evaluation"> </a></td><td>Referred for Suspicious cancer evaluation</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.67"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgHivPrecancerousLesionTreatmentReceivedCS"/>
+  <title value="HIV-Precancerous Lesion Treatment Received CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes describing the precancerous lesion treatment received"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="no-treatment"/>
+    <display value="No Treatment"/>
+  </concept>
+  <concept>
+    <code value="cryotherapy"/>
+    <display value="Cryotherapy"/>
+  </concept>
+  <concept>
+    <code value="thermo-coagulation"/>
+    <display value="Thermo-Coagulation"/>
+  </concept>
+  <concept>
+    <code value="leep"/>
+    <display value="LEEP"/>
+  </concept>
+  <concept>
+    <code value="referred-for-leep"/>
+    <display value="Referred for LEEP"/>
+  </concept>
+  <concept>
+    <code value="referred-for-suspicious-cancer-evaluation"/>
+    <display value="Referred for Suspicious cancer evaluation"/>
+  </concept>
+</CodeSystem>

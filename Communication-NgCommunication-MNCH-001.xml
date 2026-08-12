@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="NgCommunication-MNCH-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-communication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Communication NgCommunication-MNCH-001</b></p><a name="NgCommunication-MNCH-001"> </a><a name="hcNgCommunication-MNCH-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-communication.html">NG Communication</a></p></div><p><b>status</b>: Completed</p><p><b>subject</b>: <a href="Patient-NgPatient-001.html">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>sent</b>: 2025-11-12 09:05:00+0100</p><p><b>recipient</b>: </p><ul><li><a href="Organization-NgOrganization-001.html">Organization Asokoro District Hospital</a></li><li><a href="Practitioner-NgPractitioner-002.html">Practitioner Nkiru Okeke </a></li></ul><p><b>sender</b>: <a href="Practitioner-NgPractitioner-001.html">Practitioner Kehinde Adebayo </a></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td>Patient is stable; EDD ~ 4 weeks. Please prepare ANC slot this morning.</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/NgPatient-001"/>
+  </subject>
+  <sent value="2025-11-12T09:05:00+01:00"/>
+  <recipient>
+    <reference value="Organization/NgOrganization-001"/>
+  </recipient>
+  <recipient>
+    <reference value="Practitioner/NgPractitioner-002"/>
+  </recipient>
+  <sender>
+    <reference value="Practitioner/NgPractitioner-001"/>
+  </sender>
+  <payload>
+    <contentString value="Patient is stable; EDD ~ 4 weeks. Please prepare ANC slot this morning."/>
+  </payload>
+</Communication>

@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "NgProcedure-001",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure NgProcedure-001</b></p><a name=\"NgProcedure-001\"> </a><a name=\"hcNgProcedure-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-procedure.html\">NG Procedure</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:\">Obstetrics procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 11466000}\">Cesarean section</span></p><p><b>subject</b>: <a href=\"Patient-NgPatient-001.html\">Kemi Adebayo  Female, DoB: 1995-02-14 ( nin)</a></p><p><b>encounter</b>: <a href=\"Encounter-NgEncounter-001.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-11-04 09:00:00+0000 --&gt; 2025-11-04 09:35:00+0000</a></p><p><b>performed</b>: 2025-11-27 10:30:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-NgPractitioner-001.html\">Practitioner Kehinde Adebayo </a></td></tr></table><p><b>location</b>: <a href=\"Location-NgLocation-001.html\">Location Asokoro OPD</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">Obstructed labor</span></p><p><b>outcome</b>: <span title=\"Codes:\">Mother and baby stable</span></p><p><b>usedReference</b>: <a href=\"Device-NgDevice-001.html\">Device: identifier = https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-device-identifier-vs#VS-002; status = active; manufacturer = Acme Medtech; serialNumber = SN-12345; type = </a></p></div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "text" : "Obstetrics procedure"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "11466000",
+      "display" : "Cesarean section"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/NgPatient-001"
+  },
+  "encounter" : {
+    "reference" : "Encounter/NgEncounter-001"
+  },
+  "performedDateTime" : "2025-11-27T10:30:00Z",
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/NgPractitioner-001"
+    }
+  }],
+  "location" : {
+    "reference" : "Location/NgLocation-001"
+  },
+  "reasonCode" : [{
+    "text" : "Obstructed labor"
+  }],
+  "outcome" : {
+    "text" : "Mother and baby stable"
+  },
+  "usedReference" : [{
+    "reference" : "Device/NgDevice-001"
+  }]
+}

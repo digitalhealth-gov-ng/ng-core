@@ -1,0 +1,114 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ng-alert-category-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-alert-category-cs</b></p><a name=\"ng-alert-category-cs\"> </a><a name=\"hcng-alert-category-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">clinical<a name=\"ng-alert-category-cs-clinical\"> </a></td><td>Clinical</td><td>A general clinical alert that does not fall into a more specific clinical category.</td></tr><tr><td style=\"white-space:nowrap\">allergy<a name=\"ng-alert-category-cs-allergy\"> </a></td><td>Allergy</td><td>An alert concerning a known or suspected allergy or intolerance.</td></tr><tr><td style=\"white-space:nowrap\">medication<a name=\"ng-alert-category-cs-medication\"> </a></td><td>Medication</td><td>An alert concerning medication prescribing, dispensing, administration, duplication, or interaction.</td></tr><tr><td style=\"white-space:nowrap\">immunization<a name=\"ng-alert-category-cs-immunization\"> </a></td><td>Immunization</td><td>An alert concerning vaccination eligibility, contraindication, due status, administration, or follow-up.</td></tr><tr><td style=\"white-space:nowrap\">laboratory<a name=\"ng-alert-category-cs-laboratory\"> </a></td><td>Laboratory</td><td>An alert concerning an abnormal, critical, pending, or otherwise significant laboratory result.</td></tr><tr><td style=\"white-space:nowrap\">infection-control<a name=\"ng-alert-category-cs-infection-control\"> </a></td><td>Infection control</td><td>An alert concerning infection prevention, isolation, exposure, or transmission risk.</td></tr><tr><td style=\"white-space:nowrap\">safeguarding<a name=\"ng-alert-category-cs-safeguarding\"> </a></td><td>Safeguarding</td><td>An alert concerning protection, abuse, neglect, exploitation, or another safeguarding risk.</td></tr><tr><td style=\"white-space:nowrap\">public-health<a name=\"ng-alert-category-cs-public-health\"> </a></td><td>Public health</td><td>An alert concerning a notifiable condition, outbreak, surveillance event, or public-health action.</td></tr><tr><td style=\"white-space:nowrap\">administrative<a name=\"ng-alert-category-cs-administrative\"> </a></td><td>Administrative</td><td>An alert concerning an administrative, operational, eligibility, consent, or service-delivery issue.</td></tr><tr><td style=\"white-space:nowrap\">data-quality<a name=\"ng-alert-category-cs-data-quality\"> </a></td><td>Data quality</td><td>An alert concerning record completeness, identity, duplication, integrity, or another data-quality issue.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"ng-alert-category-cs-other\"> </a></td><td>Other</td><td>An alert category not represented by another code in this code system.</td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-alert-category-cs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.16.2"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgAlertCategoryCS",
+  "title" : "Nigeria Alert Category Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-23",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Categories used to classify alerts represented using the Nigeria Alert Flag profile.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "caseSensitive" : true,
+  "compositional" : false,
+  "content" : "complete",
+  "count" : 11,
+  "concept" : [{
+    "code" : "clinical",
+    "display" : "Clinical",
+    "definition" : "A general clinical alert that does not fall into a more specific clinical category."
+  },
+  {
+    "code" : "allergy",
+    "display" : "Allergy",
+    "definition" : "An alert concerning a known or suspected allergy or intolerance."
+  },
+  {
+    "code" : "medication",
+    "display" : "Medication",
+    "definition" : "An alert concerning medication prescribing, dispensing, administration, duplication, or interaction."
+  },
+  {
+    "code" : "immunization",
+    "display" : "Immunization",
+    "definition" : "An alert concerning vaccination eligibility, contraindication, due status, administration, or follow-up."
+  },
+  {
+    "code" : "laboratory",
+    "display" : "Laboratory",
+    "definition" : "An alert concerning an abnormal, critical, pending, or otherwise significant laboratory result."
+  },
+  {
+    "code" : "infection-control",
+    "display" : "Infection control",
+    "definition" : "An alert concerning infection prevention, isolation, exposure, or transmission risk."
+  },
+  {
+    "code" : "safeguarding",
+    "display" : "Safeguarding",
+    "definition" : "An alert concerning protection, abuse, neglect, exploitation, or another safeguarding risk."
+  },
+  {
+    "code" : "public-health",
+    "display" : "Public health",
+    "definition" : "An alert concerning a notifiable condition, outbreak, surveillance event, or public-health action."
+  },
+  {
+    "code" : "administrative",
+    "display" : "Administrative",
+    "definition" : "An alert concerning an administrative, operational, eligibility, consent, or service-delivery issue."
+  },
+  {
+    "code" : "data-quality",
+    "display" : "Data quality",
+    "definition" : "An alert concerning record completeness, identity, duplication, integrity, or another data-quality issue."
+  },
+  {
+    "code" : "other",
+    "display" : "Other",
+    "definition" : "An alert category not represented by another code in this code system."
+  }]
+}

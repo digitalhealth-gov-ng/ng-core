@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-claim-product-or-service-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-claim-product-or-service-cs</b></p><a name="ng-claim-product-or-service-cs"> </a><a name="hcng-claim-product-or-service-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SRV-GP-INIT<a name="ng-claim-product-or-service-cs-SRV-GP-INIT"> </a></td><td>General outpatient consultation (initial)</td><td>First GP/Family Medicine visit.</td></tr><tr><td style="white-space:nowrap">SRV-GP-REVIEW<a name="ng-claim-product-or-service-cs-SRV-GP-REVIEW"> </a></td><td>General outpatient consultation (review)</td><td>Follow-up GP visit.</td></tr><tr><td style="white-space:nowrap">SRV-SPEC-INIT<a name="ng-claim-product-or-service-cs-SRV-SPEC-INIT"> </a></td><td>Specialist consultation (initial)</td><td>First specialist visit.</td></tr><tr><td style="white-space:nowrap">SRV-SPEC-REVIEW<a name="ng-claim-product-or-service-cs-SRV-SPEC-REVIEW"> </a></td><td>Specialist consultation (review)</td><td>Follow-up specialist visit.</td></tr><tr><td style="white-space:nowrap">SRV-EMER<a name="ng-claim-product-or-service-cs-SRV-EMER"> </a></td><td>Emergency room consultation</td><td>Triage and emergency physician consult.</td></tr><tr><td style="white-space:nowrap">SRV-TELE<a name="ng-claim-product-or-service-cs-SRV-TELE"> </a></td><td>Teleconsultation</td><td>Synchronous telemedicine visit.</td></tr><tr><td style="white-space:nowrap">PROC-MINOR<a name="ng-claim-product-or-service-cs-PROC-MINOR"> </a></td><td>Minor procedure (OPD)</td><td>E.g., suturing, incision &amp; drainage.</td></tr><tr><td style="white-space:nowrap">PROC-MAJOR<a name="ng-claim-product-or-service-cs-PROC-MAJOR"> </a></td><td>Major procedure (theatre)</td><td>Operating theatre case (non-obstetric).</td></tr><tr><td style="white-space:nowrap">PROC-ANAES<a name="ng-claim-product-or-service-cs-PROC-ANAES"> </a></td><td>Anaesthesia fee</td><td>Anaesthetist professional fee.</td></tr><tr><td style="white-space:nowrap">PROC-THEATRE<a name="ng-claim-product-or-service-cs-PROC-THEATRE"> </a></td><td>Theatre fee</td><td>Use of operating theatre facilities.</td></tr><tr><td style="white-space:nowrap">PROC-DRESS<a name="ng-claim-product-or-service-cs-PROC-DRESS"> </a></td><td>Wound dressing / change</td><td>Clinic or ward-based dressing.</td></tr><tr><td style="white-space:nowrap">MAT-ANC-PACK<a name="ng-claim-product-or-service-cs-MAT-ANC-PACK"> </a></td><td>Antenatal care package (per visit)</td><td>ANC consultation &amp; routine checks.</td></tr><tr><td style="white-space:nowrap">MAT-NVD<a name="ng-claim-product-or-service-cs-MAT-NVD"> </a></td><td>Normal vaginal delivery (NVD) package</td><td>Uncomplicated delivery.</td></tr><tr><td style="white-space:nowrap">MAT-CS<a name="ng-claim-product-or-service-cs-MAT-CS"> </a></td><td>Caesarean section (C-section) package</td><td>Surgical delivery.</td></tr><tr><td style="white-space:nowrap">MAT-PNC<a name="ng-claim-product-or-service-cs-MAT-PNC"> </a></td><td>Postnatal care visit</td><td>Post-delivery follow-up visit.</td></tr><tr><td style="white-space:nowrap">MAT-NB-SCREEN<a name="ng-claim-product-or-service-cs-MAT-NB-SCREEN"> </a></td><td>Newborn screening panel</td><td>Standard neonatal screening bundle.</td></tr><tr><td style="white-space:nowrap">BED-GEN<a name="ng-claim-product-or-service-cs-BED-GEN"> </a></td><td>General ward bed-day</td><td>24-hour inpatient stay (general ward).</td></tr><tr><td style="white-space:nowrap">BED-ICU<a name="ng-claim-product-or-service-cs-BED-ICU"> </a></td><td>ICU bed-day</td><td>Critical care day.</td></tr><tr><td style="white-space:nowrap">BED-SCU<a name="ng-claim-product-or-service-cs-BED-SCU"> </a></td><td>Special care baby unit day</td><td>SCBU/NICU level care.</td></tr><tr><td style="white-space:nowrap">BED-ISOL<a name="ng-claim-product-or-service-cs-BED-ISOL"> </a></td><td>Isolation bed-day</td><td>Isolation ward day.</td></tr><tr><td style="white-space:nowrap">LAB-FBC<a name="ng-claim-product-or-service-cs-LAB-FBC"> </a></td><td>Full blood count (FBC)</td><td>Haematology panel.</td></tr><tr><td style="white-space:nowrap">LAB-CHEM-PAN<a name="ng-claim-product-or-service-cs-LAB-CHEM-PAN"> </a></td><td>Chemistry panel (basic)</td><td>Basic metabolic or chemistry set.</td></tr><tr><td style="white-space:nowrap">LAB-LFT<a name="ng-claim-product-or-service-cs-LAB-LFT"> </a></td><td>Liver function tests (LFT)</td><td>Liver enzyme panel.</td></tr><tr><td style="white-space:nowrap">LAB-RFT<a name="ng-claim-product-or-service-cs-LAB-RFT"> </a></td><td>Renal function tests (RFT)</td><td>Kidney function panel.</td></tr><tr><td style="white-space:nowrap">LAB-CRP<a name="ng-claim-product-or-service-cs-LAB-CRP"> </a></td><td>C-reactive protein (CRP)</td><td>Inflammatory marker.</td></tr><tr><td style="white-space:nowrap">LAB-HBA1C<a name="ng-claim-product-or-service-cs-LAB-HBA1C"> </a></td><td>HbA1c</td><td>Glycated haemoglobin test.</td></tr><tr><td style="white-space:nowrap">LAB-MAL-RDT<a name="ng-claim-product-or-service-cs-LAB-MAL-RDT"> </a></td><td>Malaria rapid test (RDT)</td><td>Point-of-care malaria test.</td></tr><tr><td style="white-space:nowrap">LAB-URINE-ROUT<a name="ng-claim-product-or-service-cs-LAB-URINE-ROUT"> </a></td><td>Urinalysis (routine)</td><td>POCT or lab urinalysis.</td></tr><tr><td style="white-space:nowrap">LAB-PREG<a name="ng-claim-product-or-service-cs-LAB-PREG"> </a></td><td>Pregnancy test (hCG)</td><td>Qualitative hCG.</td></tr><tr><td style="white-space:nowrap">IMG-XR<a name="ng-claim-product-or-service-cs-IMG-XR"> </a></td><td>X-ray (XR) single view</td><td>One anatomical region, single view.</td></tr><tr><td style="white-space:nowrap">IMG-US<a name="ng-claim-product-or-service-cs-IMG-US"> </a></td><td>Ultrasound (US) single study</td><td>Abdominal/obstetric or other US.</td></tr><tr><td style="white-space:nowrap">IMG-CT<a name="ng-claim-product-or-service-cs-IMG-CT"> </a></td><td>CT scan (region)</td><td>CT of a specified region.</td></tr><tr><td style="white-space:nowrap">IMG-MRI<a name="ng-claim-product-or-service-cs-IMG-MRI"> </a></td><td>MRI scan (region)</td><td>MRI of a specified region.</td></tr><tr><td style="white-space:nowrap">IMG-ECHO<a name="ng-claim-product-or-service-cs-IMG-ECHO"> </a></td><td>Echocardiography</td><td>Cardiac ultrasound.</td></tr><tr><td style="white-space:nowrap">IMG-ECG<a name="ng-claim-product-or-service-cs-IMG-ECG"> </a></td><td>ECG (12-lead)</td><td>Standard electrocardiogram.</td></tr><tr><td style="white-space:nowrap">DRG-OPD<a name="ng-claim-product-or-service-cs-DRG-OPD"> </a></td><td>Dispensed medicines (OPD)</td><td>Retail/outpatient drug line items.</td></tr><tr><td style="white-space:nowrap">DRG-INP<a name="ng-claim-product-or-service-cs-DRG-INP"> </a></td><td>Dispensed medicines (inpatient)</td><td>Ward pharmacy drug line items.</td></tr><tr><td style="white-space:nowrap">VAC-ADMIN<a name="ng-claim-product-or-service-cs-VAC-ADMIN"> </a></td><td>Vaccine administration fee</td><td>Service fee for immunization.</td></tr><tr><td style="white-space:nowrap">VAC-PROD<a name="ng-claim-product-or-service-cs-VAC-PROD"> </a></td><td>Vaccine product</td><td>Vaccine dose product cost.</td></tr><tr><td style="white-space:nowrap">CONS-GEN<a name="ng-claim-product-or-service-cs-CONS-GEN"> </a></td><td>General consumables</td><td>Syringes, gloves, dressings, cannulas.</td></tr><tr><td style="white-space:nowrap">OXY-HR<a name="ng-claim-product-or-service-cs-OXY-HR"> </a></td><td>Oxygen therapy (per hour)</td><td>Medical oxygen use.</td></tr><tr><td style="white-space:nowrap">DEV-RENT<a name="ng-claim-product-or-service-cs-DEV-RENT"> </a></td><td>Device rental (short-term)</td><td>E.g., nebulizer, suction machine.</td></tr><tr><td style="white-space:nowrap">HM-CARE<a name="ng-claim-product-or-service-cs-HM-CARE"> </a></td><td>Home care visit</td><td>Home nursing/home-based care.</td></tr><tr><td style="white-space:nowrap">REH-PHYSIO<a name="ng-claim-product-or-service-cs-REH-PHYSIO"> </a></td><td>Physiotherapy session</td><td>Single physio visit.</td></tr><tr><td style="white-space:nowrap">REH-OT<a name="ng-claim-product-or-service-cs-REH-OT"> </a></td><td>Occupational therapy session</td><td>Single OT visit.</td></tr><tr><td style="white-space:nowrap">REH-SPEECH<a name="ng-claim-product-or-service-cs-REH-SPEECH"> </a></td><td>Speech therapy session</td><td>Single speech therapy visit.</td></tr><tr><td style="white-space:nowrap">AMB-TRNS<a name="ng-claim-product-or-service-cs-AMB-TRNS"> </a></td><td>Ambulance transport (one-way)</td><td>Facility-to-facility or scene-to-facility.</td></tr><tr><td style="white-space:nowrap">ADM-CLAIM<a name="ng-claim-product-or-service-cs-ADM-CLAIM"> </a></td><td>Administrative/claim handling fee</td><td>Processing/admin fee per policy.</td></tr><tr><td style="white-space:nowrap">ADM-CO-PAY<a name="ng-claim-product-or-service-cs-ADM-CO-PAY"> </a></td><td>Co-payment</td><td>Member co-pay amount line.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.9"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgClaimProductOrServiceCS"/>
+  <title value="NG Claim Product/Service Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-12T13:22:49+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Nigeria-specific productOrService codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="49"/>
+  <concept>
+    <code value="SRV-GP-INIT"/>
+    <display value="General outpatient consultation (initial)"/>
+    <definition value="First GP/Family Medicine visit."/>
+  </concept>
+  <concept>
+    <code value="SRV-GP-REVIEW"/>
+    <display value="General outpatient consultation (review)"/>
+    <definition value="Follow-up GP visit."/>
+  </concept>
+  <concept>
+    <code value="SRV-SPEC-INIT"/>
+    <display value="Specialist consultation (initial)"/>
+    <definition value="First specialist visit."/>
+  </concept>
+  <concept>
+    <code value="SRV-SPEC-REVIEW"/>
+    <display value="Specialist consultation (review)"/>
+    <definition value="Follow-up specialist visit."/>
+  </concept>
+  <concept>
+    <code value="SRV-EMER"/>
+    <display value="Emergency room consultation"/>
+    <definition value="Triage and emergency physician consult."/>
+  </concept>
+  <concept>
+    <code value="SRV-TELE"/>
+    <display value="Teleconsultation"/>
+    <definition value="Synchronous telemedicine visit."/>
+  </concept>
+  <concept>
+    <code value="PROC-MINOR"/>
+    <display value="Minor procedure (OPD)"/>
+    <definition value="E.g., suturing, incision &amp; drainage."/>
+  </concept>
+  <concept>
+    <code value="PROC-MAJOR"/>
+    <display value="Major procedure (theatre)"/>
+    <definition value="Operating theatre case (non-obstetric)."/>
+  </concept>
+  <concept>
+    <code value="PROC-ANAES"/>
+    <display value="Anaesthesia fee"/>
+    <definition value="Anaesthetist professional fee."/>
+  </concept>
+  <concept>
+    <code value="PROC-THEATRE"/>
+    <display value="Theatre fee"/>
+    <definition value="Use of operating theatre facilities."/>
+  </concept>
+  <concept>
+    <code value="PROC-DRESS"/>
+    <display value="Wound dressing / change"/>
+    <definition value="Clinic or ward-based dressing."/>
+  </concept>
+  <concept>
+    <code value="MAT-ANC-PACK"/>
+    <display value="Antenatal care package (per visit)"/>
+    <definition value="ANC consultation &amp; routine checks."/>
+  </concept>
+  <concept>
+    <code value="MAT-NVD"/>
+    <display value="Normal vaginal delivery (NVD) package"/>
+    <definition value="Uncomplicated delivery."/>
+  </concept>
+  <concept>
+    <code value="MAT-CS"/>
+    <display value="Caesarean section (C-section) package"/>
+    <definition value="Surgical delivery."/>
+  </concept>
+  <concept>
+    <code value="MAT-PNC"/>
+    <display value="Postnatal care visit"/>
+    <definition value="Post-delivery follow-up visit."/>
+  </concept>
+  <concept>
+    <code value="MAT-NB-SCREEN"/>
+    <display value="Newborn screening panel"/>
+    <definition value="Standard neonatal screening bundle."/>
+  </concept>
+  <concept>
+    <code value="BED-GEN"/>
+    <display value="General ward bed-day"/>
+    <definition value="24-hour inpatient stay (general ward)."/>
+  </concept>
+  <concept>
+    <code value="BED-ICU"/>
+    <display value="ICU bed-day"/>
+    <definition value="Critical care day."/>
+  </concept>
+  <concept>
+    <code value="BED-SCU"/>
+    <display value="Special care baby unit day"/>
+    <definition value="SCBU/NICU level care."/>
+  </concept>
+  <concept>
+    <code value="BED-ISOL"/>
+    <display value="Isolation bed-day"/>
+    <definition value="Isolation ward day."/>
+  </concept>
+  <concept>
+    <code value="LAB-FBC"/>
+    <display value="Full blood count (FBC)"/>
+    <definition value="Haematology panel."/>
+  </concept>
+  <concept>
+    <code value="LAB-CHEM-PAN"/>
+    <display value="Chemistry panel (basic)"/>
+    <definition value="Basic metabolic or chemistry set."/>
+  </concept>
+  <concept>
+    <code value="LAB-LFT"/>
+    <display value="Liver function tests (LFT)"/>
+    <definition value="Liver enzyme panel."/>
+  </concept>
+  <concept>
+    <code value="LAB-RFT"/>
+    <display value="Renal function tests (RFT)"/>
+    <definition value="Kidney function panel."/>
+  </concept>
+  <concept>
+    <code value="LAB-CRP"/>
+    <display value="C-reactive protein (CRP)"/>
+    <definition value="Inflammatory marker."/>
+  </concept>
+  <concept>
+    <code value="LAB-HBA1C"/>
+    <display value="HbA1c"/>
+    <definition value="Glycated haemoglobin test."/>
+  </concept>
+  <concept>
+    <code value="LAB-MAL-RDT"/>
+    <display value="Malaria rapid test (RDT)"/>
+    <definition value="Point-of-care malaria test."/>
+  </concept>
+  <concept>
+    <code value="LAB-URINE-ROUT"/>
+    <display value="Urinalysis (routine)"/>
+    <definition value="POCT or lab urinalysis."/>
+  </concept>
+  <concept>
+    <code value="LAB-PREG"/>
+    <display value="Pregnancy test (hCG)"/>
+    <definition value="Qualitative hCG."/>
+  </concept>
+  <concept>
+    <code value="IMG-XR"/>
+    <display value="X-ray (XR) single view"/>
+    <definition value="One anatomical region, single view."/>
+  </concept>
+  <concept>
+    <code value="IMG-US"/>
+    <display value="Ultrasound (US) single study"/>
+    <definition value="Abdominal/obstetric or other US."/>
+  </concept>
+  <concept>
+    <code value="IMG-CT"/>
+    <display value="CT scan (region)"/>
+    <definition value="CT of a specified region."/>
+  </concept>
+  <concept>
+    <code value="IMG-MRI"/>
+    <display value="MRI scan (region)"/>
+    <definition value="MRI of a specified region."/>
+  </concept>
+  <concept>
+    <code value="IMG-ECHO"/>
+    <display value="Echocardiography"/>
+    <definition value="Cardiac ultrasound."/>
+  </concept>
+  <concept>
+    <code value="IMG-ECG"/>
+    <display value="ECG (12-lead)"/>
+    <definition value="Standard electrocardiogram."/>
+  </concept>
+  <concept>
+    <code value="DRG-OPD"/>
+    <display value="Dispensed medicines (OPD)"/>
+    <definition value="Retail/outpatient drug line items."/>
+  </concept>
+  <concept>
+    <code value="DRG-INP"/>
+    <display value="Dispensed medicines (inpatient)"/>
+    <definition value="Ward pharmacy drug line items."/>
+  </concept>
+  <concept>
+    <code value="VAC-ADMIN"/>
+    <display value="Vaccine administration fee"/>
+    <definition value="Service fee for immunization."/>
+  </concept>
+  <concept>
+    <code value="VAC-PROD"/>
+    <display value="Vaccine product"/>
+    <definition value="Vaccine dose product cost."/>
+  </concept>
+  <concept>
+    <code value="CONS-GEN"/>
+    <display value="General consumables"/>
+    <definition value="Syringes, gloves, dressings, cannulas."/>
+  </concept>
+  <concept>
+    <code value="OXY-HR"/>
+    <display value="Oxygen therapy (per hour)"/>
+    <definition value="Medical oxygen use."/>
+  </concept>
+  <concept>
+    <code value="DEV-RENT"/>
+    <display value="Device rental (short-term)"/>
+    <definition value="E.g., nebulizer, suction machine."/>
+  </concept>
+  <concept>
+    <code value="HM-CARE"/>
+    <display value="Home care visit"/>
+    <definition value="Home nursing/home-based care."/>
+  </concept>
+  <concept>
+    <code value="REH-PHYSIO"/>
+    <display value="Physiotherapy session"/>
+    <definition value="Single physio visit."/>
+  </concept>
+  <concept>
+    <code value="REH-OT"/>
+    <display value="Occupational therapy session"/>
+    <definition value="Single OT visit."/>
+  </concept>
+  <concept>
+    <code value="REH-SPEECH"/>
+    <display value="Speech therapy session"/>
+    <definition value="Single speech therapy visit."/>
+  </concept>
+  <concept>
+    <code value="AMB-TRNS"/>
+    <display value="Ambulance transport (one-way)"/>
+    <definition value="Facility-to-facility or scene-to-facility."/>
+  </concept>
+  <concept>
+    <code value="ADM-CLAIM"/>
+    <display value="Administrative/claim handling fee"/>
+    <definition value="Processing/admin fee per policy."/>
+  </concept>
+  <concept>
+    <code value="ADM-CO-PAY"/>
+    <display value="Co-payment"/>
+    <definition value="Member co-pay amount line."/>
+  </concept>
+</CodeSystem>
