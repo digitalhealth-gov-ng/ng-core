@@ -37,7 +37,7 @@ This CodeSystem defines LGA codes and names mapped to their respective States in
   "title" : "NG LGAs in Nigeria CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T13:27:53+01:00",
+  "date" : "2026-08-17T16:10:29+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
