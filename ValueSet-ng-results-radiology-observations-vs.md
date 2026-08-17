@@ -60,7 +60,7 @@ Value Set Definition: LOINC {STATUS in {ACTIVE}, CLASS in LP29684-5 ("RAD")}
   "title" : "Results Radiology Observation - IPS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

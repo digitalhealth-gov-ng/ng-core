@@ -51,16 +51,6 @@
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
-    "id" : "hl7tx",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
-    }],
-    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-    "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
-  },
-  {
     "id" : "hl7ext",
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
@@ -69,6 +59,12 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7_terminology_r4",
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7_fhir_uv_ips",
@@ -119,6 +115,17 @@
       {
         "url" : "value",
         "valueString" : "2.16.840.1.113884.3.9944.1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -409,6 +416,17 @@
       {
         "url" : "value",
         "valueString" : "2.16.840.1.113884.3.9944.1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -5264,6 +5282,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-mtn-mno-naming-system"
+      },
+      "name" : "NG MTN MNO NamingSystem",
+      "description" : "Candidate NamingSystem definition for the MTN namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -7549,19 +7579,19 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "conformance.html"
+          "valueUrl" : "verifiable-digital-health-certificate.html"
         }],
-        "nameUrl" : "conformance.html",
-        "title" : "Conformance",
+        "nameUrl" : "verifiable-digital-health-certificate.html",
+        "title" : "Verifiable Digital Health Certificate",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "verifiable-digital-health-certificate.html"
+          "valueUrl" : "functional-non-functional.html"
         }],
-        "nameUrl" : "verifiable-digital-health-certificate.html",
-        "title" : "Verifiable Digital Health Certificate",
+        "nameUrl" : "functional-non-functional.html",
+        "title" : "Functional and Non-Functional Requirements",
         "generation" : "markdown"
       }]
     },

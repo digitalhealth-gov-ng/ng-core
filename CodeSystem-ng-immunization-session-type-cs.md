@@ -37,7 +37,7 @@ Type of session for immunization Could be in a fixed facility, outreach or mobil
   "title" : "NG Immunization Session types CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

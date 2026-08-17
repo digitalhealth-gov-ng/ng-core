@@ -37,7 +37,7 @@ Local CodeSystem defining provenance activity codes for data lifecycle operation
   "title" : "NG Provenance Activity Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

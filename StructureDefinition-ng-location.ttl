@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "NgLocation"] ;
   fhir:StructureDefinition.title [ fhir:value "NG Location"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-17T07:55:48+01:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-08-17T13:27:53+01:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "NDHI"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
@@ -653,8 +653,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
          fhir:ElementDefinition.binding.description [ fhir:value "The operational status if the location (where typically a bed/room)." ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://terminology.hl7.org/ValueSet/v2-0116" ;
-           fhir:link <http://terminology.hl7.org/ValueSet/v2-0116>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0116|3.0.0" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0116|3.0.0>
          ]
        ] ;
        fhir:ElementDefinition.mapping [

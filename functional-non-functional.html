@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Functional and Non-Functional Requirements - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"31"}
+    h3,h4,h5,h6{--heading-prefix:"31"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="functional-non-functional.html">EMR Functional n Non-Func. Req.</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Functional and Non-Functional Requirements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Functional and Non-Functional Requirements</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#interpretation-and-future-conformance" id="markdown-toc-interpretation-and-future-conformance">Interpretation and future conformance</a></li>
+  <li><a href="#phc-functional-and-non-functional-requirements" id="markdown-toc-phc-functional-and-non-functional-requirements">PHC Functional and Non-Functional Requirements</a></li>
+  <li><a href="#general-hospital-functional-and-non-functional-requirements" id="markdown-toc-general-hospital-functional-and-non-functional-requirements">General Hospital Functional and Non-Functional Requirements</a></li>
+  <li><a href="#tertiary-hospital-functional-and-non-functional-requirements" id="markdown-toc-tertiary-hospital-functional-and-non-functional-requirements">Tertiary Hospital Functional and Non-Functional Requirements</a></li>
+  <li><a href="#progressive-capability-summary" id="markdown-toc-progressive-capability-summary">Progressive Capability Summary</a></li>
+  <li><a href="#requirements-maturation-and-finalisation" id="markdown-toc-requirements-maturation-and-finalisation">Requirements maturation and finalisation</a></li>
+  <li><a href="#alignment-principles" id="markdown-toc-alignment-principles">Alignment principles</a></li>
+  <li><a href="#implementation-note" id="markdown-toc-implementation-note">Implementation note</a></li>
+</ul>
+
+</div>
+
+<div class="stu-note">
+<p>This page provides a progressive summary of candidate functional and non-functional requirements for digital health systems operating at Primary Health Care (PHC), General Hospital (GH), and Tertiary Hospital (TH) levels. It is intended to guide implementation and procurement while the detailed national requirements, measurable acceptance criteria, and conformance tests are refined and formally approved. Until that process is completed, this page does not by itself create additional normative conformance obligations beyond the published Nigeria Core profiles, terminology bindings, CapabilityStatements, and other explicitly normative artefacts.</p>
+</div>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>The functional and non-functional requirement inventories supporting this guide describe a broad electronic health record and health information system capability set covering patient registration, clinical documentation, orders and results, medicines, referral, billing, reporting, community services, telemedicine, interoperability, security, performance, hosting, usability, documentation, and system operations.</p>
+
+<p>This page organises those candidate requirements into a <strong>progressive facility capability model</strong>. The model is cumulative:</p>
+
+<ul>
+  <li>a <strong>PHC system</strong> establishes the national digital health baseline needed for first-contact, preventive, promotive, maternal and child health, community, and common ambulatory services;</li>
+  <li>a <strong>General Hospital system</strong> builds on the PHC baseline and adds the capabilities required for broader diagnostic, emergency, inpatient, procedural, referral, and hospital operations; and</li>
+  <li>a <strong>Tertiary Hospital system</strong> builds on both levels and adds specialist, multidisciplinary, enterprise-scale, advanced diagnostic, high-availability, and complex integration capabilities.</li>
+</ul>
+
+<p>The progression is not intended to imply that a capability can only exist at one facility level. For example, NPHCDA PHC revitalisation requirements include pharmacy/dispensary, laboratory, delivery/labour, and, for higher PHC levels, inpatient ward capability. A facility should therefore be assessed against the <strong>services it is authorised and configured to provide</strong>, while retaining the minimum digital capabilities expected for its level of care.</p>
+
+<h3 id="interpretation-and-future-conformance">Interpretation and future conformance</h3>
+
+<p>Functional requirements describe <strong>what the system must be able to do</strong> to support users and clinical or administrative workflows. Non-functional requirements describe <strong>how well and under what technical, operational, security, usability, interoperability, and environmental constraints the system must operate</strong>. This separation is consistent with the WHO SMART Guidelines approach to high-level functional and non-functional requirements.</p>
+
+<p>The source requirement inventory uses terms such as <em>shall</em>, <em>should</em>, and <em>may</em>. On this page these terms preserve the intended direction of the source material but remain <strong>provisional</strong> until each requirement is assigned a final applicability, obligation level, acceptance criterion, and test method. Final national requirements are expected to be traceable to computable Nigeria Core artefacts and conformance tests wherever practicable.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Maturity level</th>
+      <th>Meaning for this page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Baseline</strong></td>
+      <td>Expected capability for routine operation at that facility level, subject to the services offered.</td>
+    </tr>
+    <tr>
+      <td><strong>Expanded</strong></td>
+      <td>Builds on baseline functionality to support additional service complexity, integration, workflow, or operational scale.</td>
+    </tr>
+    <tr>
+      <td><strong>Advanced / Enterprise</strong></td>
+      <td>Capability required for specialist, high-volume, highly integrated, high-availability, or enterprise environments.</td>
+    </tr>
+    <tr>
+      <td><strong>Conditional</strong></td>
+      <td>Required only when the corresponding clinical service, programme, device, workflow, or business function is implemented.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="phc-functional-and-non-functional-requirements">PHC Functional and Non-Functional Requirements</h3>
+
+<p>PHC systems should prioritise reliable point-of-care capture, continuity of care, community and preventive services, maternal and child health, immunisation, common diagnoses and treatment, referral, national reporting, and safe operation in settings with intermittent connectivity. The system should support paperless workflows while allowing controlled migration or capture of relevant historical paper records where required.</p>
+
+<h4 id="phc-functional-requirements">PHC Functional Requirements</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Capability area</th>
+      <th>Progressive PHC requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Patient identity and registration</strong></td>
+      <td>Create, search, view, and update patient records using core demographics and national/facility identifiers; support alternate identity documents; generate a local unique identifier where needed; detect possible duplicates; and support temporary/unknown-patient registration for emergency or exceptional circumstances.</td>
+    </tr>
+    <tr>
+      <td><strong>Patient history and encounter documentation</strong></td>
+      <td>Record encounters, presenting complaints, history of present illness, relevant medical/surgical/obstetric/paediatric/social/family history, physical examination, allergies/adverse reactions, problems/diagnoses, progress notes, treatment plans, and care outcomes using structured data with controlled free text where appropriate. Support longitudinal views of services provided by date, service type, diagnosis, or other clinically useful criteria.</td>
+    </tr>
+    <tr>
+      <td><strong>Patient summary</strong></td>
+      <td>Maintain a patient-specific summary that can display key problems, medicines, allergies/adverse reactions, relevant care history, treatment interruptions/restarts, recent results, missed appointments, and other information required for continuity of care.</td>
+    </tr>
+    <tr>
+      <td><strong>Vital signs, anthropometry and basic decision support</strong></td>
+      <td>Record and trend vital signs and essential clinical observations; calculate relevant measures such as BMI and age/sex-appropriate anthropometry; support reminders and alerts for abnormal values, allergies, due services, and protocol-driven care.</td>
+    </tr>
+    <tr>
+      <td><strong>Maternal, newborn, child and reproductive health</strong></td>
+      <td>Capture family planning, pregnancy, ANC, childbirth, PNC, newborn and child health data using national programme formats and support calculations or reminders such as gestational age, expected date of delivery, and scheduled follow-up.</td>
+    </tr>
+    <tr>
+      <td><strong>Immunisation</strong></td>
+      <td>Capture immunisation history and status using nationally adopted vaccine terminology; maintain client-specific immunisation schedules; identify due or missed doses; and support defaulter/follow-up workflows where implemented.</td>
+    </tr>
+    <tr>
+      <td><strong>Diagnosis, treatment and medicines</strong></td>
+      <td>Record active/resolved and primary/presumptive/confirmed diagnoses as appropriate; display current and previous medicines and relevant results; prescribe and manage medication orders; capture dispensing where performed; support standard regimens, adverse effects, treatment interruption/restart information, and care plans.</td>
+    </tr>
+    <tr>
+      <td><strong>Basic orders and results</strong></td>
+      <td>Request and track laboratory tests and other diagnostics available at the facility; capture or receive results; indicate urgent requests; and support basic imaging or other diagnostic orders when those services are available.</td>
+    </tr>
+    <tr>
+      <td><strong>Referral and care coordination</strong></td>
+      <td>Create internal or external referrals, identify appropriate receiving facilities/providers from authorised registries where available, generate a referral summary, exchange relevant clinical information, and track referral status or feedback when supported by the receiving system.</td>
+    </tr>
+    <tr>
+      <td><strong>Appointments, queues and follow-up</strong></td>
+      <td>Register appointments, manage service queues and waiting lists as applicable, maintain missed-appointment information, and support patient reminders or follow-up messaging where enabled.</td>
+    </tr>
+    <tr>
+      <td><strong>Community and outreach services</strong></td>
+      <td>Support lightweight/mobile workflows for community health workers, field data collection, geolocation where appropriate, household/community service delivery, work planning, supervision, and reach tracking.</td>
+    </tr>
+    <tr>
+      <td><strong>Billing and financial transactions</strong></td>
+      <td>Where applicable, display service prices, associate charges or invoices with an encounter, and capture basic billing, payment, insurance, or claim information required by the facility or programme.</td>
+    </tr>
+    <tr>
+      <td><strong>Certificates and care outcomes</strong></td>
+      <td>Record discharge, referral, transfer, death, or other encounter outcomes and support the capture/issuance of authorised birth, death, or other medical certificate information where the facility is permitted to do so.</td>
+    </tr>
+    <tr>
+      <td><strong>Programme and public-health reporting</strong></td>
+      <td>Capture the data elements required for individual care and programme monitoring, generate required aggregate HMIS/NHMIS reports, and support electronic submission to authorised national reporting platforms.</td>
+    </tr>
+    <tr>
+      <td><strong>Patient-facing and remote support</strong></td>
+      <td>Conditionally support patient education, instructions, reminders, read-only patient access, remote monitoring inputs, or teleconsultation where these services are part of the facility model.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="phc-non-functional-requirements">PHC Non-Functional Requirements</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Capability area</th>
+      <th>Progressive PHC requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interoperability and data standards</strong></td>
+      <td>Support Nigeria Core FHIR R4 exchange for applicable resources and interactions; support JSON and XML representations where required for FHIR interoperability; use national identifiers, profiles and terminology bindings; and use internationally recognised terminology such as ICD-11, SNOMED CT, LOINC, or other standards only as nationally adopted and applicable to the data domain.</td>
+    </tr>
+    <tr>
+      <td><strong>Data quality and record integrity</strong></td>
+      <td>Validate required data at entry; capture transaction date/time; flag incomplete records where appropriate; prevent unauthorised alteration; preserve history/version information; support configurable note locking or amendment rules; support electronic signatures where required; support record inactivation/nullification according to policy; and maintain records of deceased patients according to retention rules.</td>
+    </tr>
+    <tr>
+      <td><strong>Core data domains</strong></td>
+      <td>Represent the nationally required data for demographics, encounters, allergies/intolerances, insurance, workforce, health-status assessments, patient summaries/care plans, laboratory and clinical tests, imaging where applicable, immunisation, medical devices where applicable, goals/preferences, vital statistics, medical orders, and other approved programme or patient-experience data.</td>
+    </tr>
+    <tr>
+      <td><strong>Identity management</strong></td>
+      <td>Maintain a persistent patient identifier within the implementation context, support patient matching and duplicate resolution, and support linkage to national registries or identifiers when those services are available.</td>
+    </tr>
+    <tr>
+      <td><strong>Security and privacy</strong></td>
+      <td>Require secure authentication; apply role/group-based access controls; restrict access to data and functions according to user responsibility; support session timeout/automatic logout; protect data in transit and at rest; maintain audit logs; and support recording of consent documents and consent/privacy preferences required by Nigerian law and approved national policy, including authorised secondary-use/analytics preferences where applicable.</td>
+    </tr>
+    <tr>
+      <td><strong>Auditability</strong></td>
+      <td>Record sufficient audit information to establish who performed an action, what was performed, when it occurred, and the affected record or function; support review of suspicious or unauthorised access attempts.</td>
+    </tr>
+    <tr>
+      <td><strong>Offline and low-connectivity operation</strong></td>
+      <td>Core point-of-care workflows should remain usable during intermittent or absent internet connectivity, with safe local caching/synchronisation and conflict/error handling appropriate to the deployment architecture.</td>
+    </tr>
+    <tr>
+      <td><strong>Usability and accessibility</strong></td>
+      <td>Provide responsive interfaces suitable for common desktops, tablets, and phones used at the point of care; minimise unnecessary data entry; use context-aware selection or completion where safe; and provide workflows appropriate to the skills and responsibilities of PHC users.</td>
+    </tr>
+    <tr>
+      <td><strong>Reliability and performance</strong></td>
+      <td>Provide acceptable response times for routine clinical use, recover safely from common failures, and be tested under the expected PHC workload. Exact national latency, availability, and concurrency thresholds remain to be finalised.</td>
+    </tr>
+    <tr>
+      <td><strong>Hosting and deployment</strong></td>
+      <td>Support deployment models approved for the programme or facility, including on-premises, cloud, hybrid, or synchronised edge/offline architectures where required.</td>
+    </tr>
+    <tr>
+      <td><strong>Reporting and analytics</strong></td>
+      <td>Produce standard aggregate reports and basic visualisation/dashboard outputs while preserving the ability to export or transmit authorised data to national systems.</td>
+    </tr>
+    <tr>
+      <td><strong>Documentation and maintainability</strong></td>
+      <td>Maintain user, workflow, configuration, interface/API, deployment, backup/recovery, and technical documentation sufficient for implementation, support, upgrade, and handover.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="general-hospital-functional-and-non-functional-requirements">General Hospital Functional and Non-Functional Requirements</h3>
+
+<p>A General Hospital should satisfy the applicable PHC baseline and progressively support secondary-level care, including emergency assessment, inpatient care, broader diagnostics, procedures, pharmacy, referral management, hospital administration, and more extensive exchange with other clinical systems.</p>
+
+<h4 id="general-hospital-functional-requirements">General Hospital Functional Requirements</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Capability area</th>
+      <th>Progressive General Hospital requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>All applicable PHC capabilities</strong></td>
+      <td>Retain the PHC baseline for registration, ambulatory care, maternal/child services, immunisation, medicines, basic diagnostics, referral, reporting, privacy, and interoperability.</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency and unscheduled care</strong></td>
+      <td>Support rapid registration or temporary identity for unknown patients, triage, emergency observations, urgent orders, emergency treatment documentation, and later reconciliation with the correct patient identity.</td>
+    </tr>
+    <tr>
+      <td><strong>Inpatient and ward management</strong></td>
+      <td>Manage admission, transfer, discharge, ward/bed assignment, inpatient encounter documentation, care plans, progress notes, nursing/clinical observations, and inpatient outcomes.</td>
+    </tr>
+    <tr>
+      <td><strong>Laboratory services</strong></td>
+      <td>Support broader laboratory order entry, specimen-related workflows where implemented, result receipt/validation/display, longitudinal review, abnormal-result alerts, and integration with a laboratory information system or analyser interfaces where available.</td>
+    </tr>
+    <tr>
+      <td><strong>Imaging and diagnostics</strong></td>
+      <td>Support imaging/diagnostic orders, scheduling/status, reports, and exchange with imaging systems; use DICOM-based integration where radiology imaging services and PACS/RIS are implemented.</td>
+    </tr>
+    <tr>
+      <td><strong>Pharmacy and medication management</strong></td>
+      <td>Support prescribing, editing/cancelling medication orders, e-prescribing where enabled, formulary/availability display, dispensing history, medication administration or supply workflows as applicable, allergy/interaction alerts, and pharmacy integration.</td>
+    </tr>
+    <tr>
+      <td><strong>Blood and blood products</strong></td>
+      <td>Where blood services are provided, support ordering, status tracking, results/compatibility information, administration documentation, and relevant traceability requirements.</td>
+    </tr>
+    <tr>
+      <td><strong>Procedures and surgery</strong></td>
+      <td>Record planned and completed procedures/surgeries, related orders, treatment notes, complications/adverse effects, and follow-up plans.</td>
+    </tr>
+    <tr>
+      <td><strong>Referral and consultation management</strong></td>
+      <td>Support internal departmental consultation and external referral; select receiving facilities/providers; generate clinical referral summaries; exchange supporting documents; receive feedback; and track pending, completed, or cancelled referrals where systems permit. Where authoritative data are available, referral decision support may incorporate service availability, bed availability, geography/proximity, and other approved referral criteria.</td>
+    </tr>
+    <tr>
+      <td><strong>Clinical decision support</strong></td>
+      <td>Provide configurable alerts, reminders, protocol guidance, abnormal-result notifications, medication/allergy checks, due-order/dose notifications, and condition-specific care plan support appropriate to services offered.</td>
+    </tr>
+    <tr>
+      <td><strong>Appointments, queue and practice management</strong></td>
+      <td>Manage appointments, clinic schedules, staff/service schedules, queues, waiting lists, and service availability across multiple departments.</td>
+    </tr>
+    <tr>
+      <td><strong>Billing, insurance and claims</strong></td>
+      <td>Associate invoices/charges with encounters and services; manage billing and claims information across hospital transactions; support payer/insurance information and basic revenue-cycle reporting where implemented.</td>
+    </tr>
+    <tr>
+      <td><strong>Inventory and facility operations</strong></td>
+      <td>Manage relevant facility assets and inventory, including medicines/supplies and operational resources such as wards, rooms, beds, and service availability.</td>
+    </tr>
+    <tr>
+      <td><strong>Telemedicine and second-level consultation</strong></td>
+      <td>Where implemented, support inbound teleconsultation, secure exchange of documents/images, clinical decision support during consultation, referral for further services, and secure clinician-to-clinician advice.</td>
+    </tr>
+    <tr>
+      <td><strong>Documents and certificates</strong></td>
+      <td>Manage clinical documents and authorised medical certificates, with appropriate indexing, access control, provenance, and linkage to the patient/encounter.</td>
+    </tr>
+    <tr>
+      <td><strong>Reporting and surveillance</strong></td>
+      <td>Generate programme, morbidity/mortality, service, operational, and ad hoc reports; support reportable-condition alerts and authorised electronic submission to national platforms.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="general-hospital-non-functional-requirements">General Hospital Non-Functional Requirements</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Capability area</th>
+      <th>Progressive General Hospital requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>All applicable PHC non-functional requirements</strong></td>
+      <td>Retain PHC requirements for data quality, privacy, offline resilience where needed, auditability, interoperability, usability, maintainability, and reporting.</td>
+    </tr>
+    <tr>
+      <td><strong>Systems integration</strong></td>
+      <td>Provide secured bi-directional interfaces/APIs for authorised systems such as registries, LIS, pharmacy, imaging, payment, messaging/SMS, and other EHR/HIE services; integration should use open standards and Nigeria Core profiles wherever defined.</td>
+    </tr>
+    <tr>
+      <td><strong>Terminology and semantic interoperability</strong></td>
+      <td>Support national terminology services/value sets and facility-local terms mapped to nationally adopted standards; use LOINC for laboratory observations where adopted and DICOM for medical imaging exchange where applicable.</td>
+    </tr>
+    <tr>
+      <td><strong>Security assurance</strong></td>
+      <td>Strengthen authentication and authorisation for hospital-wide use; support MFA for privileged or risk-sensitive access where required; implement encryption, secure session management, audit review, least-privilege access, and periodic security testing.</td>
+    </tr>
+    <tr>
+      <td><strong>Availability and recoverability</strong></td>
+      <td>Implement backup, restore, fault recovery, and disaster-recovery procedures appropriate to hospital dependency on the system, with measurable recovery objectives to be finalised through national or local SLAs.</td>
+    </tr>
+    <tr>
+      <td><strong>Performance and concurrency</strong></td>
+      <td>Test performance under the expected number of simultaneous clinical and administrative users, laboratory/imaging interfaces, and reporting jobs. Candidate numerical thresholds in the source inventory remain subject to validation and should not be treated as national requirements until formally approved.</td>
+    </tr>
+    <tr>
+      <td><strong>Data warehouse and analytics</strong></td>
+      <td>Support configurable aggregate analytics and, where required, a data warehouse or reporting layer that does not compromise transactional clinical performance or patient privacy.</td>
+    </tr>
+    <tr>
+      <td><strong>Document management</strong></td>
+      <td>Provide controlled storage, indexing, retrieval, access, and lifecycle management for supported clinical files such as PDFs, images, scanned documents, and other authorised attachments.</td>
+    </tr>
+    <tr>
+      <td><strong>DevSecOps and software quality</strong></td>
+      <td>Maintain repeatable build, test, release, vulnerability-management, and deployment processes; include unit, integration, regression, performance, and security testing appropriate to the implementation.</td>
+    </tr>
+    <tr>
+      <td><strong>Operational documentation</strong></td>
+      <td>Maintain architecture, workflow, integration, migration, test, security, deployment, maintenance, backup/recovery, and support documentation for the hospital implementation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tertiary-hospital-functional-and-non-functional-requirements">Tertiary Hospital Functional and Non-Functional Requirements</h3>
+
+<p>A Tertiary Hospital should satisfy the applicable PHC and General Hospital requirements and add the capabilities needed for specialist and subspecialist care, multidisciplinary coordination, advanced diagnostics and procedures, high-volume service delivery, enterprise integration, and stronger resilience and cybersecurity controls.</p>
+
+<h4 id="tertiary-hospital-functional-requirements">Tertiary Hospital Functional Requirements</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Capability area</th>
+      <th>Progressive Tertiary Hospital requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>All applicable PHC and General Hospital capabilities</strong></td>
+      <td>Retain the cumulative functional baseline while supporting substantially greater clinical complexity, departmental diversity, service volume, and cross-facility coordination.</td>
+    </tr>
+    <tr>
+      <td><strong>Specialist and multidisciplinary care</strong></td>
+      <td>Support specialist/subspecialist encounters, multidisciplinary care plans, consultations, longitudinal problem management, complex treatment pathways, advanced decision support, and coordinated follow-up across departments.</td>
+    </tr>
+    <tr>
+      <td><strong>Advanced diagnostics</strong></td>
+      <td>Support high-volume and specialised laboratory, pathology, imaging, and other diagnostic workflows, including structured orders/results and integration with specialist departmental systems.</td>
+    </tr>
+    <tr>
+      <td><strong>Advanced imaging interoperability</strong></td>
+      <td>Support enterprise imaging workflows and DICOM-based exchange with PACS/RIS and other authorised imaging systems, including report/result linkage to the patient record.</td>
+    </tr>
+    <tr>
+      <td><strong>Complex medicines and therapies</strong></td>
+      <td>Support complex prescribing, medication review, interaction/allergy checking, treatment protocols, therapy monitoring, specialist pharmacy workflows, and relevant treatment interruption/adverse-event history.</td>
+    </tr>
+    <tr>
+      <td><strong>Complex procedures and surgery</strong></td>
+      <td>Support specialist procedures, surgery, peri-procedural documentation, advanced order sets, blood/blood product workflows, complications, and longitudinal post-procedure follow-up.</td>
+    </tr>
+    <tr>
+      <td><strong>Enterprise referral and consultation</strong></td>
+      <td>Coordinate referrals from lower levels of care, internal specialist consultation, onward referral, counter-referral/feedback, and secure sharing of relevant patient summaries, documents, results, and care plans.</td>
+    </tr>
+    <tr>
+      <td><strong>Advanced clinical decision support</strong></td>
+      <td>Support configurable guideline-based pathways, high-risk alerts, protocol reminders, result surveillance, medication safety checks, and condition-specific care plans while maintaining clinician oversight.</td>
+    </tr>
+    <tr>
+      <td><strong>Enterprise administration</strong></td>
+      <td>Support complex scheduling, multiple clinics/departments, workforce roles, ward/bed management, asset/service availability, billing/claims, revenue-cycle analytics, inventory, and operational reporting.</td>
+    </tr>
+    <tr>
+      <td><strong>Telemedicine and expert consultation</strong></td>
+      <td>Support secure remote consultation, specialist second opinion, document/image exchange, and referral coordination with lower-level facilities or other specialist centres where implemented.</td>
+    </tr>
+    <tr>
+      <td><strong>Patient engagement and longitudinal access</strong></td>
+      <td>Conditionally support patient portals, appointment/follow-up messaging, treatment instructions, remote-monitoring inputs, and access to appropriate portions of the longitudinal record.</td>
+    </tr>
+    <tr>
+      <td><strong>Advanced reporting and secondary use</strong></td>
+      <td>Support detailed clinical, programme, operational, quality, morbidity/mortality, and ad hoc analytics, with governance for authorised aggregate/secondary use and consent or opt-out requirements where applicable.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="tertiary-hospital-non-functional-requirements">Tertiary Hospital Non-Functional Requirements</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Capability area</th>
+      <th>Progressive Tertiary Hospital requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>All applicable lower-level non-functional requirements</strong></td>
+      <td>Retain and strengthen the PHC and General Hospital requirements for interoperability, security, privacy, usability, data quality, audit, documentation, and maintainability.</td>
+    </tr>
+    <tr>
+      <td><strong>Enterprise interoperability architecture</strong></td>
+      <td>Support secured, versioned APIs and interfaces across EHR, HIE, registry, terminology, LIS, RIS/PACS, pharmacy, billing, devices, document systems, and authorised external platforms, with Nigeria Core FHIR R4 used for applicable health data exchange.</td>
+    </tr>
+    <tr>
+      <td><strong>Enterprise terminology services</strong></td>
+      <td>Support consistent use, validation, expansion, and mapping of national CodeSystems, ValueSets, ConceptMaps, and adopted international terminologies across departments and connected systems.</td>
+    </tr>
+    <tr>
+      <td><strong>High availability and resilience</strong></td>
+      <td>Use architecture appropriate to continuous clinical dependency, including redundancy, monitored backups, tested restoration, disaster recovery, fault tolerance, and defined recovery objectives.</td>
+    </tr>
+    <tr>
+      <td><strong>Scalability and workload management</strong></td>
+      <td>Scale across high transaction volumes, concurrent users, interface traffic, background reporting, and large clinical datasets without clinically significant deterioration. Final national performance thresholds should be set through representative load and workflow testing rather than assumed from a single deployment size.</td>
+    </tr>
+    <tr>
+      <td><strong>Cybersecurity and privacy assurance</strong></td>
+      <td>Apply strong identity/access management, MFA where risk-appropriate, encryption at rest and in transit, secure key/secret management, audit monitoring, vulnerability management, penetration testing, incident response, and privacy-by-design controls consistent with Nigerian data-protection obligations and recognised health-information security practice.</td>
+    </tr>
+    <tr>
+      <td><strong>Security verification</strong></td>
+      <td>Use a defined application security verification baseline for web/mobile/API components and retain evidence of security, penetration, static/dynamic analysis, dependency, regression, and remediation testing as required by national certification or procurement criteria.</td>
+    </tr>
+    <tr>
+      <td><strong>Observability and IT audit</strong></td>
+      <td>Monitor availability, errors, interface failures, resource utilisation, security events, and performance; support audit analysis and an access-control matrix/hierarchy that can be reviewed and governed by authorised leadership.</td>
+    </tr>
+    <tr>
+      <td><strong>Data platform and analytics</strong></td>
+      <td>Support enterprise reporting/data-warehouse architectures for authorised analysis while separating analytical workloads from operational clinical transactions and enforcing privacy, access, and data-governance controls.</td>
+    </tr>
+    <tr>
+      <td><strong>Deployment portability</strong></td>
+      <td>Support approved on-premises, cloud, hybrid, or distributed deployment patterns, with documented dependencies, portability, migration, backup, and exit/recovery arrangements.</td>
+    </tr>
+    <tr>
+      <td><strong>Software lifecycle and DevSecOps</strong></td>
+      <td>Maintain controlled source, automated testing, reproducible builds, CI/CD or equivalent controlled release processes, environment separation, change management, rollback, vulnerability remediation, and documented release governance.</td>
+    </tr>
+    <tr>
+      <td><strong>Technical and operational documentation</strong></td>
+      <td>Maintain complete and current architecture, workflow, interface, terminology, configuration, security, test, migration, deployment, recovery, and operational support documentation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="progressive-capability-summary">Progressive Capability Summary</h3>
+
+<p>The following matrix is a high-level summary. <strong>Expanded</strong> and <strong>Advanced</strong> mean that the lower-level capability is inherited and strengthened rather than replaced.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th>PHC</th>
+      <th>General Hospital</th>
+      <th>Tertiary Hospital</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient identity/registration</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Expanded</strong> emergency/inpatient identity workflows</td>
+      <td><strong>Advanced</strong> enterprise matching and cross-system identity workflows</td>
+    </tr>
+    <tr>
+      <td>Ambulatory clinical documentation</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Expanded</strong> multi-department use</td>
+      <td><strong>Advanced</strong> specialist/subspecialist longitudinal care</td>
+    </tr>
+    <tr>
+      <td>Maternal, child, immunisation and community services</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Baseline/Expanded</strong> where provided</td>
+      <td><strong>Baseline/Expanded</strong> where provided and for referral continuity</td>
+    </tr>
+    <tr>
+      <td>Laboratory</td>
+      <td><strong>Basic/Conditional</strong></td>
+      <td><strong>Expanded</strong> LIS integration</td>
+      <td><strong>Advanced</strong> enterprise/specialist diagnostics</td>
+    </tr>
+    <tr>
+      <td>Imaging</td>
+      <td><strong>Conditional</strong></td>
+      <td><strong>Expanded</strong> imaging workflow</td>
+      <td><strong>Advanced</strong> RIS/PACS and enterprise imaging</td>
+    </tr>
+    <tr>
+      <td>Pharmacy/medication</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Expanded</strong> hospital pharmacy</td>
+      <td><strong>Advanced</strong> complex therapies and specialist protocols</td>
+    </tr>
+    <tr>
+      <td>Inpatient/ward management</td>
+      <td><strong>Conditional</strong>, including higher-level PHCs where provided</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Advanced</strong> high-volume/specialist inpatient care</td>
+    </tr>
+    <tr>
+      <td>Procedures/surgery</td>
+      <td><strong>Basic/Conditional</strong></td>
+      <td><strong>Expanded</strong></td>
+      <td><strong>Advanced</strong> complex procedures and peri-operative pathways</td>
+    </tr>
+    <tr>
+      <td>Referral/counter-referral</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Expanded</strong> internal and external referral</td>
+      <td><strong>Advanced</strong> specialist network coordination</td>
+    </tr>
+    <tr>
+      <td>Billing/claims</td>
+      <td><strong>Conditional/Baseline</strong> where applicable</td>
+      <td><strong>Expanded</strong></td>
+      <td><strong>Advanced</strong> enterprise revenue-cycle integration</td>
+    </tr>
+    <tr>
+      <td>Community/mobile/offline</td>
+      <td><strong>High priority</strong></td>
+      <td><strong>Conditional/continuity requirement</strong></td>
+      <td><strong>Conditional/continuity requirement</strong></td>
+    </tr>
+    <tr>
+      <td>Reporting/HMIS</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Expanded</strong> operational and clinical reporting</td>
+      <td><strong>Advanced</strong> enterprise analytics and secondary-use governance</td>
+    </tr>
+    <tr>
+      <td>FHIR/API interoperability</td>
+      <td><strong>Baseline for exchanged data</strong></td>
+      <td><strong>Expanded</strong> multi-system integration</td>
+      <td><strong>Advanced</strong> enterprise/HIE integration</td>
+    </tr>
+    <tr>
+      <td>Security/privacy/audit</td>
+      <td><strong>Baseline</strong></td>
+      <td><strong>Expanded</strong> hospital-wide controls</td>
+      <td><strong>Advanced</strong> enterprise cybersecurity and monitoring</td>
+    </tr>
+    <tr>
+      <td>Availability/recovery</td>
+      <td><strong>Resilient/offline capable</strong></td>
+      <td><strong>Defined hospital recovery capability</strong></td>
+      <td><strong>High availability and tested disaster recovery</strong></td>
+    </tr>
+    <tr>
+      <td>Performance/scalability</td>
+      <td><strong>Expected PHC workload</strong></td>
+      <td><strong>Hospital workload tested</strong></td>
+      <td><strong>Enterprise/high-volume workload tested</strong></td>
+    </tr>
+    <tr>
+      <td>Documentation/DevSecOps</td>
+      <td><strong>Maintainable implementation</strong></td>
+      <td><strong>Formalised lifecycle</strong></td>
+      <td><strong>Enterprise controlled lifecycle and assurance</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="requirements-maturation-and-finalisation">Requirements maturation and finalisation</h3>
+
+<p>The attached requirement inventories are intentionally broader than the minimum computable requirements currently expressed in Nigeria Core. Before they become formal conformance or procurement requirements, the requirements should be progressively matured through the following process:</p>
+
+<ol>
+  <li><strong>Normalise and de-duplicate</strong> overlapping statements while preserving their clinical and operational intent.</li>
+  <li><strong>Assign applicability</strong> by facility level, service type, user persona, programme, and deployment model.</li>
+  <li><strong>Assign obligation strength</strong> (<code class="language-plaintext highlighter-rouge">SHALL</code>, <code class="language-plaintext highlighter-rouge">SHOULD</code>, or <code class="language-plaintext highlighter-rouge">MAY</code>) and identify conditional requirements.</li>
+  <li><strong>Map requirements to Nigeria Core artefacts</strong>, including profiles, extensions, terminology, search parameters, operations, CapabilityStatements, exchange documents, and implementation guidance.</li>
+  <li><strong>Define measurable acceptance criteria</strong> and representative test data for every requirement intended for certification or procurement.</li>
+  <li><strong>Define non-functional service levels</strong> for availability, latency, throughput, concurrency, recovery, synchronisation, and offline operation using representative Nigerian deployment scenarios. Numerical values listed in early requirement inventories should remain provisional until benchmarked and approved.</li>
+  <li><strong>Harmonise privacy and security requirements</strong> with the Nigeria Data Protection Act, applicable Nigeria Industrial Standards, approved health-sector security policy, and risk-based application security verification criteria. External frameworks or compliance claims should be treated as supplementary evidence and not as a substitute for applicable Nigerian legal and national standards obligations.</li>
+  <li><strong>Create traceable conformance tests</strong>, including FHIR validation, API tests, workflow demonstrations, security testing, interoperability testing, and evidence requirements for capabilities that cannot be verified through FHIR alone.</li>
+  <li><strong>Version and publish the approved requirement set</strong> so implementers can distinguish draft guidance from normative requirements and can identify which version was used for implementation, procurement, sandbox testing, or certification.</li>
+</ol>
+
+<h3 id="alignment-principles">Alignment principles</h3>
+
+<p>The progressive model on this page is informed by the supplied functional and non-functional requirement inventories and by the following external standards and guidance:</p>
+
+<ul>
+  <li><strong>WHO SMART Guidelines / Digital Adaptation Kits (DAKs):</strong> treat high-level functional and non-functional requirements as software-neutral components that translate clinical, public-health, and data-use guidance into implementable digital system expectations. See <a href="https://www.who.int/publications/m/item/who-digital-accelerator-kits">WHO SMART Guidelines — Digital Adaptation Kits</a> and the <a href="https://smart.who.int/ig-starter-kit/l2_dak_authoring.html">SMART Guidelines Starter Kit</a>.</li>
+  <li><strong>NPHCDA service expectations:</strong> the PHC baseline should reflect the services delivered at PHC level and recognise that higher PHC facility levels may include laboratory, pharmacy/dispensary, delivery/labour, and inpatient capabilities. See <a href="https://nphcda.gov.ng/phc-revitalization/">NPHCDA PHC Revitalization</a> and <a href="https://nphcda.gov.ng/bhcpf/">Basic Health Care Provision Fund</a>.</li>
+  <li><strong>National Health Act 2014:</strong> provides the overarching legal framework for regulation, development, and management of Nigeria's national health system and standards for rendering health services. See the <a href="https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=104157">Nigeria National Health Act 2014 record</a>.</li>
+  <li><strong>HL7 FHIR R4:</strong> provides the exchange standard used by Nigeria Core; CapabilityStatements can state required or implemented system capabilities and support compatibility/conformance assessment. See <a href="https://hl7.org/fhir/R4/">FHIR R4</a> and <a href="https://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a>.</li>
+  <li><strong>Nigeria Data Protection Act 2023:</strong> provides the national legal framework for protection and responsible processing of personal data, including health-related personal data. See the <a href="https://ndpc.gov.ng/">Nigeria Data Protection Commission</a> and the <a href="https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf">Nigeria Data Protection Act 2023</a>.</li>
+  <li><strong>ISO/IEC 25010:2023:</strong> provides a product-quality model for specifying and evaluating software quality characteristics. See <a href="https://www.iso.org/standard/78176.html">ISO/IEC 25010:2023</a>.</li>
+  <li><strong>ISO 27799:2025:</strong> provides health-sector information-security controls and implementation guidance based on ISO/IEC 27002. See <a href="https://www.iso.org/standard/84647.html">ISO 27799:2025</a>.</li>
+  <li><strong>OWASP ASVS:</strong> provides a practical baseline for testing technical application security controls and specifying verifiable secure-development requirements. See <a href="https://owasp.org/www-project-application-security-verification-standard/">OWASP Application Security Verification Standard</a>.</li>
+  <li><strong>DICOM and LOINC:</strong> support interoperable medical imaging and laboratory/clinical observation exchange respectively when those domains are implemented. See <a href="https://www.dicomstandard.org/">DICOM</a> and <a href="https://loinc.org/">LOINC</a>.</li>
+</ul>
+
+<h3 id="implementation-note">Implementation note</h3>
+
+<p>This page intentionally remains a <strong>summary layer</strong>. Detailed requirements should ultimately be maintained in a version-controlled requirement catalogue with stable identifiers (for example, <code class="language-plaintext highlighter-rouge">PHC-FR-001</code>, <code class="language-plaintext highlighter-rouge">GH-NFR-012</code>, <code class="language-plaintext highlighter-rouge">TH-FR-021</code>) and bidirectional traceability to implementation artefacts and test cases. That catalogue can then support an approved set of vendor self-assessment response states (including the source inventory's <em>fully supported</em> and <em>partially supported</em> concepts), together with demonstration evidence during sandbox, procurement, or conformance assessment.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 13:27+0100">2026-08-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

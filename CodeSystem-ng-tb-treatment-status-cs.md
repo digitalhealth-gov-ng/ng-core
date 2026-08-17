@@ -37,7 +37,7 @@ A list of codes describing the status of TB treatment.
   "title" : "TB Treatment Status Codes CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

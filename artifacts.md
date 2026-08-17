@@ -530,6 +530,7 @@ These define identifier and/or code system identities used by systems conforming
 | | |
 | :--- | :--- |
 | [NG Birth Certificate NamingSystem](NamingSystem-ng-bc-naming-system.md) | Candidate NamingSystem definition for the National Birth Certificate namespace. |
+| [NG MTN MNO NamingSystem](NamingSystem-ng-mtn-mno-naming-system.md) | Candidate NamingSystem definition for the MTN namespace. |
 | [NG Medical and Dental Council of Nigeria NamingSystem](NamingSystem-ng-mdcn-naming-system.md) | Candidate NamingSystem definition for the MDCN namespace. |
 | [NG Mobile Number NamingSystem](NamingSystem-ng-mobile-naming-system.md) | Candidate NamingSystem definition for the Medical Records Number namespace. |
 | [NG National Health Insurance Number NamingSystem](NamingSystem-ng-ins-naming-system.md) | Candidate NamingSystem definition for the National Health Insurance Authority (NHIA) namespace. |

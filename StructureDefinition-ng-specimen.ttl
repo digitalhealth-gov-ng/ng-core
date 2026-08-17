@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "NgSpecimen"] ;
   fhir:StructureDefinition.title [ fhir:value "NG Specimen"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-17T07:55:48+01:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-08-17T13:27:53+01:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "NDHI"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
@@ -1692,8 +1692,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
          fhir:ElementDefinition.binding.description [ fhir:value "Codes describing the fasting status of the patient." ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://terminology.hl7.org/ValueSet/v2-0916" ;
-           fhir:link <http://terminology.hl7.org/ValueSet/v2-0916>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0916|3.0.0" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0916|3.0.0>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -2505,8 +2505,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ] ;
          fhir:ElementDefinition.binding.description [ fhir:value "Substance added to specimen container." ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://terminology.hl7.org/ValueSet/v2-0371" ;
-           fhir:link <http://terminology.hl7.org/ValueSet/v2-0371>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0371|3.0.0" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0371|3.0.0>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -2560,8 +2560,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
          fhir:ElementDefinition.binding.description [ fhir:value "Codes describing the state of the specimen." ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://terminology.hl7.org/ValueSet/v2-0493" ;
-           fhir:link <http://terminology.hl7.org/ValueSet/v2-0493>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0493|3.0.0" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0493|3.0.0>
          ]
        ] ;
        fhir:ElementDefinition.mapping [

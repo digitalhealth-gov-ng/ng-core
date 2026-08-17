@@ -11,8 +11,6 @@
 | Draft as of 2026-07-10 | *Computable Name*:NigeriaCore |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1 | |
 
-### Introduction
-
 This implementation guide is under active development (version 0.0.0) and is not yet a final, normative release.
 
 The Nigeria Core FHIR Implementation Guide provides the national foundation for standards-based health information exchange in Nigeria. It defines a reusable minimum set of FHIR profiles, extensions, terminology bindings, identifiers, RESTful interactions, and implementation expectations for government institutions, health programmes, regulators, healthcare providers, registries, vendors, and other digital health platforms.
@@ -41,7 +39,7 @@ The guide provides a foundation for eCHIS, MNCH, HIV, tuberculosis, malaria, imm
 
 **Profile and Interaction Support:** A system supports both Nigeria Core Profile content and the defined RESTful interactions for exchanging that content.
 
-See [Conformance Requirements](conformance.md) for the rules used to claim conformance.
+See **Conformance Requirements** for the rules used to claim conformance.
 
 ### National Interoperability Context
 
@@ -61,8 +59,9 @@ It also supports the Nigeria [Shared Health Record](ng-ps.md), aligned where app
 
 | | |
 | :--- | :--- |
-| [Conformance](conformance.md) | Conformance rules,[General requirements](general.md),[Must Support](general.md),[Clinical notes](clinical-notes.md),[Basic Provenance](provenance.md),[security](security.md)and[relationship with other IGs](other-igs.md). |
-| [FHIR Artifacts](artifacts.md) | Formal profiles, extensions, logical models, and other FHIR artefacts. |
+| **Conformance** | Conformance rules,[General requirements](general.md),[Must Support](general.md),[Clinical notes](clinical-notes.md),[Basic Provenance](provenance.md),[security](security.md)and[relationship with other IGs](other-igs.md). |
+| [EMR Functional and Non-Functional Requirements](functional-non-functional.md) | The functional and non-functional requirement inventories broad electronic health record and health information system capability set. |
+| **FHIR Artifacts** | Formal profiles, extensions, logical models, and other FHIR artefacts. First arranged by health programs |
 | [Search Parameters and Operations](index.md) | Nigeria Core operations and search parameters. |
 | [Terminology](artifacts.md#terminology-value-sets) | CodeSystems, ValueSets, ConceptMaps, and terminology bindings. |
 | [Capability Statements](index.md) | Expected server and client capabilities. |
@@ -135,7 +134,9 @@ Nigeria Core supports harmonisation of Nigerian health data standards, reuse of 
 
 The guide will evolve through stakeholder review, technical working groups, Connectathons, implementation feedback, formal standards processes—including the Standards Organisation of Nigeria—and real-world testing.
 
-### Dependencies
+### Governance Principles and Dependencies
+
+Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and explicitly declared R4-compatible HL7 Terminology package at the time of an IG release. Canonical references resolvable through package dependencies SHALL be version-pinned during publication. Terminology package upgrades SHALL be deliberate IG dependency upgrades rather than automatic runtime changes.
 
 
 
@@ -206,16 +207,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
-    "id" : "hl7tx",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
-    }],
-    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-    "packageId" : "hl7.terminology.r4",
-    "version" : "7.3.0"
-  },
-  {
     "id" : "hl7ext",
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
@@ -224,6 +215,12 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7_terminology_r4",
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7_fhir_uv_ips",
@@ -274,6 +271,17 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       {
         "url" : "value",
         "valueString" : "2.16.840.1.113884.3.9944.1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -564,6 +572,17 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       {
         "url" : "value",
         "valueString" : "2.16.840.1.113884.3.9944.1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -6951,6 +6970,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-mtn-mno-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-mtn-mno-naming-system"
+      },
+      "name" : "NG MTN MNO NamingSystem",
+      "description" : "Candidate NamingSystem definition for the MTN namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -9908,19 +9943,19 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "conformance.html"
+          "valueUrl" : "verifiable-digital-health-certificate.html"
         }],
-        "nameUrl" : "conformance.html",
-        "title" : "Conformance",
+        "nameUrl" : "verifiable-digital-health-certificate.html",
+        "title" : "Verifiable Digital Health Certificate",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "verifiable-digital-health-certificate.html"
+          "valueUrl" : "functional-non-functional.html"
         }],
-        "nameUrl" : "verifiable-digital-health-certificate.html",
-        "title" : "Verifiable Digital Health Certificate",
+        "nameUrl" : "functional-non-functional.html",
+        "title" : "Functional and Non-Functional Requirements",
         "generation" : "markdown"
       }]
     },

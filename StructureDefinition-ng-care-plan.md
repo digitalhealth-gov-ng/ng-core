@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-care-plan.csv), [
   "name" : "NgCarePlan",
   "title" : "NG CarePlan",
   "status" : "draft",
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

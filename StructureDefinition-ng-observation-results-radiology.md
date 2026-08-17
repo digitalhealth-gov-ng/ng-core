@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation-resul
   "name" : "NgObservationResultsRadiology",
   "title" : "NG Radiology Result Observation",
   "status" : "draft",
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

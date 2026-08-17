@@ -128,6 +128,7 @@
       <li><a href="general.html">General Requirements</a></li>
       <li><a href="clinical-notes.html">General Clinical Notes</a></li>
       <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="functional-non-functional.html">EMR Functional n Non-Func. Req.</a></li>
       <li><a href="nhmis.html">Relationship with NHMIS</a></li>
       <li><a href="registries.html">Registries &amp; Shared Services</a></li>
       <li><a href="other-igs.html">Relationship with Other IGs</a></li>
@@ -233,8 +234,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li><a href="#alignment-with-international-igs" id="markdown-toc-alignment-with-international-igs">Alignment With International IGs</a></li>
-  <li><a href="#comparison-with-international-igs" id="markdown-toc-comparison-with-international-igs">Comparison With International IGs</a></li>
-  <li><a href="#relationship-with-who-smart-guidelines-and-daks" id="markdown-toc-relationship-with-who-smart-guidelines-and-daks">Relationship With WHO SMART Guidelines and DAKs</a></li>
+  <li><a href="#comparison-with-international-igs-architectures-and-programs-l3" id="markdown-toc-comparison-with-international-igs-architectures-and-programs-l3">Comparison With International IGs, Architectures, and Programs (L3)</a></li>
+  <li><a href="#relationship-with-who-smart-daks" id="markdown-toc-relationship-with-who-smart-daks">Relationship With WHO SMART DAKs</a></li>
   <li><a href="#relationship-with-ihe-and-openhie" id="markdown-toc-relationship-with-ihe-and-openhie">Relationship With IHE and OpenHIE</a></li>
 </ul>
 
@@ -340,7 +341,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="comparison-with-international-igs">Comparison With International IGs</h3>
+<h3 id="comparison-with-international-igs-architectures-and-programs-l3">Comparison With International IGs, Architectures, and Programs (L3)</h3>
 
 <p>The table below gives a high-level summary of how Nigeria Core is expected to relate to selected international IGs. Detailed computable comparison tables may be added in future versions as Nigeria Core profiles mature.</p>
 
@@ -361,14 +362,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <th>IPS</th>
       <th>IPA</th>
       <th>SMART App Launch</th>
-      <th>WHO SMART Guidelines / DAK</th>
-      <th>IHE / OpenHIE</th>
+      <th>WHO SMART DAK (L2)</th>
+      <th>FHIR ARTEFACTS (L3)</th>
+      <th>IHE</th>
+      <th>OpenHIE</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Patient demographics</td>
       <td><span style="color:orange; font-size:1.5em">➕</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
@@ -381,10 +386,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
     </tr>
     <tr>
       <td>Conditions and diagnoses</td>
       <td><span style="color:orange; font-size:1.5em">➕</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
@@ -397,18 +406,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td> </td>
     </tr>
     <tr>
-      <td>Immunization</td>
+      <td>Immunization Program</td>
       <td><span style="color:orange; font-size:1.5em">➕</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="color:green; font-size:1.5em">✔</span></td>
+      <td><span style="color:orange; font-size:1.5em">➕</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+    </tr>
+    <tr>
+      <td>HIV Program</td>
+      <td><span style="color:orange; font-size:1.5em">➕</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="color:green; font-size:1.5em">✔</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
     </tr>
     <tr>
       <td>Observations and vital signs</td>
       <td><span style="color:orange; font-size:1.5em">➕</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
@@ -421,10 +446,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
     </tr>
     <tr>
       <td>Clinical notes and documents</td>
       <td><span style="color:orange; font-size:1.5em">➕</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
@@ -436,7 +465,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
-      <td><span style="color:green; font-size:1.5em">✔</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="color:orange; font-size:1.5em">➕</span></td>
     </tr>
     <tr>
       <td>Health workforce registry</td>
@@ -444,7 +475,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
-      <td><span style="color:green; font-size:1.5em">✔</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="color:orange; font-size:1.5em">➕</span></td>
     </tr>
     <tr>
       <td>Shared Health Record</td>
@@ -452,7 +485,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
-      <td><span style="color:green; font-size:1.5em">✔</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="color:orange; font-size:1.5em">➕</span></td>
     </tr>
     <tr>
       <td>Patient-facing access</td>
@@ -460,10 +495,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="color:orange; font-size:1.5em">➕</span></td>
     </tr>
     <tr>
       <td>Programme reporting</td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
@@ -477,11 +516,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
       <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
+      <td><span style="font-size:1.5em; font-weight: bold">—</span></td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="relationship-with-who-smart-guidelines-and-daks">Relationship With WHO SMART Guidelines and DAKs</h3>
+<h3 id="relationship-with-who-smart-daks">Relationship With WHO SMART DAKs</h3>
 
 <p>Nigeria Core supports the progression from WHO SMART Guidelines and Digital Adaptation Kits to implementable FHIR artefacts. The <strong>Digital Adaptation Kits (L2)</strong> dropdown leads to all domesticated national DAKs.</p>
 
@@ -528,7 +569,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 07:55+0100">2026-08-17</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 13:27+0100">2026-08-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

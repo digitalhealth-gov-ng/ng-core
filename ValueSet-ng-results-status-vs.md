@@ -60,7 +60,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Results Status Codes - IPS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
@@ -106,6 +106,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }],
     "exclude" : [{
       "system" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
       "filter" : [{
         "property" : "concept",
         "op" : "is-a",

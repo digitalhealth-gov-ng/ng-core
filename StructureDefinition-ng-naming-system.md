@@ -17,7 +17,7 @@ Nigeria Core profile for publishing and governing namespaces used in FHIR Identi
 
 **Usages:**
 
-* Examples for this Profile: [NgNationalInsuranceNumber](NamingSystem-ng-bc-naming-system.md), [NgAconsortRecordNumber](NamingSystem-ng-consort-naming-system.md), [NgHFRNumber](NamingSystem-ng-hfr-naming-system.md), [NgNationalInsuranceNumber](NamingSystem-ng-ins-naming-system.md)... Show 8 more, [NgMDCNNumber](NamingSystem-ng-mdcn-naming-system.md), [NgMobileNumber](NamingSystem-ng-mobile-naming-system.md), [NgExamplePersonIdentifier](NamingSystem-ng-naming-system-example.md), [NgNationalIdentityNumber](NamingSystem-ng-nin-naming-system.md), [NgNMCNNumber](NamingSystem-ng-nmcn-naming-system.md), [NgPCNNumber](NamingSystem-ng-pcn-naming-system.md), [NgPseudoNumber](NamingSystem-ng-psedo-naming-system.md) and [NgStateRecordNumber](NamingSystem-ng-wakanda-naming-system.md)
+* Examples for this Profile: [NgNationalInsuranceNumber](NamingSystem-ng-bc-naming-system.md), [NgAconsortRecordNumber](NamingSystem-ng-consort-naming-system.md), [NgHFRNumber](NamingSystem-ng-hfr-naming-system.md), [NgNationalInsuranceNumber](NamingSystem-ng-ins-naming-system.md)... Show 9 more, [NgMDCNNumber](NamingSystem-ng-mdcn-naming-system.md), [NgMobileNumber](NamingSystem-ng-mobile-naming-system.md), [NgMTNMno](NamingSystem-ng-mtn-mno-naming-system.md), [NgExamplePersonIdentifier](NamingSystem-ng-naming-system-example.md), [NgNationalIdentityNumber](NamingSystem-ng-nin-naming-system.md), [NgNMCNNumber](NamingSystem-ng-nmcn-naming-system.md), [NgPCNNumber](NamingSystem-ng-pcn-naming-system.md), [NgPseudoNumber](NamingSystem-ng-psedo-naming-system.md) and [NgStateRecordNumber](NamingSystem-ng-wakanda-naming-system.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-naming-system.json)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-naming-system.csv
   "name" : "NgNamingSystem",
   "title" : "NG NamingSystem",
   "status" : "draft",
-  "date" : "2026-08-17T07:55:48+01:00",
+  "date" : "2026-08-17T13:27:53+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

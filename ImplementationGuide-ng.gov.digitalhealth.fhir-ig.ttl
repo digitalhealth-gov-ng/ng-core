@@ -68,20 +68,6 @@
   ] ;
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0 ;
-     fhir:Element.id [ fhir:value "hl7tx" ] ;
-     fhir:Element.extension [
-       fhir:index 0 ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
-       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
-     ] ;
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
-       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
-     ] ;
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
-  ], [
-     fhir:index 1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
      fhir:Element.extension [
        fhir:index 0 ;
@@ -94,6 +80,15 @@
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.id [ fhir:value "hl7_terminology_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
   ], [
      fhir:index 2 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_ips" ] ;
@@ -164,11 +159,11 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+         fhir:Extension.valueString [ fhir:value "pin-canonicals" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "pin-multiples" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -176,11 +171,11 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -192,11 +187,23 @@
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
        fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -208,7 +215,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 7 ;
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -220,7 +227,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 8 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -232,7 +239,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 9 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -244,7 +251,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 10 ;
+       fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -256,7 +263,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 11 ;
+       fhir:index 12 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -268,7 +275,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 12 ;
+       fhir:index 13 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -280,7 +287,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 13 ;
+       fhir:index 14 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -292,7 +299,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 14 ;
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -304,7 +311,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 15 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -316,7 +323,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 16 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -328,7 +335,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 17 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -340,7 +347,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 18 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -352,7 +359,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 19 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -364,7 +371,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 20 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -376,7 +383,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 21 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -388,7 +395,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 22 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -400,7 +407,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 23 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -412,7 +419,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 24 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -424,7 +431,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 25 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -436,11 +443,11 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 26 ;
+       fhir:index 27 ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
        fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.1.2" ]
      ], [
-       fhir:index 27 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -452,7 +459,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 28 ;
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -464,7 +471,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 29 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -476,7 +483,19 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 30 ;
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "pin-canonicals" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "pin-multiples" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -488,7 +507,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 31 ;
+       fhir:index 33 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -500,7 +519,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 32 ;
+       fhir:index 34 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -512,7 +531,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 33 ;
+       fhir:index 35 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -524,7 +543,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 34 ;
+       fhir:index 36 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -536,7 +555,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 35 ;
+       fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -548,7 +567,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 36 ;
+       fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -560,7 +579,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 37 ;
+       fhir:index 39 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -572,7 +591,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 38 ;
+       fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -584,7 +603,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 39 ;
+       fhir:index 41 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -596,7 +615,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 40 ;
+       fhir:index 42 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -608,7 +627,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 41 ;
+       fhir:index 43 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -620,7 +639,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 42 ;
+       fhir:index 44 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -632,7 +651,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 43 ;
+       fhir:index 45 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -644,7 +663,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 44 ;
+       fhir:index 46 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -656,7 +675,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 45 ;
+       fhir:index 47 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -668,7 +687,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 46 ;
+       fhir:index 48 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -680,7 +699,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 47 ;
+       fhir:index 49 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -692,7 +711,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 48 ;
+       fhir:index 50 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -704,7 +723,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 49 ;
+       fhir:index 51 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -716,7 +735,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 50 ;
+       fhir:index 52 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -728,7 +747,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 51 ;
+       fhir:index 53 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -740,7 +759,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 52 ;
+       fhir:index 54 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -6299,6 +6318,20 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-ig.digitalhealth.gov.ng/NamingSystem/ng-mtn-mno-naming-system> ;
+         fhir:Reference.reference [ fhir:value "NamingSystem/ng-mtn-mno-naming-system" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NG MTN MNO NamingSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the MTN namespace." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 384 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -6309,7 +6342,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nigeria Core profile for publishing and governing namespaces used in\nFHIR Identifier.system." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 384 ;
+       fhir:index 385 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6323,7 +6356,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the National Health Insurance Authority (NHIA) namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 385 ;
+       fhir:index 386 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6337,7 +6370,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the Nigerian National Identity Number (NIN) namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 386 ;
+       fhir:index 387 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6351,7 +6384,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The recommended due date for the next vaccine dose in the schedule." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 387 ;
+       fhir:index 388 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6365,7 +6398,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the HFR namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 388 ;
+       fhir:index 389 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6379,7 +6412,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the pseudo namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 389 ;
+       fhir:index 390 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6393,7 +6426,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the NMCN namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 390 ;
+       fhir:index 391 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6407,7 +6440,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An organization profile representing healthcare facilities responsible for health services or other types of organizations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 391 ;
+       fhir:index 392 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6421,7 +6454,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An extension to define the owner of the health institution" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 392 ;
+       fhir:index 393 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6435,7 +6468,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nigeria Core Patient Profile" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 393 ;
+       fhir:index 394 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6449,7 +6482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This CodeSystem defines list of options for uniquely Identifting a Client" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 394 ;
+       fhir:index 395 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6463,7 +6496,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the PCN namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 395 ;
+       fhir:index 396 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6477,7 +6510,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization profile for pharmacies and dispensing facilities" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 396 ;
+       fhir:index 397 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6491,7 +6524,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization types for Pharmacies" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 397 ;
+       fhir:index 398 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6505,7 +6538,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Conformance and Sandbox Service role in primary health care facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 398 ;
+       fhir:index 399 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6519,7 +6552,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Registry Service role in primary health care facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 399 ;
+       fhir:index 400 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6533,7 +6566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Requestor role in primary health care facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 400 ;
+       fhir:index 401 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6547,7 +6580,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Responder role in primary health care facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 401 ;
+       fhir:index 402 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6561,7 +6594,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Terminology Service role in primary health care facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 402 ;
+       fhir:index 403 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6575,7 +6608,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for a Nigerian Practitioner" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 403 ;
+       fhir:index 404 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6589,7 +6622,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 404 ;
+       fhir:index 405 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6603,7 +6636,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This CodeSystem defines placeholder codes to manage Pharmcists' identifiers in Nigeria validated at  https://pcn.gov.ng/practice-number." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 405 ;
+       fhir:index 406 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6617,7 +6650,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defines the role(s) of a Nigerian healthcare practitioner context.\nLinks a Practitioner to an Organization, specifies their role." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 406 ;
+       fhir:index 407 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6631,7 +6664,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Nigeria Core Observation representing the estimated date of delivery." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 407 ;
+       fhir:index 408 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6645,7 +6678,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 408 ;
+       fhir:index 409 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6659,7 +6692,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 409 ;
+       fhir:index 410 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6673,7 +6706,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Procedure profile for the Nigeria Core." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 410 ;
+       fhir:index 411 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6687,7 +6720,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet including local provenance activity codes (anonymize, de-identify, mask, label, pseudonymize, create, delete, append, nullify, legally authenticated)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 411 ;
+       fhir:index 412 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6701,7 +6734,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Local CodeSystem defining provenance activity codes for data lifecycle operations such as anonymization, de-identification, labeling, creation, and deletion." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 412 ;
+       fhir:index 413 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6715,7 +6748,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization profile for healthcare providers (hospitals, clinics)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 413 ;
+       fhir:index 414 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6729,7 +6762,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization types for healthcare providers" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 414 ;
+       fhir:index 415 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6743,7 +6776,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The base Questionnaire profile for computable program forms in the\nNigeria Core FHIR Implementation Guide. program-specific Questionnaire profiles, including Immunization, HIV,\nTB, Malaria, MNCH, Nutrition and eCHIS Questionnaires, SHALL derive from\nthis profile." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 415 ;
+       fhir:index 416 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6757,7 +6790,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 416 ;
+       fhir:index 417 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6771,7 +6804,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service that maintains or provides authoritative registry information." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 417 ;
+       fhir:index 418 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6785,7 +6818,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sibling or parent of the sick person." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 418 ;
+       fhir:index 419 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6799,7 +6832,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This CodeSystem defines list of persons related to a patient, but who is not a direct target of care" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 419 ;
+       fhir:index 420 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6813,7 +6846,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "list of persons related to a patient, but who is not a direct target of care." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 420 ;
+       fhir:index 421 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6827,7 +6860,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A client application or service that initiates a Nigeria Core FHIR exchange." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 421 ;
+       fhir:index 422 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6841,7 +6874,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A server, repository, or service that responds to Nigeria Core FHIR requests." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 422 ;
+       fhir:index 423 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6855,7 +6888,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRequest profile for the Nigeria Core (referrals and orders)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 423 ;
+       fhir:index 424 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6869,7 +6902,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of session for immunization. Could be in a fixed facility, outreach or mobile." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 424 ;
+       fhir:index 425 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6883,7 +6916,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This CodeSystem defines the health of the client's sibling" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 425 ;
+       fhir:index 426 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6897,7 +6930,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 426 ;
+       fhir:index 427 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6911,7 +6944,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the Hospital Record Number namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 427 ;
+       fhir:index 428 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6925,7 +6958,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 428 ;
+       fhir:index 429 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6939,7 +6972,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The state where a person or a facility is." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 429 ;
+       fhir:index 430 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6953,7 +6986,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing the patient's target population category" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 430 ;
+       fhir:index 431 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6967,7 +7000,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Task profile for the Nigeria Core (referrals, claims, pharmacy, devices)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 431 ;
+       fhir:index 432 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6981,7 +7014,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service that provides governed terminology and terminology operations." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 432 ;
+       fhir:index 433 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -6995,7 +7028,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Conformance and Sandbox Service role in tertiary referral facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 433 ;
+       fhir:index 434 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7009,7 +7042,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Registry Service role in tertiary referral facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 434 ;
+       fhir:index 435 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7023,7 +7056,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Requestor role in tertiary referral facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 435 ;
+       fhir:index 436 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7037,7 +7070,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Responder role in tertiary referral facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 436 ;
+       fhir:index 437 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7051,7 +7084,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimum computable FHIR requirements for the Nigeria Core Terminology Service role in tertiary referral facilities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 437 ;
+       fhir:index 438 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7065,7 +7098,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Nigeria Core Observation representing the patient's tobacco-smoking status." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 438 ;
+       fhir:index 439 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7079,7 +7112,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 439 ;
+       fhir:index 440 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7093,7 +7126,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 440 ;
+       fhir:index 441 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7107,7 +7140,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of standardized codes used to represent clinical conditions, diagnoses, or circumstances that serve as contraindications to the administration of one or more vaccines." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 441 ;
+       fhir:index 442 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7121,7 +7154,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "All ICD11 vaccine codes (DE1–DE29)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 442 ;
+       fhir:index 443 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7135,7 +7168,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "All local vaccine codes (DE1–DE29)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 443 ;
+       fhir:index 444 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7149,7 +7182,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "All SNOMED vaccine codes (DE1–DE29)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 444 ;
+       fhir:index 445 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7163,7 +7196,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Candidate NamingSystem definition for the Medical Records Number namespace." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 445 ;
+       fhir:index 446 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7177,7 +7210,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The administrative Ward (within an LGA) where a person or a facility is." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 446 ;
+       fhir:index 447 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7191,7 +7224,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes/No Codes Represented as Boolean." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 447 ;
+       fhir:index 448 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7205,7 +7238,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccine Route" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 448 ;
+       fhir:index 449 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7219,7 +7252,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccine Site" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 449 ;
+       fhir:index 450 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7233,7 +7266,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A simple NHMIS aggregate measure defining the total number of outpatient\nattendances recorded by a reporting health facility during a monthly\nreporting period." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 450 ;
+       fhir:index 451 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7250,7 +7283,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure-report>
        ]
      ], [
-       fhir:index 451 ;
+       fhir:index 452 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7264,7 +7297,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clinical signs, symptoms, and manifestations associated with adverse events following immunization." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 452 ;
+       fhir:index 453 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7278,7 +7311,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatments and interventions used in managing adverse events following immunization." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 453 ;
+       fhir:index 454 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7292,7 +7325,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Treatments and interventions used in managing adverse events following immunization." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 454 ;
+       fhir:index 455 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7306,7 +7339,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categories used to classify alerts represented using the Nigeria Alert Flag profile." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 455 ;
+       fhir:index 456 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7320,7 +7353,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categories for alerts represented using the Nigeria Alert Flag profile." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 456 ;
+       fhir:index 457 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7334,7 +7367,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Common alert types used by Nigerian health information systems and represented using the Nigeria Alert Flag profile." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 457 ;
+       fhir:index 458 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7348,7 +7381,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Common coded alert messages for the Nigeria Alert Flag profile." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 458 ;
+       fhir:index 459 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7365,7 +7398,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-service-request>
        ]
      ], [
-       fhir:index 459 ;
+       fhir:index 460 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7379,7 +7412,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A simple antenatal care questionnaire for recording registration,\npregnancy history, current pregnancy information, vital signs, and\nbasic clinical assessment during an ANC visit." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 460 ;
+       fhir:index 461 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7393,7 +7426,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Local codes used to identify Nigeria Core observations that do not\nhave an appropriate code in an established terminology." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 461 ;
+       fhir:index 462 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7407,7 +7440,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Methods used to contact or trace immunization defaulters." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 462 ;
+       fhir:index 463 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7421,7 +7454,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Methods used to contact or trace immunization defaulters." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 463 ;
+       fhir:index 464 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7435,7 +7468,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Methods used to contact or trace immunization defaulters." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 464 ;
+       fhir:index 465 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7449,7 +7482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Methods used to contact or trace immunization defaulters." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 465 ;
+       fhir:index 466 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7463,7 +7496,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Methods used to contact or trace immunization defaulters." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 466 ;
+       fhir:index 467 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7477,7 +7510,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Outcomes of immunization defaulter follow-up activities." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 467 ;
+       fhir:index 468 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7491,7 +7524,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statuses used to manage clients identified as immunization defaulters." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 468 ;
+       fhir:index 469 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7508,7 +7541,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-diagnostic-report>
        ]
      ], [
-       fhir:index 469 ;
+       fhir:index 470 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7522,7 +7555,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for indexing and exchanging\nclinical, administrative, and public-health documents \nassociated with a patient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 470 ;
+       fhir:index 471 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7539,7 +7572,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-insurer-organization>
        ]
      ], [
-       fhir:index 471 ;
+       fhir:index 472 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7556,7 +7589,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provider-organization>
        ]
      ], [
-       fhir:index 472 ;
+       fhir:index 473 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7570,7 +7603,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Directional mapping from explicit Nigeria HIV opportunistic-infection diagnosis concepts to ICD-11 MMS 2026-01." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 473 ;
+       fhir:index 474 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7584,7 +7617,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Local HIV programme diagnosis concepts used where a specific opportunistic-infection diagnosis is required." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 474 ;
+       fhir:index 475 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7598,7 +7631,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 475 ;
+       fhir:index 476 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7612,7 +7645,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 476 ;
+       fhir:index 477 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7626,7 +7659,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 477 ;
+       fhir:index 478 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7640,7 +7673,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 478 ;
+       fhir:index 479 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7654,7 +7687,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 479 ;
+       fhir:index 480 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7668,7 +7701,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 480 ;
+       fhir:index 481 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7682,7 +7715,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 481 ;
+       fhir:index 482 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7696,7 +7729,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 482 ;
+       fhir:index 483 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7710,7 +7743,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 483 ;
+       fhir:index 484 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7727,7 +7760,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-flag>
        ]
      ], [
-       fhir:index 484 ;
+       fhir:index 485 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7744,7 +7777,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-documents>
        ]
      ], [
-       fhir:index 485 ;
+       fhir:index 486 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7761,7 +7794,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provenance>
        ]
      ], [
-       fhir:index 486 ;
+       fhir:index 487 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7775,7 +7808,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 487 ;
+       fhir:index 488 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7792,7 +7825,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request>
        ]
      ], [
-       fhir:index 488 ;
+       fhir:index 489 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7806,7 +7839,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for recording a medication that a patient is taking, has taken, or is expected to take, based\non information reported by the patient, caregiver, practitioner, or another clinical record." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 489 ;
+       fhir:index 490 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7823,7 +7856,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-statement>
        ]
      ], [
-       fhir:index 490 ;
+       fhir:index 491 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7837,7 +7870,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reasons why a client did not receive a scheduled vaccine dose." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 491 ;
+       fhir:index 492 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7854,7 +7887,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-invoice>
        ]
      ], [
-       fhir:index 492 ;
+       fhir:index 493 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7871,7 +7904,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task>
        ]
      ], [
-       fhir:index 493 ;
+       fhir:index 494 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7885,7 +7918,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 494 ;
+       fhir:index 495 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7899,7 +7932,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diseases targeted by vaccines included in the Nigeria immunization program." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 495 ;
+       fhir:index 496 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7916,7 +7949,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-specimen>
        ]
      ], [
-       fhir:index 496 ;
+       fhir:index 497 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7930,7 +7963,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nutritional Screening Result" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 497 ;
+       fhir:index 498 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7944,7 +7977,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing the patient's nutritional screening result." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 498 ;
+       fhir:index 499 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7958,7 +7991,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nutritional Status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 499 ;
+       fhir:index 500 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7972,7 +8005,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nutritional Suppliments Provided" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 500 ;
+       fhir:index 501 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -7986,7 +8019,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code used for representing the patient's nutritional suppliments provided." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 501 ;
+       fhir:index 502 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8003,7 +8036,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient>
        ]
      ], [
-       fhir:index 502 ;
+       fhir:index 503 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8017,7 +8050,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Functional Status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 503 ;
+       fhir:index 504 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8031,7 +8064,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for indicating the period when last the individual was exposed to HIV." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 504 ;
+       fhir:index 505 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8045,7 +8078,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing place of delivery." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 505 ;
+       fhir:index 506 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8059,7 +8092,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Expected Delivery Date Method" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 506 ;
+       fhir:index 507 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8076,7 +8109,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-edd>
        ]
      ], [
-       fhir:index 507 ;
+       fhir:index 508 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8090,7 +8123,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IPS Pregnancies Outcome" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 508 ;
+       fhir:index 509 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8107,7 +8140,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-outcome>
        ]
      ], [
-       fhir:index 509 ;
+       fhir:index 510 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8124,7 +8157,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-status>
        ]
      ], [
-       fhir:index 510 ;
+       fhir:index 511 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8138,7 +8171,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing the symptoms currently being experienced by the patient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 511 ;
+       fhir:index 512 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8155,7 +8188,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient>
        ]
      ], [
-       fhir:index 512 ;
+       fhir:index 513 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8172,7 +8205,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner>
        ]
      ], [
-       fhir:index 513 ;
+       fhir:index 514 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8189,7 +8222,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person>
        ]
      ], [
-       fhir:index 514 ;
+       fhir:index 515 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8206,7 +8239,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-radiology>
        ]
      ], [
-       fhir:index 515 ;
+       fhir:index 516 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8220,7 +8253,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing the reasons for poor ARV adherence." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 516 ;
+       fhir:index 517 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8234,7 +8267,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing the reason for referral." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 517 ;
+       fhir:index 518 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8248,7 +8281,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set Definition: LOINC {STATUS in {ACTIVE}, CLASSTYPE in {Laboratory class (1)}, CLASS exclude {LP62148-9 (NR STATS), LP175679-2 (H&P.HX.LAB), LP7785-1 (CHALSKIN), LP94892-4 (LABORDERS)}}" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 518 ;
+       fhir:index 519 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8262,7 +8295,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set including SNOMED CT, LOINC and DICOM concepts for textual reports, measurements, and other radiology components" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 519 ;
+       fhir:index 520 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8276,7 +8309,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set Definition: \nLOINC {STATUS in {ACTIVE}, CLASS in LP29684-5 (\\\"RAD\\\")}" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 520 ;
+       fhir:index 521 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8290,7 +8323,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IPS Specimen collection method codes value set.  This value set includes codes from SNOMED CT®: all descendants or self of 129316008 \\|Aspiration - action (qualifier value)\\|; all descendants or self of 129314006 \\|Biopsy - action (qualifier value)\\|; all descendants or self of 129300006 \\|Puncture - action (qualifier value)\\|; all descendants or self of 129304002 \\|Excision - action (qualifier value)\\|; all descendants or self of 129323009 \\|Scraping - action (qualifier value)\\|; all descendants or self of 73416001 \\|Urine specimen collection, clean catch (procedure)\\|; all descendants or self of 225113003 \\|Timed urine collection (procedure)\\|; all descendants or self of 70777001 \\|Urine specimen collection, catheterized (procedure)\\|; all descendants or self of 386089008 \\|Collection of coughed sputum (procedure)\\|; all descendants or self of 278450005 \\|Finger-prick sampling (procedure)\\|" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 521 ;
+       fhir:index 522 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8304,7 +8337,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specimen Type codes value set." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 522 ;
+       fhir:index 523 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8318,7 +8351,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IPS Observation status codes allowable for results.  This value set includes all observation status codes except \\\"entered-in-error\\\" from http://hl7.org/fhir/observation-status." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 523 ;
+       fhir:index 524 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8335,7 +8368,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-provider-organization>
        ]
      ], [
-       fhir:index 524 ;
+       fhir:index 525 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8349,7 +8382,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Submits a Nigeria Core MeasureReport for validation and processing by the\nreceiving reporting service." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 525 ;
+       fhir:index 526 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8363,7 +8396,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used for representing the patient's target population category" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 526 ;
+       fhir:index 527 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8377,7 +8410,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing whether the patient is infected with active TB." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 527 ;
+       fhir:index 528 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8391,7 +8424,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the alternate TPT prophylaxis types to INH." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 528 ;
+       fhir:index 529 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8405,7 +8438,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing a TB diagnostic test result." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 529 ;
+       fhir:index 530 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8419,7 +8452,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation codes used for indicating whether the patient is eligible for TPT." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 530 ;
+       fhir:index 531 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8433,7 +8466,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes indicating the month ordinals." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 531 ;
+       fhir:index 532 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8447,7 +8480,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes used for indicating the reason why the patient is not eligible for TPT." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 532 ;
+       fhir:index 533 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8461,7 +8494,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the types of diagnostic tests that can be peformed on the specimen taken during TB screening." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 533 ;
+       fhir:index 534 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8475,7 +8508,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the types of diagnostic tests that can be peformed on the specimen taken during TB screening." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 534 ;
+       fhir:index 535 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8489,7 +8522,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the result of the TB Screening." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 535 ;
+       fhir:index 536 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8503,7 +8536,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the specimen types that can be taken during TB Screening for the laboratory examination." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 536 ;
+       fhir:index 537 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8517,7 +8550,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the Type of TB Screening." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 537 ;
+       fhir:index 538 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8531,7 +8564,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code indicating that the follow-up is for an alternate TPT prophylaxis." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 538 ;
+       fhir:index 539 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8545,7 +8578,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the different codes used during a request for TPT medication." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 539 ;
+       fhir:index 540 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8559,7 +8592,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the TPT prophylaxis type." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 540 ;
+       fhir:index 541 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8573,7 +8606,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the TPT prophylaxis type." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 541 ;
+       fhir:index 542 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8587,7 +8620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes indicating the status of the treatment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 542 ;
+       fhir:index 543 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8601,7 +8634,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the status of TB treatment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 543 ;
+       fhir:index 544 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8615,7 +8648,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes describing the status of TB treatment." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 544 ;
+       fhir:index 545 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8632,7 +8665,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-tobacco-use>
        ]
      ], [
-       fhir:index 545 ;
+       fhir:index 546 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8649,7 +8682,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner>
        ]
      ], [
-       fhir:index 546 ;
+       fhir:index 547 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8666,7 +8699,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner>
        ]
      ], [
-       fhir:index 547 ;
+       fhir:index 548 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8683,7 +8716,7 @@
          fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-insurer-organization>
        ]
      ], [
-       fhir:index 548 ;
+       fhir:index 549 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8697,7 +8730,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Verifies the authenticity and integrity of a certificate represented by\nthe DocumentReference on which the operation is invoked." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 549 ;
+       fhir:index 550 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -8711,7 +8744,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code used for representing the patient's WHO stage." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 550 ;
+       fhir:index 551 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -9029,20 +9062,20 @@
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "conformance.html" ]
+           fhir:Extension.valueUrl [ fhir:value "verifiable-digital-health-certificate.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "conformance.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Conformance" ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "verifiable-digital-health-certificate.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Verifiable Digital Health Certificate" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 30 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "verifiable-digital-health-certificate.html" ]
+           fhir:Extension.valueUrl [ fhir:value "functional-non-functional.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "verifiable-digital-health-certificate.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Verifiable Digital Health Certificate" ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional-non-functional.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional and Non-Functional Requirements" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ] ;

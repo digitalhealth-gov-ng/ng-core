@@ -48,7 +48,7 @@ Nigeria Core is designed to align with international FHIR implementation guides 
 | OpenHIE Architecture | Nigeria Core aligns with building-block concepts such as client registry, facility registry, health worker registry, terminology service, shared health record, and interoperability layer. |
 | US Core | Nigeria Core borrows useful implementation patterns from US Core but adapts them for Nigeria’s health sector, regulatory context, terminology, identifiers, registries, and programme architecture. |
 
-### Comparison With International IGs
+### Comparison With International IGs, Architectures, and Programs (L3)
 
 The table below gives a high-level summary of how Nigeria Core is expected to relate to selected international IGs. Detailed computable comparison tables may be added in future versions as Nigeria Core profiles mature.
 
@@ -62,24 +62,25 @@ The table below gives a high-level summary of how Nigeria Core is expected to re
 
 — **No direct equivalent**: No direct equivalent profile or use case exists.
 
-| | | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Patient demographics | ➕ | — | — | — | — |
-| Allergies and intolerances | ➕ | — | — | — | — |
-| Conditions and diagnoses | ➕ | — | — | — | — |
-| Medications | ➕ | — | — | — | — |
-| Immunization | ➕ | — | — | ✔ | — |
-| Observations and vital signs | ➕ | — | — | — | — |
-| Diagnostic reports | ➕ | — | — | — | — |
-| Clinical notes and documents | ➕ | — | — | — | — |
-| Facility registry | — | — | — | — | ✔ |
-| Health workforce registry | — | — | — | — | ✔ |
-| Shared Health Record | ✔ | — | — | — | ✔ |
-| Patient-facing access | ➕ | — | — | — | ➕ |
-| Programme reporting | — | — | — | — | — |
-| Conformance testing | ➕ | — | — | — | — |
+| | | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Patient demographics | ➕ | — | — | — | — | — | — |
+| Allergies and intolerances | ➕ | — | — | — | — | — | — |
+| Conditions and diagnoses | ➕ | — | — | — | — | — | — |
+| Medications | ➕ | — | — | — | — | — |   |
+| Immunization Program | ➕ | — | — | ✔ | ➕ | — | — |
+| HIV Program | ➕ | — | — | — | ✔ | — | — |
+| Observations and vital signs | ➕ | — | — | — | — | — | — |
+| Diagnostic reports | ➕ | — | — | — | — | — | — |
+| Clinical notes and documents | ➕ | — | — | — | — | — | — |
+| Facility registry | — | — | — | — | — | — | ➕ |
+| Health workforce registry | — | — | — | — | — | — | ➕ |
+| Shared Health Record | ✔ | — | — | — | — | — | ➕ |
+| Patient-facing access | ➕ | — | — | — | — | — | ➕ |
+| Programme reporting | — | — | — | — | — | — | — |
+| Conformance testing | ➕ | — | — | — | — | — | — |
 
-### Relationship With WHO SMART Guidelines and DAKs
+### Relationship With WHO SMART DAKs
 
 Nigeria Core supports the progression from WHO SMART Guidelines and Digital Adaptation Kits to implementable FHIR artefacts. The **Digital Adaptation Kits (L2)** dropdown leads to all domesticated national DAKs.
 
