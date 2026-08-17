@@ -17,7 +17,7 @@ Common alert types used by Nigerian health information systems and represented u
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgAlertCodeVS](ValueSet-ng-alert-code-vs.md)
+* [Nigeria Alert Code Value Set](ValueSet-ng-alert-code-vs.md)
 
 
 

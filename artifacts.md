@@ -99,11 +99,15 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [2-NGReferral MNCH Transaction Bundle](StructureDefinition-ng-mnch-referral-bundle.md) | Transaction bundle for MNCH referrals between facilities and/or payers. MUST contain a Patient and a ServiceRequest (the referral order). Optional entries (Communication, Task, etc.) may support initiation, response, and tracking. |
-| [4-NG AEFI Report Bundle](StructureDefinition-ng-aefi-report-bundle.md) | Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data. |
-| [4-NG Immunization SMART Scheduler Bundle](StructureDefinition-ng-imm-smart-scheduler-bundle.md) | A minimal transaction bundle to schedule an immunization visit with optional recommendations. |
-| [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md) | This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide. |
+| [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md) | This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide. |
+| [Bundle NG AEFI Report](StructureDefinition-ng-aefi-report-bundle.md) | Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data. |
+| [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md) | International Patient Summary (IPS) Composition adapted for Nigeria Core. Conforms to IPS v2 Composition and narrows key references to local NG profiles where available. Includes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care. |
+| [Bundle NG Immunization SMART Scheduler](StructureDefinition-ng-imm-smart-scheduler-bundle.md) | A minimal transaction bundle to schedule an immunization visit with optional recommendations. |
+| [Bundle NG Referral MNCH](StructureDefinition-ng-mnch-referral-bundle.md) | Transaction bundle for MNCH referrals between facilities and/or payers. MUST contain a Patient and a ServiceRequest (the referral order). Optional entries (Communication, Task, etc.) may support initiation, response, and tracking. |
 | [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md) | This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary. |
+| [NG Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md) | A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day. |
+| [NG Alert Flag](StructureDefinition-ng-flag.md) | Flag profile for prominent clinical, public-health, safety, or administrative alerts that require display, review, acknowledgement, or action. |
+| [NG Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md) | Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction. |
 | [NG CarePlan](StructureDefinition-ng-care-plan.md) | A simple CarePlan profile. |
 | [NG Claim](StructureDefinition-ng-claim.md) | A profile representing submitted claims from providers to payers. |
 | [NG Claim Coverage](StructureDefinition-ng-coverage.md) | A profile capturing a patient's insurance coverage details. |
@@ -111,6 +115,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Claim Coverage Eligibility Response](StructureDefinition-ng-coverage-eligibility-response.md) | Profile defining the response from an HMO to an eligibilty request |
 | [NG ClaimResponse](StructureDefinition-ng-claim-response.md) | A profile representing responses from insurers regarding submitted claims. |
 | [NG Communication](StructureDefinition-ng-communication.md) | Communication artifact for clinical messaging. Optimized to minimize QA noise while keeping key elements Must Support. |
+| [NG Composite Observation](StructureDefinition-ng-observation.md) | A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components. |
 | [NG Condition](StructureDefinition-ng-condition.md) | Condition profile. |
 | [NG Consent](StructureDefinition-ng-consent.md) | Minimal consent profile for Nigerian implementations (e.g., NDPR / NIS ISO/TR 17975 use). Keeps constraints light to reduce QA noise. |
 | [NG Device](StructureDefinition-ng-device.md) | Device profile for Nigeria Core (medical devices communications). |
@@ -120,12 +125,12 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Goal](StructureDefinition-ng-goal.md) | Goal profile for the Nigeria Core. |
 | [NG HIV Questionnaire](StructureDefinition-ng-hiv-questionnaire.md) | A Nigeria Core profile of the FHIR Questionnaire resource used to represent structured HIV program forms, assessments, counselling forms, and clinical data collection instruments. |
 | [NG HealthcareService](StructureDefinition-ng-healthcare-service.md) | HealthcareService profile for the Nigeria Core (service directory/referrals). |
-| [NG IPS Composition](StructureDefinition-ng-ips-composition.md) | International Patient Summary (IPS) Composition adapted for Nigeria Core. Conforms to IPS v2 Composition and narrows key references to local NG profiles where available. Includes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care. |
 | [NG Immunization](StructureDefinition-ng-immunization.md) | Nigerian Profile for Immunization resource. |
 | [NG Immunization Questionnaire](StructureDefinition-ng-immunization-questionnaire.md) | Base Questionnaire profile for immunization program forms in the Nigeria Core FHIR Implementation Guide. |
 | [NG ImmunizationRecommendation](StructureDefinition-ng-immunization-recommendation.md) | Simple profile to convey due/overdue vaccine recommendations for a Nigerian client. |
 | [NG Insurer Organization](StructureDefinition-ng-insurer-organization.md) | Organization profile for insurance payers/HMOs |
 | [NG Invoice](StructureDefinition-ng-invoice.md) | Invoice profile for pharmacy dispensing and payment in Nigeria Core. |
+| [NG Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md) | A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations. |
 | [NG Lightweight Provenance](StructureDefinition-ng-provenance.md) | Minimal provenance profile for Nigeria Core. Captures who created/updated a resource, when, and (optionally) which activity was performed. |
 | [NG Location](StructureDefinition-ng-location.md) | A profile for immunization service locations, including health facilities, outreach sites, and mobile vaccination units. |
 | [NG Measure](StructureDefinition-ng-measure.md) | Minimal program-neutral Measure profile for defining Nigerian health indicators, quality measures and aggregate service-delivery measures using FHIR R4B 4.3.0. |
@@ -133,31 +138,27 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Medication](StructureDefinition-ng-medication.md) | A Medication profile with some core elements for demonstration purposes. |
 | [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md) | MedicationDispense profile for ePharmacy. |
 | [NG MedicationRequest](StructureDefinition-ng-medication-request.md) | A MedicationRequest profile with some of core elements. |
+| [NG NamingSystem](StructureDefinition-ng-naming-system.md) | Nigeria Core profile for publishing and governing namespaces used in FHIR Identifier.system. |
 | [NG Organization](StructureDefinition-ng-organization.md) | An organization profile representing healthcare facilities responsible for health services or other types of organizations. |
 | [NG Patient](StructureDefinition-ng-patient.md) | Nigeria Core Patient Profile |
 | [NG Pharmacy Organization](StructureDefinition-ng-pharmacy-organization.md) | Organization profile for pharmacies and dispensing facilities |
 | [NG Practitioner](StructureDefinition-ng-practitioner.md) | Profile for a Nigerian Practitioner |
 | [NG PractitionerRole](StructureDefinition-ng-practitioner-role.md) | Defines the role(s) of a Nigerian healthcare practitioner context. Links a Practitioner to an Organization, specifies their role. |
+| [NG Pregnancy EDD Observation](StructureDefinition-ng-observation-pregnancy-edd.md) | A Nigeria Core Observation representing the estimated date of delivery. |
+| [NG Pregnancy Outcome Observation](StructureDefinition-ng-observation-pregnancy-outcome.md) | A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy. |
+| [NG Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md) | A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status. |
 | [NG Procedure](StructureDefinition-ng-procedure.md) | Procedure profile for the Nigeria Core. |
 | [NG Provider Organization](StructureDefinition-ng-provider-organization.md) | Organization profile for healthcare providers (hospitals, clinics) |
 | [NG Questionnaire](StructureDefinition-ng-questionnaire.md) | The base Questionnaire profile for computable program forms in the Nigeria Core FHIR Implementation Guide. program-specific Questionnaire profiles, including Immunization, HIV, TB, Malaria, MNCH, Nutrition and eCHIS Questionnaires, SHALL derive from this profile. |
+| [NG Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md) | A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations. |
 | [NG RelatedPerson](StructureDefinition-ng-related-person.md) | Sibling or parent of the sick person. |
 | [NG ServiceRequest](StructureDefinition-ng-service-request.md) | ServiceRequest profile for the Nigeria Core (referrals and orders). |
+| [NG Specimen](StructureDefinition-ng-specimen.md) | This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary. |
 | [NG Task](StructureDefinition-ng-task.md) | Task profile for the Nigeria Core (referrals, claims, pharmacy, devices). |
+| [NG Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md) | A Nigeria Core Observation representing the patient's tobacco-smoking status. |
 | [Ng Appointment](StructureDefinition-ng-appointment.md) | Appointment profile for Nigeria Core (e.g., immunization, ePharmacy counseling, referrals). |
-| [Nigeria Alert Flag](StructureDefinition-ng-flag.md) | Flag profile for prominent clinical, public-health, safety, or administrative alerts that require display, review, acknowledgement, or action. |
-| [Nigeria Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md) | Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction. |
-| [Nigeria Core Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md) | A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day. |
-| [Nigeria Core Composite Observation](StructureDefinition-ng-observation.md) | A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components. |
-| [Nigeria Core Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md) | A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations. |
-| [Nigeria Core Pregnancy Expected Delivery Date Observation](StructureDefinition-ng-observation-pregnancy-edd.md) | A Nigeria Core Observation representing the estimated date of delivery. |
-| [Nigeria Core Pregnancy Outcome Observation](StructureDefinition-ng-observation-pregnancy-outcome.md) | A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy. |
-| [Nigeria Core Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md) | A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status. |
-| [Nigeria Core Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md) | A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations. |
-| [Nigeria Core Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md) | A Nigeria Core Observation representing the patient's tobacco-smoking status. |
 | [Nigeria Document Reference](StructureDefinition-ng-documents.md) | Profile for indexing and exchanging clinical, administrative, and public-health documents associated with a patient. |
 | [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md) | Profile for recording a medication that a patient is taking, has taken, or is expected to take, based on information reported by the patient, caregiver, practitioner, or another clinical record. |
-| [Specimen profile](StructureDefinition-ng-specimen.md) | This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary. |
 
 ### Structures: Data Type Profiles 
 
@@ -362,10 +363,13 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Nigeria Defaulter Follow-up Methods](ValueSet-ng-stock-administration-up-method.md) | Methods used to contact or trace immunization defaulters. |
 | [Nigeria Defaulter Follow-up Outcomes](ValueSet-ng-defaulter-follow-up-outcome.md) | Outcomes of immunization defaulter follow-up activities. |
 | [Nigeria Defaulter Tracking Status](ValueSet-ng-defaulter-tracking-status.md) | Statuses used to manage clients identified as immunization defaulters. |
+| [Nigeria HIV Diagnosis Concepts](ValueSet-ng-hiv-diagnosis-concepts-vs.md) | Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping. |
+| [Nigeria HIV ICD-11 Diagnosis Concepts](ValueSet-ng-hiv-diagnosis-icd11-concepts-vs.md) | ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap. |
 | [Nigeria HIV LOINC Concepts](ValueSet-ng-hiv-loinc-concepts.md) | Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied. |
 | [Nigeria HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md) | Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems. |
 | [Nigeria HIV SNOMED CT Concepts](ValueSet-ng-hiv-snomed-ct-concepts.md) | Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied. |
 | [Nigeria Missed Vaccination Reasons](ValueSet-ng-missed-vaccination-reason.md) | Reasons why a client did not receive a scheduled vaccine dose. |
+| [Nigeria Relevant WHO HIV Concepts](ValueSet-ng-who-hiv-concepts-vs.md) | Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem. |
 | [Nigeria Vaccine Preventable Diseases](ValueSet-ng-vaccine-preventable-disease.md) | Diseases targeted by vaccines included in the Nigeria immunization program. |
 | [Nutritional Screening Result](ValueSet-ng-nutritional-screening-result-vs.md) | Nutritional Screening Result |
 | [Nutritional Status](ValueSet-ng-nutritional-status-vs.md) | Nutritional Status |
@@ -506,6 +510,8 @@ These define new code systems used by systems conforming to this implementation 
 | [Nigeria Alert Category Code System](CodeSystem-ng-alert-category-cs.md) | Categories used to classify alerts represented using the Nigeria Alert Flag profile. |
 | [Nigeria Alert Code System](CodeSystem-ng-alert-code-cs.md) | Common alert types used by Nigerian health information systems and represented using the Nigeria Alert Flag profile. |
 | [Nigeria Core Observation Codes](CodeSystem-ng-observation-code.md) | Local codes used to identify Nigeria Core observations that do not have an appropriate code in an established terminology. |
+| [Nigeria HIV Diagnosis Codes](CodeSystem-ng-hiv-diagnosis-cs.md) | Local HIV programme diagnosis concepts used where a specific opportunistic-infection diagnosis is required. |
+| [Nigeria Local WHO HIV Concepts](CodeSystem-ng-who-hiv-concepts-cs.md) | Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html |
 | [Nutritional Screening Result Codes](CodeSystem-ng-nutritional-screening-result-cs.md) | Codes used for representing the patient's nutritional screening result. |
 | [Nutritional Suppliments Provided Codes](CodeSystem-ng-nutritional-suppliments-provided-cs.md) | Code used for representing the patient's nutritional suppliments provided. |
 | [TB Eligility Status for TPT Codes](CodeSystem-ng-tb-tpt-eligibility-status-cs.md) | Observation codes used for indicating whether the patient is eligible for TPT. |
@@ -517,6 +523,24 @@ These define new code systems used by systems conforming to this implementation 
 | [WHO Stage Codes](CodeSystem-ng-hiv-who-stage-cs.md) | Code used for representing the patient's WHO stage. |
 | [Yes/No Codes](CodeSystem-ng-yes-no-cs.md) | Yes/No Codes Represented as Boolean. |
 
+### Terminology: Naming Systems 
+
+These define identifier and/or code system identities used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [NG Birth Certificate NamingSystem](NamingSystem-ng-bc-naming-system.md) | Candidate NamingSystem definition for the National Birth Certificate namespace. |
+| [NG Medical and Dental Council of Nigeria NamingSystem](NamingSystem-ng-mdcn-naming-system.md) | Candidate NamingSystem definition for the MDCN namespace. |
+| [NG Mobile Number NamingSystem](NamingSystem-ng-mobile-naming-system.md) | Candidate NamingSystem definition for the Medical Records Number namespace. |
+| [NG National Health Insurance Number NamingSystem](NamingSystem-ng-ins-naming-system.md) | Candidate NamingSystem definition for the National Health Insurance Authority (NHIA) namespace. |
+| [NG National Identity Number NamingSystem](NamingSystem-ng-nin-naming-system.md) | Candidate NamingSystem definition for the Nigerian National Identity Number (NIN) namespace. |
+| [NG Nigeria Health Facility Registry NamingSystem](NamingSystem-ng-hfr-naming-system.md) | Candidate NamingSystem definition for the HFR namespace. |
+| [NG Nigeria Pseudonym NamingSystem](NamingSystem-ng-psedo-naming-system.md) | Candidate NamingSystem definition for the pseudo namespace. |
+| [NG Nursing and Midewifery Council of Nigeria NamingSystem](NamingSystem-ng-nmcn-naming-system.md) | Candidate NamingSystem definition for the NMCN namespace. |
+| [NG Pharmacy Council of Nigeria NamingSystem](NamingSystem-ng-pcn-naming-system.md) | Candidate NamingSystem definition for the PCN namespace. |
+| [NG State Medical Records Number NamingSystem](NamingSystem-ng-wakanda-naming-system.md) | Candidate NamingSystem definition for the Hospital Record Number namespace. |
+| [NG Vendor Medical Records Number NamingSystem](NamingSystem-ng-consort-naming-system.md) | Candidate NamingSystem definition for the Medical Records Number namespace. |
+
 ### Terminology: Concept Maps 
 
 These define transformations to convert between codes by systems conforming with this implementation guide.
@@ -525,10 +549,11 @@ These define transformations to convert between codes by systems conforming with
 | :--- | :--- |
 | [NG Local Vaccine Codes → ICD11](ConceptMap-NgVaccineLocal-to-ICD11.md) | Maps local dose-labelled DE codes to ICD-11 vaccine concepts (antigen/product level). |
 | [NG Local Vaccine Codes → SNOMED CT](ConceptMap-NgVaccineLocal-to-SNOMED.md) | Maps local dose-labelled DE codes to SNOMED CT vaccine concepts (antigen/product level). |
+| [Nigeria HIV Diagnoses to ICD-11 MMS](ConceptMap-NgHivDiagnosisToICD11.md) | Directional mapping from explicit Nigeria HIV opportunistic-infection diagnosis concepts to ICD-11 MMS 2026-01. |
 | [Nigeria HIV LOINC to SNOMED CT](ConceptMap-NgHivLOINCToSNOMEDCT.md) | Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap. |
 | [Nigeria HIV Local Concepts to SNOMED CT](ConceptMap-NgHivLocalToSNOMEDCT.md) | Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source. |
+| [Nigeria HIV Local Concepts to WHO SMART HIV](ConceptMap-NgHivLocalToWHOHiv.md) | Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts. |
 | [Nigeria HIV Local Concepts → LOINC](ConceptMap-NgHivLocalToLOINC.md) | Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups. |
-| [WHO HIV to Nigeria HIV Local Concepts](ConceptMap-WHOHivToNgHivLocal.md) | Experimental directional mapping from WHO SMART Guidelines HIV concepts to Nigeria HIV local programme terminology. |
 
 ### Example: Example Instances 
 
@@ -561,6 +586,7 @@ These are example instances that show what data produced and consumed by systems
 | [Example NG DeviceRequest](DeviceRequest-NgDeviceRequest-001.md) | A minimal DeviceRequest for a pulse oximeter for home monitoring. |
 | [Example NG Goal](Goal-NgGoal-001.md) | Patient goal to control systolic BP within 6 weeks. |
 | [Example NG HealthcareService](HealthcareService-NgHealthcareService-001.md) | Minimal healthcare service (ANC clinic). |
+| [Example NG NamingSystem with URI, OID, UUID and legacy identifier](NamingSystem-ng-naming-system-example.md) | Illustrative NamingSystem showing all FHIR R4 uniqueId.type codes. The values are examples only and are not assigned Nigerian identifiers. |
 | [Example NG Procedure](Procedure-NgProcedure-001.md) | Cesarean section for obstructed labor. |
 | [Example Ng ClaimResponse (Approved)](ClaimResponse-NgClaimResponse-001.md) | Full approval of pharmacy claim for NgPatient-002. |
 | [Example Ng Coverage (NHIA Dependent Coverage)](Coverage-NgCoverage-002.md) | Active NHIA dependent coverage for NgPatient-003; subscriber is NgPatient-002. |

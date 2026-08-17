@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ActorDefinition/NgCoreResponder | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgCoreResponder |
+| Draft as of 2026-08-17 | *Computable Name*:NgCoreResponder |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.12.4 | |
 
  

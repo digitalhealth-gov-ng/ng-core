@@ -1,10 +1,10 @@
-# 2-NGReferral MNCH Transaction Bundle - Nigeria Core - FHIR Implementation Guide v0.0.0
+# Bundle NG Referral MNCH - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **2-NGReferral MNCH Transaction Bundle**
+* **Bundle NG Referral MNCH**
 
-## Resource Profile: 2-NGReferral MNCH Transaction Bundle 
+## Resource Profile: Bundle NG Referral MNCH 
 
 | | |
 | :--- | :--- |
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-mnch-referral-bun
   }],
   "version" : "0.0.0",
   "name" : "NgMNCHReferralBundle",
-  "title" : "2-NGReferral MNCH Transaction Bundle",
+  "title" : "Bundle NG Referral MNCH",
   "status" : "active",
   "date" : "2025-11-19",
   "publisher" : "NDHI",

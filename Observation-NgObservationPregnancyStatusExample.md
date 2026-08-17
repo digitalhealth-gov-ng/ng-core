@@ -6,7 +6,7 @@
 
 ## Example Observation: Pregnancy Status Observation Example
 
-Profile: [Nigeria Core Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md)
+Profile: [NG Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md)
 
 **status**: Final
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-immunization-session-type-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgImmunizationSessionTypeCS |
+| Active as of 2026-08-17 | *Computable Name*:NgImmunizationSessionTypeCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.87 | |
 
  
@@ -17,7 +17,7 @@ Type of session for immunization Could be in a fixed facility, outreach or mobil
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgImmunizationSessionTypeVS](ValueSet-ng-immunization-session-type-vs.md)
+* [NG Session Type VS](ValueSet-ng-immunization-session-type-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Type of session for immunization Could be in a fixed facility, outreach or mobil
   "title" : "NG Immunization Session types CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

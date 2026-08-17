@@ -123,6 +123,22 @@ Population-level searches **SHALL** enforce access control, audit logging, purpo
 
 Named operations **SHOULD** document their purpose, actors, inputs, outputs, applicable profiles, terminology, security expectations, and error handling.
 
+### Naming System and Conventions
+
+Nigeria Core uses FHIR `NamingSystem` resources to govern identifier namespaces used across national and local health information systems. Each identifier namespace **SHOULD represent one distinct identifier scheme** and **SHALL use a stable URI** as the preferred namespace for `Identifier.system`. Identifier classification, such as NIN, MRN, professional licence number, or facility identifier, is represented separately using `Identifier.type`. Implementers SHALL NOT use a terminology `CodeSystem` URL as `Identifier.system` unless that URL has explicitly been designated as the identifier namespace.
+
+| | | |
+| :--- | :--- | :--- |
+| **FHIR artifact name** | Use`Ng`prefix and PascalCase for Nigeria Core FSH artefact names. | `NgPatient`,`NgOrganization`,`NgNamingSystem` |
+| **FHIR logical ID** | Use lowercase kebab-case. | `ng-patient`,`ng-naming-system` |
+| **Canonical URL** | Use the Nigeria Core canonical namespace for conformance and terminology artefacts. | `https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient` |
+| **Identifier namespace** | Use a stable URI representing the authority or scheme that assigns the identifier. | `https://fhir-ig.digitalhealth.gov.ng/identifier/nin` |
+| **Identifier type** | Use`Identifier.type`to classify the identifier independently of its namespace. | `NIN`,`MRN`,`Facility ID` |
+| **NamingSystem scope** | One`NamingSystem`SHALL describe one identifier namespace; additional`uniqueId`entries may represent equivalent URI, OID, UUID, or legacy identifiers for that same namespace. | NIN NamingSystem |
+| **Preferred namespace** | A governed identifier NamingSystem SHOULD define one preferred`uniqueId`of type`uri`; this value SHOULD be used in`Identifier.system`. | `uniqueId.type = uri` |
+| **Local identifiers** | Locally assigned identifiers SHALL use a namespace that identifies the assigning authority where uniqueness is not national. | Facility-specific MRN namespace |
+| **Stability** | Published canonical and identifier namespace URIs SHALL remain stable. Changes SHOULD be handled through versioning, aliases, or migration guidance rather than reusing a URI for a different meaning. | — |
+
 ### Terminology Conformance
 
 Nigeria Core uses national, programme, regulator, and international terminology systems, including ICD-11, SNOMED CT, LOINC, ATC, and UCUM.

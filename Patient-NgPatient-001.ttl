@@ -29,7 +29,7 @@
          fhir:Coding.code [ fhir:value "NIN" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/nin" ] ;
      fhir:Identifier.value [ fhir:value "23456789012" ]
   ], [
      fhir:index 1 ;
@@ -40,7 +40,7 @@
          fhir:Coding.code [ fhir:value "MRN" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/wakanda-mrn" ] ;
      fhir:Identifier.value [ fhir:value "ASO-2025-0098" ]
   ], [
      fhir:index 2 ;
@@ -51,7 +51,7 @@
          fhir:Coding.code [ fhir:value "MOBILE" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile" ] ;
      fhir:Identifier.value [ fhir:value "08051234567" ]
   ] ;
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-consent | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgConsent |
+| Active as of 2026-08-17 | *Computable Name*:NgConsent |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.17 | |
 
  
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-consent.csv), [Ex
   "name" : "NgConsent",
   "title" : "NG Consent",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

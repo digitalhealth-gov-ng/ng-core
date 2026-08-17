@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-communication | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgCommunication |
+| Active as of 2026-08-17 | *Computable Name*:NgCommunication |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.15 | |
 
  
@@ -17,7 +17,7 @@ Communication artifact for clinical messaging. Optimized to minimize QA noise wh
 
 **Usages:**
 
-* Use this Profile: [2-NGReferral MNCH Transaction Bundle](StructureDefinition-ng-mnch-referral-bundle.md)
+* Use this Profile: [Bundle NG Referral MNCH](StructureDefinition-ng-mnch-referral-bundle.md)
 * Examples for this Profile: [Communication/NgCommunication-MNCH-001](Communication-NgCommunication-MNCH-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-communication.json)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-communication.csv
   "name" : "NgCommunication",
   "title" : "NG Communication",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

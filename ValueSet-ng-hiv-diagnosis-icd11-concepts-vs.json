@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-hiv-diagnosis-icd11-concepts-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-hiv-diagnosis-icd11-concepts-vs</b></p><a name=\"ng-hiv-diagnosis-icd11-concepts-vs\"> </a><a name=\"hcng-hiv-diagnosis-icd11-concepts-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-ICD11MMS.html\"><code>http://id.who.int/icd/release/11/mms</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1F27.1</td><td style=\"color: #cccccc\">Cerebral cryptococcosis</td></tr><tr><td>1F2A</td><td style=\"color: #cccccc\">Histoplasmosis</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-diagnosis-icd11-concepts-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.216"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgHivDiagnosisICD11ConceptsVS",
+  "title" : "Nigeria HIV ICD-11 Diagnosis Concepts",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-08-15",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://id.who.int/icd/release/11/mms",
+      "concept" : [{
+        "code" : "1F27.1"
+      },
+      {
+        "code" : "1F2A"
+      }]
+    }]
+  }
+}

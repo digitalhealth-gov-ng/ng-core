@@ -6,7 +6,7 @@
 
 ## Example Specimen: Nigeria Venous Blood Specimen Example
 
-Profile: [Specimen profile](StructureDefinition-ng-specimen.md)
+Profile: [NG Specimen](StructureDefinition-ng-specimen.md)
 
 **status**: Available
 

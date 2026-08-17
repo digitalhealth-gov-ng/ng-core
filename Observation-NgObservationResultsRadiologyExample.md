@@ -6,7 +6,7 @@
 
 ## Example Observation: Radiology Result Observation Example
 
-Profile: [Nigeria Core Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md)
+Profile: [NG Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md)
 
 **status**: Final
 

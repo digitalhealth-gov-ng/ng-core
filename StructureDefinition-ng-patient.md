@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgPatient |
+| Draft as of 2026-08-17 | *Computable Name*:NgPatient |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.59 | |
 
  
@@ -17,8 +17,8 @@ Nigeria Core Patient Profile
 
 **Usages:**
 
-* Use this Profile: [4-NG AEFI Report Bundle](StructureDefinition-ng-aefi-report-bundle.md), [4-NG Immunization SMART Scheduler Bundle](StructureDefinition-ng-imm-smart-scheduler-bundle.md), [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md) and [2-NGReferral MNCH Transaction Bundle](StructureDefinition-ng-mnch-referral-bundle.md)
-* Refer to this Profile: [NG HIV National ART Register](StructureDefinition-NgHivArtRegister.md), [NG HIV Enhanced Adherence Counselling Monitoring Register](StructureDefinition-NgHivEacRegister.md), [NG HIV Integrated Laboratory Monitoring Register](StructureDefinition-NgHivIntLabMonitoringRegister.md), [NG HIV Pharmacy Daily Worksheet](StructureDefinition-NgHivPharmacyDailyWorksheet.md)... Show 38 more, [NG HIV Tracking Register](StructureDefinition-NgHivTrackingRegister.md), [Nigeria Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md), [Ng Appointment](StructureDefinition-ng-appointment.md), [NG CarePlan](StructureDefinition-ng-care-plan.md), [NG ClaimResponse](StructureDefinition-ng-claim-response.md), [NG Claim](StructureDefinition-ng-claim.md), [NG Communication](StructureDefinition-ng-communication.md), [NG Condition](StructureDefinition-ng-condition.md), [NG Claim Coverage Eligibility Request](StructureDefinition-ng-coverage-eligibility-request.md), [NG Claim Coverage Eligibility Response](StructureDefinition-ng-coverage-eligibility-response.md), [NG Claim Coverage](StructureDefinition-ng-coverage.md), [NG DeviceRequest](StructureDefinition-ng-device-request.md), [NG Device](StructureDefinition-ng-device.md), [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [Nigeria Document Reference](StructureDefinition-ng-documents.md), [NG Encounter](StructureDefinition-ng-encounter.md), [Nigeria Alert Flag](StructureDefinition-ng-flag.md), [NG Goal](StructureDefinition-ng-goal.md), [NG ImmunizationRecommendation](StructureDefinition-ng-immunization-recommendation.md), [NG Immunization](StructureDefinition-ng-immunization.md), [NG Invoice](StructureDefinition-ng-invoice.md), [NG IPS Composition](StructureDefinition-ng-ips-composition.md), [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md), [NG MedicationRequest](StructureDefinition-ng-medication-request.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [Nigeria Core Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md), [Nigeria Core Pregnancy Expected Delivery Date Observation](StructureDefinition-ng-observation-pregnancy-edd.md), [Nigeria Core Pregnancy Outcome Observation](StructureDefinition-ng-observation-pregnancy-outcome.md), [Nigeria Core Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md), [Nigeria Core Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md), [Nigeria Core Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md), [Nigeria Core Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md), [Nigeria Core Composite Observation](StructureDefinition-ng-observation.md), [NG Procedure](StructureDefinition-ng-procedure.md), [NG RelatedPerson](StructureDefinition-ng-related-person.md), [NG ServiceRequest](StructureDefinition-ng-service-request.md), [Specimen profile](StructureDefinition-ng-specimen.md) and [NG Task](StructureDefinition-ng-task.md)
+* Use this Profile: [Bundle NG AEFI Report](StructureDefinition-ng-aefi-report-bundle.md), [Bundle NG Immunization SMART Scheduler](StructureDefinition-ng-imm-smart-scheduler-bundle.md), [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md) and [Bundle NG Referral MNCH](StructureDefinition-ng-mnch-referral-bundle.md)
+* Refer to this Profile: [NG HIV National ART Register](StructureDefinition-NgHivArtRegister.md), [NG HIV Enhanced Adherence Counselling Monitoring Register](StructureDefinition-NgHivEacRegister.md), [NG HIV Integrated Laboratory Monitoring Register](StructureDefinition-NgHivIntLabMonitoringRegister.md), [NG HIV Pharmacy Daily Worksheet](StructureDefinition-NgHivPharmacyDailyWorksheet.md)... Show 38 more, [NG HIV Tracking Register](StructureDefinition-NgHivTrackingRegister.md), [NG Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md), [Ng Appointment](StructureDefinition-ng-appointment.md), [NG CarePlan](StructureDefinition-ng-care-plan.md), [NG ClaimResponse](StructureDefinition-ng-claim-response.md), [NG Claim](StructureDefinition-ng-claim.md), [NG Communication](StructureDefinition-ng-communication.md), [NG Condition](StructureDefinition-ng-condition.md), [NG Claim Coverage Eligibility Request](StructureDefinition-ng-coverage-eligibility-request.md), [NG Claim Coverage Eligibility Response](StructureDefinition-ng-coverage-eligibility-response.md), [NG Claim Coverage](StructureDefinition-ng-coverage.md), [NG DeviceRequest](StructureDefinition-ng-device-request.md), [NG Device](StructureDefinition-ng-device.md), [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [Nigeria Document Reference](StructureDefinition-ng-documents.md), [NG Encounter](StructureDefinition-ng-encounter.md), [NG Alert Flag](StructureDefinition-ng-flag.md), [NG Goal](StructureDefinition-ng-goal.md), [NG ImmunizationRecommendation](StructureDefinition-ng-immunization-recommendation.md), [NG Immunization](StructureDefinition-ng-immunization.md), [NG Invoice](StructureDefinition-ng-invoice.md), [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md), [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md), [NG MedicationRequest](StructureDefinition-ng-medication-request.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [NG Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md), [NG Pregnancy EDD Observation](StructureDefinition-ng-observation-pregnancy-edd.md), [NG Pregnancy Outcome Observation](StructureDefinition-ng-observation-pregnancy-outcome.md), [NG Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md), [NG Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md), [NG Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md), [NG Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md), [NG Composite Observation](StructureDefinition-ng-observation.md), [NG Procedure](StructureDefinition-ng-procedure.md), [NG RelatedPerson](StructureDefinition-ng-related-person.md), [NG ServiceRequest](StructureDefinition-ng-service-request.md), [NG Specimen](StructureDefinition-ng-specimen.md) and [NG Task](StructureDefinition-ng-task.md)
 * Examples for this Profile: [Patient/NgPatient-001-Pseudo](Patient-NgPatient-001-Pseudo.md), [Patient/NgPatient-001](Patient-NgPatient-001.md), [Patient/NgPatient-002](Patient-NgPatient-002.md), [Patient/NgPatient-003](Patient-NgPatient-003.md)... Show 2 more, [Patient/NgPatient-Consent-001](Patient-NgPatient-Consent-001.md) and [Patient/Patient-Chika-Okafor](Patient-Patient-Chika-Okafor.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Registry Service Capability](CapabilityStatement-NgGeneralHospitalRegistryCapability.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md)... Show 6 more, [Nigeria Core PHC Registry Service Capability](CapabilityStatement-NgPHCRegistryCapability.md), [Nigeria Core PHC Requestor Capability](CapabilityStatement-NgPHCRequestorCapability.md), [Nigeria Core PHC Responder Capability](CapabilityStatement-NgPHCResponderCapability.md), [Nigeria Core Tertiary Referral Registry Service Capability](CapabilityStatement-NgTertiaryRegistryCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
   "name" : "NgPatient",
   "title" : "NG Patient",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
@@ -195,8 +195,8 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
     {
       "id" : "Patient.identifier:NationalIDNo.system",
       "path" : "Patient.identifier.system",
-      "short" : "NIMC's identifier in the system autheticated to https://nimc.org/nin",
-      "patternUri" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"
+      "short" : "NamingSystem for NIMC's identifier in the system autheticated later, maybe at https://nimc.org/nin",
+      "patternUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/nin"
     },
     {
       "id" : "Patient.identifier:NationalIDNo.value",
@@ -248,7 +248,11 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
       "definition" : "The URI system that identifies the assigning authority for the medical record number.",
       "example" : [{
         "label" : "Example MRN system",
-        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"
+        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/a-consort-mrn"
+      },
+      {
+        "label" : "Example MRN system",
+        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/wakanda-mrn"
       }]
     },
     {
@@ -299,10 +303,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
       "path" : "Patient.identifier.system",
       "short" : "The institution generating the birth certificate number (e.g., NPC)",
       "definition" : "The URI system identifying the authority that assigns the birth certificate number validated at http://npc.gov.ng/birthCertificate-no.",
-      "example" : [{
-        "label" : "Example Birth Certificate number system",
-        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"
-      }]
+      "patternUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/birth-cert"
     },
     {
       "id" : "Patient.identifier:BirthCertificateNo.value",
@@ -351,10 +352,11 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
       "id" : "Patient.identifier:PhoneNumber.system",
       "path" : "Patient.identifier.system",
       "short" : "The provider of the phone number (e.g., MTN)",
-      "definition" : "The URI system identifying the provider of the phone number validated at http://mtnonline.com/phone-no.",
+      "definition" : "The URI system identifying the provider of the phone number.",
+      "patternUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile",
       "example" : [{
         "label" : "Example Phone Number system",
-        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"
+        "valueUri" : "http://mtnonline.com/phone-no"
       }]
     },
     {
@@ -405,10 +407,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
       "path" : "Patient.identifier.system",
       "short" : "The generating institution e.g., State, NHIA, or HMO",
       "definition" : "The URI system identifying the provider of the insurance number validated at http://nhia.gov.ng/insurance-no.",
-      "example" : [{
-        "label" : "Example Insurance system",
-        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"
-      }]
+      "patternUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/ins"
     },
     {
       "id" : "Patient.identifier:InsuranceNumber.value",
@@ -460,7 +459,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-patient.csv), [Ex
       "definition" : "The URI system identifying the provider of the pseudo number.",
       "example" : [{
         "label" : "Pseudonymized Patient Identifier system",
-        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs"
+        "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/identifier/pseudo"
       }]
     },
     {

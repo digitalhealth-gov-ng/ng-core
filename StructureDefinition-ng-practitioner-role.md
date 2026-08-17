@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgPractitionerRole |
+| Draft as of 2026-08-17 | *Computable Name*:NgPractitionerRole |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.61 | |
 
  
@@ -17,8 +17,8 @@ Defines the role(s) of a Nigerian healthcare practitioner context. Links a Pract
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [Ng Appointment](StructureDefinition-ng-appointment.md), [NG Condition](StructureDefinition-ng-condition.md), [NG DeviceRequest](StructureDefinition-ng-device-request.md), [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md)... Show 8 more, [Nigeria Document Reference](StructureDefinition-ng-documents.md), [Nigeria Alert Flag](StructureDefinition-ng-flag.md), [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [Nigeria Core Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md), [NG Procedure](StructureDefinition-ng-procedure.md), [NG Lightweight Provenance](StructureDefinition-ng-provenance.md) and [NG Task](StructureDefinition-ng-task.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [Ng Appointment](StructureDefinition-ng-appointment.md), [NG Condition](StructureDefinition-ng-condition.md), [NG DeviceRequest](StructureDefinition-ng-device-request.md), [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md)... Show 8 more, [Nigeria Document Reference](StructureDefinition-ng-documents.md), [NG Alert Flag](StructureDefinition-ng-flag.md), [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [NG Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md), [NG Procedure](StructureDefinition-ng-procedure.md), [NG Lightweight Provenance](StructureDefinition-ng-provenance.md) and [NG Task](StructureDefinition-ng-task.md)
 * Examples for this Profile: [PractitionerRole/NgPractitionerRole-001](PractitionerRole-NgPractitionerRole-001.md), [PractitionerRole/NgPractitionerRole-002](PractitionerRole-NgPractitionerRole-002.md) and [PractitionerRole/NgPractitionerRole-003](PractitionerRole-NgPractitionerRole-003.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Registry Service Capability](CapabilityStatement-NgGeneralHospitalRegistryCapability.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md)... Show 5 more, [Nigeria Core PHC Requestor Capability](CapabilityStatement-NgPHCRequestorCapability.md), [Nigeria Core PHC Responder Capability](CapabilityStatement-NgPHCResponderCapability.md), [Nigeria Core Tertiary Referral Registry Service Capability](CapabilityStatement-NgTertiaryRegistryCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-practitioner-role
   "name" : "NgPractitionerRole",
   "title" : "NG PractitionerRole",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

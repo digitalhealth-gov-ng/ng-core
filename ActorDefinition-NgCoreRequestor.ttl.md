@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Draft as of 2026-08-12 |
+| Draft as of 2026-08-17 |
 
 [Raw ttl](ActorDefinition-NgCoreRequestor.ttl) | [Download](ActorDefinition-NgCoreRequestor.ttl)
 

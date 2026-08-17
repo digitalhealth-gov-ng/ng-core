@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-recommendation | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgImmunizationRecommendation |
+| Active as of 2026-08-17 | *Computable Name*:NgImmunizationRecommendation |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.34 | |
 
  
@@ -17,7 +17,7 @@ Simple profile to convey due/overdue vaccine recommendations for a Nigerian clie
 
 **Usages:**
 
-* Use this Profile: [4-NG Immunization SMART Scheduler Bundle](StructureDefinition-ng-imm-smart-scheduler-bundle.md)
+* Use this Profile: [Bundle NG Immunization SMART Scheduler](StructureDefinition-ng-imm-smart-scheduler-bundle.md)
 * Examples for this Profile: [ImmunizationRecommendation/NgImmunizationRecommendation-001](ImmunizationRecommendation-NgImmunizationRecommendation-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-immunization-recommendation.json)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-immunization-reco
   "name" : "NgImmunizationRecommendation",
   "title" : "NG ImmunizationRecommendation",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

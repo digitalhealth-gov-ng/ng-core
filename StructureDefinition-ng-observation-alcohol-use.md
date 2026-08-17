@@ -1,15 +1,15 @@
-# Nigeria Core Alcohol Use Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Alcohol Use Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Core Alcohol Use Observation**
+* **NG Alcohol Use Observation**
 
-## Resource Profile: Nigeria Core Alcohol Use Observation 
+## Resource Profile: NG Alcohol Use Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-alcohol-use | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgObservationAlcoholUse |
+| Draft as of 2026-08-17 | *Computable Name*:NgObservationAlcoholUse |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.49 | |
 
  
@@ -17,8 +17,8 @@ A Nigeria Core Observation representing the average number of alcoholic drinks c
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [NG IPS Composition](StructureDefinition-ng-ips-composition.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md)
 * Examples for this Profile: [Observation/NgObservationAlcoholUseExample](Observation-NgObservationAlcoholUseExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-observation-alcohol-use.json)
@@ -46,9 +46,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation-alcoh
   }],
   "version" : "0.0.0",
   "name" : "NgObservationAlcoholUse",
-  "title" : "Nigeria Core Alcohol Use Observation",
+  "title" : "NG Alcohol Use Observation",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

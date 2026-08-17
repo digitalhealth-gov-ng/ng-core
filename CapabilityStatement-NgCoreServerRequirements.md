@@ -10,7 +10,7 @@
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgCoreServerRequirements | *Version*:0.0.0 |
 | Active as of 2026-08-09 | *Computable Name*:NgCoreServerRequirements |
-| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.21 | |
+| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.1 | |
 | **Usage:**Clinical Venue: , Clinical Venue: , Clinical Venue:  | |
 
  

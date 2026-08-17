@@ -17,7 +17,7 @@ Local codes for the fixed medicine columns W24–W71 on the revised November 202
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPharmacyWorksheetMedicineVS](ValueSet-ng-hiv-pharmacy-worksheet-medicine-vs.md)
+* [NG HIV Pharmacy Daily Worksheet Medicines](ValueSet-ng-hiv-pharmacy-worksheet-medicine-vs.md)
 
 
 

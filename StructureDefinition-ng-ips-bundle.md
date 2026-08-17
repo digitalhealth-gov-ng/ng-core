@@ -1,10 +1,10 @@
-# Bundle (IPS) - Nigeria Core - FHIR Implementation Guide v0.0.0
+# Bundle NG (IPS) - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Bundle (IPS)**
+* **Bundle NG (IPS)**
 
-## Resource Profile: Bundle (IPS) 
+## Resource Profile: Bundle NG (IPS) 
 
 | | |
 | :--- | :--- |
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-ips-bundle.csv), 
   }],
   "version" : "0.0.0",
   "name" : "NgIPSBundle",
-  "title" : "Bundle (IPS)",
+  "title" : "Bundle NG (IPS)",
   "status" : "draft",
   "date" : "2024-06-19T10:50:07-05:00",
   "publisher" : "NDHI",

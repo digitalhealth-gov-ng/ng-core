@@ -1,15 +1,15 @@
-# Nigeria Core Composite Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Composite Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Core Composite Observation**
+* **NG Composite Observation**
 
-## Resource Profile: Nigeria Core Composite Observation 
+## Resource Profile: NG Composite Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgObservation |
+| Draft as of 2026-08-17 | *Computable Name*:NgObservation |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.56 | |
 
  
@@ -17,7 +17,7 @@ A composite Nigeria Core Observation used during client registration to record s
 
 **Usages:**
 
-* Use this Profile: [4-NG AEFI Report Bundle](StructureDefinition-ng-aefi-report-bundle.md)
+* Use this Profile: [Bundle NG AEFI Report](StructureDefinition-ng-aefi-report-bundle.md)
 * Refer to this Profile: [NG Goal](StructureDefinition-ng-goal.md), [NG Immunization](StructureDefinition-ng-immunization.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [NG Procedure](StructureDefinition-ng-procedure.md) and [NG ServiceRequest](StructureDefinition-ng-service-request.md)
 * Examples for this Profile: [Observation/NgObservation-001](Observation-NgObservation-001.md)
 
@@ -46,9 +46,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation.csv),
   }],
   "version" : "0.0.0",
   "name" : "NgObservation",
-  "title" : "Nigeria Core Composite Observation",
+  "title" : "NG Composite Observation",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

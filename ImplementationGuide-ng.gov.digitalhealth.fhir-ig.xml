@@ -72,6 +72,11 @@
     <packageId value="hl7.fhir.uv.ips"/>
     <version value="2.0.1"/>
   </dependsOn>
+  <dependsOn id="smart_who_int_hiv">
+    <uri value="http://smart.who.int/hiv/ImplementationGuide/smart.who.int.hiv"/>
+    <packageId value="smart.who.int.hiv"/>
+    <version value="1.0.0"/>
+  </dependsOn>
   <dependsOn id="hl7_fhir_uv_xver_r5_r4">
     <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
     <packageId value="hl7.fhir.uv.xver-r5.r4"/>
@@ -499,39 +504,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-mnch-referral-bundle"/>
-      </reference>
-      <name value="2-NGReferral MNCH Transaction Bundle"/>
-      <description value="Transaction bundle for MNCH referrals between facilities and/or payers.&#xA;MUST contain a Patient and a ServiceRequest (the referral order).&#xA;Optional entries (Communication, Task, etc.) may support initiation, response, and tracking."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-aefi-report-bundle"/>
-      </reference>
-      <name value="4-NG AEFI Report Bundle"/>
-      <description value="Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-imm-smart-scheduler-bundle"/>
-      </reference>
-      <name value="4-NG Immunization SMART Scheduler Bundle"/>
-      <description value="A minimal transaction bundle to schedule an immunization visit with optional recommendations."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -603,8 +575,52 @@
       <reference>
         <reference value="StructureDefinition/ng-ips-bundle"/>
       </reference>
-      <name value="Bundle (IPS)"/>
+      <name value="Bundle NG (IPS)"/>
       <description value="This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-aefi-report-bundle"/>
+      </reference>
+      <name value="Bundle NG AEFI Report"/>
+      <description value="Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-imm-smart-scheduler-bundle"/>
+      </reference>
+      <name value="Bundle NG Immunization SMART Scheduler"/>
+      <description value="A minimal transaction bundle to schedule an immunization visit with optional recommendations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-ips-composition"/>
+      </reference>
+      <name value="Bundle NG IPS Composition"/>
+      <description value="International Patient Summary (IPS) Composition adapted for Nigeria Core.&#xA;Conforms to IPS v2 Composition and narrows key references to local NG profiles where available.&#xA;Includes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-mnch-referral-bundle"/>
+      </reference>
+      <name value="Bundle NG Referral MNCH"/>
+      <description value="Transaction bundle for MNCH referrals between facilities and/or payers.&#xA;MUST contain a Patient and a ServiceRequest (the referral order).&#xA;Optional entries (Communication, Task, etc.) may support initiation, response, and tracking."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1211,6 +1227,17 @@
       <name value="Example Ng MedicationDispense (Paracetamol 250 mg/5 mL, 100 mL)"/>
       <description value="Completed pediatric dispensing."/>
       <exampleCanonical value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-naming-system-example"/>
+      </reference>
+      <name value="Example NG NamingSystem with URI, OID, UUID and legacy identifier"/>
+      <description value="Illustrative NamingSystem showing all FHIR R4 uniqueId.type codes.&#xA;The values are examples only and are not assigned Nigerian identifiers."/>
+      <exampleCanonical value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-naming-system"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2405,6 +2432,39 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ng-observation-alcohol-use"/>
+      </reference>
+      <name value="NG Alcohol Use Observation"/>
+      <description value="A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-flag"/>
+      </reference>
+      <name value="NG Alert Flag"/>
+      <description value="Flag profile for prominent clinical, public-health,&#xA;safety, or administrative alerts that require display, review,&#xA;acknowledgement, or action."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-allergy-intolerance"/>
+      </reference>
+      <name value="NG Allergy Intolerance"/>
+      <description value="Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ng-appointment"/>
       </reference>
       <name value="Ng Appointment"/>
@@ -2420,6 +2480,17 @@
       </reference>
       <name value="NG Authoritative Server Requirements"/>
       <description value="Authoritative computable FHIR R4 server requirements for Nigeria Core. This&#xA;CapabilityStatement defines the national baseline for resource support, Nigeria&#xA;Core profiles, RESTful interactions, search capability, operations, reference&#xA;handling, successful outcomes, security expectations, and OperationOutcome&#xA;failure behaviour.&#xA;&#xA;Facility-, program-, registry-, terminology-, regulator-, Shared Health Record-,&#xA;and sandbox-specific CapabilityStatements may narrow or extend this national&#xA;baseline for their declared scope."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-bc-naming-system"/>
+      </reference>
+      <name value="NG Birth Certificate NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the National Birth Certificate namespace."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2640,6 +2711,17 @@
       </reference>
       <name value="NG Communication"/>
       <description value="Communication artifact for clinical messaging.&#xA;Optimized to minimize QA noise while keeping key elements Must Support."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-observation"/>
+      </reference>
+      <name value="NG Composite Observation"/>
+      <description value="A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4429,10 +4511,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ng-ips-composition"/>
+        <reference value="StructureDefinition/ng-observation-results-laboratory-pathology"/>
       </reference>
-      <name value="NG IPS Composition"/>
-      <description value="International Patient Summary (IPS) Composition adapted for Nigeria Core.&#xA;Conforms to IPS v2 Composition and narrows key references to local NG profiles where available.&#xA;Includes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care."/>
+      <name value="NG Laboratory or Pathology Result Observation"/>
+      <description value="A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4580,6 +4662,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-mdcn-naming-system"/>
+      </reference>
+      <name value="NG Medical and Dental Council of Nigeria NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the MDCN namespace."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -4613,6 +4706,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-mobile-naming-system"/>
+      </reference>
+      <name value="NG Mobile Number NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the Medical Records Number namespace."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-naming-system"/>
+      </reference>
+      <name value="NG NamingSystem"/>
+      <description value="Nigeria Core profile for publishing and governing namespaces used in&#xA;FHIR Identifier.system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-ins-naming-system"/>
+      </reference>
+      <name value="NG National Health Insurance Number NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the National Health Insurance Authority (NHIA) namespace."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-nin-naming-system"/>
+      </reference>
+      <name value="NG National Identity Number NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the Nigerian National Identity Number (NIN) namespace."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -4620,6 +4757,39 @@
       </reference>
       <name value="NG Next Dose Date"/>
       <description value="The recommended due date for the next vaccine dose in the schedule."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-hfr-naming-system"/>
+      </reference>
+      <name value="NG Nigeria Health Facility Registry NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the HFR namespace."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-psedo-naming-system"/>
+      </reference>
+      <name value="NG Nigeria Pseudonym NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the pseudo namespace."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-nmcn-naming-system"/>
+      </reference>
+      <name value="NG Nursing and Midewifery Council of Nigeria NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the NMCN namespace."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4664,6 +4834,17 @@
       </reference>
       <name value="NG Patient Identifier Type CS"/>
       <description value="This CodeSystem defines list of options for uniquely Identifting a Client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-pcn-naming-system"/>
+      </reference>
+      <name value="NG Pharmacy Council of Nigeria NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the PCN namespace."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4792,6 +4973,39 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ng-observation-pregnancy-edd"/>
+      </reference>
+      <name value="NG Pregnancy EDD Observation"/>
+      <description value="A Nigeria Core Observation representing the estimated date of delivery."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-observation-pregnancy-outcome"/>
+      </reference>
+      <name value="NG Pregnancy Outcome Observation"/>
+      <description value="A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-observation-pregnancy-status"/>
+      </reference>
+      <name value="NG Pregnancy Status Observation"/>
+      <description value="A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ng-procedure"/>
       </reference>
       <name value="NG Procedure"/>
@@ -4851,6 +5065,17 @@
       </reference>
       <name value="NG Questionnaire"/>
       <description value="The base Questionnaire profile for computable program forms in the&#xA;Nigeria Core FHIR Implementation Guide. program-specific Questionnaire profiles, including Immunization, HIV,&#xA;TB, Malaria, MNCH, Nutrition and eCHIS Questionnaires, SHALL derive from&#xA;this profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-observation-results-radiology"/>
+      </reference>
+      <name value="NG Radiology Result Observation"/>
+      <description value="A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4950,6 +5175,28 @@
       </reference>
       <name value="NG Sibling Health Status VS"/>
       <description value="This CodeSystem defines the health of the client's sibling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-specimen"/>
+      </reference>
+      <name value="NG Specimen"/>
+      <description value="This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-wakanda-naming-system"/>
+      </reference>
+      <name value="NG State Medical Records Number NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the Hospital Record Number namespace."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5064,6 +5311,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ng-observation-tobacco-use"/>
+      </reference>
+      <name value="NG Tobacco Smoking Status Observation"/>
+      <description value="A Nigeria Core Observation representing the patient's tobacco-smoking status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -5126,6 +5384,17 @@
       </reference>
       <name value="NG Vaccine SNOMED ValueSet"/>
       <description value="All SNOMED vaccine codes (DE1–DE29)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/ng-consort-naming-system"/>
+      </reference>
+      <name value="NG Vendor Medical Records Number NamingSystem"/>
+      <description value="Candidate NamingSystem definition for the Medical Records Number namespace."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5273,28 +5542,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-flag"/>
-      </reference>
-      <name value="Nigeria Alert Flag"/>
-      <description value="Flag profile for prominent clinical, public-health,&#xA;safety, or administrative alerts that require display, review,&#xA;acknowledgement, or action."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-allergy-intolerance"/>
-      </reference>
-      <name value="Nigeria Allergy Intolerance"/>
-      <description value="Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
@@ -5317,39 +5564,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-alcohol-use"/>
-      </reference>
-      <name value="Nigeria Core Alcohol Use Observation"/>
-      <description value="A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation"/>
-      </reference>
-      <name value="Nigeria Core Composite Observation"/>
-      <description value="A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-results-laboratory-pathology"/>
-      </reference>
-      <name value="Nigeria Core Laboratory or Pathology Result Observation"/>
-      <description value="A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -5357,61 +5571,6 @@
       </reference>
       <name value="Nigeria Core Observation Codes"/>
       <description value="Local codes used to identify Nigeria Core observations that do not&#xA;have an appropriate code in an established terminology."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-pregnancy-edd"/>
-      </reference>
-      <name value="Nigeria Core Pregnancy Expected Delivery Date Observation"/>
-      <description value="A Nigeria Core Observation representing the estimated date of delivery."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-pregnancy-outcome"/>
-      </reference>
-      <name value="Nigeria Core Pregnancy Outcome Observation"/>
-      <description value="A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-pregnancy-status"/>
-      </reference>
-      <name value="Nigeria Core Pregnancy Status Observation"/>
-      <description value="A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-results-radiology"/>
-      </reference>
-      <name value="Nigeria Core Radiology Result Observation"/>
-      <description value="A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-observation-tobacco-use"/>
-      </reference>
-      <name value="Nigeria Core Tobacco Smoking Status Observation"/>
-      <description value="A Nigeria Core Observation representing the patient's tobacco-smoking status."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5537,6 +5696,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/NgHivDiagnosisToICD11"/>
+      </reference>
+      <name value="Nigeria HIV Diagnoses to ICD-11 MMS"/>
+      <description value="Directional mapping from explicit Nigeria HIV opportunistic-infection diagnosis concepts to ICD-11 MMS 2026-01."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ng-hiv-diagnosis-cs"/>
+      </reference>
+      <name value="Nigeria HIV Diagnosis Codes"/>
+      <description value="Local HIV programme diagnosis concepts used where a specific opportunistic-infection diagnosis is required."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ng-hiv-diagnosis-concepts-vs"/>
+      </reference>
+      <name value="Nigeria HIV Diagnosis Concepts"/>
+      <description value="Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ng-hiv-diagnosis-icd11-concepts-vs"/>
+      </reference>
+      <name value="Nigeria HIV ICD-11 Diagnosis Concepts"/>
+      <description value="ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -5555,6 +5758,17 @@
       </reference>
       <name value="Nigeria HIV Local Concepts to SNOMED CT"/>
       <description value="Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/NgHivLocalToWHOHiv"/>
+      </reference>
+      <name value="Nigeria HIV Local Concepts to WHO SMART HIV"/>
+      <description value="Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5636,6 +5850,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ng-who-hiv-concepts-cs"/>
+      </reference>
+      <name value="Nigeria Local WHO HIV Concepts"/>
+      <description value="Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
@@ -5699,6 +5924,17 @@
       <name value="Nigeria Referral Task Example"/>
       <description value="A simple task assigning an antenatal referral request to a receiving&#xA;healthcare organization in Ondo State."/>
       <exampleCanonical value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ng-who-hiv-concepts-vs"/>
+      </reference>
+      <name value="Nigeria Relevant WHO HIV Concepts"/>
+      <description value="Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -6032,17 +6268,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ng-specimen"/>
-      </reference>
-      <name value="Specimen profile"/>
-      <description value="This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="OperationDefinition"/>
       </extension>
       <reference>
@@ -6314,17 +6539,6 @@
       </reference>
       <name value="Verify Nigeria Core Certificate"/>
       <description value="Verifies the authenticity and integrity of a certificate represented by&#xA;the DocumentReference on which the operation is invoked."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/WHOHivToNgHivLocal"/>
-      </reference>
-      <name value="WHO HIV to Nigeria HIV Local Concepts"/>
-      <description value="Experimental directional mapping from WHO SMART Guidelines HIV concepts to Nigeria HIV local programme terminology."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

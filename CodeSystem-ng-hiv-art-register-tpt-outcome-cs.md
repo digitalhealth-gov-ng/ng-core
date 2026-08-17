@@ -17,7 +17,7 @@ TB preventive-therapy outcome codes printed in column A22 of the National ART Re
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterTptOutcomeVS](ValueSet-ng-hiv-art-register-tpt-outcome-vs.md)
+* [NG HIV ART Register TPT Outcome](ValueSet-ng-hiv-art-register-tpt-outcome-vs.md)
 
 
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-sibling-health-status-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgSiblingHealthStatusCS |
+| Active as of 2026-08-17 | *Computable Name*:NgSiblingHealthStatusCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.100 | |
 
  
@@ -17,7 +17,7 @@ This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgSiblingHealthStatusVS](ValueSet-ng-sibling-health-status-vs.md)
+* [NG Sibling Health Status VS](ValueSet-ng-sibling-health-status-vs.md)
 
 
 
@@ -37,7 +37,7 @@ This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling
   "title" : "NG Health Status CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

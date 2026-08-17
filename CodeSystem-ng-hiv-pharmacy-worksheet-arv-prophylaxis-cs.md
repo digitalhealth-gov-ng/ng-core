@@ -17,7 +17,7 @@ ARV prophylaxis codes printed in W17 for HIV-exposed infants.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPharmacyWorksheetArvProphylaxisVS](ValueSet-ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs.md)
+* [NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimen](ValueSet-ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs.md)
 
 
 

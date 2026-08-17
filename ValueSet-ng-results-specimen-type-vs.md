@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-specimen-type-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgResultsSpecimenTypeVS |
+| Active as of 2026-08-17 | *Computable Name*:NgResultsSpecimenTypeVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.185 | |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
@@ -18,7 +18,7 @@ Specimen Type codes value set.
 
  **References** 
 
-* [Specimen profile](StructureDefinition-ng-specimen.md)
+* [NG Specimen](StructureDefinition-ng-specimen.md)
 
 ### Logical Definition (CLD)
 
@@ -60,7 +60,7 @@ Specimen Type codes value set.
   "title" : "Results Specimen Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

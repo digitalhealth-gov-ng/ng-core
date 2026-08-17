@@ -17,7 +17,7 @@ Facility- and community-based differentiated-service-delivery model codes printe
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterDsdStatusVS](ValueSet-ng-hiv-art-register-dsd-status-vs.md)
+* [NG HIV ART Register DSD Status](ValueSet-ng-hiv-art-register-dsd-status-vs.md)
 
 
 

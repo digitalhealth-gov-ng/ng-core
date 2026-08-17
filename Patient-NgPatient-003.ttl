@@ -29,7 +29,7 @@
          fhir:Coding.code [ fhir:value "BIRTHCERT" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/birth-cert" ] ;
      fhir:Identifier.value [ fhir:value "NPC-FCT-2019-004321" ]
   ], [
      fhir:index 1 ;
@@ -40,7 +40,7 @@
          fhir:Coding.code [ fhir:value "MOBILE" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile" ] ;
      fhir:Identifier.value [ fhir:value "08123456789" ]
   ] ;
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;

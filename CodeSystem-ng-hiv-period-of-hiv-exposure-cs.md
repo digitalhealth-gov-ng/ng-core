@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-period-of-hiv-exposure-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivPeriodOfHIVExposureCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivPeriodOfHIVExposureCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.59 | |
 
  
@@ -17,7 +17,7 @@ Codes used for indicating the period when last the individual was exposed to HIV
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPeriodOfHIVExposureVS](ValueSet-ng-hiv-period-of-hiv-exposure-vs.md)
+* [Period of HIV Exposure](ValueSet-ng-hiv-period-of-hiv-exposure-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Codes used for indicating the period when last the individual was exposed to HIV
   "title" : "HIV Period of HIV Exposure",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

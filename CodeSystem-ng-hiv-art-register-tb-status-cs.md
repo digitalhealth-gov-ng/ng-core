@@ -17,7 +17,7 @@ Combined TB screening, diagnostic and treatment status codes printed on column A
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterTbStatusVS](ValueSet-ng-hiv-art-register-tb-status-vs.md)
+* [NG HIV ART Register TB Status](ValueSet-ng-hiv-art-register-tb-status-vs.md)
 
 
 

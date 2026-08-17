@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgImmunization |
+| Draft as of 2026-08-17 | *Computable Name*:NgImmunization |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.35 | |
 
  
@@ -17,8 +17,8 @@ Nigerian Profile for Immunization resource.
 
 **Usages:**
 
-* Use this Profile: [4-NG AEFI Report Bundle](StructureDefinition-ng-aefi-report-bundle.md) and [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [NG IPS Composition](StructureDefinition-ng-ips-composition.md)
+* Use this Profile: [Bundle NG AEFI Report](StructureDefinition-ng-aefi-report-bundle.md) and [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md)
 * Examples for this Profile: [Immunization/NgImmunization-001](Immunization-NgImmunization-001.md), [Immunization/NgImmunization-002](Immunization-NgImmunization-002.md) and [Immunization/NgImmunization-003](Immunization-NgImmunization-003.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-immunization.csv)
   "name" : "NgImmunization",
   "title" : "NG Immunization",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

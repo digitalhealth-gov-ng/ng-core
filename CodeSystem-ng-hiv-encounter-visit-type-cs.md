@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-visit-type-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivEncounterVisitTypeCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivEncounterVisitTypeCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.49 | |
 
  
@@ -17,7 +17,7 @@ A list of codes describing the nature of the patient visit to the health facilit
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivEncounterVisitTypeVS](ValueSet-ng-hiv-encounter-visit-type-vs.md)
+* [HIV-Nature of Encounter ValueSet](ValueSet-ng-hiv-encounter-visit-type-vs.md)
 
 
 
@@ -37,7 +37,7 @@ A list of codes describing the nature of the patient visit to the health facilit
   "title" : "HIV-Nature of Encounter CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

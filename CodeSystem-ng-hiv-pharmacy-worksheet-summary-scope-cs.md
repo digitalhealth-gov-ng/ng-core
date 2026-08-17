@@ -17,7 +17,7 @@ The three summary rows printed at the bottom of the worksheet.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPharmacyWorksheetSummaryScopeVS](ValueSet-ng-hiv-pharmacy-worksheet-summary-scope-vs.md)
+* [NG HIV Pharmacy Worksheet Summary Scope](ValueSet-ng-hiv-pharmacy-worksheet-summary-scope-vs.md)
 
 
 

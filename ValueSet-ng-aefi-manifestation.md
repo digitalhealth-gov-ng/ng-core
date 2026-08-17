@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-aefi-manifestation | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NGAEFIManifestationVS |
+| Draft as of 2026-08-17 | *Computable Name*:NGAEFIManifestationVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.1 | |
 
  
@@ -58,7 +58,7 @@ No formal definition provided for this value set
   "title" : "Nigeria AEFI Manifestations",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

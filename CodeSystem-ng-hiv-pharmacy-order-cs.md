@@ -17,11 +17,11 @@ Local coded medicine products transcribed from the Nigeria Combined Pharmacy Ord
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivAdultArtMedicationVS](ValueSet-ng-hiv-adult-art-medication-vs.md)
-* [NgHivOiProphylaxisTreatmentMedicationVS](ValueSet-ng-hiv-oi-prophylaxis-treatment-medication-vs.md)
-* [NgHivPaediatricArtMedicationVS](ValueSet-ng-hiv-paediatric-art-medication-vs.md)
-* [NgHivPrepMedicationVS](ValueSet-ng-hiv-prep-medication-vs.md)
-* [NgHivTbPreventiveTherapyMedicationVS](ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.md)
+* [NG HIV Adult ART Medications](ValueSet-ng-hiv-adult-art-medication-vs.md)
+* [NG HIV OI Prophylaxis and Treatment Medications](ValueSet-ng-hiv-oi-prophylaxis-treatment-medication-vs.md)
+* [NG HIV Paediatric ART Medications](ValueSet-ng-hiv-paediatric-art-medication-vs.md)
+* [NG HIV PrEP Medications](ValueSet-ng-hiv-prep-medication-vs.md)
+* [NG HIV TB Preventive Therapy Medications](ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.md)
 
 
 

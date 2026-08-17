@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancies-coutcome-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgPregnanciesOutcomeVS |
+| Active as of 2026-08-17 | *Computable Name*:NgPregnanciesOutcomeVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.172 | |
 | **Copyright/Legal**: This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc | |
 
@@ -18,7 +18,7 @@ IPS Pregnancies Outcome
 
  **References** 
 
-* [Nigeria Core Pregnancy Outcome Observation](StructureDefinition-ng-observation-pregnancy-outcome.md)
+* [NG Pregnancy Outcome Observation](StructureDefinition-ng-observation-pregnancy-outcome.md)
 
 ### Logical Definition (CLD)
 
@@ -60,7 +60,7 @@ IPS Pregnancies Outcome
   "title" : "Pregnancy Outcome - IPS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

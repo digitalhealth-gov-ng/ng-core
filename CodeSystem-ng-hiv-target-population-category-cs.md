@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivTargetPopulationCategoryCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivTargetPopulationCategoryCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.74 | |
 
  
@@ -17,8 +17,8 @@ Codes used for representing the patient's target population category
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivLocalConceptsVS](ValueSet-ng-hiv-local-concepts.md)
-* [NgTargetPopulationCategoryVS](ValueSet-ng-target-population-category-vs.md)
+* [Nigeria HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md)
+* [NG Target Population Category VS](ValueSet-ng-target-population-category-vs.md)
 
 
 
@@ -38,7 +38,7 @@ Codes used for representing the patient's target population category
   "title" : "Target Population Category Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -6,7 +6,7 @@
 
 ## Example Flag: Nigeria Immunization Alert Flag Example
 
-Profile: [Nigeria Alert Flag](StructureDefinition-ng-flag.md)
+Profile: [NG Alert Flag](StructureDefinition-ng-flag.md)
 
 **status**: Active
 

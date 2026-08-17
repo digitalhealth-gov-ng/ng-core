@@ -17,7 +17,7 @@ DSD models represented by W9 and W10.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPharmacyWorksheetDsdModelVS](ValueSet-ng-hiv-pharmacy-worksheet-dsd-model-vs.md)
+* [NG HIV Pharmacy Worksheet DSD Model](ValueSet-ng-hiv-pharmacy-worksheet-dsd-model-vs.md)
 
 
 

@@ -17,7 +17,7 @@ Hepatitis screening and treatment codes printed in column A28 of the National AR
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterHepatitisStatusVS](ValueSet-ng-hiv-art-register-hepatitis-status-vs.md)
+* [NG HIV ART Register Hepatitis Screening Status](ValueSet-ng-hiv-art-register-hepatitis-status-vs.md)
 
 
 

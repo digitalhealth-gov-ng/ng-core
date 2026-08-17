@@ -1,15 +1,15 @@
-# Nigeria Core Pregnancy Outcome Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Pregnancy Outcome Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Core Pregnancy Outcome Observation**
+* **NG Pregnancy Outcome Observation**
 
-## Resource Profile: Nigeria Core Pregnancy Outcome Observation 
+## Resource Profile: NG Pregnancy Outcome Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-outcome | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgObservationPregnancyOutcome |
+| Draft as of 2026-08-17 | *Computable Name*:NgObservationPregnancyOutcome |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.51 | |
 
  
@@ -17,8 +17,8 @@ A Nigeria Core Observation representing the outcome of a pregnancy, such as live
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [NG IPS Composition](StructureDefinition-ng-ips-composition.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md)
 * Examples for this Profile: [Observation/NgObservationPregnancyOutcomeExample](Observation-NgObservationPregnancyOutcomeExample.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core PHC Requestor Capability](CapabilityStatement-NgPHCRequestorCapability.md)... Show 3 more, [Nigeria Core PHC Responder Capability](CapabilityStatement-NgPHCResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation-pregn
   }],
   "version" : "0.0.0",
   "name" : "NgObservationPregnancyOutcome",
-  "title" : "Nigeria Core Pregnancy Outcome Observation",
+  "title" : "NG Pregnancy Outcome Observation",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

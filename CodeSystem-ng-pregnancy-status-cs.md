@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-pregnancy-status-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgPregnancyStatusCS |
+| Active as of 2026-08-17 | *Computable Name*:NgPregnancyStatusCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.97 | |
 
  
@@ -17,7 +17,7 @@ This CodeSystem defines list of options for Pregnancy status of a Client
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgPregnancyStatusVS](ValueSet-ng-pregnancy-status-vs.md)
+* [NG Clinical Status VS](ValueSet-ng-pregnancy-status-vs.md)
 
 
 
@@ -37,7 +37,7 @@ This CodeSystem defines list of options for Pregnancy status of a Client
   "title" : "NG Client Pregnancy Status CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

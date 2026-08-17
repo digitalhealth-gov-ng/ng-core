@@ -10,7 +10,7 @@ Last updated: 2025-11-06 23:47:00+0100
 
 Profile: [NG Patient](StructureDefinition-ng-patient.md)
 
-Chika Okafor Male, DoB: 1985-06-15 ( mobile: 08045678901)
+Chika Okafor Male, DoB: 1985-06-15 ( mobile: NgMobileNumber#08045678901)
 
 -------
 
@@ -39,7 +39,7 @@ Chika Okafor Male, DoB: 1985-06-15 ( mobile: 08045678901)
         "display" : "mobile"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile",
     "value" : "08045678901"
   }],
   "active" : true,

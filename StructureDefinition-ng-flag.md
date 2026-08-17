@@ -1,15 +1,15 @@
-# Nigeria Alert Flag - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Alert Flag - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Alert Flag**
+* **NG Alert Flag**
 
-## Resource Profile: Nigeria Alert Flag 
+## Resource Profile: NG Alert Flag 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-flag | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgFlag |
+| Draft as of 2026-08-17 | *Computable Name*:NgFlag |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.28 | |
 
  
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-flag.csv), [Excel
   }],
   "version" : "0.0.0",
   "name" : "NgFlag",
-  "title" : "Nigeria Alert Flag",
+  "title" : "NG Alert Flag",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-bundle-identifier-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgBundleIdentifierCS |
+| Active as of 2026-08-17 | *Computable Name*:NgBundleIdentifierCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.5 | |
 
  
@@ -17,7 +17,7 @@ Local CodeSystem defining standard bundle identifiers.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgBundleIdentifierVS](ValueSet-ng-bundle-identifier-vs.md)
+* [NG Bundle Identifier Codes](ValueSet-ng-bundle-identifier-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Local CodeSystem defining standard bundle identifiers.
   "title" : "NG Bundle Identifier Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

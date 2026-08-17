@@ -1,0 +1,414 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLocalToWHOHiv> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgHivLocalToWHOHiv"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap NgHivLocalToWHOHiv</b></p><a name=\"NgHivLocalToWHOHiv\"> </a><a name=\"hcNgHivLocalToWHOHiv\"> </a><p>Mapping from <a href=\"ValueSet-ng-hiv-local-concepts.html\">Nigeria HIV Local Concepts</a> to <a href=\"ValueSet-ng-who-hiv-concepts-vs.html\">Nigeria Relevant WHO HIV Concepts</a></p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-ng-hiv-art-follow-up-status-cs.html\">HIV Follow Up Status CodeSystem</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>lost (Lost to follow-up)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE42 (Lost to follow-up)</td><td/></tr><tr><td>to (Transfer out)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE43 (Transferred out)</td><td/></tr><tr><td>dead</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.H.DE44 (Death (documented))</td><td>WHO requires documented death; the local Dead concept does not itself assert documentation.</td></tr><tr><td>restart</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.D.DE45 (Restarting ART)</td><td/></tr><tr><td>stop (Stopped treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.D.DE40 (Stopped ART)</td><td/></tr><tr><td>stop (Stopped treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.H.DE45 (Refused (stopped) treatment)</td><td>To add details later</td></tr><tr><td>alive-on-art</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE47 (On ART)</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-ng-hiv-arv-adherence-cs.html\">HIV-ARV Adherence CodeSystem</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>Stopped</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>HIV.D.DE40 (Stopped ART)</td><td>The local code is used in an adherence/status context, while the WHO concept explicitly represents ART treatment status.</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href=\"CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html\">HIV DSD - Reason For Category Change CodeSystem</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>Dead</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.H.DE44 (Death (documented))</td><td>WHO requires documented death; the local Dead concept is broader.</td></tr><tr><td>Lost</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE42 (Lost to follow-up)</td><td/></tr><tr><td>TO</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE43 (Transferred out)</td><td/></tr></table><hr/><p><b>Group 4 </b>Mapping from <a href=\"CodeSystem-ng-hiv-positive-tracking-cs.html\">HIV Positive Tracking</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>Not-Started (ART Not Started)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE4 (Did not initiate ART)</td><td/></tr><tr><td>Started-ART</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.D.DE382 (ART initiated within 7 days of diagnosis)</td><td>WHO is narrower because it requires ART initiation within 7 days of diagnosis; the local code does not specify timing.</td></tr><tr><td>Linked-To-Care (Linked to care and treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.B.DE147 (Linked to enrolment in care and ART initiation)</td><td>WHO additionally specifies enrolment in care and ART initiation; the local linkage concept is broader.</td></tr><tr><td>Final-Outcome</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>HIV.H.DE41 (HIV Treatement outcome)</td><td>The local concept identifies a final tracking outcome, while WHO identifies the HIV treatment outcome data element.</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <a href=\"CodeSystem-ng-hiv-final-outcome-cs.html\">HIV - Final Outcome CodeSystem</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>lost-to-follow-up</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.H.DE42 (Lost to follow-up)</td><td/></tr><tr><td>died</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.H.DE44 (Death (documented))</td><td>WHO requires documented death; the local Died concept is broader.</td></tr><tr><td>declined</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.H.DE45 (Refused (stopped) treatment)</td><td>WHO specifically represents refusal with stopped treatment; the local Declined outcome is broader.</td></tr><tr><td>started-art</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.D.DE382 (ART initiated within 7 days of diagnosis)</td><td>WHO is narrower because it limits initiation to within 7 days of diagnosis.</td></tr><tr><td>confirmed-referral</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>HIV.H.DE49 (Transfer confirmed)</td><td>The local concept represents a confirmed referral, while WHO represents a confirmed transfer.</td></tr></table><hr/><p><b>Group 6 </b>Mapping from <a href=\"CodeSystem-ng-hiv-reason-not-started-art-cs.html\">HIV - Reason Not Started ART CodeSystem</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>declined</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.D.DE371 (Patient self-reported as not ready/willing)</td><td>WHO specifically states that the patient self-reported not being ready or willing; the local Declined category is broader.</td></tr><tr><td>on-adherence-preparation</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>HIV.D.DE372 (Not completed education, support and preparation for ART)</td><td>Both refer to preparation before ART initiation, but the local status and WHO reason-for-delay concepts are not identical.</td></tr><tr><td>known-positive-on-art (Known +ve on ART)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>HIV.H.DE47 (On ART)</td><td>WHO On ART is broader because it does not additionally encode the local known-positive context.</td></tr><tr><td>on-oi-management</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.D.DE377 (Patient diagnosed with cryptococcal meningitis)</td><td>Cryptococcal meningitis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context.</td></tr><tr><td>on-oi-management</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">narrower</a></td><td>HIV.D.DE378 (Patient diagnosed with histoplasmosis)</td><td>Histoplasmosis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context.</td></tr><tr><td>other (Other Specify here)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.D.DE380 (Other)</td><td/></tr></table><hr/><p><b>Group 7 </b>Mapping from <a href=\"CodeSystem-ng-hiv-target-population-category-cs.html\">Target Population Category Codes</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>Female-Commercial-Sex-Workers</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>HIV.B.DE51 (Sex worker)</td><td>WHO Sex worker is broader because it is not restricted to female sex workers.</td></tr><tr><td>MSM</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.B.DE52 (Men who have sex with men)</td><td>WHO includes both trans and gender-diverse people; the local TG category is narrower.</td></tr><tr><td>TG</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>HIV.B.DE53 (Trans and gender-diverse people)</td><td/></tr><tr><td>People-Who-Inject-Drug</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HIV.B.DE54 (People who inject drugs)</td><td/></tr><tr><td>OVC-AIDS-Orphaned (OVC or AIDS Orphaned)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>HIV.B.DE58 (Orphan or vulnerable child)</td><td>WHO Orphan or vulnerable child is broader than the local HIV/AIDS-oriented OVC category.</td></tr></table><hr/><p><b>Group 8 </b>Mapping from <a href=\"CodeSystem-ng-tb-tpt-prophylaxis-type-cs.html\">TB TPT Prophylaxis Type Codes</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>inh</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>HIV.D.DE250 (Provide isoniazid preventive therapy)</td><td>The local code identifies isoniazid prophylaxis type; WHO represents the action of providing isoniazid preventive therapy.</td></tr></table><hr/><p><b>Group 9 </b>Mapping from <a href=\"CodeSystem-ng-hiv-enhanced-adherence-counselling-status-cs.html\">Enhanced Adherence Counselling</a> to <a href=\"CodeSystem-ng-who-hiv-concepts-cs.html\">Nigeria Local WHO HIV Concepts</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>eac (Enhanced Adherence Counselling)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>HIV.D.DE496 (Enhanced adherence counselling provided)</td><td>The local concept identifies enhanced adherence counselling; WHO explicitly represents that counselling was provided.</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLocalToWHOHiv"] ;
+  fhir:ConceptMap.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.18.9" ]
+  ] ;
+  fhir:ConceptMap.version [ fhir:value "0.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "NgHivLocalToWHOHiv"] ;
+  fhir:ConceptMap.title [ fhir:value "Nigeria HIV Local Concepts → WHO SMART HIV"] ;
+  fhir:ConceptMap.status [ fhir:value "active"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-08-15"^^xsd:date] ;
+  fhir:ConceptMap.publisher [ fhir:value "NDHI"] ;
+  fhir:ConceptMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts" ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts>
+  ] ;
+  fhir:ConceptMap.targetCanonical [
+     fhir:value "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-who-hiv-concepts-vs" ;
+     fhir:link <https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-who-hiv-concepts-vs>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "lost" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE42" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "to" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE43" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "dead" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE44" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO requires documented death; the local Dead concept does not itself assert documentation." ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "restart" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE45" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "stop" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE40" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "stop" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE45" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "To add details later" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "alive-on-art" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE47" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Stopped" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE40" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The local code is used in an adherence/status context, while the WHO concept explicitly represents ART treatment status." ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Dead" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE44" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO requires documented death; the local Dead concept is broader." ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Lost" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE42" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TO" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE43" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Not-Started" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE4" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Started-ART" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE382" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO is narrower because it requires ART initiation within 7 days of diagnosis; the local code does not specify timing." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Linked-To-Care" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.B.DE147" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO additionally specifies enrolment in care and ART initiation; the local linkage concept is broader." ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Final-Outcome" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE41" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The local concept identifies a final tracking outcome, while WHO identifies the HIV treatment outcome data element." ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "lost-to-follow-up" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE42" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "died" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE44" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO requires documented death; the local Died concept is broader." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "declined" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE45" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO specifically represents refusal with stopped treatment; the local Declined outcome is broader." ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "started-art" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE382" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO is narrower because it limits initiation to within 7 days of diagnosis." ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "confirmed-referral" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE49" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The local concept represents a confirmed referral, while WHO represents a confirmed transfer." ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "declined" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE371" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO specifically states that the patient self-reported not being ready or willing; the local Declined category is broader." ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "on-adherence-preparation" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE372" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Both refer to preparation before ART initiation, but the local status and WHO reason-for-delay concepts are not identical." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "known-positive-on-art" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.H.DE47" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO On ART is broader because it does not additionally encode the local known-positive context." ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "on-oi-management" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE377" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Cryptococcal meningitis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context." ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "on-oi-management" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE378" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Histoplasmosis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context." ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "other" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE380" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "Female-Commercial-Sex-Workers" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.B.DE51" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO Sex worker is broader because it is not restricted to female sex workers." ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "MSM" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.B.DE52" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO includes both trans and gender-diverse people; the local TG category is narrower." ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TG" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.B.DE53" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "People-Who-Inject-Drug" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.B.DE54" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "OVC-AIDS-Orphaned" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.B.DE58" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "WHO Orphan or vulnerable child is broader than the local HIV/AIDS-oriented OVC category." ]
+       ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "inh" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE250" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The local code identifies isoniazid prophylaxis type; WHO represents the action of providing isoniazid preventive therapy." ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "eac" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "HIV.D.DE496" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "The local concept identifies enhanced adherence counselling; WHO explicitly represents that counselling was provided." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLocalToWHOHiv.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

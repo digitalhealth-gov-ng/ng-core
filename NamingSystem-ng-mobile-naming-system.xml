@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-mobile-naming-system"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-naming-system"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: NamingSystem ng-mobile-naming-system</b></p><a name="ng-mobile-naming-system"> </a><a name="hcng-mobile-naming-system"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-naming-system.html">NG NamingSystem</a></p></div><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>https://fhir-ig.digitalhealth.gov.ng/NamingSystem/ng-mobile-naming-system</td></tr><tr><td>Version</td><td>0.0.0</td></tr><tr><td>Name</td><td>NgMobileNumber</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Namespace for Mobile Numbers used in Nigeria Core.</p>
+</div></td></tr><tr><td>Publisher</td><td>NDHI</td></tr><tr><td>OID</td><td>2.16.840.1.113884.3.9944.1.31.6 (for OID based terminology systems)</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>https://fhir-ig.digitalhealth.gov.ng/identifier/mobile</td><td>true</td><td>PROPOSED Nigeria Core URI. Clients must always know their mobile is being used for their identity.</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="https://fhir-ig.digitalhealth.gov.ng/NamingSystem/ng-mobile-naming-system"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="0.0.0"/>
+  </extension>
+  <name value="NgMobileNumber"/>
+  <status value="draft"/>
+  <kind value="identifier"/>
+  <date value="2026-08-16"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="lekeojewale@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Nigeria Digital in Health Initiative."/>
+    <telecom>
+      <system value="email"/>
+      <value value="emeka2015@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <responsible value="Mobile Network Providers"/>
+  <description value="Namespace for Mobile Numbers used in Nigeria Core."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <usage value="Use the preferred URI uniqueId as Identifier.system when representing a Mobile Number.&#xA;Use the Nigeria Core patient identifier-type terminology in Identifier.type;&#xA;do not use the identifier-type CodeSystem URL as Identifier.system."/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://fhir-ig.digitalhealth.gov.ng/identifier/mobile"/>
+    <preferred value="true"/>
+    <comment value="PROPOSED Nigeria Core URI. Clients must always know their mobile is being used for their identity."/>
+  </uniqueId>
+</NamingSystem>

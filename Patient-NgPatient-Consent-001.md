@@ -38,7 +38,7 @@ Eko Okon Female, DoB: 1992-06-18 ( mobile)
         "code" : "MOBILE"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile",
     "value" : "08070001234"
   }],
   "active" : true,

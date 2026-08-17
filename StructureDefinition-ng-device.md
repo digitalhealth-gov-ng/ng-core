@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-device | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgDevice |
+| Draft as of 2026-08-17 | *Computable Name*:NgDevice |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.23 | |
 
  
@@ -17,7 +17,7 @@ Device profile for Nigeria Core (medical devices communications).
 
 **Usages:**
 
-* Refer to this Profile: [NG DeviceRequest](StructureDefinition-ng-device-request.md), [Nigeria Document Reference](StructureDefinition-ng-documents.md), [Nigeria Alert Flag](StructureDefinition-ng-flag.md) and [NG Procedure](StructureDefinition-ng-procedure.md)
+* Refer to this Profile: [NG DeviceRequest](StructureDefinition-ng-device-request.md), [Nigeria Document Reference](StructureDefinition-ng-documents.md), [NG Alert Flag](StructureDefinition-ng-flag.md) and [NG Procedure](StructureDefinition-ng-procedure.md)
 * Examples for this Profile: [Device/NgDevice-001](Device-NgDevice-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-device.json)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-device.csv), [Exc
   "name" : "NgDevice",
   "title" : "NG Device",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

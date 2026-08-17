@@ -6,7 +6,7 @@
 
 ## Example AllergyIntolerance: Immunization Allergy Example - Ondo
 
-Profile: [Nigeria Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md)
+Profile: [NG Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md)
 
 **clinicalStatus**: Active
 

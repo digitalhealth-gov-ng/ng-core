@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-vaccine-contraindications | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgVaccineContraindications |
+| Draft as of 2026-08-17 | *Computable Name*:NgVaccineContraindications |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.71 | |
 
 Indicates specific situations in which it is not recommended to administer certain vaccines (e.g severe AEFI, History of Anaphylactic reactions, Symptomatic HIV infection)
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-vaccine-contraind
   "name" : "NgVaccineContraindications",
   "title" : "NG Vaccine Contraindications",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

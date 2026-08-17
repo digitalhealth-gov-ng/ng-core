@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-current-smoking-status-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgCurrentSmokingStatusVS |
+| Active as of 2026-08-17 | *Computable Name*:NgCurrentSmokingStatusVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.13 | |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
@@ -18,7 +18,7 @@ ValueSet for smoking status. This value set includes a set of specific SNOMED CT
 
  **References** 
 
-* [Nigeria Core Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md)
+* [NG Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md)
 
 ### Logical Definition (CLD)
 
@@ -60,7 +60,7 @@ ValueSet for smoking status. This value set includes a set of specific SNOMED CT
   "title" : "Current Smoking Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

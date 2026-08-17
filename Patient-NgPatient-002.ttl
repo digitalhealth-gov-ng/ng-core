@@ -29,7 +29,7 @@
          fhir:Coding.code [ fhir:value "NIN" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/nin" ] ;
      fhir:Identifier.value [ fhir:value "12345678901" ]
   ], [
      fhir:index 1 ;
@@ -40,7 +40,7 @@
          fhir:Coding.code [ fhir:value "MRN" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/wakanda-mrn" ] ;
      fhir:Identifier.value [ fhir:value "KNH-2025-33445" ]
   ], [
      fhir:index 2 ;
@@ -51,7 +51,7 @@
          fhir:Coding.code [ fhir:value "INSUR" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/ins" ] ;
      fhir:Identifier.value [ fhir:value "NHIA-0011223344" ]
   ], [
      fhir:index 3 ;
@@ -62,7 +62,7 @@
          fhir:Coding.code [ fhir:value "MOBILE" ]
        ]
      ] ;
-     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs" ] ;
+     fhir:Identifier.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile" ] ;
      fhir:Identifier.value [ fhir:value "08031234567" ]
   ] ;
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;

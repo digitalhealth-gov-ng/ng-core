@@ -6,7 +6,7 @@
 
 ## Example Observation: Pregnancy Expected Delivery Date Example
 
-Profile: [Nigeria Core Pregnancy Expected Delivery Date Observation](StructureDefinition-ng-observation-pregnancy-edd.md)
+Profile: [NG Pregnancy EDD Observation](StructureDefinition-ng-observation-pregnancy-edd.md)
 
 **status**: Final
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-states-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgStatesCS |
+| Active as of 2026-08-17 | *Computable Name*:NgStatesCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.101 | |
 
  
@@ -17,7 +17,7 @@ This CodeSystem defines ward codes and names mapped to their respective States i
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgStatesVS](ValueSet-ng-states-vs.md)
+* [NG States VS](ValueSet-ng-states-vs.md)
 
 
 
@@ -37,7 +37,7 @@ This CodeSystem defines ward codes and names mapped to their respective States i
   "title" : "NG States in Nigeria CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-service-type-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivEncounterServiceTypeCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivEncounterServiceTypeCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.47 | |
 
  
@@ -37,7 +37,7 @@ Codes used for indicating a proprietary encounter service type.
   "title" : "HIV Proprietary Service Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

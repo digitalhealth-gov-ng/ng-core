@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-identifier-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgFacilityIdentifierCS |
+| Active as of 2026-08-17 | *Computable Name*:NgFacilityIdentifierCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.15 | |
 
  
@@ -17,7 +17,7 @@ This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifi
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgFacilityIdentifierVS](ValueSet-ng-facility-identifier-vs.md)
+* [NG Clinical Status VS](ValueSet-ng-facility-identifier-vs.md)
 
 
 
@@ -37,7 +37,7 @@ This CodeSystem IMMZ.A.DE1 defines placeholder codes to manage Facility identifi
   "title" : "NG Facility Identifier CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

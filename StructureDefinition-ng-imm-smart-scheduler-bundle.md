@@ -1,15 +1,15 @@
-# 4-NG Immunization SMART Scheduler Bundle - Nigeria Core - FHIR Implementation Guide v0.0.0
+# Bundle NG Immunization SMART Scheduler - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **4-NG Immunization SMART Scheduler Bundle**
+* **Bundle NG Immunization SMART Scheduler**
 
-## Resource Profile: 4-NG Immunization SMART Scheduler Bundle 
+## Resource Profile: Bundle NG Immunization SMART Scheduler 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-imm-smart-scheduler-bundle | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgImmSmartSchedulerBundle |
+| Active as of 2026-08-17 | *Computable Name*:NgImmSmartSchedulerBundle |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.32 | |
 
  
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-imm-smart-schedul
   }],
   "version" : "0.0.0",
   "name" : "NgImmSmartSchedulerBundle",
-  "title" : "4-NG Immunization SMART Scheduler Bundle",
+  "title" : "Bundle NG Immunization SMART Scheduler",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

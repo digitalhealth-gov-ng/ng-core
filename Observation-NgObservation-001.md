@@ -6,7 +6,7 @@
 
 ## Example Observation: Composite Client Registration Observation Example
 
-Profile: [Nigeria Core Composite Observation](StructureDefinition-ng-observation.md)
+Profile: [NG Composite Observation](StructureDefinition-ng-observation.md)
 
 **status**: Final
 

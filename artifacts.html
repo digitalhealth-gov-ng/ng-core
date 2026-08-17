@@ -254,10 +254,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#11">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#12">Terminology: Concept Maps</a>
+         <a href="#12">Terminology: Naming Systems</a>
       </li>
       <li>
-         <a href="#13">Example: Example Instances</a>
+         <a href="#13">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#14">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -766,8 +769,46 @@ basic clinical assessment during an ANC visit.</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-ips-bundle.html"
+                  title="StructureDefinition/ng-ips-bundle">Bundle NG (IPS)</a>
+            </td>
+            <td>
+<p>This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-aefi-report-bundle.html"
+                  title="StructureDefinition/ng-aefi-report-bundle">Bundle NG AEFI Report</a>
+            </td>
+            <td>
+<p>Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-ips-composition.html"
+                  title="StructureDefinition/ng-ips-composition">Bundle NG IPS Composition</a>
+            </td>
+            <td>
+<p>International Patient Summary (IPS) Composition adapted for Nigeria Core.
+Conforms to IPS v2 Composition and narrows key references to local NG profiles where available.
+Includes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-imm-smart-scheduler-bundle.html"
+                  title="StructureDefinition/ng-imm-smart-scheduler-bundle">Bundle NG Immunization SMART Scheduler</a>
+            </td>
+            <td>
+<p>A minimal transaction bundle to schedule an immunization visit with optional recommendations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ng-mnch-referral-bundle.html"
-                  title="StructureDefinition/ng-mnch-referral-bundle">2-NGReferral MNCH Transaction Bundle</a>
+                  title="StructureDefinition/ng-mnch-referral-bundle">Bundle NG Referral MNCH</a>
             </td>
             <td>
 <p>Transaction bundle for MNCH referrals between facilities and/or payers.
@@ -777,38 +818,40 @@ Optional entries (Communication, Task, etc.) may support initiation, response, a
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ng-aefi-report-bundle.html"
-                  title="StructureDefinition/ng-aefi-report-bundle">4-NG AEFI Report Bundle</a>
-            </td>
-            <td>
-<p>Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-imm-smart-scheduler-bundle.html"
-                  title="StructureDefinition/ng-imm-smart-scheduler-bundle">4-NG Immunization SMART Scheduler Bundle</a>
-            </td>
-            <td>
-<p>A minimal transaction bundle to schedule an immunization visit with optional recommendations.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-ips-bundle.html"
-                  title="StructureDefinition/ng-ips-bundle">Bundle (IPS)</a>
-            </td>
-            <td>
-<p>This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-ng-diagnostic-report.html"
                   title="StructureDefinition/ng-diagnostic-report">DiagnosticReport (IPS)</a>
             </td>
             <td>
 <p>This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-alcohol-use.html"
+                  title="StructureDefinition/ng-observation-alcohol-use">NG Alcohol Use Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-flag.html"
+                  title="StructureDefinition/ng-flag">NG Alert Flag</a>
+            </td>
+            <td>
+<p>Flag profile for prominent clinical, public-health,
+safety, or administrative alerts that require display, review,
+acknowledgement, or action.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-allergy-intolerance.html"
+                  title="StructureDefinition/ng-allergy-intolerance">NG Allergy Intolerance</a>
+            </td>
+            <td>
+<p>Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction.</p>
 </td>
          </tr>
          <tr>
@@ -873,6 +916,15 @@ Optional entries (Communication, Task, etc.) may support initiation, response, a
             <td>
 <p>Communication artifact for clinical messaging.
 Optimized to minimize QA noise while keeping key elements Must Support.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation.html"
+                  title="StructureDefinition/ng-observation">NG Composite Observation</a>
+            </td>
+            <td>
+<p>A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components.</p>
 </td>
          </tr>
          <tr>
@@ -960,17 +1012,6 @@ data collection instruments.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ng-ips-composition.html"
-                  title="StructureDefinition/ng-ips-composition">NG IPS Composition</a>
-            </td>
-            <td>
-<p>International Patient Summary (IPS) Composition adapted for Nigeria Core.
-Conforms to IPS v2 Composition and narrows key references to local NG profiles where available.
-Includes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-ng-immunization.html"
                   title="StructureDefinition/ng-immunization">NG Immunization</a>
             </td>
@@ -1013,6 +1054,15 @@ Nigeria Core FHIR Implementation Guide.</p>
             </td>
             <td>
 <p>Invoice profile for pharmacy dispensing and payment in Nigeria Core.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-results-laboratory-pathology.html"
+                  title="StructureDefinition/ng-observation-results-laboratory-pathology">NG Laboratory or Pathology Result Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations.</p>
 </td>
          </tr>
          <tr>
@@ -1083,6 +1133,16 @@ individual and aggregate program-reporting results using FHIR R4B 4.3.0.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-naming-system.html"
+                  title="StructureDefinition/ng-naming-system">NG NamingSystem</a>
+            </td>
+            <td>
+<p>Nigeria Core profile for publishing and governing namespaces used in
+FHIR Identifier.system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ng-organization.html"
                   title="StructureDefinition/ng-organization">NG Organization</a>
             </td>
@@ -1129,6 +1189,33 @@ Links a Practitioner to an Organization, specifies their role.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-pregnancy-edd.html"
+                  title="StructureDefinition/ng-observation-pregnancy-edd">NG Pregnancy EDD Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing the estimated date of delivery.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-pregnancy-outcome.html"
+                  title="StructureDefinition/ng-observation-pregnancy-outcome">NG Pregnancy Outcome Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-pregnancy-status.html"
+                  title="StructureDefinition/ng-observation-pregnancy-status">NG Pregnancy Status Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ng-procedure.html"
                   title="StructureDefinition/ng-procedure">NG Procedure</a>
             </td>
@@ -1159,6 +1246,15 @@ this profile.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-results-radiology.html"
+                  title="StructureDefinition/ng-observation-results-radiology">NG Radiology Result Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ng-related-person.html"
                   title="StructureDefinition/ng-related-person">NG RelatedPerson</a>
             </td>
@@ -1177,6 +1273,15 @@ this profile.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-specimen.html"
+                  title="StructureDefinition/ng-specimen">NG Specimen</a>
+            </td>
+            <td>
+<p>This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ng-task.html"
                   title="StructureDefinition/ng-task">NG Task</a>
             </td>
@@ -1186,103 +1291,20 @@ this profile.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ng-observation-tobacco-use.html"
+                  title="StructureDefinition/ng-observation-tobacco-use">NG Tobacco Smoking Status Observation</a>
+            </td>
+            <td>
+<p>A Nigeria Core Observation representing the patient's tobacco-smoking status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ng-appointment.html"
                   title="StructureDefinition/ng-appointment">Ng Appointment</a>
             </td>
             <td>
 <p>Appointment profile for Nigeria Core (e.g., immunization, ePharmacy counseling, referrals).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-flag.html"
-                  title="StructureDefinition/ng-flag">Nigeria Alert Flag</a>
-            </td>
-            <td>
-<p>Flag profile for prominent clinical, public-health,
-safety, or administrative alerts that require display, review,
-acknowledgement, or action.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-allergy-intolerance.html"
-                  title="StructureDefinition/ng-allergy-intolerance">Nigeria Allergy Intolerance</a>
-            </td>
-            <td>
-<p>Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-alcohol-use.html"
-                  title="StructureDefinition/ng-observation-alcohol-use">Nigeria Core Alcohol Use Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation.html"
-                  title="StructureDefinition/ng-observation">Nigeria Core Composite Observation</a>
-            </td>
-            <td>
-<p>A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-results-laboratory-pathology.html"
-                  title="StructureDefinition/ng-observation-results-laboratory-pathology">Nigeria Core Laboratory or Pathology Result Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-pregnancy-edd.html"
-                  title="StructureDefinition/ng-observation-pregnancy-edd">Nigeria Core Pregnancy Expected Delivery Date Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing the estimated date of delivery.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-pregnancy-outcome.html"
-                  title="StructureDefinition/ng-observation-pregnancy-outcome">Nigeria Core Pregnancy Outcome Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-pregnancy-status.html"
-                  title="StructureDefinition/ng-observation-pregnancy-status">Nigeria Core Pregnancy Status Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-results-radiology.html"
-                  title="StructureDefinition/ng-observation-results-radiology">Nigeria Core Radiology Result Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-observation-tobacco-use.html"
-                  title="StructureDefinition/ng-observation-tobacco-use">Nigeria Core Tobacco Smoking Status Observation</a>
-            </td>
-            <td>
-<p>A Nigeria Core Observation representing the patient's tobacco-smoking status.</p>
 </td>
          </tr>
          <tr>
@@ -1304,15 +1326,6 @@ associated with a patient.</p>
             <td>
 <p>Profile for recording a medication that a patient is taking, has taken, or is expected to take, based
 on information reported by the patient, caregiver, practitioner, or another clinical record.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ng-specimen.html"
-                  title="StructureDefinition/ng-specimen">Specimen profile</a>
-            </td>
-            <td>
-<p>This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary.</p>
 </td>
          </tr>
       </tbody>
@@ -2984,6 +2997,24 @@ It relies on the Translation extension.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-ng-hiv-diagnosis-concepts-vs.html"
+                  title="ValueSet/ng-hiv-diagnosis-concepts-vs">Nigeria HIV Diagnosis Concepts</a>
+            </td>
+            <td>
+<p>Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ng-hiv-diagnosis-icd11-concepts-vs.html"
+                  title="ValueSet/ng-hiv-diagnosis-icd11-concepts-vs">Nigeria HIV ICD-11 Diagnosis Concepts</a>
+            </td>
+            <td>
+<p>ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-ng-hiv-loinc-concepts.html"
                   title="ValueSet/ng-hiv-loinc-concepts">Nigeria HIV LOINC Concepts</a>
             </td>
@@ -3016,6 +3047,15 @@ It relies on the Translation extension.</p>
             </td>
             <td>
 <p>Reasons why a client did not receive a scheduled vaccine dose.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ng-who-hiv-concepts-vs.html"
+                  title="ValueSet/ng-who-hiv-concepts-vs">Nigeria Relevant WHO HIV Concepts</a>
+            </td>
+            <td>
+<p>Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem.</p>
 </td>
          </tr>
          <tr>
@@ -4235,6 +4275,24 @@ have an appropriate code in an established terminology.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-ng-hiv-diagnosis-cs.html"
+                  title="CodeSystem/ng-hiv-diagnosis-cs">Nigeria HIV Diagnosis Codes</a>
+            </td>
+            <td>
+<p>Local HIV programme diagnosis concepts used where a specific opportunistic-infection diagnosis is required.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ng-who-hiv-concepts-cs.html"
+                  title="CodeSystem/ng-who-hiv-concepts-cs">Nigeria Local WHO HIV Concepts</a>
+            </td>
+            <td>
+<p>Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-ng-nutritional-screening-result-cs.html"
                   title="CodeSystem/ng-nutritional-screening-result-cs">Nutritional Screening Result Codes</a>
             </td>
@@ -4325,6 +4383,113 @@ have an appropriate code in an established terminology.</p>
       </tbody>
    </table>
    <a name="12"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-bc-naming-system.html"
+                  title="NamingSystem/ng-bc-naming-system">NG Birth Certificate NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the National Birth Certificate namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-mdcn-naming-system.html"
+                  title="NamingSystem/ng-mdcn-naming-system">NG Medical and Dental Council of Nigeria NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the MDCN namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-mobile-naming-system.html"
+                  title="NamingSystem/ng-mobile-naming-system">NG Mobile Number NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the Medical Records Number namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-ins-naming-system.html"
+                  title="NamingSystem/ng-ins-naming-system">NG National Health Insurance Number NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the National Health Insurance Authority (NHIA) namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-nin-naming-system.html"
+                  title="NamingSystem/ng-nin-naming-system">NG National Identity Number NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the Nigerian National Identity Number (NIN) namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-hfr-naming-system.html"
+                  title="NamingSystem/ng-hfr-naming-system">NG Nigeria Health Facility Registry NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the HFR namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-psedo-naming-system.html"
+                  title="NamingSystem/ng-psedo-naming-system">NG Nigeria Pseudonym NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the pseudo namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-nmcn-naming-system.html"
+                  title="NamingSystem/ng-nmcn-naming-system">NG Nursing and Midewifery Council of Nigeria NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the NMCN namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-pcn-naming-system.html"
+                  title="NamingSystem/ng-pcn-naming-system">NG Pharmacy Council of Nigeria NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the PCN namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-wakanda-naming-system.html"
+                  title="NamingSystem/ng-wakanda-naming-system">NG State Medical Records Number NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the Hospital Record Number namespace.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-consort-naming-system.html"
+                  title="NamingSystem/ng-consort-naming-system">NG Vendor Medical Records Number NamingSystem</a>
+            </td>
+            <td>
+<p>Candidate NamingSystem definition for the Medical Records Number namespace.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="13"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -4350,6 +4515,15 @@ have an appropriate code in an established terminology.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-NgHivDiagnosisToICD11.html"
+                  title="ConceptMap/NgHivDiagnosisToICD11">Nigeria HIV Diagnoses to ICD-11 MMS</a>
+            </td>
+            <td>
+<p>Directional mapping from explicit Nigeria HIV opportunistic-infection diagnosis concepts to ICD-11 MMS 2026-01.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-NgHivLOINCToSNOMEDCT.html"
                   title="ConceptMap/NgHivLOINCToSNOMEDCT">Nigeria HIV LOINC to SNOMED CT</a>
             </td>
@@ -4368,6 +4542,15 @@ have an appropriate code in an established terminology.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-NgHivLocalToWHOHiv.html"
+                  title="ConceptMap/NgHivLocalToWHOHiv">Nigeria HIV Local Concepts to WHO SMART HIV</a>
+            </td>
+            <td>
+<p>Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-NgHivLocalToLOINC.html"
                   title="ConceptMap/NgHivLocalToLOINC">Nigeria HIV Local Concepts → LOINC</a>
             </td>
@@ -4375,18 +4558,9 @@ have an appropriate code in an established terminology.</p>
 <p>Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-WHOHivToNgHivLocal.html"
-                  title="ConceptMap/WHOHivToNgHivLocal">WHO HIV to Nigeria HIV Local Concepts</a>
-            </td>
-            <td>
-<p>Experimental directional mapping from WHO SMART Guidelines HIV concepts to Nigeria HIV local programme terminology.</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="13"> </a>
+   <a name="14"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -4613,6 +4787,16 @@ Approval arrives while Chika is being wheeled to radiology.</p>
             </td>
             <td>
 <p>Minimal healthcare service (ANC clinic).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-ng-naming-system-example.html"
+                  title="NamingSystem/ng-naming-system-example">Example NG NamingSystem with URI, OID, UUID and legacy identifier</a>
+            </td>
+            <td>
+<p>Illustrative NamingSystem showing all FHIR R4 uniqueId.type codes.
+The values are examples only and are not assigned Nigerian identifiers.</p>
 </td>
          </tr>
          <tr>
@@ -5249,7 +5433,7 @@ encounter in Ondo State.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 07:55+0100">2026-08-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

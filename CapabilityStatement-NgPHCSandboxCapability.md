@@ -10,7 +10,7 @@
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgPHCSandboxCapability | *Version*:0.0.0 |
 | Active as of 2026-08-09 | *Computable Name*:NgPHCSandboxCapability |
-| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.14 | |
+| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.10 | |
 | **Usage:**Clinical Venue:  | |
 
  

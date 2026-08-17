@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-questionnaire | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgImmunizationQuestionnaire |
+| Draft as of 2026-08-17 | *Computable Name*:NgImmunizationQuestionnaire |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.33 | |
 
  
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-immunization-ques
   "name" : "NgImmunizationQuestionnaire",
   "title" : "NG Immunization Questionnaire",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

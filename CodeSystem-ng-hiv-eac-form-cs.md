@@ -17,10 +17,10 @@ Local coded answers transcribed from the Nigeria Enhanced Adherence Counselling 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivEacAdherenceVS](ValueSet-ng-hiv-eac-adherence-vs.md)
-* [NgHivEacBarriersVS](ValueSet-ng-hiv-eac-barriers-vs.md)
-* [NgHivEacInterventionServicesVS](ValueSet-ng-hiv-eac-intervention-services-vs.md)
-* [NgHivEacInterventionToolsVS](ValueSet-ng-hiv-eac-intervention-tools-vs.md)
+* [NG HIV EAC Adherence](ValueSet-ng-hiv-eac-adherence-vs.md)
+* [NG HIV EAC Adherence Barriers](ValueSet-ng-hiv-eac-barriers-vs.md)
+* [NG HIV EAC Intervention Services](ValueSet-ng-hiv-eac-intervention-services-vs.md)
+* [NG HIV EAC Intervention Tools](ValueSet-ng-hiv-eac-intervention-tools-vs.md)
 
 
 

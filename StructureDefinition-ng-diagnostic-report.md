@@ -20,7 +20,7 @@ This profile constrains the DiagnosticReport resource to use the specific IPS pr
 
 **Usages:**
 
-* Refer to this Profile: [NG IPS Composition](StructureDefinition-ng-ips-composition.md)
+* Refer to this Profile: [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md)
 * Examples for this Profile: [DiagnosticReport/NgDiagnosticReportExample](DiagnosticReport-NgDiagnosticReportExample.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 

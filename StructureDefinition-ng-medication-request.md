@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgMedicationRequest |
+| Draft as of 2026-08-17 | *Computable Name*:NgMedicationRequest |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.44 | |
 
  
@@ -17,8 +17,8 @@ A MedicationRequest profile with some of core elements.
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md)
 * Examples for this Profile: [MedicationRequest/NgMedicationRequest-001](MedicationRequest-NgMedicationRequest-001.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core PHC Requestor Capability](CapabilityStatement-NgPHCRequestorCapability.md)... Show 3 more, [Nigeria Core PHC Responder Capability](CapabilityStatement-NgPHCResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-medication-reques
   "name" : "NgMedicationRequest",
   "title" : "NG MedicationRequest",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

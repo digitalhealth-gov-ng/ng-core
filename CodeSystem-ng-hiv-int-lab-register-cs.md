@@ -17,11 +17,11 @@ Local codes required to represent the Integrated Laboratory Monitoring Register 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivIntLabRegisterDsdStatusVS](ValueSet-ng-hiv-int-lab-register-dsd-status-vs.md)
-* [NgHivIntLabRegisterModeOfTestingVS](ValueSet-ng-hiv-int-lab-register-mode-of-testing-vs.md)
-* [NgHivIntLabRegisterMonitoringTypeVS](ValueSet-ng-hiv-int-lab-register-monitoring-type-vs.md)
-* [NgHivIntLabRegisterViralLoadCategoryVS](ValueSet-ng-hiv-int-lab-register-viral-load-category-vs.md)
-* [NgHivIntLabRegisterViralLoadDisaggregationVS](ValueSet-ng-hiv-int-lab-register-viral-load-disaggregation-vs.md)
+* [NG HIV Integrated Laboratory Register DSD Status](ValueSet-ng-hiv-int-lab-register-dsd-status-vs.md)
+* [NG HIV Integrated Laboratory Register Mode of Testing](ValueSet-ng-hiv-int-lab-register-mode-of-testing-vs.md)
+* [NG HIV Integrated Laboratory Register Monitoring Type](ValueSet-ng-hiv-int-lab-register-monitoring-type-vs.md)
+* [NG HIV Integrated Laboratory Register Viral-Load Category](ValueSet-ng-hiv-int-lab-register-viral-load-category-vs.md)
+* [NG HIV Integrated Laboratory Register Viral-Load Disaggregation](ValueSet-ng-hiv-int-lab-register-viral-load-disaggregation-vs.md)
 
 
 

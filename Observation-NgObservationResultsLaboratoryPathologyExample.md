@@ -6,7 +6,7 @@
 
 ## Example Observation: Laboratory Result Observation Example
 
-Profile: [Nigeria Core Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md)
+Profile: [NG Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md)
 
 **status**: Final
 

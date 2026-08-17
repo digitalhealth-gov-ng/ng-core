@@ -17,7 +17,7 @@ This profile represents the constraint applied to the CodeableConcept data type 
 
 **Usages:**
 
-* Use this DataType Profile: [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [Specimen profile](StructureDefinition-ng-specimen.md)
+* Use this DataType Profile: [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [NG Specimen](StructureDefinition-ng-specimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-CodeableConcept-ips.json)
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-appointment | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgAppointment |
+| Active as of 2026-08-17 | *Computable Name*:NgAppointment |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.11 | |
 
  
@@ -17,7 +17,7 @@ Appointment profile for Nigeria Core (e.g., immunization, ePharmacy counseling, 
 
 **Usages:**
 
-* Use this Profile: [4-NG Immunization SMART Scheduler Bundle](StructureDefinition-ng-imm-smart-scheduler-bundle.md)
+* Use this Profile: [Bundle NG Immunization SMART Scheduler](StructureDefinition-ng-imm-smart-scheduler-bundle.md)
 * Examples for this Profile: [Appointment/NgAppointment-001](Appointment-NgAppointment-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-appointment.json)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-appointment.csv),
   "name" : "NgAppointment",
   "title" : "Ng Appointment",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-partner-notification-plan-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivPartnerNotificationPlanVS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivPartnerNotificationPlanVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.109 | |
 
  
@@ -56,7 +56,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "HIV Partner Notification Plan ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

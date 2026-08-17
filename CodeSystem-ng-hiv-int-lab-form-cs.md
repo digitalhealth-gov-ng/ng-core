@@ -17,19 +17,19 @@ Local coded answer concepts transcribed or inferred from the Nigeria HIV Integra
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivIntLabArvProphylaxisVS](ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.md)
-* [NgHivIntLabCytologyMethodVS](ValueSet-ng-hiv-int-lab-cytology-method-vs.md)
-* [NgHivIntLabEidAgeCategoryVS](ValueSet-ng-hiv-int-lab-eid-age-category-vs.md)
-* [NgHivIntLabEidIndicationVS](ValueSet-ng-hiv-int-lab-eid-indication-vs.md)
-* [NgHivIntLabEidResultVS](ValueSet-ng-hiv-int-lab-eid-result-vs.md)
-* [NgHivIntLabOtherTestVS](ValueSet-ng-hiv-int-lab-other-test-vs.md)
-* [NgHivIntLabPositiveNegativeResultVS](ValueSet-ng-hiv-int-lab-positive-negative-result-vs.md)
-* [NgHivIntLabReactiveResultVS](ValueSet-ng-hiv-int-lab-reactive-result-vs.md)
-* [NgHivIntLabRegimenLineVS](ValueSet-ng-hiv-int-lab-regimen-line-vs.md)
-* [NgHivIntLabRegisterTestVS](ValueSet-ng-hiv-int-lab-register-test-vs.md)
-* [NgHivIntLabRequestedTestTypeVS](ValueSet-ng-hiv-int-lab-requested-test-type-vs.md)
-* [NgHivIntLabSpecimenTypeVS](ValueSet-ng-hiv-int-lab-specimen-type-vs.md)
-* [NgHivIntLabViralLoadIndicationVS](ValueSet-ng-hiv-int-lab-viral-load-indication-vs.md)
+* [NG HIV Integrated Laboratory ARV Prophylaxis](ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.md)
+* [NG HIV Integrated Laboratory Cytology Method](ValueSet-ng-hiv-int-lab-cytology-method-vs.md)
+* [NG HIV Integrated Laboratory EID Age Category](ValueSet-ng-hiv-int-lab-eid-age-category-vs.md)
+* [NG HIV Integrated Laboratory EID Indication](ValueSet-ng-hiv-int-lab-eid-indication-vs.md)
+* [NG HIV Integrated Laboratory EID Result](ValueSet-ng-hiv-int-lab-eid-result-vs.md)
+* [NG HIV Integrated Laboratory Other Test](ValueSet-ng-hiv-int-lab-other-test-vs.md)
+* [NG HIV Integrated Laboratory Positive or Negative Result](ValueSet-ng-hiv-int-lab-positive-negative-result-vs.md)
+* [NG HIV Integrated Laboratory Reactive or Non-Reactive Result](ValueSet-ng-hiv-int-lab-reactive-result-vs.md)
+* [NG HIV Integrated Laboratory ART Regimen Line](ValueSet-ng-hiv-int-lab-regimen-line-vs.md)
+* [NG HIV Integrated Laboratory Register Test Type](ValueSet-ng-hiv-int-lab-register-test-vs.md)
+* [NG HIV Integrated Laboratory Requested Test Type](ValueSet-ng-hiv-int-lab-requested-test-type-vs.md)
+* [NG HIV Integrated Laboratory Specimen Type](ValueSet-ng-hiv-int-lab-specimen-type-vs.md)
+* [NG HIV Integrated Laboratory Viral-Load Indication](ValueSet-ng-hiv-int-lab-viral-load-indication-vs.md)
 
 
 

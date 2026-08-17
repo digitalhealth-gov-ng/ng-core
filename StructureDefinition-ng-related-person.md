@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-related-person | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgRelatedPerson |
+| Draft as of 2026-08-17 | *Computable Name*:NgRelatedPerson |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.67 | |
 
  
@@ -17,7 +17,7 @@ Sibling or parent of the sick person.
 
 **Usages:**
 
-* Refer to this Profile: [Nigeria Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md), [NG Condition](StructureDefinition-ng-condition.md), [Nigeria Document Reference](StructureDefinition-ng-documents.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md)... Show 2 more, [NG Patient](StructureDefinition-ng-patient.md) and [NG Procedure](StructureDefinition-ng-procedure.md)
+* Refer to this Profile: [NG Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md), [NG Condition](StructureDefinition-ng-condition.md), [Nigeria Document Reference](StructureDefinition-ng-documents.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md)... Show 2 more, [NG Patient](StructureDefinition-ng-patient.md) and [NG Procedure](StructureDefinition-ng-procedure.md)
 * Examples for this Profile: [RelatedPerson/NgRelatedPerson-001](RelatedPerson-NgRelatedPerson-001.md), [RelatedPerson/NgRelatedPerson-002](RelatedPerson-NgRelatedPerson-002.md), [RelatedPerson/NgRelatedPerson-003-Pseudo](RelatedPerson-NgRelatedPerson-003-Pseudo.md) and [RelatedPerson/NgRelatedPerson-003](RelatedPerson-NgRelatedPerson-003.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Registry Service Capability](CapabilityStatement-NgGeneralHospitalRegistryCapability.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md)... Show 3 more, [Nigeria Core Tertiary Referral Registry Service Capability](CapabilityStatement-NgTertiaryRegistryCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-related-person.cs
   "name" : "NgRelatedPerson",
   "title" : "NG RelatedPerson",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

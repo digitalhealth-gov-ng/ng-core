@@ -1,10 +1,10 @@
-# NG IPS Composition - Nigeria Core - FHIR Implementation Guide v0.0.0
+# Bundle NG IPS Composition - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **NG IPS Composition**
+* **Bundle NG IPS Composition**
 
-## Resource Profile: NG IPS Composition 
+## Resource Profile: Bundle NG IPS Composition 
 
 | | |
 | :--- | :--- |
@@ -17,8 +17,8 @@ International Patient Summary (IPS) Composition adapted for Nigeria Core. Confor
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [NG IPS Composition](StructureDefinition-ng-ips-composition.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-ips-composition.json)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-ips-composition.c
   }],
   "version" : "0.0.0",
   "name" : "NgIPSComposition",
-  "title" : "NG IPS Composition",
+  "title" : "Bundle NG IPS Composition",
   "status" : "active",
   "experimental" : false,
   "date" : "2026-06-19T12:50:07-04:00",

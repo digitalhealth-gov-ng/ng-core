@@ -6,7 +6,7 @@
 
 ## Example Observation: Alcohol Use Observation Example
 
-Profile: [Nigeria Core Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md)
+Profile: [NG Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md)
 
 **status**: Final
 

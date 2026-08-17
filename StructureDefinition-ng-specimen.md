@@ -1,15 +1,15 @@
-# Specimen profile - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Specimen - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Specimen profile**
+* **NG Specimen**
 
-## Resource Profile: Specimen profile 
+## Resource Profile: NG Specimen 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-specimen | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgSpecimen |
+| Active as of 2026-08-17 | *Computable Name*:NgSpecimen |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.69 | |
 
  
@@ -17,8 +17,8 @@ This profile constrains the Specimen resource to represent the characteristics o
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [Nigeria Core Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [NG Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md)
 * Examples for this Profile: [Specimen/NgSpecimen-001](Specimen-NgSpecimen-001.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-specimen.csv), [E
   }],
   "version" : "0.0.0",
   "name" : "NgSpecimen",
-  "title" : "Specimen profile",
+  "title" : "NG Specimen",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

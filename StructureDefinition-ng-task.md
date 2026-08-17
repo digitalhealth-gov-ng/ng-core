@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgTask |
+| Draft as of 2026-08-17 | *Computable Name*:NgTask |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.70 | |
 
  
@@ -17,7 +17,7 @@ Task profile for the Nigeria Core (referrals, claims, pharmacy, devices).
 
 **Usages:**
 
-* Use this Profile: [2-NGReferral MNCH Transaction Bundle](StructureDefinition-ng-mnch-referral-bundle.md)
+* Use this Profile: [Bundle NG Referral MNCH](StructureDefinition-ng-mnch-referral-bundle.md)
 * Refer to this Profile: [NG Communication](StructureDefinition-ng-communication.md)
 * Examples for this Profile: [Task/NgTask-001](Task-NgTask-001.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-task.csv), [Excel
   "name" : "NgTask",
   "title" : "NG Task",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

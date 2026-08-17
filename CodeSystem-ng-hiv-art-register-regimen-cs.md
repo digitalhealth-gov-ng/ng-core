@@ -17,7 +17,7 @@ Adult and paediatric first-, second- and third-line ART regimen codes printed on
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterRegimenVS](ValueSet-ng-hiv-art-register-regimen-vs.md)
+* [NG HIV ART Register Regimens](ValueSet-ng-hiv-art-register-regimen-vs.md)
 
 
 

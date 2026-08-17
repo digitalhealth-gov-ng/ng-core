@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-eligibility-status-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivARTEligibilityStatusCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivARTEligibilityStatusCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.18 | |
 
  
@@ -17,7 +17,7 @@ Observation codes used for indicating patient eligibility for ART.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivARTEligibilityStatusVS](ValueSet-ng-hiv-art-eligibility-status-vs.md)
+* [ART Eligibility Status](ValueSet-ng-hiv-art-eligibility-status-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Observation codes used for indicating patient eligibility for ART.
   "title" : "HIV Eligility Status for ART Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

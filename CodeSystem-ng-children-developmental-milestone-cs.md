@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-children-developmental-milestone-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgChildrenDevelopmentalMilestoneCS |
+| Active as of 2026-08-17 | *Computable Name*:NgChildrenDevelopmentalMilestoneCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.8 | |
 
  
@@ -17,7 +17,7 @@ Code used for representing the child's developmental milestone.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgChildrenDevelopmentalMilestoneVS](ValueSet-ng-children-developmental-milestone-vs.md)
+* [Children Developmental Milestone ValueSet](ValueSet-ng-children-developmental-milestone-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Code used for representing the child's developmental milestone.
   "title" : "Children Developmental Milestone Codes CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

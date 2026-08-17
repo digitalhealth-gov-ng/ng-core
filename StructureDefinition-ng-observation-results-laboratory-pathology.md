@@ -1,15 +1,15 @@
-# Nigeria Core Laboratory or Pathology Result Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Laboratory or Pathology Result Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Core Laboratory or Pathology Result Observation**
+* **NG Laboratory or Pathology Result Observation**
 
-## Resource Profile: Nigeria Core Laboratory or Pathology Result Observation 
+## Resource Profile: NG Laboratory or Pathology Result Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-laboratory-pathology | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgObservationResultsLaboratoryPathology |
+| Draft as of 2026-08-17 | *Computable Name*:NgObservationResultsLaboratoryPathology |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.53 | |
 
  
@@ -17,8 +17,8 @@ A Nigeria Core Observation representing an individual laboratory or pathology re
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [Nigeria Core Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [NG Laboratory or Pathology Result Observation](StructureDefinition-ng-observation-results-laboratory-pathology.md)
 * Examples for this Profile: [Observation/NgObservationResultsLaboratoryPathologyExample](Observation-NgObservationResultsLaboratoryPathologyExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-observation-results-laboratory-pathology.json)
@@ -46,9 +46,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation-resul
   }],
   "version" : "0.0.0",
   "name" : "NgObservationResultsLaboratoryPathology",
-  "title" : "Nigeria Core Laboratory or Pathology Result Observation",
+  "title" : "NG Laboratory or Pathology Result Observation",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

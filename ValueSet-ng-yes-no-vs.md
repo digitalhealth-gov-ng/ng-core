@@ -9,8 +9,8 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-yes-no-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgYesNoVS |
-| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.210 | |
+| Active as of 2026-08-17 | *Computable Name*:NgYesNoVS |
+| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.211 | |
 
  
 Yes/No Codes Represented as Boolean. 
@@ -49,14 +49,14 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-yes-no-vs",
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",
-    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.210"
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.211"
   }],
   "version" : "0.0.0",
   "name" : "NgYesNoVS",
   "title" : "NG Yes/No Codes VS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

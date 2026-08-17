@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-wards-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgWardsCS |
+| Active as of 2026-08-17 | *Computable Name*:NgWardsCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.110 | |
 
  
@@ -17,7 +17,7 @@ This CodeSystem defines ward codes and names mapped to their respective Local Go
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgWardsVS](ValueSet-ng-wards-vs.md)
+* [NG Wards VS](ValueSet-ng-wards-vs.md)
 
 
 
@@ -37,7 +37,7 @@ This CodeSystem defines ward codes and names mapped to their respective Local Go
   "title" : "NG Administrative Wards CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

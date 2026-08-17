@@ -8,7 +8,7 @@
 
 Profile: [NG RelatedPerson](StructureDefinition-ng-related-person.md)
 
-**patient**: [Female-01 Client Female, DoB: 1995-02-01 ( Pseudonymized Identifier: PSN-8A7F-2C19-KE95)](Patient-NgPatient-001-Pseudo.md)
+**patient**: [Female-01 Client Female, DoB: 1995-02-01 ( Pseudonymized Identifier: NgPseudoNumber#PSN-8A7F-2C19-KE95)](Patient-NgPatient-001-Pseudo.md)
 
 **relationship**: brother
 

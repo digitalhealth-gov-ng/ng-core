@@ -234,6 +234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#programme-use-of-nigeria-core" id="markdown-toc-programme-use-of-nigeria-core">Programme Use of Nigeria Core</a></li>
   <li><a href="#references-and-identifiers" id="markdown-toc-references-and-identifiers">References and Identifiers</a></li>
   <li><a href="#restful-interactions-searches-and-operations" id="markdown-toc-restful-interactions-searches-and-operations">RESTful Interactions, Searches, and Operations</a></li>
+  <li><a href="#naming-system-and-conventions" id="markdown-toc-naming-system-and-conventions">Naming System and Conventions</a></li>
   <li><a href="#terminology-conformance" id="markdown-toc-terminology-conformance">Terminology Conformance</a></li>
   <li><a href="#ucum-units" id="markdown-toc-ucum-units">UCUM Units</a></li>
   <li><a href="#missing-suppressed-and-contained-data" id="markdown-toc-missing-suppressed-and-contained-data">Missing, Suppressed, and Contained Data</a></li>
@@ -445,6 +446,67 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Named operations <strong>SHOULD</strong> document their purpose, actors, inputs, outputs, applicable profiles, terminology, security expectations, and error handling.</p>
 
+<h3 id="naming-system-and-conventions">Naming System and Conventions</h3>
+
+<p>Nigeria Core uses FHIR <code class="language-plaintext highlighter-rouge">NamingSystem</code> resources to govern identifier namespaces used across national and local health information systems. Each identifier namespace <strong>SHOULD represent one distinct identifier scheme</strong> and <strong>SHALL use a stable URI</strong> as the preferred namespace for <code class="language-plaintext highlighter-rouge">Identifier.system</code>. Identifier classification, such as NIN, MRN, professional licence number, or facility identifier, is represented separately using <code class="language-plaintext highlighter-rouge">Identifier.type</code>. Implementers SHALL NOT use a terminology <code class="language-plaintext highlighter-rouge">CodeSystem</code> URL as <code class="language-plaintext highlighter-rouge">Identifier.system</code> unless that URL has explicitly been designated as the identifier namespace.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Convention</th>
+      <th>Nigeria Core requirement</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>FHIR artifact name</strong></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">Ng</code> prefix and PascalCase for Nigeria Core FSH artefact names.</td>
+      <td><code class="language-plaintext highlighter-rouge">NgPatient</code>, <code class="language-plaintext highlighter-rouge">NgOrganization</code>, <code class="language-plaintext highlighter-rouge">NgNamingSystem</code></td>
+    </tr>
+    <tr>
+      <td><strong>FHIR logical ID</strong></td>
+      <td>Use lowercase kebab-case.</td>
+      <td><code class="language-plaintext highlighter-rouge">ng-patient</code>, <code class="language-plaintext highlighter-rouge">ng-naming-system</code></td>
+    </tr>
+    <tr>
+      <td><strong>Canonical URL</strong></td>
+      <td>Use the Nigeria Core canonical namespace for conformance and terminology artefacts.</td>
+      <td><code class="language-plaintext highlighter-rouge">https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient</code></td>
+    </tr>
+    <tr>
+      <td><strong>Identifier namespace</strong></td>
+      <td>Use a stable URI representing the authority or scheme that assigns the identifier.</td>
+      <td><code class="language-plaintext highlighter-rouge">https://fhir-ig.digitalhealth.gov.ng/identifier/nin</code></td>
+    </tr>
+    <tr>
+      <td><strong>Identifier type</strong></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">Identifier.type</code> to classify the identifier independently of its namespace.</td>
+      <td><code class="language-plaintext highlighter-rouge">NIN</code>, <code class="language-plaintext highlighter-rouge">MRN</code>, <code class="language-plaintext highlighter-rouge">Facility ID</code></td>
+    </tr>
+    <tr>
+      <td><strong>NamingSystem scope</strong></td>
+      <td>One <code class="language-plaintext highlighter-rouge">NamingSystem</code> SHALL describe one identifier namespace; additional <code class="language-plaintext highlighter-rouge">uniqueId</code> entries may represent equivalent URI, OID, UUID, or legacy identifiers for that same namespace.</td>
+      <td>NIN NamingSystem</td>
+    </tr>
+    <tr>
+      <td><strong>Preferred namespace</strong></td>
+      <td>A governed identifier NamingSystem SHOULD define one preferred <code class="language-plaintext highlighter-rouge">uniqueId</code> of type <code class="language-plaintext highlighter-rouge">uri</code>; this value SHOULD be used in <code class="language-plaintext highlighter-rouge">Identifier.system</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">uniqueId.type = uri</code></td>
+    </tr>
+    <tr>
+      <td><strong>Local identifiers</strong></td>
+      <td>Locally assigned identifiers SHALL use a namespace that identifies the assigning authority where uniqueness is not national.</td>
+      <td>Facility-specific MRN namespace</td>
+    </tr>
+    <tr>
+      <td><strong>Stability</strong></td>
+      <td>Published canonical and identifier namespace URIs SHALL remain stable. Changes SHOULD be handled through versioning, aliases, or migration guidance rather than reusing a URI for a different meaning.</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="terminology-conformance">Terminology Conformance</h3>
 
 <p>Nigeria Core uses national, programme, regulator, and international terminology systems, including ICD-11, SNOMED CT, LOINC, ATC, and UCUM.</p>
@@ -536,7 +598,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 12, 2026 13:22+0100">2026-08-12</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 07:55+0100">2026-08-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

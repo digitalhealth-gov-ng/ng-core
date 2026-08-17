@@ -40,8 +40,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.558"],
     "uses" : {
     },
-    "StructureDefinition-ng-claim.html" : "NG Claim",
-    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse"
+    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse",
+    "StructureDefinition-ng-claim.html" : "NG Claim"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/claim-use",
@@ -55,8 +55,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.544"],
     "uses" : {
     },
-    "StructureDefinition-ng-claim.html" : "NG Claim",
-    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse"
+    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse",
+    "StructureDefinition-ng-claim.html" : "NG Claim"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -225,11 +225,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.592"],
     "uses" : {
     },
+    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse",
     "StructureDefinition-ng-coverage-eligibility-response.html" : "NG Claim Coverage Eligibility Response",
-    "StructureDefinition-ng-coverage.html" : "NG Claim Coverage",
-    "StructureDefinition-ng-claim.html" : "NG Claim",
     "StructureDefinition-ng-coverage-eligibility-request.html" : "NG Claim Coverage Eligibility Request",
-    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse"
+    "StructureDefinition-ng-coverage.html" : "NG Claim Coverage",
+    "StructureDefinition-ng-claim.html" : "NG Claim"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/goal-achievement",
@@ -553,8 +553,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.13"],
     "uses" : {
     },
-    "StructureDefinition-ng-coverage-eligibility-response.html" : "NG Claim Coverage Eligibility Response",
-    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse"
+    "StructureDefinition-ng-claim-response.html" : "NG ClaimResponse",
+    "StructureDefinition-ng-coverage-eligibility-response.html" : "NG Claim Coverage Eligibility Response"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -597,9 +597,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-ng-care-plan.html" : "NG CarePlan",
     "StructureDefinition-ng-service-request.html" : "NG ServiceRequest",
-    "StructureDefinition-ng-device-request.html" : "NG DeviceRequest"
+    "StructureDefinition-ng-device-request.html" : "NG DeviceRequest",
+    "StructureDefinition-ng-care-plan.html" : "NG CarePlan"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -712,9 +712,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.77"],
     "uses" : {
     },
-    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
-    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register"
+    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
+    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -772,7 +772,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.4"],
     "uses" : {
     },
-    "StructureDefinition-ng-flag.html" : "Nigeria Alert Flag"
+    "StructureDefinition-ng-flag.html" : "NG Alert Flag"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-alert-code-vs",
@@ -786,7 +786,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.5"],
     "uses" : {
     },
-    "StructureDefinition-ng-flag.html" : "Nigeria Alert Flag"
+    "StructureDefinition-ng-flag.html" : "NG Alert Flag"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-atc-all-medications-vs",
@@ -811,7 +811,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.7"],
     "uses" : {
     },
-    "StructureDefinition-ng-specimen.html" : "Specimen profile"
+    "StructureDefinition-ng-specimen.html" : "NG Specimen"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-bundle-identifier-vs",
@@ -890,7 +890,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.13"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation-tobacco-use.html" : "Nigeria Core Tobacco Smoking Status Observation"
+    "StructureDefinition-ng-observation-tobacco-use.html" : "NG Tobacco Smoking Status Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-defaulter-follow-up-method",
@@ -996,18 +996,18 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.22"],
     "uses" : {
     },
-    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
-    "Questionnaire-ng-imm-client-registration-form.html" : "NG Immunization Client Registration Form",
+    "StructureDefinition-ng-patient.html" : "NG Patient",
+    "StructureDefinition-ng-related-person.html" : "NG RelatedPerson",
     "Questionnaire-ng-hiv-pharmacy-order-questionnaire.html" : "NG HIV Combined Pharmacy Order Form Questionnaire",
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
-    "Questionnaire-ng-hiv-eac-form-questionnaire.html" : "NG HIV Enhanced Adherence Counselling Form Questionnaire",
-    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire",
     "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
-    "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
     "Questionnaire-ng-hiv-int-lab-form-questionnaire.html" : "NG HIV Integrated Laboratory Order and Result Form Questionnaire",
     "StructureDefinition-NgHivPharmacyDailyWorksheet.html" : "NG HIV Pharmacy Daily Worksheet",
-    "StructureDefinition-ng-patient.html" : "NG Patient",
-    "StructureDefinition-ng-related-person.html" : "NG RelatedPerson"
+    "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
+    "Questionnaire-ng-hiv-eac-form-questionnaire.html" : "NG HIV Enhanced Adherence Counselling Form Questionnaire",
+    "Questionnaire-ng-imm-client-registration-form.html" : "NG Immunization Client Registration Form",
+    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
+    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-adult-art-medication-vs",
@@ -1271,10 +1271,10 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.44"],
     "uses" : {
     },
-    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
+    "StructureDefinition-NgHivPharmacyDailyWorksheet.html" : "NG HIV Pharmacy Daily Worksheet",
     "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
-    "StructureDefinition-NgHivPharmacyDailyWorksheet.html" : "NG HIV Pharmacy Daily Worksheet"
+    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-register-tb-status-vs",
@@ -1392,8 +1392,8 @@
     "uses" : {
     },
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
-    "Questionnaire-ng-hiv-care-art-questionnaire.html" : "NG HIV Care and ART Questionnaire",
-    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register"
+    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
+    "Questionnaire-ng-hiv-care-art-questionnaire.html" : "NG HIV Care and ART Questionnaire"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cause-of-death-vs",
@@ -1421,8 +1421,8 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.55"],
     "uses" : {
     },
-    "Questionnaire-ng-hiv-care-art-questionnaire.html" : "NG HIV Care and ART Questionnaire",
-    "Questionnaire-ng-hiv-int-lab-form-questionnaire.html" : "NG HIV Integrated Laboratory Order and Result Form Questionnaire"
+    "Questionnaire-ng-hiv-int-lab-form-questionnaire.html" : "NG HIV Integrated Laboratory Order and Result Form Questionnaire",
+    "Questionnaire-ng-hiv-care-art-questionnaire.html" : "NG HIV Care and ART Questionnaire"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cd4-vl-classification-for-treatment-failure-vs",
@@ -1497,6 +1497,34 @@
     "uses" : {
     },
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-diagnosis-concepts-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDiagnosisConceptsVS",
+    "title" : "Nigeria HIV Diagnosis Concepts",
+    "description" : "Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping.",
+    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-diagnosis-cs"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.215"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.215"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivDiagnosisToICD11.html" : "Nigeria HIV Diagnoses → ICD-11 MMS"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-diagnosis-icd11-concepts-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDiagnosisICD11ConceptsVS",
+    "title" : "Nigeria HIV ICD-11 Diagnosis Concepts",
+    "description" : "ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap.",
+    "systems" : ["http://id.who.int/icd/release/11/mms"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.216"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.216"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivDiagnosisToICD11.html" : "Nigeria HIV Diagnoses → ICD-11 MMS"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-disclosure-stage-vs",
@@ -1599,9 +1627,9 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.69"],
     "uses" : {
     },
-    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
     "Questionnaire-ng-hiv-pharmacy-order-questionnaire.html" : "NG HIV Combined Pharmacy Order Form Questionnaire",
-    "Questionnaire-ng-hiv-eac-form-questionnaire.html" : "NG HIV Enhanced Adherence Counselling Form Questionnaire"
+    "Questionnaire-ng-hiv-eac-form-questionnaire.html" : "NG HIV Enhanced Adherence Counselling Form Questionnaire",
+    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-eac-intervention-services-vs",
@@ -1853,8 +1881,8 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.88"],
     "uses" : {
     },
-    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire",
-    "Questionnaire-ng-hiv-int-lab-form-questionnaire.html" : "NG HIV Integrated Laboratory Order and Result Form Questionnaire"
+    "Questionnaire-ng-hiv-int-lab-form-questionnaire.html" : "NG HIV Integrated Laboratory Order and Result Form Questionnaire",
+    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-register-dsd-status-vs",
@@ -2022,7 +2050,8 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT"
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-loinc-concepts",
@@ -2491,7 +2520,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.137"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation.html" : "Nigeria Core Composite Observation"
+    "StructureDefinition-ng-observation.html" : "NG Composite Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-tb-preventive-therapy-medication-vs",
@@ -2828,17 +2857,17 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.163"],
     "uses" : {
     },
-    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
-    "Questionnaire-ng-hiv-pharmacy-order-questionnaire.html" : "NG HIV Combined Pharmacy Order Form Questionnaire",
     "StructureDefinition-ng-location.html" : "NG Location",
+    "StructureDefinition-ng-patient.html" : "NG Patient",
+    "Questionnaire-ng-hiv-pharmacy-order-questionnaire.html" : "NG HIV Combined Pharmacy Order Form Questionnaire",
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
-    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire",
-    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
     "Questionnaire-ng-imm-facility-registration-form.html" : "NG Immunization Facility Registration Form",
-    "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
-    "StructureDefinition-ng-organization.html" : "NG Organization",
+    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
     "StructureDefinition-NgHivPharmacyDailyWorksheet.html" : "NG HIV Pharmacy Daily Worksheet",
-    "StructureDefinition-ng-patient.html" : "NG Patient"
+    "StructureDefinition-ng-organization.html" : "NG Organization",
+    "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
+    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
+    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-missed-vaccination-reason",
@@ -2896,8 +2925,8 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.168"],
     "uses" : {
     },
-    "StructureDefinition-ng-organization-owner.html" : "NG Owner of Facility",
-    "Questionnaire-ng-imm-facility-registration-form.html" : "NG Immunization Facility Registration Form"
+    "Questionnaire-ng-imm-facility-registration-form.html" : "NG Immunization Facility Registration Form",
+    "StructureDefinition-ng-organization-owner.html" : "NG Owner of Facility"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-patient-education-level-value-set",
@@ -2947,7 +2976,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.172"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation-pregnancy-outcome.html" : "Nigeria Core Pregnancy Outcome Observation"
+    "StructureDefinition-ng-observation-pregnancy-outcome.html" : "NG Pregnancy Outcome Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancy-expected-delivery-date-method-vs",
@@ -2961,7 +2990,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.173"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation-pregnancy-edd.html" : "Nigeria Core Pregnancy Expected Delivery Date Observation"
+    "StructureDefinition-ng-observation-pregnancy-edd.html" : "NG Pregnancy EDD Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancy-mode-of-delivery-vs",
@@ -2999,9 +3028,9 @@
     "uses" : {
     },
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
+    "StructureDefinition-ng-observation-pregnancy-status.html" : "NG Pregnancy Status Observation",
     "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire",
-    "StructureDefinition-ng-observation-pregnancy-status.html" : "Nigeria Core Pregnancy Status Observation",
-    "StructureDefinition-ng-observation.html" : "Nigeria Core Composite Observation"
+    "StructureDefinition-ng-observation.html" : "NG Composite Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-provenance-activity-vs",
@@ -3040,10 +3069,10 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.179"],
     "uses" : {
     },
+    "StructureDefinition-ng-patient.html" : "NG Patient",
     "Questionnaire-ng-imm-client-registration-form.html" : "NG Immunization Client Registration Form",
-    "Questionnaire-ng-imm-updating-client-record-form.html" : "NG Immunization Updating Client Record Form",
     "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire",
-    "StructureDefinition-ng-patient.html" : "NG Patient"
+    "Questionnaire-ng-imm-updating-client-record-form.html" : "NG Immunization Updating Client Record Form"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-report-stratifier-vs",
@@ -3067,7 +3096,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.181"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation-results-laboratory-pathology.html" : "Nigeria Core Laboratory or Pathology Result Observation"
+    "StructureDefinition-ng-observation-results-laboratory-pathology.html" : "NG Laboratory or Pathology Result Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-radiology-component-vs",
@@ -3083,7 +3112,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.182"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation-results-radiology.html" : "Nigeria Core Radiology Result Observation"
+    "StructureDefinition-ng-observation-results-radiology.html" : "NG Radiology Result Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-radiology-observations-vs",
@@ -3097,7 +3126,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.183"],
     "uses" : {
     },
-    "StructureDefinition-ng-observation-results-radiology.html" : "Nigeria Core Radiology Result Observation"
+    "StructureDefinition-ng-observation-results-radiology.html" : "NG Radiology Result Observation"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-specimen-collection-method-vs",
@@ -3111,7 +3140,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.184"],
     "uses" : {
     },
-    "StructureDefinition-ng-specimen.html" : "Specimen profile"
+    "StructureDefinition-ng-specimen.html" : "NG Specimen"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-specimen-type-vs",
@@ -3125,7 +3154,7 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.185"],
     "uses" : {
     },
-    "StructureDefinition-ng-specimen.html" : "Specimen profile"
+    "StructureDefinition-ng-specimen.html" : "NG Specimen"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-status-vs",
@@ -3161,17 +3190,17 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.188"],
     "uses" : {
     },
-    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
-    "Questionnaire-ng-hiv-pharmacy-order-questionnaire.html" : "NG HIV Combined Pharmacy Order Form Questionnaire",
     "StructureDefinition-ng-location.html" : "NG Location",
+    "StructureDefinition-ng-patient.html" : "NG Patient",
+    "Questionnaire-ng-hiv-pharmacy-order-questionnaire.html" : "NG HIV Combined Pharmacy Order Form Questionnaire",
     "StructureDefinition-NgHivArtRegister.html" : "NG HIV National ART Register",
-    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire",
-    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
     "Questionnaire-ng-imm-facility-registration-form.html" : "NG Immunization Facility Registration Form",
-    "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
-    "StructureDefinition-ng-organization.html" : "NG Organization",
+    "StructureDefinition-NgHivIntLabMonitoringRegister.html" : "NG HIV Integrated Laboratory Monitoring Register",
     "StructureDefinition-NgHivPharmacyDailyWorksheet.html" : "NG HIV Pharmacy Daily Worksheet",
-    "StructureDefinition-ng-patient.html" : "NG Patient"
+    "StructureDefinition-ng-organization.html" : "NG Organization",
+    "StructureDefinition-NgHivTrackingRegister.html" : "NG HIV Tracking Register",
+    "StructureDefinition-NgHivEacRegister.html" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
+    "Questionnaire-ng-hiv-transfer-form-questionnaire.html" : "NG HIV Care and Treatment Transfer Form Questionnaire"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-stock-administration-up-method",
@@ -3379,11 +3408,11 @@
     "uses" : {
     },
     "ConceptMap-NgVaccineLocal-to-ICD11.html" : "NG Local Vaccine Codes → ICD11",
-    "Questionnaire-ng-imm-defaulter-tracking-form.html" : "NG Immunization Defaulter Tracking Form",
     "Questionnaire-ng-imm-manage-aefi-form.html" : "NG Immunization Manage AEFI Form",
-    "StructureDefinition-ng-immunization.html" : "NG Immunization",
+    "Questionnaire-ng-imm-defaulter-tracking-form.html" : "NG Immunization Defaulter Tracking Form",
     "ConceptMap-NgVaccineLocal-to-SNOMED.html" : "NG Local Vaccine Codes → SNOMED CT",
-    "Questionnaire-ng-imm-administer-vaccine-form.html" : "NG Immunization Administer Vaccine Form"
+    "Questionnaire-ng-imm-administer-vaccine-form.html" : "NG Immunization Administer Vaccine Form",
+    "StructureDefinition-ng-immunization.html" : "NG Immunization"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-vaccine-preventable-disease",
@@ -3421,10 +3450,24 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.209"],
     "uses" : {
     },
+    "Questionnaire-ng-imm-facility-registration-form.html" : "NG Immunization Facility Registration Form",
     "Questionnaire-ng-imm-client-registration-form.html" : "NG Immunization Client Registration Form",
     "StructureDefinition-ng-administrative-ward.html" : "NG Administrative Wards",
-    "Questionnaire-ng-imm-updating-client-record-form.html" : "NG Immunization Updating Client Record Form",
-    "Questionnaire-ng-imm-facility-registration-form.html" : "NG Immunization Facility Registration Form"
+    "Questionnaire-ng-imm-updating-client-record-form.html" : "NG Immunization Updating Client Record Form"
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-who-hiv-concepts-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgWhoHivConceptsVS",
+    "title" : "Nigeria Relevant WHO HIV Concepts",
+    "description" : "Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem.",
+    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.210"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.210"],
+    "uses" : {
+    },
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-yes-no-vs",
@@ -3435,8 +3478,8 @@
     "description" : "Yes/No Codes Represented as Boolean.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs",
     "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.210"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.210"]
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.211"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.211"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/nigeria-vaccine-site",
@@ -3445,7 +3488,7 @@
     "name" : "NGImmunizationSiteVS",
     "title" : "NG-Imm Vaccine Site VS",
     "description" : "Vaccine Site",
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.211"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.211"]
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.212"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.212"]
   }]
 }

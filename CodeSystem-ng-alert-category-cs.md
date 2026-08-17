@@ -17,7 +17,7 @@ Categories used to classify alerts represented using the Nigeria Alert Flag prof
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgAlertCategoryVS](ValueSet-ng-alert-category-vs.md)
+* [Nigeria Alert Category Value Set](ValueSet-ng-alert-category-vs.md)
 
 
 

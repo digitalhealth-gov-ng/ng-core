@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgMedication |
+| Draft as of 2026-08-17 | *Computable Name*:NgMedication |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.46 | |
 
  
@@ -17,7 +17,7 @@ A Medication profile with some core elements for demonstration purposes.
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
 * Refer to this Profile: [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md), [NG MedicationRequest](StructureDefinition-ng-medication-request.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md) and [NG Procedure](StructureDefinition-ng-procedure.md)
 * Examples for this Profile: [Medication/NgMedication-001](Medication-NgMedication-001.md), [Medication/NgMedication-002](Medication-NgMedication-002.md) and [Medication/NgMedication-003](Medication-NgMedication-003.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md)
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-medication.csv), 
   "name" : "NgMedication",
   "title" : "NG Medication",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

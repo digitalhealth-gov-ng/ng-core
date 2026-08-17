@@ -1,15 +1,15 @@
-# 4-NG AEFI Report Bundle - Nigeria Core - FHIR Implementation Guide v0.0.0
+# Bundle NG AEFI Report - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **4-NG AEFI Report Bundle**
+* **Bundle NG AEFI Report**
 
-## Resource Profile: 4-NG AEFI Report Bundle 
+## Resource Profile: Bundle NG AEFI Report 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-aefi-report-bundle | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgAefiReportBundle |
+| Active as of 2026-08-17 | *Computable Name*:NgAefiReportBundle |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.9 | |
 
  
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-aefi-report-bundl
   }],
   "version" : "0.0.0",
   "name" : "NgAefiReportBundle",
-  "title" : "4-NG AEFI Report Bundle",
+  "title" : "Bundle NG AEFI Report",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

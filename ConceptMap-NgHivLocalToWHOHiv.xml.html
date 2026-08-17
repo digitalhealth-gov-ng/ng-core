@@ -1,0 +1,720 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Nigeria HIV Local Concepts to WHO SMART HIV - XML Representation - Nigeria Core - FHIR Implementation Guide v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <style>
+/* Nigeria National Green Theme - Primary: Nigerian Green (#008751) | Secondary: Deep Green (#005B36) | Neutral: White (#FFFFFF) */
+:root {
+  --ig-status-text-color: #004D2D;
+  --navbar-bg-color: #004D2D;
+  --footer-bg-color: #004D2D;
+  --footer-container-bg-color: #005B36;
+  --stripe-bg-color: #FFFFFF;
+
+  --btn-hover-color:  #005B36;
+  --btn-active-color: #009B5E;
+  --btn-text-color: #FFFFFF;
+  --btn-gradient-start-color: #00A86B;
+  --btn-gradient-end-color: #008751;
+
+  --link-color: #005B36;
+  --link-hover-color: #008751;
+
+  --publish-box-bg-color: #EAF7F0;
+  --publish-box-border: 1px solid #008751;
+  --toc-box-bg-color: #EAF7F0;
+  --toc-box-border: 1px solid #008751;
+
+  --stu-note-background-color: #F3FBF6;
+  --stu-note-border-left-color: #6CC59A;
+
+  --footer-hyperlink-text-color: #B7E4CC;
+  --footer-highlight-text-color: #FFFFFF;
+}
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"32.455"}
+    h3,h4,h5,h6{--heading-prefix:"32.455"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        
+    <div id="logo">
+      <a data-no-external="true" href="index.html">
+        <img height="70" alt="Nigeria Digital Health" src="coat_of_arms.png"/>
+      </a>
+    </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Nigeria Core - FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Conformance <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="general.html">General Requirements</a></li>
+      <li><a href="clinical-notes.html">General Clinical Notes</a></li>
+      <li><a href="provenance.html">Basic Provenance</a></li>
+      <li><a href="nhmis.html">Relationship with NHMIS</a></li>
+      <li><a href="registries.html">Registries &amp; Shared Services</a></li>
+      <li><a href="other-igs.html">Relationship with Other IGs</a></li>
+      <li><a href="security.html">Security</a></li>
+    </ul>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      FHIR Artefacts <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="hiv-artefacts.html">HIV Program Artefacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
+      <li><a href="artifacts.html">All FHIR Artefacts</a></li>
+      <li><a href="ng-ps.html">NG Patient Summary</a></li>
+      <li><a href="">TB</a></li>
+      <li><a href="">Malaria</a></li>
+      <li><a href="">MNCH</a></li>
+      <li><a href="">Community Health</a></li>
+      <li><a href="">Laboratory &amp; Imaging</a></li>
+      <li><a href="">Referral</a></li>
+      <li><a href="">Reporting &amp; Analytics</a></li>
+      <li><a href="">Immunization</a></li>
+      <li><a href="">Verifiable Digital Health Certificate</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Downloads &amp; Change Logs <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="downloads.html">Downloads</a></li>
+      <li><a href="change-log.html">Change Logs &amp; Versioning</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Digital Adaptation Kits(L2) <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="immunization.html">Immunization</a></li>
+    </ul>
+  </li>
+
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Nigeria HIV Local Concepts to WHO SMART HIV</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Nigeria Core - FHIR Implementation Guide - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir-ig.digitalhealth.gov.ng/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ConceptMap-NgHivLocalToWHOHiv.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-NgHivLocalToWHOHiv.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-NgHivLocalToWHOHiv.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Nigeria HIV Local Concepts to WHO SMART HIV - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-08-15
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ConceptMap-NgHivLocalToWHOHiv.xml" no-download="true">Raw xml</a> | <a href="ConceptMap-NgHivLocalToWHOHiv.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap">ConceptMap</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#ConceptMap.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NgHivLocalToWHOHiv&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap NgHivLocalToWHOHiv&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;NgHivLocalToWHOHiv&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcNgHivLocalToWHOHiv&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping from &lt;a href=&quot;ValueSet-ng-hiv-local-concepts.html&quot;&gt;Nigeria HIV Local Concepts&lt;/a&gt; to &lt;a href=&quot;ValueSet-ng-who-hiv-concepts-vs.html&quot;&gt;Nigeria Relevant WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-art-follow-up-status-cs.html&quot;&gt;HIV Follow Up Status CodeSystem&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lost (Lost to follow-up)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE42 (Lost to follow-up)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;to (Transfer out)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE43 (Transferred out)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;dead&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE44 (Death (documented))&lt;/td&gt;&lt;td&gt;WHO requires documented death; the local Dead concept does not itself assert documentation.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;restart&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE45 (Restarting ART)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stop (Stopped treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE40 (Stopped ART)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stop (Stopped treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE45 (Refused (stopped) treatment)&lt;/td&gt;&lt;td&gt;To add details later&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;alive-on-art&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE47 (On ART)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 2 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-arv-adherence-cs.html&quot;&gt;HIV-ARV Adherence CodeSystem&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Stopped&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact&quot; title=&quot;inexact&quot;&gt;maps loosely to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE40 (Stopped ART)&lt;/td&gt;&lt;td&gt;The local code is used in an adherence/status context, while the WHO concept explicitly represents ART treatment status.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 3 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.html&quot;&gt;HIV DSD - Reason For Category Change CodeSystem&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Dead&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE44 (Death (documented))&lt;/td&gt;&lt;td&gt;WHO requires documented death; the local Dead concept is broader.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Lost&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE42 (Lost to follow-up)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TO&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE43 (Transferred out)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 4 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-positive-tracking-cs.html&quot;&gt;HIV Positive Tracking&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Not-Started (ART Not Started)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE4 (Did not initiate ART)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Started-ART&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE382 (ART initiated within 7 days of diagnosis)&lt;/td&gt;&lt;td&gt;WHO is narrower because it requires ART initiation within 7 days of diagnosis; the local code does not specify timing.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Linked-To-Care (Linked to care and treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.B.DE147 (Linked to enrolment in care and ART initiation)&lt;/td&gt;&lt;td&gt;WHO additionally specifies enrolment in care and ART initiation; the local linkage concept is broader.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Final-Outcome&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact&quot; title=&quot;inexact&quot;&gt;maps loosely to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE41 (HIV Treatement outcome)&lt;/td&gt;&lt;td&gt;The local concept identifies a final tracking outcome, while WHO identifies the HIV treatment outcome data element.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 5 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-final-outcome-cs.html&quot;&gt;HIV - Final Outcome CodeSystem&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lost-to-follow-up&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE42 (Lost to follow-up)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;died&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE44 (Death (documented))&lt;/td&gt;&lt;td&gt;WHO requires documented death; the local Died concept is broader.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;declined&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE45 (Refused (stopped) treatment)&lt;/td&gt;&lt;td&gt;WHO specifically represents refusal with stopped treatment; the local Declined outcome is broader.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;started-art&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE382 (ART initiated within 7 days of diagnosis)&lt;/td&gt;&lt;td&gt;WHO is narrower because it limits initiation to within 7 days of diagnosis.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;confirmed-referral&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact&quot; title=&quot;inexact&quot;&gt;maps loosely to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE49 (Transfer confirmed)&lt;/td&gt;&lt;td&gt;The local concept represents a confirmed referral, while WHO represents a confirmed transfer.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 6 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-reason-not-started-art-cs.html&quot;&gt;HIV - Reason Not Started ART CodeSystem&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;declined&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE371 (Patient self-reported as not ready/willing)&lt;/td&gt;&lt;td&gt;WHO specifically states that the patient self-reported not being ready or willing; the local Declined category is broader.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;on-adherence-preparation&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact&quot; title=&quot;inexact&quot;&gt;maps loosely to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE372 (Not completed education, support and preparation for ART)&lt;/td&gt;&lt;td&gt;Both refer to preparation before ART initiation, but the local status and WHO reason-for-delay concepts are not identical.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;known-positive-on-art (Known +ve on ART)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider&quot; title=&quot;wider&quot;&gt;maps to wider concept&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.H.DE47 (On ART)&lt;/td&gt;&lt;td&gt;WHO On ART is broader because it does not additionally encode the local known-positive context.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;on-oi-management&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE377 (Patient diagnosed with cryptococcal meningitis)&lt;/td&gt;&lt;td&gt;Cryptococcal meningitis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;on-oi-management&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower&quot; title=&quot;narrower&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE378 (Patient diagnosed with histoplasmosis)&lt;/td&gt;&lt;td&gt;Histoplasmosis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;other (Other Specify here)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE380 (Other)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 7 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-target-population-category-cs.html&quot;&gt;Target Population Category Codes&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Female-Commercial-Sex-Workers&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider&quot; title=&quot;wider&quot;&gt;maps to wider concept&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.B.DE51 (Sex worker)&lt;/td&gt;&lt;td&gt;WHO Sex worker is broader because it is not restricted to female sex workers.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;MSM&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.B.DE52 (Men who have sex with men)&lt;/td&gt;&lt;td&gt;WHO includes both trans and gender-diverse people; the local TG category is narrower.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TG&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider&quot; title=&quot;wider&quot;&gt;maps to wider concept&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.B.DE53 (Trans and gender-diverse people)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;People-Who-Inject-Drug&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.B.DE54 (People who inject drugs)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OVC-AIDS-Orphaned (OVC or AIDS Orphaned)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider&quot; title=&quot;wider&quot;&gt;maps to wider concept&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.B.DE58 (Orphan or vulnerable child)&lt;/td&gt;&lt;td&gt;WHO Orphan or vulnerable child is broader than the local HIV/AIDS-oriented OVC category.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 8 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-tb-tpt-prophylaxis-type-cs.html&quot;&gt;TB TPT Prophylaxis Type Codes&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;inh&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact&quot; title=&quot;inexact&quot;&gt;maps loosely to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE250 (Provide isoniazid preventive therapy)&lt;/td&gt;&lt;td&gt;The local code identifies isoniazid prophylaxis type; WHO represents the action of providing isoniazid preventive therapy.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 9 &lt;/b&gt;Mapping from &lt;a href=&quot;CodeSystem-ng-hiv-enhanced-adherence-counselling-status-cs.html&quot;&gt;Enhanced Adherence Counselling&lt;/a&gt; to &lt;a href=&quot;CodeSystem-ng-who-hiv-concepts-cs.html&quot;&gt;Nigeria Local WHO HIV Concepts&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;eac (Enhanced Adherence Counselling)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact&quot; title=&quot;inexact&quot;&gt;maps loosely to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;HIV.D.DE496 (Enhanced adherence counselling provided)&lt;/td&gt;&lt;td&gt;The local concept identifies enhanced adherence counselling; WHO explicitly represents that counselling was provided.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/ConceptMap/NgHivLocalToWHOHiv&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:ietf:rfc:3986&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:oid:2.16.840.1.113884.3.9944.1.18.9&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.identifier">identifier</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NgHivLocalToWHOHiv&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nigeria HIV Local Concepts → WHO SMART HIV&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-08-15&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NDHI&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NDHI&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://digitalhealth.gov.ng&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;emeka2015@gmail.com&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nigeria Digital in Health Initiative.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;lekeojewale@gmail.com&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nigeria Digital in Health Initiative.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;emeka2015@gmail.com&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NG&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nigeria&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.jurisdiction">jurisdiction</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.source_x_">sourceCanonical</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-local-concepts&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.target_x_">targetCanonical</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-who-hiv-concepts-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;lost&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE42&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;to&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE43&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;dead&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE44&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO requires documented death; the local Dead concept does not itself assert documentation.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;restart&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE45&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;stop&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE40&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;stop&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE45&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;To add details later&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;alive-on-art&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE47&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Stopped&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE40&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inexact&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The local code is used in an adherence/status context, while the WHO concept explicitly represents ART treatment status.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Dead&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE44&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO requires documented death; the local Dead concept is broader.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Lost&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE42&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TO&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE43&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Not-Started&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE4&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Started-ART&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE382&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO is narrower because it requires ART initiation within 7 days of diagnosis; the local code does not specify timing.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Linked-To-Care&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.B.DE147&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO additionally specifies enrolment in care and ART initiation; the local linkage concept is broader.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Final-Outcome&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE41&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inexact&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The local concept identifies a final tracking outcome, while WHO identifies the HIV treatment outcome data element.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;lost-to-follow-up&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE42&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;died&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE44&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO requires documented death; the local Died concept is broader.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;declined&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE45&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO specifically represents refusal with stopped treatment; the local Declined outcome is broader.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;started-art&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE382&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO is narrower because it limits initiation to within 7 days of diagnosis.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;confirmed-referral&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE49&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inexact&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The local concept represents a confirmed referral, while WHO represents a confirmed transfer.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;declined&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE371&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO specifically states that the patient self-reported not being ready or willing; the local Declined category is broader.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;on-adherence-preparation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE372&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inexact&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Both refer to preparation before ART initiation, but the local status and WHO reason-for-delay concepts are not identical.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;known-positive-on-art&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.H.DE47&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wider&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO On ART is broader because it does not additionally encode the local known-positive context.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;on-oi-management&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE377&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cryptococcal meningitis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;on-oi-management&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE378&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;narrower&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Histoplasmosis is one specific reason within the broader local On OI management category. Do not automatically select this target without diagnosis context.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE380&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-target-population-category-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Female-Commercial-Sex-Workers&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.B.DE51&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wider&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO Sex worker is broader because it is not restricted to female sex workers.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MSM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.B.DE52&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO includes both trans and gender-diverse people; the local TG category is narrower.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TG&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.B.DE53&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wider&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;People-Who-Inject-Drug&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.B.DE54&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equivalent&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OVC-AIDS-Orphaned&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.B.DE58&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wider&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO Orphan or vulnerable child is broader than the local HIV/AIDS-oriented OVC category.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-prophylaxis-type-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inh&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE250&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inexact&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The local code identifies isoniazid prophylaxis type; WHO represents the action of providing isoniazid preventive therapy.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;eac&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HIV.D.DE496&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">equivalence</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;inexact&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">comment</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The local concept identifies enhanced adherence counselling; WHO explicitly represents that counselling was provided.&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">target</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">group</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap">ConceptMap</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 07:55+0100">2026-08-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

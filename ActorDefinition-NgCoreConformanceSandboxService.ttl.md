@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2026-08-12 |
+| Active as of 2026-08-17 |
 
 [Raw ttl](ActorDefinition-NgCoreConformanceSandboxService.ttl) | [Download](ActorDefinition-NgCoreConformanceSandboxService.ttl)
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-pregnancy-status-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgPregnancyStatusVS |
+| Active as of 2026-08-17 | *Computable Name*:NgPregnancyStatusVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.176 | |
 
  
@@ -18,8 +18,8 @@ The outcome of the Pregnancy. Pregnancy status codes value set.
  **References** 
 
 * [NG HIV National ART Register](StructureDefinition-NgHivArtRegister.md)
-* [Nigeria Core Composite Observation](StructureDefinition-ng-observation.md)
-* [Nigeria Core Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md)
+* [NG Composite Observation](StructureDefinition-ng-observation.md)
+* [NG Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md)
 * [NG HIV Care and Treatment Transfer Form Questionnaire](Questionnaire-ng-hiv-transfer-form-questionnaire.md)
 
 ### Logical Definition (CLD)
@@ -27,8 +27,6 @@ The outcome of the Pregnancy. Pregnancy status codes value set.
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -61,7 +59,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "NG Clinical Status VS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

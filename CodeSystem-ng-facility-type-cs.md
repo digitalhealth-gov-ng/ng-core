@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-facility-type-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgFacilityTypeCS |
+| Active as of 2026-08-17 | *Computable Name*:NgFacilityTypeCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.16 | |
 
  
@@ -17,7 +17,7 @@ A standardized classification system used to describe the type or level of healt
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgFacilityTypeVS](ValueSet-ng-facility-type-vs.md)
+* [NG HealthFacility Type VS](ValueSet-ng-facility-type-vs.md)
 
 
 
@@ -37,7 +37,7 @@ A standardized classification system used to describe the type or level of healt
   "title" : "NG Facility Type CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

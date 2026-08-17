@@ -9,8 +9,8 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS"
   },
   {
     "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
@@ -603,6 +603,30 @@
     "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
   },
   {
+    "url" : "http://hl7.org/fhir/namingsystem-identifier-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "NamingSystemIdentifierType",
+    "title" : "NamingSystemIdentifierType",
+    "description" : "Identifies the style of unique identifier used to identify a namespace.",
+    "oids" : ["2.16.840.1.113883.4.642.4.493"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-namingsystem-identifier-type.html" : "NamingSystemIdentifierType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/namingsystem-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "NamingSystemType",
+    "title" : "NamingSystemType",
+    "description" : "Identifies the purpose of the naming system.",
+    "oids" : ["2.16.840.1.113883.4.642.4.491"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-namingsystem-type.html" : "NamingSystemType"
+  },
+  {
     "url" : "http://hl7.org/fhir/note-type",
     "version" : "4.0.1",
     "status" : "draft",
@@ -624,8 +648,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.401"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus",
-    "ValueSet-ng-results-status-vs.html" : "Results Status Codes - IPS"
+    "ValueSet-ng-results-status-vs.html" : "Results Status Codes - IPS",
+    "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
   },
   {
     "url" : "http://hl7.org/fhir/participantrequired",
@@ -745,9 +769,9 @@
     "oids" : ["2.16.840.1.113883.4.642.4.114"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent",
     "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
-    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
+    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent"
   },
   {
     "url" : "http://hl7.org/fhir/request-priority",
@@ -782,10 +806,10 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
     "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type"
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
+    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
   },
   {
     "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -884,6 +908,18 @@
     "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
   },
   {
+    "url" : "http://id.who.int/icd/release/11/mms",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ICD11MMS",
+    "title" : "International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)",
+    "description" : "The International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS) is one of the ICD11 linearizations. Information about the ICD Foundation Component and the ICD11 Linearizations can be found in the complete reference guide here: [https://icd.who.int/icd11refguide/en/index.html](https://icd.who.int/icd11refguide/en/index.html)\r\n\r\n\"**The ICD11 Linearizations (Tabular lists)**\r\n\r\nA linearization is a subset of the foundation component, that is:\r\n\r\n1. fit for a particular purpose: reporting mortality, morbidity, primary care or other uses;\r\n\r\n 2. composed of entities that are Mutually Exclusive of each other; \r\n\r\n3. each entity is given a single parent.\r\n\r\nLinearization is similar to the classical print versions of ICD Tabular List (e.g. volume I of ICD-10 or other previous editions). The main linearization of ICD-11 is Mortality and Morbidity Statistics (MMS). Various linearizations could be built at different granularity, use case or other purposes such as for Primary Care, Clinical Care or Research. The linkage from the foundation component to a particular linearization will ensure consistent use of the ICD.\"\r\n\r\nICD-11 for Mortality and Morbidity (ICD-11 MMS) can be downloaded in either print or electronic (spreadsheet) format from the  browser in the Info tab located [here](https://icd.who.int/browse11/l-m/en)",
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-diagnosis-icd11-concepts-vs.html" : "Nigeria HIV ICD-11 Diagnosis Concepts",
+    "ConceptMap-NgHivDiagnosisToICD11.html" : "Nigeria HIV Diagnoses → ICD-11 MMS"
+  },
+  {
     "url" : "http://loinc.org",
     "version" : "3.1.0",
     "status" : "active",
@@ -893,67 +929,67 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-ng-tb-screening-result-vs.html" : "TB Screening Result Codes ValueSet",
-    "ValueSet-ng-hiv-referral-reason-vs.html" : "Referral Reason",
-    "ValueSet-ng-hiv-physical-exam-vs.html" : "HIV Physical Examinations",
-    "ValueSet-ng-hiv-encounter-location-vs.html" : "HIV Encounter Locations",
-    "ValueSet-ng-pregnancy-mode-of-delivery-vs.html" : "Mode Of Delivery",
-    "ValueSet-ng-hiv-pain-scale-vs.html" : "HIV Pain Scale",
-    "ValueSet-ng-hiv-presenting-symptoms-vs.html" : "Presenting Symptoms",
-    "ValueSet-ng-hiv-arv-side-effects-vs.html" : "HIV ARV Side Effects",
-    "ValueSet-ng-hiv-dsd-assessment-status-vs.html" : "Differentiated Service Delivery - Assessment Status",
-    "ValueSet-ng-hiv-reason-stopped-art-vs.html" : "HIV Reason For Stopping ART",
     "ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.html" : "HIV-Cervical Cancer Treatment Received ValueSet",
-    "ValueSet-ng-nutritional-suppliments-provided-vs.html" : "Nutritional Suppliments Provided",
-    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
-    "ValueSet-ng-hiv-reason-not-linked-to-partner-services-vs.html" : "HIV Reason Not Linked to Partner Services",
-    "ValueSet-ng-hiv-prevention-plan-vs.html" : "HIV Prevention Plan",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-    "ValueSet-ng-hiv-loinc-concepts.html" : "Nigeria HIV LOINC Concepts",
-    "ValueSet-ng-hiv-cd4-vl-classification-for-treatment-failure-vs.html" : "HIV Viral Load/CD4 Count Classifications ValueSet",
-    "ValueSet-ng-hiv-art-follow-up-status-vs.html" : "HIV Follow Up Status ValueSet",
-    "ValueSet-ng-pregnancy-expected-delivery-date-method-vs.html" : "Pregnancy EDD Method",
-    "ConceptMap-NgHivLOINCToSNOMEDCT.html" : "Nigeria HIV LOINC → SNOMED CT",
-    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
-    "ValueSet-ng-pregnancy-place-of-delivery-vs.html" : "Place Of Delivery",
-    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
-    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-    "ValueSet-ng-results-radiology-observations-vs.html" : "Results Radiology Observation - IPS",
-    "ValueSet-ng-pregnancies-coutcome-vs.html" : "Pregnancy Outcome - IPS",
-    "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
-    "ValueSet-ng-hiv-reason-for-arv-regimen-change-vs.html" : "HIV Reason For ARV Regimen Change",
-    "ValueSet-ng-hiv-status-vs.html" : "HIV Status Codes",
-    "ValueSet-ng-tb-screening-type-vs.html" : "TB Screening Type Codes ValueSet",
-    "ValueSet-ng-tb-diagnostic-test-result-vs.html" : "TB Diagnostic Test Result Codes ValueSet",
-    "ValueSet-ng-hiv-opportunistic-infections-treatment-vs.html" : "HIV-Opportunistic Infection Medication Codes ValueSet",
-    "ValueSet-ng-patient-education-level-value-set.html" : "HIV Patient Education Level",
-    "ValueSet-ng-hiv-reasons-for-poor-arv-adherence-vs.html" : "Reasons For Poor ARV Adherence",
-    "ValueSet-ng-hiv-health-status-vs.html" : "HIV Health Status",
-    "ValueSet-ng-results-laboratory-pathology-observation-vs.html" : "Results Laboratory/Pathology Observation - IPS",
-    "ValueSet-ng-children-developmental-milestone-vs.html" : "Children Developmental Milestone ValueSet",
-    "ValueSet-ng-hiv-cervical-cancer-screening-type-vs.html" : "Cervical Cancer Screening Type",
-    "ValueSet-ng-hiv-test-result-vs.html" : "HIV Test Results",
-    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-opportunistic-infections-vs.html" : "HIV Opportunistic Infections ValueSet",
-    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility",
-    "ValueSet-ng-hiv-test-results-vs.html" : "HIV Test Results",
-    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
-    "ValueSet-ng-hiv-reason-for-not-testing-vs.html" : "HIV Reason For Not Testing",
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-    "ValueSet-ng-hiv-test-type-vs.html" : "HIV Test Types",
-    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-date-criterion.html" : "Immunization Recommendation Date Criterion Codes",
-    "ValueSet-ng-hiv-plan-for-next-step-vs.html" : "ART Not Started - Plan For Next Step",
-    "ValueSet-ng-hiv-viral-load-indication-vs.html" : "HIV Viral Load Indication",
-    "ValueSet-ng-hiv-reason-partner-not-notified-vs.html" : "HIV Reason Partner Not Notified ValueSet",
     "ValueSet-ng-hiv-reason-index-case-not-interviewed-vs.html" : "HIV Reason Index Case Not Interviewed",
-    "ValueSet-ng-family-planning-method-vs.html" : "Family Planning Method",
-    "ValueSet-ng-hiv-edema-presence-vs.html" : "Edema Presence Codes ValueSet",
-    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
-    "ValueSet-ng-hiv-dsd-reason-for-category-change-vs.html" : "Differentiated Service Delivery - Reason For Category Change",
-    "ValueSet-ng-hiv-reason-partner-not-contacted-vs.html" : "HIV Reason Partner Not Contacted ValueSet",
+    "ValueSet-ng-children-developmental-milestone-vs.html" : "Children Developmental Milestone ValueSet",
+    "ValueSet-ng-hiv-cd4-vl-classification-for-treatment-failure-vs.html" : "HIV Viral Load/CD4 Count Classifications ValueSet",
+    "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+    "ConceptMap-NgHivLOINCToSNOMEDCT.html" : "Nigeria HIV LOINC → SNOMED CT",
+    "ValueSet-ng-hiv-dsd-assessment-status-vs.html" : "Differentiated Service Delivery - Assessment Status",
     "http://hl7.org/fhir/R4/valueset-questionnaire-questions.html" : "Questionnaire Question Codes",
-    "ValueSet-ng-tb-tpt-prophylaxis-vs.html" : "TB TPT Prophylaxis Codes For Medication Requests ValueSet"
+    "ValueSet-ng-hiv-cervical-cancer-screening-type-vs.html" : "Cervical Cancer Screening Type",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+    "ValueSet-ng-hiv-reason-stopped-art-vs.html" : "HIV Reason For Stopping ART",
+    "ValueSet-ng-hiv-health-status-vs.html" : "HIV Health Status",
+    "ValueSet-ng-hiv-reason-for-not-testing-vs.html" : "HIV Reason For Not Testing",
+    "ValueSet-ng-results-radiology-observations-vs.html" : "Results Radiology Observation - IPS",
+    "ValueSet-ng-family-planning-method-vs.html" : "Family Planning Method",
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-date-criterion.html" : "Immunization Recommendation Date Criterion Codes",
+    "ValueSet-ng-hiv-test-result-vs.html" : "HIV Test Results",
+    "ValueSet-ng-hiv-pain-scale-vs.html" : "HIV Pain Scale",
+    "ValueSet-ng-hiv-opportunistic-infections-treatment-vs.html" : "HIV-Opportunistic Infection Medication Codes ValueSet",
+    "ValueSet-ng-pregnancies-coutcome-vs.html" : "Pregnancy Outcome - IPS",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "ValueSet-ng-hiv-edema-presence-vs.html" : "Edema Presence Codes ValueSet",
+    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+    "ValueSet-ng-tb-tpt-prophylaxis-vs.html" : "TB TPT Prophylaxis Codes For Medication Requests ValueSet",
+    "ValueSet-ng-hiv-arv-side-effects-vs.html" : "HIV ARV Side Effects",
+    "ValueSet-ng-hiv-reason-not-linked-to-partner-services-vs.html" : "HIV Reason Not Linked to Partner Services",
+    "ValueSet-ng-hiv-test-results-vs.html" : "HIV Test Results",
+    "ValueSet-ng-hiv-encounter-location-vs.html" : "HIV Encounter Locations",
+    "ValueSet-ng-hiv-prevention-plan-vs.html" : "HIV Prevention Plan",
+    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
+    "ValueSet-ng-hiv-reason-partner-not-notified-vs.html" : "HIV Reason Partner Not Notified ValueSet",
+    "ValueSet-ng-hiv-referral-reason-vs.html" : "Referral Reason",
+    "ValueSet-ng-nutritional-suppliments-provided-vs.html" : "Nutritional Suppliments Provided",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility",
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+    "ValueSet-ng-hiv-opportunistic-infections-vs.html" : "HIV Opportunistic Infections ValueSet",
+    "ValueSet-ng-hiv-dsd-reason-for-category-change-vs.html" : "Differentiated Service Delivery - Reason For Category Change",
+    "ValueSet-ng-hiv-presenting-symptoms-vs.html" : "Presenting Symptoms",
+    "ValueSet-ng-hiv-plan-for-next-step-vs.html" : "ART Not Started - Plan For Next Step",
+    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
+    "ValueSet-ng-hiv-reasons-for-poor-arv-adherence-vs.html" : "Reasons For Poor ARV Adherence",
+    "ValueSet-ng-hiv-status-vs.html" : "HIV Status Codes",
+    "ValueSet-ng-tb-diagnostic-test-result-vs.html" : "TB Diagnostic Test Result Codes ValueSet",
+    "ValueSet-ng-hiv-physical-exam-vs.html" : "HIV Physical Examinations",
+    "ValueSet-ng-hiv-loinc-concepts.html" : "Nigeria HIV LOINC Concepts",
+    "ValueSet-ng-hiv-art-follow-up-status-vs.html" : "HIV Follow Up Status ValueSet",
+    "ValueSet-ng-hiv-reason-for-arv-regimen-change-vs.html" : "HIV Reason For ARV Regimen Change",
+    "ValueSet-ng-tb-screening-result-vs.html" : "TB Screening Result Codes ValueSet",
+    "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ValueSet-ng-tb-screening-type-vs.html" : "TB Screening Type Codes ValueSet",
+    "ValueSet-ng-pregnancy-place-of-delivery-vs.html" : "Place Of Delivery",
+    "ValueSet-ng-pregnancy-expected-delivery-date-method-vs.html" : "Pregnancy EDD Method",
+    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+    "ValueSet-ng-hiv-test-type-vs.html" : "HIV Test Types",
+    "ValueSet-ng-hiv-viral-load-indication-vs.html" : "HIV Viral Load Indication",
+    "ValueSet-ng-pregnancy-mode-of-delivery-vs.html" : "Mode Of Delivery",
+    "ValueSet-ng-hiv-reason-partner-not-contacted-vs.html" : "HIV Reason Partner Not Contacted ValueSet",
+    "ValueSet-ng-patient-education-level-value-set.html" : "HIV Patient Education Level",
+    "ValueSet-ng-results-laboratory-pathology-observation-vs.html" : "Results Laboratory/Pathology Observation - IPS"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -965,85 +1001,85 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
-    "ValueSet-ng-hiv-referral-reason-vs.html" : "Referral Reason",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-    "ValueSet-ng-hiv-arv-treatment-vs.html" : "HIV - ARV Drugs ValueSet",
-    "ValueSet-ng-hiv-encounter-location-vs.html" : "HIV Encounter Locations",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "ValueSet-ng-results-specimen-type-vs.html" : "Results Specimen Type",
-    "ValueSet-ng-hiv-presenting-symptoms-vs.html" : "Presenting Symptoms",
-    "ValueSet-ng-hiv-arv-side-effects-vs.html" : "HIV ARV Side Effects",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "ValueSet-ng-tb-tpt-reason-not-eligibile-vs.html" : "TB Reason Not Eligible for TPT Codes",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
     "ValueSet-ng-hiv-viral-load-status-vs.html" : "HIV Viral Load Status",
-    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-target-disease.html" : "Immunization Recommendation Target Disease Codes",
     "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
-    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-    "ValueSet-ng-results-specimen-collection-method-vs.html" : "Results Specimen Collection Method - IPS",
-    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
-    "ValueSet-ng-nutritional-status-vs.html" : "Nutritional Status",
-    "ValueSet-ng-target-population-category-vs.html" : "NG Target Population Category VS",
-    "ValueSet-ng-tb-month-ordinals-vs.html" : "TB Month Ordinal Codes",
-    "ValueSet-ng-hiv-disclosure-stage-vs.html" : "HIV Disclosure Stage",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "ConceptMap-NgHivLOINCToSNOMEDCT.html" : "Nigeria HIV LOINC → SNOMED CT",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
     "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-    "ValueSet-ng-hiv-prevention-plan-vs.html" : "HIV Prevention Plan",
-    "ValueSet-ng-hiv-snomed-ct-concepts.html" : "Nigeria HIV SNOMED CT Concepts",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
     "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "ValueSet-ng-hiv-encounter-type-vs.html" : "HIV Encounter Type",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "ValueSet-ng-patient-functional-status-vs.html" : "Patient Functional Status",
+    "ValueSet-ng-hiv-disclosure-stage-vs.html" : "HIV Disclosure Stage",
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+    "ValueSet-ng-tb-treatment-outcome-vs.html" : "TB Treatment Outcome Codes",
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-reason.html" : "Immunization Recommendation Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
     "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "ValueSet-ng-hiv-arv-adherence-vs.html" : "HIV-ARV Adherence ValueSet",
+    "ValueSet-ng-hiv-edema-presence-vs.html" : "Edema Presence Codes ValueSet",
+    "ValueSet-ng-tb-tpt-prophylaxis-vs.html" : "TB TPT Prophylaxis Codes For Medication Requests ValueSet",
+    "ValueSet-ng-hiv-arv-side-effects-vs.html" : "HIV ARV Side Effects",
+    "ValueSet-ng-hiv-arv-treatment-vs.html" : "HIV - ARV Drugs ValueSet",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "ValueSet-ng-results-specimen-type-vs.html" : "Results Specimen Type",
+    "ValueSet-ng-body-site-vs.html" : "Body Site - IPS",
+    "ValueSet-ng-hiv-encounter-location-vs.html" : "HIV Encounter Locations",
+    "ValueSet-ng-hiv-prevention-plan-vs.html" : "HIV Prevention Plan",
+    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "ValueSet-ng-hiv-referral-reason-vs.html" : "Referral Reason",
+    "ValueSet-ng-tb-tpt-alternate-prophylaxis-type-vs.html" : "TB Alternate TPT Prophylaxis Type Codes ValueSet",
+    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+    "ValueSet-ng-nutritional-status-vs.html" : "Nutritional Status",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "ValueSet-ng-current-smoking-status-vs.html" : "Current Smoking Status",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "ValueSet-ng-hiv-opportunistic-infections-vs.html" : "HIV Opportunistic Infections ValueSet",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "ValueSet-ng-tb-active-tb-diagnosis-vs.html" : "TB Active TB Diagnosis Codes",
     "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
     "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "ConceptMap-NgHivLOINCToSNOMEDCT.html" : "Nigeria HIV LOINC → SNOMED CT",
-    "ValueSet-ng-results-radiology-component-vs.html" : "Results Radiology Component - IPS",
-    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "ValueSet-ng-hiv-encounter-type-vs.html" : "HIV Encounter Type",
-    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-    "ValueSet-ng-hiv-reasons-for-poor-arv-adherence-vs.html" : "Reasons For Poor ARV Adherence",
-    "ValueSet-ng-tb-tpt-reason-not-eligibile-vs.html" : "TB Reason Not Eligible for TPT Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-    "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-    "ValueSet-ng-current-smoking-status-vs.html" : "Current Smoking Status",
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
-    "ValueSet-ng-pregnancy-status-vs.html" : "NG Clinical Status VS",
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-    "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
-    "ValueSet-ng-hiv-opportunistic-infections-vs.html" : "HIV Opportunistic Infections ValueSet",
-    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-reason.html" : "Immunization Recommendation Reason Codes",
-    "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html" : "HIV Reasons For ART Eligibility",
-    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "ValueSet-ng-hiv-presenting-symptoms-vs.html" : "Presenting Symptoms",
     "ValueSet-ng-hiv-plan-for-next-step-vs.html" : "ART Not Started - Plan For Next Step",
-    "ValueSet-ng-patient-functional-status-vs.html" : "Patient Functional Status",
-    "ValueSet-ng-tb-tpt-alternate-prophylaxis-type-vs.html" : "TB Alternate TPT Prophylaxis Type Codes ValueSet",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "ValueSet-ng-hiv-edema-presence-vs.html" : "Edema Presence Codes ValueSet",
-    "ValueSet-ng-tb-active-tb-diagnosis-vs.html" : "TB Active TB Diagnosis Codes",
+    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ValueSet-ng-hiv-reasons-for-poor-arv-adherence-vs.html" : "Reasons For Poor ARV Adherence",
+    "ValueSet-ng-hiv-snomed-ct-concepts.html" : "Nigeria HIV SNOMED CT Concepts",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-immunization-recommendation-target-disease.html" : "Immunization Recommendation Target Disease Codes",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+    "ValueSet-ng-results-specimen-collection-method-vs.html" : "Results Specimen Collection Method - IPS",
+    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
     "ValueSet-ng-hiv-residential-type-vs.html" : "HIV Residential Type",
-    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-    "ValueSet-ng-hiv-cervical-cancer-screened-vs.html" : "HIV Cervical Cancer Screened",
     "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
-    "ValueSet-ng-tb-tpt-prophylaxis-vs.html" : "TB TPT Prophylaxis Codes For Medication Requests ValueSet",
-    "ValueSet-ng-body-site-vs.html" : "Body Site - IPS",
-    "ValueSet-ng-hiv-arv-adherence-vs.html" : "HIV-ARV Adherence ValueSet",
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-    "ValueSet-ng-tb-treatment-outcome-vs.html" : "TB Treatment Outcome Codes"
+    "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+    "ValueSet-ng-pregnancy-status-vs.html" : "NG Clinical Status VS",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+    "ValueSet-ng-tb-month-ordinals-vs.html" : "TB Month Ordinal Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "ValueSet-ng-hiv-partner-case-closure-status-vs.html" : "HIV Partner Case Closure Status ValueSet",
+    "ValueSet-ng-target-population-category-vs.html" : "NG Target Population Category VS",
+    "ValueSet-ng-hiv-cervical-cancer-screened-vs.html" : "HIV Cervical Cancer Screened",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/FDI-surface",
@@ -2075,8 +2111,8 @@
     "uses" : {
     },
     "ValueSet-ng-insurer-org-type-vs.html" : "NG Insurer Organization Types",
-    "ValueSet-ng-provider-org-type-vs.html" : "NG Provider Organization Types",
     "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type",
+    "ValueSet-ng-provider-org-type-vs.html" : "NG Provider Organization Types",
     "ValueSet-ng-pharmacy-org-type-vs.html" : "NG Pharmacy Organization Types"
   },
   {
@@ -2281,8 +2317,8 @@
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -2390,11 +2426,11 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
     "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode",
     "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType",
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActIncidentCode.html" : "ActIncidentCode",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -2418,8 +2454,8 @@
     "oids" : ["2.16.840.1.113883.5.8"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
     "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
     "http://terminology.hl7.org/7.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
   },
   {
@@ -2517,8 +2553,8 @@
     "oids" : ["2.16.840.1.113883.5.83"],
     "uses" : {
     },
-    "ValueSet-ng-hiv-physical-examination-interpretation-vs.html" : "HIV Physical Examinations Interpretation",
-    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes",
+    "ValueSet-ng-hiv-physical-examination-interpretation-vs.html" : "HIV Physical Examinations Interpretation"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
@@ -2811,11 +2847,11 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-art-follow-up-status-vs.html" : "HIV Follow Up Status ValueSet",
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
     "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
-    "ValueSet-ng-hiv-art-register-outcome-vs.html" : "NG HIV ART Register Six-Month Outcomes"
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
+    "ValueSet-ng-hiv-art-register-outcome-vs.html" : "NG HIV ART Register Six-Month Outcomes",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-art-follow-up-status-vs.html" : "HIV Follow Up Status ValueSet"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs",
@@ -2827,19 +2863,19 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.20"],
     "uses" : {
     },
-    "ValueSet-ng-hiv-art-monthly-mmd-duration-vs.html" : "NG HIV ART Monthly MMD Duration",
-    "ValueSet-ng-hiv-art-monthly-cervical-screening-timing-vs.html" : "NG HIV ART Monthly Cervical Screening Timing",
-    "ValueSet-ng-hiv-art-monthly-interruption-outcome-vs.html" : "NG HIV ART Monthly Interruption Outcomes",
-    "ValueSet-ng-hiv-art-monthly-cm-result-vs.html" : "NG HIV ART Monthly Cryptococcal Meningitis Results",
-    "ValueSet-ng-hiv-art-monthly-age-group-vs.html" : "NG HIV ART Monthly Age Groups",
-    "ValueSet-ng-hiv-art-monthly-indicator-vs.html" : "NG HIV ART Monthly Summary Indicators",
     "ValueSet-ng-hiv-art-monthly-cervical-screening-result-vs.html" : "NG HIV ART Monthly Cervical Screening Results",
-    "ValueSet-ng-hiv-art-monthly-cervical-treatment-type-vs.html" : "NG HIV ART Monthly Cervical Treatment Types",
-    "ValueSet-ng-hiv-art-monthly-tb-ahd-age-group-vs.html" : "NG HIV ART Monthly TB and AHD Age Groups",
     "ValueSet-ng-hiv-art-monthly-ahd-category-vs.html" : "NG HIV ART Monthly AHD Categories",
-    "ValueSet-ng-hiv-art-monthly-crag-age-group-vs.html" : "NG HIV ART Monthly CrAg Age Groups",
+    "ValueSet-ng-hiv-art-monthly-mmd-duration-vs.html" : "NG HIV ART Monthly MMD Duration",
+    "ValueSet-ng-hiv-art-monthly-indicator-vs.html" : "NG HIV ART Monthly Summary Indicators",
+    "ValueSet-ng-hiv-art-monthly-tb-ahd-age-group-vs.html" : "NG HIV ART Monthly TB and AHD Age Groups",
+    "ValueSet-ng-hiv-art-monthly-age-group-vs.html" : "NG HIV ART Monthly Age Groups",
+    "ValueSet-ng-hiv-art-monthly-cervical-treatment-type-vs.html" : "NG HIV ART Monthly Cervical Treatment Types",
     "ValueSet-ng-hiv-art-monthly-crag-result-vs.html" : "NG HIV ART Monthly Serum CrAg Results",
-    "ValueSet-ng-hiv-art-monthly-cervical-age-group-vs.html" : "NG HIV ART Monthly Cervical Screening Age Groups"
+    "ValueSet-ng-hiv-art-monthly-cervical-age-group-vs.html" : "NG HIV ART Monthly Cervical Screening Age Groups",
+    "ValueSet-ng-hiv-art-monthly-crag-age-group-vs.html" : "NG HIV ART Monthly CrAg Age Groups",
+    "ValueSet-ng-hiv-art-monthly-cm-result-vs.html" : "NG HIV ART Monthly Cryptococcal Meningitis Results",
+    "ValueSet-ng-hiv-art-monthly-cervical-screening-timing-vs.html" : "NG HIV ART Monthly Cervical Screening Timing",
+    "ValueSet-ng-hiv-art-monthly-interruption-outcome-vs.html" : "NG HIV ART Monthly Interruption Outcomes"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-register-cervical-status-cs",
@@ -2936,9 +2972,9 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
-    "ValueSet-ng-hiv-arv-adherence-vs.html" : "HIV-ARV Adherence ValueSet"
+    "ValueSet-ng-hiv-arv-adherence-vs.html" : "HIV-ARV Adherence ValueSet",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-change-category-cs",
@@ -2998,18 +3034,17 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.33"],
     "uses" : {
     },
-    "ValueSet-ng-hiv-cd4-reference-vs.html" : "NG HIV CD4 Reference",
-    "ValueSet-ng-hiv-regimen-change-reason-vs.html" : "NG HIV Regimen Substitution or Switch Reason",
-    "ValueSet-ng-hiv-educational-status-vs.html" : "NG HIV Educational Status",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
-    "ValueSet-ng-hiv-prior-art-vs.html" : "NG HIV Prior ART",
-    "ValueSet-ng-hiv-art-stop-reason-vs.html" : "NG HIV ART Stop Reason",
-    "ValueSet-ng-hiv-cause-of-death-vs.html" : "NG HIV Cause of Death",
-    "ValueSet-ng-hiv-kp-typology-vs.html" : "NG HIV Key Population Typology",
-    "ValueSet-ng-hiv-tb-preventive-therapy-vs.html" : "NG HIV TB Preventive Therapy",
-    "ValueSet-ng-hiv-drug-resistance-result-vs.html" : "NG HIV Drug Resistance Result",
     "ValueSet-ng-hiv-marital-status-vs.html" : "NG HIV Marital Status",
-    "ValueSet-ng-hiv-care-entry-point-vs.html" : "NG HIV Care Entry Point"
+    "ValueSet-ng-hiv-cause-of-death-vs.html" : "NG HIV Cause of Death",
+    "ValueSet-ng-hiv-cd4-reference-vs.html" : "NG HIV CD4 Reference",
+    "ValueSet-ng-hiv-educational-status-vs.html" : "NG HIV Educational Status",
+    "ValueSet-ng-hiv-art-stop-reason-vs.html" : "NG HIV ART Stop Reason",
+    "ValueSet-ng-hiv-drug-resistance-result-vs.html" : "NG HIV Drug Resistance Result",
+    "ValueSet-ng-hiv-prior-art-vs.html" : "NG HIV Prior ART",
+    "ValueSet-ng-hiv-regimen-change-reason-vs.html" : "NG HIV Regimen Substitution or Switch Reason",
+    "ValueSet-ng-hiv-kp-typology-vs.html" : "NG HIV Key Population Typology",
+    "ValueSet-ng-hiv-care-entry-point-vs.html" : "NG HIV Care Entry Point",
+    "ValueSet-ng-hiv-tb-preventive-therapy-vs.html" : "NG HIV TB Preventive Therapy"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs",
@@ -3072,6 +3107,19 @@
     "ValueSet-ng-hiv-cervical-cancer-screening-result-vs.html" : "HIV-Cervical Cancer Screening Results ValueSet"
   },
   {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-diagnosis-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDiagnosisCS",
+    "title" : "Nigeria HIV Diagnosis Codes",
+    "description" : "Local HIV programme diagnosis concepts used where a specific opportunistic-infection diagnosis is required.",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.113"],
+    "uses" : {
+    },
+    "ValueSet-ng-hiv-diagnosis-concepts-vs.html" : "Nigeria HIV Diagnosis Concepts",
+    "ConceptMap-NgHivDiagnosisToICD11.html" : "Nigeria HIV Diagnoses → ICD-11 MMS"
+  },
+  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-assessment-status-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -3106,8 +3154,8 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
     "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
     "ValueSet-ng-hiv-dsd-reason-for-category-change-vs.html" : "Differentiated Service Delivery - Reason For Category Change"
   },
   {
@@ -3120,11 +3168,10 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.44"],
     "uses" : {
     },
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
-    "ValueSet-ng-hiv-eac-intervention-tools-vs.html" : "NG HIV EAC Intervention Tools",
-    "ValueSet-ng-hiv-eac-intervention-services-vs.html" : "NG HIV EAC Intervention Services",
     "ValueSet-ng-hiv-eac-barriers-vs.html" : "NG HIV EAC Adherence Barriers",
-    "ValueSet-ng-hiv-eac-adherence-vs.html" : "NG HIV EAC Adherence"
+    "ValueSet-ng-hiv-eac-adherence-vs.html" : "NG HIV EAC Adherence",
+    "ValueSet-ng-hiv-eac-intervention-tools-vs.html" : "NG HIV EAC Intervention Tools",
+    "ValueSet-ng-hiv-eac-intervention-services-vs.html" : "NG HIV EAC Intervention Services"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-given-cs",
@@ -3172,9 +3219,9 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.50"],
     "uses" : {
     },
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
-    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT"
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs",
@@ -3187,9 +3234,9 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-final-outcome-value-set.html" : "HIV-Final Outcome ValueSet",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
     "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts"
+    "ValueSet-ng-hiv-final-outcome-value-set.html" : "HIV-Final Outcome ValueSet"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs",
@@ -3214,20 +3261,19 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.54"],
     "uses" : {
     },
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
-    "ValueSet-ng-hiv-int-lab-specimen-type-vs.html" : "NG HIV Integrated Laboratory Specimen Type",
-    "ValueSet-ng-hiv-int-lab-other-test-vs.html" : "NG HIV Integrated Laboratory Other Test",
-    "ValueSet-ng-hiv-int-lab-eid-result-vs.html" : "NG HIV Integrated Laboratory EID Result",
-    "ValueSet-ng-hiv-int-lab-cytology-method-vs.html" : "NG HIV Integrated Laboratory Cytology Method",
-    "ValueSet-ng-hiv-int-lab-register-test-vs.html" : "NG HIV Integrated Laboratory Register Test Type",
-    "ValueSet-ng-hiv-int-lab-viral-load-indication-vs.html" : "NG HIV Integrated Laboratory Viral-Load Indication",
-    "ValueSet-ng-hiv-int-lab-regimen-line-vs.html" : "NG HIV Integrated Laboratory ART Regimen Line",
-    "ValueSet-ng-hiv-int-lab-reactive-result-vs.html" : "NG HIV Integrated Laboratory Reactive or Non-Reactive Result",
+    "ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.html" : "NG HIV Integrated Laboratory ARV Prophylaxis",
     "ValueSet-ng-hiv-int-lab-requested-test-type-vs.html" : "NG HIV Integrated Laboratory Requested Test Type",
     "ValueSet-ng-hiv-int-lab-eid-age-category-vs.html" : "NG HIV Integrated Laboratory EID Age Category",
-    "ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.html" : "NG HIV Integrated Laboratory ARV Prophylaxis",
+    "ValueSet-ng-hiv-int-lab-viral-load-indication-vs.html" : "NG HIV Integrated Laboratory Viral-Load Indication",
+    "ValueSet-ng-hiv-int-lab-positive-negative-result-vs.html" : "NG HIV Integrated Laboratory Positive or Negative Result",
+    "ValueSet-ng-hiv-int-lab-other-test-vs.html" : "NG HIV Integrated Laboratory Other Test",
+    "ValueSet-ng-hiv-int-lab-register-test-vs.html" : "NG HIV Integrated Laboratory Register Test Type",
+    "ValueSet-ng-hiv-int-lab-regimen-line-vs.html" : "NG HIV Integrated Laboratory ART Regimen Line",
+    "ValueSet-ng-hiv-int-lab-reactive-result-vs.html" : "NG HIV Integrated Laboratory Reactive or Non-Reactive Result",
     "ValueSet-ng-hiv-int-lab-eid-indication-vs.html" : "NG HIV Integrated Laboratory EID Indication",
-    "ValueSet-ng-hiv-int-lab-positive-negative-result-vs.html" : "NG HIV Integrated Laboratory Positive or Negative Result"
+    "ValueSet-ng-hiv-int-lab-cytology-method-vs.html" : "NG HIV Integrated Laboratory Cytology Method",
+    "ValueSet-ng-hiv-int-lab-eid-result-vs.html" : "NG HIV Integrated Laboratory EID Result",
+    "ValueSet-ng-hiv-int-lab-specimen-type-vs.html" : "NG HIV Integrated Laboratory Specimen Type"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-register-cs",
@@ -3240,9 +3286,9 @@
     "uses" : {
     },
     "ValueSet-ng-hiv-int-lab-register-monitoring-type-vs.html" : "NG HIV Integrated Laboratory Register Monitoring Type",
-    "ValueSet-ng-hiv-int-lab-register-dsd-status-vs.html" : "NG HIV Integrated Laboratory Register DSD Status",
-    "ValueSet-ng-hiv-int-lab-register-mode-of-testing-vs.html" : "NG HIV Integrated Laboratory Register Mode of Testing",
     "ValueSet-ng-hiv-int-lab-register-viral-load-disaggregation-vs.html" : "NG HIV Integrated Laboratory Register Viral-Load Disaggregation",
+    "ValueSet-ng-hiv-int-lab-register-mode-of-testing-vs.html" : "NG HIV Integrated Laboratory Register Mode of Testing",
+    "ValueSet-ng-hiv-int-lab-register-dsd-status-vs.html" : "NG HIV Integrated Laboratory Register DSD Status",
     "ValueSet-ng-hiv-int-lab-register-viral-load-category-vs.html" : "NG HIV Integrated Laboratory Register Viral-Load Category"
   },
   {
@@ -3291,11 +3337,11 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.60"],
     "uses" : {
     },
-    "ValueSet-ng-hiv-prep-medication-vs.html" : "NG HIV PrEP Medications",
     "ValueSet-ng-hiv-oi-prophylaxis-treatment-medication-vs.html" : "NG HIV OI Prophylaxis and Treatment Medications",
-    "ValueSet-ng-hiv-paediatric-art-medication-vs.html" : "NG HIV Paediatric ART Medications",
     "ValueSet-ng-hiv-adult-art-medication-vs.html" : "NG HIV Adult ART Medications",
-    "ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.html" : "NG HIV TB Preventive Therapy Medications"
+    "ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.html" : "NG HIV TB Preventive Therapy Medications",
+    "ValueSet-ng-hiv-prep-medication-vs.html" : "NG HIV PrEP Medications",
+    "ValueSet-ng-hiv-paediatric-art-medication-vs.html" : "NG HIV Paediatric ART Medications"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs",
@@ -3368,10 +3414,10 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes",
     "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
-    "ValueSet-ng-hiv-tracking-vs.html" : "HIV Positive Tracking Care Plan Activivity Codes"
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs",
@@ -3408,8 +3454,8 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
     "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
     "ValueSet-ng-hiv-reason-not-started-art-vs.html" : "HIV - Reason Not Started ART ValueSet"
   },
   {
@@ -3435,8 +3481,8 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT"
+    "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-status-cs",
@@ -3472,10 +3518,10 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.74"],
     "uses" : {
     },
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
+    "ValueSet-ng-target-population-category-vs.html" : "NG Target Population Category VS",
     "ConceptMap-NgHivLocalToSNOMEDCT.html" : "Nigeria HIV Local Concepts → SNOMED CT",
-    "ValueSet-ng-target-population-category-vs.html" : "NG Target Population Category VS"
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-targeted-indication-viral-load-cs",
@@ -3789,8 +3835,8 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV",
     "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ConceptMap-WHOHivToNgHivLocal.html" : "WHO HIV to Nigeria HIV Local Concepts",
     "ValueSet-ng-tb-tpt-prophylaxis-type-vs.html" : "TB TPT Prophylaxis Type Codes"
   },
   {
@@ -3828,8 +3874,8 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.109"],
     "uses" : {
     },
-    "ConceptMap-NgVaccineLocal-to-ICD11.html" : "NG Local Vaccine Codes → ICD11",
     "ValueSet-ng-vaccine-local-vs.html" : "NG Vaccine Local ValueSet",
+    "ConceptMap-NgVaccineLocal-to-ICD11.html" : "NG Local Vaccine Codes → ICD11",
     "ConceptMap-NgVaccineLocal-to-SNOMED.html" : "NG Local Vaccine Codes → SNOMED CT"
   },
   {
@@ -3858,6 +3904,19 @@
     "ValueSet-ng-wards-vs.html" : "NG Wards VS"
   },
   {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgWhoHivConceptsCS",
+    "title" : "Nigeria Local WHO HIV Concepts",
+    "description" : "Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html",
+    "oids" : ["2.16.840.1.113884.3.9944.1.16.114"],
+    "uses" : {
+    },
+    "ValueSet-ng-who-hiv-concepts-vs.html" : "Nigeria Relevant WHO HIV Concepts",
+    "ConceptMap-NgHivLocalToWHOHiv.html" : "Nigeria HIV Local Concepts → WHO SMART HIV"
+  },
+  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -3868,8 +3927,8 @@
     "uses" : {
     },
     "ConceptMap-NgHivLocalToLOINC.html" : "Nigeria HIV Local Concepts to LOINC",
-    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts",
-    "ValueSet-ng-yes-no-vs.html" : "NG Yes/No Codes VS"
+    "ValueSet-ng-yes-no-vs.html" : "NG Yes/No Codes VS",
+    "ValueSet-ng-hiv-local-concepts.html" : "Nigeria HIV Local Concepts"
   },
   {
     "url" : "urn:ietf:bcp:47",

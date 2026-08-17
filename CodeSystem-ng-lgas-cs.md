@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-lgas-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgLgasCS |
+| Active as of 2026-08-17 | *Computable Name*:NgLgasCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.88 | |
 
  
@@ -17,7 +17,7 @@ This CodeSystem defines LGA codes and names mapped to their respective States in
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgLgasVS](ValueSet-ng-lgas-vs.md)
+* [NG LGAs VS](ValueSet-ng-lgas-vs.md)
 
 
 
@@ -37,7 +37,7 @@ This CodeSystem defines LGA codes and names mapped to their respective States in
   "title" : "NG LGAs in Nigeria CS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

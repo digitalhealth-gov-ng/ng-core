@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivIndexCasePartnerQuestionnaireCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivIndexCasePartnerQuestionnaireCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.53 | |
 
  
@@ -17,8 +17,8 @@ Proprietary Codes used in the Index Case Partner Questionnaire.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPartnerCaseClosureStatusVS](ValueSet-ng-hiv-partner-case-closure-status-vs.md)
-* [NgHivReasonPartnerNotContactedVS](ValueSet-ng-hiv-reason-partner-not-contacted-vs.md)
+* [HIV Partner Case Closure Status ValueSet](ValueSet-ng-hiv-partner-case-closure-status-vs.md)
+* [HIV Reason Partner Not Contacted ValueSet](ValueSet-ng-hiv-reason-partner-not-contacted-vs.md)
 
 
 
@@ -38,7 +38,7 @@ Proprietary Codes used in the Index Case Partner Questionnaire.
   "title" : "HIV Index Case Sex Partner Questionnaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

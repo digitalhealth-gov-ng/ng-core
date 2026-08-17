@@ -1,0 +1,85 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "ng-naming-system-example",
+  "meta" : {
+    "profile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-naming-system"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem ng-naming-system-example</b></p><a name=\"ng-naming-system-example\"> </a><a name=\"hcng-naming-system-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-naming-system.html\">NG NamingSystem</a></p></div><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://fhir-ig.digitalhealth.gov.ng/NamingSystem/ng-naming-system-example</td></tr><tr><td>Version</td><td>0.0.0</td></tr><tr><td>Name</td><td>NgExamplePersonIdentifier</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>Fictional identifier namespace used solely to demonstrate alternate\nNamingSystem unique identifiers.</p>\n</div></td></tr><tr><td>Publisher</td><td>NDHI</td></tr><tr><td>OID</td><td>2.16.840.1.113884.3.9944.1.31.7 (for OID based terminology systems)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>https://example.org/identifier/ng-person</td><td>true</td><td>Preferred representation for FHIR Identifier.system.</td></tr><tr><td>OID</td><td>1.2.3.4.5</td><td>false</td><td>Illustrative OID only; not assigned for production.</td></tr><tr><td>UUID</td><td>550e8400-e29b-41d4-a716-446655440000</td><td>false</td><td>Illustrative UUID only.</td></tr><tr><td>Other</td><td>NG-EXAMPLE-PERSON-ID</td><td>false</td><td>Illustrative legacy mnemonic; not suitable directly as Identifier.system.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://fhir-ig.digitalhealth.gov.ng/NamingSystem/ng-naming-system-example"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.0.0"
+  }],
+  "name" : "NgExamplePersonIdentifier",
+  "status" : "draft",
+  "kind" : "identifier",
+  "date" : "2026-08-16",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    },
+    {
+      "system" : "email",
+      "value" : "emeka2015@gmail.com"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "lekeojewale@gmail.com",
+      "use" : "work"
+    }]
+  },
+  {
+    "name" : "Nigeria Digital in Health Initiative.",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "emeka2015@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "responsible" : "Example issuing authority",
+  "description" : "Fictional identifier namespace used solely to demonstrate alternate\nNamingSystem unique identifiers.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "usage" : "Example only. In a real FHIR Identifier, use the approved preferred URI\nfor Identifier.system.",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://example.org/identifier/ng-person",
+    "preferred" : true,
+    "comment" : "Preferred representation for FHIR Identifier.system."
+  },
+  {
+    "type" : "oid",
+    "value" : "1.2.3.4.5",
+    "preferred" : false,
+    "comment" : "Illustrative OID only; not assigned for production."
+  },
+  {
+    "type" : "uuid",
+    "value" : "550e8400-e29b-41d4-a716-446655440000",
+    "preferred" : false,
+    "comment" : "Illustrative UUID only."
+  },
+  {
+    "type" : "other",
+    "value" : "NG-EXAMPLE-PERSON-ID",
+    "preferred" : false,
+    "comment" : "Illustrative legacy mnemonic; not suitable directly as Identifier.system."
+  }]
+}

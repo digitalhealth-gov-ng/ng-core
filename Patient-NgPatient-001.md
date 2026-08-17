@@ -45,7 +45,7 @@ Kemi Adebayo Female, DoB: 1995-02-14 ( nin)
         "code" : "NIN"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/nin",
     "value" : "23456789012"
   },
   {
@@ -55,7 +55,7 @@ Kemi Adebayo Female, DoB: 1995-02-14 ( nin)
         "code" : "MRN"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/wakanda-mrn",
     "value" : "ASO-2025-0098"
   },
   {
@@ -65,7 +65,7 @@ Kemi Adebayo Female, DoB: 1995-02-14 ( nin)
         "code" : "MOBILE"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile",
     "value" : "08051234567"
   }],
   "active" : true,

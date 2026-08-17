@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-occupation-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivOccupationCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivOccupationCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.56 | |
 
  
@@ -17,7 +17,7 @@ Codes used for representing the patient's occupation
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivOccupationVS](ValueSet-ng-hiv-occupation-vs.md)
+* [HIV Occupation Valueset](ValueSet-ng-hiv-occupation-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Codes used for representing the patient's occupation
   "title" : "HIV Occupation Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

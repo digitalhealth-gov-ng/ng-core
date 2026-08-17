@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivEnhancedAdherenceCounsellingCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivEnhancedAdherenceCounsellingCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.50 | |
 
  
@@ -17,7 +17,7 @@ Code used for indicating a proprietary enhanced adherence counselling
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivLocalConceptsVS](ValueSet-ng-hiv-local-concepts.md)
+* [Nigeria HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md)
 
 
 
@@ -37,7 +37,7 @@ Code used for indicating a proprietary enhanced adherence counselling
   "title" : "Enhanced Adherence Counselling",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

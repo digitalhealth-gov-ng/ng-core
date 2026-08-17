@@ -1,0 +1,240 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-who-hiv-concepts-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-who-hiv-concepts-cs</b></p><a name=\"ng-who-hiv-concepts-cs\"> </a><a name=\"hcng-who-hiv-concepts-cs\"> </a><p>This case-sensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE42<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE42\"> </a></td><td>Lost to follow-up</td><td>Twenty-eight days or more since last missed appointment</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE43<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE43\"> </a></td><td>Transferred out</td><td>The client transferred to another facility</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE44<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE44\"> </a></td><td>Death (documented)</td><td>People living with HIV previously on ART who are confirmed to have died from any cause</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE45<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE45\"> </a></td><td>Restarting ART</td><td>Client is restarting ART after stopping treatment for any reason</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE40<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE40\"> </a></td><td>Stopped ART</td><td>Client stopped taking ART</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE45<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE45\"> </a></td><td>Refused (stopped) treatment</td><td>Client was contacted and confirmed to have stopped ART (reasons may include stigma and discrimination, faith healing, etc.)</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE47<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE47\"> </a></td><td>On ART</td><td>Client is currently taking ART</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE4<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE4\"> </a></td><td>Did not initiate ART</td><td>Client did not initiate ART at the same time as diagnosis (e.g., because they required additional counselling) and required follow-up for ART initiation</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE382<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE382\"> </a></td><td>ART initiated within 7 days of diagnosis</td><td>Client initiated ART within 7 days of diagnosis</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE147<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE147\"> </a></td><td>Linked to enrolment in care and ART initiation</td><td>Linkage made from HIV testing to enrolment in care following an HIV diagnosis</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE41<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE41\"> </a></td><td>HIV Treatement outcome</td><td>The outcome for the client which is used for reporting retention/attrition.</td></tr><tr><td style=\"white-space:nowrap\">HIV.H.DE49<a name=\"ng-who-hiv-concepts-cs-HIV.46H.46DE49\"> </a></td><td>Transfer confirmed</td><td>Select if transfer to another facility is confirmed</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE371<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE371\"> </a></td><td>Patient self-reported as not ready/willing</td><td>Client did not initiate ART at diagnosis or within 7 days of diagnosis because client self-reported as not ready/willing</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE372<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE372\"> </a></td><td>Not completed education, support and preparation for ART</td><td>Client did not initiate ART at diagnosis or within 7 days of diagnosis because client had not completed education, support and preparation for ART</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE377<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE377\"> </a></td><td>Patient diagnosed with cryptococcal meningitis</td><td>Client did not initiate ART at diagnosis or within 7 days of diagnosis because client diagnosed with cryptococcal meningitis</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE378<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE378\"> </a></td><td>Patient diagnosed with histoplasmosis</td><td>Client did not initiate ART at diagnosis or within 7 days of diagnosis because client diagnosed with histoplasmosis</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE380<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE380\"> </a></td><td>Other</td><td>Client did not initiate ART at diagnosis or within 7 days of diagnosis because of other reason</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE51<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE51\"> </a></td><td>Sex worker</td><td>Client is a sex worker</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE52<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE52\"> </a></td><td>Men who have sex with men</td><td>Client is a man who has sex with men</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE53<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE53\"> </a></td><td>Trans and gender-diverse people</td><td>Client identifies as trans and gender-diverse</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE54<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE54\"> </a></td><td>People who inject drugs</td><td>Client is a person who injects drugs</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE58<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE58\"> </a></td><td>Orphan or vulnerable child</td><td>Client considered an orphan or vulnerable child</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE250<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE250\"> </a></td><td>Provide isoniazid preventive therapy</td><td>Provide isoniazid preventive therapy</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE496<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE496\"> </a></td><td>Enhanced adherence counselling provided</td><td>Enhanced adherence counselling was provided to the client during the visit</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE223<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE223\"> </a></td><td>Other reason for stopping ART</td><td>Client stopped ART because of other reason</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE425<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE425\"> </a></td><td>Treatment failure</td><td>ART treatment failure</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE434<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE434\"> </a></td><td>Other</td><td>A switch was made to the regimen for another reason</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE215<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE215\"> </a></td><td>Other reason for nonadherence</td><td>Client reported not being adherent because of other reason for nonadherence</td></tr><tr><td style=\"white-space:nowrap\">HIV.B.DE84<a name=\"ng-who-hiv-concepts-cs-HIV.46B.46DE84\"> </a></td><td>Nucleic acid test for HIV</td><td>Virological test, which includes testing for early infant diagnosis</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE406<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE406\"> </a></td><td>HIV viral load test ordered</td><td>Provider ordered an HIV viral load test</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE364<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE364\"> </a></td><td>CD4 count</td><td>CD4 cell count in cells/mm^3</td></tr><tr><td style=\"white-space:nowrap\">HIV.D.DE365<a name=\"ng-who-hiv-concepts-cs-HIV.46D.46DE365\"> </a></td><td>CD4 cell percentage</td><td>CD4 cell percentage</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.114" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgWhoHivConceptsCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Nigeria Local WHO HIV Concepts"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-15"^^xsd:date] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "32"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE42" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lost to follow-up" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Twenty-eight days or more since last missed appointment" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE43" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transferred out" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The client transferred to another facility" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE44" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Death (documented)" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "People living with HIV previously on ART who are confirmed to have died from any cause" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE45" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Restarting ART" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client is restarting ART after stopping treatment for any reason" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE40" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stopped ART" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client stopped taking ART" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE45" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Refused (stopped) treatment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client was contacted and confirmed to have stopped ART (reasons may include stigma and discrimination, faith healing, etc.)" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE47" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "On ART" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client is currently taking ART" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Did not initiate ART" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client did not initiate ART at the same time as diagnosis (e.g., because they required additional counselling) and required follow-up for ART initiation" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE382" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "ART initiated within 7 days of diagnosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client initiated ART within 7 days of diagnosis" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE147" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Linked to enrolment in care and ART initiation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Linkage made from HIV testing to enrolment in care following an HIV diagnosis" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE41" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HIV Treatement outcome" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "The outcome for the client which is used for reporting retention/attrition." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.H.DE49" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transfer confirmed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Select if transfer to another facility is confirmed" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE371" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient self-reported as not ready/willing" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client self-reported as not ready/willing" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE372" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Not completed education, support and preparation for ART" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client had not completed education, support and preparation for ART" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE377" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient diagnosed with cryptococcal meningitis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client diagnosed with cryptococcal meningitis" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE378" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Patient diagnosed with histoplasmosis" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client diagnosed with histoplasmosis" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE380" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client did not initiate ART at diagnosis or within 7 days of diagnosis because of other reason" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE51" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sex worker" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client is a sex worker" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE52" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Men who have sex with men" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client is a man who has sex with men" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE53" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trans and gender-diverse people" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client identifies as trans and gender-diverse" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE54" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "People who inject drugs" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client is a person who injects drugs" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE58" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orphan or vulnerable child" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client considered an orphan or vulnerable child" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE250" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Provide isoniazid preventive therapy" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Provide isoniazid preventive therapy" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE496" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Enhanced adherence counselling provided" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Enhanced adherence counselling was provided to the client during the visit" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE223" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other reason for stopping ART" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client stopped ART because of other reason" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE425" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Treatment failure" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "ART treatment failure" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE434" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A switch was made to the regimen for another reason" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE215" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other reason for nonadherence" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Client reported not being adherent because of other reason for nonadherence" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.B.DE84" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nucleic acid test for HIV" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Virological test, which includes testing for early infant diagnosis" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE406" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "HIV viral load test ordered" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Provider ordered an HIV viral load test" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE364" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CD4 count" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CD4 cell count in cells/mm^3" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "HIV.D.DE365" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CD4 cell percentage" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "CD4 cell percentage" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

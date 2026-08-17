@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-condition | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgCondition |
+| Draft as of 2026-08-17 | *Computable Name*:NgCondition |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.16 | |
 
  
@@ -17,8 +17,8 @@ Condition profile.
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [NG Goal](StructureDefinition-ng-goal.md), [NG IPS Composition](StructureDefinition-ng-ips-composition.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [NG Procedure](StructureDefinition-ng-procedure.md) and [NG ServiceRequest](StructureDefinition-ng-service-request.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [NG Goal](StructureDefinition-ng-goal.md), [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md), [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md), [NG Procedure](StructureDefinition-ng-procedure.md) and [NG ServiceRequest](StructureDefinition-ng-service-request.md)
 * Examples for this Profile: [Condition/NgCondition-001](Condition-NgCondition-001.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-condition.csv), [
   "name" : "NgCondition",
   "title" : "NG Condition",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

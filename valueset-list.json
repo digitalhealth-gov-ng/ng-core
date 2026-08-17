@@ -675,6 +675,28 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.61"]
   },
   {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-diagnosis-concepts-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDiagnosisConceptsVS",
+    "title" : "Nigeria HIV Diagnosis Concepts",
+    "description" : "Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping.",
+    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-diagnosis-cs"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.215"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.215"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-diagnosis-icd11-concepts-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgHivDiagnosisICD11ConceptsVS",
+    "title" : "Nigeria HIV ICD-11 Diagnosis Concepts",
+    "description" : "ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap.",
+    "systems" : ["http://id.who.int/icd/release/11/mms"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.216"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.216"]
+  },
+  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-disclosure-stage-vs",
     "version" : "0.0.0",
     "status" : "active",
@@ -2324,6 +2346,17 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.209"]
   },
   {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-who-hiv-concepts-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgWhoHivConceptsVS",
+    "title" : "Nigeria Relevant WHO HIV Concepts",
+    "description" : "Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem.",
+    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-who-hiv-concepts-cs"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.210"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.210"]
+  },
+  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-yes-no-vs",
     "version" : "0.0.0",
     "status" : "active",
@@ -2332,8 +2365,8 @@
     "description" : "Yes/No Codes Represented as Boolean.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-yes-no-cs",
     "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.210"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.210"]
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.211"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.211"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/nigeria-vaccine-site",
@@ -2342,7 +2375,7 @@
     "name" : "NGImmunizationSiteVS",
     "title" : "NG-Imm Vaccine Site VS",
     "description" : "Vaccine Site",
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.211"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.211"]
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.212"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.212"]
   }]
 }

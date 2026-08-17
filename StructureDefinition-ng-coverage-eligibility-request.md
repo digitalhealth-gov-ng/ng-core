@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-coverage-eligibility-request | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgCoverageEligibilityRequest |
+| Draft as of 2026-08-17 | *Computable Name*:NgCoverageEligibilityRequest |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.19 | |
 
  
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-coverage-eligibil
   "name" : "NgCoverageEligibilityRequest",
   "title" : "NG Claim Coverage Eligibility Request",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

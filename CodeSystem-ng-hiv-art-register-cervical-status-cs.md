@@ -17,7 +17,7 @@ Combined cervical-cancer screening workflow statuses printed in column A27 of th
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterCervicalStatusVS](ValueSet-ng-hiv-art-register-cervical-status-vs.md)
+* [NG HIV ART Register Cervical Cancer Screening Status](ValueSet-ng-hiv-art-register-cervical-status-vs.md)
 
 
 

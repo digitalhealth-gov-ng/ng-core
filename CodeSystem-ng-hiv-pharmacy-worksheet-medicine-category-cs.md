@@ -17,7 +17,7 @@ Medicine-section categories printed on the revised Pharmacy Daily Worksheet.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivPharmacyWorksheetMedicineCategoryVS](ValueSet-ng-hiv-pharmacy-worksheet-medicine-category-vs.md)
+* [NG HIV Pharmacy Worksheet Medicine Category](ValueSet-ng-hiv-pharmacy-worksheet-medicine-category-vs.md)
 
 
 

@@ -10,7 +10,7 @@ Last updated: 2025-11-04 08:30:00+0000
 
 Profile: [NG Patient](StructureDefinition-ng-patient.md)
 
-Female-01 Client Female, DoB: 1995-02-01 ( Pseudonymized Identifier: PSN-8A7F-2C19-KE95)
+Female-01 Client Female, DoB: 1995-02-01 ( Pseudonymized Identifier: NgPseudoNumber#PSN-8A7F-2C19-KE95)
 
 -------
 
@@ -39,7 +39,7 @@ Female-01 Client Female, DoB: 1995-02-01 ( Pseudonymized Identifier: PSN-8A7F-2C
         "display" : "Pseudonymized Identifier"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/pseudo",
     "value" : "PSN-8A7F-2C19-KE95"
   }],
   "active" : true,

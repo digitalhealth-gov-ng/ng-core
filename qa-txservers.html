@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for NigeriaCore</h1>
- <p>Generated Wed Aug 12 13:37:22 WAT 2026, FHIR version 4.0.1 for ng.gov.digitalhealth.fhir-ig#0.0.0 (canonical = <a href="https://fhir-ig.digitalhealth.gov.ng">https://fhir-ig.digitalhealth.gov.ng</a> (<a href="https://fhir-ig.digitalhealth.gov.ng/history.html">history</a>))</p>
+ <p>Generated Mon Aug 17 08:11:59 WAT 2026, FHIR version 4.0.1 for ng.gov.digitalhealth.fhir-ig#0.0.0 (canonical = <a href="https://fhir-ig.digitalhealth.gov.ng">https://fhir-ig.digitalhealth.gov.ng</a> (<a href="https://fhir-ig.digitalhealth.gov.ng/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -83,6 +83,34 @@
     <td>[http://loinc.org]: authoritative = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://178.104.103.200.sslip.io/tx/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4|https://tx.fhir.de/fhir|https://tx.hl7.cz/r4</td>
   </tr>
   <tr>
+    <td>Candidate server(s) https://tx-nordics.fhir.org/fhir/r4 dropped for http://id.who.int/icd/release/11/mms|1.0.0: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms|1.0.0</td>
+    <td>[http://id.who.int/icd/release/11/mms|1.0.0]: authoritative = , candidates=https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.hl7chile.cl/r4</td>
+    <td>https://tx.hl7chile.cl/r4</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms|1.0.0</td>
+    <td>[http://id.who.int/icd/release/11/mms|1.0.0]: authoritative = , candidates=https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Candidate server(s) https://tx-nordics.fhir.org/fhir/r4 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://tx.hl7chile.cl/r4|https://tx-nordics.fhir.org/fhir/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.hl7chile.cl/r4</td>
+    <td>https://tx.hl7chile.cl/r4</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
     <td>https://tx.fhir.org/r4</td>
     <td>null</td>
@@ -114,6 +142,47 @@
     <td>1</td>
     <td>
       <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-DCM.html">DICOM Controlled Terminology</a>
+    </td>
+  </tr>
+</table>
+<h2>Server: https://tx-nordics.fhir.org/fhir/r4</h2>
+<a href="https://tx-nordics.fhir.org/fhir/r4"></a>
+<p>Use Count: 4. Code Systems used: </p>
+<ul>
+  <li>(None)</li>
+</ul>
+<h2>Server: https://tx.hl7chile.cl/r4</h2>
+<a href="https://tx.hl7chile.cl/r4"></a>
+<p>Use Count: 8. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-ICD11MMS.html">International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://id.who.int/icd/release/11/mms|1.0.0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-ICD11MMS.html">International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)</a>
     </td>
   </tr>
 </table>

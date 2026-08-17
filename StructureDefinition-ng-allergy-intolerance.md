@@ -1,15 +1,15 @@
-# Nigeria Allergy Intolerance - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Allergy Intolerance - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Allergy Intolerance**
+* **NG Allergy Intolerance**
 
-## Resource Profile: Nigeria Allergy Intolerance 
+## Resource Profile: NG Allergy Intolerance 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-allergy-intolerance | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgAllergyIntolerance |
+| Draft as of 2026-08-17 | *Computable Name*:NgAllergyIntolerance |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.10 | |
 
  
@@ -45,9 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-allergy-intoleran
   }],
   "version" : "0.0.0",
   "name" : "NgAllergyIntolerance",
-  "title" : "Nigeria Allergy Intolerance",
+  "title" : "NG Allergy Intolerance",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -6,7 +6,7 @@
 
 ## Example Observation: Tobacco Smoking Status Observation Example
 
-Profile: [Nigeria Core Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md)
+Profile: [NG Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md)
 
 **status**: Final
 

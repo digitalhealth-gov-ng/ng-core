@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-treatment-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivARVTreatmentVS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivARVTreatmentVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.52 | |
 
  
@@ -24,8 +24,6 @@ A list of codes describing the ARV Drugs.
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -58,7 +56,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "HIV - ARV Drugs ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

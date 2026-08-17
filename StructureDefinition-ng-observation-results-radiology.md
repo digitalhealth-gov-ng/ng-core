@@ -1,15 +1,15 @@
-# Nigeria Core Radiology Result Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Radiology Result Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Core Radiology Result Observation**
+* **NG Radiology Result Observation**
 
-## Resource Profile: Nigeria Core Radiology Result Observation 
+## Resource Profile: NG Radiology Result Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-radiology | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgObservationResultsRadiology |
+| Draft as of 2026-08-17 | *Computable Name*:NgObservationResultsRadiology |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.54 | |
 
  
@@ -17,8 +17,8 @@ A Nigeria Core Observation representing an atomic radiology result, an overall i
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [Nigeria Core Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [DiagnosticReport (IPS)](StructureDefinition-ng-diagnostic-report.md), [Bundle NG IPS Composition](StructureDefinition-ng-ips-composition.md) and [NG Radiology Result Observation](StructureDefinition-ng-observation-results-radiology.md)
 * Examples for this Profile: [Observation/NgObservationResultsRadiologyExample](Observation-NgObservationResultsRadiologyExample.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation-resul
   }],
   "version" : "0.0.0",
   "name" : "NgObservationResultsRadiology",
-  "title" : "Nigeria Core Radiology Result Observation",
+  "title" : "NG Radiology Result Observation",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

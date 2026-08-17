@@ -46,7 +46,7 @@ Musa Abdullahi Male, DoB: 1987-07-06 ( nin)
         "code" : "NIN"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/nin",
     "value" : "12345678901"
   },
   {
@@ -56,7 +56,7 @@ Musa Abdullahi Male, DoB: 1987-07-06 ( nin)
         "code" : "MRN"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/wakanda-mrn",
     "value" : "KNH-2025-33445"
   },
   {
@@ -66,7 +66,7 @@ Musa Abdullahi Male, DoB: 1987-07-06 ( nin)
         "code" : "INSUR"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/ins",
     "value" : "NHIA-0011223344"
   },
   {
@@ -76,7 +76,7 @@ Musa Abdullahi Male, DoB: 1987-07-06 ( nin)
         "code" : "MOBILE"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile",
     "value" : "08031234567"
   }],
   "active" : true,

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-status-vs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivStatusVS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivStatusVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.137 | |
 
  
@@ -17,7 +17,7 @@ A list of codes describing the patient's HIV status.
 
  **References** 
 
-* [Nigeria Core Composite Observation](StructureDefinition-ng-observation.md)
+* [NG Composite Observation](StructureDefinition-ng-observation.md)
 
 ### Logical Definition (CLD)
 
@@ -56,7 +56,7 @@ A list of codes describing the patient's HIV status.
   "title" : "HIV Status Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

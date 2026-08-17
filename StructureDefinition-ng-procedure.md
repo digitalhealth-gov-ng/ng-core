@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-procedure | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgProcedure |
+| Draft as of 2026-08-17 | *Computable Name*:NgProcedure |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.63 | |
 
  
@@ -17,7 +17,7 @@ Procedure profile for the Nigeria Core.
 
 **Usages:**
 
-* Refer to this Profile: [Nigeria Alert Flag](StructureDefinition-ng-flag.md)
+* Refer to this Profile: [NG Alert Flag](StructureDefinition-ng-flag.md)
 * Examples for this Profile: [Procedure/NgProcedure-001](Procedure-NgProcedure-001.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-procedure.csv), [
   "name" : "NgProcedure",
   "title" : "NG Procedure",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

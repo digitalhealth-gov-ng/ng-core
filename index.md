@@ -144,6 +144,16 @@ The guide will evolve through stakeholder review, technical working groups, Conn
 
 
 
+
+
+
+
+
+
+
+
+
+
 ## Resource Content
 
 ```json
@@ -220,6 +230,12 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     "uri" : "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
     "packageId" : "hl7.fhir.uv.ips",
     "version" : "2.0.1"
+  },
+  {
+    "id" : "smart_who_int_hiv",
+    "uri" : "http://smart.who.int/hiv/ImplementationGuide/smart.who.int.hiv",
+    "packageId" : "smart.who.int.hiv",
+    "version" : "1.0.0"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",
@@ -807,54 +823,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-mnch-referral-bundle.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-mnch-referral-bundle"
-      },
-      "name" : "2-NGReferral MNCH Transaction Bundle",
-      "description" : "Transaction bundle for MNCH referrals between facilities and/or payers.\nMUST contain a Patient and a ServiceRequest (the referral order).\nOptional entries (Communication, Task, etc.) may support initiation, response, and tracking.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-aefi-report-bundle.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-aefi-report-bundle"
-      },
-      "name" : "4-NG AEFI Report Bundle",
-      "description" : "Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-imm-smart-scheduler-bundle.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-imm-smart-scheduler-bundle"
-      },
-      "name" : "4-NG Immunization SMART Scheduler Bundle",
-      "description" : "A minimal transaction bundle to schedule an immunization visit with optional recommendations.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       },
       {
@@ -960,8 +928,72 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       "reference" : {
         "reference" : "StructureDefinition/ng-ips-bundle"
       },
-      "name" : "Bundle (IPS)",
+      "name" : "Bundle NG (IPS)",
       "description" : "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-aefi-report-bundle.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-aefi-report-bundle"
+      },
+      "name" : "Bundle NG AEFI Report",
+      "description" : "Minimal transaction bundle to report an AEFI with Patient, Immunization, AdverseEvent, and supporting data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-imm-smart-scheduler-bundle.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-imm-smart-scheduler-bundle"
+      },
+      "name" : "Bundle NG Immunization SMART Scheduler",
+      "description" : "A minimal transaction bundle to schedule an immunization visit with optional recommendations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-ips-composition.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-ips-composition"
+      },
+      "name" : "Bundle NG IPS Composition",
+      "description" : "International Patient Summary (IPS) Composition adapted for Nigeria Core.\nConforms to IPS v2 Composition and narrows key references to local NG profiles where available.\nIncludes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-mnch-referral-bundle.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-mnch-referral-bundle"
+      },
+      "name" : "Bundle NG Referral MNCH",
+      "description" : "Transaction bundle for MNCH referrals between facilities and/or payers.\nMUST contain a Patient and a ServiceRequest (the referral order).\nOptional entries (Communication, Task, etc.) may support initiation, response, and tracking.",
       "exampleBoolean" : false
     },
     {
@@ -1843,6 +1875,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       "name" : "Example Ng MedicationDispense (Paracetamol 250 mg/5 mL, 100 mL)",
       "description" : "Completed pediatric dispensing.",
       "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-naming-system-example.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-naming-system-example"
+      },
+      "name" : "Example NG NamingSystem with URI, OID, UUID and legacy identifier",
+      "description" : "Illustrative NamingSystem showing all FHIR R4 uniqueId.type codes.\nThe values are examples only and are not assigned Nigerian identifiers.",
+      "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-naming-system"
     },
     {
       "extension" : [{
@@ -3579,6 +3627,54 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation-alcohol-use.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation-alcohol-use"
+      },
+      "name" : "NG Alcohol Use Observation",
+      "description" : "A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-flag.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-flag"
+      },
+      "name" : "NG Alert Flag",
+      "description" : "Flag profile for prominent clinical, public-health,\nsafety, or administrative alerts that require display, review,\nacknowledgement, or action.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-allergy-intolerance.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-allergy-intolerance"
+      },
+      "name" : "NG Allergy Intolerance",
+      "description" : "Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-ng-appointment.html"
       }],
       "reference" : {
@@ -3602,6 +3698,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Authoritative Server Requirements",
       "description" : "Authoritative computable FHIR R4 server requirements for Nigeria Core. This\nCapabilityStatement defines the national baseline for resource support, Nigeria\nCore profiles, RESTful interactions, search capability, operations, reference\nhandling, successful outcomes, security expectations, and OperationOutcome\nfailure behaviour.\n\nFacility-, program-, registry-, terminology-, regulator-, Shared Health Record-,\nand sandbox-specific CapabilityStatements may narrow or extend this national\nbaseline for their declared scope.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-bc-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-bc-naming-system"
+      },
+      "name" : "NG Birth Certificate NamingSystem",
+      "description" : "Candidate NamingSystem definition for the National Birth Certificate namespace.",
       "exampleBoolean" : false
     },
     {
@@ -3922,6 +4034,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Communication",
       "description" : "Communication artifact for clinical messaging.\nOptimized to minimize QA noise while keeping key elements Must Support.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation"
+      },
+      "name" : "NG Composite Observation",
+      "description" : "A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components.",
       "exampleBoolean" : false
     },
     {
@@ -6523,13 +6651,13 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-ips-composition.html"
+        "valueUri" : "StructureDefinition-ng-observation-results-laboratory-pathology.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ng-ips-composition"
+        "reference" : "StructureDefinition/ng-observation-results-laboratory-pathology"
       },
-      "name" : "NG IPS Composition",
-      "description" : "International Patient Summary (IPS) Composition adapted for Nigeria Core.\nConforms to IPS v2 Composition and narrows key references to local NG profiles where available.\nIncludes common IPS sections: Problems, Allergies, Medications, Immunizations, Procedures, Results, Devices, and Plan of Care.",
+      "name" : "NG Laboratory or Pathology Result Observation",
+      "description" : "A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations.",
       "exampleBoolean" : false
     },
     {
@@ -6743,6 +6871,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-mdcn-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-mdcn-naming-system"
+      },
+      "name" : "NG Medical and Dental Council of Nigeria NamingSystem",
+      "description" : "Candidate NamingSystem definition for the MDCN namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -6791,6 +6935,70 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-mobile-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-mobile-naming-system"
+      },
+      "name" : "NG Mobile Number NamingSystem",
+      "description" : "Candidate NamingSystem definition for the Medical Records Number namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-naming-system"
+      },
+      "name" : "NG NamingSystem",
+      "description" : "Nigeria Core profile for publishing and governing namespaces used in\nFHIR Identifier.system.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-ins-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-ins-naming-system"
+      },
+      "name" : "NG National Health Insurance Number NamingSystem",
+      "description" : "Candidate NamingSystem definition for the National Health Insurance Authority (NHIA) namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-nin-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-nin-naming-system"
+      },
+      "name" : "NG National Identity Number NamingSystem",
+      "description" : "Candidate NamingSystem definition for the Nigerian National Identity Number (NIN) namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -6802,6 +7010,54 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Next Dose Date",
       "description" : "The recommended due date for the next vaccine dose in the schedule.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-hfr-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-hfr-naming-system"
+      },
+      "name" : "NG Nigeria Health Facility Registry NamingSystem",
+      "description" : "Candidate NamingSystem definition for the HFR namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-psedo-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-psedo-naming-system"
+      },
+      "name" : "NG Nigeria Pseudonym NamingSystem",
+      "description" : "Candidate NamingSystem definition for the pseudo namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-nmcn-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-nmcn-naming-system"
+      },
+      "name" : "NG Nursing and Midewifery Council of Nigeria NamingSystem",
+      "description" : "Candidate NamingSystem definition for the NMCN namespace.",
       "exampleBoolean" : false
     },
     {
@@ -6866,6 +7122,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Patient Identifier Type CS",
       "description" : "This CodeSystem defines list of options for uniquely Identifting a Client",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-pcn-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-pcn-naming-system"
+      },
+      "name" : "NG Pharmacy Council of Nigeria NamingSystem",
+      "description" : "Candidate NamingSystem definition for the PCN namespace.",
       "exampleBoolean" : false
     },
     {
@@ -7051,6 +7323,54 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation-pregnancy-edd.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation-pregnancy-edd"
+      },
+      "name" : "NG Pregnancy EDD Observation",
+      "description" : "A Nigeria Core Observation representing the estimated date of delivery.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation-pregnancy-outcome.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation-pregnancy-outcome"
+      },
+      "name" : "NG Pregnancy Outcome Observation",
+      "description" : "A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation-pregnancy-status.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation-pregnancy-status"
+      },
+      "name" : "NG Pregnancy Status Observation",
+      "description" : "A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-ng-procedure.html"
       }],
       "reference" : {
@@ -7138,6 +7458,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Questionnaire",
       "description" : "The base Questionnaire profile for computable program forms in the\nNigeria Core FHIR Implementation Guide. program-specific Questionnaire profiles, including Immunization, HIV,\nTB, Malaria, MNCH, Nutrition and eCHIS Questionnaires, SHALL derive from\nthis profile.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation-results-radiology.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation-results-radiology"
+      },
+      "name" : "NG Radiology Result Observation",
+      "description" : "A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations.",
       "exampleBoolean" : false
     },
     {
@@ -7282,6 +7618,38 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Sibling Health Status VS",
       "description" : "This CodeSystem defines the health of the client's sibling",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-specimen.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-specimen"
+      },
+      "name" : "NG Specimen",
+      "description" : "This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-wakanda-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-wakanda-naming-system"
+      },
+      "name" : "NG State Medical Records Number NamingSystem",
+      "description" : "Candidate NamingSystem definition for the Hospital Record Number namespace.",
       "exampleBoolean" : false
     },
     {
@@ -7447,6 +7815,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-observation-tobacco-use.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-observation-tobacco-use"
+      },
+      "name" : "NG Tobacco Smoking Status Observation",
+      "description" : "A Nigeria Core Observation representing the patient's tobacco-smoking status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       },
       {
@@ -7538,6 +7922,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "NG Vaccine SNOMED ValueSet",
       "description" : "All SNOMED vaccine codes (DE1–DE29).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-ng-consort-naming-system.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/ng-consort-naming-system"
+      },
+      "name" : "NG Vendor Medical Records Number NamingSystem",
+      "description" : "Candidate NamingSystem definition for the Medical Records Number namespace.",
       "exampleBoolean" : false
     },
     {
@@ -7751,38 +8151,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-flag.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-flag"
-      },
-      "name" : "Nigeria Alert Flag",
-      "description" : "Flag profile for prominent clinical, public-health,\nsafety, or administrative alerts that require display, review,\nacknowledgement, or action.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-allergy-intolerance.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-allergy-intolerance"
-      },
-      "name" : "Nigeria Allergy Intolerance",
-      "description" : "Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ServiceRequest"
       },
       {
@@ -7815,54 +8183,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-alcohol-use.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-alcohol-use"
-      },
-      "name" : "Nigeria Core Alcohol Use Observation",
-      "description" : "A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation"
-      },
-      "name" : "Nigeria Core Composite Observation",
-      "description" : "A composite Nigeria Core Observation used during client registration to record selected age, pregnancy, HIV-status, and birth-weight observations as components.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-results-laboratory-pathology.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-results-laboratory-pathology"
-      },
-      "name" : "Nigeria Core Laboratory or Pathology Result Observation",
-      "description" : "A Nigeria Core Observation representing an individual laboratory or pathology result, or a panel that groups related child observations.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -7874,86 +8194,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "Nigeria Core Observation Codes",
       "description" : "Local codes used to identify Nigeria Core observations that do not\nhave an appropriate code in an established terminology.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-pregnancy-edd.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-pregnancy-edd"
-      },
-      "name" : "Nigeria Core Pregnancy Expected Delivery Date Observation",
-      "description" : "A Nigeria Core Observation representing the estimated date of delivery.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-pregnancy-outcome.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-pregnancy-outcome"
-      },
-      "name" : "Nigeria Core Pregnancy Outcome Observation",
-      "description" : "A Nigeria Core Observation representing the outcome of a pregnancy, such as live birth, stillbirth, miscarriage, abortion, ectopic pregnancy, or molar pregnancy.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-pregnancy-status.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-pregnancy-status"
-      },
-      "name" : "Nigeria Core Pregnancy Status Observation",
-      "description" : "A Nigeria Core Observation representing whether a patient is currently pregnant, not pregnant, or has an unknown pregnancy status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-results-radiology.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-results-radiology"
-      },
-      "name" : "Nigeria Core Radiology Result Observation",
-      "description" : "A Nigeria Core Observation representing an atomic radiology result, an overall imaging conclusion, or a grouper for related radiology observations.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-observation-tobacco-use.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-observation-tobacco-use"
-      },
-      "name" : "Nigeria Core Tobacco Smoking Status Observation",
-      "description" : "A Nigeria Core Observation representing the patient's tobacco-smoking status.",
       "exampleBoolean" : false
     },
     {
@@ -8135,6 +8375,70 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-NgHivDiagnosisToICD11.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/NgHivDiagnosisToICD11"
+      },
+      "name" : "Nigeria HIV Diagnoses to ICD-11 MMS",
+      "description" : "Directional mapping from explicit Nigeria HIV opportunistic-infection diagnosis concepts to ICD-11 MMS 2026-01.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-diagnosis-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-diagnosis-cs"
+      },
+      "name" : "Nigeria HIV Diagnosis Codes",
+      "description" : "Local HIV programme diagnosis concepts used where a specific opportunistic-infection diagnosis is required.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-diagnosis-concepts-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-diagnosis-concepts-vs"
+      },
+      "name" : "Nigeria HIV Diagnosis Concepts",
+      "description" : "Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-diagnosis-icd11-concepts-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-diagnosis-icd11-concepts-vs"
+      },
+      "name" : "Nigeria HIV ICD-11 Diagnosis Concepts",
+      "description" : "ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       },
       {
@@ -8162,6 +8466,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "Nigeria HIV Local Concepts to SNOMED CT",
       "description" : "Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-NgHivLocalToWHOHiv.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/NgHivLocalToWHOHiv"
+      },
+      "name" : "Nigeria HIV Local Concepts to WHO SMART HIV",
+      "description" : "Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts.",
       "exampleBoolean" : false
     },
     {
@@ -8279,6 +8599,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-who-hiv-concepts-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-who-hiv-concepts-cs"
+      },
+      "name" : "Nigeria Local WHO HIV Concepts",
+      "description" : "Local Nigeria CodeSystem containing the subset of WHO SMART HIV concept codes used by the Nigeria HIV terminology mappings. Code values are preserved exactly from the supplied WHO HIV concept list. Full concepts can be found here: https://smart.who.int/hiv/CodeSystem-HIVConcepts.htmlhttps://smart.who.int/hiv/CodeSystem-HIVConcepts.html",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationRequest"
       },
       {
@@ -8371,6 +8707,22 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       "name" : "Nigeria Referral Task Example",
       "description" : "A simple task assigning an antenatal referral request to a receiving\nhealthcare organization in Ondo State.",
       "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-who-hiv-concepts-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-who-hiv-concepts-vs"
+      },
+      "name" : "Nigeria Relevant WHO HIV Concepts",
+      "description" : "Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -8855,22 +9207,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-specimen.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-specimen"
-      },
-      "name" : "Specimen profile",
-      "description" : "This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
       },
       {
@@ -9266,22 +9602,6 @@ The guide will evolve through stakeholder review, technical working groups, Conn
       },
       "name" : "Verify Nigeria Core Certificate",
       "description" : "Verifies the authenticity and integrity of a certificate represented by\nthe DocumentReference on which the operation is invoked.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ConceptMap-WHOHivToNgHivLocal.html"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/WHOHivToNgHivLocal"
-      },
-      "name" : "WHO HIV to Nigeria HIV Local Concepts",
-      "description" : "Experimental directional mapping from WHO SMART Guidelines HIV concepts to Nigeria HIV local programme terminology.",
       "exampleBoolean" : false
     },
     {

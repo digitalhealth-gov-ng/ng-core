@@ -44,13 +44,13 @@
     "Bundle": [
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-mnch-referral-bundle",
-        "title": "2-NGReferral MNCH Transaction Bundle"
+        "title": "Bundle NG Referral MNCH"
       }
     ],
     "AllergyIntolerance": [
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-allergy-intolerance",
-        "title": "Nigeria Allergy Intolerance"
+        "title": "NG Allergy Intolerance"
       }
     ],
     "Appointment": [
@@ -152,7 +152,7 @@
     "Flag": [
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-flag",
-        "title": "Nigeria Alert Flag"
+        "title": "NG Alert Flag"
       }
     ],
     "Goal": [
@@ -200,7 +200,7 @@
     "Composition": [
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-ips-composition",
-        "title": "NG IPS Composition"
+        "title": "Bundle NG IPS Composition"
       }
     ],
     "Location": [
@@ -245,38 +245,44 @@
         "title": "Nigeria Medication Statement"
       }
     ],
+    "NamingSystem": [
+      {
+        "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-naming-system",
+        "title": "NG NamingSystem"
+      }
+    ],
     "Observation": [
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation",
-        "title": "Nigeria Core Composite Observation"
+        "title": "NG Composite Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-alcohol-use",
-        "title": "Nigeria Core Alcohol Use Observation"
+        "title": "NG Alcohol Use Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-edd",
-        "title": "Nigeria Core Pregnancy Expected Delivery Date Observation"
+        "title": "NG Pregnancy EDD Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-outcome",
-        "title": "Nigeria Core Pregnancy Outcome Observation"
+        "title": "NG Pregnancy Outcome Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-status",
-        "title": "Nigeria Core Pregnancy Status Observation"
+        "title": "NG Pregnancy Status Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-laboratory-pathology",
-        "title": "Nigeria Core Laboratory or Pathology Result Observation"
+        "title": "NG Laboratory or Pathology Result Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-results-radiology",
-        "title": "Nigeria Core Radiology Result Observation"
+        "title": "NG Radiology Result Observation"
       },
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-tobacco-use",
-        "title": "Nigeria Core Tobacco Smoking Status Observation"
+        "title": "NG Tobacco Smoking Status Observation"
       }
     ],
     "Patient": [
@@ -324,7 +330,7 @@
     "Specimen": [
       {
         "url": "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-specimen",
-        "title": "Specimen profile"
+        "title": "NG Specimen"
       }
     ],
     "Task": [
@@ -373,6 +379,12 @@
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version": [
       "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

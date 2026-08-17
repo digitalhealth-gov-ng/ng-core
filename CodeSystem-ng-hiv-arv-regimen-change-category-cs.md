@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-change-category-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivARVRegimenChangeCategoryCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivARVRegimenChangeCategoryCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.29 | |
 
  
@@ -17,7 +17,7 @@ Codes used for representing the category for the ARV regimen change.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivARVRegimenChangeCategoryVS](ValueSet-ng-hiv-arv-regimen-change-category-vs.md)
+* [HIV ARV Regimen Change Category](ValueSet-ng-hiv-arv-regimen-change-category-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Codes used for representing the category for the ARV regimen change.
   "title" : "HIV ARV Regimen Change Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

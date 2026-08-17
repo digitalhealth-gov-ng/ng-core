@@ -10,7 +10,7 @@
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgGeneralHospitalSandboxCapability | *Version*:0.0.0 |
 | Active as of 2026-08-09 | *Computable Name*:NgGeneralHospitalSandboxCapability |
-| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.9 | |
+| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.5 | |
 | **Usage:**Clinical Venue:  | |
 
  

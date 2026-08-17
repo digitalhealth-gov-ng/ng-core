@@ -1,15 +1,15 @@
-# Nigeria Core Pregnancy Expected Delivery Date Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Pregnancy EDD Observation - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria Core Pregnancy Expected Delivery Date Observation**
+* **NG Pregnancy EDD Observation**
 
-## Resource Profile: Nigeria Core Pregnancy Expected Delivery Date Observation 
+## Resource Profile: NG Pregnancy EDD Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-observation-pregnancy-edd | *Version*:0.0.0 |
-| Draft as of 2026-08-12 | *Computable Name*:NgObservationPregnancyEdd |
+| Draft as of 2026-08-17 | *Computable Name*:NgObservationPregnancyEdd |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.50 | |
 
  
@@ -17,8 +17,8 @@ A Nigeria Core Observation representing the estimated date of delivery.
 
 **Usages:**
 
-* Use this Profile: [Bundle (IPS)](StructureDefinition-ng-ips-bundle.md)
-* Refer to this Profile: [Nigeria Core Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md)
+* Use this Profile: [Bundle NG (IPS)](StructureDefinition-ng-ips-bundle.md)
+* Refer to this Profile: [NG Pregnancy Status Observation](StructureDefinition-ng-observation-pregnancy-status.md)
 * Examples for this Profile: [Observation/NgObservationPregnancyEddExample](Observation-NgObservationPregnancyEddExample.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md), [Nigeria Core PHC Requestor Capability](CapabilityStatement-NgPHCRequestorCapability.md)... Show 3 more, [Nigeria Core PHC Responder Capability](CapabilityStatement-NgPHCResponderCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-ng-observation-pregn
   }],
   "version" : "0.0.0",
   "name" : "NgObservationPregnancyEdd",
-  "title" : "Nigeria Core Pregnancy Expected Delivery Date Observation",
+  "title" : "NG Pregnancy EDD Observation",
   "status" : "draft",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

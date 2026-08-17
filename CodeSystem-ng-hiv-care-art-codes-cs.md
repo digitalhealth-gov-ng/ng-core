@@ -17,17 +17,17 @@ Local codes transcribed from the Nigeria HIV Care/ART Card for coded answers use
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtStopReasonVS](ValueSet-ng-hiv-art-stop-reason-vs.md)
-* [NgHivCareEntryPointVS](ValueSet-ng-hiv-care-entry-point-vs.md)
-* [NgHivCauseOfDeathVS](ValueSet-ng-hiv-cause-of-death-vs.md)
-* [NgHivCd4ReferenceVS](ValueSet-ng-hiv-cd4-reference-vs.md)
-* [NgHivDrugResistanceResultVS](ValueSet-ng-hiv-drug-resistance-result-vs.md)
-* [NgHivEducationalStatusVS](ValueSet-ng-hiv-educational-status-vs.md)
-* [NgHivKpTypologyVS](ValueSet-ng-hiv-kp-typology-vs.md)
-* [NgHivMaritalStatusVS](ValueSet-ng-hiv-marital-status-vs.md)
-* [NgHivPriorArtVS](ValueSet-ng-hiv-prior-art-vs.md)
-* [NgHivRegimenChangeReasonVS](ValueSet-ng-hiv-regimen-change-reason-vs.md)
-* [NgHivTbPreventiveTherapyVS](ValueSet-ng-hiv-tb-preventive-therapy-vs.md)
+* [NG HIV ART Stop Reason](ValueSet-ng-hiv-art-stop-reason-vs.md)
+* [NG HIV Care Entry Point](ValueSet-ng-hiv-care-entry-point-vs.md)
+* [NG HIV Cause of Death](ValueSet-ng-hiv-cause-of-death-vs.md)
+* [NG HIV CD4 Reference](ValueSet-ng-hiv-cd4-reference-vs.md)
+* [NG HIV Drug Resistance Result](ValueSet-ng-hiv-drug-resistance-result-vs.md)
+* [NG HIV Educational Status](ValueSet-ng-hiv-educational-status-vs.md)
+* [NG HIV Key Population Typology](ValueSet-ng-hiv-kp-typology-vs.md)
+* [NG HIV Marital Status](ValueSet-ng-hiv-marital-status-vs.md)
+* [NG HIV Prior ART](ValueSet-ng-hiv-prior-art-vs.md)
+* [NG HIV Regimen Substitution or Switch Reason](ValueSet-ng-hiv-regimen-change-reason-vs.md)
+* [NG HIV TB Preventive Therapy](ValueSet-ng-hiv-tb-preventive-therapy-vs.md)
 
 
 

@@ -10,7 +10,7 @@
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CapabilityStatement/NgPHCTerminologyCapability | *Version*:0.0.0 |
 | Active as of 2026-08-09 | *Computable Name*:NgPHCTerminologyCapability |
-| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.15 | |
+| *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.13.11 | |
 | **Usage:**Clinical Venue:  | |
 
  

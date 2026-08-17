@@ -43,7 +43,7 @@ Suleiman Bala Male, DoB: 2019-09-05 ( birthcert)
         "code" : "BIRTHCERT"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/birth-cert",
     "value" : "NPC-FCT-2019-004321"
   },
   {
@@ -53,7 +53,7 @@ Suleiman Bala Male, DoB: 2019-09-05 ( birthcert)
         "code" : "MOBILE"
       }]
     },
-    "system" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-patient-identifier-type-cs",
+    "system" : "https://fhir-ig.digitalhealth.gov.ng/identifier/mobile",
     "value" : "08123456789"
   }],
   "active" : true,

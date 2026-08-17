@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-tpt-alternate-follow-up-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgTbTPTAlternateFollowUpCS |
+| Active as of 2026-08-17 | *Computable Name*:NgTbTPTAlternateFollowUpCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.103 | |
 
  
@@ -37,7 +37,7 @@ A code indicating that the follow-up is for an alternate TPT prophylaxis.
   "title" : "TB TPT Alternate Follow-Up CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -17,7 +17,7 @@ Reasons for discontinuing care at the facility printed for T26.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivTrackingDiscontinuationReasonVS](ValueSet-ng-hiv-tracking-discontinuation-reason-vs.md)
+* [NG HIV Tracking Register Reason for Discontinuation](ValueSet-ng-hiv-tracking-discontinuation-reason-vs.md)
 
 
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-who-stage-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgHivWHOStageCS |
+| Active as of 2026-08-17 | *Computable Name*:NgHivWHOStageCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.85 | |
 
  
@@ -17,7 +17,7 @@ Code used for representing the patient's WHO stage.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivWHOStageVS](ValueSet-ng-hiv-who-stage-vs.md)
+* [HIV WHO Stage](ValueSet-ng-hiv-who-stage-vs.md)
 
 
 
@@ -37,7 +37,7 @@ Code used for representing the patient's WHO stage.
   "title" : "WHO Stage Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

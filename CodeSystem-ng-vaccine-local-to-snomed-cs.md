@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local-to-snomed-cs | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgVaccineLibrarySnomedCS |
+| Active as of 2026-08-17 | *Computable Name*:NgVaccineLibrarySnomedCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.108 | |
 
  
@@ -17,7 +17,7 @@ SNOMED-CT code Immunization.vaccineCode. Dose/order is not encoded in codes; use
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgVaccineSnomedVS](ValueSet-ng-vaccine-snomed-vs.md)
+* [NG Vaccine SNOMED ValueSet](ValueSet-ng-vaccine-snomed-vs.md)
 
 
 
@@ -37,7 +37,7 @@ SNOMED-CT code Immunization.vaccineCode. Dose/order is not encoded in codes; use
   "title" : "NG IMMZ.D.DE4 Vaccine Library (SNOMED CT)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

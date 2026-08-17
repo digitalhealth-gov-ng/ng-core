@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-location | *Version*:0.0.0 |
-| Active as of 2026-08-12 | *Computable Name*:NgLocation |
+| Active as of 2026-08-17 | *Computable Name*:NgLocation |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.40 | |
 
  
@@ -17,7 +17,7 @@ A profile for immunization service locations, including health facilities, outre
 
 **Usages:**
 
-* Use this Profile: [4-NG AEFI Report Bundle](StructureDefinition-ng-aefi-report-bundle.md) and [4-NG Immunization SMART Scheduler Bundle](StructureDefinition-ng-imm-smart-scheduler-bundle.md)
+* Use this Profile: [Bundle NG AEFI Report](StructureDefinition-ng-aefi-report-bundle.md) and [Bundle NG Immunization SMART Scheduler](StructureDefinition-ng-imm-smart-scheduler-bundle.md)
 * Refer to this Profile: [NG Device](StructureDefinition-ng-device.md), [NG Encounter](StructureDefinition-ng-encounter.md), [NG HealthcareService](StructureDefinition-ng-healthcare-service.md), [NG Immunization](StructureDefinition-ng-immunization.md)... Show 3 more, [NG Location](StructureDefinition-ng-location.md), [NG PractitionerRole](StructureDefinition-ng-practitioner-role.md) and [NG Procedure](StructureDefinition-ng-procedure.md)
 * Examples for this Profile: [Asokoro OPD](Location-NgLocation-001.md), [Pharmacy Counter](Location-NgLocation-002.md), [Immunization Room](Location-NgLocation-003.md) and [Gurdi Outreach Site](Location-NgLocation-004.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md), [Nigeria Core General Hospital Registry Service Capability](CapabilityStatement-NgGeneralHospitalRegistryCapability.md), [Nigeria Core General Hospital Requestor Capability](CapabilityStatement-NgGeneralHospitalRequestorCapability.md), [Nigeria Core General Hospital Responder Capability](CapabilityStatement-NgGeneralHospitalResponderCapability.md)... Show 6 more, [Nigeria Core PHC Registry Service Capability](CapabilityStatement-NgPHCRegistryCapability.md), [Nigeria Core PHC Requestor Capability](CapabilityStatement-NgPHCRequestorCapability.md), [Nigeria Core PHC Responder Capability](CapabilityStatement-NgPHCResponderCapability.md), [Nigeria Core Tertiary Referral Registry Service Capability](CapabilityStatement-NgTertiaryRegistryCapability.md), [Nigeria Core Tertiary Referral Requestor Capability](CapabilityStatement-NgTertiaryRequestorCapability.md) and [Nigeria Core Tertiary Referral Responder Capability](CapabilityStatement-NgTertiaryResponderCapability.md)
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-location.csv), [E
   "name" : "NgLocation",
   "title" : "NG Location",
   "status" : "active",
-  "date" : "2026-08-12T13:22:49+01:00",
+  "date" : "2026-08-17T07:55:48+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

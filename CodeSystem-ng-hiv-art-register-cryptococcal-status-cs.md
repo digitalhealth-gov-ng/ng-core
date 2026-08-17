@@ -17,7 +17,7 @@ Cryptococcal screening and treatment-state codes printed in column A25 of the Na
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NgHivArtRegisterCryptococcalStatusVS](ValueSet-ng-hiv-art-register-cryptococcal-status-vs.md)
+* [NG HIV ART Register Cryptococcal Status](ValueSet-ng-hiv-art-register-cryptococcal-status-vs.md)
 
 
 
