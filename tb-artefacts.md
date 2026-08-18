@@ -7,11 +7,11 @@
 
 This page provides a consolidated catalogue of the FHIR artefacts developed for the Nigeria Tuberculosis (TB) programme. It brings together foundational and clinical profiles, structured programme forms, completed form examples, programme registers, laboratory and specimen workflows, referral and contact-management artefacts, and aggregate reporting artefacts. Links are relative to the Implementation Guide and open the corresponding rendered FHIR artefact pages.
 
-**### Conformance Requirements**
+### Conformance Requirements
 
 The keywords **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** are normative and indicate the degree of conformance required by this guide already defined in [Conformance/General Requirements](general.md).
 
-**### Foundational Resources**
+### Foundational Resources
 
 These Nigeria Core profiles provide the patient, workforce, organisation, location, relationship, and encounter context required by TB programme artefacts.
 
@@ -25,7 +25,7 @@ These Nigeria Core profiles provide the patient, workforce, organisation, locati
 | [NG Location](StructureDefinition-ng-location.md) | Represents the physical or service-delivery location where TB screening, treatment, specimen collection, laboratory, referral, or follow-up activities occur. | Systems exchanging location information**SHALL**use this profile and reference the responsible Organization where applicable. |
 | [NG Encounter](StructureDefinition-ng-encounter.md) | Provides the care-contact context for TB assessment, treatment, counselling, laboratory, preventive therapy, referral, transfer, and follow-up activities. | Clinical TB resources associated with a visit**SHOULD**reference a conformant encounter, and systems**SHALL**preserve encounter status, class, period, patient, and service location. |
 
-**### TB Clinical Resources**
+### TB Clinical Resources
 
 These Nigeria Core clinical profiles support extraction, persistence, exchange, and reuse of structured data collected through TB programme forms, registers, laboratory processes, referral workflows, and treatment monitoring.
 
@@ -42,7 +42,7 @@ These Nigeria Core clinical profiles support extraction, persistence, exchange, 
 | [NG Procedure](StructureDefinition-ng-procedure.md) | Represents completed TB-related procedures and interventions not adequately represented as observations or medication events. | Systems claiming Procedure support**SHALL**use this profile and record patient, status, performed time, performer, and coded procedure where applicable. |
 | [NG Task](StructureDefinition-ng-task.md) | Coordinates TB referral, specimen movement, contact investigation, treatment interruption tracing, transfer, follow-up, and other workflow assignments. | Workflow systems**SHALL**use this profile when exchanging actionable work and**SHALL**preserve task status, intent, owner, focus, and business identifiers. |
 
-**### Questionnaire (Forms)**
+### Questionnaire (Forms)
 
 These Questionnaire artefacts support structured collection of TB specimen requests and results, patient treatment, referral and transfer, DR-TB discharge, treatment-interruption tracking, community-to-facility referral, index-patient contact investigation, and TB preventive therapy information.
 
@@ -58,7 +58,7 @@ These Questionnaire artefacts support structured collection of TB specimen reque
 | [NG TB Index Patient Contact Investigation Questionnaire](Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire.md) | Captures contact investigator information, index TB case, household contacts, symptom screening, presumptive TB identification, referral, specimen collection, and diagnosis. | Implementations claiming support**SHALL**use the published canonical Questionnaire, preserve`linkId`, item type, required items, repeats, enablement rules, and answer bindings. |
 | [NG TB Preventive Therapy Questionnaire](Questionnaire-ng-tb-preventive-therapy-questionnaire.md) | Captures TPT client/contact information, reason for preventive therapy, index patient, regimen and dosage, drug collection, and final TPT outcome. | Implementations claiming support**SHALL**use the published canonical Questionnaire, preserve`linkId`, item type, required items, repeats, enablement rules, and answer bindings. |
 
-**### QuestionnaireResponse (Example Forms)**
+### QuestionnaireResponse (Example Forms)
 
 The following QuestionnaireResponse examples demonstrate how completed TB programme forms can be represented and exchanged using FHIR.
 
@@ -74,7 +74,7 @@ The following QuestionnaireResponse examples demonstrate how completed TB progra
 | [NG TB Specimen Examination Result QuestionnaireResponse Example](QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg.md) | Illustrates a completed specimen examination result with laboratory results and release information. | This is an example instance. Implementers**SHOULD**use it for testing and guidance,**SHALL**ensure response items match the referenced Questionnaire, and**SHALL NOT**reuse example identifiers for real clients. |
 | [NG TB Treatment Interruption Tracking QuestionnaireResponse Example](QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample.md) | Illustrates repeated tracing attempts for a patient who interrupted TB treatment. | This is an example instance. Implementers**SHOULD**use it for testing and guidance,**SHALL**ensure response items match the referenced Questionnaire, and**SHALL NOT**reuse example identifiers for real clients. |
 
-**### Logical Models (Registers)**
+### Logical Models (Registers)
 
 These logical models describe the programme-oriented structures used for TB registration, longitudinal treatment monitoring, presumptive-TB investigation, laboratory operations, specimen transport, community referral, and contact management.
 
@@ -88,7 +88,7 @@ These logical models describe the programme-oriented structures used for TB regi
 | [NG TB Community and Facility Referral Register](StructureDefinition-NgTBCommunityFacilityReferralRegister.md) | Defines the site-level monthly register for client referral, receiving facility, TB confirmation, treatment initiation, and referral remarks. | Implementations using this programme tool**SHOULD**preserve the referral cascade and receiving-facility outcome when mapping to operational FHIR resources. |
 | [NG TB Facility Contact Management Register](StructureDefinition-NgTBFacilityContactManagementRegister.md) | Defines the index-patient-to-contact structure for screening, presumptive TB identification, diagnosis, treatment linkage, TPT eligibility, TPT initiation, monthly drug collection, and TPT outcome. | Implementations using this programme tool**SHOULD**preserve the relationship between each index case and its contacts and**SHALL**document any transformation that flattens or separates this relationship. |
 
-**### Measure and MeasureReport (Aggregates)**
+### Measure and MeasureReport (Aggregates)
 
 These artefacts define aggregate TB reporting logic and support submission of programme reporting results.
 
@@ -96,7 +96,7 @@ These artefacts define aggregate TB reporting logic and support submission of pr
 | :--- | :--- | :--- |
 | [NG TB Quarterly DOTS and Microscopy Centre Measure](Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.md) | Defines the aggregate reporting contract for the NTBLCP/TB 18 Quarterly Report on Newly Established DOTS and Microscopy Centres, including reporting population, newly established centres, cumulative centre counts, and population coverage measures. | Aggregate reporting systems**SHALL**use the published Measure canonical and preserve the defined group and stratifier codes when producing corresponding MeasureReport instances. |
 
-**### Exchange Documents**
+### Exchange Documents
 
 These artefacts support document-based exchange and traceability of TB information between authorised facilities, laboratories, treatment centres, community programmes, repositories, and health information exchanges.
 
@@ -105,7 +105,7 @@ These artefacts support document-based exchange and traceability of TB informati
 | [NG Documents](StructureDefinition-ng-documents.md) | Represents TB clinical documents, referral and transfer forms, discharge summaries, laboratory reports, specimen shipment documents, treatment records, and other document references exchanged between authorised systems. | Systems exchanging TB documents**SHALL**use this profile, identify the patient and custodian, provide appropriate content metadata, and protect document confidentiality and integrity. |
 | [NG Provenance](StructureDefinition-ng-provenance.md) | Records the origin, authorship, transformation, submission, and responsible agents for exchanged TB data and documents. | Systems creating, transforming, or submitting TB exchange content**SHOULD**provide a conformant Provenance resource; regulated or signed exchanges**SHALL**include it where required by the workflow. |
 
-**### Implementation Guidance**
+### Implementation Guidance
 
 Implementers should use the Questionnaire artefacts to create interoperable electronic TB programme forms and corresponding QuestionnaireResponse resources to represent completed submissions. QuestionnaireResponse items **SHALL** preserve the hierarchy, `linkId`, datatype, repetition, and conditional structure of the referenced Questionnaire. Where structured clinical reuse is required, response content should be extracted or mapped to the applicable foundational and clinical profiles.
 

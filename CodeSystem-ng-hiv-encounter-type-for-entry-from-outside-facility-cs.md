@@ -37,7 +37,7 @@ Code used for indicating that an encounter was captured to represent an entry po
   "title" : "Encounter Type Code For Entry From Outside Facility",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-18T15:57:17+01:00",
+  "date" : "2026-08-18T16:47:52+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -30,7 +30,7 @@ Submits a Nigeria Core MeasureReport for validation and processing by the receiv
   "status" : "draft",
   "kind" : "operation",
   "experimental" : false,
-  "date" : "2026-08-18T15:57:17+01:00",
+  "date" : "2026-08-18T16:47:52+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

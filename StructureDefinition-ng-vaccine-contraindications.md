@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-vaccine-contraind
   "name" : "NgVaccineContraindications",
   "title" : "NG Vaccine Contraindications",
   "status" : "draft",
-  "date" : "2026-08-18T15:57:17+01:00",
+  "date" : "2026-08-18T16:47:52+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -227,19 +227,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#conformance-requirements" id="markdown-toc-conformance-requirements">Conformance Requirements</a></li>
+  <li><a href="#foundational-resources" id="markdown-toc-foundational-resources">Foundational Resources</a></li>
+  <li><a href="#tb-clinical-resources" id="markdown-toc-tb-clinical-resources">TB Clinical Resources</a></li>
+  <li><a href="#questionnaire-forms" id="markdown-toc-questionnaire-forms">Questionnaire (Forms)</a></li>
+  <li><a href="#questionnaireresponse-example-forms" id="markdown-toc-questionnaireresponse-example-forms">QuestionnaireResponse (Example Forms)</a></li>
+  <li><a href="#logical-models-registers" id="markdown-toc-logical-models-registers">Logical Models (Registers)</a></li>
+  <li><a href="#measure-and-measurereport-aggregates" id="markdown-toc-measure-and-measurereport-aggregates">Measure and MeasureReport (Aggregates)</a></li>
+  <li><a href="#exchange-documents" id="markdown-toc-exchange-documents">Exchange Documents</a></li>
+  <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a></li>
+</ul>
 
 </div>
 <p>This page provides a consolidated catalogue of the FHIR artefacts developed for the Nigeria Tuberculosis (TB) programme. It brings together foundational and clinical profiles, structured programme forms, completed form examples, programme registers, laboratory and specimen workflows, referral and contact-management artefacts, and aggregate reporting artefacts. Links are relative to the Implementation Guide and open the corresponding rendered FHIR artefact pages.</p>
 
-<p><strong>### Conformance Requirements</strong></p>
+<h3 id="conformance-requirements">Conformance Requirements</h3>
 
 <p>The keywords <strong>SHALL</strong>, <strong>SHALL NOT</strong>, <strong>SHOULD</strong>, <strong>SHOULD NOT</strong>, and <strong>MAY</strong> are normative and indicate the degree of conformance required by this guide already defined in <a href="general.html">Conformance/General Requirements</a>.</p>
 
-<p><strong>### Foundational Resources</strong></p>
+<h3 id="foundational-resources">Foundational Resources</h3>
 
 <p>These Nigeria Core profiles provide the patient, workforce, organisation, location, relationship, and encounter context required by TB programme artefacts.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -286,11 +297,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### TB Clinical Resources</strong></p>
+<h3 id="tb-clinical-resources">TB Clinical Resources</h3>
 
 <p>These Nigeria Core clinical profiles support extraction, persistence, exchange, and reuse of structured data collected through TB programme forms, registers, laboratory processes, referral workflows, and treatment monitoring.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -352,11 +363,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### Questionnaire (Forms)</strong></p>
+<h3 id="questionnaire-forms">Questionnaire (Forms)</h3>
 
 <p>These Questionnaire artefacts support structured collection of TB specimen requests and results, patient treatment, referral and transfer, DR-TB discharge, treatment-interruption tracking, community-to-facility referral, index-patient contact investigation, and TB preventive therapy information.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -413,11 +424,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### QuestionnaireResponse (Example Forms)</strong></p>
+<h3 id="questionnaireresponse-example-forms">QuestionnaireResponse (Example Forms)</h3>
 
 <p>The following QuestionnaireResponse examples demonstrate how completed TB programme forms can be represented and exchanged using FHIR.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -474,11 +485,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### Logical Models (Registers)</strong></p>
+<h3 id="logical-models-registers">Logical Models (Registers)</h3>
 
 <p>These logical models describe the programme-oriented structures used for TB registration, longitudinal treatment monitoring, presumptive-TB investigation, laboratory operations, specimen transport, community referral, and contact management.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -525,11 +536,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### Measure and MeasureReport (Aggregates)</strong></p>
+<h3 id="measure-and-measurereport-aggregates">Measure and MeasureReport (Aggregates)</h3>
 
 <p>These artefacts define aggregate TB reporting logic and support submission of programme reporting results.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -546,11 +557,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### Exchange Documents</strong></p>
+<h3 id="exchange-documents">Exchange Documents</h3>
 
 <p>These artefacts support document-based exchange and traceability of TB information between authorised facilities, laboratories, treatment centres, community programmes, repositories, and health information exchanges.</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Artefact</th>
@@ -572,7 +583,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p class="grid"><strong>### Implementation Guidance</strong></p>
+<h3 id="implementation-guidance">Implementation Guidance</h3>
 
 <p>Implementers should use the Questionnaire artefacts to create interoperable electronic TB programme forms and corresponding QuestionnaireResponse resources to represent completed submissions. QuestionnaireResponse items <strong>SHALL</strong> preserve the hierarchy, <code class="language-plaintext highlighter-rouge">linkId</code>, datatype, repetition, and conditional structure of the referenced Questionnaire. Where structured clinical reuse is required, response content should be extracted or mapped to the applicable foundational and clinical profiles.</p>
 
@@ -605,7 +616,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 15:57+0100">2026-08-18</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 16:47+0100">2026-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
