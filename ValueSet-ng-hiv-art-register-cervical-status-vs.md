@@ -63,26 +63,6 @@ Cervical-cancer screening workflow statuses permitted in column A27 of the Natio
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Cervical-cancer screening workflow statuses permitted in column A27 of the National ART Register.",

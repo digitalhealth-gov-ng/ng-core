@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivPharmacyDailyWorksheet | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgHivPharmacyDailyWorksheet |
+| Draft as of 2026-08-18 | *Computable Name*:NgHivPharmacyDailyWorksheet |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.6 | |
 
  
@@ -46,33 +46,13 @@ Other representations of profile: [CSV](StructureDefinition-NgHivPharmacyDailyWo
   "name" : "NgHivPharmacyDailyWorksheet",
   "title" : "NG HIV Pharmacy Daily Worksheet",
   "status" : "draft",
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Logical model for the revised Nigeria HIV Pharmacy Daily Worksheet. One\ninstance represents one pharmacist worksheet for one dispensing date and\ncontains repeatable patient-level dispensing entries corresponding to\nprinted fields W1 through W73.",

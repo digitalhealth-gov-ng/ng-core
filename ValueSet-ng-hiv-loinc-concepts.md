@@ -1,10 +1,10 @@
-# Nigeria HIV LOINC Concepts - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV LOINC Concepts - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria HIV LOINC Concepts**
+* **NG HIV LOINC Concepts**
 
-## ValueSet: Nigeria HIV LOINC Concepts (Experimental) 
+## ValueSet: NG HIV LOINC Concepts (Experimental) 
 
 | | |
 | :--- | :--- |
@@ -53,7 +53,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   }],
   "version" : "0.0.0",
   "name" : "NgHivLOINCConceptsVS",
-  "title" : "Nigeria HIV LOINC Concepts",
+  "title" : "NG HIV LOINC Concepts",
   "status" : "active",
   "experimental" : true,
   "date" : "2026-07-24",
@@ -63,26 +63,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied.",

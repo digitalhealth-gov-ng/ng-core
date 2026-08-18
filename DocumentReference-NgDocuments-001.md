@@ -6,7 +6,7 @@
 
 ## Example DocumentReference: Nigeria Immunization Document Example
 
-Profile: [Nigeria Document Reference](StructureDefinition-ng-documents.md)
+Profile: [NG Document Reference](StructureDefinition-ng-documents.md)
 
 **status**: Current
 

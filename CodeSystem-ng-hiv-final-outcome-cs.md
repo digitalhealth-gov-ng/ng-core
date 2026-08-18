@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivFinalOutcomeCS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivFinalOutcomeCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.52 | |
 
  
@@ -18,7 +18,7 @@ Final Outcome
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * [HIV-Final Outcome ValueSet](ValueSet-ng-hiv-final-outcome-value-set.md)
-* [Nigeria HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md)
+* [NG HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md)
 
 
 
@@ -38,33 +38,13 @@ Final Outcome
   "title" : "HIV - Final Outcome CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Final Outcome",

@@ -1,15 +1,15 @@
-# Current Smoking Status - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Current Smoking Status - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Current Smoking Status**
+* **NG Current Smoking Status**
 
-## ValueSet: Current Smoking Status 
+## ValueSet: NG Current Smoking Status 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-current-smoking-status-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgCurrentSmokingStatusVS |
+| Active as of 2026-08-18 | *Computable Name*:NgCurrentSmokingStatusVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.13 | |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
@@ -57,36 +57,16 @@ ValueSet for smoking status. This value set includes a set of specific SNOMED CT
   }],
   "version" : "0.0.0",
   "name" : "NgCurrentSmokingStatusVS",
-  "title" : "Current Smoking Status",
+  "title" : "NG Current Smoking Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "ValueSet for smoking status.  This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status.",

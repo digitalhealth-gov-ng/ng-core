@@ -6,7 +6,7 @@
 
 ## Example MedicationStatement: Nigeria Medication Statement Example
 
-Profile: [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md)
+Profile: [NG Medication Statement](StructureDefinition-ng-medication-statement.md)
 
 **status**: Active
 

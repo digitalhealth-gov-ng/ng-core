@@ -59,6 +59,7 @@ These define measures as part of content in this implementation guide.
 
 | | |
 | :--- | :--- |
+| [NG HIV ART Monthly Summary Measure](Measure-NgMeasure-HIV-ART-Monthly.md) | Defines the 24 indicators and reporting dimensions for the Nigeria National ART Monthly Summary Form revised November 2025. |
 | [NHMIS Monthly Outpatient Attendance Measure](Measure-NgMeasure-NHMIS-001.md) | A simple NHMIS aggregate measure defining the total number of outpatient attendances recorded by a reporting health facility during a monthly reporting period. |
 
 ### Structures: Logical Models 
@@ -108,6 +109,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Alcohol Use Observation](StructureDefinition-ng-observation-alcohol-use.md) | A Nigeria Core Observation representing the average number of alcoholic drinks consumed per day. |
 | [NG Alert Flag](StructureDefinition-ng-flag.md) | Flag profile for prominent clinical, public-health, safety, or administrative alerts that require display, review, acknowledgement, or action. |
 | [NG Allergy Intolerance](StructureDefinition-ng-allergy-intolerance.md) | Nigeria Core profile for recording a patient's allergy or intolerance and the associated risk of an adverse reaction. |
+| [NG Appointment](StructureDefinition-ng-appointment.md) | Appointment profile for Nigeria Core (e.g., immunization, ePharmacy counseling, referrals). |
 | [NG CarePlan](StructureDefinition-ng-care-plan.md) | A simple CarePlan profile. |
 | [NG Claim](StructureDefinition-ng-claim.md) | A profile representing submitted claims from providers to payers. |
 | [NG Claim Coverage](StructureDefinition-ng-coverage.md) | A profile capturing a patient's insurance coverage details. |
@@ -120,6 +122,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Consent](StructureDefinition-ng-consent.md) | Minimal consent profile for Nigerian implementations (e.g., NDPR / NIS ISO/TR 17975 use). Keeps constraints light to reduce QA noise. |
 | [NG Device](StructureDefinition-ng-device.md) | Device profile for Nigeria Core (medical devices communications). |
 | [NG DeviceRequest](StructureDefinition-ng-device-request.md) | Minimal DeviceRequest profile for the Nigeria Core. |
+| [NG Document Reference](StructureDefinition-ng-documents.md) | Profile for indexing and exchanging clinical, administrative, and public-health documents associated with a patient. |
 | [NG Encounter](StructureDefinition-ng-encounter.md) | A profile for encounters in the Nigerian used to health visits and related healthcare interactions. |
 | [NG ExplanationOfBenefit](StructureDefinition-ng-explanation-of-benefit.md) | A profile detailing adjudicated claim results. |
 | [NG Goal](StructureDefinition-ng-goal.md) | Goal profile for the Nigeria Core. |
@@ -136,6 +139,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Measure](StructureDefinition-ng-measure.md) | Minimal program-neutral Measure profile for defining Nigerian health indicators, quality measures and aggregate service-delivery measures using FHIR R4B 4.3.0. |
 | [NG Measure Report](StructureDefinition-ng-measure-report.md) | Minimal program-neutral MeasureReport profile for exchanging Nigerian individual and aggregate program-reporting results using FHIR R4B 4.3.0. |
 | [NG Medication](StructureDefinition-ng-medication.md) | A Medication profile with some core elements for demonstration purposes. |
+| [NG Medication Statement](StructureDefinition-ng-medication-statement.md) | Profile for recording a medication that a patient is taking, has taken, or is expected to take, based on information reported by the patient, caregiver, practitioner, or another clinical record. |
 | [NG MedicationDispense](StructureDefinition-ng-medication-dispense.md) | MedicationDispense profile for ePharmacy. |
 | [NG MedicationRequest](StructureDefinition-ng-medication-request.md) | A MedicationRequest profile with some of core elements. |
 | [NG NamingSystem](StructureDefinition-ng-naming-system.md) | Nigeria Core profile for publishing and governing namespaces used in FHIR Identifier.system. |
@@ -156,9 +160,6 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NG Specimen](StructureDefinition-ng-specimen.md) | This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary. |
 | [NG Task](StructureDefinition-ng-task.md) | Task profile for the Nigeria Core (referrals, claims, pharmacy, devices). |
 | [NG Tobacco Smoking Status Observation](StructureDefinition-ng-observation-tobacco-use.md) | A Nigeria Core Observation representing the patient's tobacco-smoking status. |
-| [Ng Appointment](StructureDefinition-ng-appointment.md) | Appointment profile for Nigeria Core (e.g., immunization, ePharmacy counseling, referrals). |
-| [Nigeria Document Reference](StructureDefinition-ng-documents.md) | Profile for indexing and exchanging clinical, administrative, and public-health documents associated with a patient. |
-| [Nigeria Medication Statement](StructureDefinition-ng-medication-statement.md) | Profile for recording a medication that a patient is taking, has taken, or is expected to take, based on information reported by the patient, caregiver, practitioner, or another clinical record. |
 
 ### Structures: Data Type Profiles 
 
@@ -187,66 +188,9 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [ART Eligibility Status](ValueSet-ng-hiv-art-eligibility-status-vs.md) | ART Eligibility Status |
-| [ART Not Started - Plan For Next Step](ValueSet-ng-hiv-plan-for-next-step-vs.md) | Codes used for representing the plan for next steps when a patient didn't start ART the same day. |
 | [Body Site - IPS](ValueSet-ng-body-site-vs.md) | IPS body site value set. This value set includes a set of codes from SNOMED CT that may be used to represent body sites (e.g., for laboratory specimen collection). This value set includes codes from SNOMED CT®: all descendants of 442083009 |Anatomical or acquired body structure (body structure)|SNOMED CT® ECL definition: < 442083009 |Anatomical or acquired body structure (body structure)| |
-| [Cervical Cancer Screening Type](ValueSet-ng-hiv-cervical-cancer-screening-type-vs.md) | Codes used for representing the cervical screening type. |
-| [Children Developmental Milestone ValueSet](ValueSet-ng-children-developmental-milestone-vs.md) | Children Developmental Milestone |
-| [Current Smoking Status](ValueSet-ng-current-smoking-status-vs.md) | ValueSet for smoking status. This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status. |
 | [Diagnostics Report Status Codes - IPS](ValueSet-ng-diagnostics-report-status-vs.md) | IPS Diagnostic Report status codes allowable for diagnostics reports. This value set includes all status codes except "entered-in-error" from http://hl7.org/fhir/diagnostic-report-status. |
-| [Differentiated Service Delivery - Assessment Status](ValueSet-ng-hiv-dsd-assessment-status-vs.md) | Code used for indicating the status of the DSD assessment. |
-| [Differentiated Service Delivery - Reason For Category Change](ValueSet-ng-hiv-dsd-reason-for-category-change-vs.md) | Code used for indicating the reason for the category change for the DSD assessment. |
-| [Edema Presence Codes ValueSet](ValueSet-ng-hiv-edema-presence-vs.md) | Observation codes used for indicating the prescence of Edema. |
-| [Family Planning Method](ValueSet-ng-family-planning-method-vs.md) | Family Planning Method |
-| [HIV - ARV Drugs ValueSet](ValueSet-ng-hiv-arv-treatment-vs.md) | A list of codes describing the ARV Drugs. |
-| [HIV - Reason Not Started ART ValueSet](ValueSet-ng-hiv-reason-not-started-art-vs.md) | Reason Not Started ART |
-| [HIV ARV Regimen Change Category](ValueSet-ng-hiv-arv-regimen-change-category-vs.md) | Codes used for representing the category for the ARV regimen change. |
-| [HIV ARV Regimen Change Type](ValueSet-ng-hiv-arv-regimen-change-type-vs.md) | Codes used for representing the type of change associated with the ARV regimen (Switch or Substitute). |
-| [HIV ARV Side Effects](ValueSet-ng-hiv-arv-side-effects-vs.md) | Codes used for representing any side effects of the ARV medication prescribed to the patient. |
-| [HIV Cervical Cancer Screened](ValueSet-ng-hiv-cervical-cancer-screened-vs.md) | Codes used for representing whether screening for cervical cancer was done. |
-| [HIV DSD - Category ValueSet](ValueSet-ng-hiv-dsd-category-vs.md) | Code used for indicating the category for the DSD assessment. |
-| [HIV Disclosure Stage](ValueSet-ng-hiv-disclosure-stage-vs.md) | Codes used for representing the stages of disclosure for the patient's current HIV status. |
-| [HIV EAC Given ValueSet](ValueSet-ng-hiv-eac-given-vs.md) | Codes used for representing the EAC given. |
-| [HIV Encounter Locations](ValueSet-ng-hiv-encounter-location-vs.md) | Code used for representing the location where the patient is receiving health services. |
-| [HIV Encounter Type](ValueSet-ng-hiv-encounter-type-vs.md) | Codes used for indicating the type of encounter. |
-| [HIV Follow Up Status ValueSet](ValueSet-ng-hiv-art-follow-up-status-vs.md) | FollowUp Status |
-| [HIV Health Status](ValueSet-ng-hiv-health-status-vs.md) | Codes used for representing a patient health status. |
-| [HIV Occupation Valueset](ValueSet-ng-hiv-occupation-vs.md) | Occupation |
-| [HIV Opportunistic Infections ValueSet](ValueSet-ng-hiv-opportunistic-infections-vs.md) | Codes used for representing opportunistic infections. |
-| [HIV Pain Scale](ValueSet-ng-hiv-pain-scale-vs.md) | Codes used for representing level of pain (pain scale). |
-| [HIV Partner Case Closure Status ValueSet](ValueSet-ng-hiv-partner-case-closure-status-vs.md) | Codes used for indicating the closure status for partner services. |
-| [HIV Partner Notification Plan ValueSet](ValueSet-ng-hiv-partner-notification-plan-vs.md) | Codes used for indicating the plan for notifying the partner regarding the index case's HIV status. |
-| [HIV Patient Education Level](ValueSet-ng-patient-education-level-value-set.md) | Codes used for indicating the patient's highest qualification. |
-| [HIV Physical Examinations](ValueSet-ng-hiv-physical-exam-vs.md) | Codes used for representing a physical examination. |
-| [HIV Physical Examinations Interpretation](ValueSet-ng-hiv-physical-examination-interpretation-vs.md) | Codes used for interpreting the finding associated with the physical examination. |
-| [HIV Positive Tracking Care Plan Activivity Codes](ValueSet-ng-hiv-tracking-vs.md) | Codes used for representing activity in the Care Plan. |
-| [HIV Prevention Plan](ValueSet-ng-hiv-prevention-plan-vs.md) | Codes used for representing the patient's plan for the prevention of HIV being transmitted to others. |
-| [HIV Reason For ARV Regimen Change](ValueSet-ng-hiv-reason-for-arv-regimen-change-vs.md) | Codes used for representing the reasons for changing the ARV regimen. |
-| [HIV Reason For Not Testing](ValueSet-ng-hiv-reason-for-not-testing-vs.md) | Reason For Not Testing |
-| [HIV Reason For Stopping ART](ValueSet-ng-hiv-reason-stopped-art-vs.md) | Codes used for representing the reasons for stopping ART. |
-| [HIV Reason Index Case Not Interviewed](ValueSet-ng-hiv-reason-index-case-not-interviewed-vs.md) | Codes used for indicating the reason why the index case was not interviewed. |
-| [HIV Reason Not Linked to Partner Services](ValueSet-ng-hiv-reason-not-linked-to-partner-services-vs.md) | Codes used for indicating the reason why the partner was not linked to partner services. |
-| [HIV Reason Partner Not Contacted ValueSet](ValueSet-ng-hiv-reason-partner-not-contacted-vs.md) | Codes used for indicating the reason why the partner was not contacted. |
-| [HIV Reason Partner Not Notified ValueSet](ValueSet-ng-hiv-reason-partner-not-notified-vs.md) | Codes used for indicating the reason why the partner was not notified about the index case's HIV status. |
-| [HIV Reasons For ART Eligibility](ValueSet-ng-hiv-reason-for-art-eligibility-vs.md) | Reasons For ART Eligibility |
-| [HIV Residential Type](ValueSet-ng-hiv-residential-type-vs.md) | Codes used for representing patient residential type. |
-| [HIV Status Codes](ValueSet-ng-hiv-status-vs.md) | A list of codes describing the patient's HIV status. |
-| [HIV Test Results](ValueSet-ng-hiv-test-result-vs.md) | Codes used for representing a patient HIV test results. |
-| [HIV Test Results](ValueSet-ng-hiv-test-results-vs.md) | HIV Test Results |
-| [HIV Test Types](ValueSet-ng-hiv-test-type-vs.md) | HIV Test Types |
-| [HIV Viral Load Indication](ValueSet-ng-hiv-viral-load-indication-vs.md) | Codes used for representing viral load indication. |
-| [HIV Viral Load Indication](ValueSet-ng-hiv-vl-indication-vs.md) | Codes used for representing the indication type for the viral load. |
-| [HIV Viral Load Status](ValueSet-ng-hiv-viral-load-status-vs.md) | Codes used for representing patient's viral load status. |
-| [HIV Viral Load/CD4 Count Classifications ValueSet](ValueSet-ng-hiv-cd4-vl-classification-for-treatment-failure-vs.md) | Codes used for indicating the classification for the Viral Load/CD4 count treatment failure. |
-| [HIV WHO Stage](ValueSet-ng-hiv-who-stage-vs.md) | WHO Stage |
-| [HIV-ARV Adherence ValueSet](ValueSet-ng-hiv-arv-adherence-vs.md) | ARV Adherence |
-| [HIV-Cervical Cancer Screening Method](ValueSet-ng-hiv-cervical-cancer-screening-method-vs.md) | Cervical Cancer Screening Method. |
-| [HIV-Cervical Cancer Screening Results ValueSet](ValueSet-ng-hiv-cervical-cancer-screening-result-vs.md) | A list of codes describing the Cervical Cancer Screening Results |
-| [HIV-Cervical Cancer Treatment Received ValueSet](ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.md) | Cervical Cancer Treatment Received |
 | [HIV-Final Outcome ValueSet](ValueSet-ng-hiv-final-outcome-value-set.md) | Final Outcome |
-| [HIV-Nature of Encounter ValueSet](ValueSet-ng-hiv-encounter-visit-type-vs.md) | A list of codes describing the nature of the patient visit to the health facility |
-| [HIV-Opportunistic Infection Medication Codes ValueSet](ValueSet-ng-hiv-opportunistic-infections-treatment-vs.md) | A list of codes describing the medication for opportunistic infections related to the patient. |
-| [Mode Of Delivery](ValueSet-ng-pregnancy-mode-of-delivery-vs.md) | Codes used for representing mode of delivery. |
 | [NG Bundle Identifier Codes](ValueSet-ng-bundle-identifier-vs.md) | ValueSet including all local bundle identifier codes for use cases. |
 | [NG CarePlan Activity VS](ValueSet-ng-careplan-activity-vs.md) | ValueSet for CarePlan.activity.detail.code (demo). |
 | [NG CarePlan Category VS](ValueSet-ng-careplan-category-vs.md) | ValueSet for CarePlan.category (demo). |
@@ -254,10 +198,12 @@ These define sets of codes used by systems conforming to this implementation gui
 | [NG Clinical Status VS](ValueSet-ng-facility-identifier-vs.md) | The outcome of the reaction |
 | [NG Clinical Status VS](ValueSet-ng-immunization-clinical-status-vs.md) | The outcome of the reaction |
 | [NG Clinical Status VS](ValueSet-ng-pregnancy-status-vs.md) | The outcome of the Pregnancy. Pregnancy status codes value set. |
+| [NG Current Smoking Status](ValueSet-ng-current-smoking-status-vs.md) | ValueSet for smoking status. This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status. |
 | [NG Electromechanical Medical Device Identifier VS](ValueSet-ng-device-identifier-vs.md) | ValueSet selecting the 50 hypothetical electromechanical medical device identifiers (leaf concepts only) from NgDeviceIdentifierCS. Excludes category/group nodes. |
 | [NG Gender or Sex VS](ValueSet-ng-gender-vs.md) | A subset of the administrative gender codes including only 'male' and 'female' |
+| [NG HIV - ARV Drugs](ValueSet-ng-hiv-arv-treatment-vs.md) | A list of codes describing the ARV Drugs. |
 | [NG HIV ART Monthly AHD Categories](ValueSet-ng-hiv-art-monthly-ahd-category-vs.md) | AHD program categories used as subsets of ART19 and ART20. |
-| [NG HIV ART Monthly Age Groups](ValueSet-ng-hiv-art-monthly-age-group-vs.md) | Age groups used for ART1–ART4. |
+| [NG HIV ART Monthly Age Groups](ValueSet-ng-hiv-art-monthly-age-group-vs.md) | Age groups used for ART1-ART4. |
 | [NG HIV ART Monthly Cervical Screening Age Groups](ValueSet-ng-hiv-art-monthly-cervical-age-group-vs.md) | Age groups used for cervical screening and treatment. |
 | [NG HIV ART Monthly Cervical Screening Results](ValueSet-ng-hiv-art-monthly-cervical-screening-result-vs.md) | Cervical screening result categories used under ART23. |
 | [NG HIV ART Monthly Cervical Screening Timing](ValueSet-ng-hiv-art-monthly-cervical-screening-timing-vs.md) | Timing categories used under ART23. |
@@ -286,10 +232,12 @@ These define sets of codes used by systems conforming to this implementation gui
 | [NG HIV Drug Resistance Result](ValueSet-ng-hiv-drug-resistance-result-vs.md) | Drug-resistance result codes used on the Nigeria HIV Care/ART Card. |
 | [NG HIV EAC Adherence](ValueSet-ng-hiv-eac-adherence-vs.md) | Adherence ratings recorded during an Enhanced Adherence Counselling session. |
 | [NG HIV EAC Adherence Barriers](ValueSet-ng-hiv-eac-barriers-vs.md) | Barriers to ART adherence recorded during Enhanced Adherence Counselling. |
+| [NG HIV EAC Given](ValueSet-ng-hiv-eac-given-vs.md) | Codes used for representing the EAC given. |
 | [NG HIV EAC Intervention Services](ValueSet-ng-hiv-eac-intervention-services-vs.md) | Services delivered to address barriers identified during Enhanced Adherence Counselling. |
 | [NG HIV EAC Intervention Tools](ValueSet-ng-hiv-eac-intervention-tools-vs.md) | Tools used to support ART adherence during Enhanced Adherence Counselling. |
 | [NG HIV EAC Register Suspected Causes of Virologic Failure](ValueSet-ng-hiv-eac-register-virologic-failure-cause-vs.md) | Suspected virologic-failure causes permitted in column A19 of the EAC Monitoring Register. |
 | [NG HIV Educational Status](ValueSet-ng-hiv-educational-status-vs.md) | Educational-status codes used on the Nigeria HIV Care/ART Card. |
+| [NG HIV Follow Up Status ValueSet](ValueSet-ng-hiv-art-follow-up-status-vs.md) | FollowUp Status |
 | [NG HIV Integrated Laboratory ART Regimen Line](ValueSet-ng-hiv-int-lab-regimen-line-vs.md) | ART regimen-line options printed on the integrated laboratory form. |
 | [NG HIV Integrated Laboratory ARV Prophylaxis](ValueSet-ng-hiv-int-lab-arv-prophylaxis-vs.md) | ARV prophylaxis options printed on the integrated laboratory form. |
 | [NG HIV Integrated Laboratory Cytology Method](ValueSet-ng-hiv-int-lab-cytology-method-vs.md) | Cervical cytology or screening methods printed on the integrated laboratory form. |
@@ -309,6 +257,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | [NG HIV Integrated Laboratory Specimen Type](ValueSet-ng-hiv-int-lab-specimen-type-vs.md) | Specimen types printed on the integrated laboratory form. |
 | [NG HIV Integrated Laboratory Viral-Load Indication](ValueSet-ng-hiv-int-lab-viral-load-indication-vs.md) | Viral-load indications printed on the integrated laboratory form. |
 | [NG HIV Key Population Typology](ValueSet-ng-hiv-kp-typology-vs.md) | Key-population typology codes used on the Nigeria HIV Care/ART Card. |
+| [NG HIV LOINC Concepts](ValueSet-ng-hiv-loinc-concepts.md) | Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied. |
+| [NG HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md) | Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems. |
 | [NG HIV Marital Status](ValueSet-ng-hiv-marital-status-vs.md) | Marital-status codes used on the Nigeria HIV Care/ART Card. |
 | [NG HIV OI Prophylaxis and Treatment Medications](ValueSet-ng-hiv-oi-prophylaxis-treatment-medication-vs.md) | Medicines for opportunistic-infection prophylaxis or treatment listed on the Nigeria Combined Pharmacy Order Form. |
 | [NG HIV Paediatric ART Medications](ValueSet-ng-hiv-paediatric-art-medication-vs.md) | Paediatric ART medicine products and strengths listed on the Nigeria Combined Pharmacy Order Form. |
@@ -317,11 +267,16 @@ These define sets of codes used by systems conforming to this implementation gui
 | [NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimen](ValueSet-ng-hiv-pharmacy-worksheet-arv-prophylaxis-vs.md) | ARV prophylaxis regimens permitted in W17. |
 | [NG HIV Pharmacy Worksheet Medicine Category](ValueSet-ng-hiv-pharmacy-worksheet-medicine-category-vs.md) | Medicine categories permitted for a Pharmacy Daily Worksheet dispensing entry. |
 | [NG HIV Pharmacy Worksheet Summary Scope](ValueSet-ng-hiv-pharmacy-worksheet-summary-scope-vs.md) | Summary scopes permitted for worksheet column totals. |
+| [NG HIV Positive Tracking Care Plan Activivity Codes](ValueSet-ng-hiv-tracking-vs.md) | Codes used for representing activity in the Care Plan. |
 | [NG HIV PrEP Medications](ValueSet-ng-hiv-prep-medication-vs.md) | PrEP medicine products and strengths listed on the Nigeria Combined Pharmacy Order Form. |
 | [NG HIV Prior ART](ValueSet-ng-hiv-prior-art-vs.md) | Prior-ART codes used on the Nigeria HIV Care/ART Card. |
 | [NG HIV Regimen Substitution or Switch Reason](ValueSet-ng-hiv-regimen-change-reason-vs.md) | Reasons for ART regimen substitution or switch used on the Nigeria HIV Care/ART Card. |
+| [NG HIV SNOMED CT Concepts](ValueSet-ng-hiv-snomed-ct-concepts.md) | Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied. |
+| [NG HIV Status Codes](ValueSet-ng-hiv-status-vs.md) | A list of codes describing the patient's HIV status. |
 | [NG HIV TB Preventive Therapy](ValueSet-ng-hiv-tb-preventive-therapy-vs.md) | TB preventive-therapy regimen codes used on the Nigeria HIV Care/ART Card. |
 | [NG HIV TB Preventive Therapy Medications](ValueSet-ng-hiv-tb-preventive-therapy-medication-vs.md) | TB preventive therapy medicines or regimens listed on the Nigeria Combined Pharmacy Order Form. |
+| [NG HIV Test Results](ValueSet-ng-hiv-test-result-vs.md) | Codes used for representing a patient HIV test results. |
+| [NG HIV Test Types](ValueSet-ng-hiv-test-type-vs.md) | Nigeria HIV Test Types |
 | [NG HIV Tracking Register Attempt Stage](ValueSet-ng-hiv-tracking-attempt-stage-vs.md) | Tracking-attempt stages permitted in T19–T23. |
 | [NG HIV Tracking Register DSD Model](ValueSet-ng-hiv-tracking-dsd-model-vs.md) | DSD models permitted in T15. |
 | [NG HIV Tracking Register DSD Status](ValueSet-ng-hiv-tracking-dsd-status-vs.md) | DSD statuses permitted in T15. |
@@ -330,15 +285,23 @@ These define sets of codes used by systems conforming to this implementation gui
 | [NG HIV Tracking Register Reason for Discontinuation](ValueSet-ng-hiv-tracking-discontinuation-reason-vs.md) | Reasons for discontinuing facility care permitted in T26. |
 | [NG HIV Tracking Register Reason for Tracking](ValueSet-ng-hiv-tracking-reason-vs.md) | Reasons for tracking permitted in T16. |
 | [NG HIV Tracking Register Tracking Mode](ValueSet-ng-hiv-tracking-mode-vs.md) | Tracking modes permitted in T19–T23. |
+| [NG HIV Viral Load Indication](ValueSet-ng-hiv-vl-indication-vs.md) | Codes used for representing the indication type for the viral load. |
+| [NG HIV Viral Load Status](ValueSet-ng-hiv-viral-load-status-vs.md) | Codes used for representing patient's viral load status. |
+| [NG HIV WHO Stage](ValueSet-ng-hiv-who-stage-vs.md) | WHO Stage |
+| [NG HIV-ARV Adherence ValueSet](ValueSet-ng-hiv-arv-adherence-vs.md) | ARV Adherence |
+| [NG HIV-Cervical Cancer Treatment Received](ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.md) | Cervical Cancer Treatment Received |
 | [NG HealthFacility Type VS](ValueSet-ng-facility-type-vs.md) | Classification of Nigerian health facilities |
 | [NG Insurer Organization Types](ValueSet-ng-insurer-org-type-vs.md) | Organization types for insurance payers/HMOs |
 | [NG LGAs VS](ValueSet-ng-lgas-vs.md) | The administrative Local Government Areas where a person or a facility is. |
 | [NG Local ATC — All Medications](ValueSet-ng-atc-all-medications-vs.md) | All local ATC-style medication codes used across MNCH referral, claims, prescription, and immunization. |
 | [NG Location Owner](ValueSet-ng-organization-owner-vs.md) | The owner of an Health Facility location |
+| [NG Mode Of Delivery](ValueSet-ng-pregnancy-mode-of-delivery-vs.md) | Nigeria Codes used for representing mode of delivery. |
+| [NG Patient Education Level](ValueSet-ng-patient-education-level-value-set.md) | Codes used for indicating the patient's highest qualification. |
 | [NG Pharmacy Organization Types](ValueSet-ng-pharmacy-org-type-vs.md) | Organization types for Pharmacies |
 | [NG Provenance Activity Codes](ValueSet-ng-provenance-activity-vs.md) | ValueSet including local provenance activity codes (anonymize, de-identify, mask, label, pseudonymize, create, delete, append, nullify, legally authenticated). |
 | [NG Provider Organization Types](ValueSet-ng-provider-org-type-vs.md) | Organization types for healthcare providers |
 | [NG Relationships VS](ValueSet-ng-relationships-vs.md) | list of persons related to a patient, but who is not a direct target of care. |
+| [NG Residential Type](ValueSet-ng-residential-type-vs.md) | Codes used for representing patient residential type. |
 | [NG Session Type VS](ValueSet-ng-immunization-session-type-vs.md) | Type of session for immunization. Could be in a fixed facility, outreach or mobile. |
 | [NG Sibling Health Status VS](ValueSet-ng-sibling-health-status-vs.md) | This CodeSystem defines the health of the client's sibling |
 | [NG States VS](ValueSet-ng-states-vs.md) | The state where a person or a facility is. |
@@ -365,9 +328,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Nigeria Defaulter Tracking Status](ValueSet-ng-defaulter-tracking-status.md) | Statuses used to manage clients identified as immunization defaulters. |
 | [Nigeria HIV Diagnosis Concepts](ValueSet-ng-hiv-diagnosis-concepts-vs.md) | Explicit Nigeria HIV local diagnoses used for ICD-11 classification mapping. |
 | [Nigeria HIV ICD-11 Diagnosis Concepts](ValueSet-ng-hiv-diagnosis-icd11-concepts-vs.md) | ICD-11 MMS target concepts used by the Nigeria HIV diagnosis ConceptMap. |
-| [Nigeria HIV LOINC Concepts](ValueSet-ng-hiv-loinc-concepts.md) | Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied. |
-| [Nigeria HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md) | Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems. |
-| [Nigeria HIV SNOMED CT Concepts](ValueSet-ng-hiv-snomed-ct-concepts.md) | Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied. |
 | [Nigeria Missed Vaccination Reasons](ValueSet-ng-missed-vaccination-reason.md) | Reasons why a client did not receive a scheduled vaccine dose. |
 | [Nigeria Relevant WHO HIV Concepts](ValueSet-ng-who-hiv-concepts-vs.md) | Distinct locally represented WHO SMART HIV concepts used in Nigeria HIV terminology mappings. Membership is drawn from the Nigeria Local WHO HIV Concepts CodeSystem. |
 | [Nigeria Vaccine Preventable Diseases](ValueSet-ng-vaccine-preventable-disease.md) | Diseases targeted by vaccines included in the Nigeria immunization program. |
@@ -409,46 +369,21 @@ These define new code systems used by systems conforming to this implementation 
 | | |
 | :--- | :--- |
 | [ARV Regimen Switch Type](CodeSystem-ng-hiv-arv-regimen-switch-type-cs.md) | Codes used for representing the type for the ARV regimen switched. |
-| [Children Developmental Milestone Codes CodeSystem](CodeSystem-ng-children-developmental-milestone-cs.md) | Code used for representing the child's developmental milestone. |
-| [Differentiated Service Delivery - Assessment Status](CodeSystem-ng-hiv-dsd-assessment-status-cs.md) | Code used for indicating the status of the DSD assessment. |
 | [Eligibility Request ID CodeSystem](CodeSystem-ng-eligibility-request-id-cs.md) | Local codes to identify the type used for an Eligibility Request identifier. Intended for use in CoverageEligibilityRequest.identifier.type. |
 | [Encounter Type Code For Entry From Outside Facility](CodeSystem-ng-hiv-encounter-type-for-entry-from-outside-facility-cs.md) | Code used for indicating that an encounter was captured to represent an entry point from outside the facility. |
 | [Enhanced Adherence Counselling](CodeSystem-ng-hiv-enhanced-adherence-counselling-status-cs.md) | Code used for indicating a proprietary enhanced adherence counselling |
 | [HIV - Final Outcome CodeSystem](CodeSystem-ng-hiv-final-outcome-cs.md) | Final Outcome |
 | [HIV - Reason Not Started ART CodeSystem](CodeSystem-ng-hiv-reason-not-started-art-cs.md) | Reason Not Started ART |
 | [HIV ARV Drugs CodeSystem](CodeSystem-ng-hiv-arv-treatment-cs.md) | A list of codes describing the ARV Drugs. |
-| [HIV ARV Regimen Change Category](CodeSystem-ng-hiv-arv-regimen-change-category-cs.md) | Codes used for representing the category for the ARV regimen change. |
-| [HIV ARV Regimen Substitue Type](CodeSystem-ng-hiv-arv-regimen-substitute-type-cs.md) | Codes used for representing the type for the ARV regimen substitued. |
 | [HIV Absent or Unknown CodeSystem](CodeSystem-ng-hiv-absent-unknown-cs.md) | Codes used for indicating when a value is absent or unknown. |
-| [HIV Cervical Cancer Screening Type](CodeSystem-ng-hiv-cervical-cancer-screening-type-cs.md) | Codes used for representing the cervical screening type. |
-| [HIV DSD - Category CodeSystem](CodeSystem-ng-hiv-dsd-category-cs.md) | Code used for indicating the category for the DSD assessment. |
 | [HIV DSD - Reason For Category Change CodeSystem](CodeSystem-ng-hiv-dsd-reason-for-category-change-cs.md) | Code used for indicating the reason for the category change for the DSD assessment. |
 | [HIV Differentiated Service Delivery](CodeSystem-ng-hiv-dsd-assessment-cs.md) | Code used for indicating a DSD assessment. |
-| [HIV EAC Given CodeSystem](CodeSystem-ng-hiv-eac-given-cs.md) | Codes used for representing the Enhanced Adherence Councilling (EAC) given. |
-| [HIV Eligility Status for ART Codes](CodeSystem-ng-hiv-art-eligibility-status-cs.md) | Observation codes used for indicating patient eligibility for ART. |
 | [HIV Family Index Case Contacts Questionnaire](CodeSystem-ng-hiv-family-index-case-contacts-questionnaire-cs.md) | Proprietary Codes used in the Family Index Case Contacts Questionnaire. |
-| [HIV Follow Up Status CodeSystem](CodeSystem-ng-hiv-art-follow-up-status-cs.md) | A list of codes describing the follow up statuses |
-| [HIV Index Case Sex Partner Questionnaire](CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.md) | Proprietary Codes used in the Index Case Partner Questionnaire. |
-| [HIV Occupation Codes](CodeSystem-ng-hiv-occupation-cs.md) | Codes used for representing the patient's occupation |
-| [HIV Partner Notification Plan CodeSystem](CodeSystem-ng-hiv-partner-notification-plan-cs.md) | Codes used for indicating the plan for notifying the partner regarding the index case's HIV status. |
 | [HIV Partner and FBICT](CodeSystem-ng-hiv-partner-and-fbict-cs.md) | Codes used for indicating the patient's status for partner and Family-based Index Case Testing (FBICT). |
-| [HIV Patient Education Level Codes](CodeSystem-ng-patient-education-level-cs.md) | Codes used for indicating the patient's highest qualification. |
 | [HIV Period of HIV Exposure](CodeSystem-ng-hiv-period-of-hiv-exposure-cs.md) | Codes used for indicating the period when last the individual was exposed to HIV. |
-| [HIV Positive Tracking](CodeSystem-ng-hiv-positive-tracking-cs.md) | Codes used for representing HIV positive tracking. |
 | [HIV Proprietary Service Type](CodeSystem-ng-hiv-encounter-service-type-cs.md) | Codes used for indicating a proprietary encounter service type. |
-| [HIV Reasons For ART Eligibility](CodeSystem-ng-hiv-reason-for-art-eligibility-cs.md) | Reasons For ART Eligibility |
-| [HIV Routine Indication Viral Load](CodeSystem-ng-hiv-routine-indication-viral-load-cs.md) | Codes used for representing routine indication for viral load. |
 | [HIV Service Providers CodeSystem](CodeSystem-ng-hiv-service-provider-cs.md) | Code used for representing the classification of organizations providing health services. |
-| [HIV Targeted Indication Viral Load](CodeSystem-ng-hiv-targeted-indication-viral-load-cs.md) | Codes used for representing targeted indication for viral load. |
-| [HIV Viral Load/CD4 Count Classifications CodeSystem](CodeSystem-ng-hiv-cd4-vl-classification-for-treatment-failure-cs.md) | Codes used for indicating the classification for the Viral Load/CD4 count treatment failure. |
-| [HIV-ARV Adherence CodeSystem](CodeSystem-ng-hiv-arv-adherence-cs.md) | ARV Adherence |
 | [HIV-Care Plan Categories CodeSystem](CodeSystem-ng-hiv-care-plan-category-cs.md) | A list of codes describing Care Plan categories. |
-| [HIV-Cervical Cancer Screening Method CodeSystem](CodeSystem-ng-hiv-cervical-cancer-screening-method-cs.md) | A list of codes describing the Cervical Cancer Screening Method |
-| [HIV-Cervical Cancer Screening Results CodeSyetem](CodeSystem-ng-hiv-cervical-cancer-screening-via-result-cs.md) | A list of codes describing the Cervical Cancer Screening Results |
-| [HIV-Cervical Cancer Screening Results CodeSystem](CodeSystem-ng-hiv-cervical-cancer-screening-hpv-result-cs.md) | A list of codes describing the Cervical Cancer Screening Results |
-| [HIV-Nature of Encounter CodeSystem](CodeSystem-ng-hiv-encounter-visit-type-cs.md) | A list of codes describing the nature of the patient visit to the health facility |
-| [HIV-Precancerous Lesion Treatment Received CodeSystem](CodeSystem-ng-hiv-precancerous-lesion-treatment-received-cs.md) | A list of codes describing the precancerous lesion treatment received |
-| [HIV-Suspicious Cancerous Treatment CodeSystem](CodeSystem-ng-hiv-suspicious-cancerous-treatment-cs.md) | A list of codes describing the suspicious Cancerous treatment |
 | [NG Administrative Wards CS](CodeSystem-ng-wards-cs.md) | This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria. |
 | [NG Adverse Event CS](CodeSystem-ng-clinical-status-cs.md) | A classification system that represents the current clinical status of an individual who experienced an Adverse Event Following Immunization (AEFI), based on medical observation, investigation, or follow-up assessment. |
 | [NG Age Component Codes](CodeSystem-age-component-codes-cs.md) | Local CodeSystem for age components: units, comparison operators, and common MNCH/EPI age bands for use in measures, decision logic, and stratification. |
@@ -473,8 +408,10 @@ These define new code systems used by systems conforming to this implementation 
 | [NG HIV ART Register TPT Outcome Codes](CodeSystem-ng-hiv-art-register-tpt-outcome-cs.md) | TB preventive-therapy outcome codes printed in column A22 of the National ART Register. |
 | [NG HIV Care and ART Codes](CodeSystem-ng-hiv-care-art-codes-cs.md) | Local codes transcribed from the Nigeria HIV Care/ART Card for coded answers used by the HIV care and ART Questionnaire. |
 | [NG HIV Care and Treatment Transfer Reasons](CodeSystem-ng-hiv-transfer-reason-cs.md) | Reasons for transferring a client between HIV treatment sites, transcribed from the November 2025 HIV Care and Treatment Transfer Form. |
+| [NG HIV EAC Given](CodeSystem-ng-hiv-eac-given-cs.md) | Codes used for representing the Enhanced Adherence Councilling (EAC) given. |
 | [NG HIV EAC Register Suspected Causes of Virologic Failure](CodeSystem-ng-hiv-eac-register-virologic-failure-cause-cs.md) | Codes printed in the Enhanced Adherence Counselling Monitoring Register for recording the suspected cause or causes of virologic failure after EAC. |
 | [NG HIV Enhanced Adherence Counselling Form Codes](CodeSystem-ng-hiv-eac-form-cs.md) | Local coded answers transcribed from the Nigeria Enhanced Adherence Counselling Form for adherence assessment, adherence barriers, service interventions and intervention tools. |
+| [NG HIV Follow Up Status CodeSystem](CodeSystem-ng-hiv-art-follow-up-status-cs.md) | A list of codes describing the follow up statuses |
 | [NG HIV Integrated Laboratory Form Codes](CodeSystem-ng-hiv-int-lab-form-cs.md) | Local coded answer concepts transcribed or inferred from the Nigeria HIV Integrated Laboratory Order and Result Form revised November 2025. |
 | [NG HIV Integrated Laboratory Monitoring Register Codes](CodeSystem-ng-hiv-int-lab-register-cs.md) | Local codes required to represent the Integrated Laboratory Monitoring Register revised November 2025. The source workbook does not provide a complete EID-entry-point legend or a POC error-code catalogue; those values are therefore represented using existing terminology or free text in the logical model. |
 | [NG HIV Pharmacy Daily Worksheet Medicine Columns](CodeSystem-ng-hiv-pharmacy-worksheet-medicine-cs.md) | Local codes for the fixed medicine columns W24–W71 on the revised November 2025 Pharmacy Daily Worksheet. The code is the printed worksheet column identifier, allowing exact reconstruction of the paper worksheet. |
@@ -483,6 +420,10 @@ These define new code systems used by systems conforming to this implementation 
 | [NG HIV Pharmacy Worksheet HEI ARV Prophylaxis Regimens](CodeSystem-ng-hiv-pharmacy-worksheet-arv-prophylaxis-cs.md) | ARV prophylaxis codes printed in W17 for HIV-exposed infants. |
 | [NG HIV Pharmacy Worksheet Medicine Categories](CodeSystem-ng-hiv-pharmacy-worksheet-medicine-category-cs.md) | Medicine-section categories printed on the revised Pharmacy Daily Worksheet. |
 | [NG HIV Pharmacy Worksheet Summary Scopes](CodeSystem-ng-hiv-pharmacy-worksheet-summary-scope-cs.md) | The three summary rows printed at the bottom of the worksheet. |
+| [NG HIV Positive Tracking](CodeSystem-ng-hiv-positive-tracking-cs.md) | Codes used for representing HIV positive tracking. |
+| [NG HIV Precancerous Lesion Treatment Received](CodeSystem-ng-hiv-precancerous-lesion-treatment-received-cs.md) | A list of codes describing the precancerous lesion treatment received |
+| [NG HIV Routine Indication Viral Load](CodeSystem-ng-hiv-routine-indication-viral-load-cs.md) | Codes used for representing routine indication for viral load. |
+| [NG HIV Targeted Indication Viral Load](CodeSystem-ng-hiv-targeted-indication-viral-load-cs.md) | Codes used for representing targeted indication for viral load. |
 | [NG HIV Tracking Register Attempt Stages](CodeSystem-ng-hiv-tracking-attempt-stage-cs.md) | The four numbered tracking attempts and the final attempt at the end of the tracking period represented by columns T19–T23. |
 | [NG HIV Tracking Register DSD Model Codes](CodeSystem-ng-hiv-tracking-dsd-model-cs.md) | High-level DSD model codes printed in T15. |
 | [NG HIV Tracking Register DSD Status Codes](CodeSystem-ng-hiv-tracking-dsd-status-cs.md) | High-level differentiated-service-delivery status codes printed in T15. The source register spells devolved as 'Devloved'; this artefact uses the intended spelling while preserving code D. |
@@ -491,6 +432,8 @@ These define new code systems used by systems conforming to this implementation 
 | [NG HIV Tracking Register Reasons for Discontinuation](CodeSystem-ng-hiv-tracking-discontinuation-reason-cs.md) | Reasons for discontinuing care at the facility printed for T26. |
 | [NG HIV Tracking Register Reasons for Tracking](CodeSystem-ng-hiv-tracking-reason-cs.md) | Reason-for-tracking codes printed for T16. |
 | [NG HIV Tracking Register Tracking Modes](CodeSystem-ng-hiv-tracking-mode-cs.md) | Tracking modes printed for T19–T23. |
+| [NG HIV-ARV Adherence CodeSystem](CodeSystem-ng-hiv-arv-adherence-cs.md) | ARV Adherence |
+| [NG HIV-Suspicious Cancerous Treatment](CodeSystem-ng-hiv-suspicious-cancerous-treatment-cs.md) | A list of codes describing the suspicious Cancerous treatment |
 | [NG Health Status CS](CodeSystem-ng-sibling-health-status-cs.md) | This CodeSystem IMMZ.C.DE30 defines the health of the client's sibling |
 | [NG IMMZ.D.DE4 ICD11 Vaccine Library](CodeSystem-ng-vaccine-icd-cs.md) | ICD11 code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x]. |
 | [NG IMMZ.D.DE4 Vaccine Library (SNOMED CT)](CodeSystem-ng-vaccine-local-to-snomed-cs.md) | SNOMED-CT code Immunization.vaccineCode. Dose/order is not encoded in codes; use protocolApplied.doseNumber[x]. |
@@ -500,6 +443,7 @@ These define new code systems used by systems conforming to this implementation 
 | [NG Languages in Nigeria CS](CodeSystem-nigeria-languages.md) | This CodeSystem defines codes for major languages spoken across Nigeria. |
 | [NG Local ATC Medication Codes](CodeSystem-ng-atc-medication-cs.md) | Local ATC. Codes are placeholders aligned to common maternal, newborn, and child health needs, plus EPI vaccines. |
 | [NG Location Owner CS](CodeSystem-ng-organization-owner-cs.md) | This CodeSystem defines Immunization Location Owner. |
+| [NG Patient Education Level Codes](CodeSystem-ng-patient-education-level-cs.md) | Codes used for indicating the patient's highest qualification. |
 | [NG Patient Identifier Type CS](CodeSystem-ng-patient-identifier-type-cs.md) | This CodeSystem defines list of options for uniquely Identifting a Client |
 | [NG Practitioner Identifier CS](CodeSystem-ng-mdcn-cs.md) | This CodeSystem IMMZ.C.DE14 defines placeholder codes to manage physician identifiers in Nigeria. |
 | [NG Practitioner Identifier CS](CodeSystem-ng-pcn-cs.md) | This CodeSystem defines placeholder codes to manage Pharmcists' identifiers in Nigeria validated at https://pcn.gov.ng/practice-number. |
@@ -548,13 +492,13 @@ These define transformations to convert between codes by systems conforming with
 
 | | |
 | :--- | :--- |
+| [NG HIV LOINC to SNOMED CT](ConceptMap-NgHivLOINCToSNOMEDCT.md) | Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap. |
+| [NG HIV Local Concepts to SNOMED CT](ConceptMap-NgHivLocalToSNOMEDCT.md) | Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source. |
+| [NG HIV Local Concepts → LOINC](ConceptMap-NgHivLocalToLOINC.md) | Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups. |
 | [NG Local Vaccine Codes → ICD11](ConceptMap-NgVaccineLocal-to-ICD11.md) | Maps local dose-labelled DE codes to ICD-11 vaccine concepts (antigen/product level). |
 | [NG Local Vaccine Codes → SNOMED CT](ConceptMap-NgVaccineLocal-to-SNOMED.md) | Maps local dose-labelled DE codes to SNOMED CT vaccine concepts (antigen/product level). |
 | [Nigeria HIV Diagnoses to ICD-11 MMS](ConceptMap-NgHivDiagnosisToICD11.md) | Directional mapping from explicit Nigeria HIV opportunistic-infection diagnosis concepts to ICD-11 MMS 2026-01. |
-| [Nigeria HIV LOINC to SNOMED CT](ConceptMap-NgHivLOINCToSNOMEDCT.md) | Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap. |
-| [Nigeria HIV Local Concepts to SNOMED CT](ConceptMap-NgHivLocalToSNOMEDCT.md) | Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source. |
 | [Nigeria HIV Local Concepts to WHO SMART HIV](ConceptMap-NgHivLocalToWHOHiv.md) | Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts. |
-| [Nigeria HIV Local Concepts → LOINC](ConceptMap-NgHivLocalToLOINC.md) | Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups. |
 
 ### Example: Example Instances 
 
@@ -622,6 +566,7 @@ These are example instances that show what data produced and consumed by systems
 | [Immunization Recommendation – Measles (due)](ImmunizationRecommendation-NgImmunizationRecommendation-001.md) | Recommends Measles dose for a child; due now. |
 | [Laboratory Result Observation Example](Observation-NgObservationResultsLaboratoryPathologyExample.md) | An example final haemoglobin result reported in grams per decilitre. |
 | [MNCH Referral Update Message](Communication-NgCommunication-MNCH-001.md) | Referring midwife notifies receiving facility about patient en route. |
+| [NG HIV ART Monthly Summary MeasureReport - July 2026 Example](MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.md) | Synthetic facility-level example in which every stratifier declared by the Nigeria HIV ART Monthly Summary Measure is represented in the corresponding MeasureReport group. |
 | [NG HIV Care and ART QuestionnaireResponse - Initial ART](QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInitialArt.md) | Completed synthetic response covering enrolment, ART commencement, adherence preparation, clinical evaluation and care/support services. |
 | [NG HIV Care and ART QuestionnaireResponse - Interruption and Restart](QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInterruptionRestart.md) | Completed synthetic response demonstrating repeated ART interruption, adherence-preparation and care/support service groups. |
 | [NG HIV Care and ART QuestionnaireResponse - Regimen Change](QuestionnaireResponse-NgHivCareArtQuestionnaireResponseRegimenChange.md) | Completed synthetic response covering regimen substitution, drug-resistance testing and switch to second-line ART. |

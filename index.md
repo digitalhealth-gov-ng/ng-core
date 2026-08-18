@@ -173,26 +173,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "The Nigeria Core Implementation Guide defines the minimum set of FHIR RESTful interactions for each of the Nigeria Core Profiles to access patient data. The Profiles are updated monthly to support the latest requirements from The Nigeria Digital in Health Initiative under Sector Wide Approach (SWaP) for Health Information in Nigeria.",
@@ -858,38 +838,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-art-eligibility-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-art-eligibility-status-vs"
-      },
-      "name" : "ART Eligibility Status",
-      "description" : "ART Eligibility Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-plan-for-next-step-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-plan-for-next-step-vs"
-      },
-      "name" : "ART Not Started - Plan For Next Step",
-      "description" : "Codes used for representing the plan for next steps when a patient didn't start ART the same day.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -1018,54 +966,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-cervical-cancer-screening-type-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-cervical-cancer-screening-type-vs"
-      },
-      "name" : "Cervical Cancer Screening Type",
-      "description" : "Codes used for representing the cervical screening type.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-children-developmental-milestone-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-children-developmental-milestone-cs"
-      },
-      "name" : "Children Developmental Milestone Codes CodeSystem",
-      "description" : "Code used for representing the child's developmental milestone.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-children-developmental-milestone-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-children-developmental-milestone-vs"
-      },
-      "name" : "Children Developmental Milestone ValueSet",
-      "description" : "Children Developmental Milestone",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       },
       {
@@ -1178,22 +1078,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-current-smoking-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-current-smoking-status-vs"
-      },
-      "name" : "Current Smoking Status",
-      "description" : "ValueSet for smoking status.  This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1221,70 +1105,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "Diagnostics Report Status Codes - IPS",
       "description" : "IPS Diagnostic Report status codes allowable for diagnostics reports.  This value set includes all status codes except \\\"entered-in-error\\\" from http://hl7.org/fhir/diagnostic-report-status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-dsd-assessment-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-dsd-assessment-status-vs"
-      },
-      "name" : "Differentiated Service Delivery - Assessment Status",
-      "description" : "Code used for indicating the status of the DSD assessment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-dsd-assessment-status-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-dsd-assessment-status-cs"
-      },
-      "name" : "Differentiated Service Delivery - Assessment Status",
-      "description" : "Code used for indicating the status of the DSD assessment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-dsd-reason-for-category-change-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-dsd-reason-for-category-change-vs"
-      },
-      "name" : "Differentiated Service Delivery - Reason For Category Change",
-      "description" : "Code used for indicating the reason for the category change for the DSD assessment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-edema-presence-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-edema-presence-vs"
-      },
-      "name" : "Edema Presence Codes ValueSet",
-      "description" : "Observation codes used for indicating the prescence of Edema.",
       "exampleBoolean" : false
     },
     {
@@ -2122,22 +1942,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-family-planning-method-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-family-planning-method-vs"
-      },
-      "name" : "Family Planning Method",
-      "description" : "Family Planning Method",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
       },
       {
@@ -2170,22 +1974,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-arv-treatment-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-arv-treatment-vs"
-      },
-      "name" : "HIV - ARV Drugs ValueSet",
-      "description" : "A list of codes describing the ARV Drugs.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -2212,22 +2000,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
         "reference" : "CodeSystem/ng-hiv-reason-not-started-art-cs"
       },
       "name" : "HIV - Reason Not Started ART CodeSystem",
-      "description" : "Reason Not Started ART",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-not-started-art-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-not-started-art-vs"
-      },
-      "name" : "HIV - Reason Not Started ART ValueSet",
       "description" : "Reason Not Started ART",
       "exampleBoolean" : false
     },
@@ -2266,118 +2038,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-arv-regimen-change-category-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-arv-regimen-change-category-vs"
-      },
-      "name" : "HIV ARV Regimen Change Category",
-      "description" : "Codes used for representing the category for the ARV regimen change.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-arv-regimen-change-category-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-arv-regimen-change-category-cs"
-      },
-      "name" : "HIV ARV Regimen Change Category",
-      "description" : "Codes used for representing the category for the ARV regimen change.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-arv-regimen-change-type-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-arv-regimen-change-type-vs"
-      },
-      "name" : "HIV ARV Regimen Change Type",
-      "description" : "Codes used for representing the type of change associated with the ARV regimen (Switch or Substitute).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-arv-regimen-substitute-type-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-arv-regimen-substitute-type-cs"
-      },
-      "name" : "HIV ARV Regimen Substitue Type",
-      "description" : "Codes used for representing the type for the ARV regimen substitued.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-arv-side-effects-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-arv-side-effects-vs"
-      },
-      "name" : "HIV ARV Side Effects",
-      "description" : "Codes used for representing any side effects of the ARV medication prescribed to the patient.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-cervical-cancer-screened-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-cervical-cancer-screened-vs"
-      },
-      "name" : "HIV Cervical Cancer Screened",
-      "description" : "Codes used for representing whether screening for cervical cancer was done.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-cervical-cancer-screening-type-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-cervical-cancer-screening-type-cs"
-      },
-      "name" : "HIV Cervical Cancer Screening Type",
-      "description" : "Codes used for representing the cervical screening type.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -2389,54 +2049,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "HIV Differentiated Service Delivery",
       "description" : "Code used for indicating a DSD assessment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-disclosure-stage-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-disclosure-stage-vs"
-      },
-      "name" : "HIV Disclosure Stage",
-      "description" : "Codes used for representing the stages of disclosure for the patient's current HIV status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-dsd-category-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-dsd-category-cs"
-      },
-      "name" : "HIV DSD - Category CodeSystem",
-      "description" : "Code used for indicating the category for the DSD assessment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-dsd-category-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-dsd-category-vs"
-      },
-      "name" : "HIV DSD - Category ValueSet",
-      "description" : "Code used for indicating the category for the DSD assessment.",
       "exampleBoolean" : false
     },
     {
@@ -2462,86 +2074,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-eac-given-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-eac-given-cs"
-      },
-      "name" : "HIV EAC Given CodeSystem",
-      "description" : "Codes used for representing the Enhanced Adherence Councilling (EAC) given.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-eac-given-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-eac-given-vs"
-      },
-      "name" : "HIV EAC Given ValueSet",
-      "description" : "Codes used for representing the EAC given.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-art-eligibility-status-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-art-eligibility-status-cs"
-      },
-      "name" : "HIV Eligility Status for ART Codes",
-      "description" : "Observation codes used for indicating patient eligibility for ART.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-encounter-location-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-encounter-location-vs"
-      },
-      "name" : "HIV Encounter Locations",
-      "description" : "Code used for representing the location where the patient is receiving health services.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-encounter-type-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-encounter-type-vs"
-      },
-      "name" : "HIV Encounter Type",
-      "description" : "Codes used for indicating the type of encounter.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "CodeSystem-ng-hiv-family-index-case-contacts-questionnaire-cs.html"
       }],
       "reference" : {
@@ -2549,134 +2081,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "HIV Family Index Case Contacts Questionnaire",
       "description" : "Proprietary Codes used in the Family Index Case Contacts Questionnaire.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-art-follow-up-status-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-art-follow-up-status-cs"
-      },
-      "name" : "HIV Follow Up Status CodeSystem",
-      "description" : "A list of codes describing the follow up statuses",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-art-follow-up-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-art-follow-up-status-vs"
-      },
-      "name" : "HIV Follow Up Status ValueSet",
-      "description" : "FollowUp Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-health-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-health-status-vs"
-      },
-      "name" : "HIV Health Status",
-      "description" : "Codes used for representing a patient health status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-index-case-partner-questionnaire-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-index-case-partner-questionnaire-cs"
-      },
-      "name" : "HIV Index Case Sex Partner Questionnaire",
-      "description" : "Proprietary Codes used in the Index Case Partner Questionnaire.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-occupation-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-occupation-cs"
-      },
-      "name" : "HIV Occupation Codes",
-      "description" : "Codes used for representing the patient's occupation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-occupation-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-occupation-vs"
-      },
-      "name" : "HIV Occupation Valueset",
-      "description" : "Occupation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-opportunistic-infections-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-opportunistic-infections-vs"
-      },
-      "name" : "HIV Opportunistic Infections ValueSet",
-      "description" : "Codes used for representing opportunistic infections.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-pain-scale-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-pain-scale-vs"
-      },
-      "name" : "HIV Pain Scale",
-      "description" : "Codes used for representing level of pain (pain scale).",
       "exampleBoolean" : false
     },
     {
@@ -2698,86 +2102,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-partner-case-closure-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-partner-case-closure-status-vs"
-      },
-      "name" : "HIV Partner Case Closure Status ValueSet",
-      "description" : "Codes used for indicating the closure status for partner services.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-partner-notification-plan-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-partner-notification-plan-cs"
-      },
-      "name" : "HIV Partner Notification Plan CodeSystem",
-      "description" : "Codes used for indicating the plan for notifying the partner regarding the index case's HIV status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-partner-notification-plan-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-partner-notification-plan-vs"
-      },
-      "name" : "HIV Partner Notification Plan ValueSet",
-      "description" : "Codes used for indicating the plan for notifying the partner regarding the index case's HIV status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-patient-education-level-value-set.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-patient-education-level-value-set"
-      },
-      "name" : "HIV Patient Education Level",
-      "description" : "Codes used for indicating the patient's highest qualification.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-patient-education-level-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-patient-education-level-cs"
-      },
-      "name" : "HIV Patient Education Level Codes",
-      "description" : "Codes used for indicating the patient's highest qualification.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -2789,86 +2113,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "HIV Period of HIV Exposure",
       "description" : "Codes used for indicating the period when last the individual was exposed to HIV.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-physical-exam-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-physical-exam-vs"
-      },
-      "name" : "HIV Physical Examinations",
-      "description" : "Codes used for representing a physical examination.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-physical-examination-interpretation-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-physical-examination-interpretation-vs"
-      },
-      "name" : "HIV Physical Examinations Interpretation",
-      "description" : "Codes used for interpreting the finding associated with the physical examination.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-positive-tracking-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-positive-tracking-cs"
-      },
-      "name" : "HIV Positive Tracking",
-      "description" : "Codes used for representing HIV positive tracking.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-tracking-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-tracking-vs"
-      },
-      "name" : "HIV Positive Tracking Care Plan Activivity Codes",
-      "description" : "Codes used for representing activity in the Care Plan.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-prevention-plan-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-prevention-plan-vs"
-      },
-      "name" : "HIV Prevention Plan",
-      "description" : "Codes used for representing the patient's plan for the prevention of HIV being transmitted to others.",
       "exampleBoolean" : false
     },
     {
@@ -2890,182 +2134,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-for-arv-regimen-change-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-for-arv-regimen-change-vs"
-      },
-      "name" : "HIV Reason For ARV Regimen Change",
-      "description" : "Codes used for representing the reasons for changing the ARV regimen.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-for-not-testing-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-for-not-testing-vs"
-      },
-      "name" : "HIV Reason For Not Testing",
-      "description" : "Reason For Not Testing",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-stopped-art-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-stopped-art-vs"
-      },
-      "name" : "HIV Reason For Stopping ART",
-      "description" : "Codes used for representing the reasons for stopping ART.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-index-case-not-interviewed-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-index-case-not-interviewed-vs"
-      },
-      "name" : "HIV Reason Index Case Not Interviewed",
-      "description" : "Codes used for indicating the reason why the index case was not interviewed.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-not-linked-to-partner-services-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-not-linked-to-partner-services-vs"
-      },
-      "name" : "HIV Reason Not Linked to Partner Services",
-      "description" : "Codes used for indicating the reason why the partner was not linked to partner services.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-partner-not-contacted-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-partner-not-contacted-vs"
-      },
-      "name" : "HIV Reason Partner Not Contacted ValueSet",
-      "description" : "Codes used for indicating the reason why the partner was not contacted.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-partner-not-notified-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-partner-not-notified-vs"
-      },
-      "name" : "HIV Reason Partner Not Notified ValueSet",
-      "description" : "Codes used for indicating the reason why the partner was not notified about the index case's HIV status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-reason-for-art-eligibility-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-reason-for-art-eligibility-vs"
-      },
-      "name" : "HIV Reasons For ART Eligibility",
-      "description" : "Reasons For ART Eligibility",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-reason-for-art-eligibility-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-reason-for-art-eligibility-cs"
-      },
-      "name" : "HIV Reasons For ART Eligibility",
-      "description" : "Reasons For ART Eligibility",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-residential-type-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-residential-type-vs"
-      },
-      "name" : "HIV Residential Type",
-      "description" : "Codes used for representing patient residential type.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-routine-indication-viral-load-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-routine-indication-viral-load-cs"
-      },
-      "name" : "HIV Routine Indication Viral Load",
-      "description" : "Codes used for representing routine indication for viral load.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -3077,214 +2145,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "HIV Service Providers CodeSystem",
       "description" : "Code used for representing the classification of organizations providing health services.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-status-vs"
-      },
-      "name" : "HIV Status Codes",
-      "description" : "A list of codes describing the patient's HIV status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-targeted-indication-viral-load-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-targeted-indication-viral-load-cs"
-      },
-      "name" : "HIV Targeted Indication Viral Load",
-      "description" : "Codes used for representing targeted indication for viral load.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-test-results-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-test-results-vs"
-      },
-      "name" : "HIV Test Results",
-      "description" : "HIV Test Results",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-test-result-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-test-result-vs"
-      },
-      "name" : "HIV Test Results",
-      "description" : "Codes used for representing a patient HIV test results.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-test-type-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-test-type-vs"
-      },
-      "name" : "HIV Test Types",
-      "description" : "HIV Test Types",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-viral-load-indication-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-viral-load-indication-vs"
-      },
-      "name" : "HIV Viral Load Indication",
-      "description" : "Codes used for representing viral load indication.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-vl-indication-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-vl-indication-vs"
-      },
-      "name" : "HIV Viral Load Indication",
-      "description" : "Codes used for representing the indication type for the viral load.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-viral-load-status-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-viral-load-status-vs"
-      },
-      "name" : "HIV Viral Load Status",
-      "description" : "Codes used for representing patient's viral load status.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-cd4-vl-classification-for-treatment-failure-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs"
-      },
-      "name" : "HIV Viral Load/CD4 Count Classifications CodeSystem",
-      "description" : "Codes used for indicating the classification for the Viral Load/CD4 count treatment failure.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-cd4-vl-classification-for-treatment-failure-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-cd4-vl-classification-for-treatment-failure-vs"
-      },
-      "name" : "HIV Viral Load/CD4 Count Classifications ValueSet",
-      "description" : "Codes used for indicating the classification for the Viral Load/CD4 count treatment failure.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-who-stage-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-who-stage-vs"
-      },
-      "name" : "HIV WHO Stage",
-      "description" : "WHO Stage",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-arv-adherence-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-arv-adherence-cs"
-      },
-      "name" : "HIV-ARV Adherence CodeSystem",
-      "description" : "ARV Adherence",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-arv-adherence-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-arv-adherence-vs"
-      },
-      "name" : "HIV-ARV Adherence ValueSet",
-      "description" : "ARV Adherence",
       "exampleBoolean" : false
     },
     {
@@ -3310,102 +2170,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-cervical-cancer-screening-method-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-cervical-cancer-screening-method-vs"
-      },
-      "name" : "HIV-Cervical Cancer Screening Method",
-      "description" : "Cervical Cancer Screening Method.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-cervical-cancer-screening-method-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-cervical-cancer-screening-method-cs"
-      },
-      "name" : "HIV-Cervical Cancer Screening Method CodeSystem",
-      "description" : "A list of codes describing the Cervical Cancer Screening Method",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-cervical-cancer-screening-via-result-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-cervical-cancer-screening-via-result-cs"
-      },
-      "name" : "HIV-Cervical Cancer Screening Results CodeSyetem",
-      "description" : "A list of codes describing the Cervical Cancer Screening Results",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-cervical-cancer-screening-hpv-result-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs"
-      },
-      "name" : "HIV-Cervical Cancer Screening Results CodeSystem",
-      "description" : "A list of codes describing the Cervical Cancer Screening Results",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-cervical-cancer-screening-result-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-cervical-cancer-screening-result-vs"
-      },
-      "name" : "HIV-Cervical Cancer Screening Results ValueSet",
-      "description" : "A list of codes describing the Cervical Cancer Screening Results",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-cervical-cancer-treatment-received-vs"
-      },
-      "name" : "HIV-Cervical Cancer Treatment Received ValueSet",
-      "description" : "Cervical Cancer Treatment Received",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-ng-hiv-final-outcome-value-set.html"
       }],
       "reference" : {
@@ -3413,86 +2177,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "HIV-Final Outcome ValueSet",
       "description" : "Final Outcome",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-encounter-visit-type-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-encounter-visit-type-cs"
-      },
-      "name" : "HIV-Nature of Encounter CodeSystem",
-      "description" : "A list of codes describing the nature of the patient visit to the health facility",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-encounter-visit-type-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-encounter-visit-type-vs"
-      },
-      "name" : "HIV-Nature of Encounter ValueSet",
-      "description" : "A list of codes describing the nature of the patient visit to the health facility",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-opportunistic-infections-treatment-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-opportunistic-infections-treatment-vs"
-      },
-      "name" : "HIV-Opportunistic Infection Medication Codes ValueSet",
-      "description" : "A list of codes describing the medication for opportunistic infections related to the patient.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-precancerous-lesion-treatment-received-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs"
-      },
-      "name" : "HIV-Precancerous Lesion Treatment Received CodeSystem",
-      "description" : "A list of codes describing the precancerous lesion treatment received",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-ng-hiv-suspicious-cancerous-treatment-cs.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs"
-      },
-      "name" : "HIV-Suspicious Cancerous Treatment CodeSystem",
-      "description" : "A list of codes describing the suspicious Cancerous treatment",
       "exampleBoolean" : false
     },
     {
@@ -3558,22 +2242,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       "name" : "MNCH Referral Update Message",
       "description" : "Referring midwife notifies receiving facility about patient en route.",
       "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-communication"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-pregnancy-mode-of-delivery-vs.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-pregnancy-mode-of-delivery-vs"
-      },
-      "name" : "Mode Of Delivery",
-      "description" : "Codes used for representing mode of delivery.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3699,7 +2367,7 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       "reference" : {
         "reference" : "StructureDefinition/ng-appointment"
       },
-      "name" : "Ng Appointment",
+      "name" : "NG Appointment",
       "description" : "Appointment profile for Nigeria Core (e.g., immunization, ePharmacy counseling, referrals).",
       "exampleBoolean" : false
     },
@@ -4122,6 +2790,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-current-smoking-status-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-current-smoking-status-vs"
+      },
+      "name" : "NG Current Smoking Status",
+      "description" : "ValueSet for smoking status.  This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -4181,6 +2865,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "NG DeviceType Codes",
       "description" : "Local mirror of Device Type.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-documents.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-documents"
+      },
+      "name" : "NG Document Reference",
+      "description" : "Profile for indexing and exchanging\nclinical, administrative, and public-health documents \nassociated with a patient.",
       "exampleBoolean" : false
     },
     {
@@ -4446,6 +3146,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-arv-treatment-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-arv-treatment-vs"
+      },
+      "name" : "NG HIV - ARV Drugs",
+      "description" : "A list of codes describing the ARV Drugs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-ng-hiv-adult-art-medication-vs.html"
       }],
       "reference" : {
@@ -4468,7 +3184,7 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
         "reference" : "ValueSet/ng-hiv-art-monthly-age-group-vs"
       },
       "name" : "NG HIV ART Monthly Age Groups",
-      "description" : "Age groups used for ART1–ART4.",
+      "description" : "Age groups used for ART1-ART4.",
       "exampleBoolean" : false
     },
     {
@@ -4662,6 +3378,38 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       "name" : "NG HIV ART Monthly Summary Indicators",
       "description" : "The 24 ART monthly summary indicators.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-NgMeasure-HIV-ART-Monthly.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/NgMeasure-HIV-ART-Monthly"
+      },
+      "name" : "NG HIV ART Monthly Summary Measure",
+      "description" : "Defines the 24 indicators and reporting dimensions for the Nigeria National ART Monthly Summary Form revised November 2025.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.html"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/NgMeasureReport-HIV-ART-Monthly-001"
+      },
+      "name" : "NG HIV ART Monthly Summary MeasureReport - July 2026 Example",
+      "description" : "Synthetic facility-level example in which every stratifier declared by the Nigeria HIV ART Monthly Summary Measure is represented in the corresponding MeasureReport group.",
+      "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure-report"
     },
     {
       "extension" : [{
@@ -5182,6 +3930,38 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-eac-given-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-eac-given-vs"
+      },
+      "name" : "NG HIV EAC Given",
+      "description" : "Codes used for representing the EAC given.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-eac-given-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-eac-given-cs"
+      },
+      "name" : "NG HIV EAC Given",
+      "description" : "Codes used for representing the Enhanced Adherence Councilling (EAC) given.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-ng-hiv-eac-intervention-services-vs.html"
       }],
       "reference" : {
@@ -5318,6 +4098,38 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       "name" : "NG HIV Enhanced Adherence Counselling Questionnaire Response Example",
       "description" : "Fictional completed EAC response showing three counselling sessions, improving adherence and a suppressed post-EAC viral-load result.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-art-follow-up-status-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-art-follow-up-status-cs"
+      },
+      "name" : "NG HIV Follow Up Status CodeSystem",
+      "description" : "A list of codes describing the follow up statuses",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-art-follow-up-status-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-art-follow-up-status-vs"
+      },
+      "name" : "NG HIV Follow Up Status ValueSet",
+      "description" : "FollowUp Status",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -5742,6 +4554,86 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-local-concepts.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-local-concepts"
+      },
+      "name" : "NG HIV Local Concepts",
+      "description" : "Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-NgHivLocalToSNOMEDCT.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/NgHivLocalToSNOMEDCT"
+      },
+      "name" : "NG HIV Local Concepts to SNOMED CT",
+      "description" : "Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-NgHivLocalToLOINC.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/NgHivLocalToLOINC"
+      },
+      "name" : "NG HIV Local Concepts → LOINC",
+      "description" : "Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-loinc-concepts.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-loinc-concepts"
+      },
+      "name" : "NG HIV LOINC Concepts",
+      "description" : "Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-NgHivLOINCToSNOMEDCT.html"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/NgHivLOINCToSNOMEDCT"
+      },
+      "name" : "NG HIV LOINC to SNOMED CT",
+      "description" : "Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ValueSet-ng-hiv-marital-status-vs.html"
       }],
       "reference" : {
@@ -6010,6 +4902,54 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-positive-tracking-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-positive-tracking-cs"
+      },
+      "name" : "NG HIV Positive Tracking",
+      "description" : "Codes used for representing HIV positive tracking.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-tracking-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-tracking-vs"
+      },
+      "name" : "NG HIV Positive Tracking Care Plan Activivity Codes",
+      "description" : "Codes used for representing activity in the Care Plan.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-precancerous-lesion-treatment-received-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-precancerous-lesion-treatment-received-cs"
+      },
+      "name" : "NG HIV Precancerous Lesion Treatment Received",
+      "description" : "A list of codes describing the precancerous lesion treatment received",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       },
       {
@@ -6074,6 +5014,70 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-routine-indication-viral-load-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-routine-indication-viral-load-cs"
+      },
+      "name" : "NG HIV Routine Indication Viral Load",
+      "description" : "Codes used for representing routine indication for viral load.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-snomed-ct-concepts.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-snomed-ct-concepts"
+      },
+      "name" : "NG HIV SNOMED CT Concepts",
+      "description" : "Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-status-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-status-vs"
+      },
+      "name" : "NG HIV Status Codes",
+      "description" : "A list of codes describing the patient's HIV status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-targeted-indication-viral-load-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-targeted-indication-viral-load-cs"
+      },
+      "name" : "NG HIV Targeted Indication Viral Load",
+      "description" : "Codes used for representing targeted indication for viral load.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       },
       {
@@ -6101,6 +5105,38 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "NG HIV TB Preventive Therapy Medications",
       "description" : "TB preventive therapy medicines or regimens listed on the Nigeria Combined Pharmacy Order Form.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-test-result-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-test-result-vs"
+      },
+      "name" : "NG HIV Test Results",
+      "description" : "Codes used for representing a patient HIV test results.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-test-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-test-type-vs"
+      },
+      "name" : "NG HIV Test Types",
+      "description" : "Nigeria HIV Test Types",
       "exampleBoolean" : false
     },
     {
@@ -6373,6 +5409,118 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "NG HIV Tracking Register Tracking Modes",
       "description" : "Tracking modes printed for T19–T23.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-vl-indication-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-vl-indication-vs"
+      },
+      "name" : "NG HIV Viral Load Indication",
+      "description" : "Codes used for representing the indication type for the viral load.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-viral-load-status-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-viral-load-status-vs"
+      },
+      "name" : "NG HIV Viral Load Status",
+      "description" : "Codes used for representing patient's viral load status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-who-stage-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-who-stage-vs"
+      },
+      "name" : "NG HIV WHO Stage",
+      "description" : "WHO Stage",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-arv-adherence-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-arv-adherence-cs"
+      },
+      "name" : "NG HIV-ARV Adherence CodeSystem",
+      "description" : "ARV Adherence",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-arv-adherence-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-arv-adherence-vs"
+      },
+      "name" : "NG HIV-ARV Adherence ValueSet",
+      "description" : "ARV Adherence",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-hiv-cervical-cancer-treatment-received-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-hiv-cervical-cancer-treatment-received-vs"
+      },
+      "name" : "NG HIV-Cervical Cancer Treatment Received",
+      "description" : "Cervical Cancer Treatment Received",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-hiv-suspicious-cancerous-treatment-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs"
+      },
+      "name" : "NG HIV-Suspicious Cancerous Treatment",
+      "description" : "A list of codes describing the suspicious Cancerous treatment",
       "exampleBoolean" : false
     },
     {
@@ -6926,6 +6074,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-medication-statement.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-medication-statement"
+      },
+      "name" : "NG Medication Statement",
+      "description" : "Profile for recording a medication that a patient is taking, has taken, or is expected to take, based\non information reported by the patient, caregiver, practitioner, or another clinical record.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-ng-medication-dispense.html"
       }],
       "reference" : {
@@ -6965,6 +6129,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "NG Mobile Number NamingSystem",
       "description" : "Candidate NamingSystem definition for the Medical Records Number namespace.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-pregnancy-mode-of-delivery-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-pregnancy-mode-of-delivery-vs"
+      },
+      "name" : "NG Mode Of Delivery",
+      "description" : "Nigeria Codes used for representing mode of delivery.",
       "exampleBoolean" : false
     },
     {
@@ -7141,6 +6321,38 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "NG Patient",
       "description" : "Nigeria Core Patient Profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-patient-education-level-value-set.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-patient-education-level-value-set"
+      },
+      "name" : "NG Patient Education Level",
+      "description" : "Codes used for indicating the patient's highest qualification.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-patient-education-level-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-patient-education-level-cs"
+      },
+      "name" : "NG Patient Education Level Codes",
+      "description" : "Codes used for indicating the patient's highest qualification.",
       "exampleBoolean" : false
     },
     {
@@ -7589,6 +6801,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "NG Requestor",
       "description" : "A client application or service that initiates a Nigeria Core FHIR exchange.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ng-residential-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ng-residential-type-vs"
+      },
+      "name" : "NG Residential Type",
+      "description" : "Codes used for representing patient residential type.",
       "exampleBoolean" : false
     },
     {
@@ -8362,22 +7590,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-documents.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-documents"
-      },
-      "name" : "Nigeria Document Reference",
-      "description" : "Profile for indexing and exchanging\nclinical, administrative, and public-health documents \nassociated with a patient.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       },
       {
@@ -8474,38 +7686,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-local-concepts.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-local-concepts"
-      },
-      "name" : "Nigeria HIV Local Concepts",
-      "description" : "Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ConceptMap-NgHivLocalToSNOMEDCT.html"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/NgHivLocalToSNOMEDCT"
-      },
-      "name" : "Nigeria HIV Local Concepts to SNOMED CT",
-      "description" : "Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
       },
       {
@@ -8517,70 +7697,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       },
       "name" : "Nigeria HIV Local Concepts to WHO SMART HIV",
       "description" : "Directional mapping from selected Nigeria HIV local programme concepts to WHO SMART HIV 1.0.0 concepts.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ConceptMap-NgHivLocalToLOINC.html"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/NgHivLocalToLOINC"
-      },
-      "name" : "Nigeria HIV Local Concepts → LOINC",
-      "description" : "Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-loinc-concepts.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-loinc-concepts"
-      },
-      "name" : "Nigeria HIV LOINC Concepts",
-      "description" : "Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ConceptMap-NgHivLOINCToSNOMEDCT.html"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/NgHivLOINCToSNOMEDCT"
-      },
-      "name" : "Nigeria HIV LOINC to SNOMED CT",
-      "description" : "Unidirectional LOINC-to-SNOMED CT mappings present in the supplied HIV ConceptMap.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-ng-hiv-snomed-ct-concepts.html"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ng-hiv-snomed-ct-concepts"
-      },
-      "name" : "Nigeria HIV SNOMED CT Concepts",
-      "description" : "Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied.",
       "exampleBoolean" : false
     },
     {
@@ -8662,22 +7778,6 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       "name" : "Nigeria Medication Request Example",
       "description" : "An active outpatient medication request for paracetamol prescribed\nto a patient during a clinical encounter in Ondo State.",
       "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-request"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-ng-medication-statement.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ng-medication-statement"
-      },
-      "name" : "Nigeria Medication Statement",
-      "description" : "Profile for recording a medication that a patient is taking, has taken, or is expected to take, based\non information reported by the patient, caregiver, practitioner, or another clinical record.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -9955,7 +9055,7 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
           "valueUrl" : "functional-non-functional.html"
         }],
         "nameUrl" : "functional-non-functional.html",
-        "title" : "Functional and Non-Functional Requirements",
+        "title" : "EMR Functional and Non-Functional Requirements",
         "generation" : "markdown"
       }]
     },

@@ -107,18 +107,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.10"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-children-developmental-milestone-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgChildrenDevelopmentalMilestoneVS",
-    "title" : "Children Developmental Milestone ValueSet",
-    "description" : "Children Developmental Milestone",
-    "systems" : ["http://loinc.org",
-    "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-children-developmental-milestone-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.11"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.11"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-client-identifier-vs",
     "version" : "0.0.0",
     "status" : "active",
@@ -134,7 +122,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgCurrentSmokingStatusVS",
-    "title" : "Current Smoking Status",
+    "title" : "NG Current Smoking Status",
     "description" : "ValueSet for smoking status.  This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status.",
     "systems" : ["http://snomed.info/sct"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.13"],
@@ -215,17 +203,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.20"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-family-planning-method-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgFamilyPlanningMethodVS",
-    "title" : "Family Planning Method",
-    "description" : "Family Planning Method",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.21"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.21"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs",
     "version" : "0.0.0",
     "status" : "active",
@@ -248,22 +225,11 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.23"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-eligibility-status-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARTEligibilityStatusVS",
-    "title" : "ART Eligibility Status",
-    "description" : "ART Eligibility Status",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-eligibility-status-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.24"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.24"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-follow-up-status-vs",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivARTFollowUpStatusVS",
-    "title" : "HIV Follow Up Status ValueSet",
+    "title" : "NG HIV Follow Up Status ValueSet",
     "description" : "FollowUp Status",
     "systems" : ["http://loinc.org",
     "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs"],
@@ -276,7 +242,7 @@
     "status" : "draft",
     "name" : "NgHivArtMonthlyAgeGroupVS",
     "title" : "NG HIV ART Monthly Age Groups",
-    "description" : "Age groups used for ART1–ART4.",
+    "description" : "Age groups used for ART1-ART4.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.26"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.26"]
@@ -372,7 +338,7 @@
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-monthly-indicator-vs",
     "version" : "0.0.0",
-    "status" : "draft",
+    "status" : "active",
     "name" : "NgHivArtMonthlyIndicatorVS",
     "title" : "NG HIV ART Monthly Summary Indicators",
     "description" : "The 24 ART monthly summary indicators.",
@@ -517,7 +483,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivARVAdherenceVS",
-    "title" : "HIV-ARV Adherence ValueSet",
+    "title" : "NG HIV-ARV Adherence ValueSet",
     "description" : "ARV Adherence",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs",
     "http://snomed.info/sct"],
@@ -525,45 +491,11 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.48"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-regimen-change-category-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARVRegimenChangeCategoryVS",
-    "title" : "HIV ARV Regimen Change Category",
-    "description" : "Codes used for representing the category for the ARV regimen change.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-change-category-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.49"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.49"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-regimen-change-type-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARVRegimenChangeTypeVS",
-    "title" : "HIV ARV Regimen Change Type",
-    "description" : "Codes used for representing the type of change associated with the ARV regimen (Switch or Substitute).",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-substitute-type-cs",
-    "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-switch-type-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.50"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.50"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-side-effects-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARVSideEffectsVS",
-    "title" : "HIV ARV Side Effects",
-    "description" : "Codes used for representing any side effects of the ARV medication prescribed to the patient.",
-    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.51"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.51"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-treatment-vs",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivARVTreatmentVS",
-    "title" : "HIV - ARV Drugs ValueSet",
+    "title" : "NG HIV - ARV Drugs",
     "description" : "A list of codes describing the ARV Drugs.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-treatment-cs",
     "http://snomed.info/sct"],
@@ -604,69 +536,11 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.55"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cd4-vl-classification-for-treatment-failure-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCD4AndVLClassificationForTreatmentFailureVS",
-    "title" : "HIV Viral Load/CD4 Count Classifications ValueSet",
-    "description" : "Codes used for indicating the classification for the Viral Load/CD4 count treatment failure.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs",
-    "http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.56"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.56"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cervical-cancer-screened-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreenedVS",
-    "title" : "HIV Cervical Cancer Screened",
-    "description" : "Codes used for representing whether screening for cervical cancer was done.",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.57"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.57"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cervical-cancer-screening-method-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningMethodVS",
-    "title" : "HIV-Cervical Cancer Screening Method",
-    "description" : "Cervical Cancer Screening Method.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-method-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.58"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.58"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cervical-cancer-screening-result-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningResultVS",
-    "title" : "HIV-Cervical Cancer Screening Results ValueSet",
-    "description" : "A list of codes describing the Cervical Cancer Screening Results",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs",
-    "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-via-result-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.59"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.59"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cervical-cancer-screening-type-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningTypeVS",
-    "title" : "Cervical Cancer Screening Type",
-    "description" : "Codes used for representing the cervical screening type.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-type-cs",
-    "http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.60"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.60"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-cervical-cancer-treatment-received-vs",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivCervicalCancerTreatmentReceivedVS",
-    "title" : "HIV-Cervical Cancer Treatment Received ValueSet",
+    "title" : "NG HIV-Cervical Cancer Treatment Received",
     "description" : "Cervical Cancer Treatment Received",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-suspicious-cancerous-treatment-cs",
     "http://loinc.org",
@@ -697,17 +571,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.216"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-disclosure-stage-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivDisclosureStageVS",
-    "title" : "HIV Disclosure Stage",
-    "description" : "Codes used for representing the stages of disclosure for the patient's current HIV status.",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.62"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.62"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-drug-resistance-result-vs",
     "version" : "0.0.0",
     "status" : "draft",
@@ -717,41 +580,6 @@
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.63"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.63"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-dsd-assessment-status-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivDSDAssessmentStatusVS",
-    "title" : "Differentiated Service Delivery - Assessment Status",
-    "description" : "Code used for indicating the status of the DSD assessment.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-assessment-status-cs",
-    "http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.64"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.64"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-dsd-category-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivDSDCategoryVS",
-    "title" : "HIV DSD - Category ValueSet",
-    "description" : "Code used for indicating the category for the DSD assessment.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-category-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.65"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.65"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-dsd-reason-for-category-change-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivDSDReasonForCategoryChangeVS",
-    "title" : "Differentiated Service Delivery - Reason For Category Change",
-    "description" : "Code used for indicating the reason for the category change for the DSD assessment.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs",
-    "http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.66"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.66"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-eac-adherence-vs",
@@ -780,7 +608,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivEACGivenVS",
-    "title" : "HIV EAC Given ValueSet",
+    "title" : "NG HIV EAC Given",
     "description" : "Codes used for representing the EAC given.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-given-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.69"],
@@ -820,17 +648,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.72"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-edema-presence-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivEdemaPresenceVS",
-    "title" : "Edema Presence Codes ValueSet",
-    "description" : "Observation codes used for indicating the prescence of Edema.",
-    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.73"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.73"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-educational-status-vs",
     "version" : "0.0.0",
     "status" : "draft",
@@ -842,39 +659,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.74"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-encounter-location-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivEncounterLocationVS",
-    "title" : "HIV Encounter Locations",
-    "description" : "Code used for representing the location where the patient is receiving health services.",
-    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.75"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.75"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-encounter-type-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivEncounterTypeVS",
-    "title" : "HIV Encounter Type",
-    "description" : "Codes used for indicating the type of encounter.",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.76"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.76"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-encounter-visit-type-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivEncounterVisitTypeVS",
-    "title" : "HIV-Nature of Encounter ValueSet",
-    "description" : "A list of codes describing the nature of the patient visit to the health facility",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-visit-type-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.77"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.77"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-final-outcome-value-set",
     "version" : "0.0.0",
     "status" : "draft",
@@ -884,17 +668,6 @@
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-final-outcome-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.78"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.78"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-health-status-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivHealthStatusVS",
-    "title" : "HIV Health Status",
-    "description" : "Codes used for representing a patient health status.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.79"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.79"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-int-lab-arv-prophylaxis-vs",
@@ -1110,7 +883,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivLocalConceptsVS",
-    "title" : "Nigeria HIV Local Concepts",
+    "title" : "NG HIV Local Concepts",
     "description" : "Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs",
     "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-adherence-cs",
@@ -1132,7 +905,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivLOINCConceptsVS",
-    "title" : "Nigeria HIV LOINC Concepts",
+    "title" : "NG HIV LOINC Concepts",
     "description" : "Distinct LOINC concepts referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative LOINC names were not supplied.",
     "systems" : ["http://loinc.org"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.100"],
@@ -1150,18 +923,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.101"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-occupation-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivOccupationVS",
-    "title" : "HIV Occupation Valueset",
-    "description" : "Occupation",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-occupation-cs",
-    "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.102"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.102"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-oi-prophylaxis-treatment-medication-vs",
     "version" : "0.0.0",
     "status" : "draft",
@@ -1173,28 +934,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.103"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-opportunistic-infections-treatment-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivOpportunisticInfectionsTreatmentVS",
-    "title" : "HIV-Opportunistic Infection Medication Codes ValueSet",
-    "description" : "A list of codes describing the medication for opportunistic infections related to the patient.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.104"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.104"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-opportunistic-infections-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivOpportunisticInfectionsVS",
-    "title" : "HIV Opportunistic Infections ValueSet",
-    "description" : "Codes used for representing opportunistic infections.",
-    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.105"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.105"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-paediatric-art-medication-vs",
     "version" : "0.0.0",
     "status" : "draft",
@@ -1204,41 +943,6 @@
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-pharmacy-order-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.106"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.106"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-pain-scale-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPainScaleVS",
-    "title" : "HIV Pain Scale",
-    "description" : "Codes used for representing level of pain (pain scale).",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.107"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.107"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-partner-case-closure-status-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPartnerCaseClosureStatusVS",
-    "title" : "HIV Partner Case Closure Status ValueSet",
-    "description" : "Codes used for indicating the closure status for partner services.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs",
-    "http://loinc.org",
-    "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.108"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.108"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-partner-notification-plan-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPartnerNotificationPlanVS",
-    "title" : "HIV Partner Notification Plan ValueSet",
-    "description" : "Codes used for indicating the plan for notifying the partner regarding the index case's HIV status.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-notification-plan-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.109"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.109"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-period-of-hiv-exposure-vs",
@@ -1307,39 +1011,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.115"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-physical-exam-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPhysicalExamVS",
-    "title" : "HIV Physical Examinations",
-    "description" : "Codes used for representing a physical examination.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.116"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.116"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-physical-examination-interpretation-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPhysicalExamInterpretationVS",
-    "title" : "HIV Physical Examinations Interpretation",
-    "description" : "Codes used for interpreting the finding associated with the physical examination.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.117"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.117"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-plan-for-next-step-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPlanForNextStepVS",
-    "title" : "ART Not Started - Plan For Next Step",
-    "description" : "Codes used for representing the plan for next steps when a patient didn't start ART the same day.",
-    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.118"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.118"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-prep-medication-vs",
     "version" : "0.0.0",
     "status" : "draft",
@@ -1362,17 +1033,6 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.120"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-prevention-plan-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPreventionPlanVS",
-    "title" : "HIV Prevention Plan",
-    "description" : "Codes used for representing the patient's plan for the prevention of HIV being transmitted to others.",
-    "systems" : ["http://loinc.org", "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.121"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.121"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-prior-art-vs",
     "version" : "0.0.0",
     "status" : "draft",
@@ -1382,108 +1042,6 @@
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-care-art-codes-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.122"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.122"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-for-art-eligibility-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonForARTEligibilityVS",
-    "title" : "HIV Reasons For ART Eligibility",
-    "description" : "Reasons For ART Eligibility",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-for-art-eligibility-cs",
-    "http://loinc.org",
-    "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.123"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.123"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-for-arv-regimen-change-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonForARVRegimenChangeVS",
-    "title" : "HIV Reason For ARV Regimen Change",
-    "description" : "Codes used for representing the reasons for changing the ARV regimen.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.124"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.124"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-for-not-testing-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonForNotTestingVS",
-    "title" : "HIV Reason For Not Testing",
-    "description" : "Reason For Not Testing",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.125"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.125"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-index-case-not-interviewed-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonIndexCaseNotInterviewedVS",
-    "title" : "HIV Reason Index Case Not Interviewed",
-    "description" : "Codes used for indicating the reason why the index case was not interviewed.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.126"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.126"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-not-linked-to-partner-services-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonNotLinkedToPartnerServicesVS",
-    "title" : "HIV Reason Not Linked to Partner Services",
-    "description" : "Codes used for indicating the reason why the partner was not linked to partner services.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.127"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.127"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-not-started-art-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonNotStartedARTVS",
-    "title" : "HIV - Reason Not Started ART ValueSet",
-    "description" : "Reason Not Started ART",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.128"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.128"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-partner-not-contacted-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonPartnerNotContactedVS",
-    "title" : "HIV Reason Partner Not Contacted ValueSet",
-    "description" : "Codes used for indicating the reason why the partner was not contacted.",
-    "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs",
-    "http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.129"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.129"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-partner-not-notified-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonPartnerNotNotifiedVS",
-    "title" : "HIV Reason Partner Not Notified ValueSet",
-    "description" : "Codes used for indicating the reason why the partner was not notified about the index case's HIV status.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.130"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.130"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reason-stopped-art-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonARTStoppedVS",
-    "title" : "HIV Reason For Stopping ART",
-    "description" : "Codes used for representing the reasons for stopping ART.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.131"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.131"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-reasons-for-poor-arv-adherence-vs",
@@ -1519,22 +1077,11 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.134"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-residential-type-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivResidentialTypeVS",
-    "title" : "HIV Residential Type",
-    "description" : "Codes used for representing patient residential type.",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.135"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.135"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-snomed-ct-concepts",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivSNOMEDCTConceptsVS",
-    "title" : "Nigeria HIV SNOMED CT Concepts",
+    "title" : "NG HIV SNOMED CT Concepts",
     "description" : "Distinct valid SNOMED CT identifiers referenced by the supplied HIV ConceptMaps. Displays are omitted because authoritative SNOMED CT terms were not supplied.",
     "systems" : ["http://snomed.info/sct"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.136"],
@@ -1545,7 +1092,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivStatusVS",
-    "title" : "HIV Status Codes",
+    "title" : "NG HIV Status Codes",
     "description" : "A list of codes describing the patient's HIV status.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-status-cs",
     "http://loinc.org"],
@@ -1579,30 +1126,19 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivTestResultVS",
-    "title" : "HIV Test Results",
+    "title" : "NG HIV Test Results",
     "description" : "Codes used for representing a patient HIV test results.",
     "systems" : ["http://loinc.org"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.140"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.140"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-test-results-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHIVTestResultsVS",
-    "title" : "HIV Test Results",
-    "description" : "HIV Test Results",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.141"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.141"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-test-type-vs",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHIVTestTypeVS",
-    "title" : "HIV Test Types",
-    "description" : "HIV Test Types",
+    "title" : "NG HIV Test Types",
+    "description" : "Nigeria HIV Test Types",
     "systems" : ["http://loinc.org"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.142"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.142"]
@@ -1700,7 +1236,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivTrackingVS",
-    "title" : "HIV Positive Tracking Care Plan Activivity Codes",
+    "title" : "NG HIV Positive Tracking Care Plan Activivity Codes",
     "description" : "Codes used for representing activity in the Care Plan.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-positive-tracking-cs",
     "http://loinc.org",
@@ -1720,22 +1256,11 @@
     "sources" : ["2.16.840.1.113884.3.9944.1.48.152"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-viral-load-indication-vs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivViralLoadIndicationVS",
-    "title" : "HIV Viral Load Indication",
-    "description" : "Codes used for representing viral load indication.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113884.3.9944.1.48.153"],
-    "sources" : ["2.16.840.1.113884.3.9944.1.48.153"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-viral-load-status-vs",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivViralLoadStatusVS",
-    "title" : "HIV Viral Load Status",
+    "title" : "NG HIV Viral Load Status",
     "description" : "Codes used for representing patient's viral load status.",
     "systems" : ["http://snomed.info/sct"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.154"],
@@ -1746,7 +1271,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivVLIndicationVS",
-    "title" : "HIV Viral Load Indication",
+    "title" : "NG HIV Viral Load Indication",
     "description" : "Codes used for representing the indication type for the viral load.",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-targeted-indication-viral-load-cs",
     "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-routine-indication-viral-load-cs"],
@@ -1758,7 +1283,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivWHOStageVS",
-    "title" : "HIV WHO Stage",
+    "title" : "NG HIV WHO Stage",
     "description" : "WHO Stage",
     "systems" : ["https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-who-stage-cs"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.156"],
@@ -1898,7 +1423,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgPatientEducationLevelValueSet",
-    "title" : "HIV Patient Education Level",
+    "title" : "NG Patient Education Level",
     "description" : "Codes used for indicating the patient's highest qualification.",
     "systems" : ["http://loinc.org"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.169"],
@@ -1953,8 +1478,8 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgPregnancyModeOfDeliveryVS",
-    "title" : "Mode Of Delivery",
-    "description" : "Codes used for representing mode of delivery.",
+    "title" : "NG Mode Of Delivery",
+    "description" : "Nigeria Codes used for representing mode of delivery.",
     "systems" : ["http://loinc.org"],
     "oids" : ["2.16.840.1.113884.3.9944.1.48.174"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.174"]
@@ -2024,6 +1549,17 @@
     "description" : "Methods used to contact or trace immunization defaulters.",
     "oids" : ["2.16.840.1.113884.3.9944.1.48.180"],
     "sources" : ["2.16.840.1.113884.3.9944.1.48.180"]
+  },
+  {
+    "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-residential-type-vs",
+    "version" : "0.0.0",
+    "status" : "active",
+    "name" : "NgResidentialTypeVS",
+    "title" : "NG Residential Type",
+    "description" : "Codes used for representing patient residential type.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113884.3.9944.1.48.218"],
+    "sources" : ["2.16.840.1.113884.3.9944.1.48.218"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-laboratory-pathology-observation-vs",

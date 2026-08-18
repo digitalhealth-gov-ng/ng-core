@@ -23,7 +23,7 @@
   fhir:CodeSystem.title [ fhir:value "NG CarePlan Category Codes"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-08-17T16:10:29+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-18T06:18:50+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;
@@ -32,28 +32,6 @@
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
        fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
-     ], [
-       fhir:index 1 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
-     ]
-  ], [
-     fhir:index 1 ;
-     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index 0 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 2 ;
-     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index 0 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
-       fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ] ;
   fhir:CodeSystem.description [ fhir:value "Categories for CarePlan."] ;

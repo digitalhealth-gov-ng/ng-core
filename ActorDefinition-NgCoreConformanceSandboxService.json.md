@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2026-08-17 |
+| Active as of 2026-08-18 |
 
 [Raw json](ActorDefinition-NgCoreConformanceSandboxService.json) | [Download](ActorDefinition-NgCoreConformanceSandboxService.json)
 

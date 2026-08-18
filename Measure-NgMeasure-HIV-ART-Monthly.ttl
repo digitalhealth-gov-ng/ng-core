@@ -1,0 +1,1324 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-HIV-ART-Monthly> a fhir:Measure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgMeasure-HIV-ART-Monthly"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Knowledge Artifact Metadata</th>\n\n</tr>\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Name (machine-readable)</th>\n\n<td class=\"content-container\">NgHivArtMonthlySummaryMeasure</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Title (human-readable)</th>\n\n<td class=\"content-container\">Nigeria HIV ART Monthly Summary Measure</td>\n</tr>\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Status</th>\n\n<td class=\"content-container\">Draft</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Experimental</th>\n\n<td class=\"content-container\">true</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n<td class=\"content-container\"><div><p>Defines the 24 aggregate indicators (ART1-ART24) and reporting dimensions\nused by the Nigeria National ART Monthly Summary Form revised November 2025.\nThe Measure provides a stable FHIR reporting contract for facility-level\nmonthly HIV programme reporting. The current population criteria are\nplaceholders and do not yet constitute executable patient-level logic.</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Steward</th>\n\n<td class=\"content-container\">NDHI</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Steward Contact Details</th>\n\n<td class=\"content-container\">NDHI: <a href=\"https://digitalhealth.gov.ng\">https://digitalhealth.gov.ng</a></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Metadata</th>\n\n</tr>\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Version Number</th>\n\n<td class=\"content-container\">0.0.0</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Scoring</th>\n\n<td class=\"content-container\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring cohort}\">Cohort</span></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV newly started on ART during the month, excluding ART transfer-in.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV newly started on ART during the month, excluding ART transfer-in.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: ART age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: ART age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Key-population typology\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Key-population typology\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV currently receiving ART during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV currently receiving ART during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: ART age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: ART age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: ART regimen line\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: ART regimen line\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Key-population typology\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Key-population typology\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Multi-month dispensing duration\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Multi-month dispensing duration\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: ART age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: ART age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Key-population typology\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Key-population typology\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: ART age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: ART age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Key-population typology\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Key-population typology\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART who had treatment interruption during the reporting month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART who had treatment interruption during the reporting month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Treatment-interruption outcome\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Treatment-interruption outcome\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV who restarted ART during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV who restarted ART during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV who transferred out during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV who transferred out during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV who transferred in during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV who transferred in during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART with current health-insurance cover.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART with current health-insurance cover.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART with presumptive TB during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART with presumptive TB during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART with presumptive TB who were tested for TB during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART with presumptive TB who were tested for TB during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART who had active TB disease.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART who had active TB disease.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART with active TB disease who initiated TB treatment.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART with active TB disease who initiated TB treatment.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART who initiated TB preventive treatment.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART who initiated TB preventive treatment.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB preventive-treatment regimen\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB preventive-treatment regimen\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB preventive-treatment regimen\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB preventive-treatment regimen\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV currently on ART who had ever received TB preventive treatment.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV currently on ART who had ever received TB preventive treatment.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB preventive-treatment regimen\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB preventive-treatment regimen\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV newly enrolled in care during the month.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV newly enrolled in care during the month.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Advanced-HIV-disease entry category\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Advanced-HIV-disease entry category\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: CrAg age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: CrAg age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Advanced-HIV-disease entry category\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Advanced-HIV-disease entry category\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Serum CrAg result\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Serum CrAg result\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: CrAg age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: CrAg age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Cryptococcal-meningitis screening result\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Cryptococcal-meningitis screening result\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of people living with HIV started on treatment for cryptococcal meningitis.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of people living with HIV started on treatment for cryptococcal meningitis.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Sex\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Sex\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: TB and AHD age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: TB and AHD age group\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of women living with HIV on ART screened for cervical cancer.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of women living with HIV on ART screened for cervical cancer.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Cervical-screening age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Cervical-screening age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Cervical-screening result\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Cervical-screening result\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Cervical-screening timing\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Cervical-screening timing\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Cervical-screening age group\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Cervical-screening age group\n    \n  </td>\n</tr>\n\n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Cervical treatment type\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Cervical treatment type\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>\n</tr>\n    </tbody>\n  </table>\n</div>"
+  ] ;
+  fhir:Measure.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-HIV-ART-Monthly"] ;
+  fhir:Measure.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.29.2" ]
+  ] ;
+  fhir:Measure.version [ fhir:value "0.0.0"] ;
+  fhir:Measure.name [ fhir:value "NgHivArtMonthlySummaryMeasure"] ;
+  fhir:Measure.title [ fhir:value "Nigeria HIV ART Monthly Summary Measure"] ;
+  fhir:Measure.status [ fhir:value "draft"] ;
+  fhir:Measure.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Measure.date [ fhir:value "2026-08-18"^^xsd:date] ;
+  fhir:Measure.publisher [ fhir:value "NDHI"] ;
+  fhir:Measure.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ]
+  ] ;
+  fhir:Measure.description [ fhir:value "Defines the 24 aggregate indicators (ART1-ART24) and reporting dimensions\nused by the Nigeria National ART Monthly Summary Form revised November 2025.\nThe Measure provides a stable FHIR reporting contract for facility-level\nmonthly HIV programme reporting. The current population criteria are\nplaceholders and do not yet constitute executable patient-level logic."] ;
+  fhir:Measure.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:Measure.effectivePeriod [
+     fhir:Period.start [ fhir:value "2025-11-01"^^xsd:date ]
+  ] ;
+  fhir:Measure.scoring [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-scoring" ] ;
+       fhir:Coding.code [ fhir:value "cohort" ] ;
+       fhir:Coding.display [ fhir:value "Cohort" ]
+     ]
+  ] ;
+  fhir:Measure.group [
+     fhir:index 0 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART1" ] ;
+         fhir:Coding.display [ fhir:value "ART1 (TX_NEW)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV newly started on ART during the month, excluding ART transfer-in." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV newly started on ART during the month, excluding ART transfer-in." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "artAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "ART age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "ART age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "keyPopulation" ] ;
+           fhir:Coding.display [ fhir:value "Key-population typology" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Key-population typology" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART2" ] ;
+         fhir:Coding.display [ fhir:value "ART2 (TX_CURR)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV currently receiving ART during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV currently receiving ART during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "artAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "ART age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "ART age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "regimenLine" ] ;
+           fhir:Coding.display [ fhir:value "ART regimen line" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "ART regimen line" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "keyPopulation" ] ;
+           fhir:Coding.display [ fhir:value "Key-population typology" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Key-population typology" ]
+     ], [
+       fhir:index 4 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "mmdDuration" ] ;
+           fhir:Coding.display [ fhir:value "Multi-month dispensing duration" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Multi-month dispensing duration" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART3" ] ;
+         fhir:Coding.display [ fhir:value "ART3 (TX_PVLS_D)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART for at least six months with a viral-load test result within the last 12 months." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "artAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "ART age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "ART age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "keyPopulation" ] ;
+           fhir:Coding.display [ fhir:value "Key-population typology" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Key-population typology" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART4" ] ;
+         fhir:Coding.display [ fhir:value "ART4 (TX_PVLS_N)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART for at least six months with virologic suppression of 1000 copies/mL or less within the last 12 months." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "artAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "ART age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "ART age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "keyPopulation" ] ;
+           fhir:Coding.display [ fhir:value "Key-population typology" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Key-population typology" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART5" ] ;
+         fhir:Coding.display [ fhir:value "ART5 (TX_ATRR)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART who had treatment interruption during the reporting month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART who had treatment interruption during the reporting month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "interruptionOutcome" ] ;
+           fhir:Coding.display [ fhir:value "Treatment-interruption outcome" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Treatment-interruption outcome" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART6" ] ;
+         fhir:Coding.display [ fhir:value "ART6 (TX_RTT)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV who restarted ART during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV who restarted ART during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART7" ] ;
+         fhir:Coding.display [ fhir:value "ART7 (TX_TO)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV who transferred out during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV who transferred out during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART8" ] ;
+         fhir:Coding.display [ fhir:value "ART8 (TX_TI)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV who transferred in during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV who transferred in during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART9" ] ;
+         fhir:Coding.display [ fhir:value "ART9 (ART_INSURANCE)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART with current health-insurance cover." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART with current health-insurance cover." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART10" ] ;
+         fhir:Coding.display [ fhir:value "ART10 (TX_TB_SCRN)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART, including PMTCT clients, who were clinically screened for TB in HIV treatment settings." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART11" ] ;
+         fhir:Coding.display [ fhir:value "ART11 (TX_TB_SCRN_POS)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART with presumptive TB during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART with presumptive TB during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART12" ] ;
+         fhir:Coding.display [ fhir:value "ART12 (TX_TB_TST)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART with presumptive TB who were tested for TB during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART with presumptive TB who were tested for TB during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 12 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART13" ] ;
+         fhir:Coding.display [ fhir:value "ART13 (TX_TB_TST_POS)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART who had active TB disease." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART who had active TB disease." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 13 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART14" ] ;
+         fhir:Coding.display [ fhir:value "ART14 (TX_TB)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART with active TB disease who initiated TB treatment." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART with active TB disease who initiated TB treatment." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART15" ] ;
+         fhir:Coding.display [ fhir:value "ART15 (TB_PREV_D)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART who initiated TB preventive treatment." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART who initiated TB preventive treatment." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tptRegimen" ] ;
+           fhir:Coding.display [ fhir:value "TB preventive-treatment regimen" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB preventive-treatment regimen" ]
+     ]
+  ], [
+     fhir:index 15 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART16" ] ;
+         fhir:Coding.display [ fhir:value "ART16 (TB_PREV_N)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV on ART who completed a course of TB preventive treatment among those who initiated it." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tptRegimen" ] ;
+           fhir:Coding.display [ fhir:value "TB preventive-treatment regimen" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB preventive-treatment regimen" ]
+     ]
+  ], [
+     fhir:index 16 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART17" ] ;
+         fhir:Coding.display [ fhir:value "ART17 (TB_PREV_EVR)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV currently on ART who had ever received TB preventive treatment." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV currently on ART who had ever received TB preventive treatment." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tptRegimen" ] ;
+           fhir:Coding.display [ fhir:value "TB preventive-treatment regimen" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB preventive-treatment regimen" ]
+     ]
+  ], [
+     fhir:index 17 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART18" ] ;
+         fhir:Coding.display [ fhir:value "ART18 (CARE_NEW)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV newly enrolled in care during the month." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV newly enrolled in care during the month." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 18 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART19" ] ;
+         fhir:Coding.display [ fhir:value "ART19 (AHD_SCRN)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV with advanced HIV disease: WHO clinical stage 3 or 4, CD4 below 200 cells/mm3, or child aged five years or younger." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "ahdCategory" ] ;
+           fhir:Coding.display [ fhir:value "Advanced-HIV-disease entry category" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Advanced-HIV-disease entry category" ]
+     ]
+  ], [
+     fhir:index 19 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART20" ] ;
+         fhir:Coding.display [ fhir:value "ART20 (AHD_SCRN_CRAG)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV with advanced HIV disease screened for serum cryptococcal antigen." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cragAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "CrAg age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "CrAg age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "ahdCategory" ] ;
+           fhir:Coding.display [ fhir:value "Advanced-HIV-disease entry category" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Advanced-HIV-disease entry category" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cragResult" ] ;
+           fhir:Coding.display [ fhir:value "Serum CrAg result" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Serum CrAg result" ]
+     ]
+  ], [
+     fhir:index 20 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART21" ] ;
+         fhir:Coding.display [ fhir:value "ART21 (AHD_SCRN_CSF)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV with advanced HIV disease and positive serum CrAg who were screened for cryptococcal meningitis by lumbar puncture." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cragAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "CrAg age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "CrAg age group" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cryptococcalMeningitisResult" ] ;
+           fhir:Coding.display [ fhir:value "Cryptococcal-meningitis screening result" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Cryptococcal-meningitis screening result" ]
+     ]
+  ], [
+     fhir:index 21 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART22" ] ;
+         fhir:Coding.display [ fhir:value "ART22 (AHD_MEN_TX)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of people living with HIV started on treatment for cryptococcal meningitis." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of people living with HIV started on treatment for cryptococcal meningitis." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "sex" ] ;
+           fhir:Coding.display [ fhir:value "Sex" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Sex" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "tbAhdAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "TB and AHD age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "TB and AHD age group" ]
+     ]
+  ], [
+     fhir:index 22 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART23" ] ;
+         fhir:Coding.display [ fhir:value "ART23 (CER_SCRN)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of women living with HIV on ART screened for cervical cancer." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of women living with HIV on ART screened for cervical cancer." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cervicalAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "Cervical-screening age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Cervical-screening age group" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cervicalScreeningResult" ] ;
+           fhir:Coding.display [ fhir:value "Cervical-screening result" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Cervical-screening result" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cervicalScreeningTiming" ] ;
+           fhir:Coding.display [ fhir:value "Cervical-screening timing" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Cervical-screening timing" ]
+     ]
+  ], [
+     fhir:index 23 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+         fhir:Coding.code [ fhir:value "ART24" ] ;
+         fhir:Coding.display [ fhir:value "ART24 (CER_TX)" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "initial-population" ] ;
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of women living with HIV on ART who screened positive, were eligible for treatment, and received cryotherapy, thermal ablation or LEEP." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cervicalAgeGroup" ] ;
+           fhir:Coding.display [ fhir:value "Cervical-screening age group" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Cervical-screening age group" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs" ] ;
+           fhir:Coding.code [ fhir:value "cervicalTreatmentType" ] ;
+           fhir:Coding.display [ fhir:value "Cervical treatment type" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Cervical treatment type" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-HIV-ART-Monthly.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

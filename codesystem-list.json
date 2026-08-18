@@ -63,15 +63,6 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.7"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-children-developmental-milestone-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgChildrenDevelopmentalMilestoneCS",
-    "title" : "Children Developmental Milestone Codes CodeSystem",
-    "description" : "Code used for representing the child's developmental milestone.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.8"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-claim-product-or-service-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -153,27 +144,18 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.17"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-eligibility-status-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARTEligibilityStatusCS",
-    "title" : "HIV Eligility Status for ART Codes",
-    "description" : "Observation codes used for indicating patient eligibility for ART.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.18"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-follow-up-status-cs",
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivARTFollowUpStatusCS",
-    "title" : "HIV Follow Up Status CodeSystem",
+    "title" : "NG HIV Follow Up Status CodeSystem",
     "description" : "A list of codes describing the follow up statuses",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.19"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs",
     "version" : "0.0.0",
-    "status" : "draft",
+    "status" : "active",
     "name" : "NgHivArtMonthlySummaryCS",
     "title" : "NG HIV ART Monthly Summary Codes",
     "description" : "Indicator, stratifier-dimension and local disaggregation codes for the Nigeria ART Monthly Summary Form revised November 2025.",
@@ -247,27 +229,9 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivARVAdherenceCS",
-    "title" : "HIV-ARV Adherence CodeSystem",
+    "title" : "NG HIV-ARV Adherence CodeSystem",
     "description" : "ARV Adherence",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.28"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-change-category-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARVRegimenChangeCategoryCS",
-    "title" : "HIV ARV Regimen Change Category",
-    "description" : "Codes used for representing the category for the ARV regimen change.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.29"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-substitute-type-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivARVRegimenSubstituteTypeCS",
-    "title" : "HIV ARV Regimen Substitue Type",
-    "description" : "Codes used for representing the type for the ARV regimen substitued.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.30"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-arv-regimen-switch-type-cs",
@@ -306,51 +270,6 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.34"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cd4-vl-classification-for-treatment-failure-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCD4AndVLClassificationForTreatmentFailureCS",
-    "title" : "HIV Viral Load/CD4 Count Classifications CodeSystem",
-    "description" : "Codes used for indicating the classification for the Viral Load/CD4 count treatment failure.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.35"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-hpv-result-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningHPVResultsCS",
-    "title" : "HIV-Cervical Cancer Screening Results CodeSystem",
-    "description" : "A list of codes describing the Cervical Cancer Screening Results",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.36"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-method-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningMethodCS",
-    "title" : "HIV-Cervical Cancer Screening Method CodeSystem",
-    "description" : "A list of codes describing the Cervical Cancer Screening Method",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.37"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-type-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningTypeCS",
-    "title" : "HIV Cervical Cancer Screening Type",
-    "description" : "Codes used for representing the cervical screening type.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.38"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-cervical-cancer-screening-via-result-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivCervicalCancerScreeningVIAResultsCS",
-    "title" : "HIV-Cervical Cancer Screening Results CodeSyetem",
-    "description" : "A list of codes describing the Cervical Cancer Screening Results",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.39"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-diagnosis-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -367,24 +286,6 @@
     "title" : "HIV Differentiated Service Delivery",
     "description" : "Code used for indicating a DSD assessment.",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.40"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-assessment-status-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivDSDAssessmentStatusCS",
-    "title" : "Differentiated Service Delivery - Assessment Status",
-    "description" : "Code used for indicating the status of the DSD assessment.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.41"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-category-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivDSDCategoryCS",
-    "title" : "HIV DSD - Category CodeSystem",
-    "description" : "Code used for indicating the category for the DSD assessment.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.42"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs",
@@ -409,7 +310,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivEACGivenCS",
-    "title" : "HIV EAC Given CodeSystem",
+    "title" : "NG HIV EAC Given",
     "description" : "Codes used for representing the Enhanced Adherence Councilling (EAC) given.",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.45"]
   },
@@ -441,15 +342,6 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.48"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-encounter-visit-type-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivEncounterVisitTypeCS",
-    "title" : "HIV-Nature of Encounter CodeSystem",
-    "description" : "A list of codes describing the nature of the patient visit to the health facility",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.49"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-enhanced-adherence-counselling-status-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -477,15 +369,6 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.52"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-index-case-partner-questionnaire-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivIndexCasePartnerQuestionnaireCS",
-    "title" : "HIV Index Case Sex Partner Questionnaire",
-    "description" : "Proprietary Codes used in the Index Case Partner Questionnaire.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.53"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-int-lab-form-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -504,15 +387,6 @@
     "oids" : ["2.16.840.1.113884.3.9944.1.16.55"]
   },
   {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-occupation-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivOccupationCS",
-    "title" : "HIV Occupation Codes",
-    "description" : "Codes used for representing the patient's occupation",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.56"]
-  },
-  {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-and-fbict-cs",
     "version" : "0.0.0",
     "status" : "active",
@@ -520,15 +394,6 @@
     "title" : "HIV Partner and FBICT",
     "description" : "Codes used for indicating the patient's status for partner and Family-based Index Case Testing (FBICT).",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.57"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-partner-notification-plan-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivPartnerNotificationPlanCS",
-    "title" : "HIV Partner Notification Plan CodeSystem",
-    "description" : "Codes used for indicating the plan for notifying the partner regarding the index case's HIV status.",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.58"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-period-of-hiv-exposure-cs",
@@ -598,7 +463,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivPositiveTrackingCS",
-    "title" : "HIV Positive Tracking",
+    "title" : "NG HIV Positive Tracking",
     "description" : "Codes used for representing HIV positive tracking.",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.66"]
   },
@@ -607,18 +472,9 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivPrecancerousLesionTreatmentReceivedCS",
-    "title" : "HIV-Precancerous Lesion Treatment Received CodeSystem",
+    "title" : "NG HIV Precancerous Lesion Treatment Received",
     "description" : "A list of codes describing the precancerous lesion treatment received",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.67"]
-  },
-  {
-    "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-for-art-eligibility-cs",
-    "version" : "0.0.0",
-    "status" : "active",
-    "name" : "NgHivReasonForARTEligibilityCS",
-    "title" : "HIV Reasons For ART Eligibility",
-    "description" : "Reasons For ART Eligibility",
-    "oids" : ["2.16.840.1.113884.3.9944.1.16.68"]
   },
   {
     "url" : "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-reason-not-started-art-cs",
@@ -634,7 +490,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivRoutineIndicationViralLoadCS",
-    "title" : "HIV Routine Indication Viral Load",
+    "title" : "NG HIV Routine Indication Viral Load",
     "description" : "Codes used for representing routine indication for viral load.",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.70"]
   },
@@ -661,7 +517,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivSuspiciousCancerousTreatmentCS",
-    "title" : "HIV-Suspicious Cancerous Treatment CodeSystem",
+    "title" : "NG HIV-Suspicious Cancerous Treatment",
     "description" : "A list of codes describing the suspicious Cancerous treatment",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.73"]
   },
@@ -679,7 +535,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgHivTargetedIndicationViralLoadCS",
-    "title" : "HIV Targeted Indication Viral Load",
+    "title" : "NG HIV Targeted Indication Viral Load",
     "description" : "Codes used for representing targeted indication for viral load.",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.75"]
   },
@@ -850,7 +706,7 @@
     "version" : "0.0.0",
     "status" : "active",
     "name" : "NgPatientEducationLevelCS",
-    "title" : "HIV Patient Education Level Codes",
+    "title" : "NG Patient Education Level Codes",
     "description" : "Codes used for indicating the patient's highest qualification.",
     "oids" : ["2.16.840.1.113884.3.9944.1.16.94"]
   },

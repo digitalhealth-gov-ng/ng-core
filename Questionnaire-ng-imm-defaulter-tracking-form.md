@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/Questionnaire/ng-imm-defaulter-tracking-form | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgImmDefaulterTrackingForm |
+| Draft as of 2026-08-18 | *Computable Name*:NgImmDefaulterTrackingForm |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.35.9 | |
 
  
@@ -37,33 +37,13 @@ Questionnaire for identifying and following up clients who have missed scheduled
   "status" : "draft",
   "experimental" : false,
   "subjectType" : ["Patient"],
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Questionnaire for identifying and following up clients who have missed\nscheduled immunization doses.",

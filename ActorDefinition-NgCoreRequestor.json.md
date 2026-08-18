@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Draft as of 2026-08-17 |
+| Draft as of 2026-08-18 |
 
 [Raw json](ActorDefinition-NgCoreRequestor.json) | [Download](ActorDefinition-NgCoreRequestor.json)
 

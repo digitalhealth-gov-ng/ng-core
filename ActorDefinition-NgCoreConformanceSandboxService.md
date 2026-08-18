@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ActorDefinition/NgCoreConformanceSandboxService | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgCoreConformanceSandboxService |
+| Active as of 2026-08-18 | *Computable Name*:NgCoreConformanceSandboxService |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.12.1 | |
 
  

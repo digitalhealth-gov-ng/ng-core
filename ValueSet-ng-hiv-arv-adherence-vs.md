@@ -1,15 +1,15 @@
-# HIV-ARV Adherence ValueSet - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV-ARV Adherence ValueSet - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV-ARV Adherence ValueSet**
+* **NG HIV-ARV Adherence ValueSet**
 
-## ValueSet: HIV-ARV Adherence ValueSet 
+## ValueSet: NG HIV-ARV Adherence ValueSet 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-adherence-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivARVAdherenceVS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivARVAdherenceVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.48 | |
 
  
@@ -53,36 +53,16 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   }],
   "version" : "0.0.0",
   "name" : "NgHivARVAdherenceVS",
-  "title" : "HIV-ARV Adherence ValueSet",
+  "title" : "NG HIV-ARV Adherence ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "ARV Adherence",

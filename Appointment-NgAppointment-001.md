@@ -6,7 +6,7 @@
 
 ## Example Appointment: Booked Appointment – Immunization Slot
 
-Profile: [Ng Appointment](StructureDefinition-ng-appointment.md)
+Profile: [NG Appointment](StructureDefinition-ng-appointment.md)
 
 **status**: Proposed
 

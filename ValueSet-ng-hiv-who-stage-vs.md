@@ -1,15 +1,15 @@
-# HIV WHO Stage - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV WHO Stage - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV WHO Stage**
+* **NG HIV WHO Stage**
 
-## ValueSet: HIV WHO Stage 
+## ValueSet: NG HIV WHO Stage 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-who-stage-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivWHOStageVS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivWHOStageVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.156 | |
 
  
@@ -54,36 +54,16 @@ WHO Stage
   }],
   "version" : "0.0.0",
   "name" : "NgHivWHOStageVS",
-  "title" : "HIV WHO Stage",
+  "title" : "NG HIV WHO Stage",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "WHO Stage",

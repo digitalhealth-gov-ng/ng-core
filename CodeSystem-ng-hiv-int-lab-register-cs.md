@@ -48,26 +48,6 @@ Local codes required to represent the Integrated Laboratory Monitoring Register 
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Local codes required to represent the Integrated Laboratory Monitoring\nRegister revised November 2025. The source workbook does not provide a complete\nEID-entry-point legend or a POC error-code catalogue; those values are therefore\nrepresented using existing terminology or free text in the logical model.",

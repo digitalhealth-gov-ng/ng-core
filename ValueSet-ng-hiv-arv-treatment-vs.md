@@ -1,15 +1,15 @@
-# HIV - ARV Drugs ValueSet - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV - ARV Drugs - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV - ARV Drugs ValueSet**
+* **NG HIV - ARV Drugs**
 
-## ValueSet: HIV - ARV Drugs ValueSet 
+## ValueSet: NG HIV - ARV Drugs 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-arv-treatment-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivARVTreatmentVS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivARVTreatmentVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.52 | |
 
  
@@ -53,36 +53,16 @@ A list of codes describing the ARV Drugs.
   }],
   "version" : "0.0.0",
   "name" : "NgHivARVTreatmentVS",
-  "title" : "HIV - ARV Drugs ValueSet",
+  "title" : "NG HIV - ARV Drugs",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "A list of codes describing the ARV Drugs.",

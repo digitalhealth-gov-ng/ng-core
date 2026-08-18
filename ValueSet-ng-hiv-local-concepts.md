@@ -1,10 +1,10 @@
-# Nigeria HIV Local Concepts - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV Local Concepts - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria HIV Local Concepts**
+* **NG HIV Local Concepts**
 
-## ValueSet: Nigeria HIV Local Concepts (Experimental) 
+## ValueSet: NG HIV Local Concepts (Experimental) 
 
 | | |
 | :--- | :--- |
@@ -53,7 +53,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   }],
   "version" : "0.0.0",
   "name" : "NgHivLocalConceptsVS",
-  "title" : "Nigeria HIV Local Concepts",
+  "title" : "NG HIV Local Concepts",
   "status" : "active",
   "experimental" : true,
   "date" : "2026-07-24",
@@ -63,26 +63,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Local HIV, TB/HIV, demographic and program concepts referenced by the supplied HIV ConceptMaps. Codes remain in their original local CodeSystems.",

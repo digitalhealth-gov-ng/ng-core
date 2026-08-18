@@ -234,7 +234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#questionnaire-forms" id="markdown-toc-questionnaire-forms">Questionnaire (Forms)</a></li>
   <li><a href="#questionnaireresponse-example-forms" id="markdown-toc-questionnaireresponse-example-forms">QuestionnaireResponse (Example Forms)</a></li>
   <li><a href="#logical-models-registers-and-worksheets" id="markdown-toc-logical-models-registers-and-worksheets">Logical Models (Registers and Worksheets)</a></li>
-  <li><a href="#measure-and-measurereport-aggregates---draft" id="markdown-toc-measure-and-measurereport-aggregates---draft">Measure and MeasureReport (Aggregates) - DRAFT</a></li>
+  <li><a href="#measure-and-measurereport-aggregates" id="markdown-toc-measure-and-measurereport-aggregates">Measure and MeasureReport (Aggregates)</a></li>
   <li><a href="#hiv-terminologies" id="markdown-toc-hiv-terminologies">HIV Terminologies</a></li>
   <li><a href="#exchange-documents" id="markdown-toc-exchange-documents">Exchange Documents</a></li>
   <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a></li>
@@ -507,7 +507,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="measure-and-measurereport-aggregates---draft">Measure and MeasureReport (Aggregates) - DRAFT</h3>
+<h3 id="measure-and-measurereport-aggregates">Measure and MeasureReport (Aggregates)</h3>
 
 <p>These artefacts define aggregate reporting logic and demonstrate submission of programme and NHMIS reporting results.</p>
 
@@ -521,14 +521,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="Measure-NgMeasure-NHMIS-001.html">NHMIS Monthly Outpatient Attendance Measure</a></td>
-      <td>Defines the computable aggregate measure, population criteria, and reporting logic for the published monthly attendance indicator.</td>
-      <td>Reporting implementations <strong>SHALL</strong> use the published Measure definition for calculation and disaggregation.</td>
-    </tr>
-    <tr>
-      <td><a href="MeasureReport-NgMeasureReport-NHMIS-001.html">NHMIS Monthly Outpatient Attendance Measure Report</a></td>
+      <td><a href="MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.html">Example HIV ART Monthly Summary MeasureReport</a></td>
       <td>Provides a conformant aggregate result instance for the reporting period and measure.</td>
-      <td>Submitted aggregate results <strong>SHALL</strong> conform to the published MeasureReport artefact, reference the applicable Measure, and include the reporting period, subject or reporter, status, type, and required groups or populations.</td>
+      <td>Submitted aggregate results <strong>SHALL</strong> conform to the published <a href="StructureDefinition-ng-measure-report.html">NgMeasureReport</a> artefact, reference <a href="StructureDefinition-ng-measure.html">NgMeasure</a>, and include the reporting period, subject or reporter, status, type, and required groups or populations.</td>
     </tr>
   </tbody>
 </table>
@@ -1194,7 +1189,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 17, 2026 16:10+0100">2026-08-17</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 06:18+0100">2026-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

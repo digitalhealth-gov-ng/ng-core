@@ -1,10 +1,10 @@
-# Nigeria HIV Local Concepts to SNOMED CT - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV Local Concepts to SNOMED CT - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria HIV Local Concepts to SNOMED CT**
+* **NG HIV Local Concepts to SNOMED CT**
 
-## ConceptMap: Nigeria HIV Local Concepts to SNOMED CT (Experimental) 
+## ConceptMap: NG HIV Local Concepts to SNOMED CT (Experimental) 
 
 | | |
 | :--- | :--- |
@@ -30,7 +30,7 @@ Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identi
   },
   "version" : "0.0.0",
   "name" : "NgHivLocalToSNOMEDCT",
-  "title" : "Nigeria HIV Local Concepts → SNOMED CT",
+  "title" : "NG HIV Local Concepts → SNOMED CT",
   "status" : "active",
   "experimental" : true,
   "date" : "2026-07-24",
@@ -40,26 +40,6 @@ Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identi
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Unidirectional mapping from local HIV-related concepts to valid SNOMED CT identifiers in the supplied source.",

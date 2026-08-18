@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ActorDefinition/NgCoreRequestor | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgCoreRequestor |
+| Draft as of 2026-08-18 | *Computable Name*:NgCoreRequestor |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.12.3 | |
 
  

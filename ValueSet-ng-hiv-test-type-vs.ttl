@@ -20,10 +20,10 @@
   ] ;
   fhir:ValueSet.version [ fhir:value "0.0.0"] ;
   fhir:ValueSet.name [ fhir:value "NgHIVTestTypeVS"] ;
-  fhir:ValueSet.title [ fhir:value "HIV Test Types"] ;
+  fhir:ValueSet.title [ fhir:value "NG HIV Test Types"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-08-17T16:10:29+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-18T06:18:50+01:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;
@@ -32,31 +32,9 @@
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
        fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
-     ], [
-       fhir:index 1 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
-     ]
-  ], [
-     fhir:index 1 ;
-     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index 0 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 2 ;
-     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index 0 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
-       fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ] ;
-  fhir:ValueSet.description [ fhir:value "HIV Test Types"] ;
+  fhir:ValueSet.description [ fhir:value "Nigeria HIV Test Types"] ;
   fhir:ValueSet.jurisdiction [
      fhir:index 0 ;
      fhir:CodeableConcept.coding [

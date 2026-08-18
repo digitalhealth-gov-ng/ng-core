@@ -1,19 +1,19 @@
-# HIV Test Types - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV Test Types - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV Test Types**
+* **NG HIV Test Types**
 
-## ValueSet: HIV Test Types 
+## ValueSet: NG HIV Test Types 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-test-type-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHIVTestTypeVS |
+| Active as of 2026-08-18 | *Computable Name*:NgHIVTestTypeVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.142 | |
 
  
-HIV Test Types 
+Nigeria HIV Test Types 
 
  **References** 
 
@@ -53,39 +53,19 @@ HIV Test Types
   }],
   "version" : "0.0.0",
   "name" : "NgHIVTestTypeVS",
-  "title" : "HIV Test Types",
+  "title" : "NG HIV Test Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
-  "description" : "HIV Test Types",
+  "description" : "Nigeria HIV Test Types",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

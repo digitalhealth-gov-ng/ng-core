@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgMeasure |
+| Draft as of 2026-08-18 | *Computable Name*:NgMeasure |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.42 | |
 
  
@@ -18,7 +18,7 @@ Minimal program-neutral Measure profile for defining Nigerian health indicators,
 **Usages:**
 
 * Refer to this Profile: [NG Measure Report](StructureDefinition-ng-measure-report.md)
-* Examples for this Profile: [NHMISMonthlyOutpatientAttendance](Measure-NgMeasure-NHMIS-001.md)
+* Examples for this Profile: [NgHivArtMonthlySummaryMeasure](Measure-NgMeasure-HIV-ART-Monthly.md) and [NHMISMonthlyOutpatientAttendance](Measure-NgMeasure-NHMIS-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-measure.json)
 
@@ -47,33 +47,13 @@ Other representations of profile: [CSV](StructureDefinition-ng-measure.csv), [Ex
   "name" : "NgMeasure",
   "title" : "NG Measure",
   "status" : "draft",
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Minimal program-neutral Measure profile for defining Nigerian health\nindicators, quality measures and aggregate service-delivery measures using\nFHIR R4B 4.3.0.",

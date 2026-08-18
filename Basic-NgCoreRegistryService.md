@@ -30,7 +30,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date",
-    "valueDateTime" : "2026-08-17T16:10:29+01:00"
+    "valueDateTime" : "2026-08-18T06:18:50+01:00"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher",
@@ -43,32 +43,6 @@
       "telecom" : [{
         "system" : "url",
         "value" : "https://digitalhealth.gov.ng"
-      },
-      {
-        "system" : "email",
-        "value" : "emeka2015@gmail.com"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact",
-    "valueContactDetail" : {
-      "name" : "Nigeria Digital in Health Initiative.",
-      "telecom" : [{
-        "system" : "email",
-        "value" : "lekeojewale@gmail.com",
-        "use" : "work"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact",
-    "valueContactDetail" : {
-      "name" : "Nigeria Digital in Health Initiative.",
-      "telecom" : [{
-        "system" : "email",
-        "value" : "emeka2015@gmail.com",
-        "use" : "work"
       }]
     }
   },

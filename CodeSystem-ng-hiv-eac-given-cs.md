@@ -1,15 +1,15 @@
-# HIV EAC Given CodeSystem - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV EAC Given - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV EAC Given CodeSystem**
+* **NG HIV EAC Given**
 
-## CodeSystem: HIV EAC Given CodeSystem 
+## CodeSystem: NG HIV EAC Given 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-eac-given-cs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivEACGivenCS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivEACGivenCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.45 | |
 
  
@@ -17,7 +17,7 @@ Codes used for representing the Enhanced Adherence Councilling (EAC) given.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [HIV EAC Given ValueSet](ValueSet-ng-hiv-eac-given-vs.md)
+* [NG HIV EAC Given](ValueSet-ng-hiv-eac-given-vs.md)
 
 
 
@@ -34,36 +34,16 @@ Codes used for representing the Enhanced Adherence Councilling (EAC) given.
   }],
   "version" : "0.0.0",
   "name" : "NgHivEACGivenCS",
-  "title" : "HIV EAC Given CodeSystem",
+  "title" : "NG HIV EAC Given",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Codes used for representing the Enhanced Adherence Councilling (EAC) given.",

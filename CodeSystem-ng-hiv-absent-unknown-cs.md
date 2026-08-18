@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-absent-unknown-cs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivAbsentUnknownCS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivAbsentUnknownCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.17 | |
 
  
@@ -17,7 +17,6 @@ Codes used for indicating when a value is absent or unknown.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [HIV Occupation Valueset](ValueSet-ng-hiv-occupation-vs.md)
 * [NG Yes/No Codes VS](ValueSet-ng-yes-no-vs.md)
 
 
@@ -38,33 +37,13 @@ Codes used for indicating when a value is absent or unknown.
   "title" : "HIV Absent or Unknown CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Codes used for indicating when a value is absent or unknown.",

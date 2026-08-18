@@ -1,15 +1,15 @@
-# HIV Patient Education Level - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG Patient Education Level - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV Patient Education Level**
+* **NG Patient Education Level**
 
-## ValueSet: HIV Patient Education Level 
+## ValueSet: NG Patient Education Level 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-patient-education-level-value-set | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgPatientEducationLevelValueSet |
+| Active as of 2026-08-18 | *Computable Name*:NgPatientEducationLevelValueSet |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.169 | |
 
  
@@ -53,36 +53,16 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   }],
   "version" : "0.0.0",
   "name" : "NgPatientEducationLevelValueSet",
-  "title" : "HIV Patient Education Level",
+  "title" : "NG Patient Education Level",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Codes used for indicating the patient's highest qualification.",

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ng-residential-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ng-residential-type-vs</b></p><a name=\"ng-residential-type-vs\"> </a><a name=\"hcng-residential-type-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/224807002\">224807002</a></td><td>Urban environment</td></tr><tr><td><a href=\"http://snomed.info/id/224804009\">224804009</a></td><td>Rural environment</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-residential-type-vs",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.48.218"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgResidentialTypeVS",
+  "title" : "NG Residential Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-08-18T06:18:50+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    }]
+  }],
+  "description" : "Codes used for representing patient residential type.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "224807002",
+        "display" : "Urban environment"
+      },
+      {
+        "code" : "224804009",
+        "display" : "Rural environment"
+      }]
+    }]
+  }
+}

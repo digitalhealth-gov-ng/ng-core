@@ -30,7 +30,7 @@
   fhir:ValueSet.title [ fhir:value "Results Specimen Collection Method - IPS"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-08-17T16:10:29+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-18T06:18:50+01:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "NDHI"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;
@@ -39,28 +39,6 @@
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
        fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
-     ], [
-       fhir:index 1 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
-     ]
-  ], [
-     fhir:index 1 ;
-     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index 0 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ], [
-     fhir:index 2 ;
-     fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-     fhir:ContactDetail.telecom [
-       fhir:index 0 ;
-       fhir:ContactPoint.system [ fhir:value "email" ] ;
-       fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
-       fhir:ContactPoint.use [ fhir:value "work" ]
      ]
   ] ;
   fhir:ValueSet.description [ fhir:value "IPS Specimen collection method codes value set.  This value set includes codes from SNOMED CT®: all descendants or self of 129316008 \\|Aspiration - action (qualifier value)\\|; all descendants or self of 129314006 \\|Biopsy - action (qualifier value)\\|; all descendants or self of 129300006 \\|Puncture - action (qualifier value)\\|; all descendants or self of 129304002 \\|Excision - action (qualifier value)\\|; all descendants or self of 129323009 \\|Scraping - action (qualifier value)\\|; all descendants or self of 73416001 \\|Urine specimen collection, clean catch (procedure)\\|; all descendants or self of 225113003 \\|Timed urine collection (procedure)\\|; all descendants or self of 70777001 \\|Urine specimen collection, catheterized (procedure)\\|; all descendants or self of 386089008 \\|Collection of coughed sputum (procedure)\\|; all descendants or self of 278450005 \\|Finger-prick sampling (procedure)\\| "] ;

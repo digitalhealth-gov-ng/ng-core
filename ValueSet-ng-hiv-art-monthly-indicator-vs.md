@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-monthly-indicator-vs | *Version*:0.0.0 |
-| Draft as of 2026-07-29 | *Computable Name*:NgHivArtMonthlyIndicatorVS |
+| Active as of 2026-07-29 | *Computable Name*:NgHivArtMonthlyIndicatorVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.35 | |
 
  
@@ -54,7 +54,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "version" : "0.0.0",
   "name" : "NgHivArtMonthlyIndicatorVS",
   "title" : "NG HIV ART Monthly Summary Indicators",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
   "date" : "2026-07-29",
   "publisher" : "NDHI",
@@ -63,26 +63,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "The 24 ART monthly summary indicators.",

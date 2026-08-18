@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-immunization-recommendation | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgImmunizationRecommendation |
+| Active as of 2026-08-18 | *Computable Name*:NgImmunizationRecommendation |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.34 | |
 
  
@@ -47,33 +47,13 @@ Other representations of profile: [CSV](StructureDefinition-ng-immunization-reco
   "name" : "NgImmunizationRecommendation",
   "title" : "NG ImmunizationRecommendation",
   "status" : "active",
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Simple profile to convey due/overdue vaccine recommendations for a Nigerian client.",

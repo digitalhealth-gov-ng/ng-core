@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2026-08-17 |
+| Active as of 2026-08-18 |
 
 [Raw xml](ActorDefinition-NgCoreConformanceSandboxService.xml) | [Download](ActorDefinition-NgCoreConformanceSandboxService.xml)
 

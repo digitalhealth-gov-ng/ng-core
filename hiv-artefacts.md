@@ -82,14 +82,13 @@ These logical models describe the data structures used for longitudinal programm
 | [NG HIV Tracking Register](StructureDefinition-NgHivTrackingRegister.md) | Defines the structure for tracing clients, recording contact attempts, outcomes, DSD information, and discontinuation or defaulting reasons. | Implementations using this programme tool**SHOULD**preserve its mandatory data semantics when mapping to operational FHIR resources; they**SHALL**document any omitted or transformed fields. |
 | [NG HIV Pharmacy Daily Worksheet](StructureDefinition-NgHivPharmacyDailyWorksheet.md) | Defines daily pharmacy activity, medicine movement, regimen and DSD summaries, and HEI prophylaxis information. | Implementations using this programme tool**SHOULD**preserve its mandatory data semantics when mapping to operational FHIR resources; they**SHALL**document any omitted or transformed fields. |
 
-### Measure and MeasureReport (Aggregates) - DRAFT
+### Measure and MeasureReport (Aggregates)
 
 These artefacts define aggregate reporting logic and demonstrate submission of programme and NHMIS reporting results.
 
 | | | |
 | :--- | :--- | :--- |
-| [NHMIS Monthly Outpatient Attendance Measure](Measure-NgMeasure-NHMIS-001.md) | Defines the computable aggregate measure, population criteria, and reporting logic for the published monthly attendance indicator. | Reporting implementations**SHALL**use the published Measure definition for calculation and disaggregation. |
-| [NHMIS Monthly Outpatient Attendance Measure Report](MeasureReport-NgMeasureReport-NHMIS-001.md) | Provides a conformant aggregate result instance for the reporting period and measure. | Submitted aggregate results**SHALL**conform to the published MeasureReport artefact, reference the applicable Measure, and include the reporting period, subject or reporter, status, type, and required groups or populations. |
+| [Example HIV ART Monthly Summary MeasureReport](MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.md) | Provides a conformant aggregate result instance for the reporting period and measure. | Submitted aggregate results**SHALL**conform to the published[NgMeasureReport](StructureDefinition-ng-measure-report.md)artefact, reference[NgMeasure](StructureDefinition-ng-measure.md), and include the reporting period, subject or reporter, status, type, and required groups or populations. |
 
 ### HIV Terminologies
 

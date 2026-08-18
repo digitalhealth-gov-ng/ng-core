@@ -1,10 +1,10 @@
-# Nigeria HIV Local Concepts → LOINC - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV Local Concepts → LOINC - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nigeria HIV Local Concepts → LOINC**
+* **NG HIV Local Concepts → LOINC**
 
-## ConceptMap: Nigeria HIV Local Concepts → LOINC 
+## ConceptMap: NG HIV Local Concepts → LOINC 
 
 | | |
 | :--- | :--- |
@@ -40,26 +40,6 @@ Unidirectional mapping from local HIV-related concepts to LOINC, inferred from t
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Unidirectional mapping from local HIV-related concepts to LOINC, inferred from the supplied bidirectional ConceptMap groups.",

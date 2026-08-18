@@ -1,15 +1,15 @@
-# HIV Follow Up Status ValueSet - Nigeria Core - FHIR Implementation Guide v0.0.0
+# NG HIV Follow Up Status ValueSet - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **HIV Follow Up Status ValueSet**
+* **NG HIV Follow Up Status ValueSet**
 
-## ValueSet: HIV Follow Up Status ValueSet 
+## ValueSet: NG HIV Follow Up Status ValueSet 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-hiv-art-follow-up-status-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivARTFollowUpStatusVS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivARTFollowUpStatusVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.25 | |
 
  
@@ -53,36 +53,16 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   }],
   "version" : "0.0.0",
   "name" : "NgHivARTFollowUpStatusVS",
-  "title" : "HIV Follow Up Status ValueSet",
+  "title" : "NG HIV Follow Up Status ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "FollowUp Status",

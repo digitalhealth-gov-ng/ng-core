@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivEacRegister | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgHivEacRegister |
+| Draft as of 2026-08-18 | *Computable Name*:NgHivEacRegister |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.4 | |
 
  
@@ -46,33 +46,13 @@ Other representations of profile: [CSV](StructureDefinition-NgHivEacRegister.csv
   "name" : "NgHivEacRegister",
   "title" : "NG HIV Enhanced Adherence Counselling Monitoring Register",
   "status" : "draft",
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Logical model for the patient-level Nigeria Enhanced Adherence Counselling\nMonitoring Register. One model instance represents one facility monthly cohort\npage and contains repeatable client entries corresponding to printed columns\nA1 through A24.",

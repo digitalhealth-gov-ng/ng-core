@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-dsd-reason-for-category-change-cs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgHivDSDReasonForCategoryChangeCS |
+| Active as of 2026-08-18 | *Computable Name*:NgHivDSDReasonForCategoryChangeCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.43 | |
 
  
@@ -17,8 +17,7 @@ Code used for indicating the reason for the category change for the DSD assessme
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [Differentiated Service Delivery - Reason For Category Change](ValueSet-ng-hiv-dsd-reason-for-category-change-vs.md)
-* [Nigeria HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md)
+* [NG HIV Local Concepts](ValueSet-ng-hiv-local-concepts.md)
 
 
 
@@ -38,33 +37,13 @@ Code used for indicating the reason for the category change for the DSD assessme
   "title" : "HIV DSD - Reason For Category Change CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Code used for indicating the reason for the category change for the DSD assessment.",

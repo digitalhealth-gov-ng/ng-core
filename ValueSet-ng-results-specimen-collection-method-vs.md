@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-specimen-collection-method-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgResultsSpecimenCollectionMethodVS |
+| Active as of 2026-08-18 | *Computable Name*:NgResultsSpecimenCollectionMethodVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.184 | |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
@@ -60,33 +60,13 @@ IPS Specimen collection method codes value set. This value set includes codes fr
   "title" : "Results Specimen Collection Method - IPS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "IPS Specimen collection method codes value set.  This value set includes codes from SNOMED CT®: all descendants or self of 129316008 \\|Aspiration - action (qualifier value)\\|; all descendants or self of 129314006 \\|Biopsy - action (qualifier value)\\|; all descendants or self of 129300006 \\|Puncture - action (qualifier value)\\|; all descendants or self of 129304002 \\|Excision - action (qualifier value)\\|; all descendants or self of 129323009 \\|Scraping - action (qualifier value)\\|; all descendants or self of 73416001 \\|Urine specimen collection, clean catch (procedure)\\|; all descendants or self of 225113003 \\|Timed urine collection (procedure)\\|; all descendants or self of 70777001 \\|Urine specimen collection, catheterized (procedure)\\|; all descendants or self of 386089008 \\|Collection of coughed sputum (procedure)\\|; all descendants or self of 278450005 \\|Finger-prick sampling (procedure)\\| ",

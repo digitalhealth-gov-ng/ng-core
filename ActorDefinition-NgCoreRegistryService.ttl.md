@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Draft as of 2026-08-17 |
+| Draft as of 2026-08-18 |
 
 [Raw ttl](ActorDefinition-NgCoreRegistryService.ttl) | [Download](ActorDefinition-NgCoreRegistryService.ttl)
 

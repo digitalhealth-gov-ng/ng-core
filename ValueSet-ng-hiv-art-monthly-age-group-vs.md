@@ -13,7 +13,7 @@
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.26 | |
 
  
-Age groups used for ART1–ART4. 
+Age groups used for ART1-ART4. 
 
  **References** 
 
@@ -63,29 +63,9 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
-  "description" : "Age groups used for ART1–ART4.",
+  "description" : "Age groups used for ART1-ART4.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -35,7 +35,7 @@
   ], [
      fhir:index 5 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date" ] ;
-     fhir:Extension.valueDateTime [ fhir:value "2026-08-17T16:10:29+01:00"^^xsd:dateTime ]
+     fhir:Extension.valueDateTime [ fhir:value "2026-08-18T06:18:50+01:00"^^xsd:dateTime ]
   ], [
      fhir:index 6 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher" ] ;
@@ -49,42 +49,14 @@
          fhir:index 0 ;
          fhir:ContactPoint.system [ fhir:value "url" ] ;
          fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
-       ], [
-         fhir:index 1 ;
-         fhir:ContactPoint.system [ fhir:value "email" ] ;
-         fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ]
        ]
      ]
   ], [
      fhir:index 8 ;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact" ] ;
-     fhir:Extension.valueContactDetail [
-       fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-       fhir:ContactDetail.telecom [
-         fhir:index 0 ;
-         fhir:ContactPoint.system [ fhir:value "email" ] ;
-         fhir:ContactPoint.value [ fhir:value "lekeojewale@gmail.com" ] ;
-         fhir:ContactPoint.use [ fhir:value "work" ]
-       ]
-     ]
-  ], [
-     fhir:index 9 ;
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact" ] ;
-     fhir:Extension.valueContactDetail [
-       fhir:ContactDetail.name [ fhir:value "Nigeria Digital in Health Initiative." ] ;
-       fhir:ContactDetail.telecom [
-         fhir:index 0 ;
-         fhir:ContactPoint.system [ fhir:value "email" ] ;
-         fhir:ContactPoint.value [ fhir:value "emeka2015@gmail.com" ] ;
-         fhir:ContactPoint.use [ fhir:value "work" ]
-       ]
-     ]
-  ], [
-     fhir:index 10 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description" ] ;
      fhir:Extension.valueMarkdown [ fhir:value "A **client application or service** that initiates FHIR requests or exchanges\nusing the Nigeria Core specifications." ]
   ], [
-     fhir:index 11 ;
+     fhir:index 9 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction" ] ;
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
@@ -95,15 +67,15 @@
        ]
      ]
   ], [
-     fhir:index 12 ;
+     fhir:index 10 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose" ] ;
      fhir:Extension.valueMarkdown [ fhir:value "Defines the system role responsible for initiating interoperable exchanges with\nNigeria Core conformant services. A deployed system may act as a Requestor,\nResponder, or both, depending on the workflow." ]
   ], [
-     fhir:index 13 ;
+     fhir:index 11 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type" ] ;
      fhir:Extension.valueCode [ fhir:value "system" ]
   ], [
-     fhir:index 14 ;
+     fhir:index 12 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation" ] ;
      fhir:Extension.valueMarkdown [ fhir:value "\n### Role\n\nThe **Nigeria Core Requestor** is an authorised application or service that\ninitiates interactions with a FHIR-enabled service.\n\nExamples include EMR/EHR systems, facility applications, mobile and community\nhealth applications, laboratory, pharmacy and imaging systems, program\nsystems, HIEs, registries, middleware, and reporting applications.\n\n### Responsibilities\n\nA Requestor may:\n\n* retrieve information using supported `read`, `search`, and other interactions;\n* create, update, submit, or exchange FHIR resources and Bundles;\n* invoke supported FHIR operations;\n* query registry and terminology services;\n* submit resources for validation or conformance testing; and\n* process successful responses and `OperationOutcome` results.\n\n### Conformance expectations\n\nA Requestor **SHALL**:\n\n* construct requests conforming to applicable Nigeria Core profiles;\n* provide mandatory and applicable **Must Support** elements;\n* use governed identifiers and terminology where required;\n* preserve required references and relationships;\n* use only interactions and operations supported by the receiving service; and\n* appropriately process FHIR responses and errors.\n\nThe Requestor **SHOULD** inspect the receiving service's\n`CapabilityStatement` before relying on optional capabilities and **SHALL NOT**\nassume that every Responder supports every Nigeria Core resource, operation,\nsearch parameter, or program profile.\n\nApplicable national authentication, authorisation, privacy, consent, audit,\nand secure-exchange requirements **SHALL** be followed.\n\n### Relationships\n\nThe Requestor commonly interacts with the **Nigeria Core Responder, Registry\nService, Terminology Service,** and **Conformance and Sandbox Service**.\n\nA single implementation may perform multiple actor roles." ]
   ] ;

@@ -1,9 +1,9 @@
-# Functional and Non-Functional Requirements - Nigeria Core - FHIR Implementation Guide v0.0.0
+# EMR Functional and Non-Functional Requirements - Nigeria Core - FHIR Implementation Guide v0.0.0
 
 * [**Table of Contents**](toc.md)
-* **Functional and Non-Functional Requirements**
+* **EMR Functional and Non-Functional Requirements**
 
-## Functional and Non-Functional Requirements
+## EMR Functional and Non-Functional Requirements
 
 This page provides a progressive summary of candidate functional and non-functional requirements for digital health systems operating at Primary Health Care (PHC), General Hospital (GH), and Tertiary Hospital (TH) levels. It is intended to guide implementation and procurement while the detailed national requirements, measurable acceptance criteria, and conformance tests are refined and formally approved. Until that process is completed, this page does not by itself create additional normative conformance obligations beyond the published Nigeria Core profiles, terminology bindings, CapabilityStatements, and other explicitly normative artefacts.
 

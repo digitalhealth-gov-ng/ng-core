@@ -30,11 +30,7 @@ A simple NHMIS aggregate measure defining the total number of outpatient attenda
 * Knowledge Artifact Metadata: Measure Steward
   * ?: NDHI
 * Knowledge Artifact Metadata: Steward Contact Details
-  * ?: NDHI:[https://digitalhealth.gov.ng](https://digitalhealth.gov.ng),[emeka2015@gmail.com](mailto:emeka2015@gmail.com)
-* Knowledge Artifact Metadata: Steward Contact Details
-  * ?: Nigeria Digital in Health Initiative.:[lekeojewale@gmail.com](mailto:lekeojewale@gmail.com)
-* Knowledge Artifact Metadata: Steward Contact Details
-  * ?: Nigeria Digital in Health Initiative.:[emeka2015@gmail.com](mailto:emeka2015@gmail.com)
+  * ?: NDHI:[https://digitalhealth.gov.ng](https://digitalhealth.gov.ng)
 * Knowledge Artifact Metadata: Measure Metadata
 * Knowledge Artifact Metadata: Version Number
   * ?: 0.0.0
@@ -75,26 +71,6 @@ A simple NHMIS aggregate measure defining the total number of outpatient attenda
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "A simple NHMIS aggregate measure defining the total number of outpatient\nattendances recorded by a reporting health facility during a monthly\nreporting period.",

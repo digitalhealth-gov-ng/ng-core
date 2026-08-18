@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-hiv-art-monthly-summary-cs | *Version*:0.0.0 |
-| Draft as of 2026-07-29 | *Computable Name*:NgHivArtMonthlySummaryCS |
+| Active as of 2026-07-29 | *Computable Name*:NgHivArtMonthlySummaryCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.20 | |
 
  
@@ -47,7 +47,7 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
   "version" : "0.0.0",
   "name" : "NgHivArtMonthlySummaryCS",
   "title" : "NG HIV ART Monthly Summary Codes",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
   "date" : "2026-07-29",
   "publisher" : "NDHI",
@@ -56,26 +56,6 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Indicator, stratifier-dimension and local disaggregation codes for the Nigeria ART Monthly Summary Form revised November 2025.",
@@ -279,27 +259,27 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
   },
   {
     "code" : "age-1-4",
-    "display" : "1–4 years"
+    "display" : "1-4 years"
   },
   {
     "code" : "age-5-9",
-    "display" : "5–9 years"
+    "display" : "5-9 years"
   },
   {
     "code" : "age-10-14",
-    "display" : "10–14 years"
+    "display" : "10-14 years"
   },
   {
     "code" : "age-15-19",
-    "display" : "15–19 years"
+    "display" : "15-19 years"
   },
   {
     "code" : "age-20-24",
-    "display" : "20–24 years"
+    "display" : "20-24 years"
   },
   {
     "code" : "age-25-49",
-    "display" : "25–49 years"
+    "display" : "25-49 years"
   },
   {
     "code" : "age-50-plus",
@@ -311,7 +291,7 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
   },
   {
     "code" : "age-5-14",
-    "display" : "5–14 years"
+    "display" : "5-14 years"
   },
   {
     "code" : "age-15-plus",
@@ -319,7 +299,7 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
   },
   {
     "code" : "age-10-14-crag",
-    "display" : "10–14 years"
+    "display" : "10-14 years"
   },
   {
     "code" : "age-15-plus-crag",
@@ -327,31 +307,31 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
   },
   {
     "code" : "cervical-age-15-19",
-    "display" : "15–19 years"
+    "display" : "15-19 years"
   },
   {
     "code" : "cervical-age-20-24",
-    "display" : "20–24 years"
+    "display" : "20-24 years"
   },
   {
     "code" : "cervical-age-25-29",
-    "display" : "25–29 years"
+    "display" : "25-29 years"
   },
   {
     "code" : "cervical-age-30-34",
-    "display" : "30–34 years"
+    "display" : "30-34 years"
   },
   {
     "code" : "cervical-age-35-39",
-    "display" : "35–39 years"
+    "display" : "35-39 years"
   },
   {
     "code" : "cervical-age-40-44",
-    "display" : "40–44 years"
+    "display" : "40-44 years"
   },
   {
     "code" : "cervical-age-45-49",
-    "display" : "45–49 years"
+    "display" : "45-49 years"
   },
   {
     "code" : "cervical-age-50-plus",
@@ -363,7 +343,7 @@ Indicator, stratifier-dimension and local disaggregation codes for the Nigeria A
   },
   {
     "code" : "mmd-3-5-months",
-    "display" : "3–5 months"
+    "display" : "3-5 months"
   },
   {
     "code" : "mmd-6-plus-months",

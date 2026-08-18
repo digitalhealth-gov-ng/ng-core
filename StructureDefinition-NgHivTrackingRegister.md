@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgHivTrackingRegister | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgHivTrackingRegister |
+| Draft as of 2026-08-18 | *Computable Name*:NgHivTrackingRegister |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.7 | |
 
  
@@ -46,33 +46,13 @@ Other representations of profile: [CSV](StructureDefinition-NgHivTrackingRegiste
   "name" : "NgHivTrackingRegister",
   "title" : "NG HIV Tracking Register",
   "status" : "draft",
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Logical model for the Nigeria HIV Tracking Register. One instance represents\none facility monthly tracking page and contains repeatable client entries for\ncurrent ART clients who missed a scheduled clinic appointment. The printed\nregister instructs facilities to enter eligible clients within 24 hours of\ndefault.",

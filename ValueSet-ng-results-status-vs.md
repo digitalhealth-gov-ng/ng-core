@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-results-status-vs | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgResultsStatusVS |
+| Active as of 2026-08-18 | *Computable Name*:NgResultsStatusVS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.48.186 | |
 | **Copyright/Legal**: Produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions. | |
 
@@ -60,33 +60,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Results Status Codes - IPS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "IPS Observation status codes allowable for results.  This value set includes all observation status codes except \\\"entered-in-error\\\" from http://hl7.org/fhir/observation-status.",

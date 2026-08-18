@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-vaccine-local | *Version*:0.0.0 |
-| Active as of 2026-08-17 | *Computable Name*:NgVaccineLocalCS |
+| Active as of 2026-08-18 | *Computable Name*:NgVaccineLocalCS |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.16.109 | |
 
  
@@ -37,33 +37,13 @@ Locally defined vaccine codes used for data capture and UI labels. Doses are loc
   "title" : "NG IMMZ.D.DE4 Vaccine Local Codes (Dose-labelled)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "Locally defined vaccine codes used for data capture and UI labels. Doses are local; external systems map at antigen/product level.",

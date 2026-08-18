@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-medication-dispense | *Version*:0.0.0 |
-| Draft as of 2026-08-17 | *Computable Name*:NgMedicationDispense |
+| Draft as of 2026-08-18 | *Computable Name*:NgMedicationDispense |
 | *Other Identifiers:*OID:2.16.840.1.113884.3.9944.1.42.43 | |
 
  
@@ -48,33 +48,13 @@ Other representations of profile: [CSV](StructureDefinition-ng-medication-dispen
   "name" : "NgMedicationDispense",
   "title" : "NG MedicationDispense",
   "status" : "draft",
-  "date" : "2026-08-17T16:10:29+01:00",
+  "date" : "2026-08-18T06:18:50+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",
     "telecom" : [{
       "system" : "url",
       "value" : "https://digitalhealth.gov.ng"
-    },
-    {
-      "system" : "email",
-      "value" : "emeka2015@gmail.com"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "lekeojewale@gmail.com",
-      "use" : "work"
-    }]
-  },
-  {
-    "name" : "Nigeria Digital in Health Initiative.",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "emeka2015@gmail.com",
-      "use" : "work"
     }]
   }],
   "description" : "MedicationDispense profile for ePharmacy.",
