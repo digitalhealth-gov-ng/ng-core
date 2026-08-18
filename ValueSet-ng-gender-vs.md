@@ -17,11 +17,17 @@ A subset of the administrative gender codes including only 'male' and 'female'
 
  **References** 
 
+* [NG DR-TB Treatment Register](StructureDefinition-NgDRTBTreatmentRegister.md)
 * [NG HIV National ART Register](StructureDefinition-NgHivArtRegister.md)
 * [NG HIV Enhanced Adherence Counselling Monitoring Register](StructureDefinition-NgHivEacRegister.md)
 * [NG HIV Integrated Laboratory Monitoring Register](StructureDefinition-NgHivIntLabMonitoringRegister.md)
 * [NG HIV Pharmacy Daily Worksheet](StructureDefinition-NgHivPharmacyDailyWorksheet.md)
 * [NG HIV Tracking Register](StructureDefinition-NgHivTrackingRegister.md)
+* [NG LGA/Health Facility Tuberculosis Central Register](StructureDefinition-NgTBCentralRegister.md)
+* [NG TB Community and Facility Referral Register](StructureDefinition-NgTBCommunityFacilityReferralRegister.md)
+* [NG TB Facility Contact Management Register](StructureDefinition-NgTBFacilityContactManagementRegister.md)
+* [NG TB Laboratory Register](StructureDefinition-NgTBLaboratoryRegister.md)
+* [NG TB Presumptive Register](StructureDefinition-NgTBPresumptiveRegister.md)
 * [NG Patient](StructureDefinition-ng-patient.md)
 * [NG RelatedPerson](StructureDefinition-ng-related-person.md)
 * [NG HIV Enhanced Adherence Counselling Form Questionnaire](Questionnaire-ng-hiv-eac-form-questionnaire.md)
@@ -67,7 +73,7 @@ A subset of the administrative gender codes including only 'male' and 'female'
   "title" : "NG Gender or Sex VS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

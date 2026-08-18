@@ -146,7 +146,7 @@
       <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
       <li><a href="artifacts.html">All FHIR Artefacts</a></li>
       <li><a href="ng-ps.html">NG Patient Summary</a></li>
-      <li><a href="">TB</a></li>
+      <li><a href="tb-artefacts.html">TB</a></li>
       <li><a href="">Malaria</a></li>
       <li><a href="">MNCH</a></li>
       <li><a href="">Community Health</a></li>
@@ -547,6 +547,23 @@ the DocumentReference on which the operation is invoked.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.html"
+                  title="Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy">NG TB Quarterly DOTS and Microscopy Centre Measure</a>
+            </td>
+            <td>
+<p>Defines the aggregate reporting variables in the NTBLCP/TB 18 Quarterly
+Report on Newly Established DOTS and Microscopy Centres.</p>
+
+<p>The Measure represents reporting population, newly established DOTS and
+AFB microscopy centres, cumulative centre counts at the beginning and end
+of the quarter, and population-to-centre coverage ratios.</p>
+
+<p>Detailed centre listings in Blocks 1 and 2 are reduced to aggregate counts
+and stratified by centre type for MeasureReport reporting.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Measure-NgMeasure-NHMIS-001.html"
                   title="Measure/NgMeasure-NHMIS-001">NHMIS Monthly Outpatient Attendance Measure</a>
             </td>
@@ -564,6 +581,20 @@ reporting period.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgDRTBTreatmentRegister.html"
+                  title="StructureDefinition/NgDRTBTreatmentRegister">NG DR-TB Treatment Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme DR-TB Treatment Register. One model instance represents a DR-TB
+treatment register and contains repeatable patient entries covering
+registration, treatment initiation, diagnosis and baseline investigations,
+longitudinal bacteriological follow-up, TB/HIV activities and treatment
+outcomes.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-NgHivEacRegister.html"
@@ -624,6 +655,90 @@ register instructs facilities to enter eligible clients within 24 hours of
 default.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgTBCentralRegister.html"
+                  title="StructureDefinition/NgTBCentralRegister">NG LGA/Health Facility Tuberculosis Central Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 08 Local Government Area/Health Facility Tuberculosis
+Central Register. One model instance represents a TB central register and
+contains repeatable patient entries covering registration, treatment
+initiation, disease classification, referral, bacteriological monitoring,
+treatment outcome and TB/HIV activities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgTBCommunityFacilityReferralRegister.html"
+                  title="StructureDefinition/NgTBCommunityFacilityReferralRegister">NG TB Community and Facility Referral Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme Tuberculosis Referral Register for Community and Facility.
+One model instance represents one site-level monthly referral register
+and contains repeatable client entries covering demographics, referral
+date and reason, receiving facility, confirmation of TB, treatment
+initiation and remarks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgTBFacilityContactManagementRegister.html"
+                  title="StructureDefinition/NgTBFacilityContactManagementRegister">NG TB Facility Contact Management Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 09 Facility Tuberculosis Contact Management Register.
+One model instance represents a facility contact-management register and
+contains repeatable index TB cases, each with one or more contacts followed
+through contact screening, TB investigation, diagnosis and treatment,
+eligibility for TB preventive therapy, TPT initiation, monthly drug
+collection and final preventive-therapy outcome.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgTBLaboratoryRegister.html"
+                  title="StructureDefinition/NgTBLaboratoryRegister">NG TB Laboratory Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 04 TB Laboratory Register for Xpert MTB/RIF assay,
+AFB microscopy and other TB diagnostic tests. One model instance represents
+a laboratory register and contains repeatable laboratory entries corresponding
+to individual patient/specimen rows in the source register.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgTBPresumptiveRegister.html"
+                  title="StructureDefinition/NgTBPresumptiveRegister">NG TB Presumptive Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 01 Presumptive TB Register for drug-susceptible and
+drug-resistant tuberculosis. One model instance represents one facility
+register reporting period and contains repeatable client entries covering
+registration, presumptive-TB classification, referral source, specimen
+processing, diagnostic investigations, HIV activities, investigation outcome
+and linkage to TB treatment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NgTBSpecimenShipmentRegister.html"
+                  title="StructureDefinition/NgTBSpecimenShipmentRegister">NG TB Specimen Shipment Register</a>
+            </td>
+            <td>
+<p>Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019. One model
+instance represents one specimen shipment from a facility or treatment unit
+to a laboratory and contains repeatable specimen entries together with
+shipping, receipt, transport-condition and acknowledgement information.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="6"> </a>
@@ -632,6 +747,22 @@ default.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-drtb-patient-discharge-questionnaire.html"
+                  title="Questionnaire/ng-drtb-patient-discharge-questionnaire">NG DR-TB Patient Discharge Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/DR-TB 06 DR-TB In-Patient Discharge Form.
+It captures treatment-centre information, patient demographics and contact
+information, admission and discharge information, DR-TB registration and
+treatment initiation, comorbidities, treatment received during admission,
+adverse reactions, the regimen to be continued following discharge,
+medication supply at discharge, receiving facility and programme contacts,
+and responsible treatment-centre clinical personnel.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Questionnaire-ng-hiv-care-art-questionnaire.html"
@@ -756,6 +887,122 @@ immunization.</p>
             <td>
 <p>Questionnaire for updating demographic, contact and relevant clinical
 information in an immunization client record.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-community-facility-referral-questionnaire.html"
+                  title="Questionnaire/ng-tb-community-facility-referral-questionnaire">NG TB Community and Facility Referral Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 12 Tuberculosis Referral Form for
+Community and Facility. It captures client identification and contact
+information, the referring site and referral agent, reason for referral,
+receiving facility information, arrival at the receiving facility, and
+referral outcomes including confirmation of TB diagnosis and initiation
+of treatment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire.html"
+                  title="Questionnaire/ng-tb-index-patient-contact-investigation-questionnaire">NG TB Index Patient Contact Investigation Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 10 TB Index Patient Contact Investigation
+Form. It captures contact-investigator information, index TB case information,
+consent for contact tracing, household contacts, TB symptom screening and the
+outcomes and actions arising from contact investigation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-patient-referral-transfer-questionnaire.html"
+                  title="Questionnaire/ng-tb-patient-referral-transfer-questionnaire">NG TB Patient Referral/Transfer Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/DR-TB 02 TB Patient Referral/Transfer Form.
+It captures patient identification, referral or transfer classification,
+referring and receiving facilities, TB patient classification, reason for
+referral, available laboratory results, HIV status, current TB and HIV
+medications, relevant clinical information, appointment arrangements and
+acknowledgement of enrolment by the receiving TB centre.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-patient-treatment-card-questionnaire.html"
+                  title="Questionnaire/ng-tb-patient-treatment-card-questionnaire">NG TB Patient Treatment Card Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 05 Tuberculosis Patient Treatment Card.
+It captures patient identification, disease classification, previous TB
+treatment history, household contacts, referral source, diagnostic results,
+HIV status and services, treatment monitoring, prescribed TB regimen,
+longitudinal treatment-adherence records, treatment-supporter information
+and final treatment outcome.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-preventive-therapy-questionnaire.html"
+                  title="Questionnaire/ng-tb-preventive-therapy-questionnaire">NG TB Preventive Therapy Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 11 TB Preventive Therapy Card. It
+captures client or contact identification, reason for TB preventive therapy,
+index TB patient information where applicable, client weight, prescribed
+preventive-therapy regimen and dosage, longitudinal drug collection records,
+and final TPT outcome.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-specimen-examination-request-questionnaire.html"
+                  title="Questionnaire/ng-tb-specimen-examination-request-questionnaire">NG TB Specimen Examination Request Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 02A Specimen Examination Request Form.
+It captures patient identification and demographics, presumptive TB
+classification, disease site, HIV status, reason for examination,
+laboratory tests requested, specimen information, requesting health worker
+details and requesting facility information.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-specimen-examination-result-questionnaire.html"
+                  title="Questionnaire/ng-tb-specimen-examination-result-questionnaire">NG TB Specimen Examination Result Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 02B Specimen Examination Result Form,
+Version 2, 2019. It captures patient and specimen identification, requesting
+facility information, laboratory identification, Xpert MTB/RIF results,
+other diagnostic-test results, AFB smear microscopy, culture results,
+LPA and drug-susceptibility testing, HIV test result, laboratory remarks,
+and result verification and release information.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire.html"
+                  title="Questionnaire/ng-tb-treatment-interruption-tracking-questionnaire">NG TB Treatment Interruption Tracking Questionnaire</a>
+            </td>
+            <td>
+<p>Computable Questionnaire representing the Nigeria National Tuberculosis and
+Leprosy Control Programme NTBLCP/TB 14 Treatment Interruption Tracking Form.
+It captures the patient's programme and contact information and records
+sequential attempts to trace a patient following treatment interruption,
+including the tracking method, date of tracking, date of last drug intake,
+whether the patient was contacted, reason for absence, proposed solution,
+tracking outcome and the person conducting the tracing.</p>
 </td>
          </tr>
          <tr>
@@ -1318,6 +1565,17 @@ this profile.</p>
             </td>
             <td>
 <p>This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ng-tb-questionnaire.html"
+                  title="StructureDefinition/ng-tb-questionnaire">NG TB Questionnaire</a>
+            </td>
+            <td>
+<p>A Nigeria Core profile of the FHIR Questionnaire resource used to represent
+structured TB program forms, assessments, counselling forms, and clinical
+data collection instruments.</p>
 </td>
          </tr>
          <tr>
@@ -3735,6 +3993,17 @@ category, ingredient combination and preprinted strength.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-ng-tb-quarterly-centre-report-cs.html"
+                  title="CodeSystem/ng-tb-quarterly-centre-report-cs">NG TB Quarterly DOTS and Microscopy Centre Reporting Codes</a>
+            </td>
+            <td>
+<p>Codes used to represent the reporting variables and centre-type
+stratification in the NTBLCP/TB 18 Quarterly Report on Newly Established
+DOTS and Microscopy Centres.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-ng-immunization-contraindication-cs.html"
                   title="CodeSystem/ng-immunization-contraindication-cs">NG Vaccine contraindications CS</a>
             </td>
@@ -4605,6 +4874,15 @@ with a confirmed allergy to neomycin.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgDRTBPatientDischargeQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/NgDRTBPatientDischargeQuestionnaireResponseExample">NG DR-TB Patient Discharge QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional DR-TB inpatient discharge response including adverse-reaction history and continuation regimen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.html"
                   title="MeasureReport/NgMeasureReport-HIV-ART-Monthly-001">NG HIV ART Monthly Summary MeasureReport - July 2026 Example</a>
             </td>
@@ -4682,6 +4960,100 @@ with a confirmed allergy to neomycin.</p>
             </td>
             <td>
 <p>Fictional completed adult ART pharmacy order with OI prophylaxis, 3HP, workflow sign-off and a prescribing-quantity error corrected before dispensing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBComsFacilityRefQxResponseExample.html"
+                  title="QuestionnaireResponse/NgTBComsFacilityRefQxResponseExample">NG TB Community and Facility Referral QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional closed-loop community-to-facility TB referral with diagnostic and treatment outcome.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBIndexPatientContactInvestigationQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/NgTBIndexPatientContactInvestigationQuestionnaireResponseExample">NG TB Index Patient Contact Investigation QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional contact-investigation response with three household contacts and different screening outcomes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBPatientReferralTransferQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/NgTBPatientReferralTransferQuestionnaireResponseExample">NG TB Patient Referral/Transfer QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional completed DR-TB referral/transfer response including receiving-centre acknowledgement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBTreatmQxResponseExample.html"
+                  title="QuestionnaireResponse/NgTBTreatmQxResponseExample">NG TB Patient Treatment Card QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional longitudinal TB treatment-card response with diagnostic results, treatment monitoring, adherence records and outcome.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBPreventiveTherapyQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/NgTBPreventiveTherapyQuestionnaireResponseExample">NG TB Preventive Therapy QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional TPT-card response for a household contact receiving isoniazid preventive therapy with repeated drug collections.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MeasureReport-NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001.html"
+                  title="MeasureReport/NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001">NG TB Quarterly DOTS and Microscopy Centre MeasureReport Example</a>
+            </td>
+            <td>
+<p>Synthetic Quarter 2, 2026 example of the NTBLCP/TB 18 quarterly report.
+The example demonstrates aggregate counts, centre-type stratification,
+cumulative centre totals and population-to-centre ratios.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBSpecimenExamQxResponseExample.html"
+                  title="QuestionnaireResponse/NgTBSpecimenExamQxResponseExample">NG TB Specimen Examination Request Follow-up QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional NTBLCP/TB 02A follow-up specimen request demonstrating the conditional follow-up month.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBSpecimenExamRxQuestionnaireResponse.html"
+                  title="QuestionnaireResponse/NgTBSpecimenExamRxQuestionnaireResponse">NG TB Specimen Examination Request Questionnaire Response Example</a>
+            </td>
+            <td>
+<p>Fictional completed NTBLCP/TB 02A specimen examination request for a patient
+with presumptive pulmonary drug-sensitive TB. Xpert/MTB/RIF and smear for
+AFB are requested on two sputum specimens.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg.html"
+                  title="QuestionnaireResponse/NgTBSpecimenExRxQxResponseEg">NG TB Specimen Examination Request QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional completed NTBLCP/TB 02A specimen examination request for a patient undergoing TB diagnosis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample.html"
+                  title="QuestionnaireResponse/NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample">NG TB Treatment Interruption Tracking QuestionnaireResponse Example</a>
+            </td>
+            <td>
+<p>Fictional TB treatment-interruption tracing response showing three successive tracking attempts.</p>
 </td>
          </tr>
          <tr>
@@ -4948,7 +5320,7 @@ encounter in Ondo State.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 06:18+0100">2026-08-18</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 15:57+0100">2026-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

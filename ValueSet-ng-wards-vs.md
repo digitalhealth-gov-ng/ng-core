@@ -17,6 +17,7 @@ The administrative Ward (within an LGA) where a person or a facility is.
 
  **References** 
 
+* [NG TB Community and Facility Referral Register](StructureDefinition-NgTBCommunityFacilityReferralRegister.md)
 * [NG Administrative Wards](StructureDefinition-ng-administrative-ward.md)
 * [NG Immunization Client Registration Form](Questionnaire-ng-imm-client-registration-form.md)
 * [NG Immunization Facility Registration Form](Questionnaire-ng-imm-facility-registration-form.md)
@@ -59,7 +60,7 @@ The administrative Ward (within an LGA) where a person or a facility is.
   "title" : "NG Wards VS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

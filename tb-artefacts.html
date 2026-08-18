@@ -146,7 +146,7 @@
       <li><a href="artifacts.html#terminology-value-sets">Terminologies</a></li>
       <li><a href="artifacts.html">All FHIR Artefacts</a></li>
       <li><a href="ng-ps.html">NG Patient Summary</a></li>
-      <li><a href="">TB</a></li>
+      <li><a href="tb-artefacts.html">TB</a></li>
       <li><a href="">Malaria</a></li>
       <li><a href="">MNCH</a></li>
       <li><a href="">Community Health</a></li>
@@ -226,9 +226,365 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+
 </div>
+<p>This page provides a consolidated catalogue of the FHIR artefacts developed for the Nigeria Tuberculosis (TB) programme. It brings together foundational and clinical profiles, structured programme forms, completed form examples, programme registers, laboratory and specimen workflows, referral and contact-management artefacts, and aggregate reporting artefacts. Links are relative to the Implementation Guide and open the corresponding rendered FHIR artefact pages.</p>
+
+<p><strong>### Conformance Requirements</strong></p>
+
+<p>The keywords <strong>SHALL</strong>, <strong>SHALL NOT</strong>, <strong>SHOULD</strong>, <strong>SHOULD NOT</strong>, and <strong>MAY</strong> are normative and indicate the degree of conformance required by this guide already defined in <a href="general.html">Conformance/General Requirements</a>.</p>
+
+<p><strong>### Foundational Resources</strong></p>
+
+<p>These Nigeria Core profiles provide the patient, workforce, organisation, location, relationship, and encounter context required by TB programme artefacts.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-patient.html">NG Patient</a></td>
+      <td>Represents the person receiving TB screening, diagnosis, treatment, preventive therapy, laboratory, referral, transfer, contact investigation, or follow-up services.</td>
+      <td>Systems exchanging patient-level TB data <strong>SHALL</strong> use this profile and populate all mandatory and Must Support elements relevant to the workflow.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-practitioner.html">NG Practitioner</a></td>
+      <td>Identifies clinicians, TB programme officers, laboratory personnel, community workers, treatment supporters, and other health workers participating in TB services.</td>
+      <td>Systems recording an individual health worker <strong>SHALL</strong> use this profile and preserve the practitioner's identifiers and professional details where available.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a></td>
+      <td>Represents the role, specialty, organisation, and service context in which a practitioner delivers TB services.</td>
+      <td>Systems that exchange the practitioner's operational role <strong>SHALL</strong> use this profile and reference the associated Practitioner and Organization.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-related-person.html">NG RelatedPerson</a></td>
+      <td>Represents treatment supporters, caregivers, household contacts, guardians, and other persons related to a TB client.</td>
+      <td>Systems exchanging related-person information <strong>SHALL</strong> use this profile and <strong>SHALL</strong> limit disclosure to the authorised care or programme purpose.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-organization.html">NG Organization</a></td>
+      <td>Identifies DOTS facilities, treatment centres, laboratories, referral sites, microscopy centres, community-linked providers, and other organisations involved in TB services.</td>
+      <td>Systems <strong>SHALL</strong> use this profile for participating organisations and <strong>SHALL</strong> use nationally governed identifiers where available.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-location.html">NG Location</a></td>
+      <td>Represents the physical or service-delivery location where TB screening, treatment, specimen collection, laboratory, referral, or follow-up activities occur.</td>
+      <td>Systems exchanging location information <strong>SHALL</strong> use this profile and reference the responsible Organization where applicable.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-encounter.html">NG Encounter</a></td>
+      <td>Provides the care-contact context for TB assessment, treatment, counselling, laboratory, preventive therapy, referral, transfer, and follow-up activities.</td>
+      <td>Clinical TB resources associated with a visit <strong>SHOULD</strong> reference a conformant encounter, and systems <strong>SHALL</strong> preserve encounter status, class, period, patient, and service location.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### TB Clinical Resources</strong></p>
+
+<p>These Nigeria Core clinical profiles support extraction, persistence, exchange, and reuse of structured data collected through TB programme forms, registers, laboratory processes, referral workflows, and treatment monitoring.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-condition.html">NG Condition</a></td>
+      <td>Represents confirmed or presumptive TB disease, drug-sensitive TB, drug-resistant TB, extrapulmonary TB, comorbidities, and other clinically relevant diagnoses.</td>
+      <td>Systems exchanging TB diagnoses or problem-list entries <strong>SHALL</strong> use this profile and apply the terminology binding defined for the coded condition.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-observation.html">NG Observation</a></td>
+      <td>Represents Xpert MTB/RIF, AFB smear, culture, HIV, weight, treatment monitoring, contact-screening findings, and other observed data.</td>
+      <td>Systems exchanging observations <strong>SHALL</strong> use the applicable Nigeria Core Observation profile, preserve status and effective time, and use required codes and UCUM units where specified.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-service-request.html">NG ServiceRequest</a></td>
+      <td>Represents requests for Xpert MTB/RIF, AFB smear, culture, LPA, DST, other TB laboratory tests, referrals, and related services.</td>
+      <td>Systems creating or receiving TB service orders <strong>SHALL</strong> use this profile and populate the patient, requester, requested service, status, intent, and supporting context.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-specimen.html">NG Specimen</a></td>
+      <td>Represents sputum and other specimens collected for Xpert MTB/RIF, AFB microscopy, culture, LPA, DST, TB-LAMP, LF-LAM, Quantiferon, and related testing.</td>
+      <td>Laboratory and specimen-shipment workflows <strong>SHALL</strong> use this profile when specimen identity, type, collection, handling, transport, or traceability is exchanged.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-diagnostic-report.html">NG DiagnosticReport</a></td>
+      <td>Groups and communicates authorised TB laboratory and diagnostic results and interpretations.</td>
+      <td>Systems issuing TB diagnostic reports <strong>SHALL</strong> use this profile, reference the relevant ServiceRequest, Specimen, and Observation resources where available, and preserve report status.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-medication-request.html">NG MedicationRequest</a></td>
+      <td>Represents prescribed TB treatment, DR-TB regimens, TB preventive therapy, ART, CPT, and related medicines where relevant to TB care.</td>
+      <td>Prescribing systems <strong>SHALL</strong> use this profile, identify the patient and prescriber, and use the applicable medication terminology and dosage instructions.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-medication-statement.html">NG MedicationStatement</a></td>
+      <td>Represents medicines reported as currently or previously taken by the client, including previous TB treatment, second-line drugs, ART, and preventive therapy.</td>
+      <td>Systems exchanging medication history <strong>SHALL</strong> use this profile and distinguish reported use from an active prescription or dispensing event.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-allergy-intolerance.html">NG AllergyIntolerance</a></td>
+      <td>Represents allergies, intolerances, and adverse reactions relevant to TB treatment choices.</td>
+      <td>Systems exchanging allergy or intolerance information <strong>SHALL</strong> use this profile and preserve verification status, clinical status, substance, and reaction details where known.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-procedure.html">NG Procedure</a></td>
+      <td>Represents completed TB-related procedures and interventions not adequately represented as observations or medication events.</td>
+      <td>Systems claiming Procedure support <strong>SHALL</strong> use this profile and record patient, status, performed time, performer, and coded procedure where applicable.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-task.html">NG Task</a></td>
+      <td>Coordinates TB referral, specimen movement, contact investigation, treatment interruption tracing, transfer, follow-up, and other workflow assignments.</td>
+      <td>Workflow systems <strong>SHALL</strong> use this profile when exchanging actionable work and <strong>SHALL</strong> preserve task status, intent, owner, focus, and business identifiers.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### Questionnaire (Forms)</strong></p>
+
+<p>These Questionnaire artefacts support structured collection of TB specimen requests and results, patient treatment, referral and transfer, DR-TB discharge, treatment-interruption tracking, community-to-facility referral, index-patient contact investigation, and TB preventive therapy information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-specimen-examination-request-questionnaire.html">NG TB Specimen Examination Request Questionnaire</a></td>
+      <td>Captures patient identification, presumptive TB classification, disease site, HIV status, examination reason, requested laboratory tests, specimen information, requester details, and requesting facility.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-specimen-examination-result-questionnaire.html">NG TB Specimen Examination Result Questionnaire</a></td>
+      <td>Captures laboratory identification, Xpert MTB/RIF results, AFB smear microscopy, culture, LPA/DST, other diagnostic results, HIV test results, remarks, and result release.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-patient-treatment-card-questionnaire.html">NG TB Patient Treatment Card Questionnaire</a></td>
+      <td>Captures patient registration, disease classification, referral source, diagnostic results, HIV services, treatment monitoring, treatment regimen, adherence, treatment supporter details, and treatment outcome.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-patient-referral-transfer-questionnaire.html">NG TB Patient Referral/Transfer Questionnaire</a></td>
+      <td>Captures patient referral or transfer, referring and receiving facilities, patient classification, laboratory results, HIV status, current medications, clinical information, appointments, and enrolment acknowledgement.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-drtb-patient-discharge-questionnaire.html">NG DR-TB Patient Discharge Questionnaire</a></td>
+      <td>Captures DR-TB inpatient discharge information, treatment centre, patient information, admission and discharge, regimen history, adverse reactions, post-discharge treatment, destination facility, and programme contacts.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire.html">NG TB Treatment Interruption Tracking Questionnaire</a></td>
+      <td>Captures repeated tracing attempts for a patient with interrupted TB treatment, including tracking mode, dates, contact outcome, reason for absence, solution, outcome, and tracker.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-community-facility-referral-questionnaire.html">NG TB Community and Facility Referral Questionnaire</a></td>
+      <td>Captures community or facility referral, reason and source of referral, receiving facility information, client arrival, diagnosis outcome, and treatment initiation.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire.html">NG TB Index Patient Contact Investigation Questionnaire</a></td>
+      <td>Captures contact investigator information, index TB case, household contacts, symptom screening, presumptive TB identification, referral, specimen collection, and diagnosis.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-ng-tb-preventive-therapy-questionnaire.html">NG TB Preventive Therapy Questionnaire</a></td>
+      <td>Captures TPT client/contact information, reason for preventive therapy, index patient, regimen and dosage, drug collection, and final TPT outcome.</td>
+      <td>Implementations claiming support <strong>SHALL</strong> use the published canonical Questionnaire, preserve <code class="language-plaintext highlighter-rouge">linkId</code>, item type, required items, repeats, enablement rules, and answer bindings.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### QuestionnaireResponse (Example Forms)</strong></p>
+
+<p>The following QuestionnaireResponse examples demonstrate how completed TB programme forms can be represented and exchanged using FHIR.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBComsFacilityRefQxResponseExample.html">NG TB Community and Facility Referral QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed community-to-facility TB referral and receiving-facility outcome.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBIndexPatientContactInvestigationQuestionnaireResponseExample.html">NG TB Index Patient Contact Investigation QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed index-patient contact investigation with contact screening and investigation outcomes.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBPatientReferralTransferQuestionnaireResponseExample.html">NG TB Patient Referral/Transfer QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed referral/transfer form and acknowledgement of enrolment at the receiving centre.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBTreatmQxResponseExample.html">NG TB Patient Treatment Card QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed TB patient treatment card with treatment and monitoring information.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBPreventiveTherapyQuestionnaireResponseExample.html">NG TB Preventive Therapy QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed TPT card including regimen, drug collection, and outcome.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBSpecimenExamQxResponseExample.html">NG TB Specimen Examination QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed TB specimen examination form.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBSpecimenExamRxQuestionnaireResponse.html">NG TB Specimen Examination Request QuestionnaireResponse</a></td>
+      <td>Illustrates a completed NTBLCP/TB 02A specimen examination request.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg.html">NG TB Specimen Examination Result QuestionnaireResponse Example</a></td>
+      <td>Illustrates a completed specimen examination result with laboratory results and release information.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample.html">NG TB Treatment Interruption Tracking QuestionnaireResponse Example</a></td>
+      <td>Illustrates repeated tracing attempts for a patient who interrupted TB treatment.</td>
+      <td>This is an example instance. Implementers <strong>SHOULD</strong> use it for testing and guidance, <strong>SHALL</strong> ensure response items match the referenced Questionnaire, and <strong>SHALL NOT</strong> reuse example identifiers for real clients.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### Logical Models (Registers)</strong></p>
+
+<p>These logical models describe the programme-oriented structures used for TB registration, longitudinal treatment monitoring, presumptive-TB investigation, laboratory operations, specimen transport, community referral, and contact management.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-NgTBCentralRegister.html">NG LGA/Health Facility Tuberculosis Central Register</a></td>
+      <td>Defines the longitudinal central register for TB registration, treatment initiation, patient classification, bacteriological monitoring, treatment outcome, and TB/HIV activities.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgDRTBTreatmentRegister.html">NG DR-TB Treatment Register</a></td>
+      <td>Defines the longitudinal register for DR-TB registration, treatment regimen, baseline investigations, drug-susceptibility testing, monthly follow-up, TB/HIV activities, and treatment outcome.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgTBPresumptiveRegister.html">NG TB Presumptive Register</a></td>
+      <td>Defines the register for presumptive DS-TB/DR-TB clients, referral source, specimen processing, investigations, HIV activities, investigation outcomes, and linkage to treatment.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgTBLaboratoryRegister.html">NG TB Laboratory Register</a></td>
+      <td>Defines the TB laboratory register for specimen acceptance, patient and referral data, Xpert MTB/RIF, AFB, other tests, HIV status, result release, and reporting.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve its mandatory data semantics when mapping to operational FHIR resources; they <strong>SHALL</strong> document any omitted or transformed fields.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgTBSpecimenShipmentRegister.html">NG TB Specimen Shipment Register</a></td>
+      <td>Defines specimen consignments from originating facilities to laboratories, including specimen entries, shipment officer, arrival, receiving personnel, temperature, and receipt remarks.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve shipment identity and specimen traceability when mapping to Specimen, Organization, PractitionerRole, Task, or related operational resources.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgTBCommunityFacilityReferralRegister.html">NG TB Community and Facility Referral Register</a></td>
+      <td>Defines the site-level monthly register for client referral, receiving facility, TB confirmation, treatment initiation, and referral remarks.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve the referral cascade and receiving-facility outcome when mapping to operational FHIR resources.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-NgTBFacilityContactManagementRegister.html">NG TB Facility Contact Management Register</a></td>
+      <td>Defines the index-patient-to-contact structure for screening, presumptive TB identification, diagnosis, treatment linkage, TPT eligibility, TPT initiation, monthly drug collection, and TPT outcome.</td>
+      <td>Implementations using this programme tool <strong>SHOULD</strong> preserve the relationship between each index case and its contacts and <strong>SHALL</strong> document any transformation that flattens or separates this relationship.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### Measure and MeasureReport (Aggregates)</strong></p>
+
+<p>These artefacts define aggregate TB reporting logic and support submission of programme reporting results.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.html">NG TB Quarterly DOTS and Microscopy Centre Measure</a></td>
+      <td>Defines the aggregate reporting contract for the NTBLCP/TB 18 Quarterly Report on Newly Established DOTS and Microscopy Centres, including reporting population, newly established centres, cumulative centre counts, and population coverage measures.</td>
+      <td>Aggregate reporting systems <strong>SHALL</strong> use the published Measure canonical and preserve the defined group and stratifier codes when producing corresponding MeasureReport instances.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### Exchange Documents</strong></p>
+
+<p>These artefacts support document-based exchange and traceability of TB information between authorised facilities, laboratories, treatment centres, community programmes, repositories, and health information exchanges.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artefact</th>
+      <th>Purpose</th>
+      <th>Conformance expectation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ng-documents.html">NG Documents</a></td>
+      <td>Represents TB clinical documents, referral and transfer forms, discharge summaries, laboratory reports, specimen shipment documents, treatment records, and other document references exchanged between authorised systems.</td>
+      <td>Systems exchanging TB documents <strong>SHALL</strong> use this profile, identify the patient and custodian, provide appropriate content metadata, and protect document confidentiality and integrity.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ng-provenance.html">NG Provenance</a></td>
+      <td>Records the origin, authorship, transformation, submission, and responsible agents for exchanged TB data and documents.</td>
+      <td>Systems creating, transforming, or submitting TB exchange content <strong>SHOULD</strong> provide a conformant Provenance resource; regulated or signed exchanges <strong>SHALL</strong> include it where required by the workflow.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="grid"><strong>### Implementation Guidance</strong></p>
+
+<p>Implementers should use the Questionnaire artefacts to create interoperable electronic TB programme forms and corresponding QuestionnaireResponse resources to represent completed submissions. QuestionnaireResponse items <strong>SHALL</strong> preserve the hierarchy, <code class="language-plaintext highlighter-rouge">linkId</code>, datatype, repetition, and conditional structure of the referenced Questionnaire. Where structured clinical reuse is required, response content should be extracted or mapped to the applicable foundational and clinical profiles.</p>
+
+<p>Logical models provide programme-oriented definitions for national registers and should be mapped to appropriate clinical, administrative, laboratory, specimen, medication, workflow, and reporting FHIR resources. Fixed rows or month columns in source paper registers are represented as repeatable structures where appropriate so that the original programme semantics are retained without imposing paper-form limitations on electronic systems.</p>
+
+<p>Specimen workflows <strong>SHOULD</strong> preserve traceability from specimen examination request and collection through shipment, laboratory receipt, processing, result release, and reporting. Referral and transfer workflows <strong>SHOULD</strong> preserve the relationship between the referring site, receiving facility, referral reason, acknowledgement or arrival, diagnostic outcome, treatment initiation, and continuity of care.</p>
+
+<p>Contact-management implementations <strong>SHOULD</strong> preserve the relationship between the index TB patient and each contact, including screening, presumptive-TB identification, diagnostic testing, TB diagnosis, treatment linkage, TPT eligibility, preventive-therapy initiation, drug collection, and final outcome.</p>
+
+<p>Measure artefacts define computable aggregate reporting contracts, while MeasureReport resources carry results for a defined reporting period. Implementations <strong>SHALL</strong> preserve the published Measure canonical, reporting period, group codes, population codes, stratifiers, scores, reporter information, and other required MeasureReport elements.</p>
+
+<p>Implementations <strong>SHALL</strong> preserve published canonical URLs, identifiers, references, cardinalities, invariants, required bindings, and validation constraints. TB data and documents <strong>SHALL</strong> be exchanged only for authorised purposes and protected in accordance with applicable privacy, security, consent, audit, and data-minimisation requirements.</p>
 
 
 
@@ -249,7 +605,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 06:18+0100">2026-08-18</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://digitalhealth.gov.ng">NDHI</a>.  Package ng.gov.digitalhealth.fhir-ig#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 18, 2026 15:57+0100">2026-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

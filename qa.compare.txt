@@ -1,7 +1,7 @@
 NigeriaCore : Validation Results
 =========================================
 
-err = 0, warn = 7, info = 29
+err = 0, warn = 9, info = 29
 $--
 Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical = https://fhir-ig.digitalhealth.gov.ng)
  Build Errors : 0 / 1 / 0
@@ -118,6 +118,7 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-relationship-cs : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-sibling-health-status-cs : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-states-cs : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-tb-quarterly-centre-report-cs : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-tb-screening-diagnostic-test-type-cs : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-tb-tpt-alternate-follow-up-cs : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/CodeSystem-ng-tb-tpt-eligibility-status-cs : 0 / 0 / 1
@@ -170,8 +171,10 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Location-NgLocation-004 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Measure-NgMeasure-HIV-ART-Monthly : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Measure-NgMeasure-NHMIS-001 : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy : 0 / 2 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/MeasureReport-NgMeasureReport-HIV-ART-Monthly-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/MeasureReport-NgMeasureReport-NHMIS-001 : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/MeasureReport-NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Medication-NgMedication-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Medication-NgMedication-002 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Medication-NgMedication-003 : 0 / 0 / 1
@@ -231,6 +234,7 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Procedure-NgProcedure-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Provenance-NgProvenance-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-NgAncQuestionnaire-001 : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-drtb-patient-discharge-questionnaire : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-hiv-care-art-questionnaire : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-hiv-eac-form-questionnaire : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-hiv-int-lab-form-questionnaire : 0 / 0 / 1
@@ -243,6 +247,15 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-imm-generate-report-form : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-imm-manage-aefi-form : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-imm-updating-client-record-form : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-community-facility-referral-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-patient-referral-transfer-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-patient-treatment-card-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-preventive-therapy-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-specimen-examination-request-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-specimen-examination-result-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgDRTBPatientDischargeQuestionnaireResponseExample : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInitialArt : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInterruptionRestart : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgHivCareArtQuestionnaireResponseRegimenChange : 0 / 0 / 1
@@ -251,6 +264,15 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseExtendedPanel : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseViralLoadExample : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgHivPharmacyOrderFormQuestionnaireResponse : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBComsFacilityRefQxResponseExample : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBIndexPatientContactInvestigationQuestionnaireResponseExample : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBPatientReferralTransferQuestionnaireResponseExample : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBPreventiveTherapyQuestionnaireResponseExample : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBSpecimenExamQxResponseExample : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBSpecimenExamRxQuestionnaireResponse : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBTreatmQxResponseExample : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/RelatedPerson-NgRelatedPerson-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/RelatedPerson-NgRelatedPerson-002 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/RelatedPerson-NgRelatedPerson-003 : 0 / 0 / 1
@@ -259,11 +281,18 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Specimen-NgSpecimen-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-CodeableConcept-ips : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-Coding-ips : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgDRTBTreatmentRegister : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgHivArtRegister : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgHivEacRegister : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgHivIntLabMonitoringRegister : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgHivPharmacyDailyWorksheet : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgHivTrackingRegister : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgTBCentralRegister : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgTBCommunityFacilityReferralRegister : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgTBFacilityContactManagementRegister : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgTBLaboratoryRegister : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgTBPresumptiveRegister : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-NgTBSpecimenShipmentRegister : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-administrative-ward : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-aefi-report-bundle : 0 / 1 / 2
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-allergy-intolerance : 0 / 0 / 1
@@ -328,6 +357,7 @@ Generated $--. FHIR version $-- for ng.gov.digitalhealth.fhir-ig#$-- (canonical 
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-service-request : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-specimen : 0 / 0 / 4
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-task : 0 / 0 / 1
+ /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-tb-questionnaire : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/StructureDefinition-ng-vaccine-contraindications : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/Task-NgTask-001 : 0 / 0 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/NIGERIA-CORE/Nigeria-Core/fsh-generated/resources/ValueSet-ng-aefi-manifestation : 0 / 0 / 1
@@ -624,6 +654,7 @@ INFORMATION: ActorDefinition/NgCoreTerminologyService: ActorDefinition.jurisdict
 == fsh-generated/resources/CodeSystem-ng-relationship-cs.json ==
 == fsh-generated/resources/CodeSystem-ng-sibling-health-status-cs.json ==
 == fsh-generated/resources/CodeSystem-ng-states-cs.json ==
+== fsh-generated/resources/CodeSystem-ng-tb-quarterly-centre-report-cs.json ==
 == fsh-generated/resources/CodeSystem-ng-tb-screening-diagnostic-test-type-cs.json ==
 == fsh-generated/resources/CodeSystem-ng-tb-tpt-alternate-follow-up-cs.json ==
 == fsh-generated/resources/CodeSystem-ng-tb-tpt-eligibility-status-cs.json ==
@@ -678,8 +709,12 @@ INFORMATION: DiagnosticReport/NgDiagnosticReportExample: DiagnosticReport.status
 == fsh-generated/resources/Location-NgLocation-004.json ==
 == fsh-generated/resources/Measure-NgMeasure-HIV-ART-Monthly.json ==
 == fsh-generated/resources/Measure-NgMeasure-NHMIS-001.json ==
+== fsh-generated/resources/Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.json ==
+WARNING: Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy: Measure.group[1].stratifier[0].criteria: The expression language text/fhirpath is not supported, so can't be validated
+WARNING: Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy: Measure.group[2].stratifier[0].criteria: The expression language text/fhirpath is not supported, so can't be validated
 == fsh-generated/resources/MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.json ==
 == fsh-generated/resources/MeasureReport-NgMeasureReport-NHMIS-001.json ==
+== fsh-generated/resources/MeasureReport-NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001.json ==
 == fsh-generated/resources/Medication-NgMedication-001.json ==
 == fsh-generated/resources/Medication-NgMedication-002.json ==
 == fsh-generated/resources/Medication-NgMedication-003.json ==
@@ -739,6 +774,7 @@ INFORMATION: DiagnosticReport/NgDiagnosticReportExample: DiagnosticReport.status
 == fsh-generated/resources/Procedure-NgProcedure-001.json ==
 == fsh-generated/resources/Provenance-NgProvenance-001.json ==
 == fsh-generated/resources/Questionnaire-NgAncQuestionnaire-001.json ==
+== fsh-generated/resources/Questionnaire-ng-drtb-patient-discharge-questionnaire.json ==
 == fsh-generated/resources/Questionnaire-ng-hiv-care-art-questionnaire.json ==
 == fsh-generated/resources/Questionnaire-ng-hiv-eac-form-questionnaire.json ==
 == fsh-generated/resources/Questionnaire-ng-hiv-int-lab-form-questionnaire.json ==
@@ -751,6 +787,15 @@ INFORMATION: DiagnosticReport/NgDiagnosticReportExample: DiagnosticReport.status
 == fsh-generated/resources/Questionnaire-ng-imm-generate-report-form.json ==
 == fsh-generated/resources/Questionnaire-ng-imm-manage-aefi-form.json ==
 == fsh-generated/resources/Questionnaire-ng-imm-updating-client-record-form.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-community-facility-referral-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-patient-referral-transfer-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-patient-treatment-card-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-preventive-therapy-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-specimen-examination-request-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-specimen-examination-result-questionnaire.json ==
+== fsh-generated/resources/Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgDRTBPatientDischargeQuestionnaireResponseExample.json ==
 == fsh-generated/resources/QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInitialArt.json ==
 == fsh-generated/resources/QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInterruptionRestart.json ==
 == fsh-generated/resources/QuestionnaireResponse-NgHivCareArtQuestionnaireResponseRegimenChange.json ==
@@ -759,6 +804,15 @@ INFORMATION: DiagnosticReport/NgDiagnosticReportExample: DiagnosticReport.status
 == fsh-generated/resources/QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseExtendedPanel.json ==
 == fsh-generated/resources/QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseViralLoadExample.json ==
 == fsh-generated/resources/QuestionnaireResponse-NgHivPharmacyOrderFormQuestionnaireResponse.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBComsFacilityRefQxResponseExample.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBIndexPatientContactInvestigationQuestionnaireResponseExample.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBPatientReferralTransferQuestionnaireResponseExample.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBPreventiveTherapyQuestionnaireResponseExample.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBSpecimenExamQxResponseExample.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBSpecimenExamRxQuestionnaireResponse.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBTreatmQxResponseExample.json ==
+== fsh-generated/resources/QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample.json ==
 == fsh-generated/resources/RelatedPerson-NgRelatedPerson-001.json ==
 == fsh-generated/resources/RelatedPerson-NgRelatedPerson-002.json ==
 == fsh-generated/resources/RelatedPerson-NgRelatedPerson-003.json ==
@@ -767,11 +821,18 @@ INFORMATION: DiagnosticReport/NgDiagnosticReportExample: DiagnosticReport.status
 == fsh-generated/resources/Specimen-NgSpecimen-001.json ==
 == fsh-generated/resources/StructureDefinition-CodeableConcept-ips.json ==
 == fsh-generated/resources/StructureDefinition-Coding-ips.json ==
+== fsh-generated/resources/StructureDefinition-NgDRTBTreatmentRegister.json ==
 == fsh-generated/resources/StructureDefinition-NgHivArtRegister.json ==
 == fsh-generated/resources/StructureDefinition-NgHivEacRegister.json ==
 == fsh-generated/resources/StructureDefinition-NgHivIntLabMonitoringRegister.json ==
 == fsh-generated/resources/StructureDefinition-NgHivPharmacyDailyWorksheet.json ==
 == fsh-generated/resources/StructureDefinition-NgHivTrackingRegister.json ==
+== fsh-generated/resources/StructureDefinition-NgTBCentralRegister.json ==
+== fsh-generated/resources/StructureDefinition-NgTBCommunityFacilityReferralRegister.json ==
+== fsh-generated/resources/StructureDefinition-NgTBFacilityContactManagementRegister.json ==
+== fsh-generated/resources/StructureDefinition-NgTBLaboratoryRegister.json ==
+== fsh-generated/resources/StructureDefinition-NgTBPresumptiveRegister.json ==
+== fsh-generated/resources/StructureDefinition-NgTBSpecimenShipmentRegister.json ==
 == fsh-generated/resources/StructureDefinition-ng-administrative-ward.json ==
 == fsh-generated/resources/StructureDefinition-ng-aefi-report-bundle.json ==
 INFORMATION: StructureDefinition/ng-aefi-report-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
@@ -851,6 +912,7 @@ INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned t
 INFORMATION: StructureDefinition.snapshot.element[51].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0371 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.0.2), 3.0.0 (hl7.terminology.r4#7.1.0)
 INFORMATION: StructureDefinition.snapshot.element[52].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/v2-0493 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.0.2), 3.0.0 (hl7.terminology.r4#7.1.0)
 == fsh-generated/resources/StructureDefinition-ng-task.json ==
+== fsh-generated/resources/StructureDefinition-ng-tb-questionnaire.json ==
 == fsh-generated/resources/StructureDefinition-ng-vaccine-contraindications.json ==
 == fsh-generated/resources/Task-NgTask-001.json ==
 == fsh-generated/resources/ValueSet-ng-aefi-manifestation.json ==

@@ -2886,6 +2886,54 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-drtb-patient-discharge-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-drtb-patient-discharge-questionnaire"
+      },
+      "name" : "NG DR-TB Patient Discharge Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/DR-TB 06 DR-TB In-Patient Discharge Form.\nIt captures treatment-centre information, patient demographics and contact\ninformation, admission and discharge information, DR-TB registration and\ntreatment initiation, comorbidities, treatment received during admission,\nadverse reactions, the regimen to be continued following discharge,\nmedication supply at discharge, receiving facility and programme contacts,\nand responsible treatment-centre clinical personnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgDRTBPatientDischargeQuestionnaireResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgDRTBPatientDischargeQuestionnaireResponseExample"
+      },
+      "name" : "NG DR-TB Patient Discharge QuestionnaireResponse Example",
+      "description" : "Fictional DR-TB inpatient discharge response including adverse-reaction history and continuation regimen.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgDRTBTreatmentRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgDRTBTreatmentRegister"
+      },
+      "name" : "NG DR-TB Treatment Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme DR-TB Treatment Register. One model instance represents a DR-TB\ntreatment register and contains repeatable patient entries covering\nregistration, treatment initiation, diagnosis and baseline investigations,\nlongitudinal bacteriological follow-up, TB/HIV activities and treatment\noutcomes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -5846,6 +5894,22 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgTBCentralRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgTBCentralRegister"
+      },
+      "name" : "NG LGA/Health Facility Tuberculosis Central Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme NTBLCP/TB 08 Local Government Area/Health Facility Tuberculosis\nCentral Register. One model instance represents a TB central register and\ncontains repeatable patient entries covering registration, treatment\ninitiation, disease classification, referral, bacteriological monitoring,\ntreatment outcome and TB/HIV activities.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       },
       {
@@ -6978,6 +7042,422 @@ Nigeria Core SHALL use FHIR R4 4.0.1 together with the latest reviewed and expli
       "name" : "NG Task",
       "description" : "Task profile for the Nigeria Core (referrals, claims, pharmacy, devices).",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-community-facility-referral-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-community-facility-referral-questionnaire"
+      },
+      "name" : "NG TB Community and Facility Referral Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 12 Tuberculosis Referral Form for\nCommunity and Facility. It captures client identification and contact\ninformation, the referring site and referral agent, reason for referral,\nreceiving facility information, arrival at the receiving facility, and\nreferral outcomes including confirmation of TB diagnosis and initiation\nof treatment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBComsFacilityRefQxResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBComsFacilityRefQxResponseExample"
+      },
+      "name" : "NG TB Community and Facility Referral QuestionnaireResponse Example",
+      "description" : "Fictional closed-loop community-to-facility TB referral with diagnostic and treatment outcome.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgTBCommunityFacilityReferralRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgTBCommunityFacilityReferralRegister"
+      },
+      "name" : "NG TB Community and Facility Referral Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme Tuberculosis Referral Register for Community and Facility.\nOne model instance represents one site-level monthly referral register\nand contains repeatable client entries covering demographics, referral\ndate and reason, receiving facility, confirmation of TB, treatment\ninitiation and remarks.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgTBFacilityContactManagementRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgTBFacilityContactManagementRegister"
+      },
+      "name" : "NG TB Facility Contact Management Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme NTBLCP/TB 09 Facility Tuberculosis Contact Management Register.\nOne model instance represents a facility contact-management register and\ncontains repeatable index TB cases, each with one or more contacts followed\nthrough contact screening, TB investigation, diagnosis and treatment,\neligibility for TB preventive therapy, TPT initiation, monthly drug\ncollection and final preventive-therapy outcome.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-index-patient-contact-investigation-questionnaire"
+      },
+      "name" : "NG TB Index Patient Contact Investigation Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 10 TB Index Patient Contact Investigation\nForm. It captures contact-investigator information, index TB case information,\nconsent for contact tracing, household contacts, TB symptom screening and the\noutcomes and actions arising from contact investigation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBIndexPatientContactInvestigationQuestionnaireResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBIndexPatientContactInvestigationQuestionnaireResponseExample"
+      },
+      "name" : "NG TB Index Patient Contact Investigation QuestionnaireResponse Example",
+      "description" : "Fictional contact-investigation response with three household contacts and different screening outcomes.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgTBLaboratoryRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgTBLaboratoryRegister"
+      },
+      "name" : "NG TB Laboratory Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme NTBLCP/TB 04 TB Laboratory Register for Xpert MTB/RIF assay,\nAFB microscopy and other TB diagnostic tests. One model instance represents\na laboratory register and contains repeatable laboratory entries corresponding\nto individual patient/specimen rows in the source register.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-patient-referral-transfer-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-patient-referral-transfer-questionnaire"
+      },
+      "name" : "NG TB Patient Referral/Transfer Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/DR-TB 02 TB Patient Referral/Transfer Form.\nIt captures patient identification, referral or transfer classification,\nreferring and receiving facilities, TB patient classification, reason for\nreferral, available laboratory results, HIV status, current TB and HIV\nmedications, relevant clinical information, appointment arrangements and\nacknowledgement of enrolment by the receiving TB centre.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBPatientReferralTransferQuestionnaireResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBPatientReferralTransferQuestionnaireResponseExample"
+      },
+      "name" : "NG TB Patient Referral/Transfer QuestionnaireResponse Example",
+      "description" : "Fictional completed DR-TB referral/transfer response including receiving-centre acknowledgement.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-patient-treatment-card-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-patient-treatment-card-questionnaire"
+      },
+      "name" : "NG TB Patient Treatment Card Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 05 Tuberculosis Patient Treatment Card.\nIt captures patient identification, disease classification, previous TB\ntreatment history, household contacts, referral source, diagnostic results,\nHIV status and services, treatment monitoring, prescribed TB regimen,\nlongitudinal treatment-adherence records, treatment-supporter information\nand final treatment outcome.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBTreatmQxResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBTreatmQxResponseExample"
+      },
+      "name" : "NG TB Patient Treatment Card QuestionnaireResponse Example",
+      "description" : "Fictional longitudinal TB treatment-card response with diagnostic results, treatment monitoring, adherence records and outcome.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgTBPresumptiveRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgTBPresumptiveRegister"
+      },
+      "name" : "NG TB Presumptive Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme NTBLCP/TB 01 Presumptive TB Register for drug-susceptible and\ndrug-resistant tuberculosis. One model instance represents one facility\nregister reporting period and contains repeatable client entries covering\nregistration, presumptive-TB classification, referral source, specimen\nprocessing, diagnostic investigations, HIV activities, investigation outcome\nand linkage to TB treatment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-preventive-therapy-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-preventive-therapy-questionnaire"
+      },
+      "name" : "NG TB Preventive Therapy Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 11 TB Preventive Therapy Card. It\ncaptures client or contact identification, reason for TB preventive therapy,\nindex TB patient information where applicable, client weight, prescribed\npreventive-therapy regimen and dosage, longitudinal drug collection records,\nand final TPT outcome.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBPreventiveTherapyQuestionnaireResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBPreventiveTherapyQuestionnaireResponseExample"
+      },
+      "name" : "NG TB Preventive Therapy QuestionnaireResponse Example",
+      "description" : "Fictional TPT-card response for a household contact receiving isoniazid preventive therapy with repeated drug collections.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy"
+      },
+      "name" : "NG TB Quarterly DOTS and Microscopy Centre Measure",
+      "description" : "Defines the aggregate reporting variables in the NTBLCP/TB 18 Quarterly\nReport on Newly Established DOTS and Microscopy Centres.\n\nThe Measure represents reporting population, newly established DOTS and\nAFB microscopy centres, cumulative centre counts at the beginning and end\nof the quarter, and population-to-centre coverage ratios.\n\nDetailed centre listings in Blocks 1 and 2 are reduced to aggregate counts\nand stratified by centre type for MeasureReport reporting.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "MeasureReport-NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001.html"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001"
+      },
+      "name" : "NG TB Quarterly DOTS and Microscopy Centre MeasureReport Example",
+      "description" : "Synthetic Quarter 2, 2026 example of the NTBLCP/TB 18 quarterly report.\nThe example demonstrates aggregate counts, centre-type stratification,\ncumulative centre totals and population-to-centre ratios.",
+      "exampleCanonical" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ng-tb-quarterly-centre-report-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ng-tb-quarterly-centre-report-cs"
+      },
+      "name" : "NG TB Quarterly DOTS and Microscopy Centre Reporting Codes",
+      "description" : "Codes used to represent the reporting variables and centre-type\nstratification in the NTBLCP/TB 18 Quarterly Report on Newly Established\nDOTS and Microscopy Centres.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ng-tb-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ng-tb-questionnaire"
+      },
+      "name" : "NG TB Questionnaire",
+      "description" : "A Nigeria Core profile of the FHIR Questionnaire resource used to represent\nstructured TB program forms, assessments, counselling forms, and clinical\ndata collection instruments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBSpecimenExamQxResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBSpecimenExamQxResponseExample"
+      },
+      "name" : "NG TB Specimen Examination Request Follow-up QuestionnaireResponse Example",
+      "description" : "Fictional NTBLCP/TB 02A follow-up specimen request demonstrating the conditional follow-up month.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-specimen-examination-request-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-specimen-examination-request-questionnaire"
+      },
+      "name" : "NG TB Specimen Examination Request Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 02A Specimen Examination Request Form.\nIt captures patient identification and demographics, presumptive TB\nclassification, disease site, HIV status, reason for examination,\nlaboratory tests requested, specimen information, requesting health worker\ndetails and requesting facility information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBSpecimenExamRxQuestionnaireResponse.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBSpecimenExamRxQuestionnaireResponse"
+      },
+      "name" : "NG TB Specimen Examination Request Questionnaire Response Example",
+      "description" : "Fictional completed NTBLCP/TB 02A specimen examination request for a patient\nwith presumptive pulmonary drug-sensitive TB. Xpert/MTB/RIF and smear for\nAFB are requested on two sputum specimens.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBSpecimenExRxQxResponseEg"
+      },
+      "name" : "NG TB Specimen Examination Request QuestionnaireResponse Example",
+      "description" : "Fictional completed NTBLCP/TB 02A specimen examination request for a patient undergoing TB diagnosis.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-specimen-examination-result-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-specimen-examination-result-questionnaire"
+      },
+      "name" : "NG TB Specimen Examination Result Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 02B Specimen Examination Result Form,\nVersion 2, 2019. It captures patient and specimen identification, requesting\nfacility information, laboratory identification, Xpert MTB/RIF results,\nother diagnostic-test results, AFB smear microscopy, culture results,\nLPA and drug-susceptibility testing, HIV test result, laboratory remarks,\nand result verification and release information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-NgTBSpecimenShipmentRegister.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NgTBSpecimenShipmentRegister"
+      },
+      "name" : "NG TB Specimen Shipment Register",
+      "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019. One model\ninstance represents one specimen shipment from a facility or treatment unit\nto a laboratory and contains repeatable specimen entries together with\nshipping, receipt, transport-condition and acknowledgement information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire.html"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ng-tb-treatment-interruption-tracking-questionnaire"
+      },
+      "name" : "NG TB Treatment Interruption Tracking Questionnaire",
+      "description" : "Computable Questionnaire representing the Nigeria National Tuberculosis and\nLeprosy Control Programme NTBLCP/TB 14 Treatment Interruption Tracking Form.\nIt captures the patient's programme and contact information and records\nsequential attempts to trace a patient following treatment interruption,\nincluding the tracking method, date of tracking, date of last drug intake,\nwhether the patient was contacted, reason for absence, proposed solution,\ntracking outcome and the person conducting the tracing.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample.html"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample"
+      },
+      "name" : "NG TB Treatment Interruption Tracking QuestionnaireResponse Example",
+      "description" : "Fictional TB treatment-interruption tracing response showing three successive tracking attempts.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

@@ -1,0 +1,193 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: NG TB Presumptive Register Column Mapping"
+"NgTBPresumptiveRegister","NgTBPresumptiveRegister","","","",0,*,"","","","null {[]} {[]}
+","NG TB Presumptive Register","Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 01 Presumptive TB Register for drug-susceptible and
+drug-resistant tuberculosis. One model instance represents one facility
+register reporting period and contains repeatable client entries covering
+registration, presumptive-TB classification, referral source, specimen
+processing, diagnostic investigations, HIV activities, investigation outcome
+and linkage to TB treatment.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NgTBPresumptiveRegister.identifier","NgTBPresumptiveRegister.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","Register identifier","Identifier assigned to the presumptive TB register or its electronic equivalent.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.identifier",0,1,"",""
+"NgTBPresumptiveRegister.state","NgTBPresumptiveRegister.state","","","",1,1,"","","","Coding {[]} {[]}
+","State","State in which the facility maintaining the register is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs","",,,,"NgTBPresumptiveRegister.state",1,1,"","","Header: Name of State"
+"NgTBPresumptiveRegister.lga","NgTBPresumptiveRegister.lga","","","",1,1,"","","","Coding {[]} {[]}
+","LGA","Local Government Area in which the facility maintaining the register is located.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs","",,,,"NgTBPresumptiveRegister.lga",1,1,"","","Header: Name of LGA"
+"NgTBPresumptiveRegister.site","NgTBPresumptiveRegister.site","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization]]}
+","Site reference","Reference to the health facility or service delivery site maintaining the register, when available.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.site",0,1,"",""
+"NgTBPresumptiveRegister.siteName","NgTBPresumptiveRegister.siteName","","","",1,1,"","","","string {[]} {[]}
+","Name of site","Name of the site maintaining the presumptive TB register.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.siteName",1,1,"","","Header: Name of Site"
+"NgTBPresumptiveRegister.clinicCode","NgTBPresumptiveRegister.clinicCode","","","",0,1,"","","","string {[]} {[]}
+","Clinic code","Clinic code recorded in the source register.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.clinicCode",0,1,"","","Header: Clinic Code"
+"NgTBPresumptiveRegister.reportingPeriod","NgTBPresumptiveRegister.reportingPeriod","","","",1,1,"","","","Period {[]} {[]}
+","Reporting period","Monthly reporting period represented by the Month and Year fields in the source register.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.reportingPeriod",1,1,"","","Header: Month / Year"
+"NgTBPresumptiveRegister.entry","NgTBPresumptiveRegister.entry","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Presumptive TB register entry","One client-level row in the NTBLCP/TB 01 Presumptive TB Register.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgTBPresumptiveRegister.entry.id","NgTBPresumptiveRegister.entry.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgTBPresumptiveRegister.entry.extension","NgTBPresumptiveRegister.entry.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.modifierExtension","NgTBPresumptiveRegister.entry.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.subject","NgTBPresumptiveRegister.entry.subject","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient]]}
+","Patient reference","Reference to the corresponding Nigeria Core Patient resource, when available.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.subject",0,1,"",""
+"NgTBPresumptiveRegister.entry.serialNumber","NgTBPresumptiveRegister.entry.serialNumber","","","",1,1,"","","","positiveInt {[]} {[]}
+","Serial number","Sequential number assigned to the client in the register.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.serialNumber",1,1,"","","S/N"
+"NgTBPresumptiveRegister.entry.registrationDate","NgTBPresumptiveRegister.entry.registrationDate","","","",1,1,"","","","date {[]} {[]}
+","Date of registration","Date the client was registered as a presumptive TB client.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.registrationDate",1,1,"","","Date of Registration"
+"NgTBPresumptiveRegister.entry.hospitalClinicNumber","NgTBPresumptiveRegister.entry.hospitalClinicNumber","","","",0,1,"","","","string {[]} {[]}
+","Hospital or clinic number","Hospital or clinic identifier assigned to the client.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.hospitalClinicNumber",0,1,"","","Hospital/Clinic No"
+"NgTBPresumptiveRegister.entry.patientName","NgTBPresumptiveRegister.entry.patientName","","","",1,1,"","","","string {[]} {[]}
+","Full name","Full name of the client.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.patientName",1,1,"","","Full Name"
+"NgTBPresumptiveRegister.entry.ageYears","NgTBPresumptiveRegister.entry.ageYears","","","",1,1,"","","","integer {[]} {[]}
+","Age in years","Age of the client in years as recorded in the source register.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.ageYears",1,1,"","","Age (Yrs)"
+"NgTBPresumptiveRegister.entry.sex","NgTBPresumptiveRegister.entry.sex","","","",1,1,"","","","Coding {[]} {[]}
+","Sex","Client sex. The source register records M or F.","","","","","","","","","",,"required","","https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs","",,,,"NgTBPresumptiveRegister.entry.sex",1,1,"","","Sex (M/F)"
+"NgTBPresumptiveRegister.entry.patientAddress","NgTBPresumptiveRegister.entry.patientAddress","","","",0,1,"","","","string {[]} {[]}
+","Full address","Full residential address of the client.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.patientAddress",0,1,"","","Full Address"
+"NgTBPresumptiveRegister.entry.specimenIdentificationNumber","NgTBPresumptiveRegister.entry.specimenIdentificationNumber","","","",0,1,"","","","string {[]} {[]}
+","Specimen identification number","Identification number assigned to the specimen submitted for TB investigation.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.specimenIdentificationNumber",0,1,"","","Specimen Identification Number"
+"NgTBPresumptiveRegister.entry.presumptiveTbType","NgTBPresumptiveRegister.entry.presumptiveTbType","","","",1,1,"","","","code {[]} {[]}
+","Type of presumptive TB","Indicates whether the client is presumptive drug-susceptible TB or
+drug-resistant TB. Source values are DS-TB and DR-TB.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.presumptiveTbType",1,1,"","","Type of presumptive TB: DS-TB / DR-TB"
+"NgTBPresumptiveRegister.entry.presumptiveDrTbCategory","NgTBPresumptiveRegister.entry.presumptiveDrTbCategory","","","",0,1,"","","","code {[]} {[]}
+","Type of presumptive DR-TB","DR-TB presumptive category when presumptiveTbType is DR-TB.
+Source codes are:
+a = Previously treated;
+b = Contact of a DR-TB patient;
+c = Failure to convert at the end of the second month of treatment.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.presumptiveDrTbCategory",0,1,"","","DR-TB: Enter code - a / b / c"
+"NgTBPresumptiveRegister.entry.healthCareWorker","NgTBPresumptiveRegister.entry.healthCareWorker","","","",0,1,"","","","boolean {[]} {[]}
+","Health care worker","Indicates whether the client is a health care worker.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.healthCareWorker",0,1,"","","Is client a health worker? Y/N"
+"NgTBPresumptiveRegister.entry.referralSource","NgTBPresumptiveRegister.entry.referralSource","","","",0,1,"","","","code {[]} {[]}
+","Source of referral","Source from which the presumptive TB client was referred.
+
+Source register abbreviations:
+ART = ART Facility
+OPD = Outpatient Department
+DOTS = DOTS Facility
+CP = Community Pharmacist
+PPM = PPM Scheme
+CV = Community Volunteer
+TB Px = TB patient
+PMV = Patent Medicine Vendor
+CTW = Community TB Worker
+CI = Community Informant
+O = Other form of referral.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.referralSource",0,1,"","","Who referred the client? Source of referral"
+"NgTBPresumptiveRegister.entry.otherReferralSource","NgTBPresumptiveRegister.entry.otherReferralSource","","","",0,1,"","","","string {[]} {[]}
+","Other referral source","Narrative description when the source of referral is recorded as Other.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.otherReferralSource",0,1,"",""
+"NgTBPresumptiveRegister.entry.siteOfDisease","NgTBPresumptiveRegister.entry.siteOfDisease","","","",1,1,"","","","code {[]} {[]}
+","Site of disease","Presumptive site of TB disease. The source requires one of:
+Pulmonary or Extra-Pulmonary.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.siteOfDisease",1,1,"","","Site of Disease: Pulmonary / Extra-Pulmonary"
+"NgTBPresumptiveRegister.entry.specimenProcessing","NgTBPresumptiveRegister.entry.specimenProcessing","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Specimen processing","Specimen-processing dates for Xpert MTB/RIF or AFB microscopy.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.specimenProcessing",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgTBPresumptiveRegister.entry.specimenProcessing.id","NgTBPresumptiveRegister.entry.specimenProcessing.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgTBPresumptiveRegister.entry.specimenProcessing.extension","NgTBPresumptiveRegister.entry.specimenProcessing.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.specimenProcessing.modifierExtension","NgTBPresumptiveRegister.entry.specimenProcessing.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.specimenProcessing.testType","NgTBPresumptiveRegister.entry.specimenProcessing.testType","","","",1,1,"","","","code {[]} {[]}
+","Test type","Test associated with the specimen-processing dates. Expected source values are Xpert-MTB-RIF or AFB-microscopy.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.specimenProcessing.testType",1,1,"","","Specimen processing period: Xpert MTB/RIF above / AFB microscopy below"
+"NgTBPresumptiveRegister.entry.specimenProcessing.specimenCollectionDate","NgTBPresumptiveRegister.entry.specimenProcessing.specimenCollectionDate","","","",0,1,"","","","date {[]} {[]}
+","Date of specimen collection","Date the specimen was collected. The source footnote specifies recording the date of the first specimen collected.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.specimenProcessing.specimenCollectionDate",0,1,"","","Date of Specimen Collection"
+"NgTBPresumptiveRegister.entry.specimenProcessing.sentToLaboratoryDate","NgTBPresumptiveRegister.entry.specimenProcessing.sentToLaboratoryDate","","","",0,1,"","","","date {[]} {[]}
+","Date specimen sent to laboratory","Date the specimen was sent to the laboratory.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.specimenProcessing.sentToLaboratoryDate",0,1,"","","Date specimen was sent to Laboratory"
+"NgTBPresumptiveRegister.entry.specimenProcessing.resultReleasedDate","NgTBPresumptiveRegister.entry.specimenProcessing.resultReleasedDate","","","",0,1,"","","","date {[]} {[]}
+","Date result released","Date the laboratory result was released.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.specimenProcessing.resultReleasedDate",0,1,"","","Date Result released"
+"NgTBPresumptiveRegister.entry.xpertResult","NgTBPresumptiveRegister.entry.xpertResult","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Xpert MTB/RIF result","Result of Xpert MTB/RIF testing.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.xpertResult",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgTBPresumptiveRegister.entry.xpertResult.id","NgTBPresumptiveRegister.entry.xpertResult.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgTBPresumptiveRegister.entry.xpertResult.extension","NgTBPresumptiveRegister.entry.xpertResult.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.xpertResult.modifierExtension","NgTBPresumptiveRegister.entry.xpertResult.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.xpertResult.mtbDetected","NgTBPresumptiveRegister.entry.xpertResult.mtbDetected","","","",0,1,"","","","boolean {[]} {[]}
+","MTB detected","Indicates whether Mycobacterium tuberculosis was detected.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.xpertResult.mtbDetected",0,1,"","","Xpert/MTB/RIF Result: MTB Not Detected / MTB Detected"
+"NgTBPresumptiveRegister.entry.xpertResult.rifResistanceResult","NgTBPresumptiveRegister.entry.xpertResult.rifResistanceResult","","","",0,1,"","","","code {[]} {[]}
+","Rifampicin resistance result","Rifampicin-resistance result when MTB is detected.
+Source categories are:
+RIF resistance not detected,
+RIF resistance detected,
+RIF resistance indeterminate.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.xpertResult.rifResistanceResult",0,1,"","","Xpert/MTB/RIF: RIF Resistance not Detected / Detected / Indeterminate"
+"NgTBPresumptiveRegister.entry.xpertResult.errorInvalidIncomplete","NgTBPresumptiveRegister.entry.xpertResult.errorInvalidIncomplete","","","",0,1,"","","","boolean {[]} {[]}
+","Error, incomplete or invalid Xpert result","Indicates whether the Xpert MTB/RIF result was reported as an error, incomplete or invalid result.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.xpertResult.errorInvalidIncomplete",0,1,"","","Xpert/MTB/RIF: Error or incomplete/invalid result"
+"NgTBPresumptiveRegister.entry.xpertResult.errorDescription","NgTBPresumptiveRegister.entry.xpertResult.errorDescription","","","",0,1,"","","","string {[]} {[]}
+","Xpert error or invalid-result details","Additional information about an error, incomplete or invalid Xpert result when available.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.xpertResult.errorDescription",0,1,"",""
+"NgTBPresumptiveRegister.entry.afbResult","NgTBPresumptiveRegister.entry.afbResult","","","",0,1,"","","","string {[]} {[]}
+","AFB result","AFB microscopy result recorded as it appears on the specimen examination request/result form.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.afbResult",0,1,"","","AFB Result: Enter result as it is in the request form"
+"NgTBPresumptiveRegister.entry.otherTest","NgTBPresumptiveRegister.entry.otherTest","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Other diagnostic test","Diagnostic test other than Xpert MTB/RIF or AFB microscopy.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.otherTest",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"NgTBPresumptiveRegister.entry.otherTest.id","NgTBPresumptiveRegister.entry.otherTest.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"NgTBPresumptiveRegister.entry.otherTest.extension","NgTBPresumptiveRegister.entry.otherTest.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.otherTest.modifierExtension","NgTBPresumptiveRegister.entry.otherTest.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"NgTBPresumptiveRegister.entry.otherTest.testType","NgTBPresumptiveRegister.entry.otherTest.testType","","","",1,1,"","","","string {[]} {[]}
+","Type of test","Name or type of other diagnostic test, for example TB-LAMP or LF-LAM.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.otherTest.testType",1,1,"","","Other tests: Type of test"
+"NgTBPresumptiveRegister.entry.otherTest.result","NgTBPresumptiveRegister.entry.otherTest.result","","","",0,1,"","","","code {[]} {[]}
+","Other test result","Test result. Expected source values are Positive, Negative or Indeterminate.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.otherTest.result",0,1,"","","Other tests: Positive / Negative / Indeterminate"
+"NgTBPresumptiveRegister.entry.chestXrayResult","NgTBPresumptiveRegister.entry.chestXrayResult","","","",0,1,"","","","code {[]} {[]}
+","Chest X-ray result","Chest X-ray interpretation. Source values are Suggestive or Not Suggestive.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.chestXrayResult",0,1,"","","Chest X-ray: Suggestive / Not Suggestive"
+"NgTBPresumptiveRegister.entry.clinicallyDiagnosed","NgTBPresumptiveRegister.entry.clinicallyDiagnosed","","","",0,1,"","","","boolean {[]} {[]}
+","Clinically diagnosed","Indicates whether the client was clinically diagnosed with TB.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.clinicallyDiagnosed",0,1,"","","Clinically Diagnosed Y/N"
+"NgTBPresumptiveRegister.entry.previouslyKnownHivStatus","NgTBPresumptiveRegister.entry.previouslyKnownHivStatus","","","",0,1,"","","","code {[]} {[]}
+","Previously known HIV status","HIV status already known before the current presumptive-TB investigation.
+Source options are Positive or Negative.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.previouslyKnownHivStatus",0,1,"","","HIV Activities: Previously known HIV status - Positive / Negative"
+"NgTBPresumptiveRegister.entry.hivTestResult","NgTBPresumptiveRegister.entry.hivTestResult","","","",0,1,"","","","code {[]} {[]}
+","HIV test result","HIV testing outcome for a client whose HIV status was previously unknown.
+Source options are Positive, Negative or Not Tested.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.hivTestResult",0,1,"","","HIV Activities: Previously unknown HIV status - Tested for HIV Positive / Negative / Not Tested"
+"NgTBPresumptiveRegister.entry.investigationOutcome","NgTBPresumptiveRegister.entry.investigationOutcome","","","",0,1,"","","","code {[]} {[]}
+","Outcome of investigations","Final classification following the presumptive-TB investigations.
+Source categories are:
+DSTB,
+DRTB,
+Not TB.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.investigationOutcome",0,1,"","","Outcome of investigations: DSTB / DRTB / Not TB"
+"NgTBPresumptiveRegister.entry.startedTbTreatment","NgTBPresumptiveRegister.entry.startedTbTreatment","","","",0,1,"","","","boolean {[]} {[]}
+","Started TB treatment","Indicates whether a client diagnosed with TB started TB treatment.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.startedTbTreatment",0,1,"","","Started TB treatment?"
+"NgTBPresumptiveRegister.entry.lgaTbRegistrationNumber","NgTBPresumptiveRegister.entry.lgaTbRegistrationNumber","","","",0,1,"","","","string {[]} {[]}
+","LGA TB registration number","LGA TB registration number assigned when the patient starts treatment.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.lgaTbRegistrationNumber",0,1,"","","If yes: LGA TB Reg No. above"
+"NgTBPresumptiveRegister.entry.treatmentStartDate","NgTBPresumptiveRegister.entry.treatmentStartDate","","","",0,1,"","","","date {[]} {[]}
+","TB treatment start date","Date TB treatment was initiated.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.treatmentStartDate",0,1,"","","If yes: treatment date below"
+"NgTBPresumptiveRegister.entry.noTreatmentReason","NgTBPresumptiveRegister.entry.noTreatmentReason","","","",0,1,"","","","code {[]} {[]}
+","Reason TB treatment not started","Reason a patient diagnosed with TB had not started treatment.
+
+Source codes:
+1 = Pre-treatment loss to follow-up;
+2 = Died before treatment initiation;
+3 = Transferred to another facility for treatment enrolment.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.noTreatmentReason",0,1,"","","If no: code 1 / 2 / 3"
+"NgTBPresumptiveRegister.entry.remarks","NgTBPresumptiveRegister.entry.remarks","","","",0,1,"","","","string {[]} {[]}
+","Remarks","Additional remarks recorded for the presumptive-TB client.","","","","","","","","","",,,,,"",,,,"NgTBPresumptiveRegister.entry.remarks",0,1,"","","Remarks"

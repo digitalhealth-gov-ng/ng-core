@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-coverage-eligibil
   "name" : "NgCoverageEligibilityResponse",
   "title" : "NG Claim Coverage Eligibility Response",
   "status" : "draft",
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

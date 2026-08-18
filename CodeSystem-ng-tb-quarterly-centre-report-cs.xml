@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ng-tb-quarterly-centre-report-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ng-tb-quarterly-centre-report-cs</b></p><a name="ng-tb-quarterly-centre-report-cs"> </a><a name="hcng-tb-quarterly-centre-report-cs"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">reporting-population<a name="ng-tb-quarterly-centre-report-cs-reporting-population"> </a></td><td>Reporting population</td><td>Population of the State or LGA covered by the quarterly report.</td></tr><tr><td style="white-space:nowrap">new-dots-centres<a name="ng-tb-quarterly-centre-report-cs-new-dots-centres"> </a></td><td>Newly established DOTS centres</td><td>Number of newly established DOTS centres during the reporting quarter.</td></tr><tr><td style="white-space:nowrap">new-afb-microscopy-centres<a name="ng-tb-quarterly-centre-report-cs-new-afb-microscopy-centres"> </a></td><td>Newly established AFB microscopy centres</td><td>Number of newly established AFB microscopy centres during the reporting quarter.</td></tr><tr><td style="white-space:nowrap">dots-centres-beginning<a name="ng-tb-quarterly-centre-report-cs-dots-centres-beginning"> </a></td><td>DOTS centres at beginning of quarter</td><td>Number of DOTS centres at the beginning of the reporting quarter.</td></tr><tr><td style="white-space:nowrap">dots-centres-end<a name="ng-tb-quarterly-centre-report-cs-dots-centres-end"> </a></td><td>DOTS centres at end of quarter</td><td>Number of DOTS centres at the end of the reporting quarter.</td></tr><tr><td style="white-space:nowrap">dots-coverage<a name="ng-tb-quarterly-centre-report-cs-dots-coverage"> </a></td><td>DOTS coverage per population</td><td>Population-to-DOTS-centre ratio at the end of the reporting quarter.</td></tr><tr><td style="white-space:nowrap">microscopy-centres-beginning<a name="ng-tb-quarterly-centre-report-cs-microscopy-centres-beginning"> </a></td><td>AFB microscopy centres at beginning of quarter</td><td>Number of AFB microscopy centres at the beginning of the reporting quarter.</td></tr><tr><td style="white-space:nowrap">microscopy-centres-end<a name="ng-tb-quarterly-centre-report-cs-microscopy-centres-end"> </a></td><td>AFB microscopy centres at end of quarter</td><td>Number of AFB microscopy centres at the end of the reporting quarter.</td></tr><tr><td style="white-space:nowrap">microscopy-coverage<a name="ng-tb-quarterly-centre-report-cs-microscopy-coverage"> </a></td><td>AFB microscopy coverage per population</td><td>Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter.</td></tr><tr><td style="white-space:nowrap">centre-type<a name="ng-tb-quarterly-centre-report-cs-centre-type"> </a></td><td>Centre type</td><td>Type or ownership category of the newly established centre.</td></tr><tr><td style="white-space:nowrap">public<a name="ng-tb-quarterly-centre-report-cs-public"> </a></td><td>Public</td><td>Public centre.</td></tr><tr><td style="white-space:nowrap">prison<a name="ng-tb-quarterly-centre-report-cs-prison"> </a></td><td>Prison</td><td>Prison centre.</td></tr><tr><td style="white-space:nowrap">private<a name="ng-tb-quarterly-centre-report-cs-private"> </a></td><td>Private</td><td>Private centre.</td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.16.115"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgTBQuarterlyCentreReportCS"/>
+  <title value="NG TB Quarterly DOTS and Microscopy Centre Reporting Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-18T15:57:17+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+  </contact>
+  <description value="Codes used to represent the reporting variables and centre-type&#xA;stratification in the NTBLCP/TB 18 Quarterly Report on Newly Established&#xA;DOTS and Microscopy Centres."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="reporting-population"/>
+    <display value="Reporting population"/>
+    <definition value="Population of the State or LGA covered by the quarterly report."/>
+  </concept>
+  <concept>
+    <code value="new-dots-centres"/>
+    <display value="Newly established DOTS centres"/>
+    <definition value="Number of newly established DOTS centres during the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="new-afb-microscopy-centres"/>
+    <display value="Newly established AFB microscopy centres"/>
+    <definition value="Number of newly established AFB microscopy centres during the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="dots-centres-beginning"/>
+    <display value="DOTS centres at beginning of quarter"/>
+    <definition value="Number of DOTS centres at the beginning of the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="dots-centres-end"/>
+    <display value="DOTS centres at end of quarter"/>
+    <definition value="Number of DOTS centres at the end of the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="dots-coverage"/>
+    <display value="DOTS coverage per population"/>
+    <definition value="Population-to-DOTS-centre ratio at the end of the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="microscopy-centres-beginning"/>
+    <display value="AFB microscopy centres at beginning of quarter"/>
+    <definition value="Number of AFB microscopy centres at the beginning of the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="microscopy-centres-end"/>
+    <display value="AFB microscopy centres at end of quarter"/>
+    <definition value="Number of AFB microscopy centres at the end of the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="microscopy-coverage"/>
+    <display value="AFB microscopy coverage per population"/>
+    <definition value="Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter."/>
+  </concept>
+  <concept>
+    <code value="centre-type"/>
+    <display value="Centre type"/>
+    <definition value="Type or ownership category of the newly established centre."/>
+  </concept>
+  <concept>
+    <code value="public"/>
+    <display value="Public"/>
+    <definition value="Public centre."/>
+  </concept>
+  <concept>
+    <code value="prison"/>
+    <display value="Prison"/>
+    <definition value="Prison centre."/>
+  </concept>
+  <concept>
+    <code value="private"/>
+    <display value="Private"/>
+    <definition value="Private centre."/>
+  </concept>
+</CodeSystem>

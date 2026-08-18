@@ -17,17 +17,25 @@ The state where a person or a facility is.
 
  **References** 
 
+* [NG DR-TB Treatment Register](StructureDefinition-NgDRTBTreatmentRegister.md)
 * [NG HIV National ART Register](StructureDefinition-NgHivArtRegister.md)
 * [NG HIV Enhanced Adherence Counselling Monitoring Register](StructureDefinition-NgHivEacRegister.md)
 * [NG HIV Integrated Laboratory Monitoring Register](StructureDefinition-NgHivIntLabMonitoringRegister.md)
 * [NG HIV Pharmacy Daily Worksheet](StructureDefinition-NgHivPharmacyDailyWorksheet.md)
 * [NG HIV Tracking Register](StructureDefinition-NgHivTrackingRegister.md)
+* [NG TB Community and Facility Referral Register](StructureDefinition-NgTBCommunityFacilityReferralRegister.md)
+* [NG TB Presumptive Register](StructureDefinition-NgTBPresumptiveRegister.md)
+* [NG TB Specimen Shipment Register](StructureDefinition-NgTBSpecimenShipmentRegister.md)
 * [NG Location](StructureDefinition-ng-location.md)
 * [NG Organization](StructureDefinition-ng-organization.md)
 * [NG Patient](StructureDefinition-ng-patient.md)
+* [NG DR-TB Patient Discharge Questionnaire](Questionnaire-ng-drtb-patient-discharge-questionnaire.md)
 * [NG HIV Combined Pharmacy Order Form Questionnaire](Questionnaire-ng-hiv-pharmacy-order-questionnaire.md)
 * [NG HIV Care and Treatment Transfer Form Questionnaire](Questionnaire-ng-hiv-transfer-form-questionnaire.md)
 * [NG Immunization Facility Registration Form](Questionnaire-ng-imm-facility-registration-form.md)
+* [NG TB Patient Referral/Transfer Questionnaire](Questionnaire-ng-tb-patient-referral-transfer-questionnaire.md)
+* [NG TB Specimen Examination Request Questionnaire](Questionnaire-ng-tb-specimen-examination-request-questionnaire.md)
+* [NG TB Treatment Interruption Tracking Questionnaire](Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire.md)
 
 ### Logical Definition (CLD)
 
@@ -66,7 +74,7 @@ The state where a person or a facility is.
   "title" : "NG States VS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

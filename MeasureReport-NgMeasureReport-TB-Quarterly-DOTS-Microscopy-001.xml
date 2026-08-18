@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MeasureReport xmlns="http://hl7.org/fhir">
+  <id value="NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001"/>
+  <meta>
+    <profile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MeasureReport NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001</b></p><a name="NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001"> </a><a name="hcNgMeasureReport-TB-Quarterly-DOTS-Microscopy-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-measure-report.html">NG Measure Report</a></p></div><p><b>status</b>: Complete</p><p><b>type</b>: Summary</p><p><b>measure</b>: <a href="Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.html">Nigeria TB Quarterly DOTS and Microscopy Centre Measure</a></p><p><b>date</b>: 2026-07-10 10:00:00+0100</p><p><b>reporter</b>: <a href="Organization-NgOrganization-001.html">TB programme reporting unit (fictional)</a></p><p><b>period</b>: 2026-04-01 00:00:00+0100 --&gt; 2026-06-30 23:59:59+0100</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs reporting-population}">Reporting population</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 500000 persons</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs new-dots-centres}">Newly established DOTS centres</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 5 centres</p><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs centre-type}">Centre type</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs public}">Public</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 3 centres</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs prison}">Prison</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 1 centres</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs private}">Private</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 1 centres</p></blockquote></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs new-afb-microscopy-centres}">Newly established AFB microscopy centres</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 4 centres</p><blockquote><p><b>stratifier</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs centre-type}">Centre type</span></p><blockquote><p><b>stratum</b></p><p><b>value</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs public}">Public</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 2 centres</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs prison}">Prison</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 1 centres</p></blockquote><blockquote><p><b>stratum</b></p><p><b>value</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs private}">Private</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 1 centres</p></blockquote></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs dots-centres-beginning}">DOTS centres at beginning of quarter</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 18 centres</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs dots-centres-end}">DOTS centres at end of quarter</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 23 centres</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs dots-coverage}">DOTS coverage per population</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 21739.13 persons per DOTS centre</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs microscopy-centres-beginning}">AFB microscopy centres at beginning of quarter</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 8 centres</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs microscopy-centres-end}">AFB microscopy centres at end of quarter</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 12 centres</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title="Codes:{https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs microscopy-coverage}">AFB microscopy coverage per population</span></p><h3>Populations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/measure-population measure-population}">Measure Population</span></td><td>1</td></tr></table><p><b>measureScore</b>: 41666.67 persons per AFB microscopy centre</p></blockquote></div>
+  </text>
+  <status value="complete"/>
+  <type value="summary"/>
+  <measure value="https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy"/>
+  <date value="2026-07-10T10:00:00+01:00"/>
+  <reporter>
+    <reference value="Organization/NgOrganization-001"/>
+    <display value="TB programme reporting unit (fictional)"/>
+  </reporter>
+  <period>
+    <start value="2026-04-01T00:00:00+01:00"/>
+    <end value="2026-06-30T23:59:59+01:00"/>
+  </period>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="reporting-population"/>
+        <display value="Reporting population"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="500000"/>
+      <unit value="persons"/>
+    </measureScore>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="new-dots-centres"/>
+        <display value="Newly established DOTS centres"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="5"/>
+      <unit value="centres"/>
+    </measureScore>
+    <stratifier>
+      <code>
+        <coding>
+          <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+          <code value="centre-type"/>
+          <display value="Centre type"/>
+        </coding>
+      </code>
+      <stratum>
+        <value>
+          <coding>
+            <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+            <code value="public"/>
+            <display value="Public"/>
+          </coding>
+        </value>
+        <population>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="measure-population"/>
+              <display value="Measure Population"/>
+            </coding>
+          </code>
+          <count value="1"/>
+        </population>
+        <measureScore>
+          <value value="3"/>
+          <unit value="centres"/>
+        </measureScore>
+      </stratum>
+      <stratum>
+        <value>
+          <coding>
+            <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+            <code value="prison"/>
+            <display value="Prison"/>
+          </coding>
+        </value>
+        <population>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="measure-population"/>
+              <display value="Measure Population"/>
+            </coding>
+          </code>
+          <count value="1"/>
+        </population>
+        <measureScore>
+          <value value="1"/>
+          <unit value="centres"/>
+        </measureScore>
+      </stratum>
+      <stratum>
+        <value>
+          <coding>
+            <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+            <code value="private"/>
+            <display value="Private"/>
+          </coding>
+        </value>
+        <population>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="measure-population"/>
+              <display value="Measure Population"/>
+            </coding>
+          </code>
+          <count value="1"/>
+        </population>
+        <measureScore>
+          <value value="1"/>
+          <unit value="centres"/>
+        </measureScore>
+      </stratum>
+    </stratifier>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="new-afb-microscopy-centres"/>
+        <display value="Newly established AFB microscopy centres"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="4"/>
+      <unit value="centres"/>
+    </measureScore>
+    <stratifier>
+      <code>
+        <coding>
+          <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+          <code value="centre-type"/>
+          <display value="Centre type"/>
+        </coding>
+      </code>
+      <stratum>
+        <value>
+          <coding>
+            <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+            <code value="public"/>
+            <display value="Public"/>
+          </coding>
+        </value>
+        <population>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="measure-population"/>
+              <display value="Measure Population"/>
+            </coding>
+          </code>
+          <count value="1"/>
+        </population>
+        <measureScore>
+          <value value="2"/>
+          <unit value="centres"/>
+        </measureScore>
+      </stratum>
+      <stratum>
+        <value>
+          <coding>
+            <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+            <code value="prison"/>
+            <display value="Prison"/>
+          </coding>
+        </value>
+        <population>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="measure-population"/>
+              <display value="Measure Population"/>
+            </coding>
+          </code>
+          <count value="1"/>
+        </population>
+        <measureScore>
+          <value value="1"/>
+          <unit value="centres"/>
+        </measureScore>
+      </stratum>
+      <stratum>
+        <value>
+          <coding>
+            <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+            <code value="private"/>
+            <display value="Private"/>
+          </coding>
+        </value>
+        <population>
+          <code>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+              <code value="measure-population"/>
+              <display value="Measure Population"/>
+            </coding>
+          </code>
+          <count value="1"/>
+        </population>
+        <measureScore>
+          <value value="1"/>
+          <unit value="centres"/>
+        </measureScore>
+      </stratum>
+    </stratifier>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="dots-centres-beginning"/>
+        <display value="DOTS centres at beginning of quarter"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="18"/>
+      <unit value="centres"/>
+    </measureScore>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="dots-centres-end"/>
+        <display value="DOTS centres at end of quarter"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="23"/>
+      <unit value="centres"/>
+    </measureScore>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="dots-coverage"/>
+        <display value="DOTS coverage per population"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="21739.13"/>
+      <unit value="persons per DOTS centre"/>
+    </measureScore>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="microscopy-centres-beginning"/>
+        <display value="AFB microscopy centres at beginning of quarter"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="8"/>
+      <unit value="centres"/>
+    </measureScore>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="microscopy-centres-end"/>
+        <display value="AFB microscopy centres at end of quarter"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="12"/>
+      <unit value="centres"/>
+    </measureScore>
+  </group>
+  <group>
+    <code>
+      <coding>
+        <system value="https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"/>
+        <code value="microscopy-coverage"/>
+        <display value="AFB microscopy coverage per population"/>
+      </coding>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="measure-population"/>
+          <display value="Measure Population"/>
+        </coding>
+      </code>
+      <count value="1"/>
+    </population>
+    <measureScore>
+      <value value="41666.67"/>
+      <unit value="persons per AFB microscopy centre"/>
+    </measureScore>
+  </group>
+</MeasureReport>

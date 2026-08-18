@@ -1,0 +1,345 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy> a fhir:Measure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "NgMeasure-TB-Quarterly-DOTS-Microscopy"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure" ;
+       fhir:index 0 ;
+       fhir:link <https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-measure>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Knowledge Artifact Metadata</th>\n\n</tr>\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Name (machine-readable)</th>\n\n<td class=\"content-container\">NgTBQuarterlyDotsMicroscopyCentreMeasure</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Title (human-readable)</th>\n\n<td class=\"content-container\">Nigeria TB Quarterly DOTS and Microscopy Centre Measure</td>\n</tr>\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Status</th>\n\n<td class=\"content-container\">Draft</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Experimental</th>\n\n<td class=\"content-container\">true</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n<td class=\"content-container\"><div><p>Aggregate reporting contract corresponding to NTBLCP/TB 18. The current\npopulation criteria are placeholders and do not constitute executable\ncalculation logic.</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Steward</th>\n\n<td class=\"content-container\">NDHI</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Steward Contact Details</th>\n\n<td class=\"content-container\">NDHI: <a href=\"https://digitalhealth.gov.ng\">https://digitalhealth.gov.ng</a></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Metadata</th>\n\n</tr>\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Version Number</th>\n\n<td class=\"content-container\">0.0.0</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Scoring</th>\n\n<td class=\"content-container\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/measure-scoring continuous-variable}\">Continuous Variable</span></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Population covered by the quarterly State or LGA report.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Population covered by the quarterly State or LGA report.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of newly established DOTS centres during the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of newly established DOTS centres during the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Centre type\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Centre type: Public, Prison or Private.\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of newly established AFB microscopy centres during the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of newly established AFB microscopy centres during the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n<tr>\n  \n<th scope=\"row\" class=\"row-header\">Stratifier</th>\n\n  <td class=\"content-container\">\n    \n    \n      \n        <em>Code</em>: Centre type\n      \n      \n        <br/>\n      \n    \n    \n      <em>Description</em>: Centre type: Public, Prison or Private.\n    \n  </td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of DOTS centres at the beginning of the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of DOTS centres at the beginning of the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of DOTS centres at the end of the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of DOTS centres at the end of the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Population-to-DOTS-centre ratio at the end of the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Population-to-DOTS-centre ratio at the end of the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of AFB microscopy centres at the beginning of the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of AFB microscopy centres at the beginning of the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Number of AFB microscopy centres at the end of the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Number of AFB microscopy centres at the end of the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n    \n<tr>\n\n<th scope=\"row\" class=\"row-header\">Summary</th>\n\n<td class=\"content-container\">Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter.</td>\n</tr>\n\n  \n  \n  \n    <tr>\n      \n        \n<th scope=\"row\" class=\"row-header\">Measure Population</th>\n\n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter.</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>\n</tr>\n    </tbody>\n  </table>\n</div>"
+  ] ;
+  fhir:Measure.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy"] ;
+  fhir:Measure.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.29.3" ]
+  ] ;
+  fhir:Measure.version [ fhir:value "0.0.0"] ;
+  fhir:Measure.name [ fhir:value "NgTBQuarterlyDotsMicroscopyCentreMeasure"] ;
+  fhir:Measure.title [ fhir:value "Nigeria TB Quarterly DOTS and Microscopy Centre Measure"] ;
+  fhir:Measure.status [ fhir:value "draft"] ;
+  fhir:Measure.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Measure.date [ fhir:value "2026-08-18"^^xsd:date] ;
+  fhir:Measure.publisher [ fhir:value "NDHI"] ;
+  fhir:Measure.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ]
+  ] ;
+  fhir:Measure.description [ fhir:value "Aggregate reporting contract corresponding to NTBLCP/TB 18. The current\npopulation criteria are placeholders and do not constitute executable\ncalculation logic."] ;
+  fhir:Measure.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:Measure.scoring [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-scoring" ] ;
+       fhir:Coding.code [ fhir:value "continuous-variable" ] ;
+       fhir:Coding.display [ fhir:value "Continuous Variable" ]
+     ]
+  ] ;
+  fhir:Measure.group [
+     fhir:index 0 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "reporting-population" ] ;
+         fhir:Coding.display [ fhir:value "Reporting population" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Population covered by the quarterly State or LGA report." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Population covered by the quarterly State or LGA report." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "new-dots-centres" ] ;
+         fhir:Coding.display [ fhir:value "Newly established DOTS centres" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of newly established DOTS centres during the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of newly established DOTS centres during the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+           fhir:Coding.code [ fhir:value "centre-type" ] ;
+           fhir:Coding.display [ fhir:value "Centre type" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Centre type: Public, Prison or Private." ] ;
+       fhir:Measure.group.stratifier.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "new-afb-microscopy-centres" ] ;
+         fhir:Coding.display [ fhir:value "Newly established AFB microscopy centres" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of newly established AFB microscopy centres during the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of newly established AFB microscopy centres during the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ] ;
+     fhir:Measure.group.stratifier [
+       fhir:index 0 ;
+       fhir:Measure.group.stratifier.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+           fhir:Coding.code [ fhir:value "centre-type" ] ;
+           fhir:Coding.display [ fhir:value "Centre type" ]
+         ]
+       ] ;
+       fhir:Measure.group.stratifier.description [ fhir:value "Centre type: Public, Prison or Private." ] ;
+       fhir:Measure.group.stratifier.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "dots-centres-beginning" ] ;
+         fhir:Coding.display [ fhir:value "DOTS centres at beginning of quarter" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of DOTS centres at the beginning of the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of DOTS centres at the beginning of the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "dots-centres-end" ] ;
+         fhir:Coding.display [ fhir:value "DOTS centres at end of quarter" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of DOTS centres at the end of the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of DOTS centres at the end of the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "dots-coverage" ] ;
+         fhir:Coding.display [ fhir:value "DOTS coverage per population" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Population-to-DOTS-centre ratio at the end of the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Population-to-DOTS-centre ratio at the end of the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "microscopy-centres-beginning" ] ;
+         fhir:Coding.display [ fhir:value "AFB microscopy centres at beginning of quarter" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of AFB microscopy centres at the beginning of the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of AFB microscopy centres at the beginning of the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "microscopy-centres-end" ] ;
+         fhir:Coding.display [ fhir:value "AFB microscopy centres at end of quarter" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Number of AFB microscopy centres at the end of the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Number of AFB microscopy centres at the end of the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs" ] ;
+         fhir:Coding.code [ fhir:value "microscopy-coverage" ] ;
+         fhir:Coding.display [ fhir:value "AFB microscopy coverage per population" ]
+       ]
+     ] ;
+     fhir:Measure.group.description [ fhir:value "Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter." ] ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "measure-population" ] ;
+           fhir:Coding.display [ fhir:value "Measure Population" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter." ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "true" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/Measure/NgMeasure-TB-Quarterly-DOTS-Microscopy.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NgTBLaboratoryRegister"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition NgTBLaboratoryRegister</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister" title="Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 04 TB Laboratory Register for Xpert MTB/RIF assay,
+AFB microscopy and other TB diagnostic tests. One model instance represents
+a laboratory register and contains repeatable laboratory entries corresponding
+to individual patient/specimen rows in the source register.">NgTBLaboratoryRegister</a><a name="NgTBLaboratoryRegister"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">NG TB Laboratory Register</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.identifier" title="Identifier assigned to the TB laboratory register or its electronic equivalent.">identifier</a><a name="NgTBLaboratoryRegister.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Register identifier</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.laboratory" title="Reference to the laboratory maintaining the register, when available.">laboratory</a><a name="NgTBLaboratoryRegister.laboratory"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-organization.html">NG Organization</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratory reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.laboratoryName" title="Name of the laboratory maintaining the NTBLCP/TB 04 register.">laboratoryName</a><a name="NgTBLaboratoryRegister.laboratoryName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of laboratory</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.lga" title="Local Government Area in which the laboratory is located.">lga</a><a name="NgTBLaboratoryRegister.lga"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">LGA<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-lgas-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs" class="binding">NG LGAs VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry" title="One patient/specimen row in the NTBLCP/TB 04 TB Laboratory Register.">entry</a><a name="NgTBLaboratoryRegister.entry"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratory register entry<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.subject" title="Reference to the corresponding Nigeria Core Patient resource, when available.">subject</a><a name="NgTBLaboratoryRegister.entry.subject"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-patient.html">NG Patient</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.laboratorySerialNumber" title="Laboratory-assigned serial number for the specimen or examination.">laboratorySerialNumber</a><a name="NgTBLaboratoryRegister.entry.laboratorySerialNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratory serial number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.specimenIdentificationNumber" title="Specimen identification number recorded on the laboratory register.">specimenIdentificationNumber</a><a name="NgTBLaboratoryRegister.entry.specimenIdentificationNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen identification number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.specimenReceivedDate" title="Date the specimen was received in the laboratory.">specimenReceivedDate</a><a name="NgTBLaboratoryRegister.entry.specimenReceivedDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date specimen received</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.specimenAccepted" title="True when the specimen was accepted by the laboratory; false when rejected.">specimenAccepted</a><a name="NgTBLaboratoryRegister.entry.specimenAccepted"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen accepted</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.specimenRejectionReason" title="Reason for specimen rejection when specimenAccepted is false.">specimenRejectionReason</a><a name="NgTBLaboratoryRegister.entry.specimenRejectionReason"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason specimen rejected</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.patientName" title="Name of the patient as recorded in the laboratory register.">patientName</a><a name="NgTBLaboratoryRegister.entry.patientName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.sex" title="Patient sex. The source register records M or F.">sex</a><a name="NgTBLaboratoryRegister.entry.sex"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sex<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-gender-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs" class="binding">NG Gender or Sex VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.age" title="Patient age recorded in the laboratory register.">age</a><a name="NgTBLaboratoryRegister.entry.age"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.patientAddress" title="Patient address recorded in the laboratory register.">patientAddress</a><a name="NgTBLaboratoryRegister.entry.patientAddress"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient address</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.referringHealthFacility" title="Reference to the facility from which the patient or specimen was referred, when available.">referringHealthFacility</a><a name="NgTBLaboratoryRegister.entry.referringHealthFacility"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-organization.html">NG Organization</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referring health facility reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.referringHealthFacilityName" title="Name of the facility from which the patient or specimen was referred.">referringHealthFacilityName</a><a name="NgTBLaboratoryRegister.entry.referringHealthFacilityName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referring health facility</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.presumptiveTBType" title="Type of presumptive TB recorded in the source register. Expected source values are DS-TB or DR-TB.">presumptiveTBType</a><a name="NgTBLaboratoryRegister.entry.presumptiveTBType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of presumptive TB</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.siteOfDisease" title="Site of TB disease. Expected source values are Pulmonary or Extra-Pulmonary.">siteOfDisease</a><a name="NgTBLaboratoryRegister.entry.siteOfDisease"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Site of disease</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.healthCareWorker" title="Indicates whether the patient is a health care worker.">healthCareWorker</a><a name="NgTBLaboratoryRegister.entry.healthCareWorker"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Health care worker</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.previouslyKnownHivStatus" title="HIV status known before presentation to the laboratory. Expected source values are Positive, Negative or Unknown.">previouslyKnownHivStatus</a><a name="NgTBLaboratoryRegister.entry.previouslyKnownHivStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Previously known HIV status</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.laboratoryHivTestStatus" title="HIV testing status/result recorded by the laboratory. Expected source values are Positive, Negative or Not tested.">laboratoryHivTestStatus</a><a name="NgTBLaboratoryRegister.entry.laboratoryHivTestStatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tested for HIV in the laboratory</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.specimenType" title="Type of specimen submitted to the laboratory, for example sputum or another clinical specimen.">specimenType</a><a name="NgTBLaboratoryRegister.entry.specimenType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of specimen</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.testRequired" title="Laboratory test requested for the specimen.">testRequired</a><a name="NgTBLaboratoryRegister.entry.testRequired"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of test required</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.xpertResult" title="Results of Xpert MTB/RIF testing when performed.">xpertResult</a><a name="NgTBLaboratoryRegister.entry.xpertResult"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Xpert MTB/RIF result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.xpertResult.mtbDetected" title="Indicates whether Mycobacterium tuberculosis was detected by the Xpert MTB/RIF assay.">mtbDetected</a><a name="NgTBLaboratoryRegister.entry.xpertResult.mtbDetected"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">MTB detected</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult" title="Rifampicin-resistance result when MTB is detected. Expected source values are resistance-not-detected, resistance-detected or resistance-indeterminate.">rifResistanceResult</a><a name="NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">RIF resistance result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.xpertResult.errorCode" title="Xpert MTB/RIF error code when the assay reports an error.">errorCode</a><a name="NgTBLaboratoryRegister.entry.xpertResult.errorCode"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Xpert error code</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete" title="Indicates whether the Xpert MTB/RIF examination was invalid or incomplete.">invalidOrIncomplete</a><a name="NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Invalid or incomplete Xpert test</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.afbResult" title="Acid-fast bacilli microscopy information when AFB testing is performed.">afbResult</a><a name="NgTBLaboratoryRegister.entry.afbResult"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">AFB result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.afbResult.reasonForTest" title="Reason for AFB microscopy. Expected source values are Diagnosis or Follow-up.">reasonForTest</a><a name="NgTBLaboratoryRegister.entry.afbResult.reasonForTest"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reason for AFB test</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.afbResult.followUpMonth" title="Treatment month for which the follow-up AFB examination was performed.">followUpMonth</a><a name="NgTBLaboratoryRegister.entry.afbResult.followUpMonth"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Month of treatment</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.afbResult.result" title="AFB microscopy result entered in the laboratory register.">result</a><a name="NgTBLaboratoryRegister.entry.afbResult.result"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">AFB result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.otherTestResult" title="Result of a TB diagnostic test other than the dedicated Xpert MTB/RIF and AFB columns.">otherTestResult</a><a name="NgTBLaboratoryRegister.entry.otherTestResult"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other test result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.otherTestResult.testType" title="Type of test performed, for example TB LAMP, LF-LAM or Quantiferon.">testType</a><a name="NgTBLaboratoryRegister.entry.otherTestResult.testType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of other test</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.otherTestResult.result" title="Result of the other diagnostic test. Expected source values are Positive, Negative or Indeterminate.">result</a><a name="NgTBLaboratoryRegister.entry.otherTestResult.result"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other test result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.reportingOfficer" title="Reference to the health worker or laboratory professional reporting the result, when available.">reportingOfficer</a><a name="NgTBLaboratoryRegister.entry.reportingOfficer"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reporting officer reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.reportingOfficerName" title="Name of the officer reporting the laboratory result.">reportingOfficerName</a><a name="NgTBLaboratoryRegister.entry.reportingOfficerName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of officer reporting</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.resultReleasedDate" title="Date the laboratory result was released.">resultReleasedDate</a><a name="NgTBLaboratoryRegister.entry.resultReleasedDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date result released</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBLaboratoryRegister-definitions.html#NgTBLaboratoryRegister.entry.remarks" title="Additional remarks recorded for the laboratory entry.">remarks</a><a name="NgTBLaboratoryRegister.entry.remarks"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Remarks</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgTBLaboratoryRegister"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.42.78"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgTBLaboratoryRegister"/>
+  <title value="NG TB Laboratory Register"/>
+  <status value="draft"/>
+  <date value="2026-08-18T15:57:17+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+  </contact>
+  <description value="Logical model for the Nigeria National Tuberculosis and Leprosy Control&#xA;Programme NTBLCP/TB 04 TB Laboratory Register for Xpert MTB/RIF assay,&#xA;AFB microscopy and other TB diagnostic tests. One model instance represents&#xA;a laboratory register and contains repeatable laboratory entries corresponding&#xA;to individual patient/specimen rows in the source register."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="ng-tb-laboratory-register-columns"/>
+    <uri value="urn:ng:ntblcp:tb04:tb-laboratory-register"/>
+    <name value="NG TB Laboratory Register Column Mapping"/>
+    <comment value="Maps NgTBLaboratoryRegister logical-model elements to the printed&#xA;NTBLCP/TB 04 TB Laboratory Register columns."/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgTBLaboratoryRegister"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="NgTBLaboratoryRegister">
+      <path value="NgTBLaboratoryRegister"/>
+      <short value="NG TB Laboratory Register"/>
+      <definition value="Logical model for the Nigeria National Tuberculosis and Leprosy Control&#xA;Programme NTBLCP/TB 04 TB Laboratory Register for Xpert MTB/RIF assay,&#xA;AFB microscopy and other TB diagnostic tests. One model instance represents&#xA;a laboratory register and contains repeatable laboratory entries corresponding&#xA;to individual patient/specimen rows in the source register."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="NgTBLaboratoryRegister.identifier">
+      <path value="NgTBLaboratoryRegister.identifier"/>
+      <short value="Register identifier"/>
+      <definition value="Identifier assigned to the TB laboratory register or its electronic equivalent."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.identifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.laboratory">
+      <path value="NgTBLaboratoryRegister.laboratory"/>
+      <short value="Laboratory reference"/>
+      <definition value="Reference to the laboratory maintaining the register, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.laboratory"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.laboratoryName">
+      <path value="NgTBLaboratoryRegister.laboratoryName"/>
+      <short value="Name of laboratory"/>
+      <definition value="Name of the laboratory maintaining the NTBLCP/TB 04 register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.laboratoryName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Header: Name of Laboratory"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.lga">
+      <path value="NgTBLaboratoryRegister.lga"/>
+      <short value="LGA"/>
+      <definition value="Local Government Area in which the laboratory is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.lga"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Header: LGA"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry">
+      <path value="NgTBLaboratoryRegister.entry"/>
+      <short value="Laboratory register entry"/>
+      <definition value="One patient/specimen row in the NTBLCP/TB 04 TB Laboratory Register."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.id">
+      <path value="NgTBLaboratoryRegister.entry.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.extension">
+      <path value="NgTBLaboratoryRegister.entry.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.modifierExtension">
+      <path value="NgTBLaboratoryRegister.entry.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.subject">
+      <path value="NgTBLaboratoryRegister.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.subject"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.laboratorySerialNumber">
+      <path value="NgTBLaboratoryRegister.entry.laboratorySerialNumber"/>
+      <short value="Laboratory serial number"/>
+      <definition value="Laboratory-assigned serial number for the specimen or examination."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.laboratorySerialNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Laboratory serial number"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenIdentificationNumber">
+      <path value="NgTBLaboratoryRegister.entry.specimenIdentificationNumber"/>
+      <short value="Specimen identification number"/>
+      <definition value="Specimen identification number recorded on the laboratory register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.specimenIdentificationNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Identification Number"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenReceivedDate">
+      <path value="NgTBLaboratoryRegister.entry.specimenReceivedDate"/>
+      <short value="Date specimen received"/>
+      <definition value="Date the specimen was received in the laboratory."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.specimenReceivedDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Date specimen was received in the lab"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenAccepted">
+      <path value="NgTBLaboratoryRegister.entry.specimenAccepted"/>
+      <short value="Specimen accepted"/>
+      <definition value="True when the specimen was accepted by the laboratory; false when rejected."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.specimenAccepted"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Status: Accepted / Rejected"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenRejectionReason">
+      <path value="NgTBLaboratoryRegister.entry.specimenRejectionReason"/>
+      <short value="Reason specimen rejected"/>
+      <definition value="Reason for specimen rejection when specimenAccepted is false."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.specimenRejectionReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="If rejected specify reason"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.patientName">
+      <path value="NgTBLaboratoryRegister.entry.patientName"/>
+      <short value="Patient name"/>
+      <definition value="Name of the patient as recorded in the laboratory register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.patientName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Patient Name"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.sex">
+      <path value="NgTBLaboratoryRegister.entry.sex"/>
+      <short value="Sex"/>
+      <definition value="Patient sex. The source register records M or F."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.sex"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Sex (insert M or F)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.age">
+      <path value="NgTBLaboratoryRegister.entry.age"/>
+      <short value="Age"/>
+      <definition value="Patient age recorded in the laboratory register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.age"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Age"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.patientAddress">
+      <path value="NgTBLaboratoryRegister.entry.patientAddress"/>
+      <short value="Patient address"/>
+      <definition value="Patient address recorded in the laboratory register."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.patientAddress"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Patient Address"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.referringHealthFacility">
+      <path value="NgTBLaboratoryRegister.entry.referringHealthFacility"/>
+      <short value="Referring health facility reference"/>
+      <definition value="Reference to the facility from which the patient or specimen was referred, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.referringHealthFacility"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.referringHealthFacilityName">
+      <path value="NgTBLaboratoryRegister.entry.referringHealthFacilityName"/>
+      <short value="Referring health facility"/>
+      <definition value="Name of the facility from which the patient or specimen was referred."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.referringHealthFacilityName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Referring health facility"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.presumptiveTBType">
+      <path value="NgTBLaboratoryRegister.entry.presumptiveTBType"/>
+      <short value="Type of presumptive TB"/>
+      <definition value="Type of presumptive TB recorded in the source register. Expected source values are DS-TB or DR-TB."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.presumptiveTBType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Type of Presumptive - DS-TB / DR-TB"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.siteOfDisease">
+      <path value="NgTBLaboratoryRegister.entry.siteOfDisease"/>
+      <short value="Site of disease"/>
+      <definition value="Site of TB disease. Expected source values are Pulmonary or Extra-Pulmonary."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.siteOfDisease"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Site of Disease - Pulmonary / Extra-Pulmonary"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.healthCareWorker">
+      <path value="NgTBLaboratoryRegister.entry.healthCareWorker"/>
+      <short value="Health care worker"/>
+      <definition value="Indicates whether the patient is a health care worker."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.healthCareWorker"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Health care worker (Indicate Y/N)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.previouslyKnownHivStatus">
+      <path value="NgTBLaboratoryRegister.entry.previouslyKnownHivStatus"/>
+      <short value="Previously known HIV status"/>
+      <definition value="HIV status known before presentation to the laboratory. Expected source values are Positive, Negative or Unknown."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.previouslyKnownHivStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="HIV Status: Previously Known HIV status - Positive / Negative / Unknown"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.laboratoryHivTestStatus">
+      <path value="NgTBLaboratoryRegister.entry.laboratoryHivTestStatus"/>
+      <short value="Tested for HIV in the laboratory"/>
+      <definition value="HIV testing status/result recorded by the laboratory. Expected source values are Positive, Negative or Not tested."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.laboratoryHivTestStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="HIV Status: Tested for HIV in the lab - Positive / Negative / Not tested"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenType">
+      <path value="NgTBLaboratoryRegister.entry.specimenType"/>
+      <short value="Type of specimen"/>
+      <definition value="Type of specimen submitted to the laboratory, for example sputum or another clinical specimen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.specimenType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Information: Type of specimen (Specify)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.testRequired">
+      <path value="NgTBLaboratoryRegister.entry.testRequired"/>
+      <short value="Type of test required"/>
+      <definition value="Laboratory test requested for the specimen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.testRequired"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Information: Type of Test Required (Specify test)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult"/>
+      <short value="Xpert MTB/RIF result"/>
+      <definition value="Results of Xpert MTB/RIF testing when performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.xpertResult"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.id">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.extension">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.modifierExtension">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.mtbDetected">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.mtbDetected"/>
+      <short value="MTB detected"/>
+      <definition value="Indicates whether Mycobacterium tuberculosis was detected by the Xpert MTB/RIF assay."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.xpertResult.mtbDetected"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: MTB Detected (Indicate Y/N)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult"/>
+      <short value="RIF resistance result"/>
+      <definition value="Rifampicin-resistance result when MTB is detected. Expected source values are resistance-not-detected, resistance-detected or resistance-indeterminate."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: RIF Resistance not detected / detected / indeterminate"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.errorCode">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.errorCode"/>
+      <short value="Xpert error code"/>
+      <definition value="Xpert MTB/RIF error code when the assay reports an error."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.xpertResult.errorCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: Error (specify error code)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete"/>
+      <short value="Invalid or incomplete Xpert test"/>
+      <definition value="Indicates whether the Xpert MTB/RIF examination was invalid or incomplete."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: Invalid/Incomplete test (Indicate Y/N)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult">
+      <path value="NgTBLaboratoryRegister.entry.afbResult"/>
+      <short value="AFB result"/>
+      <definition value="Acid-fast bacilli microscopy information when AFB testing is performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.afbResult"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.id">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.extension">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.modifierExtension">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.reasonForTest">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.reasonForTest"/>
+      <short value="Reason for AFB test"/>
+      <definition value="Reason for AFB microscopy. Expected source values are Diagnosis or Follow-up."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.afbResult.reasonForTest"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="AFB: Reason for AFB Test - Diagnosis / Follow-up"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.followUpMonth">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.followUpMonth"/>
+      <short value="Month of treatment"/>
+      <definition value="Treatment month for which the follow-up AFB examination was performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.afbResult.followUpMonth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="AFB: Indicate Month of treatment"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.result">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.result"/>
+      <short value="AFB result"/>
+      <definition value="AFB microscopy result entered in the laboratory register."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.afbResult.result"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="AFB: Insert AFB result"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult"/>
+      <short value="Other test result"/>
+      <definition value="Result of a TB diagnostic test other than the dedicated Xpert MTB/RIF and AFB columns."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.otherTestResult"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.id">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.extension">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.modifierExtension">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.testType">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.testType"/>
+      <short value="Type of other test"/>
+      <definition value="Type of test performed, for example TB LAMP, LF-LAM or Quantiferon."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.otherTestResult.testType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Other test results: Write type of test"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.result">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.result"/>
+      <short value="Other test result"/>
+      <definition value="Result of the other diagnostic test. Expected source values are Positive, Negative or Indeterminate."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.otherTestResult.result"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Other test results: Positive / Negative / Indeterminate"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.reportingOfficer">
+      <path value="NgTBLaboratoryRegister.entry.reportingOfficer"/>
+      <short value="Reporting officer reference"/>
+      <definition value="Reference to the health worker or laboratory professional reporting the result, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.reportingOfficer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.reportingOfficerName">
+      <path value="NgTBLaboratoryRegister.entry.reportingOfficerName"/>
+      <short value="Name of officer reporting"/>
+      <definition value="Name of the officer reporting the laboratory result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.reportingOfficerName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Name of officer reporting"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.resultReleasedDate">
+      <path value="NgTBLaboratoryRegister.entry.resultReleasedDate"/>
+      <short value="Date result released"/>
+      <definition value="Date the laboratory result was released."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.resultReleasedDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Date result released"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.remarks">
+      <path value="NgTBLaboratoryRegister.entry.remarks"/>
+      <short value="Remarks"/>
+      <definition value="Additional remarks recorded for the laboratory entry."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBLaboratoryRegister.entry.remarks"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Remarks"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="NgTBLaboratoryRegister">
+      <path value="NgTBLaboratoryRegister"/>
+      <short value="NG TB Laboratory Register"/>
+      <definition value="Logical model for the Nigeria National Tuberculosis and Leprosy Control&#xA;Programme NTBLCP/TB 04 TB Laboratory Register for Xpert MTB/RIF assay,&#xA;AFB microscopy and other TB diagnostic tests. One model instance represents&#xA;a laboratory register and contains repeatable laboratory entries corresponding&#xA;to individual patient/specimen rows in the source register."/>
+    </element>
+    <element id="NgTBLaboratoryRegister.identifier">
+      <path value="NgTBLaboratoryRegister.identifier"/>
+      <short value="Register identifier"/>
+      <definition value="Identifier assigned to the TB laboratory register or its electronic equivalent."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.laboratory">
+      <path value="NgTBLaboratoryRegister.laboratory"/>
+      <short value="Laboratory reference"/>
+      <definition value="Reference to the laboratory maintaining the register, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.laboratoryName">
+      <path value="NgTBLaboratoryRegister.laboratoryName"/>
+      <short value="Name of laboratory"/>
+      <definition value="Name of the laboratory maintaining the NTBLCP/TB 04 register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Header: Name of Laboratory"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.lga">
+      <path value="NgTBLaboratoryRegister.lga"/>
+      <short value="LGA"/>
+      <definition value="Local Government Area in which the laboratory is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Header: LGA"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry">
+      <path value="NgTBLaboratoryRegister.entry"/>
+      <short value="Laboratory register entry"/>
+      <definition value="One patient/specimen row in the NTBLCP/TB 04 TB Laboratory Register."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.subject">
+      <path value="NgTBLaboratoryRegister.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.laboratorySerialNumber">
+      <path value="NgTBLaboratoryRegister.entry.laboratorySerialNumber"/>
+      <short value="Laboratory serial number"/>
+      <definition value="Laboratory-assigned serial number for the specimen or examination."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Laboratory serial number"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenIdentificationNumber">
+      <path value="NgTBLaboratoryRegister.entry.specimenIdentificationNumber"/>
+      <short value="Specimen identification number"/>
+      <definition value="Specimen identification number recorded on the laboratory register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Identification Number"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenReceivedDate">
+      <path value="NgTBLaboratoryRegister.entry.specimenReceivedDate"/>
+      <short value="Date specimen received"/>
+      <definition value="Date the specimen was received in the laboratory."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Date specimen was received in the lab"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenAccepted">
+      <path value="NgTBLaboratoryRegister.entry.specimenAccepted"/>
+      <short value="Specimen accepted"/>
+      <definition value="True when the specimen was accepted by the laboratory; false when rejected."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Status: Accepted / Rejected"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenRejectionReason">
+      <path value="NgTBLaboratoryRegister.entry.specimenRejectionReason"/>
+      <short value="Reason specimen rejected"/>
+      <definition value="Reason for specimen rejection when specimenAccepted is false."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="If rejected specify reason"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.patientName">
+      <path value="NgTBLaboratoryRegister.entry.patientName"/>
+      <short value="Patient name"/>
+      <definition value="Name of the patient as recorded in the laboratory register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Patient Name"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.sex">
+      <path value="NgTBLaboratoryRegister.entry.sex"/>
+      <short value="Sex"/>
+      <definition value="Patient sex. The source register records M or F."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Sex (insert M or F)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.age">
+      <path value="NgTBLaboratoryRegister.entry.age"/>
+      <short value="Age"/>
+      <definition value="Patient age recorded in the laboratory register."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Age"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.patientAddress">
+      <path value="NgTBLaboratoryRegister.entry.patientAddress"/>
+      <short value="Patient address"/>
+      <definition value="Patient address recorded in the laboratory register."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Patient Address"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.referringHealthFacility">
+      <path value="NgTBLaboratoryRegister.entry.referringHealthFacility"/>
+      <short value="Referring health facility reference"/>
+      <definition value="Reference to the facility from which the patient or specimen was referred, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.referringHealthFacilityName">
+      <path value="NgTBLaboratoryRegister.entry.referringHealthFacilityName"/>
+      <short value="Referring health facility"/>
+      <definition value="Name of the facility from which the patient or specimen was referred."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Referring health facility"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.presumptiveTBType">
+      <path value="NgTBLaboratoryRegister.entry.presumptiveTBType"/>
+      <short value="Type of presumptive TB"/>
+      <definition value="Type of presumptive TB recorded in the source register. Expected source values are DS-TB or DR-TB."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Type of Presumptive - DS-TB / DR-TB"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.siteOfDisease">
+      <path value="NgTBLaboratoryRegister.entry.siteOfDisease"/>
+      <short value="Site of disease"/>
+      <definition value="Site of TB disease. Expected source values are Pulmonary or Extra-Pulmonary."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Site of Disease - Pulmonary / Extra-Pulmonary"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.healthCareWorker">
+      <path value="NgTBLaboratoryRegister.entry.healthCareWorker"/>
+      <short value="Health care worker"/>
+      <definition value="Indicates whether the patient is a health care worker."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Patient Data: Health care worker (Indicate Y/N)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.previouslyKnownHivStatus">
+      <path value="NgTBLaboratoryRegister.entry.previouslyKnownHivStatus"/>
+      <short value="Previously known HIV status"/>
+      <definition value="HIV status known before presentation to the laboratory. Expected source values are Positive, Negative or Unknown."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="HIV Status: Previously Known HIV status - Positive / Negative / Unknown"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.laboratoryHivTestStatus">
+      <path value="NgTBLaboratoryRegister.entry.laboratoryHivTestStatus"/>
+      <short value="Tested for HIV in the laboratory"/>
+      <definition value="HIV testing status/result recorded by the laboratory. Expected source values are Positive, Negative or Not tested."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="HIV Status: Tested for HIV in the lab - Positive / Negative / Not tested"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.specimenType">
+      <path value="NgTBLaboratoryRegister.entry.specimenType"/>
+      <short value="Type of specimen"/>
+      <definition value="Type of specimen submitted to the laboratory, for example sputum or another clinical specimen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Information: Type of specimen (Specify)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.testRequired">
+      <path value="NgTBLaboratoryRegister.entry.testRequired"/>
+      <short value="Type of test required"/>
+      <definition value="Laboratory test requested for the specimen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Specimen Information: Type of Test Required (Specify test)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult"/>
+      <short value="Xpert MTB/RIF result"/>
+      <definition value="Results of Xpert MTB/RIF testing when performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.mtbDetected">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.mtbDetected"/>
+      <short value="MTB detected"/>
+      <definition value="Indicates whether Mycobacterium tuberculosis was detected by the Xpert MTB/RIF assay."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: MTB Detected (Indicate Y/N)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.rifResistanceResult"/>
+      <short value="RIF resistance result"/>
+      <definition value="Rifampicin-resistance result when MTB is detected. Expected source values are resistance-not-detected, resistance-detected or resistance-indeterminate."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: RIF Resistance not detected / detected / indeterminate"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.errorCode">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.errorCode"/>
+      <short value="Xpert error code"/>
+      <definition value="Xpert MTB/RIF error code when the assay reports an error."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: Error (specify error code)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete">
+      <path value="NgTBLaboratoryRegister.entry.xpertResult.invalidOrIncomplete"/>
+      <short value="Invalid or incomplete Xpert test"/>
+      <definition value="Indicates whether the Xpert MTB/RIF examination was invalid or incomplete."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Xpert MTB/RIF: Invalid/Incomplete test (Indicate Y/N)"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult">
+      <path value="NgTBLaboratoryRegister.entry.afbResult"/>
+      <short value="AFB result"/>
+      <definition value="Acid-fast bacilli microscopy information when AFB testing is performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.reasonForTest">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.reasonForTest"/>
+      <short value="Reason for AFB test"/>
+      <definition value="Reason for AFB microscopy. Expected source values are Diagnosis or Follow-up."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="AFB: Reason for AFB Test - Diagnosis / Follow-up"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.followUpMonth">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.followUpMonth"/>
+      <short value="Month of treatment"/>
+      <definition value="Treatment month for which the follow-up AFB examination was performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="AFB: Indicate Month of treatment"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.afbResult.result">
+      <path value="NgTBLaboratoryRegister.entry.afbResult.result"/>
+      <short value="AFB result"/>
+      <definition value="AFB microscopy result entered in the laboratory register."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="AFB: Insert AFB result"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult"/>
+      <short value="Other test result"/>
+      <definition value="Result of a TB diagnostic test other than the dedicated Xpert MTB/RIF and AFB columns."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.testType">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.testType"/>
+      <short value="Type of other test"/>
+      <definition value="Type of test performed, for example TB LAMP, LF-LAM or Quantiferon."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Other test results: Write type of test"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.otherTestResult.result">
+      <path value="NgTBLaboratoryRegister.entry.otherTestResult.result"/>
+      <short value="Other test result"/>
+      <definition value="Result of the other diagnostic test. Expected source values are Positive, Negative or Indeterminate."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Other test results: Positive / Negative / Indeterminate"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.reportingOfficer">
+      <path value="NgTBLaboratoryRegister.entry.reportingOfficer"/>
+      <short value="Reporting officer reference"/>
+      <definition value="Reference to the health worker or laboratory professional reporting the result, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      </type>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.reportingOfficerName">
+      <path value="NgTBLaboratoryRegister.entry.reportingOfficerName"/>
+      <short value="Name of officer reporting"/>
+      <definition value="Name of the officer reporting the laboratory result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Name of officer reporting"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.resultReleasedDate">
+      <path value="NgTBLaboratoryRegister.entry.resultReleasedDate"/>
+      <short value="Date result released"/>
+      <definition value="Date the laboratory result was released."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Date result released"/>
+      </mapping>
+    </element>
+    <element id="NgTBLaboratoryRegister.entry.remarks">
+      <path value="NgTBLaboratoryRegister.entry.remarks"/>
+      <short value="Remarks"/>
+      <definition value="Additional remarks recorded for the laboratory entry."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-laboratory-register-columns"/>
+        <map value="Remarks"/>
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

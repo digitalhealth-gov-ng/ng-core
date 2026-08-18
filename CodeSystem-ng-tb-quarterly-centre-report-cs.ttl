@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ng-tb-quarterly-centre-report-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ng-tb-quarterly-centre-report-cs</b></p><a name=\"ng-tb-quarterly-centre-report-cs\"> </a><a name=\"hcng-tb-quarterly-centre-report-cs\"> </a><p>This case-insensitive code system <code>https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">reporting-population<a name=\"ng-tb-quarterly-centre-report-cs-reporting-population\"> </a></td><td>Reporting population</td><td>Population of the State or LGA covered by the quarterly report.</td></tr><tr><td style=\"white-space:nowrap\">new-dots-centres<a name=\"ng-tb-quarterly-centre-report-cs-new-dots-centres\"> </a></td><td>Newly established DOTS centres</td><td>Number of newly established DOTS centres during the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">new-afb-microscopy-centres<a name=\"ng-tb-quarterly-centre-report-cs-new-afb-microscopy-centres\"> </a></td><td>Newly established AFB microscopy centres</td><td>Number of newly established AFB microscopy centres during the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">dots-centres-beginning<a name=\"ng-tb-quarterly-centre-report-cs-dots-centres-beginning\"> </a></td><td>DOTS centres at beginning of quarter</td><td>Number of DOTS centres at the beginning of the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">dots-centres-end<a name=\"ng-tb-quarterly-centre-report-cs-dots-centres-end\"> </a></td><td>DOTS centres at end of quarter</td><td>Number of DOTS centres at the end of the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">dots-coverage<a name=\"ng-tb-quarterly-centre-report-cs-dots-coverage\"> </a></td><td>DOTS coverage per population</td><td>Population-to-DOTS-centre ratio at the end of the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">microscopy-centres-beginning<a name=\"ng-tb-quarterly-centre-report-cs-microscopy-centres-beginning\"> </a></td><td>AFB microscopy centres at beginning of quarter</td><td>Number of AFB microscopy centres at the beginning of the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">microscopy-centres-end<a name=\"ng-tb-quarterly-centre-report-cs-microscopy-centres-end\"> </a></td><td>AFB microscopy centres at end of quarter</td><td>Number of AFB microscopy centres at the end of the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">microscopy-coverage<a name=\"ng-tb-quarterly-centre-report-cs-microscopy-coverage\"> </a></td><td>AFB microscopy coverage per population</td><td>Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter.</td></tr><tr><td style=\"white-space:nowrap\">centre-type<a name=\"ng-tb-quarterly-centre-report-cs-centre-type\"> </a></td><td>Centre type</td><td>Type or ownership category of the newly established centre.</td></tr><tr><td style=\"white-space:nowrap\">public<a name=\"ng-tb-quarterly-centre-report-cs-public\"> </a></td><td>Public</td><td>Public centre.</td></tr><tr><td style=\"white-space:nowrap\">prison<a name=\"ng-tb-quarterly-centre-report-cs-prison\"> </a></td><td>Prison</td><td>Prison centre.</td></tr><tr><td style=\"white-space:nowrap\">private<a name=\"ng-tb-quarterly-centre-report-cs-private\"> </a></td><td>Private</td><td>Private centre.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113884.3.9944.1.16.115" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "NgTBQuarterlyCentreReportCS"] ;
+  fhir:CodeSystem.title [ fhir:value "NG TB Quarterly DOTS and Microscopy Centre Reporting Codes"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-18T15:57:17+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "NDHI"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "NDHI" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://digitalhealth.gov.ng" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Codes used to represent the reporting variables and centre-type\nstratification in the NTBLCP/TB 18 Quarterly Report on Newly Established\nDOTS and Microscopy Centres."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NG" ] ;
+       fhir:Coding.display [ fhir:value "Nigeria" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "13"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "reporting-population" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Reporting population" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Population of the State or LGA covered by the quarterly report." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "new-dots-centres" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Newly established DOTS centres" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of newly established DOTS centres during the reporting quarter." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "new-afb-microscopy-centres" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Newly established AFB microscopy centres" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of newly established AFB microscopy centres during the reporting quarter." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dots-centres-beginning" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DOTS centres at beginning of quarter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of DOTS centres at the beginning of the reporting quarter." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dots-centres-end" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DOTS centres at end of quarter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of DOTS centres at the end of the reporting quarter." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dots-coverage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "DOTS coverage per population" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Population-to-DOTS-centre ratio at the end of the reporting quarter." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "microscopy-centres-beginning" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AFB microscopy centres at beginning of quarter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of AFB microscopy centres at the beginning of the reporting quarter." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "microscopy-centres-end" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AFB microscopy centres at end of quarter" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Number of AFB microscopy centres at the end of the reporting quarter." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "microscopy-coverage" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "AFB microscopy coverage per population" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Population-to-AFB-microscopy-centre ratio at the end of the reporting quarter." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "centre-type" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Centre type" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Type or ownership category of the newly established centre." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "public" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Public" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Public centre." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "prison" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prison" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Prison centre." ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "private" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Private" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Private centre." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-ig.digitalhealth.gov.ng/CodeSystem/ng-tb-quarterly-centre-report-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

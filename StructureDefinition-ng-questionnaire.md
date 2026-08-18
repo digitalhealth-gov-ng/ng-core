@@ -17,7 +17,7 @@ The base Questionnaire profile for computable program forms in the Nigeria Core 
 
 **Usages:**
 
-* Derived from this Profile: [NG HIV Questionnaire](StructureDefinition-ng-hiv-questionnaire.md) and [NG Immunization Questionnaire](StructureDefinition-ng-immunization-questionnaire.md)
+* Derived from this Profile: [NG HIV Questionnaire](StructureDefinition-ng-hiv-questionnaire.md), [NG Immunization Questionnaire](StructureDefinition-ng-immunization-questionnaire.md) and [NG TB Questionnaire](StructureDefinition-ng-tb-questionnaire.md)
 * Examples for this Profile: [NgAncQuestionnaire](Questionnaire-NgAncQuestionnaire-001.md)
 * CapabilityStatements using this Profile: [Authoritative Nigeria Core Server Requirements](CapabilityStatement-NgCoreServerRequirements.md)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-questionnaire.csv
   "name" : "NgQuestionnaire",
   "title" : "NG Questionnaire",
   "status" : "draft",
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

@@ -1,0 +1,997 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "NgTBCommunityFacilityReferralRegister",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition NgTBCommunityFacilityReferralRegister</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister\" title=\"Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme Tuberculosis Referral Register for Community and Facility.\nOne model instance represents one site-level monthly referral register\nand contains repeatable client entries covering demographics, referral\ndate and reason, receiving facility, confirmation of TB, treatment\ninitiation and remarks.\">NgTBCommunityFacilityReferralRegister</a><a name=\"NgTBCommunityFacilityReferralRegister\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NG TB Community and Facility Referral Register</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.identifier\" title=\"Identifier assigned to the community and facility TB referral register or its electronic equivalent.\">identifier</a><a name=\"NgTBCommunityFacilityReferralRegister.identifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Register identifier</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.site\" title=\"Reference to the site maintaining the referral register, when available.\">site</a><a name=\"NgTBCommunityFacilityReferralRegister.site\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-ng-organization.html\">NG Organization</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Site reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.siteName\" title=\"Name of the site maintaining the TB referral register.\">siteName</a><a name=\"NgTBCommunityFacilityReferralRegister.siteName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Name of site</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.state\" title=\"State in which the reporting site is located.\">state</a><a name=\"NgTBCommunityFacilityReferralRegister.state\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">State<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ng-states-vs.html\" title=\"https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs\" class=\"binding\">NG States VS</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.lga\" title=\"Local Government Area in which the reporting site is located.\">lga</a><a name=\"NgTBCommunityFacilityReferralRegister.lga\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">LGA<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ng-lgas-vs.html\" title=\"https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs\" class=\"binding\">NG LGAs VS</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.ward\" title=\"Administrative ward in which the reporting site is located.\">ward</a><a name=\"NgTBCommunityFacilityReferralRegister.ward\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ward<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ng-wards-vs.html\" title=\"https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-wards-vs\" class=\"binding\">NG Wards VS</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.reportingPeriod\" title=\"Monthly reporting period represented by the Month and Year fields in the source register.\">reportingPeriod</a><a name=\"NgTBCommunityFacilityReferralRegister.reportingPeriod\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reporting period</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry\" title=\"One client-level referral row in the community and facility TB referral register.\">entry</a><a name=\"NgTBCommunityFacilityReferralRegister.entry\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Referral register entry<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.subject\" title=\"Reference to the corresponding Nigeria Core Patient resource, when available.\">subject</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-ng-patient.html\">NG Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.serialNumber\" title=\"Sequential number assigned to the client within the register.\">serialNumber</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.serialNumber\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#positiveInt\">positiveInt</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Serial number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.clientName\" title=\"Full name of the client referred for TB services.\">clientName</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.clientName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Name of client</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.address\" title=\"Full residential address of the client.\">address</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.address\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Address in full</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.ageYears\" title=\"Client age in years.\">ageYears</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.ageYears\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Age</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.sex\" title=\"Client sex. The source register records M or F.\">sex</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.sex\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Sex<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-ng-gender-vs.html\" title=\"https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs\" class=\"binding\">NG Gender or Sex VS</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.telephoneNumber\" title=\"Client telephone number.\">telephoneNumber</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.telephoneNumber\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Telephone number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.referralDate\" title=\"Date the client was referred for TB-related services.\">referralDate</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.referralDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of referral</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.referralReason\" title=\"Reason the client was referred.\n\nSource codes are:\nD = Diagnosis;\nTx = Treatment;\nADR = Adverse Reaction to drugs;\nO = Other.\">referralReason</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.referralReason\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason for referral</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.otherReferralReason\" title=\"Narrative description when referralReason is Other.\">otherReferralReason</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.otherReferralReason\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other reason for referral</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.receivingFacility\" title=\"Reference to the health facility to which the client was referred, when available.\">receivingFacility</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.receivingFacility\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-ng-organization.html\">NG Organization</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Receiving facility reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName\" title=\"Name of the facility to which the client was referred.\">receivingFacilityName</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Name of receiving facility</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.tbConfirmed\" title=\"Indicates whether TB was confirmed following the referral.\">tbConfirmed</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.tbConfirmed\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB confirmed</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate\" title=\"Date TB treatment was started following referral, when applicable.\">treatmentStartDate</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date treatment started</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-NgTBCommunityFacilityReferralRegister-definitions.html#NgTBCommunityFacilityReferralRegister.entry.remarks\" title=\"Additional information regarding the referral, diagnostic outcome, treatment initiation or follow-up.\">remarks</a><a name=\"NgTBCommunityFacilityReferralRegister.entry.remarks\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Remarks</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgTBCommunityFacilityReferralRegister",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113884.3.9944.1.42.76"
+  }],
+  "version" : "0.0.0",
+  "name" : "NgTBCommunityFacilityReferralRegister",
+  "title" : "NG TB Community and Facility Referral Register",
+  "status" : "draft",
+  "date" : "2026-08-18T15:57:17+01:00",
+  "publisher" : "NDHI",
+  "contact" : [{
+    "name" : "NDHI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://digitalhealth.gov.ng"
+    }]
+  }],
+  "description" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme Tuberculosis Referral Register for Community and Facility.\nOne model instance represents one site-level monthly referral register\nand contains repeatable client entries covering demographics, referral\ndate and reason, receiving facility, confirmation of TB, treatment\ninitiation and remarks.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "ng-tb-community-facility-referral-register-columns",
+    "uri" : "urn:ng:ntblcp:tb14:community-facility-referral-register",
+    "name" : "NG TB Community and Facility Referral Register Column Mapping",
+    "comment" : "Maps NgTBCommunityFacilityReferralRegister logical-model elements to the\nprinted Tuberculosis Referral Register for Community and Facility."
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgTBCommunityFacilityReferralRegister",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
+    "element" : [{
+      "id" : "NgTBCommunityFacilityReferralRegister",
+      "path" : "NgTBCommunityFacilityReferralRegister",
+      "short" : "NG TB Community and Facility Referral Register",
+      "definition" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme Tuberculosis Referral Register for Community and Facility.\nOne model instance represents one site-level monthly referral register\nand contains repeatable client entries covering demographics, referral\ndate and reason, receiving facility, confirmation of TB, treatment\ninitiation and remarks.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.identifier",
+      "path" : "NgTBCommunityFacilityReferralRegister.identifier",
+      "short" : "Register identifier",
+      "definition" : "Identifier assigned to the community and facility TB referral register or its electronic equivalent.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.identifier",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.site",
+      "path" : "NgTBCommunityFacilityReferralRegister.site",
+      "short" : "Site reference",
+      "definition" : "Reference to the site maintaining the referral register, when available.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.site",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"]
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.siteName",
+      "path" : "NgTBCommunityFacilityReferralRegister.siteName",
+      "short" : "Name of site",
+      "definition" : "Name of the site maintaining the TB referral register.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.siteName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: Name of site"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.state",
+      "path" : "NgTBCommunityFacilityReferralRegister.state",
+      "short" : "State",
+      "definition" : "State in which the reporting site is located.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.state",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: State"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.lga",
+      "path" : "NgTBCommunityFacilityReferralRegister.lga",
+      "short" : "LGA",
+      "definition" : "Local Government Area in which the reporting site is located.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.lga",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: LGA"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.ward",
+      "path" : "NgTBCommunityFacilityReferralRegister.ward",
+      "short" : "Ward",
+      "definition" : "Administrative ward in which the reporting site is located.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.ward",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-wards-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: Ward"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.reportingPeriod",
+      "path" : "NgTBCommunityFacilityReferralRegister.reportingPeriod",
+      "short" : "Reporting period",
+      "definition" : "Monthly reporting period represented by the Month and Year fields in the source register.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.reportingPeriod",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: Month / Year"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry",
+      "short" : "Referral register entry",
+      "definition" : "One client-level referral row in the community and facility TB referral register.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.id",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.extension",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.modifierExtension",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.subject",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.subject",
+      "short" : "Patient reference",
+      "definition" : "Reference to the corresponding Nigeria Core Patient resource, when available.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.subject",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"]
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.serialNumber",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.serialNumber",
+      "short" : "Serial number",
+      "definition" : "Sequential number assigned to the client within the register.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.serialNumber",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "S/N"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.clientName",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.clientName",
+      "short" : "Name of client",
+      "definition" : "Full name of the client referred for TB services.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.clientName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Name of Client"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.address",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.address",
+      "short" : "Address in full",
+      "definition" : "Full residential address of the client.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.address",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Address in full"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.ageYears",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.ageYears",
+      "short" : "Age",
+      "definition" : "Client age in years.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.ageYears",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Age (Yr)"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.sex",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.sex",
+      "short" : "Sex",
+      "definition" : "Client sex. The source register records M or F.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.sex",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Sex (M/F)"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.telephoneNumber",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.telephoneNumber",
+      "short" : "Telephone number",
+      "definition" : "Client telephone number.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.telephoneNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Telephone number"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.referralDate",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.referralDate",
+      "short" : "Date of referral",
+      "definition" : "Date the client was referred for TB-related services.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.referralDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Date of Referral"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.referralReason",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.referralReason",
+      "short" : "Reason for referral",
+      "definition" : "Reason the client was referred.\n\nSource codes are:\nD = Diagnosis;\nTx = Treatment;\nADR = Adverse Reaction to drugs;\nO = Other.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.referralReason",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Reason for referral"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.otherReferralReason",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.otherReferralReason",
+      "short" : "Other reason for referral",
+      "definition" : "Narrative description when referralReason is Other.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.otherReferralReason",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacility",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacility",
+      "short" : "Receiving facility reference",
+      "definition" : "Reference to the health facility to which the client was referred, when available.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacility",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"]
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName",
+      "short" : "Name of receiving facility",
+      "definition" : "Name of the facility to which the client was referred.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Name of receiving facility"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.tbConfirmed",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.tbConfirmed",
+      "short" : "TB confirmed",
+      "definition" : "Indicates whether TB was confirmed following the referral.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.tbConfirmed",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "TB Confirmed (Yes/No)"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate",
+      "short" : "Date treatment started",
+      "definition" : "Date TB treatment was started following referral, when applicable.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Date Treatment started"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.remarks",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.remarks",
+      "short" : "Remarks",
+      "definition" : "Additional information regarding the referral, diagnostic outcome, treatment initiation or follow-up.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "NgTBCommunityFacilityReferralRegister.entry.remarks",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Remarks"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "NgTBCommunityFacilityReferralRegister",
+      "path" : "NgTBCommunityFacilityReferralRegister",
+      "short" : "NG TB Community and Facility Referral Register",
+      "definition" : "Logical model for the Nigeria National Tuberculosis and Leprosy Control\nProgramme Tuberculosis Referral Register for Community and Facility.\nOne model instance represents one site-level monthly referral register\nand contains repeatable client entries covering demographics, referral\ndate and reason, receiving facility, confirmation of TB, treatment\ninitiation and remarks."
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.identifier",
+      "path" : "NgTBCommunityFacilityReferralRegister.identifier",
+      "short" : "Register identifier",
+      "definition" : "Identifier assigned to the community and facility TB referral register or its electronic equivalent.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.site",
+      "path" : "NgTBCommunityFacilityReferralRegister.site",
+      "short" : "Site reference",
+      "definition" : "Reference to the site maintaining the referral register, when available.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"]
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.siteName",
+      "path" : "NgTBCommunityFacilityReferralRegister.siteName",
+      "short" : "Name of site",
+      "definition" : "Name of the site maintaining the TB referral register.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: Name of site"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.state",
+      "path" : "NgTBCommunityFacilityReferralRegister.state",
+      "short" : "State",
+      "definition" : "State in which the reporting site is located.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: State"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.lga",
+      "path" : "NgTBCommunityFacilityReferralRegister.lga",
+      "short" : "LGA",
+      "definition" : "Local Government Area in which the reporting site is located.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: LGA"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.ward",
+      "path" : "NgTBCommunityFacilityReferralRegister.ward",
+      "short" : "Ward",
+      "definition" : "Administrative ward in which the reporting site is located.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-wards-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: Ward"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.reportingPeriod",
+      "path" : "NgTBCommunityFacilityReferralRegister.reportingPeriod",
+      "short" : "Reporting period",
+      "definition" : "Monthly reporting period represented by the Month and Year fields in the source register.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Header: Month / Year"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry",
+      "short" : "Referral register entry",
+      "definition" : "One client-level referral row in the community and facility TB referral register.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.subject",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.subject",
+      "short" : "Patient reference",
+      "definition" : "Reference to the corresponding Nigeria Core Patient resource, when available.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"]
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.serialNumber",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.serialNumber",
+      "short" : "Serial number",
+      "definition" : "Sequential number assigned to the client within the register.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "S/N"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.clientName",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.clientName",
+      "short" : "Name of client",
+      "definition" : "Full name of the client referred for TB services.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Name of Client"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.address",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.address",
+      "short" : "Address in full",
+      "definition" : "Full residential address of the client.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Address in full"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.ageYears",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.ageYears",
+      "short" : "Age",
+      "definition" : "Client age in years.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Age (Yr)"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.sex",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.sex",
+      "short" : "Sex",
+      "definition" : "Client sex. The source register records M or F.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-gender-vs"
+      },
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Sex (M/F)"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.telephoneNumber",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.telephoneNumber",
+      "short" : "Telephone number",
+      "definition" : "Client telephone number.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Telephone number"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.referralDate",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.referralDate",
+      "short" : "Date of referral",
+      "definition" : "Date the client was referred for TB-related services.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Date of Referral"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.referralReason",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.referralReason",
+      "short" : "Reason for referral",
+      "definition" : "Reason the client was referred.\n\nSource codes are:\nD = Diagnosis;\nTx = Treatment;\nADR = Adverse Reaction to drugs;\nO = Other.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Reason for referral"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.otherReferralReason",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.otherReferralReason",
+      "short" : "Other reason for referral",
+      "definition" : "Narrative description when referralReason is Other.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacility",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacility",
+      "short" : "Receiving facility reference",
+      "definition" : "Reference to the health facility to which the client was referred, when available.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"]
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.receivingFacilityName",
+      "short" : "Name of receiving facility",
+      "definition" : "Name of the facility to which the client was referred.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Name of receiving facility"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.tbConfirmed",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.tbConfirmed",
+      "short" : "TB confirmed",
+      "definition" : "Indicates whether TB was confirmed following the referral.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "TB Confirmed (Yes/No)"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.treatmentStartDate",
+      "short" : "Date treatment started",
+      "definition" : "Date TB treatment was started following referral, when applicable.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Date Treatment started"
+      }]
+    },
+    {
+      "id" : "NgTBCommunityFacilityReferralRegister.entry.remarks",
+      "path" : "NgTBCommunityFacilityReferralRegister.entry.remarks",
+      "short" : "Remarks",
+      "definition" : "Additional information regarding the referral, diagnostic outcome, treatment initiation or follow-up.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "ng-tb-community-facility-referral-register-columns",
+        "map" : "Remarks"
+      }]
+    }]
+  }
+}

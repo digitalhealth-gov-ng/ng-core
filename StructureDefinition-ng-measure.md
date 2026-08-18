@@ -18,7 +18,7 @@ Minimal program-neutral Measure profile for defining Nigerian health indicators,
 **Usages:**
 
 * Refer to this Profile: [NG Measure Report](StructureDefinition-ng-measure-report.md)
-* Examples for this Profile: [NgHivArtMonthlySummaryMeasure](Measure-NgMeasure-HIV-ART-Monthly.md) and [NHMISMonthlyOutpatientAttendance](Measure-NgMeasure-NHMIS-001.md)
+* Examples for this Profile: [NgHivArtMonthlySummaryMeasure](Measure-NgMeasure-HIV-ART-Monthly.md), [NHMISMonthlyOutpatientAttendance](Measure-NgMeasure-NHMIS-001.md) and [NgTBQuarterlyDotsMicroscopyCentreMeasure](Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-measure.json)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-measure.csv), [Ex
   "name" : "NgMeasure",
   "title" : "NG Measure",
   "status" : "draft",
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

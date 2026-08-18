@@ -17,7 +17,7 @@ Minimal program-neutral MeasureReport profile for exchanging Nigerian individual
 
 **Usages:**
 
-* Examples for this Profile: [MeasureReport/NgMeasureReport-HIV-ART-Monthly-001](MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.md) and [MeasureReport/NgMeasureReport-NHMIS-001](MeasureReport-NgMeasureReport-NHMIS-001.md)
+* Examples for this Profile: [MeasureReport/NgMeasureReport-HIV-ART-Monthly-001](MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.md), [MeasureReport/NgMeasureReport-NHMIS-001](MeasureReport-NgMeasureReport-NHMIS-001.md) and [MeasureReport/NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001](MeasureReport-NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ng.gov.digitalhealth.fhir-ig|current/StructureDefinition/StructureDefinition-ng-measure-report.json)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-measure-report.cs
   "name" : "NgMeasureReport",
   "title" : "NG Measure Report",
   "status" : "draft",
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

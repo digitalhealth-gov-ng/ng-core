@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NgTBSpecimenShipmentRegister"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition NgTBSpecimenShipmentRegister</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister" title="Logical model for the Nigeria National Tuberculosis and Leprosy Control
+Programme NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019. One model
+instance represents one specimen shipment from a facility or treatment unit
+to a laboratory and contains repeatable specimen entries together with
+shipping, receipt, transport-condition and acknowledgement information.">NgTBSpecimenShipmentRegister</a><a name="NgTBSpecimenShipmentRegister"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">NG TB Specimen Shipment Register</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.identifier" title="Identifier assigned to the specimen shipment or its electronic equivalent.">identifier</a><a name="NgTBSpecimenShipmentRegister.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shipment identifier</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.shipmentDate" title="Date the specimen consignment was shipped to the receiving laboratory.">shipmentDate</a><a name="NgTBSpecimenShipmentRegister.shipmentDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of shipment to laboratory</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.originatingFacility" title="Reference to the facility or treatment unit sending the specimens, when available.">originatingFacility</a><a name="NgTBSpecimenShipmentRegister.originatingFacility"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-organization.html">NG Organization</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Originating facility reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.originatingFacilityName" title="Name of the facility or treatment unit from which the specimens are shipped.">originatingFacilityName</a><a name="NgTBSpecimenShipmentRegister.originatingFacilityName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of facility or treatment unit</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.state" title="State in which the originating facility or treatment unit is located.">state</a><a name="NgTBSpecimenShipmentRegister.state"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">State<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-states-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs" class="binding">NG States VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.lga" title="Local Government Area in which the originating facility or treatment unit is located.">lga</a><a name="NgTBSpecimenShipmentRegister.lga"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">LGA<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-ng-lgas-vs.html" title="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs" class="binding">NG LGAs VS</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.destinationLaboratory" title="Reference to the laboratory processing the specimens, when available.">destinationLaboratory</a><a name="NgTBSpecimenShipmentRegister.destinationLaboratory"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-organization.html">NG Organization</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Destination laboratory reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.destinationLaboratoryName" title="Name of the laboratory to which the specimen shipment is sent.">destinationLaboratoryName</a><a name="NgTBSpecimenShipmentRegister.destinationLaboratoryName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratory processing the specimen</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry" title="One patient/specimen included in the shipment.">entry</a><a name="NgTBSpecimenShipmentRegister.entry"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen shipment entry<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.serialNumber" title="Sequential number assigned to the specimen within the shipment.">serialNumber</a><a name="NgTBSpecimenShipmentRegister.entry.serialNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Serial number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.subject" title="Reference to the corresponding Nigeria Core Patient resource, when available.">subject</a><a name="NgTBSpecimenShipmentRegister.entry.subject"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-patient.html">NG Patient</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.patientName" title="Name of the patient from whom the specimen was collected.">patientName</a><a name="NgTBSpecimenShipmentRegister.entry.patientName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.specimenReference" title="Reference to the corresponding FHIR Specimen resource, when available.">specimenReference</a><a name="NgTBSpecimenShipmentRegister.entry.specimenReference"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber" title="Identifier assigned to the specimen.">specimenIdentificationNumber</a><a name="NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen identification number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.specimenType" title="Type of clinical specimen being shipped.">specimenType</a><a name="NgTBSpecimenShipmentRegister.entry.specimenType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of specimen</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.collectionDate" title="Date the specimen was collected from the patient.">collectionDate</a><a name="NgTBSpecimenShipmentRegister.entry.collectionDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of collection</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.entry.remarks" title="Remarks associated with the individual specimen shipment entry.">remarks</a><a name="NgTBSpecimenShipmentRegister.entry.remarks"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Specimen remarks</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.shippingOfficer" title="Reference to the person responsible for transporting the specimen shipment, when available.">shippingOfficer</a><a name="NgTBSpecimenShipmentRegister.shippingOfficer"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shipping officer reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.shippingOfficerName" title="Name of the officer transporting the specimen shipment.">shippingOfficerName</a><a name="NgTBSpecimenShipmentRegister.shippingOfficerName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of shipping officer</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.shippingOfficerTelephone" title="Telephone number of the officer transporting the specimen shipment.">shippingOfficerTelephone</a><a name="NgTBSpecimenShipmentRegister.shippingOfficerTelephone"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shipping officer telephone number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.shippingOfficerSignature" title="Signature or electronic signature reference for the shipping officer.">shippingOfficerSignature</a><a name="NgTBSpecimenShipmentRegister.shippingOfficerSignature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shipping officer signature</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt" title="Acknowledgement and condition of the specimen shipment when received by the laboratory.">receipt</a><a name="NgTBSpecimenShipmentRegister.receipt"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratory receipt</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.arrivalDate" title="Date the specimen shipment arrived at the receiving laboratory.">arrivalDate</a><a name="NgTBSpecimenShipmentRegister.receipt.arrivalDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date specimen arrived at laboratory</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.receivingPersonnel" title="Reference to the laboratory personnel who received the shipment, when available.">receivingPersonnel</a><a name="NgTBSpecimenShipmentRegister.receipt.receivingPersonnel"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ng-practitioner-role.html">NG PractitionerRole</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Receiving laboratory personnel reference</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName" title="Name of the laboratory personnel who received the specimen shipment.">receivingPersonnelName</a><a name="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of laboratory personnel receiving specimen</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone" title="Telephone number of the laboratory personnel receiving the specimen shipment.">receivingPersonnelTelephone</a><a name="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Receiving personnel telephone number</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature" title="Signature or electronic signature reference of the laboratory personnel receiving the shipment.">receivingPersonnelSignature</a><a name="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Receiving personnel signature</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.specimenTemperature" title="Temperature of the specimen shipment at the time it was received by the laboratory.">specimenTemperature</a><a name="NgTBSpecimenShipmentRegister.receipt.specimenTemperature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Temperature of specimens on arrival</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-NgTBSpecimenShipmentRegister-definitions.html#NgTBSpecimenShipmentRegister.receipt.remarks" title="Remarks recorded by the laboratory personnel who received the specimen shipment.">remarks</a><a name="NgTBSpecimenShipmentRegister.receipt.remarks"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratory receipt remarks</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgTBSpecimenShipmentRegister"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113884.3.9944.1.42.80"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="NgTBSpecimenShipmentRegister"/>
+  <title value="NG TB Specimen Shipment Register"/>
+  <status value="draft"/>
+  <date value="2026-08-18T15:57:17+01:00"/>
+  <publisher value="NDHI"/>
+  <contact>
+    <name value="NDHI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digitalhealth.gov.ng"/>
+    </telecom>
+  </contact>
+  <description value="Logical model for the Nigeria National Tuberculosis and Leprosy Control&#xA;Programme NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019. One model&#xA;instance represents one specimen shipment from a facility or treatment unit&#xA;to a laboratory and contains repeatable specimen entries together with&#xA;shipping, receipt, transport-condition and acknowledgement information."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="ng-tb-specimen-shipment-register-columns"/>
+    <uri value="urn:ng:ntblcp:tb03:specimen-shipment-form"/>
+    <name value="NG TB Specimen Shipment Register Column Mapping"/>
+    <comment value="Maps NgTBSpecimenShipmentRegister logical-model elements to the&#xA;NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019."/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/NgTBSpecimenShipmentRegister"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="NgTBSpecimenShipmentRegister">
+      <path value="NgTBSpecimenShipmentRegister"/>
+      <short value="NG TB Specimen Shipment Register"/>
+      <definition value="Logical model for the Nigeria National Tuberculosis and Leprosy Control&#xA;Programme NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019. One model&#xA;instance represents one specimen shipment from a facility or treatment unit&#xA;to a laboratory and contains repeatable specimen entries together with&#xA;shipping, receipt, transport-condition and acknowledgement information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.identifier">
+      <path value="NgTBSpecimenShipmentRegister.identifier"/>
+      <short value="Shipment identifier"/>
+      <definition value="Identifier assigned to the specimen shipment or its electronic equivalent."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.identifier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shipmentDate">
+      <path value="NgTBSpecimenShipmentRegister.shipmentDate"/>
+      <short value="Date of shipment to laboratory"/>
+      <definition value="Date the specimen consignment was shipped to the receiving laboratory."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.shipmentDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Date of shipment to Laboratory"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.originatingFacility">
+      <path value="NgTBSpecimenShipmentRegister.originatingFacility"/>
+      <short value="Originating facility reference"/>
+      <definition value="Reference to the facility or treatment unit sending the specimens, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.originatingFacility"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.originatingFacilityName">
+      <path value="NgTBSpecimenShipmentRegister.originatingFacilityName"/>
+      <short value="Name of facility or treatment unit"/>
+      <definition value="Name of the facility or treatment unit from which the specimens are shipped."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.originatingFacilityName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Name of Facility/Treatment unit"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.state">
+      <path value="NgTBSpecimenShipmentRegister.state"/>
+      <short value="State"/>
+      <definition value="State in which the originating facility or treatment unit is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.state"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="State"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.lga">
+      <path value="NgTBSpecimenShipmentRegister.lga"/>
+      <short value="LGA"/>
+      <definition value="Local Government Area in which the originating facility or treatment unit is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.lga"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="LGA"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.destinationLaboratory">
+      <path value="NgTBSpecimenShipmentRegister.destinationLaboratory"/>
+      <short value="Destination laboratory reference"/>
+      <definition value="Reference to the laboratory processing the specimens, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.destinationLaboratory"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.destinationLaboratoryName">
+      <path value="NgTBSpecimenShipmentRegister.destinationLaboratoryName"/>
+      <short value="Laboratory processing the specimen"/>
+      <definition value="Name of the laboratory to which the specimen shipment is sent."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.destinationLaboratoryName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Laboratory processing the specimen"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry">
+      <path value="NgTBSpecimenShipmentRegister.entry"/>
+      <short value="Specimen shipment entry"/>
+      <definition value="One patient/specimen included in the shipment."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.id">
+      <path value="NgTBSpecimenShipmentRegister.entry.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.extension">
+      <path value="NgTBSpecimenShipmentRegister.entry.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.modifierExtension">
+      <path value="NgTBSpecimenShipmentRegister.entry.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.serialNumber">
+      <path value="NgTBSpecimenShipmentRegister.entry.serialNumber"/>
+      <short value="Serial number"/>
+      <definition value="Sequential number assigned to the specimen within the shipment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.serialNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="S/N"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.subject">
+      <path value="NgTBSpecimenShipmentRegister.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.subject"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.patientName">
+      <path value="NgTBSpecimenShipmentRegister.entry.patientName"/>
+      <short value="Patient name"/>
+      <definition value="Name of the patient from whom the specimen was collected."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.patientName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Patient Name"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.specimenReference">
+      <path value="NgTBSpecimenShipmentRegister.entry.specimenReference"/>
+      <short value="Specimen reference"/>
+      <definition value="Reference to the corresponding FHIR Specimen resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.specimenReference"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber">
+      <path value="NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber"/>
+      <short value="Specimen identification number"/>
+      <definition value="Identifier assigned to the specimen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Specimen Id Number"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.specimenType">
+      <path value="NgTBSpecimenShipmentRegister.entry.specimenType"/>
+      <short value="Type of specimen"/>
+      <definition value="Type of clinical specimen being shipped."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.specimenType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Type of Specimen"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.collectionDate">
+      <path value="NgTBSpecimenShipmentRegister.entry.collectionDate"/>
+      <short value="Date of collection"/>
+      <definition value="Date the specimen was collected from the patient."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.collectionDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Date of Collection"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.remarks">
+      <path value="NgTBSpecimenShipmentRegister.entry.remarks"/>
+      <short value="Specimen remarks"/>
+      <definition value="Remarks associated with the individual specimen shipment entry."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.entry.remarks"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Remarks"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficer">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficer"/>
+      <short value="Shipping officer reference"/>
+      <definition value="Reference to the person responsible for transporting the specimen shipment, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.shippingOfficer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficerName">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficerName"/>
+      <short value="Name of shipping officer"/>
+      <definition value="Name of the officer transporting the specimen shipment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.shippingOfficerName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Name of shipping officer"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficerTelephone">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficerTelephone"/>
+      <short value="Shipping officer telephone number"/>
+      <definition value="Telephone number of the officer transporting the specimen shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.shippingOfficerTelephone"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Telephone Number of shipping officer"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficerSignature">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficerSignature"/>
+      <short value="Shipping officer signature"/>
+      <definition value="Signature or electronic signature reference for the shipping officer."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.shippingOfficerSignature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Shipping officer Signature"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt">
+      <path value="NgTBSpecimenShipmentRegister.receipt"/>
+      <short value="Laboratory receipt"/>
+      <definition value="Acknowledgement and condition of the specimen shipment when received by the laboratory."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.id">
+      <path value="NgTBSpecimenShipmentRegister.receipt.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.extension">
+      <path value="NgTBSpecimenShipmentRegister.receipt.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.modifierExtension">
+      <path value="NgTBSpecimenShipmentRegister.receipt.modifierExtension"/>
+      <short value="Extensions that cannot be ignored even if unrecognized"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <requirements value="Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="Modifier extensions are expected to modify the meaning or interpretation of the element that contains them"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.arrivalDate">
+      <path value="NgTBSpecimenShipmentRegister.receipt.arrivalDate"/>
+      <short value="Date specimen arrived at laboratory"/>
+      <definition value="Date the specimen shipment arrived at the receiving laboratory."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.arrivalDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Date Specimen arrived at the Laboratory"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnel">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnel"/>
+      <short value="Receiving laboratory personnel reference"/>
+      <definition value="Reference to the laboratory personnel who received the shipment, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnel"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName"/>
+      <short value="Name of laboratory personnel receiving specimen"/>
+      <definition value="Name of the laboratory personnel who received the specimen shipment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Name of laboratory personnel who received specimen"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone"/>
+      <short value="Receiving personnel telephone number"/>
+      <definition value="Telephone number of the laboratory personnel receiving the specimen shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Receiving laboratory personnel Telephone Number"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature"/>
+      <short value="Receiving personnel signature"/>
+      <definition value="Signature or electronic signature reference of the laboratory personnel receiving the shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Receiving laboratory personnel Signature"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.specimenTemperature">
+      <path value="NgTBSpecimenShipmentRegister.receipt.specimenTemperature"/>
+      <short value="Temperature of specimens on arrival"/>
+      <definition value="Temperature of the specimen shipment at the time it was received by the laboratory."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.specimenTemperature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Temperature of specimens on arrival"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.remarks">
+      <path value="NgTBSpecimenShipmentRegister.receipt.remarks"/>
+      <short value="Laboratory receipt remarks"/>
+      <definition value="Remarks recorded by the laboratory personnel who received the specimen shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NgTBSpecimenShipmentRegister.receipt.remarks"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Remarks by laboratory personnel who received the specimen"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="NgTBSpecimenShipmentRegister">
+      <path value="NgTBSpecimenShipmentRegister"/>
+      <short value="NG TB Specimen Shipment Register"/>
+      <definition value="Logical model for the Nigeria National Tuberculosis and Leprosy Control&#xA;Programme NTBLCP/TB 03 Specimen Shipment Form, Version 2, 2019. One model&#xA;instance represents one specimen shipment from a facility or treatment unit&#xA;to a laboratory and contains repeatable specimen entries together with&#xA;shipping, receipt, transport-condition and acknowledgement information."/>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.identifier">
+      <path value="NgTBSpecimenShipmentRegister.identifier"/>
+      <short value="Shipment identifier"/>
+      <definition value="Identifier assigned to the specimen shipment or its electronic equivalent."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shipmentDate">
+      <path value="NgTBSpecimenShipmentRegister.shipmentDate"/>
+      <short value="Date of shipment to laboratory"/>
+      <definition value="Date the specimen consignment was shipped to the receiving laboratory."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Date of shipment to Laboratory"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.originatingFacility">
+      <path value="NgTBSpecimenShipmentRegister.originatingFacility"/>
+      <short value="Originating facility reference"/>
+      <definition value="Reference to the facility or treatment unit sending the specimens, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.originatingFacilityName">
+      <path value="NgTBSpecimenShipmentRegister.originatingFacilityName"/>
+      <short value="Name of facility or treatment unit"/>
+      <definition value="Name of the facility or treatment unit from which the specimens are shipped."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Name of Facility/Treatment unit"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.state">
+      <path value="NgTBSpecimenShipmentRegister.state"/>
+      <short value="State"/>
+      <definition value="State in which the originating facility or treatment unit is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-states-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="State"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.lga">
+      <path value="NgTBSpecimenShipmentRegister.lga"/>
+      <short value="LGA"/>
+      <definition value="Local Government Area in which the originating facility or treatment unit is located."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://fhir-ig.digitalhealth.gov.ng/ValueSet/ng-lgas-vs"/>
+      </binding>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="LGA"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.destinationLaboratory">
+      <path value="NgTBSpecimenShipmentRegister.destinationLaboratory"/>
+      <short value="Destination laboratory reference"/>
+      <definition value="Reference to the laboratory processing the specimens, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-organization"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.destinationLaboratoryName">
+      <path value="NgTBSpecimenShipmentRegister.destinationLaboratoryName"/>
+      <short value="Laboratory processing the specimen"/>
+      <definition value="Name of the laboratory to which the specimen shipment is sent."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Laboratory processing the specimen"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry">
+      <path value="NgTBSpecimenShipmentRegister.entry"/>
+      <short value="Specimen shipment entry"/>
+      <definition value="One patient/specimen included in the shipment."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.serialNumber">
+      <path value="NgTBSpecimenShipmentRegister.entry.serialNumber"/>
+      <short value="Serial number"/>
+      <definition value="Sequential number assigned to the specimen within the shipment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="S/N"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.subject">
+      <path value="NgTBSpecimenShipmentRegister.entry.subject"/>
+      <short value="Patient reference"/>
+      <definition value="Reference to the corresponding Nigeria Core Patient resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-patient"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.patientName">
+      <path value="NgTBSpecimenShipmentRegister.entry.patientName"/>
+      <short value="Patient name"/>
+      <definition value="Name of the patient from whom the specimen was collected."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Patient Name"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.specimenReference">
+      <path value="NgTBSpecimenShipmentRegister.entry.specimenReference"/>
+      <short value="Specimen reference"/>
+      <definition value="Reference to the corresponding FHIR Specimen resource, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber">
+      <path value="NgTBSpecimenShipmentRegister.entry.specimenIdentificationNumber"/>
+      <short value="Specimen identification number"/>
+      <definition value="Identifier assigned to the specimen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Specimen Id Number"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.specimenType">
+      <path value="NgTBSpecimenShipmentRegister.entry.specimenType"/>
+      <short value="Type of specimen"/>
+      <definition value="Type of clinical specimen being shipped."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Type of Specimen"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.collectionDate">
+      <path value="NgTBSpecimenShipmentRegister.entry.collectionDate"/>
+      <short value="Date of collection"/>
+      <definition value="Date the specimen was collected from the patient."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Date of Collection"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.entry.remarks">
+      <path value="NgTBSpecimenShipmentRegister.entry.remarks"/>
+      <short value="Specimen remarks"/>
+      <definition value="Remarks associated with the individual specimen shipment entry."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Remarks"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficer">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficer"/>
+      <short value="Shipping officer reference"/>
+      <definition value="Reference to the person responsible for transporting the specimen shipment, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficerName">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficerName"/>
+      <short value="Name of shipping officer"/>
+      <definition value="Name of the officer transporting the specimen shipment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Name of shipping officer"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficerTelephone">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficerTelephone"/>
+      <short value="Shipping officer telephone number"/>
+      <definition value="Telephone number of the officer transporting the specimen shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Telephone Number of shipping officer"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.shippingOfficerSignature">
+      <path value="NgTBSpecimenShipmentRegister.shippingOfficerSignature"/>
+      <short value="Shipping officer signature"/>
+      <definition value="Signature or electronic signature reference for the shipping officer."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Shipping officer Signature"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt">
+      <path value="NgTBSpecimenShipmentRegister.receipt"/>
+      <short value="Laboratory receipt"/>
+      <definition value="Acknowledgement and condition of the specimen shipment when received by the laboratory."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.arrivalDate">
+      <path value="NgTBSpecimenShipmentRegister.receipt.arrivalDate"/>
+      <short value="Date specimen arrived at laboratory"/>
+      <definition value="Date the specimen shipment arrived at the receiving laboratory."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Date Specimen arrived at the Laboratory"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnel">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnel"/>
+      <short value="Receiving laboratory personnel reference"/>
+      <definition value="Reference to the laboratory personnel who received the shipment, when available."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://fhir-ig.digitalhealth.gov.ng/StructureDefinition/ng-practitioner-role"/>
+      </type>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelName"/>
+      <short value="Name of laboratory personnel receiving specimen"/>
+      <definition value="Name of the laboratory personnel who received the specimen shipment."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Name of laboratory personnel who received specimen"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelTelephone"/>
+      <short value="Receiving personnel telephone number"/>
+      <definition value="Telephone number of the laboratory personnel receiving the specimen shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Receiving laboratory personnel Telephone Number"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature">
+      <path value="NgTBSpecimenShipmentRegister.receipt.receivingPersonnelSignature"/>
+      <short value="Receiving personnel signature"/>
+      <definition value="Signature or electronic signature reference of the laboratory personnel receiving the shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Receiving laboratory personnel Signature"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.specimenTemperature">
+      <path value="NgTBSpecimenShipmentRegister.receipt.specimenTemperature"/>
+      <short value="Temperature of specimens on arrival"/>
+      <definition value="Temperature of the specimen shipment at the time it was received by the laboratory."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Temperature of specimens on arrival"/>
+      </mapping>
+    </element>
+    <element id="NgTBSpecimenShipmentRegister.receipt.remarks">
+      <path value="NgTBSpecimenShipmentRegister.receipt.remarks"/>
+      <short value="Laboratory receipt remarks"/>
+      <definition value="Remarks recorded by the laboratory personnel who received the specimen shipment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="ng-tb-specimen-shipment-register-columns"/>
+        <map value="Remarks by laboratory personnel who received the specimen"/>
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

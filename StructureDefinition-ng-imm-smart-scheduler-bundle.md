@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ng-imm-smart-schedul
   "name" : "NgImmSmartSchedulerBundle",
   "title" : "Bundle NG Immunization SMART Scheduler",
   "status" : "active",
-  "date" : "2026-08-18T06:18:50+01:00",
+  "date" : "2026-08-18T15:57:17+01:00",
   "publisher" : "NDHI",
   "contact" : [{
     "name" : "NDHI",

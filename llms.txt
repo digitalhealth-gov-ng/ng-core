@@ -155,6 +155,7 @@
 * [NG Relationships CS](CodeSystem-ng-relationship-cs.md)
 * [NG Health Status CS](CodeSystem-ng-sibling-health-status-cs.md)
 * [NG States in Nigeria CS](CodeSystem-ng-states-cs.md)
+* [NG TB Quarterly DOTS and Microscopy Centre Reporting Codes](CodeSystem-ng-tb-quarterly-centre-report-cs.md)
 * [TB Screening Diagnostic Test Type Codes CodeSystem](CodeSystem-ng-tb-screening-diagnostic-test-type-cs.md)
 * [TB TPT Alternate Follow-Up CodeSystem](CodeSystem-ng-tb-tpt-alternate-follow-up-cs.md)
 * [TB Eligility Status for TPT Codes](CodeSystem-ng-tb-tpt-eligibility-status-cs.md)
@@ -346,11 +347,18 @@
 
 ### Logicals
 
+* [NG DR-TB Treatment Register](StructureDefinition-NgDRTBTreatmentRegister.md)
 * [NG HIV National ART Register](StructureDefinition-NgHivArtRegister.md)
 * [NG HIV Enhanced Adherence Counselling Monitoring Register](StructureDefinition-NgHivEacRegister.md)
 * [NG HIV Integrated Laboratory Monitoring Register](StructureDefinition-NgHivIntLabMonitoringRegister.md)
 * [NG HIV Pharmacy Daily Worksheet](StructureDefinition-NgHivPharmacyDailyWorksheet.md)
 * [NG HIV Tracking Register](StructureDefinition-NgHivTrackingRegister.md)
+* [NG LGA/Health Facility Tuberculosis Central Register](StructureDefinition-NgTBCentralRegister.md)
+* [NG TB Community and Facility Referral Register](StructureDefinition-NgTBCommunityFacilityReferralRegister.md)
+* [NG TB Facility Contact Management Register](StructureDefinition-NgTBFacilityContactManagementRegister.md)
+* [NG TB Laboratory Register](StructureDefinition-NgTBLaboratoryRegister.md)
+* [NG TB Presumptive Register](StructureDefinition-NgTBPresumptiveRegister.md)
+* [NG TB Specimen Shipment Register](StructureDefinition-NgTBSpecimenShipmentRegister.md)
 
 ### Complex-type Profiles
 
@@ -419,6 +427,7 @@
 * [NG ServiceRequest](StructureDefinition-ng-service-request.md)
 * [NG Specimen](StructureDefinition-ng-specimen.md)
 * [NG Task](StructureDefinition-ng-task.md)
+* [NG TB Questionnaire](StructureDefinition-ng-tb-questionnaire.md)
 
 ### Extensions
 
@@ -473,6 +482,7 @@
 
 * [Nigeria HIV ART Monthly Summary Measure](Measure-NgMeasure-HIV-ART-Monthly.md)
 * [NHMIS Monthly Outpatient Attendance Measure](Measure-NgMeasure-NHMIS-001.md)
+* [Nigeria TB Quarterly DOTS and Microscopy Centre Measure](Measure-NgMeasure-TB-Quarterly-DOTS-Microscopy.md)
 
 ### NamingSystems
 
@@ -499,6 +509,7 @@
 ### Questionnaires
 
 * [Nigeria Antenatal Care Questionnaire](Questionnaire-NgAncQuestionnaire-001.md)
+* [NG DR-TB Patient Discharge Questionnaire](Questionnaire-ng-drtb-patient-discharge-questionnaire.md)
 * [NG HIV Care and ART Questionnaire](Questionnaire-ng-hiv-care-art-questionnaire.md)
 * [NG HIV Enhanced Adherence Counselling Form Questionnaire](Questionnaire-ng-hiv-eac-form-questionnaire.md)
 * [NG HIV Integrated Laboratory Order and Result Form Questionnaire](Questionnaire-ng-hiv-int-lab-form-questionnaire.md)
@@ -511,6 +522,14 @@
 * [NG Immunization Generate Report Form](Questionnaire-ng-imm-generate-report-form.md)
 * [NG Immunization Manage AEFI Form](Questionnaire-ng-imm-manage-aefi-form.md)
 * [NG Immunization Updating Client Record Form](Questionnaire-ng-imm-updating-client-record-form.md)
+* [NG TB Community and Facility Referral Questionnaire](Questionnaire-ng-tb-community-facility-referral-questionnaire.md)
+* [NG TB Index Patient Contact Investigation Questionnaire](Questionnaire-ng-tb-index-patient-contact-investigation-questionnaire.md)
+* [NG TB Patient Referral/Transfer Questionnaire](Questionnaire-ng-tb-patient-referral-transfer-questionnaire.md)
+* [NG TB Patient Treatment Card Questionnaire](Questionnaire-ng-tb-patient-treatment-card-questionnaire.md)
+* [NG TB Preventive Therapy Questionnaire](Questionnaire-ng-tb-preventive-therapy-questionnaire.md)
+* [NG TB Specimen Examination Request Questionnaire](Questionnaire-ng-tb-specimen-examination-request-questionnaire.md)
+* [NG TB Specimen Examination Result Questionnaire](Questionnaire-ng-tb-specimen-examination-result-questionnaire.md)
+* [NG TB Treatment Interruption Tracking Questionnaire](Questionnaire-ng-tb-treatment-interruption-tracking-questionnaire.md)
 
 ### Examples
 
@@ -552,6 +571,7 @@
 * [Gurdi Outreach Site (Location)](Location-NgLocation-004.md)
 * [NgMeasureReport-HIV-ART-Monthly-001 (MeasureReport)](MeasureReport-NgMeasureReport-HIV-ART-Monthly-001.md)
 * [NgMeasureReport-NHMIS-001 (MeasureReport)](MeasureReport-NgMeasureReport-NHMIS-001.md)
+* [NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001 (MeasureReport)](MeasureReport-NgMeasureReport-TB-Quarterly-DOTS-Microscopy-001.md)
 * [NgMedication-001 (Medication)](Medication-NgMedication-001.md)
 * [NgMedication-002 (Medication)](Medication-NgMedication-002.md)
 * [NgMedication-003 (Medication)](Medication-NgMedication-003.md)
@@ -594,6 +614,9 @@
 * [NgPractitionerRole-003 (PractitionerRole)](PractitionerRole-NgPractitionerRole-003.md)
 * [NgProcedure-001 (Procedure)](Procedure-NgProcedure-001.md)
 * [NgProvenance-001 (Provenance)](Provenance-NgProvenance-001.md)
+* [NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBTreatmentInterruptionTrackingQuestionnaireResponseExample.md)
+* [NgTBIndexPatientContactInvestigationQuestionnaireResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBIndexPatientContactInvestigationQuestionnaireResponseExample.md)
+* [NgDRTBPatientDischargeQuestionnaireResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgDRTBPatientDischargeQuestionnaireResponseExample.md)
 * [NgHivCareArtQuestionnaireResponseInitialArt (QuestionnaireResponse)](QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInitialArt.md)
 * [NgHivCareArtQuestionnaireResponseInterruptionRestart (QuestionnaireResponse)](QuestionnaireResponse-NgHivCareArtQuestionnaireResponseInterruptionRestart.md)
 * [NgHivCareArtQuestionnaireResponseRegimenChange (QuestionnaireResponse)](QuestionnaireResponse-NgHivCareArtQuestionnaireResponseRegimenChange.md)
@@ -602,6 +625,13 @@
 * [NgHivIntLabFormQuestionnaireResponseExtendedPanel (QuestionnaireResponse)](QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseExtendedPanel.md)
 * [NgHivIntLabFormQuestionnaireResponseViralLoadExample (QuestionnaireResponse)](QuestionnaireResponse-NgHivIntLabFormQuestionnaireResponseViralLoadExample.md)
 * [NgHivPharmacyOrderFormQuestionnaireResponse (QuestionnaireResponse)](QuestionnaireResponse-NgHivPharmacyOrderFormQuestionnaireResponse.md)
+* [NgTBComsFacilityRefQxResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBComsFacilityRefQxResponseExample.md)
+* [NgTBPatientReferralTransferQuestionnaireResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBPatientReferralTransferQuestionnaireResponseExample.md)
+* [NgTBPreventiveTherapyQuestionnaireResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBPreventiveTherapyQuestionnaireResponseExample.md)
+* [NgTBSpecimenExRxQxResponseEg (QuestionnaireResponse)](QuestionnaireResponse-NgTBSpecimenExRxQxResponseEg.md)
+* [NgTBSpecimenExamQxResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBSpecimenExamQxResponseExample.md)
+* [NgTBSpecimenExamRxQuestionnaireResponse (QuestionnaireResponse)](QuestionnaireResponse-NgTBSpecimenExamRxQuestionnaireResponse.md)
+* [NgTBTreatmQxResponseExample (QuestionnaireResponse)](QuestionnaireResponse-NgTBTreatmQxResponseExample.md)
 * [NgRelatedPerson-001 (RelatedPerson)](RelatedPerson-NgRelatedPerson-001.md)
 * [NgRelatedPerson-002 (RelatedPerson)](RelatedPerson-NgRelatedPerson-002.md)
 * [NgRelatedPerson-003-Pseudo (RelatedPerson)](RelatedPerson-NgRelatedPerson-003-Pseudo.md)
